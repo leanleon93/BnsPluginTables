@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class partychatchannel_RecordSubType : __int32
+    {
+		partychatchannel_record_sub_normal = 0,
+		partychatchannel_record_sub_main_faction = 1,
+		partychatchannel_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct partychatchannel_Record : DrEl
 	{

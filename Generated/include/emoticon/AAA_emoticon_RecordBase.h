@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class emoticon_RecordSubType : __int32
+    {
+		emoticon_record_sub_emoticon = 0,
+		emoticon_record_sub_profile = 1,
+		emoticon_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct emoticon_Record : DrEl
 	{

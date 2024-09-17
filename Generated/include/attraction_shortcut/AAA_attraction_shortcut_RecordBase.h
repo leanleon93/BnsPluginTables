@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class attraction_shortcut_RecordSubType : __int32
+    {
+		attraction_shortcut_record_sub_dungeon = 0,
+		attraction_shortcut_record_sub_time_limit_field = 1,
+		attraction_shortcut_record_sub_raid = 2,
+		attraction_shortcut_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct attraction_shortcut_Record : DrEl
 	{

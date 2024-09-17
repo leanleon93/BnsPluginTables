@@ -6,6 +6,7 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+
 #pragma pack(push, 1)
 	struct treasure_board_page_Record : DrEl
 	{

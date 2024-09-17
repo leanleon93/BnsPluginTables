@@ -6,6 +6,7 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+
 #pragma pack(push, 1)
 	struct custom_dress_design_type_info_Record : DrEl
 	{

@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class skill_training_room_subject_RecordSubType : __int32
+    {
+		skill_training_room_subject_record_sub_class_training = 0,
+		skill_training_room_subject_record_sub_boss_training = 1,
+		skill_training_room_subject_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct skill_training_room_subject_Record : DrEl
 	{

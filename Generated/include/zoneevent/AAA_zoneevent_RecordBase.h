@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class zoneevent_RecordSubType : __int32
+    {
+		zoneevent_record_sub_faction_kill_count = 0,
+		zoneevent_record_sub_kill_npc = 1,
+		zoneevent_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct zoneevent_Record : DrEl
 	{

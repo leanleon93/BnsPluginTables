@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class attendance_RecordSubType : __int32
+    {
+		attendance_record_sub_board_game = 0,
+		attendance_record_sub_continual_board_game = 1,
+		attendance_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct attendance_Record : DrEl
 	{

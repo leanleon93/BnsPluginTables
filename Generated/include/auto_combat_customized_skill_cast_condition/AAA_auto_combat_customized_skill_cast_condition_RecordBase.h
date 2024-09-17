@@ -6,6 +6,7 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+
 #pragma pack(push, 1)
 	struct auto_combat_customized_skill_cast_condition_Record : DrEl
 	{

@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class tendency_field_RecordSubType : __int32
+    {
+		tendency_field_record_sub_normal = 0,
+		tendency_field_record_sub_buyudo = 1,
+		tendency_field_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct tendency_field_Record : DrEl
 	{

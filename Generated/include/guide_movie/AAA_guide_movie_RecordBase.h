@@ -6,6 +6,14 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class guide_movie_RecordSubType : __int32
+    {
+		guide_movie_record_sub_level = 0,
+		guide_movie_record_sub_quest = 1,
+		guide_movie_record_sub_enter_zone = 2,
+		guide_movie_record_sub_dungeon = 3,
+		guide_movie_record_sub_count = 4,
+    };
 #pragma pack(push, 1)
 	struct guide_movie_Record : DrEl
 	{

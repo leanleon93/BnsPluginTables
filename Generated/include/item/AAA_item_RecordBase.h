@@ -6,6 +6,16 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class item_RecordSubType : __int32
+    {
+		item_record_sub_weapon = 0,
+		item_record_sub_costume = 1,
+		item_record_sub_grocery = 2,
+		item_record_sub_gem = 3,
+		item_record_sub_accessory = 4,
+		item_record_sub_enchant = 5,
+		item_record_sub_count = 6,
+    };
 #pragma pack(push, 1)
 	struct item_Record : DrEl
 	{

@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class skill_RecordSubType : __int32
+    {
+		skill_record_sub_active_skill = 0,
+		skill_record_sub_passive_skill = 1,
+		skill_record_sub_action = 2,
+		skill_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct skill_Record : DrEl
 	{

@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class skill_modify_info_RecordSubType : __int32
+    {
+		skill_modify_info_record_sub_normal = 0,
+		skill_modify_info_record_sub_skill = 1,
+		skill_modify_info_record_sub_skillsystematization = 2,
+		skill_modify_info_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct skill_modify_info_Record : DrEl
 	{

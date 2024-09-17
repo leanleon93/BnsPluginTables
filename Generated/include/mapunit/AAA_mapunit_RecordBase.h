@@ -6,6 +6,23 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class mapunit_RecordSubType : __int32
+    {
+		mapunit_record_sub_static = 0,
+		mapunit_record_sub_quest = 1,
+		mapunit_record_sub_link = 2,
+		mapunit_record_sub_npc = 3,
+		mapunit_record_sub_boss = 4,
+		mapunit_record_sub_airdash = 5,
+		mapunit_record_sub_env = 6,
+		mapunit_record_sub_attraction = 7,
+		mapunit_record_sub_npc_group = 8,
+		mapunit_record_sub_guild_battle_field_portal = 9,
+		mapunit_record_sub_party_battle_startpoint_alpha = 10,
+		mapunit_record_sub_party_battle_startpoint_beta = 11,
+		mapunit_record_sub_fishing_field = 12,
+		mapunit_record_sub_count = 13,
+    };
 #pragma pack(push, 1)
 	struct mapunit_Record : DrEl
 	{

@@ -6,6 +6,30 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class zoneenv2_RecordSubType : __int32
+    {
+		zoneenv2_record_sub_button = 0,
+		zoneenv2_record_sub_chest = 1,
+		zoneenv2_record_sub_pot = 2,
+		zoneenv2_record_sub_gate = 3,
+		zoneenv2_record_sub_wall = 4,
+		zoneenv2_record_sub_refiner = 5,
+		zoneenv2_record_sub_control_point = 6,
+		zoneenv2_record_sub_portal = 7,
+		zoneenv2_record_sub_portal_list = 8,
+		zoneenv2_record_sub_foot_switch = 9,
+		zoneenv2_record_sub_effect_region = 10,
+		zoneenv2_record_sub_airdash = 11,
+		zoneenv2_record_sub_airdash_leave = 12,
+		zoneenv2_record_sub_oceanic_region = 13,
+		zoneenv2_record_sub_fall_death = 14,
+		zoneenv2_record_sub_multiple_loop = 15,
+		zoneenv2_record_sub_deck = 16,
+		zoneenv2_record_sub_fishing_point = 17,
+		zoneenv2_record_sub_attraction_popup = 18,
+		zoneenv2_record_sub_enter_arena_dungeonlobby = 19,
+		zoneenv2_record_sub_count = 20,
+    };
 #pragma pack(push, 1)
 	struct zoneenv2_Record : DrEl
 	{

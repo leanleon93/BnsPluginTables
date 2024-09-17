@@ -6,6 +6,11 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class contents_guide_RecordSubType : __int32
+    {
+		contents_guide_record_sub_boss_monster = 0,
+		contents_guide_record_sub_count = 1,
+    };
 #pragma pack(push, 1)
 	struct contents_guide_Record : DrEl
 	{

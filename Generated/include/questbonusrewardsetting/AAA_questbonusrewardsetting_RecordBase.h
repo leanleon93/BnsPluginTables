@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class questbonusrewardsetting_RecordSubType : __int32
+    {
+		questbonusrewardsetting_record_sub_sealed_level = 0,
+		questbonusrewardsetting_record_sub_difficulty_type = 1,
+		questbonusrewardsetting_record_sub_ignore_difficulty = 2,
+		questbonusrewardsetting_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct questbonusrewardsetting_Record : DrEl
 	{

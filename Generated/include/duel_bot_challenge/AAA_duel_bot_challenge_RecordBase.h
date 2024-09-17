@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class duel_bot_challenge_RecordSubType : __int32
+    {
+		duel_bot_challenge_record_sub_time_attack_mode = 0,
+		duel_bot_challenge_record_sub_round_mode = 1,
+		duel_bot_challenge_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct duel_bot_challenge_Record : DrEl
 	{

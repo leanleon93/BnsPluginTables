@@ -6,6 +6,11 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class collecting_RecordSubType : __int32
+    {
+		collecting_record_sub_closet = 0,
+		collecting_record_sub_count = 1,
+    };
 #pragma pack(push, 1)
 	struct collecting_Record : DrEl
 	{

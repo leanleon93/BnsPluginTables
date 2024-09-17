@@ -6,6 +6,7 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+
 #pragma pack(push, 1)
 	struct duel_bot_challenge_strategic_tool_Record : DrEl
 	{

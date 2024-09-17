@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class challengelist_RecordSubType : __int32
+    {
+		challengelist_record_sub_dayofweek = 0,
+		challengelist_record_sub_week = 1,
+		challengelist_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct challengelist_Record : DrEl
 	{

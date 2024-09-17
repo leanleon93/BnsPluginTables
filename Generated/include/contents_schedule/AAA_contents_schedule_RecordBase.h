@@ -6,6 +6,14 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class contents_schedule_RecordSubType : __int32
+    {
+		contents_schedule_record_sub_random_store_1 = 0,
+		contents_schedule_record_sub_random_store_2 = 1,
+		contents_schedule_record_sub_treasure_board = 2,
+		contents_schedule_record_sub_unlocated_store = 3,
+		contents_schedule_record_sub_count = 4,
+    };
 #pragma pack(push, 1)
 	struct contents_schedule_Record : DrEl
 	{

@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class skipquest_RecordSubType : __int32
+    {
+		skipquest_record_sub_epic = 0,
+		skipquest_record_sub_normal = 1,
+		skipquest_record_sub_job = 2,
+		skipquest_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct skipquest_Record : DrEl
 	{

@@ -6,6 +6,15 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class customizingpreview_RecordSubType : __int32
+    {
+		customizingpreview_record_sub_pose = 0,
+		customizingpreview_record_sub_face_look = 1,
+		customizingpreview_record_sub_costume = 2,
+		customizingpreview_record_sub_light = 3,
+		customizingpreview_record_sub_silhouette = 4,
+		customizingpreview_record_sub_count = 5,
+    };
 #pragma pack(push, 1)
 	struct customizingpreview_Record : DrEl
 	{

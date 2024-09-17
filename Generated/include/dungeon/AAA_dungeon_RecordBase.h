@@ -6,6 +6,14 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class dungeon_RecordSubType : __int32
+    {
+		dungeon_record_sub_none = 0,
+		dungeon_record_sub_normal = 1,
+		dungeon_record_sub_sealed = 2,
+		dungeon_record_sub_wave = 3,
+		dungeon_record_sub_count = 4,
+    };
 #pragma pack(push, 1)
 	struct dungeon_Record : DrEl
 	{

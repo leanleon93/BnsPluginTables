@@ -6,6 +6,15 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class zonetriggereventstage_RecordSubType : __int32
+    {
+		zonetriggereventstage_record_sub_stage_stand_by_classic_field = 0,
+		zonetriggereventstage_record_sub_stage_stand_by_guild_battle_field_entrance = 1,
+		zonetriggereventstage_record_sub_stage_stand_by_persistant_zone = 2,
+		zonetriggereventstage_record_sub_stage_stand_by_instant_zone = 3,
+		zonetriggereventstage_record_sub_stage = 4,
+		zonetriggereventstage_record_sub_count = 5,
+    };
 #pragma pack(push, 1)
 	struct zonetriggereventstage_Record : DrEl
 	{

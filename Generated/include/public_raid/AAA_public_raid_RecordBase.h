@@ -6,6 +6,17 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class public_raid_RecordSubType : __int32
+    {
+		public_raid_record_sub_public_raid_1 = 0,
+		public_raid_record_sub_public_raid_2 = 1,
+		public_raid_record_sub_public_raid_3 = 2,
+		public_raid_record_sub_public_raid_4 = 3,
+		public_raid_record_sub_public_raid_5 = 4,
+		public_raid_record_sub_inter_battle_field = 5,
+		public_raid_record_sub_guerrilla_event = 6,
+		public_raid_record_sub_count = 7,
+    };
 #pragma pack(push, 1)
 	struct public_raid_Record : DrEl
 	{

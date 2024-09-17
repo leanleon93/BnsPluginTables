@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class boast_RecordSubType : __int32
+    {
+		boast_record_sub_npc_kill = 0,
+		boast_record_sub_duel = 1,
+		boast_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct boast_Record : DrEl
 	{

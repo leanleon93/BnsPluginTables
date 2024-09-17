@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class constellation_star_option_RecordSubType : __int32
+    {
+		constellation_star_option_record_sub_ability = 0,
+		constellation_star_option_record_sub_effect = 1,
+		constellation_star_option_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct constellation_star_option_Record : DrEl
 	{

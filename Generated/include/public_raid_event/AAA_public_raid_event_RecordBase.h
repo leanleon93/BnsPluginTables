@@ -6,6 +6,11 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class public_raid_event_RecordSubType : __int32
+    {
+		public_raid_event_record_sub_score_event = 0,
+		public_raid_event_record_sub_count = 1,
+    };
 #pragma pack(push, 1)
 	struct public_raid_event_Record : DrEl
 	{

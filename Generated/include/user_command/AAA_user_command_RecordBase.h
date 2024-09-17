@@ -6,6 +6,14 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class user_command_RecordSubType : __int32
+    {
+		user_command_record_sub_command = 0,
+		user_command_record_sub_social = 1,
+		user_command_record_sub_system_social = 2,
+		user_command_record_sub_emoticon = 3,
+		user_command_record_sub_count = 4,
+    };
 #pragma pack(push, 1)
 	struct user_command_Record : DrEl
 	{

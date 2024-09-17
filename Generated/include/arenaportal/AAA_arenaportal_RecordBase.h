@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class arenaportal_RecordSubType : __int32
+    {
+		arenaportal_record_sub_duel = 0,
+		arenaportal_record_sub_dungeon = 1,
+		arenaportal_record_sub_public_raid = 2,
+		arenaportal_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct arenaportal_Record : DrEl
 	{

@@ -6,6 +6,14 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class fielditemdrop_RecordSubType : __int32
+    {
+		fielditemdrop_record_sub_npc = 0,
+		fielditemdrop_record_sub_env = 1,
+		fielditemdrop_record_sub_quest = 2,
+		fielditemdrop_record_sub_npc_deadbody = 3,
+		fielditemdrop_record_sub_count = 4,
+    };
 #pragma pack(push, 1)
 	struct fielditemdrop_Record : DrEl
 	{

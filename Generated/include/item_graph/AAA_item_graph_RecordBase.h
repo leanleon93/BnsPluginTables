@@ -6,6 +6,12 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class item_graph_RecordSubType : __int32
+    {
+		item_graph_record_sub_seed = 0,
+		item_graph_record_sub_edge = 1,
+		item_graph_record_sub_count = 2,
+    };
 #pragma pack(push, 1)
 	struct item_graph_Record : DrEl
 	{

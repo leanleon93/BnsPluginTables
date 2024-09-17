@@ -6,6 +6,13 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class party_battle_field_zone_RecordSubType : __int32
+    {
+		party_battle_field_zone_record_sub_occupation_war = 0,
+		party_battle_field_zone_record_sub_capture_the_flag = 1,
+		party_battle_field_zone_record_sub_lead_the_ball = 2,
+		party_battle_field_zone_record_sub_count = 3,
+    };
 #pragma pack(push, 1)
 	struct party_battle_field_zone_Record : DrEl
 	{

@@ -6,6 +6,19 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class zonetriggereventcond_RecordSubType : __int32
+    {
+		zonetriggereventcond_record_sub_weekly_event = 0,
+		zonetriggereventcond_record_sub_timeout_event = 1,
+		zonetriggereventcond_record_sub_npc_killed_event = 2,
+		zonetriggereventcond_record_sub_npc_killed_event2 = 3,
+		zonetriggereventcond_record_sub_npc_survived_score_decision_timeout_event = 4,
+		zonetriggereventcond_record_sub_npc_survived_timeout_event = 5,
+		zonetriggereventcond_record_sub_boss_challenge_timeout_event = 6,
+		zonetriggereventcond_record_sub_boss_challenge_round_score_event = 7,
+		zonetriggereventcond_record_sub_boss_challenge_boss_npc_killed_event = 8,
+		zonetriggereventcond_record_sub_count = 9,
+    };
 #pragma pack(push, 1)
 	struct zonetriggereventcond_Record : DrEl
 	{

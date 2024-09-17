@@ -6,6 +6,31 @@
 #include "../BnsCustomProperties.h"
 
 namespace Data {
+    enum class npctalkmessage_RecordSubType : __int32
+    {
+		npctalkmessage_record_sub_branch = 0,
+		npctalkmessage_record_sub_questmessage = 1,
+		npctalkmessage_record_sub_teleport = 2,
+		npctalkmessage_record_sub_craft = 3,
+		npctalkmessage_record_sub_faction_coin_exchange = 4,
+		npctalkmessage_record_sub_store = 5,
+		npctalkmessage_record_sub_warehouse = 6,
+		npctalkmessage_record_sub_auction = 7,
+		npctalkmessage_record_sub_delivery = 8,
+		npctalkmessage_record_sub_make_summoned = 9,
+		npctalkmessage_record_sub_summoned_beauty_shop = 10,
+		npctalkmessage_record_sub_summoned_name_change = 11,
+		npctalkmessage_record_sub_create_guild = 12,
+		npctalkmessage_record_sub_join_faction = 13,
+		npctalkmessage_record_sub_transfer_faction = 14,
+		npctalkmessage_record_sub_contribute_guild_reputation = 15,
+		npctalkmessage_record_sub_dungeon_progress = 16,
+		npctalkmessage_record_sub_select_join_faction = 17,
+		npctalkmessage_record_sub_guild_customize = 18,
+		npctalkmessage_record_sub_job_change_join = 19,
+		npctalkmessage_record_sub_job_change_show = 20,
+		npctalkmessage_record_sub_count = 21,
+    };
 #pragma pack(push, 1)
 	struct npctalkmessage_Record : DrEl
 	{
