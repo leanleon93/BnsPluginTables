@@ -1,0 +1,19 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
+#pragma once
+#include "AAA_field_zone_RecordBase.h"
+
+namespace Data {
+#pragma pack(push, 1)
+	struct field_zone_guild_battle_field_entrance_Record : field_zone_Record
+	{
+	public:
+		Data::TableRef guild_battle_field_zone;
+int guild_battle_field_zone_tableId(){return 161;};
+__int8 min_fixed_channel;
+
+		static __int32 SubType() { return 1; }
+	};
+#pragma pack(pop)
+}
