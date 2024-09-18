@@ -1,0 +1,19 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
+#pragma once
+#include "AAA_achievement_register_RecordBase.h"
+
+namespace BnsTables::KR {
+#pragma pack(push, 1)
+	struct achievement_register_defend_npc_skill_Record : achievement_register_Record
+	{
+	public:
+		BnsTables::Shared::TableRef npc_skill;
+int npc_skill_tableId(){return 337;};
+__int32 skill_id[8];
+
+		static __int32 SubType() { return 11; }
+	};
+#pragma pack(pop)
+}
