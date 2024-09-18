@@ -6,6 +6,7 @@
 #include <unordered_map>
 #include "../BnsCustomProperties.h"
 namespace BnsTables::KR {
+	const __int16 TableCount = 476;
 	enum class TableNameEnum : __int16 {
 		ability_list = 1,
 		abnormalcamera = 2,
