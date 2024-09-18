@@ -3,7 +3,7 @@
 */
 #pragma once
 
-namespace Data {
+namespace BnsTables::Shared {
 	#pragma pack(push, 1)
 	const struct ExplicitTableRef {__int32 TableId; __int64 Key; };
 const struct IconRef {__int64 IcontextureId; __int32 IconIndex; };
@@ -21,8 +21,8 @@ const struct DataView {
 		DataView(const char* ptr, long long len) : Data(ptr), Length(len) {}
 	};
 struct RecordResult {
-		Data::DataView* recordDataView;
-		Data::DataView* lookupDataView;
+		BnsTables::Shared::DataView* recordDataView;
+		BnsTables::Shared::DataView* lookupDataView;
 	};
 
 	#pragma pack(pop)

@@ -3,7 +3,7 @@
 */
 #pragma once
 #include "./DrEl.h"
-namespace Data
+namespace BnsTables::Shared
 {
 #pragma pack(push, 1)
     struct BnsGenericKeyTable : DrEl
