@@ -10,6 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		__int16 value[4];
+__int32 value_Size() const {return 4;};
 bool either;
 
 		static __int32 SubType() { return 14; }

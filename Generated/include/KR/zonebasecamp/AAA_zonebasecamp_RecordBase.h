@@ -23,7 +23,7 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef area;
-int area_tableId(){return 456;};
+int area_tableId() const {return 456;};
 BnsTables::Shared::XYZ center;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
@@ -36,7 +36,6 @@ BnsTables::Shared::XYZ center;
 	{
 		zonebasecamp_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonebasecamp_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

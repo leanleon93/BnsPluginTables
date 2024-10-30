@@ -23,9 +23,9 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int32 zone;
-__int8 zone_mode_set_id;
-__int8 zone_mode;
-__int8 branch_id;
+signed char zone_mode_set_id;
+signed char zone_mode;
+signed char branch_id;
 
             };
 			unsigned __int64 key;
@@ -33,15 +33,17 @@ __int8 branch_id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef next_cond[2];
-int next_cond_tableId(){return 457;};
-__int8 next_cond_branch_id[2];
-__int8 broadcast_context;
+__int32 next_cond_Size() const {return 2;};
+int next_cond_tableId() const {return 475;};
+signed char next_cond_branch_id[2];
+__int32 next_cond_branch_id_Size() const {return 2;};
+signed char broadcast_context;
 char Pad0[1];
 wchar_t* start_stage_kismet;
 wchar_t* end_stage_kismet;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 16); }
-		static __int16 TableId() { return 458; }
+		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -50,7 +52,6 @@ wchar_t* end_stage_kismet;
 	{
 		zonetriggereventstage_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonetriggereventstage_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

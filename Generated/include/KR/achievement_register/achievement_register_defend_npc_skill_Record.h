@@ -10,8 +10,9 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef npc_skill;
-int npc_skill_tableId(){return 337;};
+int npc_skill_tableId() const {return 337;};
 __int32 skill_id[8];
+__int32 skill_id_Size() const {return 8;};
 
 		static __int32 SubType() { return 11; }
 	};

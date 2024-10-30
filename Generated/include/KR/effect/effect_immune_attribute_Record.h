@@ -10,6 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		__int16 immune_attribute[4];
+__int32 immune_attribute_Size() const {return 4;};
 __int64 immune_attribute_value;
 __int64 immune_attribute_value_2;
 __int64 immune_attribute_value_3;

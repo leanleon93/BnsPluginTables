@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef arenaportal;
-int arenaportal_tableId(){return 13;};
+int arenaportal_tableId() const {return 13;};
 
 		static __int32 SubType() { return 2; }
 	};

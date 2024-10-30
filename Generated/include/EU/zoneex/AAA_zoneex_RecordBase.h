@@ -20,12 +20,12 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 download_level;
+		signed char download_level;
 char Pad0[3];
 wchar_t* dungeon_guide_path;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 449; }
+		static __int16 TableId() { return 467; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -34,7 +34,6 @@ wchar_t* dungeon_guide_path;
 	{
 		zoneex_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneex_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

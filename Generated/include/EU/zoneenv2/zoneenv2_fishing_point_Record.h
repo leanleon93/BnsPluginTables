@@ -9,8 +9,9 @@ namespace BnsTables::EU {
 	struct zoneenv2_fishing_point_Record : zoneenv2_Record
 	{
 	public:
-		BnsTables::Shared::TableRef fishing_field;
-int fishing_field_tableId(){return 144;};
+		char Pad_sub_0[2];
+BnsTables::Shared::TableRef fishing_field;
+int fishing_field_tableId() const {return 149;};
 
 		static __int32 SubType() { return 17; }
 	};

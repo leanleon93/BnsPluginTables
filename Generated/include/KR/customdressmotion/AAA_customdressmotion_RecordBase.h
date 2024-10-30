@@ -15,16 +15,18 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 order;
-__int8 race;
-__int8 sex;
+signed char race;
+signed char sex;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* sequence;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+wchar_t* sequence;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
@@ -37,7 +39,6 @@ __int16 icon_index;
 	{
 		customdressmotion_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customdressmotion_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

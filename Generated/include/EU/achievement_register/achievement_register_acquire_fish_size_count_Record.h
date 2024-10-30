@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int32 fish_size;
 
-		static __int32 SubType() { return 66; }
+		static __int32 SubType() { return 69; }
 	};
 #pragma pack(pop)
 }

@@ -24,7 +24,7 @@ __int16 group_id;
 		wchar_t* alias;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 447; }
+		static __int16 TableId() { return 465; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +33,6 @@ __int16 group_id;
 	{
 		zoneenv2spawnrandomgroup_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneenv2spawnrandomgroup_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -10,7 +10,8 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef condition_event[3];
-int condition_event_tableId(){return 63;};
+__int32 condition_event_Size() const {return 3;};
+int condition_event_tableId() const {return 63;};
 
 		static __int32 SubType() { return 1; }
 	};

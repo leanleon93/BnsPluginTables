@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct user_command_command_Record : user_command_Record
 	{
 	public:
-		__int8 command;
+		signed char command;
 
 		static __int32 SubType() { return 0; }
 	};

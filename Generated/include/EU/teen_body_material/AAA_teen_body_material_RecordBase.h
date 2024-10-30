@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -24,7 +25,7 @@ wchar_t* teen_body_material_name;
 wchar_t* body_mesh_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 400; }
+		static __int16 TableId() { return 415; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +34,6 @@ wchar_t* body_mesh_name;
 	{
 		teen_body_material_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::teen_body_material_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

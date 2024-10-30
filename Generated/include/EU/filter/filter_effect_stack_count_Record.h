@@ -10,11 +10,13 @@ namespace BnsTables::EU {
 	{
 	public:
 		wchar_t* effect_type;
-__int8 effect_slot;
-__int8 term_op;
-__int8 op[2];
+signed char effect_slot;
+signed char term_op;
+signed char op[2];
+__int32 op_Size() const {return 2;};
 char Pad_sub_0[2];
 __int64 value[2];
+__int32 value_Size() const {return 2;};
 
 		static __int32 SubType() { return 35; }
 	};

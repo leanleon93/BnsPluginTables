@@ -52,36 +52,41 @@ namespace BnsTables::EU {
 		achievement_register_record_sub_transform_item = 41,
 		achievement_register_record_sub_zero_durability = 42,
 		achievement_register_record_sub_repair_item = 43,
-		achievement_register_record_sub_detach_post_attachment_count = 44,
-		achievement_register_record_sub_detach_post_attachment_money = 45,
-		achievement_register_record_sub_detach_post_attachment_item = 46,
-		achievement_register_record_sub_detach_post_attachment_item_n = 47,
-		achievement_register_record_sub_take_craft_count = 48,
-		achievement_register_record_sub_take_craft_item = 49,
-		achievement_register_record_sub_take_craft_item_n = 50,
-		achievement_register_record_sub_inventory_size = 51,
-		achievement_register_record_sub_wardrobe_size = 52,
-		achievement_register_record_sub_depot_size = 53,
-		achievement_register_record_sub_depository_2_size = 54,
-		achievement_register_record_sub_pc_level = 55,
-		achievement_register_record_sub_pc_mastery_level = 56,
-		achievement_register_record_sub_client_only = 57,
-		achievement_register_record_sub_party_battle_win_count = 58,
-		achievement_register_record_sub_party_battle_challenge_count = 59,
-		achievement_register_record_sub_party_battle_grade = 60,
-		achievement_register_record_sub_lead_the_ball_goal_in_count = 61,
-		achievement_register_record_sub_skill_training_subject_complete = 62,
-		achievement_register_record_sub_dispose_item_buy_price_required_point = 63,
-		achievement_register_record_sub_acquire_fish_count = 64,
-		achievement_register_record_sub_acquire_specific_fish_count = 65,
-		achievement_register_record_sub_acquire_fish_size_count = 66,
-		achievement_register_record_sub_acquire_fish_grade_count = 67,
-		achievement_register_record_sub_acquire_fish_size_grade_count = 68,
-		achievement_register_record_sub_accumulate_life_contents_point_by_fishing = 69,
-		achievement_register_record_sub_hyper_racing_game_participation = 70,
-		achievement_register_record_sub_hyper_racing_game_finish = 71,
-		achievement_register_record_sub_hyper_racing_game_record = 72,
-		achievement_register_record_sub_count = 73,
+		achievement_register_record_sub_check_combination_count = 44,
+		achievement_register_record_sub_completition_star_words = 45,
+		achievement_register_record_sub_detach_post_attachment_count = 46,
+		achievement_register_record_sub_detach_post_attachment_money = 47,
+		achievement_register_record_sub_detach_post_attachment_item = 48,
+		achievement_register_record_sub_detach_post_attachment_item_n = 49,
+		achievement_register_record_sub_take_craft_count = 50,
+		achievement_register_record_sub_take_craft_item = 51,
+		achievement_register_record_sub_take_craft_item_n = 52,
+		achievement_register_record_sub_inventory_size = 53,
+		achievement_register_record_sub_wardrobe_size = 54,
+		achievement_register_record_sub_depot_size = 55,
+		achievement_register_record_sub_depository_2_size = 56,
+		achievement_register_record_sub_pc_level = 57,
+		achievement_register_record_sub_pc_mastery_level = 58,
+		achievement_register_record_sub_client_only = 59,
+		achievement_register_record_sub_party_battle_win_count = 60,
+		achievement_register_record_sub_party_battle_challenge_count = 61,
+		achievement_register_record_sub_party_battle_grade = 62,
+		achievement_register_record_sub_lead_the_ball_goal_in_count = 63,
+		achievement_register_record_sub_skill_training_subject_complete = 64,
+		achievement_register_record_sub_dispose_item_buy_price_required_point = 65,
+		achievement_register_record_sub_accumulate_party_battle_point_by_party_battle_field = 66,
+		achievement_register_record_sub_acquire_fish_count = 67,
+		achievement_register_record_sub_acquire_specific_fish_count = 68,
+		achievement_register_record_sub_acquire_fish_size_count = 69,
+		achievement_register_record_sub_acquire_fish_grade_count = 70,
+		achievement_register_record_sub_acquire_fish_size_grade_count = 71,
+		achievement_register_record_sub_accumulate_life_contents_point_by_fishing = 72,
+		achievement_register_record_sub_hyper_racing_game_participation = 73,
+		achievement_register_record_sub_hyper_racing_game_finish = 74,
+		achievement_register_record_sub_hyper_racing_game_record = 75,
+		achievement_register_record_sub_finish_feedback = 76,
+		achievement_register_record_sub_duel_npc_challenge_finished_floor = 77,
+		achievement_register_record_sub_count = 78,
     };
 #pragma pack(push, 1)
 	struct achievement_register_Record : BnsTables::Shared::DrEl
@@ -91,13 +96,14 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int16 id;
-__int8 job;
+signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+wchar_t* alias;
 __int16 version;
 char Pad0[2];
 __int32 max_value;
@@ -106,11 +112,12 @@ bool persistant;
 bool increment_from_client;
 char Pad1[1];
 BnsTables::Shared::TableRef achievement[8];
-int achievement_tableId(){return 6;};
+__int32 achievement_Size() const {return 8;};
+int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId(){return 405;};
+int register_name_tableId() const {return 420;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 7; }
 		static __int32 SubType() { return 0; }
 	};
@@ -120,7 +127,6 @@ int register_name_tableId(){return 405;};
 	{
 		achievement_register_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::achievement_register_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

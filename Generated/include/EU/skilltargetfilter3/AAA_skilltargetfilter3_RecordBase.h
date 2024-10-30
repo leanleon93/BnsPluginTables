@@ -14,19 +14,22 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef fire_filter_target[8];
-int fire_filter_target_tableId(){return 141;};
+__int32 fire_filter_target_Size() const {return 8;};
+int fire_filter_target_tableId() const {return 146;};
 BnsTables::Shared::TableRef exec_filter_target[8];
-int exec_filter_target_tableId(){return 141;};
+__int32 exec_filter_target_Size() const {return 8;};
+int exec_filter_target_tableId() const {return 146;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 349; }
+		static __int16 TableId() { return 363; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +38,6 @@ int exec_filter_target_tableId(){return 141;};
 	{
 		skilltargetfilter3_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skilltargetfilter3_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,8 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item[50];
-int item_tableId(){return 195;};
-__int8 item_total_count;
+__int32 item_Size() const {return 50;};
+int item_tableId() const {return 195;};
+signed char item_total_count;
 char Pad0[1];
 __int16 common_pouch_drop_rate;
 __int16 personal_pouch_drop_rate;
@@ -38,7 +39,6 @@ __int16 personal_pouch_drop_rate;
 	{
 		smart_drop_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::smart_drop_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

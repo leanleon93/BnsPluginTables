@@ -14,14 +14,16 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 before_pose;
-__int8 after_pose;
+                signed char before_pose;
+signed char after_pose;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 transit_time;
+		std::string_view before_pose_EnumValue() const {return Get_before_pose_EnumValue(key.before_pose);};
+std::string_view after_pose_EnumValue() const {return Get_after_pose_EnumValue(key.after_pose);};
+__int32 transit_time;
 wchar_t* transit_anim_seq;
 float fade_in;
 float fade_out;
@@ -37,7 +39,6 @@ float moving_blend;
 	{
 		posetransit_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::posetransit_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

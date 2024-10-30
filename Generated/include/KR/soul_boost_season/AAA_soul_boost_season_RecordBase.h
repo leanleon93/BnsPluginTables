@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef soul_boost_event;
-int soul_boost_event_tableId(){return 383;};
-__int8 max_pc_count;
+int soul_boost_event_tableId() const {return 383;};
+signed char max_pc_count;
 char Pad0[3];
 wchar_t* start_time;
 wchar_t* end_time;
 wchar_t* result_expiration_time;
-__int8 season_slot_id;
+signed char season_slot_id;
 char Pad1[3];
 wchar_t* season_name;
 wchar_t* season_name_en;
@@ -38,16 +38,18 @@ wchar_t* season_name_pt;
 wchar_t* season_name_th;
 wchar_t* season_name_vn;
 BnsTables::Shared::TableRef season_name_text;
-int season_name_text_tableId(){return 420;};
+int season_name_text_tableId() const {return 420;};
 wchar_t* season_banner_image_ref;
 bool is_battle_pass;
-__int8 required_level;
-__int8 required_mastery_level;
+signed char required_level;
+signed char required_mastery_level;
 char Pad2[1];
 BnsTables::Shared::TableRef required_preceding_quest[2];
-int required_preceding_quest_tableId(){return 294;};
+__int32 required_preceding_quest_Size() const {return 2;};
+int required_preceding_quest_tableId() const {return 294;};
 BnsTables::Shared::TableRef purchase_grade_item[10];
-int purchase_grade_item_tableId(){return 195;};
+__int32 purchase_grade_item_Size() const {return 10;};
+int purchase_grade_item_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
 		static __int16 TableId() { return 388; }
@@ -59,7 +61,6 @@ int purchase_grade_item_tableId(){return 195;};
 	{
 		soul_boost_season_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::soul_boost_season_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

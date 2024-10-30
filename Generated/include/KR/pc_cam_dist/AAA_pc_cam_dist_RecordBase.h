@@ -14,16 +14,19 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 sex;
-__int8 stance;
+                signed char race;
+signed char sex;
+signed char stance;
 bool combat_mode;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		float height_transition;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+std::string_view stance_EnumValue() const {return Get_stance_EnumValue(key.stance);};
+float height_transition;
 float middle_transition;
 float far_limit_min;
 float far_limit_max;
@@ -45,7 +48,6 @@ float modulate_factor;
 	{
 		pc_cam_dist_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pc_cam_dist_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

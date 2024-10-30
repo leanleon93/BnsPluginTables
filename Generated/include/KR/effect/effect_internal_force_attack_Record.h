@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_internal_force_attack_Record : effect_Record
 	{
 	public:
-		__int8 additional_power_probability;
+		signed char additional_power_probability;
 char Pad_sub_0[1];
 __int16 additional_power_percent;
 __int16 additional_power_diff;

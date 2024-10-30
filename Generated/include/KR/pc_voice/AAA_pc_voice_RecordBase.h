@@ -14,21 +14,24 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 id;
-__int8 sex;
+                signed char id;
+signed char sex;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 pc_voice_set_id;
-__int8 usable_race[4];
-__int8 default_race[4];
+		std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+signed char pc_voice_set_id;
+signed char usable_race[4];
+__int32 usable_race_Size() const {return 4;};
+signed char default_race[4];
+__int32 default_race_Size() const {return 4;};
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 283; }
@@ -40,7 +43,6 @@ int desc_tableId(){return 420;};
 	{
 		pc_voice_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pc_voice_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

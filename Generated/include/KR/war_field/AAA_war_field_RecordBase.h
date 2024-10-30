@@ -22,30 +22,34 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_zone;
-int main_zone_tableId(){return 461;};
+int main_zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef battle_zone[10];
-int battle_zone_tableId(){return 461;};
+__int32 battle_zone_Size() const {return 10;};
+int battle_zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef field_break_zone[2];
-int field_break_zone_tableId(){return 461;};
+__int32 field_break_zone_Size() const {return 2;};
+int field_break_zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef field_break_boss_zone;
-int field_break_boss_zone_tableId(){return 461;};
-__int8 required_level;
-__int8 required_mastery_level;
+int field_break_boss_zone_tableId() const {return 461;};
+signed char required_level;
+signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_preceding_quest[3];
-int required_preceding_quest_tableId(){return 294;};
-__int8 required_preceding_quest_check;
+__int32 required_preceding_quest_Size() const {return 3;};
+int required_preceding_quest_tableId() const {return 294;};
+signed char required_preceding_quest_check;
 char Pad1[3];
 BnsTables::Shared::TableRef field_break_zone_imprint_effect;
-int field_break_zone_imprint_effect_tableId(){return 115;};
+int field_break_zone_imprint_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef field_break_zone_imprint_env[2];
-int field_break_zone_imprint_env_tableId(){return 464;};
+__int32 field_break_zone_imprint_env_Size() const {return 2;};
+int field_break_zone_imprint_env_tableId() const {return 464;};
 BnsTables::Shared::TableRef boss_battle_zone_entrance_effect;
-int boss_battle_zone_entrance_effect_tableId(){return 115;};
+int boss_battle_zone_entrance_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef group;
-int group_tableId(){return 16;};
+int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef finish_pc_respawn;
-int finish_pc_respawn_tableId(){return 470;};
+int finish_pc_respawn_tableId() const {return 470;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 438; }
@@ -57,7 +61,6 @@ int finish_pc_respawn_tableId(){return 470;};
 	{
 		war_field_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::war_field_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

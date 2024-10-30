@@ -22,9 +22,10 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef effect[2];
-int effect_tableId(){return 115;};
+__int32 effect_Size() const {return 2;};
+int effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 27; }
@@ -36,7 +37,6 @@ int name2_tableId(){return 420;};
 	{
 		badge_set_item_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::badge_set_item_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

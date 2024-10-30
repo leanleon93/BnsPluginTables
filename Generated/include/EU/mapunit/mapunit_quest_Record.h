@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		bool ignore_quest_map_location;
-__int8 force_quest_indicator_map_depth;
+signed char force_quest_indicator_map_depth;
 bool force_tendency_simple_quest_indicator_to_change;
 
 		static __int32 SubType() { return 1; }

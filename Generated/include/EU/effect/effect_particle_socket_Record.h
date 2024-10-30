@@ -27,7 +27,7 @@ wchar_t* despawn_show3;
 wchar_t* despawn_show4;
 wchar_t* despawn_show5;
 
-		static __int32 SubType() { return 868; }
+		static __int32 SubType() { return 978; }
 	};
 #pragma pack(pop)
 }

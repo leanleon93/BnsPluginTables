@@ -21,11 +21,14 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 mission_type;
-__int8 entity_type[10];
+signed char mission_type;
+signed char entity_type[10];
+__int32 entity_type_Size() const {return 10;};
 char Pad0[1];
 wchar_t* condition_alias[10];
+__int32 condition_alias_Size() const {return 10;};
 __int64 condition[10];
+__int32 condition_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 385; }
@@ -37,7 +40,6 @@ __int64 condition[10];
 	{
 		soul_boost_mission_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::soul_boost_mission_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

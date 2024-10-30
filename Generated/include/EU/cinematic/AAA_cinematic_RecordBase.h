@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -25,12 +26,13 @@ wchar_t* cinema_resource_name;
 wchar_t* teen_cinema_name;
 wchar_t* teen_cinema_resource_name;
 BnsTables::Shared::TableRef costume;
-int costume_tableId(){return 189;};
-__int8 skippable;
+int costume_tableId() const {return 195;};
+signed char skippable;
 bool point_camera;
+bool nameplate_visible;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 56; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
+		static __int16 TableId() { return 57; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -39,7 +41,6 @@ bool point_camera;
 	{
 		cinematic_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::cinematic_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

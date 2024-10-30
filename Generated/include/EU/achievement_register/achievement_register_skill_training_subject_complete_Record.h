@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef skill_training_room_group;
-int skill_training_room_group_tableId(){return 357;};
+int skill_training_room_group_tableId() const {return 371;};
 
-		static __int32 SubType() { return 62; }
+		static __int32 SubType() { return 64; }
 	};
 #pragma pack(pop)
 }

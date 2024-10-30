@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -31,7 +32,6 @@ namespace BnsTables::EU {
 	{
 		attraction_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::attraction_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,19 +14,21 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 before_stance;
+                signed char before_stance;
 bool before_combat;
-__int8 after_stance;
+signed char after_stance;
 bool after_combat;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* transit_anim;
+		std::string_view before_stance_EnumValue() const {return Get_before_stance_EnumValue(key.before_stance);};
+std::string_view after_stance_EnumValue() const {return Get_after_stance_EnumValue(key.after_stance);};
+wchar_t* transit_anim;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 378; }
+		static __int16 TableId() { return 393; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +37,6 @@ bool after_combat;
 	{
 		stancetransit_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::stancetransit_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

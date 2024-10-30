@@ -10,13 +10,13 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef weapon_brand;
-int weapon_brand_tableId(){return 183;};
-__int8 weapon_grade;
+int weapon_brand_tableId() const {return 189;};
+signed char weapon_grade;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef weapon_gem_brand;
-int weapon_gem_brand_tableId(){return 183;};
-__int8 weapon_gem_grade;
-__int8 weapon_gem_level;
+int weapon_gem_brand_tableId() const {return 189;};
+signed char weapon_gem_grade;
+signed char weapon_gem_level;
 
 		static __int32 SubType() { return 37; }
 	};

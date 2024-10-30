@@ -26,7 +26,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 event_duration;
-__int8 event_type;
+signed char event_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 291; }
@@ -38,7 +38,6 @@ __int8 event_type;
 	{
 		public_raid_event_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::public_raid_event_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

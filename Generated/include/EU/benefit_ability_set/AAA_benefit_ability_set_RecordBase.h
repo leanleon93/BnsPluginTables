@@ -20,11 +20,14 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 ability[4];
+		signed char ability[4];
+__int32 ability_Size() const {return 4;};
 __int32 ability_value[4];
+__int32 ability_value_Size() const {return 4;};
 __int32 ability_base_value[4];
+__int32 ability_base_value_Size() const {return 4;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 38; }
@@ -36,7 +39,6 @@ int name2_tableId(){return 405;};
 	{
 		benefit_ability_set_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::benefit_ability_set_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,17 +14,18 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
+                signed char race;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* animset;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+wchar_t* animset;
 BnsTables::Shared::TableRef moveanim;
-int moveanim_tableId(){return 408;};
+int moveanim_tableId() const {return 408;};
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId(){return 85;};
+int appearance_tableId() const {return 85;};
 wchar_t* sword;
 wchar_t* glove_r;
 wchar_t* glove_l;
@@ -42,7 +43,6 @@ wchar_t* gun_l;
 	{
 		summoned_appearance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::summoned_appearance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

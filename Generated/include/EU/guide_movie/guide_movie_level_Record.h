@@ -9,9 +9,9 @@ namespace BnsTables::EU {
 	struct guide_movie_level_Record : guide_movie_Record
 	{
 	public:
-		__int8 normal_level;
-__int8 mastery_level;
-__int8 account_level;
+		signed char normal_level;
+signed char mastery_level;
+signed char account_level;
 
 		static __int32 SubType() { return 0; }
 	};

@@ -14,17 +14,20 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 job;
+                signed char race;
+signed char job;
 __int16 level;
-__int8 contents_type;
+signed char contents_type;
 bool is_duelbot_summoned;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int64 max_hp;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view contents_type_EnumValue() const {return Get_contents_type_EnumValue(key.contents_type);};
+__int64 max_hp;
 __int16 modify_cast_speed_percent;
 char Pad0[2];
 __int64 hp_regen;
@@ -194,7 +197,6 @@ __int16 r_summon_ability_rate_hypermove_power_value;
 	{
 		summonedlevel_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::summonedlevel_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

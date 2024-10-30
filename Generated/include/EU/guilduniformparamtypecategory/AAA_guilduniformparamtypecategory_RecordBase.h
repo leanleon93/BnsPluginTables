@@ -14,20 +14,22 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 param_type_category;
+                signed char param_type_category;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 param_type[28];
+		std::string_view param_type_category_EnumValue() const {return Get_param_type_category_EnumValue(key.param_type_category);};
+__int32 param_type[28];
+__int32 param_type_Size() const {return 28;};
 __int32 master_param_type;
 BnsTables::Shared::TableRef category_name;
-int category_name_tableId(){return 405;};
-__int8 payment_type;
+int category_name_tableId() const {return 420;};
+signed char payment_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 171; }
+		static __int16 TableId() { return 175; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -36,7 +38,6 @@ __int8 payment_type;
 	{
 		guilduniformparamtypecategory_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guilduniformparamtypecategory_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

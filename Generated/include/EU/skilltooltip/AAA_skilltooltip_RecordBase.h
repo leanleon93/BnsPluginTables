@@ -14,47 +14,50 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef skill;
-int skill_tableId(){return 324;};
-__int8 tooltip_group;
-__int8 ect_order;
-__int8 ect_order_english;
-__int8 ect_order_french;
-__int8 ect_order_german;
-__int8 ect_order_russian;
-__int8 ect_order_bportuguese;
+int skill_tableId() const {return 337;};
+signed char tooltip_group;
+signed char ect_order;
+signed char ect_order_english;
+signed char ect_order_french;
+signed char ect_order_german;
+signed char ect_order_russian;
+signed char ect_order_bportuguese;
 char Pad0[1];
 BnsTables::Shared::TableRef effect_attribute;
-int effect_attribute_tableId(){return 350;};
+int effect_attribute_tableId() const {return 364;};
 wchar_t* effect_arg[4];
+__int32 effect_arg_Size() const {return 4;};
 BnsTables::Shared::TableRef condition_attribute;
-int condition_attribute_tableId(){return 350;};
+int condition_attribute_tableId() const {return 364;};
 wchar_t* condition_arg[2];
+__int32 condition_arg_Size() const {return 2;};
 BnsTables::Shared::TableRef target_attribute;
-int target_attribute_tableId(){return 350;};
+int target_attribute_tableId() const {return 364;};
 BnsTables::Shared::TableRef before_stance_attribute;
-int before_stance_attribute_tableId(){return 350;};
+int before_stance_attribute_tableId() const {return 364;};
 BnsTables::Shared::TableRef after_stance_attribute;
-int after_stance_attribute_tableId(){return 350;};
+int after_stance_attribute_tableId() const {return 364;};
 BnsTables::Shared::TableRef default_text;
-int default_text_tableId(){return 405;};
+int default_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef attribute_color_text;
-int attribute_color_text_tableId(){return 405;};
-__int8 skill_modify_diff_repeat_count;
+int attribute_color_text_tableId() const {return 420;};
+signed char skill_modify_diff_repeat_count;
 char Pad1[1];
 __int16 skill_attack_attribute_coefficient_percent;
 BnsTables::Shared::TableRef item_default_text;
-int item_default_text_tableId(){return 405;};
+int item_default_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef item_replace_text;
-int item_replace_text_tableId(){return 405;};
+int item_replace_text_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 15); }
-		static __int16 TableId() { return 351; }
+		static __int16 TableId() { return 365; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -63,7 +66,6 @@ int item_replace_text_tableId(){return 405;};
 	{
 		skilltooltip_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skilltooltip_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

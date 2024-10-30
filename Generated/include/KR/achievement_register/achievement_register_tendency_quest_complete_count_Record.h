@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::ExplicitTableRef required_attraction;
-__int8 tendency_id;
+signed char tendency_id;
 
 		static __int32 SubType() { return 17; }
 	};

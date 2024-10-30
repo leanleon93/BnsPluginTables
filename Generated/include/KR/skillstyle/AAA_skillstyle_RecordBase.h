@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 wchar_t* skill_icon_symbol_imageset;
 wchar_t* skill_tooltip_symbol_imageset;
 BnsTables::Shared::TableRef skill_tooltip_symbol_text;
-int skill_tooltip_symbol_text_tableId(){return 420;};
+int skill_tooltip_symbol_text_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 359; }
@@ -36,7 +36,6 @@ int skill_tooltip_symbol_text_tableId(){return 420;};
 	{
 		skillstyle_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillstyle_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

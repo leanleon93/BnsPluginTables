@@ -14,8 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 level;
-__int8 mastery_level;
+                signed char level;
+signed char mastery_level;
 
             };
 			unsigned __int64 key;
@@ -50,7 +50,7 @@ __int32 nova_min;
 __int32 nova_max;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 193; }
+		static __int16 TableId() { return 199; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -59,7 +59,6 @@ __int32 nova_max;
 	{
 		itemgearscore_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemgearscore_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

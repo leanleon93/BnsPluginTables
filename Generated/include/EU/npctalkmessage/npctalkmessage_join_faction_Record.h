@@ -9,12 +9,12 @@ namespace BnsTables::EU {
 	struct npctalkmessage_join_faction_Record : npctalkmessage_Record
 	{
 	public:
-		__int8 population_statistics;
+		signed char population_statistics;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef end_talk_social_ok;
-int end_talk_social_ok_tableId(){return 367;};
+int end_talk_social_ok_tableId() const {return 382;};
 BnsTables::Shared::TableRef fail_population_message;
-int fail_population_message_tableId(){return 260;};
+int fail_population_message_tableId() const {return 270;};
 
 		static __int32 SubType() { return 13; }
 	};

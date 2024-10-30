@@ -14,16 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 weapon;
-__int8 combat_pose;
-__int8 stance;
-__int8 link;
+                signed char weapon;
+signed char combat_pose;
+signed char stance;
+signed char link;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		float moving_blend_time;
+		std::string_view weapon_EnumValue() const {return Get_weapon_EnumValue(key.weapon);};
+std::string_view combat_pose_EnumValue() const {return Get_combat_pose_EnumValue(key.combat_pose);};
+std::string_view stance_EnumValue() const {return Get_stance_EnumValue(key.stance);};
+std::string_view link_EnumValue() const {return Get_link_EnumValue(key.link);};
+float moving_blend_time;
 wchar_t* upper_idle;
 wchar_t* lower_idle;
 wchar_t* upper_walk_front;
@@ -87,7 +91,7 @@ wchar_t* upper_rtol;
 wchar_t* lower_rtol;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 251; }
+		static __int16 TableId() { return 261; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -96,7 +100,6 @@ wchar_t* lower_rtol;
 	{
 		moveanim_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::moveanim_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

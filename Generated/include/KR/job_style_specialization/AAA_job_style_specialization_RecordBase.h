@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 wchar_t* specialization_tag_imageset;
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 420;};
+int description_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 233; }
@@ -34,7 +35,6 @@ int description_tableId(){return 420;};
 	{
 		job_style_specialization_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_style_specialization_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

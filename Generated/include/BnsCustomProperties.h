@@ -2,6 +2,7 @@
  Generated Code! Do not manually edit this code. Modify the generator instead.
 */
 #pragma once
+#include <variant>
 
 namespace BnsTables::Shared {
 	#pragma pack(push, 1)
@@ -26,4 +27,5 @@ struct RecordResult {
 	};
 
 	#pragma pack(pop)
+	using FieldVariant = std::variant<std::monostate,__int16,bool,signed char,wchar_t*,__int64,__int32,float,BnsTables::Shared::TableRef,BnsTables::Shared::ExplicitTableRef,BnsTables::Shared::IconRef,BnsTables::Shared::TextRef,BnsTables::Shared::UnkFlag,BnsTables::Shared::RGB,BnsTables::Shared::XYZ>;
 }

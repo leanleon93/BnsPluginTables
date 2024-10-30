@@ -45,16 +45,16 @@ char Pad1[3];
 float position_x;
 float position_y;
 float position_z;
-__int8 category;
-__int8 map_depth;
-__int8 arena_dungeon_map_depth;
+signed char category;
+signed char map_depth;
+signed char arena_dungeon_map_depth;
 bool zoom;
 bool rotate;
 bool click;
 bool front;
 bool show_tooltip;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 __int16 opacity;
 __int16 size_x;
 __int16 size_y;
@@ -80,7 +80,6 @@ float center_pos_y;
 	{
 		mapunit_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mapunit_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

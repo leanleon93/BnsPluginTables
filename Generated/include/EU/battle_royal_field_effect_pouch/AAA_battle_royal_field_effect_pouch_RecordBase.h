@@ -22,7 +22,8 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef effect[4];
-int effect_tableId(){return 111;};
+__int32 effect_Size() const {return 4;};
+int effect_tableId() const {return 115;};
 __int16 radius;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
@@ -35,7 +36,6 @@ __int16 radius;
 	{
 		battle_royal_field_effect_pouch_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::battle_royal_field_effect_pouch_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

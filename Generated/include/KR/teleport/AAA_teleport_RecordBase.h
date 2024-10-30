@@ -24,22 +24,22 @@ namespace BnsTables::KR {
 bool retired;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef teleport_position;
-int teleport_position_tableId(){return 473;};
+int teleport_position_tableId() const {return 473;};
 __int16 distance_from_start_teleport;
 char Pad1[2];
 __int32 price_percent;
 BnsTables::Shared::TableRef description2;
-int description2_tableId(){return 420;};
+int description2_tableId() const {return 420;};
 BnsTables::Shared::TableRef activated_faction;
-int activated_faction_tableId(){return 135;};
+int activated_faction_tableId() const {return 135;};
 bool joined_faction;
-__int8 required_pc_level;
-__int8 required_pc_mastery_level;
-__int8 required_faction_level;
+signed char required_pc_level;
+signed char required_pc_mastery_level;
+signed char required_faction_level;
 BnsTables::Shared::TableRef ui_preceding_quest;
-int ui_preceding_quest_tableId(){return 294;};
+int ui_preceding_quest_tableId() const {return 294;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 23); }
 		static __int16 TableId() { return 416; }
@@ -51,7 +51,6 @@ int ui_preceding_quest_tableId(){return 294;};
 	{
 		teleport_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::teleport_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

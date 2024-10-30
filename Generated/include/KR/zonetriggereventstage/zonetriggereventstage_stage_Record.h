@@ -10,7 +10,8 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef fail_cond[3];
-int fail_cond_tableId(){return 475;};
+__int32 fail_cond_Size() const {return 3;};
+int fail_cond_tableId() const {return 475;};
 
 		static __int32 SubType() { return 4; }
 	};

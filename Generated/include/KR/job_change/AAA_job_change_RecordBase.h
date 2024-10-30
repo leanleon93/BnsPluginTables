@@ -22,17 +22,19 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 461;};
+int zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId(){return 195;};
-__int8 required_level;
-__int8 required_mastery_level;
+int cost_item_tableId() const {return 195;};
+signed char required_level;
+signed char required_mastery_level;
 __int16 required_quest_id[2];
+__int32 required_quest_id_Size() const {return 2;};
 __int16 required_achievement_id;
 __int16 required_achievement_step;
 char Pad0[2];
 BnsTables::Shared::TableRef appearance[7];
-int appearance_tableId(){return 85;};
+__int32 appearance_Size() const {return 7;};
+int appearance_tableId() const {return 85;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 2); }
 		static __int16 TableId() { return 225; }
@@ -44,7 +46,6 @@ int appearance_tableId(){return 85;};
 	{
 		job_change_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_change_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

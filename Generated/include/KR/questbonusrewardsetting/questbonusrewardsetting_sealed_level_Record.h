@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct questbonusrewardsetting_sealed_level_Record : questbonusrewardsetting_Record
 	{
 	public:
-		__int8 sealed_level;
+		signed char sealed_level;
 
 		static __int32 SubType() { return 0; }
 	};

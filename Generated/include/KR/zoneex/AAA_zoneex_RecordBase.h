@@ -20,7 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 download_level;
+		signed char download_level;
 char Pad0[3];
 wchar_t* dungeon_guide_path;
 
@@ -34,7 +34,6 @@ wchar_t* dungeon_guide_path;
 	{
 		zoneex_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneex_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,28 +14,35 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 job;
+                signed char race;
+signed char job;
 __int16 level;
-__int8 contents_type;
+signed char contents_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int64 id;
-__int8 sex;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view contents_type_EnumValue() const {return Get_contents_type_EnumValue(key.contents_type);};
+__int64 id;
+signed char sex;
 char Pad0[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
-int skill_tableId(){return 335;};
+__int32 skill_Size() const {return 40;};
+int skill_tableId() const {return 348;};
 BnsTables::Shared::TableRef skill3[40];
-int skill3_tableId(){return 324;};
+__int32 skill3_Size() const {return 40;};
+int skill3_tableId() const {return 337;};
 BnsTables::Shared::TableRef pc_skill3[2];
-int pc_skill3_tableId(){return 271;};
+__int32 pc_skill3_Size() const {return 2;};
+int pc_skill3_tableId() const {return 282;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
-int pc_job_style_skill3_tableId(){return 271;};
-__int8 skill_build_up_level_max;
+__int32 pc_job_style_skill3_Size() const {return 10;};
+int pc_job_style_skill3_tableId() const {return 282;};
+signed char skill_build_up_level_max;
 char Pad1[1];
 __int16 skill_build_up_point;
 __int64 max_hp;
@@ -150,7 +157,7 @@ __int16 r_defend_abnormal_dodge_modify;
 __int16 r_support_power_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 268; }
+		static __int16 TableId() { return 278; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -159,7 +166,6 @@ __int16 r_support_power_modify;
 	{
 		pc_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pc_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		bool check_vitality;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 402; }
+		static __int16 TableId() { return 417; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -32,7 +32,6 @@ namespace BnsTables::EU {
 	{
 		tencent_quest_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::tencent_quest_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

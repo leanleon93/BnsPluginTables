@@ -23,16 +23,16 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 ingame_shop_tab_id;
 BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
+int item_tableId() const {return 195;};
 __int16 item_count;
-__int8 cost_type;
+signed char cost_type;
 char Pad0[1];
 __int32 item_cost;
-__int8 level;
-__int8 mastery_level;
+signed char level;
+signed char mastery_level;
 char Pad1[2];
 BnsTables::Shared::TableRef content_quota;
-int content_quota_tableId(){return 67;};
+int content_quota_tableId() const {return 67;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 186; }
@@ -44,7 +44,6 @@ int content_quota_tableId(){return 67;};
 	{
 		ingame_shop_item_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ingame_shop_item_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

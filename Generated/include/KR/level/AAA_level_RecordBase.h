@@ -14,7 +14,7 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 level;
+                signed char level;
 
             };
 			unsigned __int64 key;
@@ -22,9 +22,11 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		__int32 exp;
 __int32 exp_boost[3];
+__int32 exp_boost_Size() const {return 3;};
 __int32 exp_boost_recharge_time[3];
-__int8 default_faction_score_acquire_level;
-__int8 half_faction_score_acquire_level;
+__int32 exp_boost_recharge_time_Size() const {return 3;};
+signed char default_faction_score_acquire_level;
+signed char half_faction_score_acquire_level;
 char Pad0[2];
 __int32 duel_death_match_1vs1_win_exp;
 __int32 duel_death_match_1vs1_lose_draw_exp;
@@ -47,12 +49,14 @@ __int32 party_battle_lead_the_ball_lose_draw_exp;
 __int32 party_battle_lead_the_ball_win_party_battle_point;
 __int32 party_battle_lead_the_ball_lose_draw_party_battle_point;
 __int32 exp_boost_sum[3];
+__int32 exp_boost_sum_Size() const {return 3;};
 __int32 express_cost;
 __int32 tencent_vitality_max[4];
+__int32 tencent_vitality_max_Size() const {return 4;};
 wchar_t* level_guide_path;
 BnsTables::Shared::TableRef exceed_level_quest;
-int exceed_level_quest_tableId(){return 294;};
-__int8 exceed_level_next_level;
+int exceed_level_quest_tableId() const {return 294;};
+signed char exceed_level_next_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 17); }
 		static __int16 TableId() { return 239; }
@@ -64,7 +68,6 @@ __int8 exceed_level_next_level;
 	{
 		level_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::level_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

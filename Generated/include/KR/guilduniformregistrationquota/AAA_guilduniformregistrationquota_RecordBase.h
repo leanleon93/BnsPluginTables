@@ -14,14 +14,14 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 increase_step;
+                signed char increase_step;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef payment_item;
-int payment_item_tableId(){return 195;};
+int payment_item_tableId() const {return 195;};
 __int32 payment_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
@@ -34,7 +34,6 @@ __int32 payment_item_count;
 	{
 		guilduniformregistrationquota_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guilduniformregistrationquota_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

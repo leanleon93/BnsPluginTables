@@ -10,22 +10,24 @@ namespace BnsTables::EU {
 	{
 	public:
 		bool all_channel;
-__int8 max_channel;
-__int8 max_event_channel;
-__int8 min_growing_channel;
+signed char max_channel;
+signed char max_event_channel;
+signed char min_growing_channel;
 __int16 total_duration_minute[2];
-__int8 persistant_zone_subtype;
+__int32 total_duration_minute_Size() const {return 2;};
+signed char persistant_zone_subtype;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef event_channel_text;
-int event_channel_text_tableId(){return 405;};
+int event_channel_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef event_notify_diff_zone[6];
-int event_notify_diff_zone_tableId(){return 443;};
+__int32 event_notify_diff_zone_Size() const {return 6;};
+int event_notify_diff_zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef event_notify_diff_zone_msg;
-int event_notify_diff_zone_msg_tableId(){return 151;};
+int event_notify_diff_zone_msg_tableId() const {return 155;};
 BnsTables::Shared::TableRef event_notify_diff_channel_msg;
-int event_notify_diff_channel_msg_tableId(){return 151;};
+int event_notify_diff_channel_msg_tableId() const {return 155;};
 BnsTables::Shared::TableRef event_notify_msg;
-int event_notify_msg_tableId(){return 151;};
+int event_notify_msg_tableId() const {return 155;};
 
 		static __int32 SubType() { return 2; }
 	};

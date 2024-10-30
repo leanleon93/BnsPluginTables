@@ -15,23 +15,26 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int32 index;
-__int8 race;
-__int8 sex;
+signed char race;
+signed char sex;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 178;};
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+BnsTables::Shared::TableRef icon_texture;
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
-__int8 param8[92];
+signed char param8[96];
+__int32 param8_Size() const {return 96;};
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 405;};
+int desc_tableId() const {return 420;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 88; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
+		static __int16 TableId() { return 89; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -40,7 +43,6 @@ int desc_tableId(){return 405;};
 	{
 		customizingdesignerpreset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customizingdesignerpreset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

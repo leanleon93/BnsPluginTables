@@ -14,13 +14,13 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 grade;
+                signed char grade;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 level;
+		signed char level;
 char Pad0[3];
 wchar_t* image_tag;
 
@@ -34,7 +34,6 @@ wchar_t* image_tag;
 	{
 		mastery_grade_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mastery_grade_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

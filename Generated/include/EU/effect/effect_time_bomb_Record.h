@@ -10,11 +10,12 @@ namespace BnsTables::EU {
 	{
 	public:
 		__int16 dispel_attribute[4];
+__int32 dispel_attribute_Size() const {return 4;};
 __int64 dispel_attribute_value;
 __int64 dispel_attribute_value_2;
 __int64 dispel_attribute_value_3;
 
-		static __int32 SubType() { return 830; }
+		static __int32 SubType() { return 940; }
 	};
 #pragma pack(pop)
 }

@@ -14,30 +14,33 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 item_type;
-__int8 customize_id;
-__int8 resource_index;
+                signed char item_type;
+signed char customize_id;
+signed char resource_index;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view item_type_EnumValue() const {return Get_item_type_EnumValue(key.item_type);};
+wchar_t* alias;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 __int32 order;
 bool usable;
 bool reset_design;
 char Pad1[2];
 BnsTables::Shared::TableRef required_item[3];
-int required_item_tableId(){return 195;};
+__int32 required_item_Size() const {return 3;};
+int required_item_tableId() const {return 195;};
 __int16 required_item_count[3];
+__int32 required_item_count_Size() const {return 3;};
 char Pad2[2];
 __int32 required_money_cost;
 
@@ -51,7 +54,6 @@ __int32 required_money_cost;
 	{
 		custom_dress_design_cost_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::custom_dress_design_cost_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

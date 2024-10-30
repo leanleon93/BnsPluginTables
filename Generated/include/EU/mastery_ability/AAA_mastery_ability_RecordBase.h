@@ -14,15 +14,17 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 job;
+                signed char race;
+signed char job;
 __int16 mastery_level;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int64 max_hp;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int64 max_hp;
 __int64 max_guard_gauge;
 __int16 max_sp;
 __int16 modify_cast_speed_percent;
@@ -132,7 +134,7 @@ __int16 r_defend_abnormal_dodge_modify;
 __int16 r_support_power_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
-		static __int16 TableId() { return 244; }
+		static __int16 TableId() { return 253; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -141,7 +143,6 @@ __int16 r_support_power_modify;
 	{
 		mastery_ability_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mastery_ability_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

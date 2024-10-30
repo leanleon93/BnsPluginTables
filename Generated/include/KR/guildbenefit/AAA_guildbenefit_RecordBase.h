@@ -21,23 +21,25 @@ __int32 duration;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 benefit_type;
+		signed char benefit_type;
 char Pad0[3];
 wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 __int16 order;
 __int16 guild_level;
 char Pad1[2];
 __int32 money;
 BnsTables::Shared::TableRef item[5];
-int item_tableId(){return 195;};
+__int32 item_Size() const {return 5;};
+int item_tableId() const {return 195;};
 __int32 item_count[5];
+__int32 item_count_Size() const {return 5;};
 __int32 guild_point;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
@@ -50,7 +52,6 @@ __int32 guild_point;
 	{
 		guildbenefit_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guildbenefit_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

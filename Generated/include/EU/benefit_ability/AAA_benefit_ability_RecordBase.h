@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -30,7 +31,6 @@ namespace BnsTables::EU {
 	{
 		benefit_ability_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::benefit_ability_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

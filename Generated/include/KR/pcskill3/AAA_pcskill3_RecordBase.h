@@ -14,16 +14,18 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 job_style;
+signed char job_style;
 char Pad0[3];
 BnsTables::Shared::TableRef skill3[40];
-int skill3_tableId(){return 337;};
+__int32 skill3_Size() const {return 40;};
+int skill3_tableId() const {return 337;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 282; }
@@ -35,7 +37,6 @@ int skill3_tableId(){return 337;};
 	{
 		pcskill3_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pcskill3_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

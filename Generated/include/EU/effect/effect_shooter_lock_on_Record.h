@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int64 lock_on_target_id;
 
-		static __int32 SubType() { return 862; }
+		static __int32 SubType() { return 972; }
 	};
 #pragma pack(pop)
 }

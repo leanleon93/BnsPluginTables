@@ -22,14 +22,16 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 461;};
-__int8 pos_count;
+int zone_tableId() const {return 461;};
+signed char pos_count;
 char Pad0[3];
 __int32 pos_x[20];
+__int32 pos_x_Size() const {return 20;};
 __int32 pos_y[20];
+__int32 pos_y_Size() const {return 20;};
 __int32 pos_z_start;
 __int32 pos_z_end;
-__int8 cell_attribute;
+signed char cell_attribute;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 459; }
@@ -41,7 +43,6 @@ __int8 cell_attribute;
 	{
 		zonecellattribute_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonecellattribute_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

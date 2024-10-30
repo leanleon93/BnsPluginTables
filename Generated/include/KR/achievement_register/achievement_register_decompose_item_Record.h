@@ -10,12 +10,12 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef item_brand;
-int item_brand_tableId(){return 189;};
-__int8 item_grade;
-__int8 item_level;
-__int8 equip_type;
+int item_brand_tableId() const {return 189;};
+signed char item_grade;
+signed char item_level;
+signed char equip_type;
 bool equip_gem_only;
-__int8 weapon_gem_level;
+signed char weapon_gem_level;
 
 		static __int32 SubType() { return 33; }
 	};

@@ -10,11 +10,11 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef cast_condition;
-int cast_condition_tableId(){return 344;};
+int cast_condition_tableId() const {return 344;};
 __int16 consume_sp_value;
 char Pad_sub_0[2];
 __int32 ui_next_combo;
-__int8 combo_start_point_flag;
+signed char combo_start_point_flag;
 
 		static __int32 SubType() { return 0; }
 	};

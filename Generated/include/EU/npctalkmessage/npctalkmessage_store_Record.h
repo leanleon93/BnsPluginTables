@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct npctalkmessage_store_Record : npctalkmessage_Record
 	{
 	public:
-		__int8 store_message_type;
+		signed char store_message_type;
 
 		static __int32 SubType() { return 5; }
 	};

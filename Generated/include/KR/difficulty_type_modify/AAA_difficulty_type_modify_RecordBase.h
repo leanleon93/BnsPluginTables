@@ -14,13 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 berserk_sequence_invoke_time[3];
+__int32 berserk_sequence_invoke_time_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 99; }
@@ -32,7 +34,6 @@ __int32 berserk_sequence_invoke_time[3];
 	{
 		difficulty_type_modify_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::difficulty_type_modify_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

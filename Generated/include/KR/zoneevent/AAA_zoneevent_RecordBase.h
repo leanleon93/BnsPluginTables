@@ -20,7 +20,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 zone;
-__int8 id;
+signed char id;
 
             };
 			unsigned __int64 key;
@@ -40,7 +40,6 @@ wchar_t* end_kismet_name;
 	{
 		zoneevent_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneevent_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

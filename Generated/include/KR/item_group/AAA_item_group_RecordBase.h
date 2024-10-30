@@ -22,8 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef member_item[50];
-int member_item_tableId(){return 195;};
-__int8 member_item_count;
+__int32 member_item_Size() const {return 50;};
+int member_item_tableId() const {return 195;};
+signed char member_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
 		static __int16 TableId() { return 202; }
@@ -35,7 +36,6 @@ __int8 member_item_count;
 	{
 		item_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

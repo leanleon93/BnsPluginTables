@@ -26,20 +26,20 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 max_strategic_skill_level;
+signed char max_strategic_skill_level;
 char Pad0[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
-__int8 grade;
+signed char grade;
 char Pad1[1];
 wchar_t* skill_image_set;
 BnsTables::Shared::TableRef skill_tooltip;
-int skill_tooltip_tableId(){return 420;};
+int skill_tooltip_tableId() const {return 420;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId(){return 420;};
+int description2_tableId() const {return 420;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 112; }
@@ -51,7 +51,6 @@ int name2_tableId(){return 420;};
 	{
 		duel_npc_challenge_strategic_skill_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::duel_npc_challenge_strategic_skill_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

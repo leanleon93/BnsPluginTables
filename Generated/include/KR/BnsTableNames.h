@@ -826,7 +826,7 @@ namespace BnsTables::KR {
 				{334, BnsTables::Shared::TableVersion(0, 1)},
 				{335, BnsTables::Shared::TableVersion(0, 19)},
 				{336, BnsTables::Shared::TableVersion(0, 61)},
-				{337, BnsTables::Shared::TableVersion(10, 4)},
+				{337, BnsTables::Shared::TableVersion(10, 5)},
 				{338, BnsTables::Shared::TableVersion(0, 13)},
 				{339, BnsTables::Shared::TableVersion(0, 7)},
 				{340, BnsTables::Shared::TableVersion(2, 0)},

@@ -14,6 +14,7 @@ __int16 start_score_amount;
 __int16 add_score_amount;
 __int16 reduce_score_amount;
 __int16 final_score[6];
+__int32 final_score_Size() const {return 6;};
 char Pad_sub_1[2];
 __int32 add_score_recycle_duration;
 

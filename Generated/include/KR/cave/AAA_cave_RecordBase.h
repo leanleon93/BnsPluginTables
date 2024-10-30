@@ -22,7 +22,8 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone[40];
-int zone_tableId(){return 461;};
+__int32 zone_Size() const {return 40;};
+int zone_tableId() const {return 461;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 50; }
@@ -34,7 +35,6 @@ int zone_tableId(){return 461;};
 	{
 		cave_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::cave_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

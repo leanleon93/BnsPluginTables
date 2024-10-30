@@ -10,11 +10,11 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 255;};
+int npc_tableId() const {return 265;};
 BnsTables::Shared::TableRef weapon;
-int weapon_tableId(){return 189;};
+int weapon_tableId() const {return 195;};
 
-		static __int32 SubType() { return 875; }
+		static __int32 SubType() { return 985; }
 	};
 #pragma pack(pop)
 }

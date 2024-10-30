@@ -23,11 +23,11 @@ namespace BnsTables::EU {
 		bool usable;
 char Pad0[3];
 BnsTables::Shared::TableRef gemstone;
-int gemstone_tableId(){return 189;};
+int gemstone_tableId() const {return 195;};
 __int16 gemstone_amount;
 char Pad1[2];
 BnsTables::Shared::TableRef abrasive;
-int abrasive_tableId(){return 189;};
+int abrasive_tableId() const {return 195;};
 __int16 abrasive_amount;
 char Pad2[2];
 __int32 base_mileage;
@@ -36,7 +36,7 @@ __int16 bonus_mileage_max;
 __int16 bonus_mileage_scale;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 250; }
+		static __int16 TableId() { return 260; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -45,7 +45,6 @@ __int16 bonus_mileage_scale;
 	{
 		mileageplan_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mileageplan_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

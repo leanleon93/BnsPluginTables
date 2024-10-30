@@ -23,18 +23,18 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef env2;
-int env2_tableId(){return 444;};
+int env2_tableId() const {return 462;};
 BnsTables::Shared::TableRef env2place;
-int env2place_tableId(){return 445;};
+int env2place_tableId() const {return 463;};
 BnsTables::Shared::TableRef random_group;
-int random_group_tableId(){return 447;};
+int random_group_tableId() const {return 465;};
 BnsTables::Shared::TableRef required_env;
-int required_env_tableId(){return 446;};
-__int8 mapunit_map_depth;
-__int8 mapunit_arena_dungeon_map_depth;
+int required_env_tableId() const {return 464;};
+signed char mapunit_map_depth;
+signed char mapunit_arena_dungeon_map_depth;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 446; }
+		static __int16 TableId() { return 464; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -43,7 +43,6 @@ __int8 mapunit_arena_dungeon_map_depth;
 	{
 		zoneenv2spawn_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneenv2spawn_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

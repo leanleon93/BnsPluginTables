@@ -14,17 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 sex;
-__int8 job;
+                signed char race;
+signed char sex;
+signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 270; }
+		static __int16 TableId() { return 281; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +36,6 @@ __int8 job;
 	{
 		pc_race_sex_job_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pc_race_sex_job_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

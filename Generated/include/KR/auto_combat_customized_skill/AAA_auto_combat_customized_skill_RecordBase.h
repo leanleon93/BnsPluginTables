@@ -15,19 +15,20 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 parent_skill_id;
-__int8 variation_id;
+signed char variation_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* name;
-__int8 sort_id;
-__int8 recommend_setting_slot_index;
+signed char sort_id;
+signed char recommend_setting_slot_index;
 char Pad0[2];
 BnsTables::Shared::TableRef recommend_setting_cast_condition[2];
-int recommend_setting_cast_condition_tableId(){return 20;};
-__int8 recommend_setting_cast_condition_op;
+__int32 recommend_setting_cast_condition_Size() const {return 2;};
+int recommend_setting_cast_condition_tableId() const {return 20;};
+signed char recommend_setting_cast_condition_op;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 21; }
@@ -39,7 +40,6 @@ __int8 recommend_setting_cast_condition_op;
 	{
 		auto_combat_customized_skill_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::auto_combat_customized_skill_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

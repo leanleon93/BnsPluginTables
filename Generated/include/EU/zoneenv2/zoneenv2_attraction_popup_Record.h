@@ -9,8 +9,9 @@ namespace BnsTables::EU {
 	struct zoneenv2_attraction_popup_Record : zoneenv2_Record
 	{
 	public:
-		BnsTables::Shared::TableRef env_entrance;
-int env_entrance_tableId(){return 117;};
+		char Pad_sub_0[2];
+BnsTables::Shared::TableRef env_entrance;
+int env_entrance_tableId() const {return 121;};
 
 		static __int32 SubType() { return 18; }
 	};

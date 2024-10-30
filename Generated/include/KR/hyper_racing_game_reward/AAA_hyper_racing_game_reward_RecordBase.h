@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -23,8 +24,10 @@ namespace BnsTables::KR {
 __int32 reward_exp;
 __int32 reward_money;
 BnsTables::Shared::TableRef reward_item[4];
-int reward_item_tableId(){return 195;};
+__int32 reward_item_Size() const {return 4;};
+int reward_item_tableId() const {return 195;};
 __int16 reward_item_count[4];
+__int32 reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 181; }
@@ -36,7 +39,6 @@ __int16 reward_item_count[4];
 	{
 		hyper_racing_game_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::hyper_racing_game_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

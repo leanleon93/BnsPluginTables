@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef sit_state_social;
-int sit_state_social_tableId(){return 381;};
+int sit_state_social_tableId() const {return 396;};
 bool can_sitdown;
 char Pad0[3];
 wchar_t* start_transit;
@@ -30,7 +30,7 @@ wchar_t* idle;
 wchar_t* end_transit;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 381; }
+		static __int16 TableId() { return 396; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -39,7 +39,6 @@ wchar_t* end_transit;
 	{
 		statesocial_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::statesocial_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

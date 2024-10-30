@@ -23,11 +23,11 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef campfire;
-int campfire_tableId(){return 47;};
+int campfire_tableId() const {return 47;};
 BnsTables::Shared::XYZ position;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 440; }
+		static __int16 TableId() { return 458; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -36,7 +36,6 @@ BnsTables::Shared::XYZ position;
 	{
 		zonecampfire_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonecampfire_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

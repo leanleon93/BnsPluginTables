@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		BnsTables::Shared::IconRef icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 157; }
+		static __int16 TableId() { return 161; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -32,7 +32,6 @@ namespace BnsTables::EU {
 	{
 		goodsicon_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::goodsicon_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

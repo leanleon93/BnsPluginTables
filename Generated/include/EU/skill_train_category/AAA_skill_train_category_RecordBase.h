@@ -14,28 +14,29 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 __int32 view_skill_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 tree_id;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int32 tree_id;
 __int16 pc_level;
 __int16 pc_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId(){return 283;};
+int complete_quest_tableId() const {return 294;};
 BnsTables::Shared::TableRef jumping_pc_complete_quest;
-int jumping_pc_complete_quest_tableId(){return 283;};
+int jumping_pc_complete_quest_tableId() const {return 294;};
 __int32 consumed_tp;
-__int8 sort_id;
+signed char sort_id;
 bool ui_invisible;
 bool context_lock_disable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 37); }
-		static __int16 TableId() { return 354; }
+		static __int16 TableId() { return 368; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -44,7 +45,6 @@ bool context_lock_disable;
 	{
 		skill_train_category_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_train_category_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

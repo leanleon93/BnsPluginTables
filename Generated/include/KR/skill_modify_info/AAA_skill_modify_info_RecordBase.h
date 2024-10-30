@@ -20,7 +20,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -30,6 +31,7 @@ __int16 recycle_duration_modify_percent;
 char Pad0[2];
 __int32 recycle_duration_modify_diff;
 __int16 sp_consume_modify_diff[2];
+__int32 sp_consume_modify_diff_Size() const {return 2;};
 __int16 damage_power_percent_modify_percent;
 char Pad1[2];
 __int32 damage_power_percent_modify_diff;
@@ -40,7 +42,7 @@ __int16 heal_percent_modify_percent;
 char Pad3[2];
 __int32 heal_percent_modify_diff;
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 420;};
+int description_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 352; }
@@ -52,7 +54,6 @@ int description_tableId(){return 420;};
 	{
 		skill_modify_info_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_modify_info_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -15,23 +15,24 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 index;
-__int8 race;
+signed char race;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+wchar_t* alias;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
-__int8 face;
-__int8 body;
-__int8 eye_color;
-__int8 eye;
-__int8 body_color;
-__int8 body_shape;
-__int8 decal;
+signed char face;
+signed char body;
+signed char eye_color;
+signed char eye;
+signed char body_color;
+signed char body_shape;
+signed char decal;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 404; }
@@ -43,7 +44,6 @@ __int8 decal;
 	{
 		summoneddesignerpreset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::summoneddesignerpreset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

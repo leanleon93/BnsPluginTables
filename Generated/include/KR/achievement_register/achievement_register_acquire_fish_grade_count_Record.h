@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct achievement_register_acquire_fish_grade_count_Record : achievement_register_Record
 	{
 	public:
-		__int8 fish_grade;
+		signed char fish_grade;
 
 		static __int32 SubType() { return 70; }
 	};

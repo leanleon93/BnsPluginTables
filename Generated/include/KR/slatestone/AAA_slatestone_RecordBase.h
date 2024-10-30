@@ -22,17 +22,24 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 __int16 group;
-__int8 grade;
+signed char grade;
 bool duplication_permission;
-__int8 modify_ability[4];
+signed char modify_ability[4];
+__int32 modify_ability_Size() const {return 4;};
 __int32 init_ability_value[4];
+__int32 init_ability_value_Size() const {return 4;};
 __int32 unit_ability_value[4];
+__int32 unit_ability_value_Size() const {return 4;};
 __int32 max_ability_value[4];
+__int32 max_ability_value_Size() const {return 4;};
 __int32 init_ability_base_value[4];
+__int32 init_ability_base_value_Size() const {return 4;};
 __int32 unit_ability_base_value[4];
+__int32 unit_ability_base_value_Size() const {return 4;};
 __int32 max_ability_base_value[4];
+__int32 max_ability_base_value_Size() const {return 4;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef icon_case;
 
@@ -46,7 +53,6 @@ BnsTables::Shared::IconRef icon_case;
 	{
 		slatestone_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::slatestone_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

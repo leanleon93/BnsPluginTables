@@ -9,10 +9,11 @@ namespace BnsTables::EU {
 	struct zoneenv2_control_point_Record : zoneenv2_Record
 	{
 	public:
-		BnsTables::Shared::TableRef manipulation_required_field_item;
-int manipulation_required_field_item_tableId(){return 137;};
+		char Pad_sub_0[2];
+BnsTables::Shared::TableRef manipulation_required_field_item;
+int manipulation_required_field_item_tableId() const {return 142;};
 BnsTables::Shared::TableRef manipulation_drop_field_item;
-int manipulation_drop_field_item_tableId(){return 138;};
+int manipulation_drop_field_item_tableId() const {return 143;};
 __int16 occupation_zone_score;
 __int16 occupation_bonus_zone_score_per_sec;
 wchar_t* friend_occupation_additive_effect;

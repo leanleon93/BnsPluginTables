@@ -22,18 +22,20 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef none_selected_icon;
 BnsTables::Shared::TableRef faction;
-int faction_tableId(){return 130;};
+int faction_tableId() const {return 135;};
 BnsTables::Shared::TableRef item[127];
-int item_tableId(){return 189;};
+__int32 item_Size() const {return 127;};
+int item_tableId() const {return 195;};
 BnsTables::Shared::TableRef buy_price[127];
-int buy_price_tableId(){return 185;};
+__int32 buy_price_Size() const {return 127;};
+int buy_price_tableId() const {return 191;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 383; }
+		static __int16 TableId() { return 398; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -42,7 +44,6 @@ int buy_price_tableId(){return 185;};
 	{
 		store2_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::store2_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

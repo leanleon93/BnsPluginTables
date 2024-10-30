@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 265;};
+int npc_tableId() const {return 265;};
 wchar_t* combat_imageset;
 wchar_t* combat_over_imageset;
 wchar_t* combat_pressed_imageset;

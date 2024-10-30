@@ -14,21 +14,23 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 sex;
-__int8 param_index;
+                signed char race;
+signed char sex;
+signed char param_index;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 min_value;
-__int8 max_value;
-__int8 step;
-__int8 desc_type;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+signed char min_value;
+signed char max_value;
+signed char step;
+signed char desc_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 90; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 91; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -37,7 +39,6 @@ __int8 desc_type;
 	{
 		customizingdetailslider_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customizingdetailslider_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

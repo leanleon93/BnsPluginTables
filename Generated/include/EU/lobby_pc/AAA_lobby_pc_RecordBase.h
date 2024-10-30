@@ -14,23 +14,27 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 job;
-__int8 sex;
-__int8 category;
+                signed char race;
+signed char job;
+signed char sex;
+signed char category;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* anim_set;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+std::string_view category_EnumValue() const {return Get_category_EnumValue(key.category);};
+wchar_t* anim_set;
 wchar_t* additional_anim_set;
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId(){return 84;};
+int appearance_tableId() const {return 85;};
 wchar_t* select_anim;
 wchar_t* idle_anim;
 BnsTables::Shared::TableRef equip_hand;
-int equip_hand_tableId(){return 189;};
+int equip_hand_tableId() const {return 195;};
 wchar_t* pc_pos;
 wchar_t* camera_pos;
 wchar_t* camera_target;
@@ -54,7 +58,7 @@ float preview_world_cam_near_height;
 float preview_world_cam_modulate_factor;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 235; }
+		static __int16 TableId() { return 242; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -63,7 +67,6 @@ float preview_world_cam_modulate_factor;
 	{
 		lobby_pc_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::lobby_pc_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

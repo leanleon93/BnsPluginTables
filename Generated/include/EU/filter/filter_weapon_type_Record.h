@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct filter_weapon_type_Record : filter_Record
 	{
 	public:
-		__int8 weapon_type[4];
+		signed char weapon_type[4];
+__int32 weapon_type_Size() const {return 4;};
 bool either;
 
 		static __int32 SubType() { return 16; }

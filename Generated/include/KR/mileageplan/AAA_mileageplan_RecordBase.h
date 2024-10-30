@@ -23,11 +23,11 @@ namespace BnsTables::KR {
 		bool usable;
 char Pad0[3];
 BnsTables::Shared::TableRef gemstone;
-int gemstone_tableId(){return 195;};
+int gemstone_tableId() const {return 195;};
 __int16 gemstone_amount;
 char Pad1[2];
 BnsTables::Shared::TableRef abrasive;
-int abrasive_tableId(){return 195;};
+int abrasive_tableId() const {return 195;};
 __int16 abrasive_amount;
 char Pad2[2];
 __int32 base_mileage;
@@ -45,7 +45,6 @@ __int16 bonus_mileage_scale;
 	{
 		mileageplan_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mileageplan_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

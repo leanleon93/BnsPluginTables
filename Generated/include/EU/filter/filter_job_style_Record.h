@@ -9,9 +9,11 @@ namespace BnsTables::EU {
 	struct filter_job_style_Record : filter_Record
 	{
 	public:
-		__int8 count;
-__int8 job[4];
-__int8 job_style[4];
+		signed char count;
+signed char job[4];
+__int32 job_Size() const {return 4;};
+signed char job_style[4];
+__int32 job_style_Size() const {return 4;};
 bool either;
 
 		static __int32 SubType() { return 3; }

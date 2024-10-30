@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		bool modifiable_by_admin;
-__int8 detail_content_name_by_admin;
+signed char detail_content_name_by_admin;
 
 		static __int32 SubType() { return 362; }
 	};

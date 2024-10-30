@@ -22,8 +22,10 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef required_item[8];
-int required_item_tableId(){return 189;};
+__int32 required_item_Size() const {return 8;};
+int required_item_tableId() const {return 195;};
 __int16 required_item_count[8];
+__int32 required_item_count_Size() const {return 8;};
 __int32 money_cost;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
@@ -36,7 +38,6 @@ __int32 money_cost;
 	{
 		badge_synthesis_cost_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::badge_synthesis_cost_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

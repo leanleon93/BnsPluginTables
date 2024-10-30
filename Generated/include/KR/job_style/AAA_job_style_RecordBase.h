@@ -14,23 +14,26 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 job;
-__int8 job_style;
+                signed char job;
+signed char job_style;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view job_style_EnumValue() const {return Get_job_style_EnumValue(key.job_style);};
+wchar_t* alias;
 wchar_t* introduce_job_style_icon;
 BnsTables::Shared::TableRef introduce_job_style_name;
-int introduce_job_style_name_tableId(){return 420;};
+int introduce_job_style_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef introduce_job_style_play_desc;
-int introduce_job_style_play_desc_tableId(){return 420;};
+int introduce_job_style_play_desc_tableId() const {return 420;};
 BnsTables::Shared::TableRef introduce_job_style_specialization[5];
-int introduce_job_style_specialization_tableId(){return 233;};
+__int32 introduce_job_style_specialization_Size() const {return 5;};
+int introduce_job_style_specialization_tableId() const {return 233;};
 BnsTables::Shared::TableRef additive_attachment;
-int additive_attachment_tableId(){return 14;};
+int additive_attachment_tableId() const {return 14;};
 wchar_t* combat_start_fx_show;
 wchar_t* combat_end_fx_show;
 wchar_t* right_weapon_particle_ref;
@@ -43,7 +46,7 @@ __int16 auto_combat_converted_distance_attacker_enemy;
 __int16 auto_combat_converted_distance_pouch;
 __int16 auto_combat_converted_distance_enemy;
 bool enable_job_style_gauge_ui;
-__int8 job_style_gauge_unit;
+signed char job_style_gauge_unit;
 bool job_style_gauge_full_charge_icon;
 char Pad0[1];
 wchar_t* job_style_gauge_full_charge_particle_ref;
@@ -59,7 +62,6 @@ float job_style_gauge_full_charge_particle_scale;
 	{
 		job_style_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_style_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

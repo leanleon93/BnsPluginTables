@@ -20,10 +20,10 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 min_value;
-__int8 max_value;
-__int8 step;
-__int8 required_guild_level;
+		signed char min_value;
+signed char max_value;
+signed char step;
+signed char required_guild_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 179; }
@@ -35,7 +35,6 @@ __int8 required_guild_level;
 	{
 		guilduniformslider_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guilduniformslider_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

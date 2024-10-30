@@ -22,21 +22,23 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 461;};
+int zone_tableId() const {return 461;};
 __int32 play_time;
 BnsTables::Shared::TableRef group;
-int group_tableId(){return 16;};
+int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId(){return 290;};
+int public_raid_tableId() const {return 290;};
 BnsTables::Shared::TableRef reward[4];
-int reward_tableId(){return 181;};
+__int32 reward_Size() const {return 4;};
+int reward_tableId() const {return 181;};
 __int32 reward_time[4];
+__int32 reward_time_Size() const {return 4;};
 BnsTables::Shared::TableRef finish_reward;
-int finish_reward_tableId(){return 181;};
+int finish_reward_tableId() const {return 181;};
 BnsTables::Shared::TableRef timeout_reward;
-int timeout_reward_tableId(){return 181;};
+int timeout_reward_tableId() const {return 181;};
 BnsTables::Shared::TableRef goal_foot_switch;
-int goal_foot_switch_tableId(){return 464;};
+int goal_foot_switch_tableId() const {return 464;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 180; }
@@ -48,7 +50,6 @@ int goal_foot_switch_tableId(){return 464;};
 	{
 		hyper_racing_game_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::hyper_racing_game_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

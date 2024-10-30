@@ -22,19 +22,35 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 count;
-__int8 item_type;
+signed char item_type;
 char Pad0[3];
 BnsTables::Shared::TableRef material_group;
-int material_group_tableId(){return 196;};
+int material_group_tableId() const {return 202;};
 BnsTables::Shared::TableRef material_group_name;
-int material_group_name_tableId(){return 405;};
+int material_group_name_tableId() const {return 420;};
+__int16 great_success_probability;
+char Pad1[2];
+BnsTables::Shared::TableRef great_success_item_group;
+int great_success_item_group_tableId() const {return 202;};
+__int16 success_probability;
+char Pad2[2];
+BnsTables::Shared::TableRef success_item_group;
+int success_item_group_tableId() const {return 202;};
+__int16 fail_probability;
+char Pad3[2];
+BnsTables::Shared::TableRef fail_item_group;
+int fail_item_group_tableId() const {return 202;};
+__int16 big_fail_probability;
+char Pad4[2];
+BnsTables::Shared::TableRef big_fail_item_group;
+int big_fail_item_group_tableId() const {return 202;};
 BnsTables::Shared::TableRef world_account_combination_cost_group;
-int world_account_combination_cost_group_tableId(){return 76;};
+int world_account_combination_cost_group_tableId() const {return 77;};
 BnsTables::Shared::TableRef reward_group_name;
-int reward_group_name_tableId(){return 405;};
+int reward_group_name_tableId() const {return 420;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 434; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static __int16 TableId() { return 449; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -43,7 +59,6 @@ int reward_group_name_tableId(){return 405;};
 	{
 		world_account_combination_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::world_account_combination_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

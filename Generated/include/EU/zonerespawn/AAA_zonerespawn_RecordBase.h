@@ -23,13 +23,14 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef area;
-int area_tableId(){return 438;};
+int area_tableId() const {return 456;};
 BnsTables::Shared::XYZ center;
 BnsTables::Shared::TableRef activated_faction[4];
-int activated_faction_tableId(){return 130;};
+__int32 activated_faction_Size() const {return 4;};
+int activated_faction_tableId() const {return 135;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 46); }
-		static __int16 TableId() { return 453; }
+		static __int16 TableId() { return 471; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +39,6 @@ int activated_faction_tableId(){return 130;};
 	{
 		zonerespawn_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonerespawn_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

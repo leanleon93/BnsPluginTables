@@ -15,23 +15,23 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 id;
-__int8 variation_index;
-__int8 variation_level;
+signed char variation_index;
+signed char variation_level;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		__int16 pc_level;
-__int8 pc_job;
+signed char pc_job;
 char Pad0[2];
 BnsTables::Shared::TableRef training_name;
-int training_name_tableId(){return 420;};
+int training_name_tableId() const {return 420;};
 BnsTables::Shared::IconRef training_icon;
 BnsTables::Shared::TableRef main_info;
-int main_info_tableId(){return 420;};
+int main_info_tableId() const {return 420;};
 BnsTables::Shared::TableRef sub_info;
-int sub_info_tableId(){return 420;};
+int sub_info_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
 		static __int16 TableId() { return 338; }
@@ -43,7 +43,6 @@ int sub_info_tableId(){return 420;};
 	{
 		skillacquirecondition_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillacquirecondition_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -30,7 +31,6 @@ namespace BnsTables::KR {
 	{
 		season_contents_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::season_contents_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

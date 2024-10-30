@@ -14,14 +14,15 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 race;
-__int8 sex;
+signed char race;
+signed char sex;
 char Pad0[2];
 wchar_t* face_anim_set_name;
 wchar_t* anim_tree_name;
@@ -45,11 +46,12 @@ float unique_soundfadetime;
 float unique_delaystoptime;
 float sound_attenuation_scale;
 float sound_volume_scale;
-__int8 param8[92];
+signed char param8[96];
+__int32 param8_Size() const {return 96;};
 float decal_radius;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 84; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 85; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -58,7 +60,6 @@ float decal_radius;
 	{
 		creatureappearance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::creatureappearance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -10,13 +10,15 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef item_brand;
-int item_brand_tableId(){return 189;};
-__int8 item_grade;
-__int8 item_level;
-__int8 equip_type[8];
+int item_brand_tableId() const {return 189;};
+signed char item_grade;
+signed char item_level;
+signed char equip_type[8];
+__int32 equip_type_Size() const {return 8;};
 char Pad_sub_0[2];
 BnsTables::Shared::TableRef slot_name[8];
-int slot_name_tableId(){return 420;};
+__int32 slot_name_Size() const {return 8;};
+int slot_name_tableId() const {return 420;};
 
 		static __int32 SubType() { return 35; }
 	};

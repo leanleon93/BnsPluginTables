@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -80,7 +81,6 @@ __int16 attack_abnormal_hit_value_support_percent;
 	{
 		formula_constant_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::formula_constant_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

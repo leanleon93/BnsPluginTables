@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
+int item_tableId() const {return 195;};
 bool use_auto_fishing;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
@@ -35,7 +35,6 @@ bool use_auto_fishing;
 	{
 		fishing_paste_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::fishing_paste_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

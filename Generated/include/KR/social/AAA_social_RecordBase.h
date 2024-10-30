@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,21 +23,21 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 duration;
 BnsTables::Shared::TableRef balloon_text;
-int balloon_text_tableId(){return 420;};
+int balloon_text_tableId() const {return 420;};
 bool voice_sync;
 char Pad0[3];
 wchar_t* show;
 __int32 balloon_duration;
 __int32 kismet_start_time;
 wchar_t* kismet;
-__int8 rotate;
+signed char rotate;
 char Pad1[3];
 BnsTables::Shared::TableRef spawn_cinematic;
-int spawn_cinematic_tableId(){return 57;};
+int spawn_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef message;
-int message_tableId(){return 155;};
-__int8 message_target_type;
-__int8 message_contents_type;
+int message_tableId() const {return 155;};
+signed char message_target_type;
+signed char message_contents_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 25); }
 		static __int16 TableId() { return 382; }
@@ -48,7 +49,6 @@ __int8 message_contents_type;
 	{
 		social_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::social_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

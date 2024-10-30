@@ -21,22 +21,22 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 systematization;
+signed char systematization;
 char Pad0[3];
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 405;};
-__int8 sort_no;
+int description_tableId() const {return 420;};
+signed char sort_no;
 char Pad1[3];
 BnsTables::Shared::TableRef group;
-int group_tableId(){return 348;};
+int group_tableId() const {return 362;};
 BnsTables::Shared::TableRef filter_group;
-int filter_group_tableId(){return 347;};
+int filter_group_tableId() const {return 361;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 346; }
+		static __int16 TableId() { return 360; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -45,7 +45,6 @@ int filter_group_tableId(){return 347;};
 	{
 		skillsystematization_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillsystematization_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

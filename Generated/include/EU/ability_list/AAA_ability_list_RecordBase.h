@@ -21,16 +21,21 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 ability[20];
+signed char ability[20];
+__int32 ability_Size() const {return 20;};
 __int16 ability_weight[20];
+__int32 ability_weight_Size() const {return 20;};
 __int32 ability_total_weight;
-__int8 ability_total_count;
+signed char ability_total_count;
 char Pad0[1];
 __int16 ability_value_min[20];
+__int32 ability_value_min_Size() const {return 20;};
 __int16 ability_value_max[20];
+__int32 ability_value_max_Size() const {return 20;};
 char Pad1[2];
 BnsTables::Shared::TableRef ability_value_distribution[20];
-int ability_value_distribution_tableId(){return 291;};
+__int32 ability_value_distribution_Size() const {return 20;};
+int ability_value_distribution_tableId() const {return 304;};
 bool draw_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
@@ -43,7 +48,6 @@ bool draw_enable;
 	{
 		ability_list_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ability_list_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

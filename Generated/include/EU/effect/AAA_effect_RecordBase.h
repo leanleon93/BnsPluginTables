@@ -695,198 +695,308 @@ namespace BnsTables::EU {
 		effect_record_sub_modify_ability_538 = 684,
 		effect_record_sub_modify_ability_539 = 685,
 		effect_record_sub_modify_ability_540 = 686,
-		effect_record_sub_glyph_condition_event_1 = 687,
-		effect_record_sub_glyph_condition_event_2 = 688,
-		effect_record_sub_glyph_condition_event_3 = 689,
-		effect_record_sub_glyph_condition_event_4 = 690,
-		effect_record_sub_glyph_condition_event_5 = 691,
-		effect_record_sub_glyph_condition_event_6 = 692,
-		effect_record_sub_glyph_condition_event_7 = 693,
-		effect_record_sub_glyph_condition_event_8 = 694,
-		effect_record_sub_glyph_condition_event_9 = 695,
-		effect_record_sub_glyph_condition_event_10 = 696,
-		effect_record_sub_glyph_condition_event_11 = 697,
-		effect_record_sub_glyph_condition_event_12 = 698,
-		effect_record_sub_glyph_condition_event_13 = 699,
-		effect_record_sub_glyph_condition_event_14 = 700,
-		effect_record_sub_glyph_condition_event_15 = 701,
-		effect_record_sub_glyph_condition_event_16 = 702,
-		effect_record_sub_glyph_condition_event_17 = 703,
-		effect_record_sub_glyph_condition_event_18 = 704,
-		effect_record_sub_glyph_condition_event_19 = 705,
-		effect_record_sub_glyph_condition_event_20 = 706,
-		effect_record_sub_glyph_condition_event_21 = 707,
-		effect_record_sub_glyph_condition_event_22 = 708,
-		effect_record_sub_glyph_condition_event_23 = 709,
-		effect_record_sub_glyph_condition_event_24 = 710,
-		effect_record_sub_glyph_condition_event_25 = 711,
-		effect_record_sub_glyph_condition_event_26 = 712,
-		effect_record_sub_glyph_condition_event_27 = 713,
-		effect_record_sub_glyph_condition_event_28 = 714,
-		effect_record_sub_glyph_condition_event_29 = 715,
-		effect_record_sub_glyph_condition_event_30 = 716,
-		effect_record_sub_glyph_condition_event_31 = 717,
-		effect_record_sub_glyph_condition_event_32 = 718,
-		effect_record_sub_glyph_condition_event_33 = 719,
-		effect_record_sub_glyph_condition_event_34 = 720,
-		effect_record_sub_glyph_condition_event_35 = 721,
-		effect_record_sub_glyph_condition_event_36 = 722,
-		effect_record_sub_glyph_condition_event_37 = 723,
-		effect_record_sub_glyph_condition_event_38 = 724,
-		effect_record_sub_glyph_condition_event_39 = 725,
-		effect_record_sub_glyph_condition_event_40 = 726,
-		effect_record_sub_glyph_condition_event_41 = 727,
-		effect_record_sub_glyph_condition_event_42 = 728,
-		effect_record_sub_glyph_condition_event_43 = 729,
-		effect_record_sub_glyph_condition_event_44 = 730,
-		effect_record_sub_glyph_condition_event_45 = 731,
-		effect_record_sub_glyph_condition_event_46 = 732,
-		effect_record_sub_glyph_condition_event_47 = 733,
-		effect_record_sub_glyph_condition_event_48 = 734,
-		effect_record_sub_glyph_condition_event_49 = 735,
-		effect_record_sub_glyph_condition_event_50 = 736,
-		effect_record_sub_glyph_condition_event_51 = 737,
-		effect_record_sub_glyph_condition_event_52 = 738,
-		effect_record_sub_glyph_condition_event_53 = 739,
-		effect_record_sub_glyph_condition_event_54 = 740,
-		effect_record_sub_glyph_condition_event_55 = 741,
-		effect_record_sub_glyph_condition_event_56 = 742,
-		effect_record_sub_glyph_condition_event_57 = 743,
-		effect_record_sub_glyph_condition_event_58 = 744,
-		effect_record_sub_glyph_condition_event_59 = 745,
-		effect_record_sub_glyph_condition_event_60 = 746,
-		effect_record_sub_glyph_condition_event_61 = 747,
-		effect_record_sub_glyph_condition_event_62 = 748,
-		effect_record_sub_glyph_condition_event_63 = 749,
-		effect_record_sub_glyph_condition_event_64 = 750,
-		effect_record_sub_glyph_condition_event_65 = 751,
-		effect_record_sub_glyph_condition_event_66 = 752,
-		effect_record_sub_glyph_condition_event_67 = 753,
-		effect_record_sub_glyph_condition_event_68 = 754,
-		effect_record_sub_glyph_condition_event_69 = 755,
-		effect_record_sub_glyph_condition_event_70 = 756,
-		effect_record_sub_glyph_condition_event_71 = 757,
-		effect_record_sub_glyph_condition_event_72 = 758,
-		effect_record_sub_glyph_condition_event_73 = 759,
-		effect_record_sub_glyph_condition_event_74 = 760,
-		effect_record_sub_glyph_condition_event_75 = 761,
-		effect_record_sub_glyph_condition_event_76 = 762,
-		effect_record_sub_glyph_condition_event_77 = 763,
-		effect_record_sub_glyph_condition_event_78 = 764,
-		effect_record_sub_glyph_condition_event_79 = 765,
-		effect_record_sub_glyph_condition_event_80 = 766,
-		effect_record_sub_glyph_condition_event_81 = 767,
-		effect_record_sub_glyph_condition_event_82 = 768,
-		effect_record_sub_glyph_condition_event_83 = 769,
-		effect_record_sub_glyph_condition_event_84 = 770,
-		effect_record_sub_glyph_condition_event_85 = 771,
-		effect_record_sub_glyph_condition_event_86 = 772,
-		effect_record_sub_glyph_condition_event_87 = 773,
-		effect_record_sub_glyph_condition_event_88 = 774,
-		effect_record_sub_glyph_condition_event_89 = 775,
-		effect_record_sub_glyph_condition_event_90 = 776,
-		effect_record_sub_glyph_condition_event_91 = 777,
-		effect_record_sub_glyph_condition_event_92 = 778,
-		effect_record_sub_glyph_condition_event_93 = 779,
-		effect_record_sub_glyph_condition_event_94 = 780,
-		effect_record_sub_glyph_condition_event_95 = 781,
-		effect_record_sub_glyph_condition_event_96 = 782,
-		effect_record_sub_glyph_condition_event_97 = 783,
-		effect_record_sub_glyph_condition_event_98 = 784,
-		effect_record_sub_glyph_condition_event_99 = 785,
-		effect_record_sub_glyph_condition_event_100 = 786,
-		effect_record_sub_common_condition_event_1 = 787,
-		effect_record_sub_common_condition_event_2 = 788,
-		effect_record_sub_common_condition_event_3 = 789,
-		effect_record_sub_common_condition_event_4 = 790,
-		effect_record_sub_common_condition_event_5 = 791,
-		effect_record_sub_common_condition_event_6 = 792,
-		effect_record_sub_common_condition_event_7 = 793,
-		effect_record_sub_common_condition_event_8 = 794,
-		effect_record_sub_common_condition_event_9 = 795,
-		effect_record_sub_common_condition_event_10 = 796,
-		effect_record_sub_common_condition_event_11 = 797,
-		effect_record_sub_common_condition_event_12 = 798,
-		effect_record_sub_common_condition_event_13 = 799,
-		effect_record_sub_common_condition_event_14 = 800,
-		effect_record_sub_common_condition_event_15 = 801,
-		effect_record_sub_common_condition_event_16 = 802,
-		effect_record_sub_common_condition_event_17 = 803,
-		effect_record_sub_common_condition_event_18 = 804,
-		effect_record_sub_common_condition_event_19 = 805,
-		effect_record_sub_common_condition_event_20 = 806,
-		effect_record_sub_equip = 807,
-		effect_record_sub_modify_move_speed = 808,
-		effect_record_sub_modify_cast_speed = 809,
-		effect_record_sub_dull = 810,
-		effect_record_sub_initialize_recycle_group = 811,
-		effect_record_sub_modify_recycle_time = 812,
-		effect_record_sub_set_recycle_time = 813,
-		effect_record_sub_initialize_condition_event_recycle_group = 814,
-		effect_record_sub_interval_melee_physical_damage = 815,
-		effect_record_sub_interval_range_physical_damage = 816,
-		effect_record_sub_interval_force_damage = 817,
-		effect_record_sub_burn = 818,
-		effect_record_sub_binding_skill_step = 819,
-		effect_record_sub_recall_to_caster = 820,
-		effect_record_sub_recall_to_position = 821,
-		effect_record_sub_embers_explosion_timer = 822,
-		effect_record_sub_replace_position = 823,
-		effect_record_sub_poison = 824,
-		effect_record_sub_poison2 = 825,
-		effect_record_sub_poison_explosion = 826,
-		effect_record_sub_poison2_explosion = 827,
-		effect_record_sub_applied_poison = 828,
-		effect_record_sub_spider_web = 829,
-		effect_record_sub_time_bomb = 830,
-		effect_record_sub_defence_block = 831,
-		effect_record_sub_dash_block = 832,
-		effect_record_sub_dexterity = 833,
-		effect_record_sub_help_restoration = 834,
-		effect_record_sub_grade = 835,
-		effect_record_sub_recharge_heart_count = 836,
-		effect_record_sub_safety_area = 837,
-		effect_record_sub_recharge_guild_battle_field = 838,
-		effect_record_sub_enable_guild_battle_field = 839,
-		effect_record_sub_debuff_guild_battle_field = 840,
-		effect_record_sub_duel_interference = 841,
-		effect_record_sub_break_state = 842,
-		effect_record_sub_break_gauge_block = 843,
-		effect_record_sub_modify_damage_systematization = 844,
-		effect_record_sub_dash = 845,
-		effect_record_sub_fall_damage = 846,
-		effect_record_sub_airdash = 847,
-		effect_record_sub_exhaustion = 848,
-		effect_record_sub_revive_except_rule = 849,
-		effect_record_sub_use_heart_count = 850,
-		effect_record_sub_item_ability = 851,
-		effect_record_sub_achievement_ability = 852,
-		effect_record_sub_completed_achievement = 853,
-		effect_record_sub_changed_property = 854,
-		effect_record_sub_oceanic = 855,
-		effect_record_sub_fall_death = 856,
-		effect_record_sub_air_knockback = 857,
-		effect_record_sub_set_ghost_type = 858,
-		effect_record_sub_duel_fighter_change = 859,
-		effect_record_sub_duel_fighter_time_limit = 860,
-		effect_record_sub_mastery_stat_equip = 861,
-		effect_record_sub_shooter_lock_on = 862,
-		effect_record_sub_attack_glide = 863,
-		effect_record_sub_second_gauge_point = 864,
-		effect_record_sub_interval_second_gauge_point = 865,
-		effect_record_sub_stop_second_gauge_point = 866,
-		effect_record_sub_set_second_gauge_point = 867,
-		effect_record_sub_particle_socket = 868,
-		effect_record_sub_set_appearance = 869,
-		effect_record_sub_boutique_free = 870,
-		effect_record_sub_difficulty_type_dispel_attribute_hp_damage = 871,
-		effect_record_sub_sealed_dungeon_dispel_attribute_hp_damage = 872,
-		effect_record_sub_soul_mask_1 = 873,
-		effect_record_sub_soul_mask_2 = 874,
-		effect_record_sub_npc_change_appearance = 875,
-		effect_record_sub_modify_hyper_energy = 876,
-		effect_record_sub_modify_ability_by_caster = 877,
-		effect_record_sub_count = 878,
+		effect_record_sub_modify_ability_541 = 687,
+		effect_record_sub_modify_ability_542 = 688,
+		effect_record_sub_modify_ability_543 = 689,
+		effect_record_sub_modify_ability_544 = 690,
+		effect_record_sub_modify_ability_545 = 691,
+		effect_record_sub_modify_ability_546 = 692,
+		effect_record_sub_modify_ability_547 = 693,
+		effect_record_sub_modify_ability_548 = 694,
+		effect_record_sub_modify_ability_549 = 695,
+		effect_record_sub_modify_ability_550 = 696,
+		effect_record_sub_modify_ability_551 = 697,
+		effect_record_sub_modify_ability_552 = 698,
+		effect_record_sub_modify_ability_553 = 699,
+		effect_record_sub_modify_ability_554 = 700,
+		effect_record_sub_modify_ability_555 = 701,
+		effect_record_sub_modify_ability_556 = 702,
+		effect_record_sub_modify_ability_557 = 703,
+		effect_record_sub_modify_ability_558 = 704,
+		effect_record_sub_modify_ability_559 = 705,
+		effect_record_sub_modify_ability_560 = 706,
+		effect_record_sub_modify_ability_561 = 707,
+		effect_record_sub_modify_ability_562 = 708,
+		effect_record_sub_modify_ability_563 = 709,
+		effect_record_sub_modify_ability_564 = 710,
+		effect_record_sub_modify_ability_565 = 711,
+		effect_record_sub_modify_ability_566 = 712,
+		effect_record_sub_modify_ability_567 = 713,
+		effect_record_sub_modify_ability_568 = 714,
+		effect_record_sub_modify_ability_569 = 715,
+		effect_record_sub_modify_ability_570 = 716,
+		effect_record_sub_modify_ability_571 = 717,
+		effect_record_sub_modify_ability_572 = 718,
+		effect_record_sub_modify_ability_573 = 719,
+		effect_record_sub_modify_ability_574 = 720,
+		effect_record_sub_modify_ability_575 = 721,
+		effect_record_sub_modify_ability_576 = 722,
+		effect_record_sub_modify_ability_577 = 723,
+		effect_record_sub_modify_ability_578 = 724,
+		effect_record_sub_modify_ability_579 = 725,
+		effect_record_sub_modify_ability_580 = 726,
+		effect_record_sub_modify_ability_581 = 727,
+		effect_record_sub_modify_ability_582 = 728,
+		effect_record_sub_modify_ability_583 = 729,
+		effect_record_sub_modify_ability_584 = 730,
+		effect_record_sub_modify_ability_585 = 731,
+		effect_record_sub_modify_ability_586 = 732,
+		effect_record_sub_modify_ability_587 = 733,
+		effect_record_sub_modify_ability_588 = 734,
+		effect_record_sub_modify_ability_589 = 735,
+		effect_record_sub_modify_ability_590 = 736,
+		effect_record_sub_modify_ability_591 = 737,
+		effect_record_sub_modify_ability_592 = 738,
+		effect_record_sub_modify_ability_593 = 739,
+		effect_record_sub_modify_ability_594 = 740,
+		effect_record_sub_modify_ability_595 = 741,
+		effect_record_sub_modify_ability_596 = 742,
+		effect_record_sub_modify_ability_597 = 743,
+		effect_record_sub_modify_ability_598 = 744,
+		effect_record_sub_modify_ability_599 = 745,
+		effect_record_sub_modify_ability_600 = 746,
+		effect_record_sub_modify_ability_601 = 747,
+		effect_record_sub_modify_ability_602 = 748,
+		effect_record_sub_modify_ability_603 = 749,
+		effect_record_sub_modify_ability_604 = 750,
+		effect_record_sub_modify_ability_605 = 751,
+		effect_record_sub_modify_ability_606 = 752,
+		effect_record_sub_modify_ability_607 = 753,
+		effect_record_sub_modify_ability_608 = 754,
+		effect_record_sub_modify_ability_609 = 755,
+		effect_record_sub_modify_ability_610 = 756,
+		effect_record_sub_modify_ability_611 = 757,
+		effect_record_sub_modify_ability_612 = 758,
+		effect_record_sub_modify_ability_613 = 759,
+		effect_record_sub_modify_ability_614 = 760,
+		effect_record_sub_modify_ability_615 = 761,
+		effect_record_sub_modify_ability_616 = 762,
+		effect_record_sub_modify_ability_617 = 763,
+		effect_record_sub_modify_ability_618 = 764,
+		effect_record_sub_modify_ability_619 = 765,
+		effect_record_sub_modify_ability_620 = 766,
+		effect_record_sub_modify_ability_621 = 767,
+		effect_record_sub_modify_ability_622 = 768,
+		effect_record_sub_modify_ability_623 = 769,
+		effect_record_sub_modify_ability_624 = 770,
+		effect_record_sub_modify_ability_625 = 771,
+		effect_record_sub_modify_ability_626 = 772,
+		effect_record_sub_modify_ability_627 = 773,
+		effect_record_sub_modify_ability_628 = 774,
+		effect_record_sub_modify_ability_629 = 775,
+		effect_record_sub_modify_ability_630 = 776,
+		effect_record_sub_modify_ability_631 = 777,
+		effect_record_sub_modify_ability_632 = 778,
+		effect_record_sub_modify_ability_633 = 779,
+		effect_record_sub_modify_ability_634 = 780,
+		effect_record_sub_modify_ability_635 = 781,
+		effect_record_sub_modify_ability_636 = 782,
+		effect_record_sub_modify_ability_637 = 783,
+		effect_record_sub_modify_ability_638 = 784,
+		effect_record_sub_modify_ability_639 = 785,
+		effect_record_sub_modify_ability_640 = 786,
+		effect_record_sub_modify_ability_641 = 787,
+		effect_record_sub_modify_ability_642 = 788,
+		effect_record_sub_modify_ability_643 = 789,
+		effect_record_sub_modify_ability_644 = 790,
+		effect_record_sub_modify_ability_645 = 791,
+		effect_record_sub_modify_ability_646 = 792,
+		effect_record_sub_modify_ability_647 = 793,
+		effect_record_sub_modify_ability_648 = 794,
+		effect_record_sub_modify_ability_649 = 795,
+		effect_record_sub_modify_ability_650 = 796,
+		effect_record_sub_glyph_condition_event_1 = 797,
+		effect_record_sub_glyph_condition_event_2 = 798,
+		effect_record_sub_glyph_condition_event_3 = 799,
+		effect_record_sub_glyph_condition_event_4 = 800,
+		effect_record_sub_glyph_condition_event_5 = 801,
+		effect_record_sub_glyph_condition_event_6 = 802,
+		effect_record_sub_glyph_condition_event_7 = 803,
+		effect_record_sub_glyph_condition_event_8 = 804,
+		effect_record_sub_glyph_condition_event_9 = 805,
+		effect_record_sub_glyph_condition_event_10 = 806,
+		effect_record_sub_glyph_condition_event_11 = 807,
+		effect_record_sub_glyph_condition_event_12 = 808,
+		effect_record_sub_glyph_condition_event_13 = 809,
+		effect_record_sub_glyph_condition_event_14 = 810,
+		effect_record_sub_glyph_condition_event_15 = 811,
+		effect_record_sub_glyph_condition_event_16 = 812,
+		effect_record_sub_glyph_condition_event_17 = 813,
+		effect_record_sub_glyph_condition_event_18 = 814,
+		effect_record_sub_glyph_condition_event_19 = 815,
+		effect_record_sub_glyph_condition_event_20 = 816,
+		effect_record_sub_glyph_condition_event_21 = 817,
+		effect_record_sub_glyph_condition_event_22 = 818,
+		effect_record_sub_glyph_condition_event_23 = 819,
+		effect_record_sub_glyph_condition_event_24 = 820,
+		effect_record_sub_glyph_condition_event_25 = 821,
+		effect_record_sub_glyph_condition_event_26 = 822,
+		effect_record_sub_glyph_condition_event_27 = 823,
+		effect_record_sub_glyph_condition_event_28 = 824,
+		effect_record_sub_glyph_condition_event_29 = 825,
+		effect_record_sub_glyph_condition_event_30 = 826,
+		effect_record_sub_glyph_condition_event_31 = 827,
+		effect_record_sub_glyph_condition_event_32 = 828,
+		effect_record_sub_glyph_condition_event_33 = 829,
+		effect_record_sub_glyph_condition_event_34 = 830,
+		effect_record_sub_glyph_condition_event_35 = 831,
+		effect_record_sub_glyph_condition_event_36 = 832,
+		effect_record_sub_glyph_condition_event_37 = 833,
+		effect_record_sub_glyph_condition_event_38 = 834,
+		effect_record_sub_glyph_condition_event_39 = 835,
+		effect_record_sub_glyph_condition_event_40 = 836,
+		effect_record_sub_glyph_condition_event_41 = 837,
+		effect_record_sub_glyph_condition_event_42 = 838,
+		effect_record_sub_glyph_condition_event_43 = 839,
+		effect_record_sub_glyph_condition_event_44 = 840,
+		effect_record_sub_glyph_condition_event_45 = 841,
+		effect_record_sub_glyph_condition_event_46 = 842,
+		effect_record_sub_glyph_condition_event_47 = 843,
+		effect_record_sub_glyph_condition_event_48 = 844,
+		effect_record_sub_glyph_condition_event_49 = 845,
+		effect_record_sub_glyph_condition_event_50 = 846,
+		effect_record_sub_glyph_condition_event_51 = 847,
+		effect_record_sub_glyph_condition_event_52 = 848,
+		effect_record_sub_glyph_condition_event_53 = 849,
+		effect_record_sub_glyph_condition_event_54 = 850,
+		effect_record_sub_glyph_condition_event_55 = 851,
+		effect_record_sub_glyph_condition_event_56 = 852,
+		effect_record_sub_glyph_condition_event_57 = 853,
+		effect_record_sub_glyph_condition_event_58 = 854,
+		effect_record_sub_glyph_condition_event_59 = 855,
+		effect_record_sub_glyph_condition_event_60 = 856,
+		effect_record_sub_glyph_condition_event_61 = 857,
+		effect_record_sub_glyph_condition_event_62 = 858,
+		effect_record_sub_glyph_condition_event_63 = 859,
+		effect_record_sub_glyph_condition_event_64 = 860,
+		effect_record_sub_glyph_condition_event_65 = 861,
+		effect_record_sub_glyph_condition_event_66 = 862,
+		effect_record_sub_glyph_condition_event_67 = 863,
+		effect_record_sub_glyph_condition_event_68 = 864,
+		effect_record_sub_glyph_condition_event_69 = 865,
+		effect_record_sub_glyph_condition_event_70 = 866,
+		effect_record_sub_glyph_condition_event_71 = 867,
+		effect_record_sub_glyph_condition_event_72 = 868,
+		effect_record_sub_glyph_condition_event_73 = 869,
+		effect_record_sub_glyph_condition_event_74 = 870,
+		effect_record_sub_glyph_condition_event_75 = 871,
+		effect_record_sub_glyph_condition_event_76 = 872,
+		effect_record_sub_glyph_condition_event_77 = 873,
+		effect_record_sub_glyph_condition_event_78 = 874,
+		effect_record_sub_glyph_condition_event_79 = 875,
+		effect_record_sub_glyph_condition_event_80 = 876,
+		effect_record_sub_glyph_condition_event_81 = 877,
+		effect_record_sub_glyph_condition_event_82 = 878,
+		effect_record_sub_glyph_condition_event_83 = 879,
+		effect_record_sub_glyph_condition_event_84 = 880,
+		effect_record_sub_glyph_condition_event_85 = 881,
+		effect_record_sub_glyph_condition_event_86 = 882,
+		effect_record_sub_glyph_condition_event_87 = 883,
+		effect_record_sub_glyph_condition_event_88 = 884,
+		effect_record_sub_glyph_condition_event_89 = 885,
+		effect_record_sub_glyph_condition_event_90 = 886,
+		effect_record_sub_glyph_condition_event_91 = 887,
+		effect_record_sub_glyph_condition_event_92 = 888,
+		effect_record_sub_glyph_condition_event_93 = 889,
+		effect_record_sub_glyph_condition_event_94 = 890,
+		effect_record_sub_glyph_condition_event_95 = 891,
+		effect_record_sub_glyph_condition_event_96 = 892,
+		effect_record_sub_glyph_condition_event_97 = 893,
+		effect_record_sub_glyph_condition_event_98 = 894,
+		effect_record_sub_glyph_condition_event_99 = 895,
+		effect_record_sub_glyph_condition_event_100 = 896,
+		effect_record_sub_common_condition_event_1 = 897,
+		effect_record_sub_common_condition_event_2 = 898,
+		effect_record_sub_common_condition_event_3 = 899,
+		effect_record_sub_common_condition_event_4 = 900,
+		effect_record_sub_common_condition_event_5 = 901,
+		effect_record_sub_common_condition_event_6 = 902,
+		effect_record_sub_common_condition_event_7 = 903,
+		effect_record_sub_common_condition_event_8 = 904,
+		effect_record_sub_common_condition_event_9 = 905,
+		effect_record_sub_common_condition_event_10 = 906,
+		effect_record_sub_common_condition_event_11 = 907,
+		effect_record_sub_common_condition_event_12 = 908,
+		effect_record_sub_common_condition_event_13 = 909,
+		effect_record_sub_common_condition_event_14 = 910,
+		effect_record_sub_common_condition_event_15 = 911,
+		effect_record_sub_common_condition_event_16 = 912,
+		effect_record_sub_common_condition_event_17 = 913,
+		effect_record_sub_common_condition_event_18 = 914,
+		effect_record_sub_common_condition_event_19 = 915,
+		effect_record_sub_common_condition_event_20 = 916,
+		effect_record_sub_equip = 917,
+		effect_record_sub_modify_move_speed = 918,
+		effect_record_sub_modify_cast_speed = 919,
+		effect_record_sub_dull = 920,
+		effect_record_sub_initialize_recycle_group = 921,
+		effect_record_sub_modify_recycle_time = 922,
+		effect_record_sub_set_recycle_time = 923,
+		effect_record_sub_initialize_condition_event_recycle_group = 924,
+		effect_record_sub_interval_melee_physical_damage = 925,
+		effect_record_sub_interval_range_physical_damage = 926,
+		effect_record_sub_interval_force_damage = 927,
+		effect_record_sub_burn = 928,
+		effect_record_sub_binding_skill_step = 929,
+		effect_record_sub_recall_to_caster = 930,
+		effect_record_sub_recall_to_position = 931,
+		effect_record_sub_embers_explosion_timer = 932,
+		effect_record_sub_replace_position = 933,
+		effect_record_sub_poison = 934,
+		effect_record_sub_poison2 = 935,
+		effect_record_sub_poison_explosion = 936,
+		effect_record_sub_poison2_explosion = 937,
+		effect_record_sub_applied_poison = 938,
+		effect_record_sub_spider_web = 939,
+		effect_record_sub_time_bomb = 940,
+		effect_record_sub_defence_block = 941,
+		effect_record_sub_dash_block = 942,
+		effect_record_sub_dexterity = 943,
+		effect_record_sub_help_restoration = 944,
+		effect_record_sub_grade = 945,
+		effect_record_sub_recharge_heart_count = 946,
+		effect_record_sub_safety_area = 947,
+		effect_record_sub_recharge_guild_battle_field = 948,
+		effect_record_sub_enable_guild_battle_field = 949,
+		effect_record_sub_debuff_guild_battle_field = 950,
+		effect_record_sub_duel_interference = 951,
+		effect_record_sub_break_state = 952,
+		effect_record_sub_break_gauge_block = 953,
+		effect_record_sub_modify_damage_systematization = 954,
+		effect_record_sub_dash = 955,
+		effect_record_sub_fall_damage = 956,
+		effect_record_sub_airdash = 957,
+		effect_record_sub_exhaustion = 958,
+		effect_record_sub_revive_except_rule = 959,
+		effect_record_sub_use_heart_count = 960,
+		effect_record_sub_item_ability = 961,
+		effect_record_sub_achievement_ability = 962,
+		effect_record_sub_completed_achievement = 963,
+		effect_record_sub_changed_property = 964,
+		effect_record_sub_oceanic = 965,
+		effect_record_sub_fall_death = 966,
+		effect_record_sub_air_knockback = 967,
+		effect_record_sub_set_ghost_type = 968,
+		effect_record_sub_duel_fighter_change = 969,
+		effect_record_sub_duel_fighter_time_limit = 970,
+		effect_record_sub_mastery_stat_equip = 971,
+		effect_record_sub_shooter_lock_on = 972,
+		effect_record_sub_attack_glide = 973,
+		effect_record_sub_second_gauge_point = 974,
+		effect_record_sub_interval_second_gauge_point = 975,
+		effect_record_sub_stop_second_gauge_point = 976,
+		effect_record_sub_set_second_gauge_point = 977,
+		effect_record_sub_particle_socket = 978,
+		effect_record_sub_set_appearance = 979,
+		effect_record_sub_boutique_free = 980,
+		effect_record_sub_difficulty_type_dispel_attribute_hp_damage = 981,
+		effect_record_sub_sealed_dungeon_dispel_attribute_hp_damage = 982,
+		effect_record_sub_soul_mask_1 = 983,
+		effect_record_sub_soul_mask_2 = 984,
+		effect_record_sub_npc_change_appearance = 985,
+		effect_record_sub_modify_hyper_energy = 986,
+		effect_record_sub_modify_ability_by_caster = 987,
+		effect_record_sub_count = 988,
     };
 #pragma pack(push, 1)
 	struct effect_Record : BnsTables::Shared::DrEl
@@ -903,9 +1013,9 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef name3;
-int name3_tableId(){return 405;};
+int name3_tableId() const {return 420;};
 __int16 level;
 bool show_icon;
 bool show_left_time;
@@ -915,89 +1025,106 @@ wchar_t* target_indicator_icon;
 bool target_indicator_show;
 bool show_job_indicator;
 bool save_db;
-__int8 miss_probability;
+signed char miss_probability;
 __int32 passive_duration;
 __int32 passive_interval;
 __int32 expiration_duration_sec;
-__int8 stack_amount;
-__int8 stack_count;
+signed char stack_amount;
+signed char stack_count;
 bool reattach_effect_after_changing_stack_count;
 char Pad1[1];
 BnsTables::Shared::TableRef transform_effect;
-int transform_effect_tableId(){return 111;};
-__int8 buff_type;
-__int8 binding_skill_step_type;
+int transform_effect_tableId() const {return 115;};
+signed char buff_type;
+signed char binding_skill_step_type;
 __int16 immune_breaker_attribute;
 __int16 attribute[8];
+__int32 attribute_Size() const {return 8;};
 __int64 attribute_value;
 __int64 attribute_value_2;
 __int64 attribute_value_3;
 __int16 immune_attribute[8];
+__int32 immune_attribute_Size() const {return 8;};
 __int64 immune_attribute_value;
 __int64 immune_attribute_value_2;
 __int64 immune_attribute_value_3;
 __int16 flag[4];
+__int32 flag_Size() const {return 4;};
 __int16 max_stack_flag;
-__int8 function[10];
+signed char function[10];
+__int32 function_Size() const {return 10;};
 bool drop_field_item;
 bool drop_weapon_field_item;
-__int8 detach_count;
-__int8 detach_slot[4];
+signed char detach_count;
+signed char detach_slot[4];
+__int32 detach_slot_Size() const {return 4;};
 bool apply_duration_formula;
 bool change_default_stance_by_detach_timeout;
 bool target_combat_mode;
 bool aoe_damage;
 char Pad2[1];
 __int16 attack_attribute_coefficient_percent;
-__int8 inhalation_linker;
-__int8 inhalation_linked;
-__int8 mount_linker;
-__int8 mount_linked;
-__int8 catch_linker;
-__int8 catch_linked;
+signed char inhalation_linker;
+signed char inhalation_linked;
+signed char mount_linker;
+signed char mount_linked;
+signed char catch_linker;
+signed char catch_linked;
 __int32 faction_score_min;
 __int32 faction_score_max;
 bool leave_zone_detach;
 bool not_dead_to_exhaustion_detach;
 bool effect_region_leaved_detach;
 bool invoked_by_effect;
-__int8 event_effect_target[4];
+signed char event_effect_target[4];
+__int32 event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef event_effect[4];
-int event_effect_tableId(){return 111;};
-__int8 second_slot_event_effect_target[4];
+__int32 event_effect_Size() const {return 4;};
+int event_effect_tableId() const {return 115;};
+signed char second_slot_event_effect_target[4];
+__int32 second_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef second_slot_event_effect[4];
-int second_slot_event_effect_tableId(){return 111;};
-__int8 third_slot_event_effect_target[4];
+__int32 second_slot_event_effect_Size() const {return 4;};
+int second_slot_event_effect_tableId() const {return 115;};
+signed char third_slot_event_effect_target[4];
+__int32 third_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef third_slot_event_effect[4];
-int third_slot_event_effect_tableId(){return 111;};
-__int8 fourth_slot_event_effect_target[4];
+__int32 third_slot_event_effect_Size() const {return 4;};
+int third_slot_event_effect_tableId() const {return 115;};
+signed char fourth_slot_event_effect_target[4];
+__int32 fourth_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef fourth_slot_event_effect[4];
-int fourth_slot_event_effect_tableId(){return 111;};
+__int32 fourth_slot_event_effect_Size() const {return 4;};
+int fourth_slot_event_effect_tableId() const {return 115;};
 __int16 modify_ability[8];
+__int32 modify_ability_Size() const {return 8;};
 __int64 modify_ability_diff[8];
+__int32 modify_ability_diff_Size() const {return 8;};
 __int16 modify_ability_percent[8];
-__int8 passive_moveanim_idle;
+__int32 modify_ability_percent_Size() const {return 8;};
+signed char passive_moveanim_idle;
 bool pause_auto_targeting;
 bool not_targetable;
 bool is_dot_effect;
 bool no_critical_hit;
 bool party_broadcast;
-__int8 ui_slot;
-__int8 ui_category;
+signed char ui_slot;
+signed char ui_category;
 bool use_extra_skill_stack_count;
-__int8 combat_job[2];
+signed char combat_job[2];
+__int32 combat_job_Size() const {return 2;};
 bool ui_difficult;
 bool is_transform_effect;
 bool is_reuse_standby_effect;
-__int8 item_type;
+signed char item_type;
 bool is_powergauge_effect;
 bool ignore_hide_buff_graph_effect;
 bool is_battle_royal_field_pc_info;
-__int8 battle_royal_field_effect_pouch_group;
-__int8 grocery_effect_type;
+signed char battle_royal_field_effect_pouch_group;
+signed char grocery_effect_type;
 __int16 grocery_effect_level;
 bool knockback_jump;
-__int8 idleanimpriority;
+signed char idleanimpriority;
 wchar_t* normal_component;
 wchar_t* critical_component;
 wchar_t* back_normal_component;
@@ -1017,38 +1144,40 @@ wchar_t* fire_show;
 bool animation_freeze;
 char Pad4[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 178;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad5[2];
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef description2;
-int description2_tableId(){return 405;};
+int description2_tableId() const {return 420;};
 BnsTables::Shared::TableRef description3;
-int description3_tableId(){return 405;};
+int description3_tableId() const {return 420;};
 BnsTables::Shared::TableRef description4;
-int description4_tableId(){return 405;};
+int description4_tableId() const {return 420;};
 BnsTables::Shared::TableRef description5;
-int description5_tableId(){return 405;};
+int description5_tableId() const {return 420;};
 BnsTables::Shared::TableRef description_constellation;
-int description_constellation_tableId(){return 405;};
-__int8 description2_arg_type[4];
+int description_constellation_tableId() const {return 420;};
+signed char description2_arg_type[4];
+__int32 description2_arg_type_Size() const {return 4;};
 wchar_t* description2_arg_value[4];
+__int32 description2_arg_value_Size() const {return 4;};
 __int32 mount_attach_duration;
 __int32 mount_detach_duration;
 BnsTables::Shared::TableRef linker_abnormal;
-int linker_abnormal_tableId(){return 233;};
+int linker_abnormal_tableId() const {return 240;};
 BnsTables::Shared::TableRef linkee_abnormal;
-int linkee_abnormal_tableId(){return 233;};
+int linkee_abnormal_tableId() const {return 240;};
 __int32 link_attach_duration;
 __int32 link_detach_duration;
 bool catch_legs_physics;
 bool catch_arms_physics;
 bool catch_body_physics;
 bool camera_block;
-__int8 battle_message_type;
+signed char battle_message_type;
 char Pad6[3];
 wchar_t* flash_sound_mode;
-__int8 skillresultpriority;
+signed char skillresultpriority;
 char Pad7[3];
 wchar_t* hit_show;
 wchar_t* miss_show;
@@ -1063,15 +1192,15 @@ bool play_despawn_show;
 bool play_transit;
 char Pad8[1];
 __int32 transit_time;
-__int8 duel_warp;
+signed char duel_warp;
 char Pad9[3];
 BnsTables::Shared::TableRef attach_notify_message;
-int attach_notify_message_tableId(){return 151;};
+int attach_notify_message_tableId() const {return 155;};
 BnsTables::Shared::TableRef description_item_random_option;
-int description_item_random_option_tableId(){return 405;};
+int description_item_random_option_tableId() const {return 420;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(34, 0); }
-		static __int16 TableId() { return 111; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(38, 0); }
+		static __int16 TableId() { return 115; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -1080,7 +1209,6 @@ int description_item_random_option_tableId(){return 405;};
 	{
 		effect_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::effect_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

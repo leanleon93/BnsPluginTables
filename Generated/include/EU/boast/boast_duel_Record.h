@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef duel;
-int duel_tableId(){return 107;};
+int duel_tableId() const {return 108;};
 
 		static __int32 SubType() { return 1; }
 	};

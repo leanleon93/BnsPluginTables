@@ -14,35 +14,37 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 code;
-__int8 job;
+                signed char code;
+signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef effect;
-int effect_tableId(){return 115;};
+		std::string_view code_EnumValue() const {return Get_code_EnumValue(key.code);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+BnsTables::Shared::TableRef effect;
+int effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef duel_effect;
-int duel_effect_tableId(){return 115;};
+int duel_effect_tableId() const {return 115;};
 __int32 party_battle_point_bonus_percent;
 __int32 party_battle_exp_bonus_percent;
 __int32 duel_point_bonus_percent;
 __int32 duel_exp_bonus_percent;
 __int32 field_play_point_bonus_percent;
 __int32 npc_looting_money_reward_percent;
-__int8 weapon_accessory_transform_money_cost_discount_rate;
-__int8 weapon_gem_transform_money_cost_discount_rate;
-__int8 item_awakening_money_cost_discount_rate;
-__int8 detach_weapon_gem_money_cost_discount_rate;
-__int8 purify_item_discount_rate;
-__int8 market_register_amount_tax_discount_rate;
+signed char weapon_accessory_transform_money_cost_discount_rate;
+signed char weapon_gem_transform_money_cost_discount_rate;
+signed char item_awakening_money_cost_discount_rate;
+signed char detach_weapon_gem_money_cost_discount_rate;
+signed char purify_item_discount_rate;
+signed char market_register_amount_tax_discount_rate;
 bool unlocated_warehouse;
 bool quest_reward;
 __int32 quest_reward_account_exp_bonus_percent;
 __int32 tendency_quest_reward_account_exp_bonus_percent;
 __int32 challenge_reward_account_exp_bonus_percent;
-__int8 pet_gem_transform_money_cost_discount_rate;
+signed char pet_gem_transform_money_cost_discount_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 276; }
@@ -54,7 +56,6 @@ __int8 pet_gem_transform_money_cost_discount_rate;
 	{
 		pccafebenefits_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pccafebenefits_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

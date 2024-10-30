@@ -14,23 +14,25 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 sex;
-__int8 param_index;
+                signed char race;
+signed char sex;
+signed char param_index;
 __int16 order;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 param_value;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+signed char param_value;
 char Pad0[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 90; }
@@ -42,7 +44,6 @@ int desc_tableId(){return 420;};
 	{
 		customizingdetailicon_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customizingdetailicon_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

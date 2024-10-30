@@ -10,15 +10,15 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef boss_id;
-int boss_id_tableId(){return 265;};
+int boss_id_tableId() const {return 265;};
 BnsTables::Shared::TableRef linked_boss_id;
-int linked_boss_id_tableId(){return 265;};
+int linked_boss_id_tableId() const {return 265;};
 BnsTables::Shared::TableRef boss_description;
-int boss_description_tableId(){return 420;};
+int boss_description_tableId() const {return 420;};
 BnsTables::Shared::TableRef boss_position_description;
-int boss_position_description_tableId(){return 420;};
+int boss_position_description_tableId() const {return 420;};
 BnsTables::Shared::TableRef reward_summary;
-int reward_summary_tableId(){return 18;};
+int reward_summary_tableId() const {return 18;};
 
 		static __int32 SubType() { return 0; }
 	};

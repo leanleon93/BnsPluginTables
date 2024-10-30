@@ -14,7 +14,7 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 id;
+                signed char id;
 
             };
 			unsigned __int64 key;
@@ -25,17 +25,19 @@ char Pad0[1];
 __int16 ratio_of_point_to_exp;
 __int32 acquired_max_energy_point;
 __int32 acquired_max_energy_multiple_point;
-__int8 multiple_value[8];
+signed char multiple_value[8];
+__int32 multiple_value_Size() const {return 8;};
 __int64 multiple_value_hidden;
 BnsTables::Shared::TableRef additional_effect;
-int additional_effect_tableId(){return 115;};
-__int8 reset_hour;
-__int8 reward_count;
+int additional_effect_tableId() const {return 115;};
+signed char reset_hour;
+signed char reward_count;
 char Pad1[2];
 BnsTables::Shared::TableRef reward[127];
-int reward_tableId(){return 120;};
+__int32 reward_Size() const {return 127;};
+int reward_tableId() const {return 120;};
 BnsTables::Shared::TableRef goodsstore_search_item;
-int goodsstore_search_item_tableId(){return 195;};
+int goodsstore_search_item_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 119; }
@@ -47,7 +49,6 @@ int goodsstore_search_item_tableId(){return 195;};
 	{
 		energy_point_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::energy_point_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

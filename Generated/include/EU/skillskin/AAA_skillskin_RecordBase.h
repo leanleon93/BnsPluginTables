@@ -21,20 +21,22 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 skill_skin_type;
+signed char skill_skin_type;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef iteminfo[20];
-int iteminfo_tableId(){return 189;};
-__int8 grade;
+__int32 iteminfo_Size() const {return 20;};
+int iteminfo_tableId() const {return 195;};
+signed char grade;
 char Pad1[3];
 wchar_t* skill_skin_play_bink[20];
+__int32 skill_skin_play_bink_Size() const {return 20;};
 wchar_t* background_image;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 344; }
+		static __int16 TableId() { return 357; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -43,7 +45,6 @@ wchar_t* background_image;
 	{
 		skillskin_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillskin_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

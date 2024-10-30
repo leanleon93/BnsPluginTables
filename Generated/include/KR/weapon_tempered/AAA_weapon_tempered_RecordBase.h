@@ -14,14 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 weapon_type;
-__int8 level;
+                signed char weapon_type;
+signed char level;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* show;
+		std::string_view weapon_type_EnumValue() const {return Get_weapon_type_EnumValue(key.weapon_type);};
+wchar_t* show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 445; }
@@ -33,7 +34,6 @@ __int8 level;
 	{
 		weapon_tempered_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::weapon_tempered_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

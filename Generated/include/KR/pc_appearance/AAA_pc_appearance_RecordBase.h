@@ -14,17 +14,20 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 job;
-__int8 sex;
+                signed char race;
+signed char job;
+signed char sex;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* anim_set_name;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+wchar_t* anim_set_name;
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId(){return 85;};
+int appearance_tableId() const {return 85;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 275; }
@@ -36,7 +39,6 @@ int appearance_tableId(){return 85;};
 	{
 		pc_appearance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pc_appearance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

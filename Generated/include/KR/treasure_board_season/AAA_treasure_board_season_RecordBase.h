@@ -23,13 +23,14 @@ namespace BnsTables::KR {
 		bool season_enable;
 char Pad0[3];
 BnsTables::Shared::TableRef treasure_board_page[10];
-int treasure_board_page_tableId(){return 424;};
+__int32 treasure_board_page_Size() const {return 10;};
+int treasure_board_page_tableId() const {return 424;};
 BnsTables::Shared::TableRef season_reward_item;
-int season_reward_item_tableId(){return 195;};
+int season_reward_item_tableId() const {return 195;};
 __int16 season_reward_item_count;
 char Pad1[2];
 BnsTables::Shared::TableRef season_name;
-int season_name_tableId(){return 420;};
+int season_name_tableId() const {return 420;};
 wchar_t* season_end_time;
 wchar_t* season_board_symbol_on;
 wchar_t* season_board_symbol_off;
@@ -44,7 +45,6 @@ wchar_t* season_board_symbol_off;
 	{
 		treasure_board_season_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::treasure_board_season_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

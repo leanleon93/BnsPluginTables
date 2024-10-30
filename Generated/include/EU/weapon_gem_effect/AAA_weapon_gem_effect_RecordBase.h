@@ -14,19 +14,21 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 level;
-__int8 weapon_gem_type;
-__int8 weapon_type;
+                signed char level;
+signed char weapon_gem_type;
+signed char weapon_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* effect_show;
+		std::string_view weapon_gem_type_EnumValue() const {return Get_weapon_gem_type_EnumValue(key.weapon_gem_type);};
+std::string_view weapon_type_EnumValue() const {return Get_weapon_type_EnumValue(key.weapon_type);};
+wchar_t* effect_show;
 BnsTables::Shared::RGB effect_color;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 428; }
+		static __int16 TableId() { return 443; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +37,6 @@ BnsTables::Shared::RGB effect_color;
 	{
 		weapon_gem_effect_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::weapon_gem_effect_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

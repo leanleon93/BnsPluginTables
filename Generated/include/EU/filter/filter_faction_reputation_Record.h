@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct filter_faction_reputation_Record : filter_Record
 	{
 	public:
-		__int8 op;
+		signed char op;
 char Pad_sub_0[1];
 __int16 value;
 

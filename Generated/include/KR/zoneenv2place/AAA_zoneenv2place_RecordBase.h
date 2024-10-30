@@ -37,13 +37,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::XYZ region_point[4];
+__int32 region_point_Size() const {return 4;};
 __int16 height;
 char Pad0[2];
 BnsTables::Shared::XYZ action_point;
@@ -68,7 +70,6 @@ bool spawn_env;
 	{
 		zoneenv2place_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneenv2place_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

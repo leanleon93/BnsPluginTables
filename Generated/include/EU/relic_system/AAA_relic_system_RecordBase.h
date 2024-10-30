@@ -14,21 +14,25 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 inventory_size_x;
-__int8 inventory_size_y;
-__int8 ability[40];
+signed char inventory_size_x;
+signed char inventory_size_y;
+signed char ability[40];
+__int32 ability_Size() const {return 40;};
 char Pad0[2];
 __int32 ability_value_max[40];
+__int32 ability_value_max_Size() const {return 40;};
 __int32 ability_base_value_max[40];
+__int32 ability_base_value_max_Size() const {return 40;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 312; }
+		static __int16 TableId() { return 325; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -37,7 +41,6 @@ __int32 ability_base_value_max[40];
 	{
 		relic_system_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::relic_system_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

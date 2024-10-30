@@ -36,7 +36,6 @@ __int32 world_achievement;
 	{
 		world_achievement_season_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::world_achievement_season_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

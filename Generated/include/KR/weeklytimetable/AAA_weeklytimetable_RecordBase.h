@@ -14,29 +14,44 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 bool enable;
-__int8 sun_start_hour[12];
-__int8 sun_end_hour[12];
-__int8 mon_start_hour[12];
-__int8 mon_end_hour[12];
-__int8 tue_start_hour[12];
-__int8 tue_end_hour[12];
-__int8 wed_start_hour[12];
-__int8 wed_end_hour[12];
-__int8 thu_start_hour[12];
-__int8 thu_end_hour[12];
-__int8 fri_start_hour[12];
-__int8 fri_end_hour[12];
-__int8 sat_start_hour[12];
-__int8 sat_end_hour[12];
-__int8 start_minute;
-__int8 end_minute;
+signed char sun_start_hour[12];
+__int32 sun_start_hour_Size() const {return 12;};
+signed char sun_end_hour[12];
+__int32 sun_end_hour_Size() const {return 12;};
+signed char mon_start_hour[12];
+__int32 mon_start_hour_Size() const {return 12;};
+signed char mon_end_hour[12];
+__int32 mon_end_hour_Size() const {return 12;};
+signed char tue_start_hour[12];
+__int32 tue_start_hour_Size() const {return 12;};
+signed char tue_end_hour[12];
+__int32 tue_end_hour_Size() const {return 12;};
+signed char wed_start_hour[12];
+__int32 wed_start_hour_Size() const {return 12;};
+signed char wed_end_hour[12];
+__int32 wed_end_hour_Size() const {return 12;};
+signed char thu_start_hour[12];
+__int32 thu_start_hour_Size() const {return 12;};
+signed char thu_end_hour[12];
+__int32 thu_end_hour_Size() const {return 12;};
+signed char fri_start_hour[12];
+__int32 fri_start_hour_Size() const {return 12;};
+signed char fri_end_hour[12];
+__int32 fri_end_hour_Size() const {return 12;};
+signed char sat_start_hour[12];
+__int32 sat_start_hour_Size() const {return 12;};
+signed char sat_end_hour[12];
+__int32 sat_end_hour_Size() const {return 12;};
+signed char start_minute;
+signed char end_minute;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 446; }
@@ -48,7 +63,6 @@ __int8 end_minute;
 	{
 		weeklytimetable_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::weeklytimetable_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

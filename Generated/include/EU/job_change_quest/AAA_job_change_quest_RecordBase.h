@@ -14,19 +14,24 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int16 acquire_quest[4];
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int16 acquire_quest[4];
+__int32 acquire_quest_Size() const {return 4;};
 __int16 complete_quest[16];
+__int32 complete_quest_Size() const {return 16;};
 __int16 reset_quest[4];
+__int32 reset_quest_Size() const {return 4;};
 __int16 reset_quest_free[16];
+__int32 reset_quest_free_Size() const {return 16;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 221; }
+		static __int16 TableId() { return 228; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +40,6 @@ __int16 reset_quest_free[16];
 	{
 		job_change_quest_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_change_quest_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

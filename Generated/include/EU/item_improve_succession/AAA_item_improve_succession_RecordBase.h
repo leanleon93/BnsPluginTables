@@ -22,28 +22,32 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 seed_improve_id;
-__int8 seed_improve_level;
+signed char seed_improve_level;
 char Pad0[3];
 __int32 result_improve_id;
-__int8 result_improve_level;
+signed char result_improve_level;
 char Pad1[3];
 __int32 feed_main_improve_id;
-__int8 feed_main_improve_level;
+signed char feed_main_improve_level;
 char Pad2[3];
 BnsTables::Shared::TableRef feed_main_ingredient;
-int feed_main_ingredient_tableId(){return 189;};
+int feed_main_ingredient_tableId() const {return 195;};
 __int16 feed_main_ingredient_count;
 char Pad3[2];
 BnsTables::Shared::TableRef feed_sub_ingredient[8];
-int feed_sub_ingredient_tableId(){return 189;};
+__int32 feed_sub_ingredient_Size() const {return 8;};
+int feed_sub_ingredient_tableId() const {return 195;};
 __int16 feed_sub_ingredient_count[8];
+__int32 feed_sub_ingredient_count_Size() const {return 8;};
 __int32 cost_money;
-__int8 feed_succession_option_step[5];
-__int8 result_succession_option_step[5];
+signed char feed_succession_option_step[5];
+__int32 feed_succession_option_step_Size() const {return 5;};
+signed char result_succession_option_step[5];
+__int32 result_succession_option_step_Size() const {return 5;};
 bool keep_main_ingredient_spirit;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 202; }
+		static __int16 TableId() { return 208; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -52,7 +56,6 @@ bool keep_main_ingredient_spirit;
 	{
 		item_improve_succession_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_improve_succession_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

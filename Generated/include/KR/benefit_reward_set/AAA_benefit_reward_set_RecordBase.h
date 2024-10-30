@@ -20,10 +20,12 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 reward[4];
+		signed char reward[4];
+__int32 reward_Size() const {return 4;};
 __int32 reward_value[4];
+__int32 reward_value_Size() const {return 4;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 39; }
@@ -35,7 +37,6 @@ int name2_tableId(){return 420;};
 	{
 		benefit_reward_set_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::benefit_reward_set_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

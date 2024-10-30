@@ -21,22 +21,23 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef group_name;
-int group_name_tableId(){return 420;};
+int group_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef group_desc;
-int group_desc_tableId(){return 420;};
-__int8 job;
+int group_desc_tableId() const {return 420;};
+signed char job;
 bool has_reward;
-__int8 group_required_level;
-__int8 group_required_mastery_level;
+signed char group_required_level;
+signed char group_required_mastery_level;
 BnsTables::Shared::TableRef group_level_text;
-int group_level_text_tableId(){return 420;};
+int group_level_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef subject_id[8];
-int subject_id_tableId(){return 372;};
-__int8 job_style;
+__int32 subject_id_Size() const {return 8;};
+int subject_id_tableId() const {return 372;};
+signed char job_style;
 char Pad0[1];
 __int16 sort_number;
 BnsTables::Shared::TableRef achievement;
-int achievement_tableId(){return 6;};
+int achievement_tableId() const {return 6;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
 		static __int16 TableId() { return 371; }
@@ -48,7 +49,6 @@ int achievement_tableId(){return 6;};
 	{
 		skill_training_room_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_training_room_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

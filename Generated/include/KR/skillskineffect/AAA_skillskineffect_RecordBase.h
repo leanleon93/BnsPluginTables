@@ -38,7 +38,6 @@ wchar_t* immune_buff_component;
 	{
 		skillskineffect_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillskineffect_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

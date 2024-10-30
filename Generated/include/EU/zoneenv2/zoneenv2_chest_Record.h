@@ -9,10 +9,11 @@ namespace BnsTables::EU {
 	struct zoneenv2_chest_Record : zoneenv2_Record
 	{
 	public:
-		__int8 expedition_type;
-char Pad_sub_0[3];
+		char Pad_sub_0[2];
+signed char expedition_type;
+char Pad_sub_1[3];
 BnsTables::Shared::TableRef expedition;
-int expedition_tableId(){return 435;};
+int expedition_tableId() const {return 450;};
 
 		static __int32 SubType() { return 1; }
 	};

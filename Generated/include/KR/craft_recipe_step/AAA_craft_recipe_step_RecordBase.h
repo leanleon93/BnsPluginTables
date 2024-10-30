@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,8 +23,11 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 time_cost;
 __int64 output_id[3];
+__int32 output_id_Size() const {return 3;};
 __int16 output_amount[3];
+__int32 output_amount_Size() const {return 3;};
 bool output_customizable[3];
+__int32 output_customizable_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 84; }
@@ -35,7 +39,6 @@ bool output_customizable[3];
 	{
 		craft_recipe_step_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::craft_recipe_step_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

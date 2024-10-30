@@ -22,11 +22,11 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef icon_name;
-int icon_name_tableId(){return 420;};
+int icon_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_tooltip;
-int icon_tooltip_tableId(){return 420;};
+int icon_tooltip_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
@@ -39,7 +39,6 @@ __int16 icon_index;
 	{
 		sealed_dungeon_gimmick_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::sealed_dungeon_gimmick_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

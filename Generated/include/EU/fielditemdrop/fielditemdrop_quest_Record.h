@@ -10,10 +10,10 @@ namespace BnsTables::EU {
 	{
 	public:
 		char Pad_sub_0[1];
-__int8 drop_place;
+signed char drop_place;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef area;
-int area_tableId(){return 438;};
+int area_tableId() const {return 456;};
 
 		static __int32 SubType() { return 2; }
 	};

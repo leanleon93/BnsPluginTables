@@ -22,19 +22,21 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef contents;
-int contents_tableId(){return 309;};
+int contents_tableId() const {return 309;};
 BnsTables::Shared::TableRef season[10];
-int season_tableId(){return 313;};
+__int32 season_Size() const {return 10;};
+int season_tableId() const {return 313;};
 BnsTables::Shared::TableRef main_season;
-int main_season_tableId(){return 313;};
-__int8 contents_score_type;
+int main_season_tableId() const {return 313;};
+signed char contents_score_type;
 char Pad0[3];
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId(){return 114;};
+int dungeon_tableId() const {return 114;};
 BnsTables::Shared::TableRef tier_contents_seasons[15];
-int tier_contents_seasons_tableId(){return 314;};
+__int32 tier_contents_seasons_Size() const {return 15;};
+int tier_contents_seasons_tableId() const {return 314;};
 BnsTables::Shared::TableRef tier;
-int tier_tableId(){return 316;};
+int tier_tableId() const {return 316;};
 __int64 min_accumulate_reward;
 __int16 min_accumulate_reward_range;
 
@@ -48,7 +50,6 @@ __int16 min_accumulate_reward_range;
 	{
 		ranking2_season_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ranking2_season_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

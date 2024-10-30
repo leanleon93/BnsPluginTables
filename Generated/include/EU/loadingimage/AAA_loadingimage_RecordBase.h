@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,19 +23,19 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int32 zone_id;
 BnsTables::Shared::ExplicitTableRef zone_attraction;
-__int8 level_min;
-__int8 level_max;
-__int8 job;
+signed char level_min;
+signed char level_max;
+signed char job;
 char Pad0[1];
 wchar_t* back_ground;
-__int8 count_back_ground;
+signed char count_back_ground;
 bool editable;
 char Pad1[2];
 wchar_t* guide_text_ref;
 __int16 guide_text_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 234; }
+		static __int16 TableId() { return 241; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -43,7 +44,6 @@ __int16 guide_text_count;
 	{
 		loadingimage_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::loadingimage_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

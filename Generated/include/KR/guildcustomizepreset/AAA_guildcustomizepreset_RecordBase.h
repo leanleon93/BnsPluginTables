@@ -14,13 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 customize_factor[28];
+signed char customize_factor[28];
+__int32 customize_factor_Size() const {return 28;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 169; }
@@ -32,7 +34,6 @@ __int8 customize_factor[28];
 	{
 		guildcustomizepreset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guildcustomizepreset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

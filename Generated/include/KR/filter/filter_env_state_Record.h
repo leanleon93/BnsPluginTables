@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct filter_env_state_Record : filter_Record
 	{
 	public:
-		__int8 env2_state;
+		signed char env2_state;
 
 		static __int32 SubType() { return 27; }
 	};

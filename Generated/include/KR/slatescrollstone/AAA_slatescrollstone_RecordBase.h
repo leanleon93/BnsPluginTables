@@ -14,15 +14,16 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef scroll;
-int scroll_tableId(){return 378;};
+int scroll_tableId() const {return 378;};
 BnsTables::Shared::TableRef stone;
-int stone_tableId(){return 380;};
+int stone_tableId() const {return 380;};
 bool tooltip;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
@@ -35,7 +36,6 @@ bool tooltip;
 	{
 		slatescrollstone_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::slatescrollstone_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

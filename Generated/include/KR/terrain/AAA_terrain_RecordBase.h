@@ -43,7 +43,6 @@ __int16 release_contents_group;
 	{
 		terrain_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::terrain_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

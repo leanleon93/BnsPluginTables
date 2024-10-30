@@ -15,17 +15,18 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int16 id;
-__int8 difficulty_type;
-__int8 wave;
+signed char difficulty_type;
+signed char wave;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 reward_exp;
+		std::string_view difficulty_type_EnumValue() const {return Get_difficulty_type_EnumValue(key.difficulty_type);};
+__int32 reward_exp;
 __int32 reward_money;
 BnsTables::Shared::TableRef reward_item;
-int reward_item_tableId(){return 195;};
+int reward_item_tableId() const {return 195;};
 __int16 reward_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
@@ -38,7 +39,6 @@ __int16 reward_item_count;
 	{
 		wave_dungeon_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::wave_dungeon_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

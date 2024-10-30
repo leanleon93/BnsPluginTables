@@ -14,17 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 reward_contents_type;
+                signed char reward_contents_type;
 __int16 id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view reward_contents_type_EnumValue() const {return Get_reward_contents_type_EnumValue(key.reward_contents_type);};
+wchar_t* alias;
 BnsTables::Shared::TableRef reward_item[3];
-int reward_item_tableId(){return 189;};
-__int8 reward_item_count[3];
+__int32 reward_item_Size() const {return 3;};
+int reward_item_tableId() const {return 195;};
+signed char reward_item_count[3];
+__int32 reward_item_count_Size() const {return 3;};
 char Pad0[1];
 __int32 reward_exp;
 
@@ -38,7 +41,6 @@ __int32 reward_exp;
 	{
 		attraction_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::attraction_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

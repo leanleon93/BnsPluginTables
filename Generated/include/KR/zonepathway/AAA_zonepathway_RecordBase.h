@@ -24,10 +24,10 @@ __int16 waypoint;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::XYZ pos;
-__int8 move_type;
+signed char move_type;
 char Pad0[3];
 BnsTables::Shared::TableRef warp_social;
-int warp_social_tableId(){return 382;};
+int warp_social_tableId() const {return 382;};
 wchar_t* description;
 __int16 sync;
 
@@ -41,7 +41,6 @@ __int16 sync;
 	{
 		zonepathway_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonepathway_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

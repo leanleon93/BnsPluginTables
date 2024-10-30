@@ -41,7 +41,6 @@ wchar_t* end_time;
 	{
 		contents_schedule_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contents_schedule_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef sit_state_social;
-int sit_state_social_tableId(){return 396;};
+int sit_state_social_tableId() const {return 396;};
 bool can_sitdown;
 char Pad0[3];
 wchar_t* start_transit;
@@ -39,7 +39,6 @@ wchar_t* end_transit;
 	{
 		statesocial_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::statesocial_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

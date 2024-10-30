@@ -20,7 +20,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int32 zone;
-__int8 id;
+signed char id;
 
             };
 			unsigned __int64 key;
@@ -31,7 +31,7 @@ wchar_t* start_kismet_name;
 wchar_t* end_kismet_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 448; }
+		static __int16 TableId() { return 466; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -40,7 +40,6 @@ wchar_t* end_kismet_name;
 	{
 		zoneevent_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneevent_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

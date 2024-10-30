@@ -32,7 +32,7 @@ float scale_y;
 float scale_z;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 55); }
-		static __int16 TableId() { return 438; }
+		static __int16 TableId() { return 456; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -41,7 +41,6 @@ float scale_z;
 	{
 		zonearea_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonearea_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

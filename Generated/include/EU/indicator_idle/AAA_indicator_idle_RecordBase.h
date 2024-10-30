@@ -14,21 +14,24 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef master_idle;
-int master_idle_tableId(){return 256;};
+int master_idle_tableId() const {return 266;};
 BnsTables::Shared::TableRef npc[5];
-int npc_tableId(){return 255;};
+__int32 npc_Size() const {return 5;};
+int npc_tableId() const {return 265;};
 BnsTables::Shared::TableRef idle[5];
-int idle_tableId(){return 256;};
+__int32 idle_Size() const {return 5;};
+int idle_tableId() const {return 266;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 179; }
+		static __int16 TableId() { return 183; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -37,7 +40,6 @@ int idle_tableId(){return 256;};
 	{
 		indicator_idle_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::indicator_idle_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

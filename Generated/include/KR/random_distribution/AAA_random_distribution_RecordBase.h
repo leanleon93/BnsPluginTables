@@ -14,13 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int16 weight[101];
+__int32 weight_Size() const {return 101;};
 char Pad0[2];
 __int32 total_weight;
 
@@ -34,7 +36,6 @@ __int32 total_weight;
 	{
 		random_distribution_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::random_distribution_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

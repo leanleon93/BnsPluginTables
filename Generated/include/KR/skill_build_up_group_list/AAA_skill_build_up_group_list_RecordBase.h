@@ -22,10 +22,12 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill_build_up_group[10];
-int skill_build_up_group_tableId(){return 341;};
+__int32 skill_build_up_group_Size() const {return 10;};
+int skill_build_up_group_tableId() const {return 341;};
 __int16 skill_build_up_group_weight[10];
+__int32 skill_build_up_group_weight_Size() const {return 10;};
 __int32 skill_build_up_group_total_weight;
-__int8 skill_build_up_group_total_count;
+signed char skill_build_up_group_total_count;
 bool draw_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
@@ -38,7 +40,6 @@ bool draw_enable;
 	{
 		skill_build_up_group_list_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_build_up_group_list_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

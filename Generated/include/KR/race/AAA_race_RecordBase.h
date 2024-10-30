@@ -14,20 +14,21 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
+                signed char race;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+BnsTables::Shared::TableRef name2;
+int name2_tableId() const {return 420;};
 wchar_t* lobby_race_imageset;
 wchar_t* character_info_race_imageset;
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
-__int8 male_customize_zoomcamera_add_height;
-__int8 female_customize_zoomcamera_add_height;
+int desc_tableId() const {return 420;};
+signed char male_customize_zoomcamera_add_height;
+signed char female_customize_zoomcamera_add_height;
 char Pad0[2];
 wchar_t* lobby_race_bgm;
 
@@ -41,7 +42,6 @@ wchar_t* lobby_race_bgm;
 	{
 		race_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::race_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,17 +14,19 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 skel_index;
-__int8 bone_index;
+signed char skel_index;
+signed char bone_index;
 char Pad0[2];
 wchar_t* mesh_id;
 wchar_t* mesh_col[3];
+__int32 mesh_col_Size() const {return 3;};
 wchar_t* mesh_animset;
 wchar_t* attach_show;
 wchar_t* detach_show;
@@ -39,7 +41,6 @@ wchar_t* detach_show;
 	{
 		attachment_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::attachment_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

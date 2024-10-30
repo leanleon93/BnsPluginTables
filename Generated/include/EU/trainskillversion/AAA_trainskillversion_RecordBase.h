@@ -14,16 +14,17 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 version;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int32 version;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 408; }
+		static __int16 TableId() { return 423; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -32,7 +33,6 @@ namespace BnsTables::EU {
 	{
 		trainskillversion_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::trainskillversion_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

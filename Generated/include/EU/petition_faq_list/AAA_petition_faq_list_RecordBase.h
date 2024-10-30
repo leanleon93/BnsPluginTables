@@ -26,7 +26,7 @@ bool new_faq;
 bool hot_faq;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 276; }
+		static __int16 TableId() { return 287; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +35,6 @@ bool hot_faq;
 	{
 		petition_faq_list_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::petition_faq_list_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

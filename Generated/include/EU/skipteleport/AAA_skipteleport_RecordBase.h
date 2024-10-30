@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 __int16 mastery_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 363; }
+		static __int16 TableId() { return 377; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +33,6 @@ __int16 mastery_level;
 	{
 		skipteleport_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skipteleport_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

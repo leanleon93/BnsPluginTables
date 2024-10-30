@@ -10,6 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		__int32 parent_skill3_id[4];
+__int32 parent_skill3_id_Size() const {return 4;};
 
 		static __int32 SubType() { return 1; }
 	};

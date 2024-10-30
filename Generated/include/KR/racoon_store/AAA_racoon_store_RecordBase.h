@@ -21,21 +21,22 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 store_tab_sort_no;
+signed char store_tab_sort_no;
 char Pad0[3];
 BnsTables::Shared::TableRef store_tab_name;
-int store_tab_name_tableId(){return 420;};
+int store_tab_name_tableId() const {return 420;};
 wchar_t* start_date;
 wchar_t* end_date;
 bool is_retire;
 char Pad1[3];
 __int32 slot_group[8];
-__int8 free_reset_amount;
-__int8 paid_reset_amount;
-__int8 paid_reset_cost_type;
+__int32 slot_group_Size() const {return 8;};
+signed char free_reset_amount;
+signed char paid_reset_amount;
+signed char paid_reset_cost_type;
 char Pad2[1];
 BnsTables::Shared::TableRef paid_reset_cost_item;
-int paid_reset_cost_item_tableId(){return 195;};
+int paid_reset_cost_item_tableId() const {return 195;};
 __int64 paid_reset_cost_amount;
 wchar_t* auto_reset_time;
 
@@ -49,7 +50,6 @@ wchar_t* auto_reset_time;
 	{
 		racoon_store_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::racoon_store_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -25,6 +26,7 @@ wchar_t* rider_anim_set_name;
 wchar_t* anim_tree_name;
 wchar_t* mesh_name;
 wchar_t* material_name[5];
+__int32 material_name_Size() const {return 5;};
 wchar_t* physic_asset;
 wchar_t* ride_show_name;
 wchar_t* getoff_show_name;
@@ -33,9 +35,9 @@ wchar_t* move_vehicle_idle;
 wchar_t* attach_rider_bone;
 wchar_t* attach_vehicle_socket;
 BnsTables::Shared::TableRef stand_idle;
-int stand_idle_tableId(){return 394;};
+int stand_idle_tableId() const {return 394;};
 wchar_t* effect_show;
-__int8 foot_print_type;
+signed char foot_print_type;
 char Pad0[3];
 float preview_mesh_zoom_out_value;
 float preview_mesh_light_brightness;
@@ -50,7 +52,6 @@ float preview_mesh_light_brightness;
 	{
 		vehicle_appearance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::vehicle_appearance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

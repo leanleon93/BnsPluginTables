@@ -31,6 +31,7 @@ wchar_t* background_sub_texture;
 __int16 background_texture_width;
 __int16 background_texture_height;
 __int16 slot_index[120];
+__int32 slot_index_Size() const {return 120;};
 float slot_offset_x;
 float slot_offset_y;
 __int16 slot_column_count;
@@ -78,7 +79,6 @@ float background_particle_scale;
 	{
 		attendance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::attendance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

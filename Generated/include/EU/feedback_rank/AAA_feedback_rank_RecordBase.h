@@ -14,20 +14,23 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 rank_type;
+signed char rank_type;
 char Pad0[3];
 __int32 rank_score[10];
+__int32 rank_score_Size() const {return 10;};
 BnsTables::Shared::TableRef rank_title[10];
-int rank_title_tableId(){return 405;};
+__int32 rank_title_Size() const {return 10;};
+int rank_title_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 134; }
+		static __int16 TableId() { return 139; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -36,7 +39,6 @@ int rank_title_tableId(){return 405;};
 	{
 		feedback_rank_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::feedback_rank_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

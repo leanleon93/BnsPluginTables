@@ -14,16 +14,17 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 contribution_type;
+signed char contribution_type;
 char Pad0[3];
 BnsTables::Shared::TableRef minimum_group_item;
-int minimum_group_item_tableId(){return 195;};
+int minimum_group_item_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
 		static __int16 TableId() { return 76; }
@@ -35,7 +36,6 @@ int minimum_group_item_tableId(){return 195;};
 	{
 		contributionreward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contributionreward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

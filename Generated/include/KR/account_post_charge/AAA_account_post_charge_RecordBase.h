@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,8 +23,10 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 charge_money;
 BnsTables::Shared::TableRef charge_item[2];
-int charge_item_tableId(){return 195;};
+__int32 charge_item_Size() const {return 2;};
+int charge_item_tableId() const {return 195;};
 __int32 charge_item_amount[2];
+__int32 charge_item_amount_Size() const {return 2;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 5; }
@@ -35,7 +38,6 @@ __int32 charge_item_amount[2];
 	{
 		account_post_charge_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::account_post_charge_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

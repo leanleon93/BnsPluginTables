@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -23,10 +24,10 @@ namespace BnsTables::EU {
 __int16 version;
 char Pad0[2];
 BnsTables::Shared::TableRef tooltip_info;
-int tooltip_info_tableId(){return 405;};
+int tooltip_info_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 106; }
+		static __int16 TableId() { return 107; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +36,6 @@ int tooltip_info_tableId(){return 405;};
 	{
 		duel_bot_training_room_version_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::duel_bot_training_room_version_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

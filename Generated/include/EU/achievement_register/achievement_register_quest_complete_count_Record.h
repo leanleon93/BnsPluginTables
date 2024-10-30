@@ -9,8 +9,8 @@ namespace BnsTables::EU {
 	struct achievement_register_quest_complete_count_Record : achievement_register_Record
 	{
 	public:
-		__int8 reset_type;
-__int8 reset_by_acquire_time;
+		signed char reset_type;
+signed char reset_by_acquire_time;
 
 		static __int32 SubType() { return 16; }
 	};

@@ -9,8 +9,8 @@ namespace BnsTables::KR {
 	struct filter_env_hp_percent_Record : filter_Record
 	{
 	public:
-		__int8 op;
-__int8 value;
+		signed char op;
+signed char value;
 
 		static __int32 SubType() { return 29; }
 	};

@@ -15,7 +15,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 id;
-__int8 level;
+signed char level;
 
             };
 			unsigned __int64 key;
@@ -23,24 +23,32 @@ __int8 level;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_ingredient;
-int main_ingredient_tableId(){return 195;};
-__int8 applicable_part[4];
+int main_ingredient_tableId() const {return 195;};
+signed char applicable_part[4];
+__int32 applicable_part_Size() const {return 4;};
 bool use_random_ability_value;
-__int8 success_probability;
+signed char success_probability;
 char Pad0[2];
 __int32 money_cost;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId(){return 304;};
+int distribution_type_tableId() const {return 304;};
 BnsTables::Shared::TableRef fixed_ingredient[8];
-int fixed_ingredient_tableId(){return 195;};
+__int32 fixed_ingredient_Size() const {return 8;};
+int fixed_ingredient_tableId() const {return 195;};
 __int16 fixed_ingredient_stack_count[8];
-__int8 attach_ability[2];
+__int32 fixed_ingredient_stack_count_Size() const {return 8;};
+signed char attach_ability[2];
+__int32 attach_ability_Size() const {return 2;};
 char Pad1[2];
 __int32 ability_min[2];
+__int32 ability_min_Size() const {return 2;};
 __int32 ability_max[2];
+__int32 ability_max_Size() const {return 2;};
 __int32 once_attach_ability_min[2];
+__int32 once_attach_ability_min_Size() const {return 2;};
 __int32 once_attach_ability_max[2];
-__int8 warning;
+__int32 once_attach_ability_max_Size() const {return 2;};
+signed char warning;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
 		static __int16 TableId() { return 217; }
@@ -52,7 +60,6 @@ __int8 warning;
 	{
 		itemspirit_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemspirit_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

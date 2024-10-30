@@ -22,9 +22,10 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int64 transform_item_by_job[17];
+__int32 transform_item_by_job_Size() const {return 17;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 183; }
+		static __int16 TableId() { return 189; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +34,6 @@ __int64 transform_item_by_job[17];
 	{
 		item_brand_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_brand_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

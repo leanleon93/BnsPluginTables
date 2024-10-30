@@ -14,42 +14,53 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 stance_type;
+                signed char stance_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+		std::string_view stance_type_EnumValue() const {return Get_stance_type_EnumValue(key.stance_type);};
+BnsTables::Shared::TableRef name2;
+int name2_tableId() const {return 420;};
 bool initialize;
 char Pad0[1];
 __int16 default_sp;
 __int16 max_sp;
 char Pad1[2];
 BnsTables::Shared::TableRef effect[4];
-int effect_tableId(){return 115;};
+__int32 effect_Size() const {return 4;};
+int effect_tableId() const {return 115;};
 bool impossible_equip;
 bool hide_weapon;
 bool clone_weapon_appearance_to_left;
 char Pad2[1];
 float target_angle[4];
+__int32 target_angle_Size() const {return 4;};
 float target_beam_width[4];
+__int32 target_beam_width_Size() const {return 4;};
 float target_band_first[4];
+__int32 target_band_first_Size() const {return 4;};
 float target_band_second[4];
+__int32 target_band_second_Size() const {return 4;};
 __int16 band_check_limit[4];
+__int32 band_check_limit_Size() const {return 4;};
 float target_change_delay[4];
+__int32 target_change_delay_Size() const {return 4;};
 float threshold_min[4];
+__int32 threshold_min_Size() const {return 4;};
 float threshold_max[4];
+__int32 threshold_max_Size() const {return 4;};
 float empty_delay[4];
+__int32 empty_delay_Size() const {return 4;};
 float target_gather_angle;
 float stun_delay;
 float kneel_delay;
 float down_delay;
 float mid_air_delay;
 float swoon_delay;
-__int8 secondgauge_name;
-__int8 secondgauge_use_type;
+signed char secondgauge_name;
+signed char secondgauge_use_type;
 char Pad3[2];
 wchar_t* combat_mode_particle;
 float combat_mode_particle_followup_time_min;
@@ -68,11 +79,12 @@ float phantom_not_combat_mode_particle_followup_time_max;
 wchar_t* phantom_not_combat_mode_particle_release_show;
 wchar_t* kungfu_fighter_weapon_mesh_id;
 wchar_t* kungfu_fighter_weapon_mesh_col[3];
+__int32 kungfu_fighter_weapon_mesh_col_Size() const {return 3;};
 wchar_t* kungfu_fighter_weapon_particle;
 float kungfu_fighter_weapon_particle_followup_time_min;
 float kungfu_fighter_weapon_particle_followup_time_max;
 wchar_t* kungfu_fighter_weapon_particle_release_show;
-__int8 sp_gauge_style;
+signed char sp_gauge_style;
 bool sp_gauge_numeric_visible;
 char Pad4[2];
 wchar_t* sp_gauge_full_particle_ref;
@@ -87,8 +99,9 @@ wchar_t* sp_gauge_consume_observer_particle_ref;
 float sp_gauge_consume_observer_particle_scale;
 wchar_t* summoned_flyingship_attachment_mesh_id;
 wchar_t* summoned_flyingship_attachment_mesh_col[3];
+__int32 summoned_flyingship_attachment_mesh_col_Size() const {return 3;};
 wchar_t* summoned_flyingship_attachment_mesh_animset;
-__int8 summoned_preset_body_shape_part_value;
+signed char summoned_preset_body_shape_part_value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 295); }
 		static __int16 TableId() { return 392; }
@@ -100,7 +113,6 @@ __int8 summoned_preset_body_shape_part_value;
 	{
 		stance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::stance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

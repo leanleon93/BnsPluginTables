@@ -14,24 +14,25 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 item_growth;
-__int8 item_awakening;
-__int8 weapon_tranform;
-__int8 accessory_tranform;
-__int8 weapon_gem_tranform;
-__int8 pet_gem_tranform;
-__int8 post_charge_discount_rate;
+signed char item_growth;
+signed char item_awakening;
+signed char weapon_tranform;
+signed char accessory_tranform;
+signed char weapon_gem_tranform;
+signed char pet_gem_tranform;
+signed char post_charge_discount_rate;
 char Pad0[1];
 __int32 post_charge_discount_max;
-__int8 detach_weapon_gem_money_cost_discount_rate;
-__int8 purify_item_discount_rate;
-__int8 item_improve;
+signed char detach_weapon_gem_money_cost_discount_rate;
+signed char purify_item_discount_rate;
+signed char item_improve;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 171; }
@@ -43,7 +44,6 @@ __int8 item_improve;
 	{
 		guild_discount_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guild_discount_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

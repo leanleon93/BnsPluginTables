@@ -20,22 +20,22 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 preset_type;
+		signed char preset_type;
 char Pad0[3];
 BnsTables::Shared::TableRef preset;
-int preset_tableId(){return 165;};
+int preset_tableId() const {return 169;};
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 178;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 405;};
+int desc_tableId() const {return 420;};
 __int32 order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 172; }
+		static __int16 TableId() { return 176; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -44,7 +44,6 @@ __int32 order;
 	{
 		guilduniformpreset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guilduniformpreset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,22 +14,23 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 id;
+                signed char id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
-__int8 max_party_member_count;
+		std::string_view id_EnumValue() const {return Get_id_EnumValue(key.id);};
+wchar_t* alias;
+signed char max_party_member_count;
 bool default_val;
 bool is_pvp;
 char Pad0[1];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 97; }
+		static __int16 TableId() { return 98; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +39,6 @@ int name_tableId(){return 405;};
 	{
 		difficulty_type_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::difficulty_type_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

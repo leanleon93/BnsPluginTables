@@ -14,13 +14,14 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 idle_type;
+                signed char idle_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 pose_type;
+		std::string_view idle_type_EnumValue() const {return Get_idle_type_EnumValue(key.idle_type);};
+signed char pose_type;
 char Pad0[3];
 wchar_t* die_anim;
 wchar_t* exhaustion_anim;
@@ -93,7 +94,6 @@ wchar_t* lower_rtol;
 	{
 		abnormalmoveanim_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::abnormalmoveanim_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

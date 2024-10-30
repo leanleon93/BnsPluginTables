@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct zoneenv2_button_Record : zoneenv2_Record
 	{
 	public:
-		bool enable_create_solo_party;
+		char Pad_sub_0[2];
+bool enable_create_solo_party;
 
 		static __int32 SubType() { return 0; }
 	};

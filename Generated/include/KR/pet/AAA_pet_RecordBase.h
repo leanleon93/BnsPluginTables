@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -23,6 +24,7 @@ namespace BnsTables::KR {
 wchar_t* mesh_name;
 float mesh_scale;
 wchar_t* material_name[3];
+__int32 material_name_Size() const {return 3;};
 wchar_t* anim_set_name;
 wchar_t* anim_tree_name;
 wchar_t* caster_spawn_show;
@@ -44,7 +46,6 @@ wchar_t* food_show;
 	{
 		pet_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pet_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

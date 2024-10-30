@@ -15,7 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int32 id;
-__int8 variation_id;
+signed char variation_id;
 __int16 skillskin_id;
 
             };
@@ -37,10 +37,10 @@ wchar_t* player_fire_show_3;
 wchar_t* player_fire_show_4;
 wchar_t* player_fire_show_5;
 wchar_t* player_stop_show;
-__int8 chain_type;
-__int8 create_phantom_type;
-__int8 phantom_shoot_type;
-__int8 lyn_phantom_count;
+signed char chain_type;
+signed char create_phantom_type;
+signed char phantom_shoot_type;
+signed char lyn_phantom_count;
 bool succession_next_skill;
 bool show_key_result_damage_signal;
 char Pad1[2];
@@ -135,7 +135,7 @@ wchar_t* trigger_critical_show;
 wchar_t* skill_skin_desc;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 10); }
-		static __int16 TableId() { return 343; }
+		static __int16 TableId() { return 356; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -144,7 +144,6 @@ wchar_t* skill_skin_desc;
 	{
 		skillshow3_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillshow3_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

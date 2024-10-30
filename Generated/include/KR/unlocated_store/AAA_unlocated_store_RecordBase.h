@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef store2;
-int store2_tableId(){return 398;};
+int store2_tableId() const {return 398;};
 bool available_only_with_grade_benefit;
-__int8 unlocated_store_type;
+signed char unlocated_store_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 430; }
@@ -36,7 +36,6 @@ __int8 unlocated_store_type;
 	{
 		unlocated_store_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::unlocated_store_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

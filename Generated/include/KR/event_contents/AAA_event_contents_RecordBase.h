@@ -14,24 +14,25 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 publisher;
+signed char publisher;
 char Pad0[3];
 __int32 zone_id;
 __int16 start_year;
-__int8 start_month;
-__int8 start_day;
-__int8 start_hour;
+signed char start_month;
+signed char start_day;
+signed char start_hour;
 char Pad1[1];
 __int16 end_year;
-__int8 end_month;
-__int8 end_day;
-__int8 end_hour;
+signed char end_month;
+signed char end_day;
+signed char end_hour;
 char Pad2[1];
 wchar_t* sub_level_ref;
 
@@ -45,7 +46,6 @@ wchar_t* sub_level_ref;
 	{
 		event_contents_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::event_contents_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

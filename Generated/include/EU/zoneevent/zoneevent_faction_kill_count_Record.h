@@ -10,6 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		__int32 spawn_delay[3];
+__int32 spawn_delay_Size() const {return 3;};
 
 		static __int32 SubType() { return 0; }
 	};

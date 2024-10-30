@@ -14,27 +14,29 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 max_score_except_boss_npc;
-__int8 boss_npc_kill_count;
+signed char boss_npc_kill_count;
 char Pad0[3];
 BnsTables::Shared::TableRef boss_npc[4];
-int boss_npc_tableId(){return 137;};
+__int32 boss_npc_Size() const {return 4;};
+int boss_npc_tableId() const {return 137;};
 bool use_progress_info_ui;
 bool use_simple_result_ui;
 bool use_combat_signal_ui;
 char Pad1[1];
 BnsTables::Shared::TableRef attack_damage_rank;
-int attack_damage_rank_tableId(){return 139;};
+int attack_damage_rank_tableId() const {return 139;};
 BnsTables::Shared::TableRef received_damage_rank;
-int received_damage_rank_tableId(){return 139;};
+int received_damage_rank_tableId() const {return 139;};
 BnsTables::Shared::TableRef attack_response_rank;
-int attack_response_rank_tableId(){return 139;};
+int attack_response_rank_tableId() const {return 139;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 5); }
 		static __int16 TableId() { return 138; }
@@ -46,7 +48,6 @@ int attack_response_rank_tableId(){return 139;};
 	{
 		feedback_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::feedback_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

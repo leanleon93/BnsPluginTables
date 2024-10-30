@@ -22,16 +22,19 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
-__int8 equip_type[10];
+int name2_tableId() const {return 420;};
+signed char equip_type[10];
+__int32 equip_type_Size() const {return 10;};
 char Pad0[2];
 BnsTables::Shared::TableRef star_stone_slot[8];
-int star_stone_slot_tableId(){return 189;};
+__int32 star_stone_slot_Size() const {return 8;};
+int star_stone_slot_tableId() const {return 195;};
 BnsTables::Shared::TableRef star_words_condition_event[10];
-int star_words_condition_event_tableId(){return 62;};
+__int32 star_words_condition_event_Size() const {return 10;};
+int star_words_condition_event_tableId() const {return 63;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 380; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 4); }
+		static __int16 TableId() { return 395; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -40,7 +43,6 @@ int star_words_condition_event_tableId(){return 62;};
 	{
 		star_words_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::star_words_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -89,7 +90,6 @@ wchar_t* lower_rtol;
 	{
 		field_item_move_anim_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::field_item_move_anim_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

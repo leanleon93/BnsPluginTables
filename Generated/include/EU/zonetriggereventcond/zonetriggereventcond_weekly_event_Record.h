@@ -9,9 +9,11 @@ namespace BnsTables::EU {
 	struct zonetriggereventcond_weekly_event_Record : zonetriggereventcond_Record
 	{
 	public:
-		__int8 event_day_of_week;
-__int8 event_hour[12];
-__int8 event_minute[12];
+		signed char event_day_of_week;
+signed char event_hour[12];
+__int32 event_hour_Size() const {return 12;};
+signed char event_minute[12];
+__int32 event_minute_Size() const {return 12;};
 
 		static __int32 SubType() { return 0; }
 	};

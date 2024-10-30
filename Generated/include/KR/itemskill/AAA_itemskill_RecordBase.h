@@ -14,24 +14,26 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 skill_id;
-__int8 skill_variation_id[8];
+signed char skill_variation_id[8];
+__int32 skill_variation_id_Size() const {return 8;};
 bool include_inheritance_skill;
 char Pad0[3];
 BnsTables::Shared::TableRef item_sim_skill;
-int item_sim_skill_tableId(){return 337;};
+int item_sim_skill_tableId() const {return 337;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId(){return 420;};
+int description2_tableId() const {return 420;};
 BnsTables::Shared::TableRef item_skill_tooltip;
-int item_skill_tooltip_tableId(){return 420;};
+int item_skill_tooltip_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
 		static __int16 TableId() { return 215; }
@@ -43,7 +45,6 @@ int item_skill_tooltip_tableId(){return 420;};
 	{
 		itemskill_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemskill_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

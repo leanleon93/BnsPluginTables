@@ -10,28 +10,29 @@ namespace BnsTables::KR {
 	{
 	public:
 		char Pad_sub_0[2];
-__int8 portal_type;
+signed char portal_type;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef transit_zone;
-int transit_zone_tableId(){return 461;};
+int transit_zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef transit_dungeon;
-int transit_dungeon_tableId(){return 114;};
+int transit_dungeon_tableId() const {return 114;};
 bool transit_reentrance_pcspawn;
 char Pad_sub_2[1];
 __int16 transit_pc_spawn;
 BnsTables::Shared::TableRef transit_pc_spawn_in_arena;
-int transit_pc_spawn_in_arena_tableId(){return 470;};
+int transit_pc_spawn_in_arena_tableId() const {return 470;};
 BnsTables::Shared::TableRef transit_leave_cinematic;
-int transit_leave_cinematic_tableId(){return 57;};
+int transit_leave_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef transit_enter_cinematic;
-int transit_enter_cinematic_tableId(){return 57;};
+int transit_enter_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef effect[8];
-int effect_tableId(){return 115;};
+__int32 effect_Size() const {return 8;};
+int effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef transit_leave_social;
-int transit_leave_social_tableId(){return 382;};
+int transit_leave_social_tableId() const {return 382;};
 BnsTables::Shared::TableRef transit_enter_social;
-int transit_enter_social_tableId(){return 382;};
-__int8 required_level;
+int transit_enter_social_tableId() const {return 382;};
+signed char required_level;
 
 		static __int32 SubType() { return 7; }
 	};

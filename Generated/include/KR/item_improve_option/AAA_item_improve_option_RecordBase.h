@@ -15,24 +15,25 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 id;
-__int8 level;
+signed char level;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 ability;
+signed char ability;
 char Pad0[3];
 __int32 ability_value;
 BnsTables::Shared::TableRef effect;
-int effect_tableId(){return 115;};
+int effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef effect_description;
-int effect_description_tableId(){return 420;};
+int effect_description_tableId() const {return 420;};
 BnsTables::Shared::TableRef skill_modify_info_group[10];
-int skill_modify_info_group_tableId(){return 353;};
+__int32 skill_modify_info_group_Size() const {return 10;};
+int skill_modify_info_group_tableId() const {return 353;};
 BnsTables::Shared::TableRef additional_description;
-int additional_description_tableId(){return 420;};
+int additional_description_tableId() const {return 420;};
 BnsTables::Shared::IconRef draw_option_icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 2); }
@@ -45,7 +46,6 @@ BnsTables::Shared::IconRef draw_option_icon;
 	{
 		item_improve_option_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_improve_option_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

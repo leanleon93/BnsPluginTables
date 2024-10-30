@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef fishing_field;
-int fishing_field_tableId(){return 149;};
+int fishing_field_tableId() const {return 149;};
 
 		static __int32 SubType() { return 17; }
 	};

@@ -21,6 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* ranking_npc_grade_text[30];
+__int32 ranking_npc_grade_text_Size() const {return 30;};
 bool use_ranking_npc_grade;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
@@ -33,7 +34,6 @@ bool use_ranking_npc_grade;
 	{
 		rankingpvestage_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::rankingpvestage_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

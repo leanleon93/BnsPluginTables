@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -37,7 +38,7 @@ __int32 skill_stone_1_recommend_score;
 __int32 skill_stone_2_recommend_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 71; }
+		static __int16 TableId() { return 72; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -46,7 +47,6 @@ __int32 skill_stone_2_recommend_score;
 	{
 		contentsjournalrecommenditem_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contentsjournalrecommenditem_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

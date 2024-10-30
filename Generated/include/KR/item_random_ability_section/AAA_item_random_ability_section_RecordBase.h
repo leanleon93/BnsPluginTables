@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -25,7 +26,7 @@ __int32 variation_value_max;
 __int32 variation_value_with_special_item_min;
 __int32 variation_value_with_special_item_max;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId(){return 304;};
+int distribution_type_tableId() const {return 304;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 210; }
@@ -37,7 +38,6 @@ int distribution_type_tableId(){return 304;};
 	{
 		item_random_ability_section_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_random_ability_section_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

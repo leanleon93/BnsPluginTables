@@ -22,18 +22,18 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef season;
-int season_tableId(){return 313;};
-__int8 schedule_number;
+int season_tableId() const {return 313;};
+signed char schedule_number;
 char Pad0[3];
 wchar_t* start_time;
 wchar_t* end_time;
 BnsTables::Shared::TableRef reward_group;
-int reward_group_tableId(){return 312;};
+int reward_group_tableId() const {return 312;};
 bool is_join_reward;
 bool is_job_reward;
 char Pad1[2];
 __int32 lucky_reward_count;
-__int8 require_tier;
+signed char require_tier;
 char Pad2[1];
 __int16 lucky_tax_reward_rate;
 bool show_accumurate_reward;
@@ -48,7 +48,6 @@ bool show_accumurate_reward;
 	{
 		ranking2_season_schedule_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ranking2_season_schedule_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

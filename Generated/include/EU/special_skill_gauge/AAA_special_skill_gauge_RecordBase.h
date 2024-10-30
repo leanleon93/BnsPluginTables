@@ -14,16 +14,17 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int16 gauge_increase_per_sec;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int16 gauge_increase_per_sec;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 376; }
+		static __int16 TableId() { return 391; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -32,7 +33,6 @@ namespace BnsTables::EU {
 	{
 		special_skill_gauge_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::special_skill_gauge_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

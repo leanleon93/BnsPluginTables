@@ -15,28 +15,31 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int16 command;
-__int8 pc_job;
+signed char pc_job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 category;
-__int8 joypad_category;
+		std::string_view command_EnumValue() const {return Get_command_EnumValue(key.command);};
+std::string_view pc_job_EnumValue() const {return Get_pc_job_EnumValue(key.pc_job);};
+signed char category;
+signed char joypad_category;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 wchar_t* default_keycap;
 bool modifier_enabled;
-__int8 sort_no;
-__int8 layer;
+signed char sort_no;
+signed char layer;
 char Pad1[1];
 __int16 option_sort_no;
-__int8 usable_joypad_mode;
+signed char usable_joypad_mode;
 bool joypad_customize_enabled;
+bool joypad_overlapped_binding_enabled;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 231; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
+		static __int16 TableId() { return 238; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -45,7 +48,6 @@ bool joypad_customize_enabled;
 	{
 		key_command_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::key_command_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

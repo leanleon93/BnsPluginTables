@@ -14,7 +14,7 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 sealed_level;
+                signed char sealed_level;
 
             };
 			unsigned __int64 key;
@@ -33,7 +33,6 @@ wchar_t* scroll_level_font;
 	{
 		sealed_dungeon_level_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::sealed_dungeon_level_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

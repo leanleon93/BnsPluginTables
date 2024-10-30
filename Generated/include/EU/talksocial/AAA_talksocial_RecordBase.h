@@ -14,14 +14,15 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 bool use_at_dead;
 bool use_at_exhaustion;
 bool use_at_restoration;
@@ -31,13 +32,13 @@ bool use_at_equip_costume;
 bool use_at_achievement_title;
 bool use_at_equip_setitem;
 bool use_at_equip_paircostume;
-__int8 use_job;
+signed char use_job;
 bool use_at_equip_accessory;
 char Pad0[1];
 BnsTables::Shared::TableRef msg;
-int msg_tableId(){return 151;};
+int msg_tableId() const {return 155;};
 BnsTables::Shared::TableRef msg_target;
-int msg_target_tableId(){return 151;};
+int msg_target_tableId() const {return 155;};
 bool can_move;
 bool can_sit;
 char Pad1[2];
@@ -50,15 +51,16 @@ wchar_t* lyn_male_show;
 wchar_t* lyn_female_show;
 wchar_t* jin_male_show;
 wchar_t* jin_female_show;
-__int8 social_mode_group_index;
-__int8 social_mode_slot_index;
+signed char social_mode_group_index;
+signed char social_mode_slot_index;
 char Pad2[2];
 BnsTables::Shared::IconRef icon;
 wchar_t* summoned_show[3];
+__int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 20); }
-		static __int16 TableId() { return 399; }
+		static __int16 TableId() { return 414; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -67,7 +69,6 @@ bool can_ride_vehicle;
 	{
 		talksocial_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::talksocial_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

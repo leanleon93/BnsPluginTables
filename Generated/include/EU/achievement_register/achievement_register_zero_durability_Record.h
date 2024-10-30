@@ -10,8 +10,8 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef item_brand;
-int item_brand_tableId(){return 183;};
-__int8 item_grade;
+int item_brand_tableId() const {return 189;};
+signed char item_grade;
 
 		static __int32 SubType() { return 42; }
 	};

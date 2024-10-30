@@ -14,18 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 page;
+                signed char page;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
-int cost_item_tableId(){return 189;};
+__int32 cost_item_Size() const {return 4;};
+int cost_item_tableId() const {return 195;};
 __int16 cost_item_count[4];
+__int32 cost_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 48; }
@@ -37,7 +39,6 @@ __int16 cost_item_count[4];
 	{
 		card_collection_page_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::card_collection_page_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

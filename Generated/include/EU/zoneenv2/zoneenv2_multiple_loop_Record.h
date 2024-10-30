@@ -9,8 +9,9 @@ namespace BnsTables::EU {
 	struct zoneenv2_multiple_loop_Record : zoneenv2_Record
 	{
 	public:
-		BnsTables::Shared::TableRef loop_restricted_effect;
-int loop_restricted_effect_tableId(){return 111;};
+		char Pad_sub_0[2];
+BnsTables::Shared::TableRef loop_restricted_effect;
+int loop_restricted_effect_tableId() const {return 115;};
 
 		static __int32 SubType() { return 15; }
 	};

@@ -10,11 +10,11 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef faction;
-int faction_tableId(){return 135;};
-__int8 race;
-__int8 target_job;
-__int8 above_level;
-__int8 below_level;
+int faction_tableId() const {return 135;};
+signed char race;
+signed char target_job;
+signed char above_level;
+signed char below_level;
 
 		static __int32 SubType() { return 3; }
 	};

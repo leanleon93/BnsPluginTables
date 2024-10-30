@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
+int item_tableId() const {return 195;};
 __int32 usable_duration;
 bool do_not_use;
 
@@ -35,7 +35,6 @@ bool do_not_use;
 	{
 		secret_treasure_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::secret_treasure_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

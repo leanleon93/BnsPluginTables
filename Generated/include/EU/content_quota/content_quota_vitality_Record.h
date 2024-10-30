@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef following;
-int following_tableId(){return 66;};
+int following_tableId() const {return 67;};
 BnsTables::Shared::TableRef delayed;
-int delayed_tableId(){return 66;};
+int delayed_tableId() const {return 67;};
 __int32 exp_boost_ratio;
 
 		static __int32 SubType() { return 0; }

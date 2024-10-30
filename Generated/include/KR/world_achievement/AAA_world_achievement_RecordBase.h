@@ -24,11 +24,13 @@ __int16 grade;
 		wchar_t* open_date;
 __int32 require_contribution;
 BnsTables::Shared::TableRef reward_item[4];
-int reward_item_tableId(){return 195;};
+__int32 reward_item_Size() const {return 4;};
+int reward_item_tableId() const {return 195;};
 __int32 reward_item_count[4];
+__int32 reward_item_count_Size() const {return 4;};
 __int32 accumulate_game_cash;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 wchar_t* grade_image;
 bool is_max_grade;
 
@@ -42,7 +44,6 @@ bool is_max_grade;
 	{
 		world_achievement_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::world_achievement_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -25,7 +26,7 @@ BnsTables::Shared::XYZ position;
 __int16 yaw;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 455; }
+		static __int16 TableId() { return 473; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -34,7 +35,6 @@ __int16 yaw;
 	{
 		zoneteleportposition_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneteleportposition_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

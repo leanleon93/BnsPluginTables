@@ -10,11 +10,13 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef item[8];
-int item_tableId(){return 189;};
+__int32 item_Size() const {return 8;};
+int item_tableId() const {return 195;};
 BnsTables::Shared::TableRef slot_name[8];
-int slot_name_tableId(){return 405;};
+__int32 slot_name_Size() const {return 8;};
+int slot_name_tableId() const {return 420;};
 
-		static __int32 SubType() { return 47; }
+		static __int32 SubType() { return 49; }
 	};
 #pragma pack(pop)
 }

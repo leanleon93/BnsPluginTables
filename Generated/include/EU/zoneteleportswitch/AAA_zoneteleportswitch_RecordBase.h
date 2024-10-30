@@ -26,10 +26,10 @@ BnsTables::Shared::XYZ position;
 __int16 activate_radius;
 char Pad0[2];
 BnsTables::Shared::TableRef activate_teleport;
-int activate_teleport_tableId(){return 401;};
+int activate_teleport_tableId() const {return 416;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 456; }
+		static __int16 TableId() { return 474; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +38,6 @@ int activate_teleport_tableId(){return 401;};
 	{
 		zoneteleportswitch_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneteleportswitch_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

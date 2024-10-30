@@ -10,10 +10,13 @@ namespace BnsTables::EU {
 	{
 	public:
 		__int16 modify_ability_for_mastery[16];
+__int32 modify_ability_for_mastery_Size() const {return 16;};
 __int64 modify_ability_diff_for_mastery[16];
+__int32 modify_ability_diff_for_mastery_Size() const {return 16;};
 __int16 modify_ability_percent_for_mastery[16];
+__int32 modify_ability_percent_for_mastery_Size() const {return 16;};
 
-		static __int32 SubType() { return 861; }
+		static __int32 SubType() { return 971; }
 	};
 #pragma pack(pop)
 }

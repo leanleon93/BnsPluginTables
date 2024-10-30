@@ -14,19 +14,21 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 id;
+                signed char id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view id_EnumValue() const {return Get_id_EnumValue(key.id);};
+wchar_t* alias;
 BnsTables::Shared::TableRef membership_benefit[8];
-int membership_benefit_tableId(){return 258;};
+__int32 membership_benefit_Size() const {return 8;};
+int membership_benefit_tableId() const {return 258;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 420;};
+int description_tableId() const {return 420;};
 BnsTables::Shared::IconRef icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
@@ -39,7 +41,6 @@ BnsTables::Shared::IconRef icon;
 	{
 		character_membership_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::character_membership_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

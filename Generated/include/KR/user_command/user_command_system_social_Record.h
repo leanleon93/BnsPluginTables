@@ -9,10 +9,10 @@ namespace BnsTables::KR {
 	struct user_command_system_social_Record : user_command_Record
 	{
 	public:
-		__int8 system_social_type;
+		signed char system_social_type;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId(){return 414;};
+int talk_social_tableId() const {return 414;};
 
 		static __int32 SubType() { return 2; }
 	};

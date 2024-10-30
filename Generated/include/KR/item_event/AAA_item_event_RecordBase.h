@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 wchar_t* event_expiration_time;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 196; }
@@ -34,7 +35,6 @@ int name2_tableId(){return 420;};
 	{
 		item_event_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_event_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct constellation_star_option_ability_Record : constellation_star_option_Record
 	{
 	public:
-		__int8 modify_ability;
+		signed char modify_ability;
 char Pad_sub_0[3];
 __int32 modify_ability_value_min;
 __int32 modify_ability_value_max;

@@ -26,13 +26,15 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef subject_name;
-int subject_name_tableId(){return 420;};
+int subject_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef group_data_id;
-int group_data_id_tableId(){return 371;};
+int group_data_id_tableId() const {return 371;};
 BnsTables::Shared::TableRef system_msg;
-int system_msg_tableId(){return 155;};
+int system_msg_tableId() const {return 155;};
 wchar_t* start_kismet_name[2];
+__int32 start_kismet_name_Size() const {return 2;};
 wchar_t* end_kismet_name[2];
+__int32 end_kismet_name_Size() const {return 2;};
 __int16 sort_number;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
@@ -45,7 +47,6 @@ __int16 sort_number;
 	{
 		skill_training_room_subject_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_training_room_subject_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

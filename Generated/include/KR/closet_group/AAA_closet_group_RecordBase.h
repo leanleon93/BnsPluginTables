@@ -20,13 +20,13 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 category;
+		signed char category;
 char Pad0[1];
 __int16 sort_no;
 BnsTables::Shared::TableRef charge_of_item_for_instant_payment;
-int charge_of_item_for_instant_payment_tableId(){return 195;};
+int charge_of_item_for_instant_payment_tableId() const {return 195;};
 BnsTables::Shared::TableRef item_to_be_paid;
-int item_to_be_paid_tableId(){return 195;};
+int item_to_be_paid_tableId() const {return 195;};
 bool check_equip_characteristics;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
@@ -39,7 +39,6 @@ bool check_equip_characteristics;
 	{
 		closet_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::closet_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 wchar_t* grade_symbol;
-__int8 grade;
+signed char grade;
 char Pad0[1];
 __int16 boundary_min;
 bool rare;
@@ -40,7 +40,6 @@ bool cannot_use;
 	{
 		fishgrade_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::fishgrade_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

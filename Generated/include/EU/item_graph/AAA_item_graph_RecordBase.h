@@ -19,14 +19,15 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 16); }
-		static __int16 TableId() { return 194; }
+		static __int16 TableId() { return 200; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +36,6 @@ namespace BnsTables::EU {
 	{
 		item_graph_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_graph_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

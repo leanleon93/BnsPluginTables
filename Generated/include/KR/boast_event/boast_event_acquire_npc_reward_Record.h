@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		char Pad_sub_0[3];
-__int8 item_grade;
+signed char item_grade;
 
 		static __int32 SubType() { return 7; }
 	};

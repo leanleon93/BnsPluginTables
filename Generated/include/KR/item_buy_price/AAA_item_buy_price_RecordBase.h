@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,12 +23,14 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 money;
 BnsTables::Shared::TableRef required_itembrand;
-int required_itembrand_tableId(){return 189;};
-__int8 required_itembrand_condition_type;
+int required_itembrand_tableId() const {return 189;};
+signed char required_itembrand_condition_type;
 char Pad0[3];
 BnsTables::Shared::TableRef required_item[4];
-int required_item_tableId(){return 195;};
+__int32 required_item_Size() const {return 4;};
+int required_item_tableId() const {return 195;};
 __int16 required_item_count[4];
+__int32 required_item_count_Size() const {return 4;};
 __int32 required_faction_score;
 __int32 required_duel_point;
 __int32 required_party_battle_point;
@@ -37,18 +40,18 @@ __int32 required_achievement_score;
 __int32 required_achievement_id;
 __int16 required_achievement_step_min;
 __int16 faction_level;
-__int8 check_solo_duel_grade;
-__int8 check_team_duel_grade;
-__int8 check_battle_field_grade_occupation_war;
-__int8 check_battle_field_grade_capture_the_flag;
-__int8 check_battle_field_grade_lead_the_ball;
+signed char check_solo_duel_grade;
+signed char check_team_duel_grade;
+signed char check_battle_field_grade_occupation_war;
+signed char check_battle_field_grade_capture_the_flag;
+signed char check_battle_field_grade_lead_the_ball;
 char Pad1[1];
 __int16 check_closet_collecting_grade;
 BnsTables::Shared::TableRef check_content_quota;
-int check_content_quota_tableId(){return 67;};
+int check_content_quota_tableId() const {return 67;};
 __int32 check_soul_boost_season_bm;
-__int8 required_level;
-__int8 required_mastery_level;
+signed char required_level;
+signed char required_mastery_level;
 __int16 required_account_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
@@ -61,7 +64,6 @@ __int16 required_account_level;
 	{
 		item_buy_price_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_buy_price_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

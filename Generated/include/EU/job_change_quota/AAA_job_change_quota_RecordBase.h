@@ -25,17 +25,25 @@ __int16 world_cluster_id;
 char Pad0[2];
 wchar_t* start_time;
 wchar_t* end_time;
-__int8 job[30];
+signed char job[30];
+__int32 job_Size() const {return 30;};
 __int16 quota_mon[30];
+__int32 quota_mon_Size() const {return 30;};
 __int16 quota_tue[30];
+__int32 quota_tue_Size() const {return 30;};
 __int16 quota_wed[30];
+__int32 quota_wed_Size() const {return 30;};
 __int16 quota_thu[30];
+__int32 quota_thu_Size() const {return 30;};
 __int16 quota_fri[30];
+__int32 quota_fri_Size() const {return 30;};
 __int16 quota_sat[30];
+__int32 quota_sat_Size() const {return 30;};
 __int16 quota_sun[30];
+__int32 quota_sun_Size() const {return 30;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 222; }
+		static __int16 TableId() { return 229; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -44,7 +52,6 @@ __int16 quota_sun[30];
 	{
 		job_change_quota_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_change_quota_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

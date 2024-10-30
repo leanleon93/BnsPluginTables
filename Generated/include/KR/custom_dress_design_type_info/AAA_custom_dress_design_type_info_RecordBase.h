@@ -14,26 +14,27 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 item_type;
-__int8 customize_id;
+                signed char item_type;
+signed char customize_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
-__int8 design_type;
-__int8 customize_category;
+		std::string_view item_type_EnumValue() const {return Get_item_type_EnumValue(key.item_type);};
+wchar_t* alias;
+signed char design_type;
+signed char customize_category;
 char Pad0[2];
 BnsTables::Shared::TableRef price_ref;
-int price_ref_tableId(){return 87;};
-__int8 min_value;
-__int8 max_value;
+int price_ref_tableId() const {return 87;};
+signed char min_value;
+signed char max_value;
 char Pad1[2];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 87; }
@@ -45,7 +46,6 @@ int desc_tableId(){return 420;};
 	{
 		custom_dress_design_type_info_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::custom_dress_design_type_info_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

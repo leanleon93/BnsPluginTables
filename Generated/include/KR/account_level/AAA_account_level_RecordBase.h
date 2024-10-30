@@ -21,19 +21,22 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 __int64 exp;
-__int8 ability[8];
+signed char ability[8];
+__int32 ability_Size() const {return 8;};
 __int32 ability_value[8];
+__int32 ability_value_Size() const {return 8;};
 __int32 ability_base_value[8];
-__int8 badge_slot_quota_category1_premium;
-__int8 badge_slot_quota_category1_normal;
-__int8 badge_slot_quota_category2_premium;
-__int8 badge_slot_quota_category2_normal;
-__int8 badge_slot_quota_category3_premium;
-__int8 badge_slot_quota_category3_normal;
-__int8 badge_page;
-__int8 badge_inventory_size;
+__int32 ability_base_value_Size() const {return 8;};
+signed char badge_slot_quota_category1_premium;
+signed char badge_slot_quota_category1_normal;
+signed char badge_slot_quota_category2_premium;
+signed char badge_slot_quota_category2_normal;
+signed char badge_slot_quota_category3_premium;
+signed char badge_slot_quota_category3_normal;
+signed char badge_page;
+signed char badge_inventory_size;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 4; }
@@ -45,7 +48,6 @@ __int8 badge_inventory_size;
 	{
 		account_level_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::account_level_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

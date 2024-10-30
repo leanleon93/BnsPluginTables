@@ -27,7 +27,8 @@ namespace BnsTables::EU {
 		zoneenv2place_record_sub_fishing_point = 16,
 		zoneenv2place_record_sub_attraction_popup = 17,
 		zoneenv2place_record_sub_enter_arena_dungeonlobby = 18,
-		zoneenv2place_record_sub_count = 19,
+		zoneenv2place_record_sub_board = 19,
+		zoneenv2place_record_sub_count = 20,
     };
 #pragma pack(push, 1)
 	struct zoneenv2place_Record : BnsTables::Shared::DrEl
@@ -36,13 +37,15 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::XYZ region_point[4];
+__int32 region_point_Size() const {return 4;};
 __int16 height;
 char Pad0[2];
 BnsTables::Shared::XYZ action_point;
@@ -57,8 +60,8 @@ char Pad2[2];
 wchar_t* env_actorname;
 bool spawn_env;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 20); }
-		static __int16 TableId() { return 445; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 463; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -67,7 +70,6 @@ bool spawn_env;
 	{
 		zoneenv2place_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneenv2place_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,19 +14,21 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 stat_point_attribute;
+                signed char stat_point_attribute;
 __int16 stat_point;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef stat_effect;
-int stat_effect_tableId(){return 115;};
+		std::string_view stat_point_attribute_EnumValue() const {return Get_stat_point_attribute_EnumValue(key.stat_point_attribute);};
+BnsTables::Shared::TableRef stat_effect;
+int stat_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef event_effect[4];
-int event_effect_tableId(){return 115;};
+__int32 event_effect_Size() const {return 4;};
+int event_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 420;};
+int description_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 256; }
@@ -38,7 +40,6 @@ int description_tableId(){return 420;};
 	{
 		mastery_stat_point_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mastery_stat_point_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -28,17 +28,17 @@ bool enable_co_ownership_pouch;
 bool enable_pvp;
 bool required_inactivated_main_faction;
 bool required_activated_main_faction;
-__int8 apply_content_ban_id;
+signed char apply_content_ban_id;
 bool allow_invite_party_in_arena;
 bool show_leave_zone_popup_when_no_party_in_arena_enterance;
 char Pad1[1];
 BnsTables::Shared::TableRef required_available_weekly_time;
-int required_available_weekly_time_tableId(){return 431;};
+int required_available_weekly_time_tableId() const {return 446;};
 bool town;
 bool reentrance_pcspawn_check_later_when_enterworld;
 bool infinite_durability;
 bool enable_auto_mode;
-__int8 auto_mode_type;
+signed char auto_mode_type;
 bool enable_auto_item_support;
 bool activate_vehicle;
 bool enable_change_channel;
@@ -46,8 +46,8 @@ bool allow_invite_party_in_same_channel_only;
 bool enable_performance_option;
 bool is_world_boss_spawn_zone;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 454; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static __int16 TableId() { return 472; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -56,7 +56,6 @@ bool is_world_boss_spawn_zone;
 	{
 		zonerule_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonerule_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

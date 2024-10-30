@@ -14,14 +14,16 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef beauty_item[120];
-int beauty_item_tableId(){return 409;};
+__int32 beauty_item_Size() const {return 120;};
+int beauty_item_tableId() const {return 409;};
 __int16 sell_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
@@ -34,7 +36,6 @@ __int16 sell_rate;
 	{
 		summonedbeautyshop_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::summonedbeautyshop_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

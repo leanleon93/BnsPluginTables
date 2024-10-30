@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef stage_number_name;
-int stage_number_name_tableId(){return 420;};
+int stage_number_name_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 218; }
@@ -33,7 +33,6 @@ int stage_number_name_tableId(){return 420;};
 	{
 		item_stage_number_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_stage_number_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

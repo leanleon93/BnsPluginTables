@@ -10,15 +10,15 @@ namespace BnsTables::EU {
 	{
 	public:
 		__int32 silhouette_designer_preset_index;
-__int8 silhouette_race;
-__int8 silhouette_sex;
+signed char silhouette_race;
+signed char silhouette_sex;
 char Pad_sub_0[2];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 178;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 405;};
+int desc_tableId() const {return 420;};
 
 		static __int32 SubType() { return 4; }
 	};

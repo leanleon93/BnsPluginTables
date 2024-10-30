@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct zoneenv2_enter_arena_dungeonlobby_Record : zoneenv2_Record
 	{
 	public:
-		bool enter_sealeddungeon;
+		char Pad_sub_0[2];
+bool enter_sealeddungeon;
 
 		static __int32 SubType() { return 19; }
 	};

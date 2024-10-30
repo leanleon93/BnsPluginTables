@@ -21,34 +21,38 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef survey_question;
-int survey_question_tableId(){return 398;};
-__int8 job;
-__int8 race;
+int survey_question_tableId() const {return 413;};
+signed char job;
+signed char race;
 char Pad0[2];
 __int32 level;
 BnsTables::Shared::TableRef completed_quest;
-int completed_quest_tableId(){return 283;};
+int completed_quest_tableId() const {return 294;};
 __int16 start_year;
-__int8 start_month;
-__int8 start_day;
-__int8 start_hour;
+signed char start_month;
+signed char start_day;
+signed char start_hour;
 char Pad1[1];
 __int16 end_year;
-__int8 end_month;
-__int8 end_day;
-__int8 end_hour;
+signed char end_month;
+signed char end_day;
+signed char end_hour;
 char Pad2[1];
 BnsTables::Shared::TableRef need_item;
-int need_item_tableId(){return 189;};
+int need_item_tableId() const {return 195;};
 BnsTables::Shared::TableRef fixed_reward_item[4];
-int fixed_reward_item_tableId(){return 189;};
-__int8 fixed_reward_item_count[4];
+__int32 fixed_reward_item_Size() const {return 4;};
+int fixed_reward_item_tableId() const {return 195;};
+signed char fixed_reward_item_count[4];
+__int32 fixed_reward_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_reward_item[4];
-int optional_reward_item_tableId(){return 189;};
-__int8 optional_reward_item_count[4];
+__int32 optional_reward_item_Size() const {return 4;};
+int optional_reward_item_tableId() const {return 195;};
+signed char optional_reward_item_count[4];
+__int32 optional_reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 397; }
+		static __int16 TableId() { return 412; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -57,7 +61,6 @@ __int8 optional_reward_item_count[4];
 	{
 		survey_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::survey_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

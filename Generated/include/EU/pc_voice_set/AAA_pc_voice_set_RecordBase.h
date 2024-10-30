@@ -14,22 +14,25 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 id;
-__int8 job;
-__int8 stance;
+                signed char id;
+signed char job;
+signed char stance;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* voice_set_name;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view stance_EnumValue() const {return Get_stance_EnumValue(key.stance);};
+wchar_t* voice_set_name;
 wchar_t* sample_sound_name[6];
+__int32 sample_sound_name_Size() const {return 6;};
 wchar_t* type1_sample_sound_name;
 wchar_t* type2_sample_sound_name;
 wchar_t* type3_sample_sound_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 273; }
+		static __int16 TableId() { return 284; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +41,6 @@ wchar_t* type3_sample_sound_name;
 	{
 		pc_voice_set_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pc_voice_set_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

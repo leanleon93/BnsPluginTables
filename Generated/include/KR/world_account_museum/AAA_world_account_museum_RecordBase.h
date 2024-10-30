@@ -22,17 +22,22 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_card[8];
-int collection_card_tableId(){return 448;};
+__int32 collection_card_Size() const {return 8;};
+int collection_card_tableId() const {return 448;};
 __int16 collection_card_count[8];
+__int32 collection_card_count_Size() const {return 8;};
 wchar_t* start_time;
 wchar_t* end_time;
 bool can_not_used;
-__int8 ability[3];
+signed char ability[3];
+__int32 ability_Size() const {return 3;};
 __int32 ability_value[3];
+__int32 ability_value_Size() const {return 3;};
 __int32 ability_base_value[3];
+__int32 ability_base_value_Size() const {return 3;};
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId(){return 420;};
-__int8 collection_category;
+int collection_name_tableId() const {return 420;};
+signed char collection_category;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 451; }
@@ -44,7 +49,6 @@ __int8 collection_category;
 	{
 		world_account_museum_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::world_account_museum_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

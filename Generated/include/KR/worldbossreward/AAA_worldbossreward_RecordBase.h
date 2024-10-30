@@ -22,8 +22,11 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int32 auction_price_contribution_rate[20];
+__int32 auction_price_contribution_rate_Size() const {return 20;};
 __int32 auction_price_contribution_rank_top[20];
+__int32 auction_price_contribution_rank_top_Size() const {return 20;};
 __int32 auction_price_contribution_rank_bottom[20];
+__int32 auction_price_contribution_rank_bottom_Size() const {return 20;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
 		static __int16 TableId() { return 454; }
@@ -35,7 +38,6 @@ __int32 auction_price_contribution_rank_bottom[20];
 	{
 		worldbossreward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::worldbossreward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

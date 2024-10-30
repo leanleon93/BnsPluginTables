@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int32 diff_hyper_energy;
 
-		static __int32 SubType() { return 876; }
+		static __int32 SubType() { return 986; }
 	};
 #pragma pack(pop)
 }

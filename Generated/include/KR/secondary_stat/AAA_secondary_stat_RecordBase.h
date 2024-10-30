@@ -20,7 +20,9 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int16 secondary_stat[4];
+		std::string_view primary_stat_EnumValue() const {return Get_primary_stat_EnumValue(key.primary_stat);};
+__int16 secondary_stat[4];
+__int32 secondary_stat_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 333; }
@@ -32,7 +34,6 @@ namespace BnsTables::KR {
 	{
 		secondary_stat_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::secondary_stat_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

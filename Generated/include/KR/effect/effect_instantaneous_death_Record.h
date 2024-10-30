@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_instantaneous_death_Record : effect_Record
 	{
 	public:
-		__int8 death_probability;
+		signed char death_probability;
 bool exhaustion;
 
 		static __int32 SubType() { return 51; }

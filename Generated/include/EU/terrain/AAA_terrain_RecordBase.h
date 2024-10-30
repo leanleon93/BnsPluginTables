@@ -29,9 +29,12 @@ __int16 count_y;
 __int32 terrain_origin_x;
 __int32 terrain_origin_y;
 wchar_t* description;
+bool skip_cooking;
+char Pad0[1];
+__int16 release_contents_group;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 404; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
+		static __int16 TableId() { return 419; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -40,7 +43,6 @@ wchar_t* description;
 	{
 		terrain_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::terrain_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

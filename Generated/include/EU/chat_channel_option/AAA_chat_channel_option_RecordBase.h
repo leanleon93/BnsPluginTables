@@ -20,13 +20,13 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 category;
-__int8 font_color_index;
-__int8 group;
+		signed char category;
+signed char font_color_index;
+signed char group;
 bool modifiable;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 54; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
+		static __int16 TableId() { return 55; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +35,6 @@ bool modifiable;
 	{
 		chat_channel_option_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::chat_channel_option_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

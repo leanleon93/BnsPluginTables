@@ -22,19 +22,24 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef grade_ss_fish[20];
-int grade_ss_fish_tableId(){return 147;};
+__int32 grade_ss_fish_Size() const {return 20;};
+int grade_ss_fish_tableId() const {return 147;};
 BnsTables::Shared::TableRef grade_s_fish[20];
-int grade_s_fish_tableId(){return 147;};
+__int32 grade_s_fish_Size() const {return 20;};
+int grade_s_fish_tableId() const {return 147;};
 BnsTables::Shared::TableRef grade_a_fish[20];
-int grade_a_fish_tableId(){return 147;};
+__int32 grade_a_fish_Size() const {return 20;};
+int grade_a_fish_tableId() const {return 147;};
 BnsTables::Shared::TableRef grade_b_fish[20];
-int grade_b_fish_tableId(){return 147;};
+__int32 grade_b_fish_Size() const {return 20;};
+int grade_b_fish_tableId() const {return 147;};
 BnsTables::Shared::TableRef grade_c_fish[20];
-int grade_c_fish_tableId(){return 147;};
+__int32 grade_c_fish_Size() const {return 20;};
+int grade_c_fish_tableId() const {return 147;};
 BnsTables::Shared::TableRef bonus_time;
-int bonus_time_tableId(){return 446;};
+int bonus_time_tableId() const {return 446;};
 BnsTables::Shared::TableRef fishing_field_group;
-int fishing_field_group_tableId(){return 150;};
+int fishing_field_group_tableId() const {return 150;};
 wchar_t* bonus_time_effect;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
@@ -47,7 +52,6 @@ wchar_t* bonus_time_effect;
 	{
 		fishing_field_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::fishing_field_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

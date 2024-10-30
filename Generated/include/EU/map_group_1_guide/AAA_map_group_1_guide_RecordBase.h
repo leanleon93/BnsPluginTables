@@ -14,19 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId(){return 237;};
+int map_group_1_tableId() const {return 244;};
 BnsTables::Shared::TableRef expedition_desc;
-int expedition_desc_tableId(){return 405;};
+int expedition_desc_tableId() const {return 420;};
 wchar_t* expedition_image;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 238; }
+		static __int16 TableId() { return 245; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +36,6 @@ wchar_t* expedition_image;
 	{
 		map_group_1_guide_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::map_group_1_guide_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

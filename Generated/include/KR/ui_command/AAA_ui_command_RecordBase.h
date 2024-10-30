@@ -14,14 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 command;
+                signed char command;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+		std::string_view command_EnumValue() const {return Get_command_EnumValue(key.command);};
+BnsTables::Shared::TableRef name2;
+int name2_tableId() const {return 420;};
 wchar_t* icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 59); }
@@ -34,7 +35,6 @@ wchar_t* icon;
 	{
 		ui_command_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ui_command_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,27 +14,29 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 benefit_type;
-__int8 level;
+                signed char benefit_type;
+signed char level;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 game_grade_key;
+		std::string_view benefit_type_EnumValue() const {return Get_benefit_type_EnumValue(key.benefit_type);};
+__int32 game_grade_key;
 __int64 value;
 BnsTables::Shared::TableRef effect;
-int effect_tableId(){return 111;};
+int effect_tableId() const {return 115;};
 wchar_t* string_value;
 bool enable_in_arena_duel;
 char Pad0[3];
 BnsTables::Shared::TableRef achievement[4];
-int achievement_tableId(){return 6;};
+__int32 achievement_Size() const {return 4;};
+int achievement_tableId() const {return 6;};
 wchar_t* icon_image_set;
 wchar_t* name;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 158; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
+		static __int16 TableId() { return 162; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -43,7 +45,6 @@ wchar_t* name;
 	{
 		gradebenefits_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::gradebenefits_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

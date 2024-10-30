@@ -14,23 +14,24 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 __int32 view_skill_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 tree_id;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int32 tree_id;
 __int16 pc_level;
 __int16 pc_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId(){return 294;};
+int complete_quest_tableId() const {return 294;};
 BnsTables::Shared::TableRef jumping_pc_complete_quest;
-int jumping_pc_complete_quest_tableId(){return 294;};
+int jumping_pc_complete_quest_tableId() const {return 294;};
 __int32 consumed_tp;
-__int8 sort_id;
+signed char sort_id;
 bool ui_invisible;
 bool context_lock_disable;
 
@@ -44,7 +45,6 @@ bool context_lock_disable;
 	{
 		skill_train_category_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_train_category_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

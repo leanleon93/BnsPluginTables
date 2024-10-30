@@ -22,13 +22,16 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef acquire_item[100];
-int acquire_item_tableId(){return 189;};
+__int32 acquire_item_Size() const {return 100;};
+int acquire_item_tableId() const {return 195;};
 BnsTables::Shared::TableRef dispose_item[100];
-int dispose_item_tableId(){return 189;};
+__int32 dispose_item_Size() const {return 100;};
+int dispose_item_tableId() const {return 195;};
 __int16 dispose_item_count[100];
+__int32 dispose_item_count_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 384; }
+		static __int16 TableId() { return 399; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -37,7 +40,6 @@ __int16 dispose_item_count[100];
 	{
 		store_by_item_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::store_by_item_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

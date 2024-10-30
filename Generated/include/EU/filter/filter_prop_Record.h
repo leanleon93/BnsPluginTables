@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		__int16 field;
-__int8 op;
+signed char op;
 char Pad_sub_0[1];
 __int64 value;
 

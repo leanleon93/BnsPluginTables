@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct duel_bot_challenge_round_mode_Record : duel_bot_challenge_Record
 	{
 	public:
-		__int8 total_round;
+		signed char total_round;
 
 		static __int32 SubType() { return 1; }
 	};

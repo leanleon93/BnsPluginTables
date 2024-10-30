@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct npctalkmessage_craft_Record : npctalkmessage_Record
 	{
 	public:
-		__int8 craft_message_type;
+		signed char craft_message_type;
 
 		static __int32 SubType() { return 3; }
 	};

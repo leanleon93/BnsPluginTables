@@ -28,16 +28,17 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef quest;
-int quest_tableId(){return 283;};
+int quest_tableId() const {return 294;};
 BnsTables::Shared::TableRef reward;
-int reward_tableId(){return 281;};
+int reward_tableId() const {return 292;};
 BnsTables::Shared::TableRef basic_quota;
-int basic_quota_tableId(){return 66;};
+int basic_quota_tableId() const {return 67;};
 BnsTables::Shared::TableRef contents_reset[10];
-int contents_reset_tableId(){return 72;};
+__int32 contents_reset_Size() const {return 10;};
+int contents_reset_tableId() const {return 73;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 282; }
+		static __int16 TableId() { return 293; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -46,7 +47,6 @@ int contents_reset_tableId(){return 72;};
 	{
 		questbonusrewardsetting_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::questbonusrewardsetting_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

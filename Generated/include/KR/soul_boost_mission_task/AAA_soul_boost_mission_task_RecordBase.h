@@ -29,21 +29,21 @@ wchar_t* name_pt;
 wchar_t* name_th;
 wchar_t* name_vn;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId(){return 420;};
+int name_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef event;
-int event_tableId(){return 383;};
+int event_tableId() const {return 383;};
 BnsTables::Shared::TableRef mission_step;
-int mission_step_tableId(){return 386;};
-__int8 task_number;
+int mission_step_tableId() const {return 386;};
+signed char task_number;
 char Pad0[3];
 BnsTables::Shared::TableRef mission;
-int mission_tableId(){return 385;};
-__int8 proceedable_type;
-__int8 actor_type;
+int mission_tableId() const {return 385;};
+signed char proceedable_type;
+signed char actor_type;
 char Pad1[2];
 __int64 goal_count;
 __int32 mission_point;
-__int8 mission_level;
+signed char mission_level;
 char Pad2[3];
 wchar_t* description;
 wchar_t* description_en;
@@ -53,7 +53,7 @@ wchar_t* description_pt;
 wchar_t* description_th;
 wchar_t* description_vn;
 BnsTables::Shared::TableRef description_text;
-int description_text_tableId(){return 420;};
+int description_text_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 2); }
 		static __int16 TableId() { return 387; }
@@ -65,7 +65,6 @@ int description_text_tableId(){return 420;};
 	{
 		soul_boost_mission_task_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::soul_boost_mission_task_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,41 +22,47 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 BnsTables::Shared::TableRef requirement_name;
-int requirement_name_tableId(){return 420;};
+int requirement_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef location_desc;
-int location_desc_tableId(){return 420;};
-__int8 category;
+int location_desc_tableId() const {return 420;};
+signed char category;
 char Pad0[3];
 __int32 inner_category;
 __int32 money_cost;
 BnsTables::Shared::TableRef material[5];
-int material_tableId(){return 195;};
+__int32 material_Size() const {return 5;};
+int material_tableId() const {return 195;};
 __int16 material_amount[5];
+__int32 material_amount_Size() const {return 5;};
 char Pad1[2];
 BnsTables::Shared::TableRef brand_material[5];
-int brand_material_tableId(){return 189;};
-__int8 brand_material_condition_type[5];
+__int32 brand_material_Size() const {return 5;};
+int brand_material_tableId() const {return 189;};
+signed char brand_material_condition_type[5];
+__int32 brand_material_condition_type_Size() const {return 5;};
 char Pad2[1];
 __int16 brand_material_amount[5];
+__int32 brand_material_amount_Size() const {return 5;};
 __int16 limit_production_exp;
 char Pad3[2];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId(){return 294;};
+int complete_quest_tableId() const {return 294;};
 __int16 reward_production_exp;
 __int16 reward_production_exp_bonus;
 __int16 half_production_exp_step;
 __int16 zero_production_exp_step;
 bool customizable;
-__int8 delivery_method;
+signed char delivery_method;
 char Pad4[2];
 BnsTables::Shared::TableRef step[4];
-int step_tableId(){return 84;};
-__int8 recipe_type;
-__int8 use_state;
+__int32 step_Size() const {return 4;};
+int step_tableId() const {return 84;};
+signed char recipe_type;
+signed char use_state;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
 		static __int16 TableId() { return 83; }
@@ -68,7 +74,6 @@ __int8 use_state;
 	{
 		craft_recipe_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::craft_recipe_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -10,12 +10,12 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef seed_item_brand;
-int seed_item_brand_tableId(){return 189;};
+int seed_item_brand_tableId() const {return 189;};
 BnsTables::Shared::TableRef feed_item_brand;
-int feed_item_brand_tableId(){return 189;};
-__int8 seed_item_before_level;
-__int8 seed_item_growth_level;
-__int8 feed_item_level;
+int feed_item_brand_tableId() const {return 189;};
+signed char seed_item_before_level;
+signed char seed_item_growth_level;
+signed char feed_item_level;
 
 		static __int32 SubType() { return 31; }
 	};

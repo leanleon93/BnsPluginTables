@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -80,7 +81,7 @@ wchar_t* upper_rtol;
 wchar_t* lower_rtol;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 264; }
+		static __int16 TableId() { return 274; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -89,7 +90,6 @@ wchar_t* lower_rtol;
 	{
 		passive_effect_move_anim_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::passive_effect_move_anim_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

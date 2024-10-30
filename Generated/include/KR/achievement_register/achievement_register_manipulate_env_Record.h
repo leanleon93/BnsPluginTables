@@ -10,8 +10,10 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef env2[8];
-int env2_tableId(){return 462;};
-__int8 env2_state[8];
+__int32 env2_Size() const {return 8;};
+int env2_tableId() const {return 462;};
+signed char env2_state[8];
+__int32 env2_state_Size() const {return 8;};
 
 		static __int32 SubType() { return 20; }
 	};

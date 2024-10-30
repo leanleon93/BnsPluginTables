@@ -9,19 +9,19 @@ namespace BnsTables::EU {
 	struct effect_link_Record : effect_Record
 	{
 	public:
-		__int8 link_type;
-__int8 link_stage;
+		signed char link_type;
+signed char link_stage;
 char Pad_sub_0[2];
 BnsTables::Shared::TableRef catch_caster_effect;
-int catch_caster_effect_tableId(){return 111;};
+int catch_caster_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef catch_target_effect;
-int catch_target_effect_tableId(){return 111;};
+int catch_target_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef detach_effect;
-int detach_effect_tableId(){return 111;};
-__int8 detach_angle_by_dispeled;
+int detach_effect_tableId() const {return 115;};
+signed char detach_angle_by_dispeled;
 char Pad_sub_1[1];
 __int16 detach_margin_by_dispeled;
-__int8 detach_angle_by_timeout;
+signed char detach_angle_by_timeout;
 char Pad_sub_2[1];
 __int16 detach_margin_by_timeout;
 

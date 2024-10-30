@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -71,7 +72,7 @@ __int16 attack_abnormal_hit_base_percent_support_percent;
 __int16 attack_abnormal_hit_value_support_percent;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 149; }
+		static __int16 TableId() { return 154; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -80,7 +81,6 @@ __int16 attack_abnormal_hit_value_support_percent;
 	{
 		formula_constant_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::formula_constant_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

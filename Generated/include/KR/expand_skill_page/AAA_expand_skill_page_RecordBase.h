@@ -14,18 +14,20 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 skill_page;
+                signed char skill_page;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		__int32 money;
-__int8 charge_type;
+signed char charge_type;
 char Pad0[3];
 BnsTables::Shared::TableRef required_item[4];
-int required_item_tableId(){return 195;};
-__int8 required_item_count[4];
+__int32 required_item_Size() const {return 4;};
+int required_item_tableId() const {return 195;};
+signed char required_item_count[4];
+__int32 required_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 133; }
@@ -37,7 +39,6 @@ __int8 required_item_count[4];
 	{
 		expand_skill_page_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::expand_skill_page_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

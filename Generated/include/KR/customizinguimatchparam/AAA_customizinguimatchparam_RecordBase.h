@@ -15,16 +15,18 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int16 ui_index;
-__int8 race;
-__int8 sex;
+signed char race;
+signed char sex;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef sub_name;
-int sub_name_tableId(){return 420;};
-__int8 param_index;
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+BnsTables::Shared::TableRef sub_name;
+int sub_name_tableId() const {return 420;};
+signed char param_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 95; }
@@ -36,7 +38,6 @@ __int8 param_index;
 	{
 		customizinguimatchparam_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customizinguimatchparam_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

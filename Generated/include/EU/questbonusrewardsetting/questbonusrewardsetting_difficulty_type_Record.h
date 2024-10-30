@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct questbonusrewardsetting_difficulty_type_Record : questbonusrewardsetting_Record
 	{
 	public:
-		__int8 difficulty_type;
+		signed char difficulty_type;
 
 		static __int32 SubType() { return 1; }
 	};

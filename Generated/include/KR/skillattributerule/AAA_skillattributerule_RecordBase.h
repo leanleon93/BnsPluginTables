@@ -14,16 +14,21 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 attribute;
+                signed char attribute;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int16 block_caster_flag[4];
+		std::string_view attribute_EnumValue() const {return Get_attribute_EnumValue(key.attribute);};
+__int16 block_caster_flag[4];
+__int32 block_caster_flag_Size() const {return 4;};
 __int16 target_flag[8];
-__int8 dir[8];
-__int8 auto_skill_result[8];
+__int32 target_flag_Size() const {return 8;};
+signed char dir[8];
+__int32 dir_Size() const {return 8;};
+signed char auto_skill_result[8];
+__int32 auto_skill_result_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 339; }
@@ -35,7 +40,6 @@ __int8 auto_skill_result[8];
 	{
 		skillattributerule_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillattributerule_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

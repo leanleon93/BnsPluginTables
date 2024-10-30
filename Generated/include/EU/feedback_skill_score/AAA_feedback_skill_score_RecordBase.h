@@ -14,18 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill;
-int skill_tableId(){return 324;};
-__int8 skill_result[8];
+int skill_tableId() const {return 337;};
+signed char skill_result[8];
+__int32 skill_result_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 135; }
+		static __int16 TableId() { return 140; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -34,7 +36,6 @@ __int8 skill_result[8];
 	{
 		feedback_skill_score_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::feedback_skill_score_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,27 +22,28 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 461;};
+int zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef group;
-int group_tableId(){return 16;};
+int group_tableId() const {return 16;};
 bool ui_filter_attraction_quest_only;
 char Pad0[3];
 BnsTables::Shared::TableRef respawn_confirm_text;
-int respawn_confirm_text_tableId(){return 420;};
+int respawn_confirm_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef attraction_quest[10];
-int attraction_quest_tableId(){return 294;};
-__int8 required_level;
-__int8 required_faction_level;
+__int32 attraction_quest_Size() const {return 10;};
+int attraction_quest_tableId() const {return 294;};
+signed char required_level;
+signed char required_faction_level;
 char Pad1[2];
 BnsTables::Shared::TableRef faction_battle_field_zone_name2;
-int faction_battle_field_zone_name2_tableId(){return 420;};
+int faction_battle_field_zone_name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef faction_battle_field_zone_desc;
-int faction_battle_field_zone_desc_tableId(){return 420;};
+int faction_battle_field_zone_desc_tableId() const {return 420;};
 wchar_t* thumbnail_image;
 BnsTables::Shared::TableRef reward_summary;
-int reward_summary_tableId(){return 18;};
+int reward_summary_tableId() const {return 18;};
 BnsTables::Shared::TableRef entrance_quota;
-int entrance_quota_tableId(){return 67;};
+int entrance_quota_tableId() const {return 67;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 134; }
@@ -54,7 +55,6 @@ int entrance_quota_tableId(){return 67;};
 	{
 		faction_battle_field_zone_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::faction_battle_field_zone_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

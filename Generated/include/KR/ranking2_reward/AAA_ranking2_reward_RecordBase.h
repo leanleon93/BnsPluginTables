@@ -24,8 +24,10 @@ namespace BnsTables::KR {
 __int32 exp;
 __int32 money;
 BnsTables::Shared::TableRef item[4];
-int item_tableId(){return 195;};
+__int32 item_Size() const {return 4;};
+int item_tableId() const {return 195;};
 __int32 item_count[4];
+__int32 item_count_Size() const {return 4;};
 __int16 tax_reward_rate;
 __int16 combat_exp_bonus_rate;
 __int16 duel_point_bonus_rate;
@@ -33,11 +35,13 @@ __int16 party_battle_point_bonus_rate;
 __int16 field_point_bonus_rate;
 char Pad0[2];
 __int32 guild_bank_money;
-__int8 guild_bank_item[5];
+signed char guild_bank_item[5];
+__int32 guild_bank_item_Size() const {return 5;};
 char Pad1[3];
 __int32 guild_bank_item_count[5];
+__int32 guild_bank_item_count_Size() const {return 5;};
 BnsTables::Shared::TableRef guild_ranking_reward_effect;
-int guild_ranking_reward_effect_tableId(){return 115;};
+int guild_ranking_reward_effect_tableId() const {return 115;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
 		static __int16 TableId() { return 311; }
@@ -49,7 +53,6 @@ int guild_ranking_reward_effect_tableId(){return 115;};
 	{
 		ranking2_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ranking2_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

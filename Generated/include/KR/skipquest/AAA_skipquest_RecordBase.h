@@ -30,7 +30,7 @@ namespace BnsTables::KR {
 __int16 mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef quest;
-int quest_tableId(){return 294;};
+int quest_tableId() const {return 294;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 376; }
@@ -42,7 +42,6 @@ int quest_tableId(){return 294;};
 	{
 		skipquest_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skipquest_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

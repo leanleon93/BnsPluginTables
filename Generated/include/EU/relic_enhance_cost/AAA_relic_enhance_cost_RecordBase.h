@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,17 +23,21 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int32 enhance_money;
 BnsTables::Shared::TableRef enhance_required_item[4];
-int enhance_required_item_tableId(){return 189;};
+__int32 enhance_required_item_Size() const {return 4;};
+int enhance_required_item_tableId() const {return 195;};
 __int16 enhance_required_item_count[4];
+__int32 enhance_required_item_count_Size() const {return 4;};
 bool enhance_reset_enable;
 char Pad0[3];
 __int32 enhance_reset_money;
 BnsTables::Shared::TableRef enhance_reset_required_item[4];
-int enhance_reset_required_item_tableId(){return 189;};
+__int32 enhance_reset_required_item_Size() const {return 4;};
+int enhance_reset_required_item_tableId() const {return 195;};
 __int16 enhance_reset_required_item_count[4];
+__int32 enhance_reset_required_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 307; }
+		static __int16 TableId() { return 320; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -41,7 +46,6 @@ __int16 enhance_reset_required_item_count[4];
 	{
 		relic_enhance_cost_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::relic_enhance_cost_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

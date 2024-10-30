@@ -11,8 +11,8 @@ namespace BnsTables::KR {
 	public:
 		__int16 knockback_speed;
 bool caster_dash;
-__int8 knockback_direction;
-__int8 knockback_type;
+signed char knockback_direction;
+signed char knockback_type;
 bool target_yaw_to_caster;
 bool do_not_apply_block_move;
 

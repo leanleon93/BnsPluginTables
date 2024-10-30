@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[1];
 __int16 quest_id;
-__int8 quest_mission_step;
+signed char quest_mission_step;
 
 		static __int32 SubType() { return 3; }
 	};

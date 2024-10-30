@@ -14,29 +14,31 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 main_type_race2;
-__int8 main_type_attributes;
+                signed char main_type_race2;
+signed char main_type_attributes;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef main_type_name;
-int main_type_name_tableId(){return 405;};
+		std::string_view main_type_race2_EnumValue() const {return Get_main_type_race2_EnumValue(key.main_type_race2);};
+std::string_view main_type_attributes_EnumValue() const {return Get_main_type_attributes_EnumValue(key.main_type_attributes);};
+BnsTables::Shared::TableRef main_type_name;
+int main_type_name_tableId() const {return 420;};
 wchar_t* main_type_icon;
-__int8 attack_type;
+signed char attack_type;
 char Pad0[3];
 BnsTables::Shared::TableRef attack_type_name;
-int attack_type_name_tableId(){return 405;};
+int attack_type_name_tableId() const {return 420;};
 wchar_t* attack_type_icon;
-__int8 defend_type;
+signed char defend_type;
 char Pad1[3];
 BnsTables::Shared::TableRef defend_type_name;
-int defend_type_name_tableId(){return 405;};
+int defend_type_name_tableId() const {return 420;};
 wchar_t* defend_type_icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 287; }
+		static __int16 TableId() { return 298; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -45,7 +47,6 @@ wchar_t* defend_type_icon;
 	{
 		race2_attributes_info_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::race2_attributes_info_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

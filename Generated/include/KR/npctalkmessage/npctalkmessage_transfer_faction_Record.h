@@ -9,11 +9,11 @@ namespace BnsTables::KR {
 	struct npctalkmessage_transfer_faction_Record : npctalkmessage_Record
 	{
 	public:
-		__int8 population_statistics;
+		signed char population_statistics;
 char Pad_sub_0[3];
 wchar_t* end_talk_sound_ok;
 BnsTables::Shared::TableRef fail_population_message;
-int fail_population_message_tableId(){return 270;};
+int fail_population_message_tableId() const {return 270;};
 
 		static __int32 SubType() { return 14; }
 	};

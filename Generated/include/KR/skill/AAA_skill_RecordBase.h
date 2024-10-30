@@ -21,10 +21,10 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int32 id;
-__int8 variation_1_level;
-__int8 variation_2_level;
-__int8 variation_3_level;
-__int8 variation_4_level;
+signed char variation_1_level;
+signed char variation_2_level;
+signed char variation_3_level;
+signed char variation_4_level;
 
             };
 			unsigned __int64 key;
@@ -33,7 +33,7 @@ __int8 variation_4_level;
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
+int name2_tableId() const {return 420;};
 __int16 short_cut_key;
 __int16 short_cut_key_classic;
 
@@ -47,7 +47,6 @@ __int16 short_cut_key_classic;
 	{
 		skill_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

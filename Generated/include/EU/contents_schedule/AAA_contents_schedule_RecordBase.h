@@ -32,7 +32,7 @@ wchar_t* start_time;
 wchar_t* end_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 73; }
+		static __int16 TableId() { return 74; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -41,7 +41,6 @@ wchar_t* end_time;
 	{
 		contents_schedule_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contents_schedule_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

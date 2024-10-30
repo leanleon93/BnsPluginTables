@@ -22,12 +22,14 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item[8];
-int item_tableId(){return 189;};
+__int32 item_Size() const {return 8;};
+int item_tableId() const {return 195;};
 __int16 item_amount[8];
+__int32 item_amount_Size() const {return 8;};
 __int64 money;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 76; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
+		static __int16 TableId() { return 77; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -36,7 +38,6 @@ __int64 money;
 	{
 		cost_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::cost_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

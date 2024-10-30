@@ -22,11 +22,11 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 461;};
+int zone_tableId() const {return 461;};
 BnsTables::Shared::TableRef group;
-int group_tableId(){return 16;};
+int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId(){return 290;};
+int public_raid_tableId() const {return 290;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 153; }
@@ -38,7 +38,6 @@ int public_raid_tableId(){return 290;};
 	{
 		flying_circus_game_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::flying_circus_game_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -9,10 +9,10 @@ namespace BnsTables::EU {
 	struct effect_recharge_heart_count_Record : effect_Record
 	{
 	public:
-		__int8 instant_heart_count;
-__int8 heart_count;
+		signed char instant_heart_count;
+signed char heart_count;
 
-		static __int32 SubType() { return 836; }
+		static __int32 SubType() { return 946; }
 	};
 #pragma pack(pop)
 }

@@ -11,8 +11,8 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[3];
 __int32 improve_id;
-__int8 improve_level;
-__int8 op_type;
+signed char improve_level;
+signed char op_type;
 
 		static __int32 SubType() { return 12; }
 	};

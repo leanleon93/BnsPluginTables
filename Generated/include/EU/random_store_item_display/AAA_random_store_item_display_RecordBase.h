@@ -20,16 +20,16 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 random_store_type;
+		signed char random_store_type;
 char Pad0[3];
 BnsTables::Shared::TableRef display_item;
-int display_item_tableId(){return 189;};
-__int8 draw_group;
-__int8 probability_group;
+int display_item_tableId() const {return 195;};
+signed char draw_group;
+signed char probability_group;
 bool new_arrival;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 295; }
+		static __int16 TableId() { return 308; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +38,6 @@ bool new_arrival;
 	{
 		random_store_item_display_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::random_store_item_display_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

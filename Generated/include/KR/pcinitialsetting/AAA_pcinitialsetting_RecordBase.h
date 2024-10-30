@@ -14,17 +14,21 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 job;
+                signed char race;
+signed char job;
 __int16 level;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef quest[2];
-int quest_tableId(){return 294;};
-__int8 quest_mission_step[2];
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+BnsTables::Shared::TableRef quest[2];
+__int32 quest_Size() const {return 2;};
+int quest_tableId() const {return 294;};
+signed char quest_mission_step[2];
+__int32 quest_mission_step_Size() const {return 2;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 280; }
@@ -36,7 +40,6 @@ __int8 quest_mission_step[2];
 	{
 		pcinitialsetting_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pcinitialsetting_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

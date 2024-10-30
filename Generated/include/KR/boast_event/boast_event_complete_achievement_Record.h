@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef boast_achievement;
-int boast_achievement_tableId(){return 6;};
+int boast_achievement_tableId() const {return 6;};
 
 		static __int32 SubType() { return 5; }
 	};

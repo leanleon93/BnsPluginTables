@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		char Pad_sub_0[2];
-__int8 airdash_level;
+signed char airdash_level;
 char Pad_sub_1[3];
 wchar_t* kismet;
 

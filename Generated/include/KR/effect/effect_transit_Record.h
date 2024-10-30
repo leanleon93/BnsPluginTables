@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		__int32 zone_id;
-__int8 pc_spawn;
+signed char pc_spawn;
 
 		static __int32 SubType() { return 47; }
 	};

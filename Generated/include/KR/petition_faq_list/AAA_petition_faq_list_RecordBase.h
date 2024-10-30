@@ -35,7 +35,6 @@ bool hot_faq;
 	{
 		petition_faq_list_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::petition_faq_list_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,18 +22,21 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef faction;
-int faction_tableId(){return 130;};
+int faction_tableId() const {return 135;};
 __int16 sell_rate;
 __int16 buy_rate;
 __int16 resell_rate;
 char Pad0[2];
 BnsTables::Shared::TableRef item[100];
-int item_tableId(){return 189;};
+__int32 item_Size() const {return 100;};
+int item_tableId() const {return 195;};
 __int16 faction_reputation[100];
+__int32 faction_reputation_Size() const {return 100;};
 __int16 faction_level[100];
+__int32 faction_level_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 385; }
+		static __int16 TableId() { return 400; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -42,7 +45,6 @@ __int16 faction_level[100];
 	{
 		store_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::store_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

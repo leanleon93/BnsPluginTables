@@ -32,7 +32,6 @@ namespace BnsTables::KR {
 	{
 		battle_royal_field_item_spawn_position_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::battle_royal_field_item_spawn_position_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

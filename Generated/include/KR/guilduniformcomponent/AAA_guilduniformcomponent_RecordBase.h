@@ -21,22 +21,22 @@ __int32 param_value;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 param_type_category;
+		signed char param_type_category;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 __int32 order;
-__int8 required_guild_level;
+signed char required_guild_level;
 bool usable;
 char Pad2[2];
 BnsTables::Shared::TableRef recipe_id;
-int recipe_id_tableId(){return 177;};
+int recipe_id_tableId() const {return 177;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 174; }
@@ -48,7 +48,6 @@ int recipe_id_tableId(){return 177;};
 	{
 		guilduniformcomponent_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guilduniformcomponent_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

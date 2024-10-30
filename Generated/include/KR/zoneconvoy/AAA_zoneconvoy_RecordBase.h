@@ -33,7 +33,6 @@ __int16 id;
 	{
 		zoneconvoy_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zoneconvoy_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

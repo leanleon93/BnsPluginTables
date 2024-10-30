@@ -10,11 +10,11 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef quest;
-int quest_tableId(){return 294;};
-__int8 mission_step;
+int quest_tableId() const {return 294;};
+signed char mission_step;
 char Pad_sub_0[1];
 __int16 count;
-__int8 count_op;
+signed char count_op;
 
 		static __int32 SubType() { return 36; }
 	};

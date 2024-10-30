@@ -14,7 +14,7 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 grade;
+                signed char grade;
 
             };
 			unsigned __int64 key;
@@ -22,10 +22,10 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		__int32 score;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 58; }
+		static __int16 TableId() { return 59; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -34,7 +34,6 @@ int name_tableId(){return 405;};
 	{
 		closet_collecting_grade_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::closet_collecting_grade_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

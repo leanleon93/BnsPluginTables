@@ -14,17 +14,20 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 upgrade_type;
+signed char upgrade_type;
 char Pad0[3];
 BnsTables::Shared::TableRef upgrade_item[4];
-int upgrade_item_tableId(){return 195;};
-__int8 upgrade_item_stack_count[4];
+__int32 upgrade_item_Size() const {return 4;};
+int upgrade_item_tableId() const {return 195;};
+signed char upgrade_item_stack_count[4];
+__int32 upgrade_item_stack_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 221; }
@@ -36,7 +39,6 @@ __int8 upgrade_item_stack_count[4];
 	{
 		itemtransformupgradeitem_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemtransformupgradeitem_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

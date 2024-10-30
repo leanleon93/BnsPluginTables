@@ -37,7 +37,6 @@ namespace BnsTables::KR {
 	{
 		constellation_star_option_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::constellation_star_option_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

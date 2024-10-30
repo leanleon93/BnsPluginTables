@@ -22,8 +22,8 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 420;};
-__int8 partychanneltype;
+int name2_tableId() const {return 420;};
+signed char partychanneltype;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 397; }
@@ -35,7 +35,6 @@ __int8 partychanneltype;
 	{
 		static_chat_channel_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::static_chat_channel_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

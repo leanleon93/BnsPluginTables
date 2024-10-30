@@ -9,10 +9,10 @@ namespace BnsTables::EU {
 	struct arenaportal_public_raid_Record : arenaportal_Record
 	{
 	public:
-		__int8 public_raid_mode;
+		signed char public_raid_mode;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId(){return 279;};
+int public_raid_tableId() const {return 290;};
 
 		static __int32 SubType() { return 2; }
 	};

@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef env_entrance;
-int env_entrance_tableId(){return 121;};
+int env_entrance_tableId() const {return 121;};
 
 		static __int32 SubType() { return 18; }
 	};

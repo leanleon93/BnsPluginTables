@@ -14,50 +14,61 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
-__int8 job_style;
-__int8 tier;
-__int8 tier_variation;
+                signed char job;
+signed char job_style;
+signed char tier;
+signed char tier_variation;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view job_style_EnumValue() const {return Get_job_style_EnumValue(key.job_style);};
+wchar_t* alias;
 bool enable;
 char Pad0[3];
 __int32 fixed_skill3_id[64];
+__int32 fixed_skill3_id_Size() const {return 64;};
 __int32 variable_skill3_id[32];
-__int8 variable_skill3_variation_id[32];
+__int32 variable_skill3_id_Size() const {return 32;};
+signed char variable_skill3_variation_id[32];
+__int32 variable_skill3_variation_id_Size() const {return 32;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 178;};
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef trait_symbol;
-int trait_symbol_tableId(){return 178;};
+int trait_symbol_tableId() const {return 182;};
 __int16 trait_symbol_index;
 char Pad2[2];
 BnsTables::Shared::TableRef tooltip_train_name;
-int tooltip_train_name_tableId(){return 405;};
+int tooltip_train_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef tooltip_train_description;
-int tooltip_train_description_tableId(){return 405;};
+int tooltip_train_description_tableId() const {return 420;};
 BnsTables::Shared::TableRef tooltip_effect_description;
-int tooltip_effect_description_tableId(){return 405;};
+int tooltip_effect_description_tableId() const {return 420;};
 BnsTables::Shared::TableRef tooltip_skill_systematization_group[6];
-int tooltip_skill_systematization_group_tableId(){return 348;};
+__int32 tooltip_skill_systematization_group_Size() const {return 6;};
+int tooltip_skill_systematization_group_tableId() const {return 362;};
 __int32 tooltip_acquire_skill_list_skill3_id[6];
+__int32 tooltip_acquire_skill_list_skill3_id_Size() const {return 6;};
 BnsTables::Shared::TableRef tooltip_acquire_skill_list_skill3_description[6];
-int tooltip_acquire_skill_list_skill3_description_tableId(){return 405;};
+__int32 tooltip_acquire_skill_list_skill3_description_Size() const {return 6;};
+int tooltip_acquire_skill_list_skill3_description_tableId() const {return 420;};
 __int32 tooltip_variable_skill_list_skill3_id[6];
-__int8 tooltip_variable_skill_list_skill3_variation_id[6];
+__int32 tooltip_variable_skill_list_skill3_id_Size() const {return 6;};
+signed char tooltip_variable_skill_list_skill3_variation_id[6];
+__int32 tooltip_variable_skill_list_skill3_variation_id_Size() const {return 6;};
 char Pad3[2];
 BnsTables::Shared::TableRef tooltip_variable_skill_list_skill3_description[6];
-int tooltip_variable_skill_list_skill3_description_tableId(){return 405;};
+__int32 tooltip_variable_skill_list_skill3_description_Size() const {return 6;};
+int tooltip_variable_skill_list_skill3_description_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 361; }
+		static __int16 TableId() { return 375; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -66,7 +77,6 @@ int tooltip_variable_skill_list_skill3_description_tableId(){return 405;};
 	{
 		skill_trait_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_trait_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

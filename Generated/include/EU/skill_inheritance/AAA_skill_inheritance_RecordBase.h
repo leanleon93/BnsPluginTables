@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int32 parent_skill_id;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 337; }
+		static __int16 TableId() { return 350; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -32,7 +32,6 @@ namespace BnsTables::EU {
 	{
 		skill_inheritance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_inheritance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

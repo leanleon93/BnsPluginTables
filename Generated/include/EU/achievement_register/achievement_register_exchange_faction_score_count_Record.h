@@ -10,8 +10,8 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 255;};
-__int8 min_exchange_score;
+int npc_tableId() const {return 265;};
+signed char min_exchange_score;
 
 		static __int32 SubType() { return 21; }
 	};

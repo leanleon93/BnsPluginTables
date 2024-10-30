@@ -14,15 +14,17 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 sex;
-__int8 param_index;
+                signed char race;
+signed char sex;
+signed char param_index;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 92; }
 		static __int32 SubType() { return 0; }
@@ -33,7 +35,6 @@ __int8 param_index;
 	{
 		customizingignoreparam_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customizingignoreparam_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

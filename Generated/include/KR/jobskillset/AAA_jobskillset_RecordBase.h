@@ -14,18 +14,25 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 skill[100];
-__int8 acquire_type[100];
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+__int32 skill[100];
+__int32 skill_Size() const {return 100;};
+signed char acquire_type[100];
+__int32 acquire_type_Size() const {return 100;};
 __int32 style_level_2_skill[2];
+__int32 style_level_2_skill_Size() const {return 2;};
 __int32 style_level_3_skill[2];
+__int32 style_level_3_skill_Size() const {return 2;};
 __int32 style_level_4_skill[2];
+__int32 style_level_4_skill_Size() const {return 2;};
 __int32 style_level_5_skill[2];
+__int32 style_level_5_skill_Size() const {return 2;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 231; }
@@ -37,7 +44,6 @@ __int32 style_level_5_skill[2];
 	{
 		jobskillset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::jobskillset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

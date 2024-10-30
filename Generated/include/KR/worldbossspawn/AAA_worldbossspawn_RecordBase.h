@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 265;};
+int npc_tableId() const {return 265;};
 BnsTables::Shared::TableRef reward;
-int reward_tableId(){return 454;};
+int reward_tableId() const {return 454;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
 		static __int16 TableId() { return 455; }
@@ -36,7 +36,6 @@ int reward_tableId(){return 454;};
 	{
 		worldbossspawn_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::worldbossspawn_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

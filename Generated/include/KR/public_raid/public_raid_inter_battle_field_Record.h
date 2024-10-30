@@ -10,12 +10,12 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef portal_ticket_item_info;
-int portal_ticket_item_info_tableId(){return 195;};
+int portal_ticket_item_info_tableId() const {return 195;};
 BnsTables::Shared::TableRef entrance_quota;
-int entrance_quota_tableId(){return 67;};
+int entrance_quota_tableId() const {return 67;};
 BnsTables::Shared::TableRef arena_portal;
-int arena_portal_tableId(){return 13;};
-__int8 arena_move_max_party_member_count;
+int arena_portal_tableId() const {return 13;};
+signed char arena_move_max_party_member_count;
 
 		static __int32 SubType() { return 5; }
 	};

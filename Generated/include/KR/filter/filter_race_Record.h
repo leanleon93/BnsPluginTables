@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct filter_race_Record : filter_Record
 	{
 	public:
-		__int8 value[4];
+		signed char value[4];
+__int32 value_Size() const {return 4;};
 bool either;
 
 		static __int32 SubType() { return 0; }

@@ -14,15 +14,18 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef reward_item[6];
-int reward_item_tableId(){return 189;};
+__int32 reward_item_Size() const {return 6;};
+int reward_item_tableId() const {return 195;};
 __int16 reward_item_count[6];
+__int32 reward_item_count_Size() const {return 6;};
 __int32 reward_money;
 __int32 reward_account_exp;
 
@@ -36,7 +39,6 @@ __int32 reward_account_exp;
 	{
 		challengelistreward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::challengelistreward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

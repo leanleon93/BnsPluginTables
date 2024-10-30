@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -32,7 +33,6 @@ BnsTables::Shared::TextRef text;
 	{
 		text_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::text_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

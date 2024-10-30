@@ -22,19 +22,22 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
+int item_tableId() const {return 195;};
 bool disabled;
 char Pad0[1];
 __int16 sort_no;
 wchar_t* card_image;
 wchar_t* card_original_image[4];
+__int32 card_original_image_Size() const {return 4;};
 BnsTables::Shared::TableRef card_original_image_desc[4];
-int card_original_image_desc_tableId(){return 420;};
+__int32 card_original_image_desc_Size() const {return 4;};
+int card_original_image_desc_tableId() const {return 420;};
 bool set_card_original_image;
 bool special_effect;
 __int16 season;
 BnsTables::Shared::TableRef expedition[8];
-int expedition_tableId(){return 450;};
+__int32 expedition_Size() const {return 8;};
+int expedition_tableId() const {return 450;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 448; }
@@ -46,7 +49,6 @@ int expedition_tableId(){return 450;};
 	{
 		world_account_card_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::world_account_card_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

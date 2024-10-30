@@ -10,10 +10,10 @@ namespace BnsTables::KR {
 	{
 	public:
 		char Pad_sub_0[2];
-__int8 expedition_type;
+signed char expedition_type;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef expedition;
-int expedition_tableId(){return 450;};
+int expedition_tableId() const {return 450;};
 
 		static __int32 SubType() { return 1; }
 	};

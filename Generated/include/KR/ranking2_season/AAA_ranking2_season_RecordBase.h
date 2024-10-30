@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef season_group;
-int season_group_tableId(){return 314;};
-__int8 season_number;
-__int8 season_type;
+int season_group_tableId() const {return 314;};
+signed char season_number;
+signed char season_type;
 char Pad0[2];
 wchar_t* name;
 wchar_t* name_en;
@@ -34,15 +34,16 @@ wchar_t* name_pt;
 wchar_t* name_th;
 wchar_t* name_vn;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId(){return 420;};
+int name_text_tableId() const {return 420;};
 bool job_ranking;
 char Pad1[3];
 BnsTables::Shared::TableRef total_season;
-int total_season_tableId(){return 313;};
+int total_season_tableId() const {return 313;};
 BnsTables::Shared::TableRef season_schedule[20];
-int season_schedule_tableId(){return 315;};
+__int32 season_schedule_Size() const {return 20;};
+int season_schedule_tableId() const {return 315;};
 BnsTables::Shared::TableRef main_season_schedule;
-int main_season_schedule_tableId(){return 315;};
+int main_season_schedule_tableId() const {return 315;};
 wchar_t* season_representative_icon;
 wchar_t* list_background_imageset;
 
@@ -56,7 +57,6 @@ wchar_t* list_background_imageset;
 	{
 		ranking2_season_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ranking2_season_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

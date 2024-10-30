@@ -9,9 +9,9 @@ namespace BnsTables::EU {
 	struct achievement_register_party_battle_challenge_count_Record : achievement_register_Record
 	{
 	public:
-		__int8 party_battle_type;
+		signed char party_battle_type;
 
-		static __int32 SubType() { return 59; }
+		static __int32 SubType() { return 61; }
 	};
 #pragma pack(pop)
 }

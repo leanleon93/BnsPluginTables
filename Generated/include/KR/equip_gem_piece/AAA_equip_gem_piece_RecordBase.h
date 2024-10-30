@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 item_ability;
+signed char item_ability;
 char Pad0[1];
 __int16 value;
 
@@ -35,7 +35,6 @@ __int16 value;
 	{
 		equip_gem_piece_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::equip_gem_piece_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

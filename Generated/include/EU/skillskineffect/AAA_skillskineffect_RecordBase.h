@@ -29,7 +29,7 @@ wchar_t* buff_continuance_component;
 wchar_t* immune_buff_component;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 345; }
+		static __int16 TableId() { return 358; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +38,6 @@ wchar_t* immune_buff_component;
 	{
 		skillskineffect_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skillskineffect_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

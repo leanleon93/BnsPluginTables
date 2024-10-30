@@ -18,19 +18,20 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 category;
-__int8 min_level;
-__int8 max_level;
+		signed char category;
+signed char min_level;
+signed char max_level;
 char Pad0[1];
 BnsTables::Shared::TableRef title;
-int title_tableId(){return 420;};
+int title_tableId() const {return 420;};
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 420;};
+int description_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 69; }
@@ -42,7 +43,6 @@ int description_tableId(){return 420;};
 	{
 		contents_guide_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contents_guide_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -22,11 +22,11 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId(){return 189;};
+int cost_item_tableId() const {return 195;};
 __int16 cost_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
-		static __int16 TableId() { return 219; }
+		static __int16 TableId() { return 226; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +35,6 @@ __int16 cost_item_count;
 	{
 		job_change_item_exchange_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_change_item_exchange_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

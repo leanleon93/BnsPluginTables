@@ -39,7 +39,6 @@ namespace BnsTables::KR {
 	{
 		attraction_shortcut_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::attraction_shortcut_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

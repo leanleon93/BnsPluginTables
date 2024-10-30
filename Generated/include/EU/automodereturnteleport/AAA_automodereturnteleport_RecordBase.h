@@ -22,9 +22,9 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* name;
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId(){return 401;};
+int teleport_tableId() const {return 416;};
 BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 255;};
+int npc_tableId() const {return 265;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 24; }
@@ -36,7 +36,6 @@ int npc_tableId(){return 255;};
 	{
 		automodereturnteleport_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::automodereturnteleport_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

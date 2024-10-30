@@ -15,23 +15,28 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int16 id;
-__int8 random_store_number;
+signed char random_store_number;
 __int32 required_draw_count;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view random_store_number_EnumValue() const {return Get_random_store_number_EnumValue(key.random_store_number);};
+wchar_t* alias;
 BnsTables::Shared::TableRef fixed_reward[4];
-int fixed_reward_tableId(){return 189;};
-__int8 fixed_reward_count[4];
+__int32 fixed_reward_Size() const {return 4;};
+int fixed_reward_tableId() const {return 195;};
+signed char fixed_reward_count[4];
+__int32 fixed_reward_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_reward[8];
-int optional_reward_tableId(){return 189;};
-__int8 optional_reward_count[8];
+__int32 optional_reward_Size() const {return 8;};
+int optional_reward_tableId() const {return 195;};
+signed char optional_reward_count[8];
+__int32 optional_reward_count_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 293; }
+		static __int16 TableId() { return 306; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -40,7 +45,6 @@ __int8 optional_reward_count[8];
 	{
 		randomstoredrawreward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::randomstoredrawreward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

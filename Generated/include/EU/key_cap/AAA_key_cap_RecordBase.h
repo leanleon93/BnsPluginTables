@@ -20,18 +20,19 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+		std::string_view key_code_EnumValue() const {return Get_key_code_EnumValue(key.key_code);};
+BnsTables::Shared::TableRef name;
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef short_name;
-int short_name_tableId(){return 405;};
+int short_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef image;
-int image_tableId(){return 405;};
+int image_tableId() const {return 420;};
 BnsTables::Shared::IconRef icon;
 wchar_t* scroll_imageset;
 float scroll_imageset_scale;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
-		static __int16 TableId() { return 230; }
+		static __int16 TableId() { return 237; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -40,7 +41,6 @@ float scroll_imageset_scale;
 	{
 		key_cap_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::key_cap_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

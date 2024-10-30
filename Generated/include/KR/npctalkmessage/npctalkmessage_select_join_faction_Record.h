@@ -9,12 +9,14 @@ namespace BnsTables::KR {
 	struct npctalkmessage_select_join_faction_Record : npctalkmessage_Record
 	{
 	public:
-		__int8 population_statistics;
+		signed char population_statistics;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef msg[2];
-int msg_tableId(){return 270;};
+__int32 msg_Size() const {return 2;};
+int msg_tableId() const {return 270;};
 BnsTables::Shared::TableRef faction[2];
-int faction_tableId(){return 135;};
+__int32 faction_Size() const {return 2;};
+int faction_tableId() const {return 135;};
 
 		static __int32 SubType() { return 17; }
 	};

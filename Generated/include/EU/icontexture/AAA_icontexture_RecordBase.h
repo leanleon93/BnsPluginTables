@@ -14,7 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -27,7 +28,7 @@ __int16 texture_width;
 __int16 texture_height;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 178; }
+		static __int16 TableId() { return 182; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -36,7 +37,6 @@ __int16 texture_height;
 	{
 		icontexture_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::icontexture_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

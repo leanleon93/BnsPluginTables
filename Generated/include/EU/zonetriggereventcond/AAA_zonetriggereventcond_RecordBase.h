@@ -26,19 +26,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 cond_contents_type;
+signed char cond_contents_type;
 char Pad0[3];
 BnsTables::Shared::TableRef cond_event_message;
-int cond_event_message_tableId(){return 151;};
+int cond_event_message_tableId() const {return 155;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 457; }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -47,7 +48,6 @@ int cond_event_message_tableId(){return 151;};
 	{
 		zonetriggereventcond_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::zonetriggereventcond_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

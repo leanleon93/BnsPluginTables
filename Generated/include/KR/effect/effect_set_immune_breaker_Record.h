@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		__int16 immune_breaker_attribute;
-__int8 immune_breaker_count;
+signed char immune_breaker_count;
 char Pad_sub_0[1];
 __int32 immune_breaker_duration;
 

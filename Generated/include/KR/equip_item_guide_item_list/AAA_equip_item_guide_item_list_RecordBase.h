@@ -21,12 +21,12 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
-__int8 item_improve_level;
-__int8 item_stage_number;
+int item_tableId() const {return 195;};
+signed char item_improve_level;
+signed char item_stage_number;
 char Pad0[2];
 BnsTables::Shared::TableRef item_guide;
-int item_guide_tableId(){return 125;};
+int item_guide_tableId() const {return 125;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 126; }
@@ -38,7 +38,6 @@ int item_guide_tableId(){return 125;};
 	{
 		equip_item_guide_item_list_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::equip_item_guide_item_list_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

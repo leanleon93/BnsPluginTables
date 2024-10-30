@@ -14,17 +14,20 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 category;
+signed char category;
 char Pad0[3];
 BnsTables::Shared::TableRef route_text[5];
-int route_text_tableId(){return 405;};
+__int32 route_text_Size() const {return 5;};
+int route_text_tableId() const {return 420;};
 BnsTables::Shared::ExplicitTableRef route_ref[5];
+__int32 route_ref_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 8; }
@@ -36,7 +39,6 @@ BnsTables::Shared::ExplicitTableRef route_ref[5];
 	{
 		acquire_route_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::acquire_route_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

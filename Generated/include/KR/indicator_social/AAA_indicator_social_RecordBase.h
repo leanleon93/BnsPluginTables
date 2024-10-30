@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -23,18 +24,26 @@ namespace BnsTables::KR {
 __int32 interval;
 __int32 duration2;
 __int32 begine_time2[10];
+__int32 begine_time2_Size() const {return 10;};
 BnsTables::Shared::TableRef balloon_text2[10];
-int balloon_text2_tableId(){return 420;};
+__int32 balloon_text2_Size() const {return 10;};
+int balloon_text2_tableId() const {return 420;};
 __int32 balloon_text2_duration[10];
+__int32 balloon_text2_duration_Size() const {return 10;};
 bool voice_sync[10];
+__int32 voice_sync_Size() const {return 10;};
 char Pad0[2];
 wchar_t* show2[10];
-__int8 rotate2[10];
+__int32 show2_Size() const {return 10;};
+signed char rotate2[10];
+__int32 rotate2_Size() const {return 10;};
 char Pad1[2];
 BnsTables::Shared::TableRef sub_npc2[10];
-int sub_npc2_tableId(){return 265;};
+__int32 sub_npc2_Size() const {return 10;};
+int sub_npc2_tableId() const {return 265;};
 BnsTables::Shared::TableRef sub_indicator_social2[10];
-int sub_indicator_social2_tableId(){return 185;};
+__int32 sub_indicator_social2_Size() const {return 10;};
+int sub_indicator_social2_tableId() const {return 185;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 18); }
 		static __int16 TableId() { return 185; }
@@ -46,7 +55,6 @@ int sub_indicator_social2_tableId(){return 185;};
 	{
 		indicator_social_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::indicator_social_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -372,7 +372,10 @@ namespace BnsTables::EU {
 		content_quota_record_sub_weekly_contents_reset = 361,
 		content_quota_record_sub_specific_target = 362,
 		content_quota_record_sub_trade_restrict = 363,
-		content_quota_record_sub_count = 364,
+		content_quota_record_sub_market_targeted_sale = 364,
+		content_quota_record_sub_fatigability = 365,
+		content_quota_record_sub_fatigability_pccafe = 366,
+		content_quota_record_sub_count = 367,
     };
 #pragma pack(push, 1)
 	struct content_quota_Record : BnsTables::Shared::DrEl
@@ -391,21 +394,22 @@ namespace BnsTables::EU {
 __int64 min_value;
 __int64 max_value;
 __int16 version;
-__int8 target_type;
+signed char target_type;
 char Pad0[1];
 wchar_t* expiration_time;
-__int8 charge_interval;
-__int8 charge_day_of_week;
-__int8 charge_time;
+signed char charge_interval;
+signed char charge_day_of_week;
+signed char charge_time;
 char Pad1[1];
 __int64 charge_amount_per_interval;
 bool consume_key_record;
 char Pad2[3];
 BnsTables::Shared::TableRef consume_order[4];
-int consume_order_tableId(){return 66;};
+__int32 consume_order_Size() const {return 4;};
+int consume_order_tableId() const {return 67;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
-		static __int16 TableId() { return 66; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static __int16 TableId() { return 67; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -414,7 +418,6 @@ int consume_order_tableId(){return 66;};
 	{
 		content_quota_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::content_quota_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

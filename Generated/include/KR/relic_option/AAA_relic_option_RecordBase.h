@@ -21,13 +21,20 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 ability[60];
+signed char ability[60];
+__int32 ability_Size() const {return 60;};
 __int32 ability_value_min[60];
+__int32 ability_value_min_Size() const {return 60;};
 __int32 ability_value_max[60];
+__int32 ability_value_max_Size() const {return 60;};
 __int32 ability_value_base_min[60];
+__int32 ability_value_base_min_Size() const {return 60;};
 __int32 ability_value_base_max[60];
+__int32 ability_value_base_max_Size() const {return 60;};
 __int32 enhance_ability_value_min[60];
+__int32 enhance_ability_value_min_Size() const {return 60;};
 __int32 enhance_ability_value_max[60];
+__int32 enhance_ability_value_max_Size() const {return 60;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 321; }
@@ -39,7 +46,6 @@ __int32 enhance_ability_value_max[60];
 	{
 		relic_option_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::relic_option_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

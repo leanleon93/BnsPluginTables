@@ -14,26 +14,27 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 season_type;
-__int8 grade;
+                signed char season_type;
+signed char grade;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 score;
+		std::string_view season_type_EnumValue() const {return Get_season_type_EnumValue(key.season_type);};
+__int32 score;
 __int16 point_bonus_percent;
 char Pad0[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef medium_icon;
 BnsTables::Shared::IconRef small_icon;
 BnsTables::Shared::IconRef extrasmall_icon;
 BnsTables::Shared::TableRef grade_level_up_message;
-int grade_level_up_message_tableId(){return 151;};
+int grade_level_up_message_tableId() const {return 155;};
 BnsTables::Shared::TableRef grade_level_down_message;
-int grade_level_down_message_tableId(){return 151;};
+int grade_level_down_message_tableId() const {return 155;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 30; }
@@ -45,7 +46,6 @@ int grade_level_down_message_tableId(){return 151;};
 	{
 		battle_field_grade_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::battle_field_grade_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

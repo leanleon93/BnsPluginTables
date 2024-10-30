@@ -14,18 +14,19 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 unlocated_store_type;
+                signed char unlocated_store_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* title_icon;
+		std::string_view unlocated_store_type_EnumValue() const {return Get_unlocated_store_type_EnumValue(key.unlocated_store_type);};
+wchar_t* title_icon;
 BnsTables::Shared::TableRef title_text;
-int title_text_tableId(){return 420;};
+int title_text_tableId() const {return 420;};
 wchar_t* button_icon;
 BnsTables::Shared::TableRef button_text;
-int button_text_tableId(){return 420;};
+int button_text_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 431; }
@@ -37,7 +38,6 @@ int button_text_tableId(){return 420;};
 	{
 		unlocated_store_ui_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::unlocated_store_ui_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

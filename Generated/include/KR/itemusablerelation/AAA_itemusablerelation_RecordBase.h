@@ -14,14 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef attraction_group;
-int attraction_group_tableId(){return 16;};
+int attraction_group_tableId() const {return 16;};
 bool all;
 bool default_val;
 bool duel;
@@ -52,7 +53,6 @@ bool special_potion;
 	{
 		itemusablerelation_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemusablerelation_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

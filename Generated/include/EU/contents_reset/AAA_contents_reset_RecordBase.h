@@ -24,16 +24,18 @@ namespace BnsTables::EU {
 BnsTables::Shared::ExplicitTableRef reset_target;
 __int32 reset_money;
 BnsTables::Shared::TableRef reset_item[4];
-int reset_item_tableId(){return 189;};
-__int8 reset_item_count[4];
+__int32 reset_item_Size() const {return 4;};
+int reset_item_tableId() const {return 195;};
+signed char reset_item_count[4];
+__int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef quota;
-int quota_tableId(){return 66;};
-__int8 max_unbind_count;
+int quota_tableId() const {return 67;};
+signed char max_unbind_count;
 char Pad0[3];
 __int64 quota_recharge_amount;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 72; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
+		static __int16 TableId() { return 73; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -42,7 +44,6 @@ __int64 quota_recharge_amount;
 	{
 		contents_reset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contents_reset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

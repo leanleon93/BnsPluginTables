@@ -14,13 +14,14 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 appearance_type;
+signed char appearance_type;
 char Pad0[3];
 wchar_t* hypermove_effect;
 wchar_t* idle_show;
@@ -40,7 +41,6 @@ wchar_t* balloon_widget;
 	{
 		appearance_item_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::appearance_item_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

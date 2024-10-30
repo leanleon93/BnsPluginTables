@@ -74,7 +74,7 @@ BnsTables::Shared::UnkFlag target;
 BnsTables::Shared::UnkFlag subject2;
 BnsTables::Shared::UnkFlag target2;
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 420;};
+int description_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
 		static __int16 TableId() { return 146; }
@@ -86,7 +86,6 @@ int description_tableId(){return 420;};
 	{
 		filter_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::filter_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

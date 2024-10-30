@@ -21,15 +21,18 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 max_level;
-__int8 required_build_up_point[30];
+signed char max_level;
+signed char required_build_up_point[30];
+__int32 required_build_up_point_Size() const {return 30;};
 char Pad0[1];
 __int16 required_build_up_point_level[30];
+__int32 required_build_up_point_level_Size() const {return 30;};
 BnsTables::Shared::TableRef skill_modify_info[30];
-int skill_modify_info_tableId(){return 339;};
+__int32 skill_modify_info_Size() const {return 30;};
+int skill_modify_info_tableId() const {return 352;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 327; }
+		static __int16 TableId() { return 340; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +41,6 @@ int skill_modify_info_tableId(){return 339;};
 	{
 		skill_build_up_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_build_up_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

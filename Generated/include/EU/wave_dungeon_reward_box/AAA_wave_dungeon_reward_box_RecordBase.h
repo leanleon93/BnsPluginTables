@@ -15,21 +15,22 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int16 id;
-__int8 difficulty_type;
+signed char difficulty_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef gold_box;
-int gold_box_tableId(){return 189;};
+		std::string_view difficulty_type_EnumValue() const {return Get_difficulty_type_EnumValue(key.difficulty_type);};
+BnsTables::Shared::TableRef gold_box;
+int gold_box_tableId() const {return 195;};
 BnsTables::Shared::TableRef silver_box;
-int silver_box_tableId(){return 189;};
+int silver_box_tableId() const {return 195;};
 BnsTables::Shared::TableRef bronze_box;
-int bronze_box_tableId(){return 189;};
+int bronze_box_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 424; }
+		static __int16 TableId() { return 439; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +39,6 @@ int bronze_box_tableId(){return 189;};
 	{
 		wave_dungeon_reward_box_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::wave_dungeon_reward_box_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

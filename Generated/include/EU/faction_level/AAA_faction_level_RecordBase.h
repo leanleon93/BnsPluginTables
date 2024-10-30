@@ -14,7 +14,7 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 level;
+                signed char level;
 
             };
 			unsigned __int64 key;
@@ -22,11 +22,12 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		__int32 reputation;
 BnsTables::Shared::TableRef grade_name[2];
-int grade_name_tableId(){return 405;};
+__int32 grade_name_Size() const {return 2;};
+int grade_name_tableId() const {return 420;};
 __int32 max_faction_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 131; }
+		static __int16 TableId() { return 136; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +36,6 @@ __int32 max_faction_score;
 	{
 		faction_level_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::faction_level_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

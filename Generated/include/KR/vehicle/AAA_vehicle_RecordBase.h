@@ -32,14 +32,15 @@ __int32 jump_run_height;
 __int32 jump_sprint_height;
 __int32 riding_action_duration;
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId(){return 434;};
+int appearance_tableId() const {return 434;};
 BnsTables::Shared::TableRef context_script;
-int context_script_tableId(){return 75;};
-__int8 disable_move_type[8];
+int context_script_tableId() const {return 75;};
+signed char disable_move_type[8];
+__int32 disable_move_type_Size() const {return 8;};
 __int32 group;
 __int32 level;
 BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
+int item_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
 		static __int16 TableId() { return 435; }
@@ -51,7 +52,6 @@ int item_tableId(){return 195;};
 	{
 		vehicle_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::vehicle_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

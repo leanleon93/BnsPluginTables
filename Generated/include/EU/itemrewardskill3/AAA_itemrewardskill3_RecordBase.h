@@ -14,19 +14,27 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
+                signed char job;
 BnsTables::Shared::TableRef head_skill_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		char Pad0[4];
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+char Pad0[4];
 BnsTables::Shared::TableRef change_skill_id[10];
-int change_skill_id_tableId(){return 324;};
+__int32 change_skill_id_Size() const {return 10;};
+int change_skill_id_tableId() const {return 337;};
+BnsTables::Shared::TableRef head_skill_acquire_route;
+int head_skill_acquire_route_tableId() const {return 214;};
+BnsTables::Shared::TableRef change_skill_acquire_route[10];
+__int32 change_skill_acquire_route_Size() const {return 10;};
+int change_skill_acquire_route_tableId() const {return 214;};
+signed char equip_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 207; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
+		static __int16 TableId() { return 213; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +43,6 @@ int change_skill_id_tableId(){return 324;};
 	{
 		itemrewardskill3_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemrewardskill3_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,23 +14,29 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 rule_usage;
+signed char rule_usage;
 char Pad0[3];
 BnsTables::Shared::ExplicitTableRef required_item[4];
-__int8 required_item_min_level[4];
+__int32 required_item_Size() const {return 4;};
+signed char required_item_min_level[4];
+__int32 required_item_min_level_Size() const {return 4;};
 __int16 required_item_stack_count[4];
+__int32 required_item_stack_count_Size() const {return 4;};
 BnsTables::Shared::TableRef normal_item[4];
-int normal_item_tableId(){return 189;};
+__int32 normal_item_Size() const {return 4;};
+int normal_item_tableId() const {return 195;};
 __int16 normal_item_stack_count[4];
+__int32 normal_item_stack_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 191; }
+		static __int16 TableId() { return 197; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -39,7 +45,6 @@ __int16 normal_item_stack_count[4];
 	{
 		itemexchange_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itemexchange_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

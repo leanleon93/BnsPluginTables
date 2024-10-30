@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct achievement_register_duel_grade_Record : achievement_register_Record
 	{
 	public:
-		__int8 duel_type;
+		signed char duel_type;
 
 		static __int32 SubType() { return 19; }
 	};

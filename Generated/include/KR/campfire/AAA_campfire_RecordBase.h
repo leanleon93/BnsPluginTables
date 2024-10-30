@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -28,9 +29,9 @@ wchar_t* animset_name;
 wchar_t* anim_show;
 wchar_t* despawn_show;
 BnsTables::Shared::TableRef party_match;
-int party_match_tableId(){return 273;};
+int party_match_tableId() const {return 273;};
 BnsTables::Shared::TableRef map_tooltip;
-int map_tooltip_tableId(){return 420;};
+int map_tooltip_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 47; }
@@ -42,7 +43,6 @@ int map_tooltip_tableId(){return 420;};
 	{
 		campfire_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::campfire_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

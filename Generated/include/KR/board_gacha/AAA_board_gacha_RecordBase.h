@@ -14,27 +14,28 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 square_matrix_n;
+		signed char square_matrix_n;
 char Pad0[1];
 __int16 round_duration;
 bool select_position_enable;
 char Pad1[1];
 __int16 participation_count_per_character;
-__int8 result_top_rank_count;
-__int8 top_rank_history_count;
+signed char result_top_rank_count;
+signed char top_rank_history_count;
 char Pad2[2];
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId(){return 195;};
+int cost_item_tableId() const {return 195;};
 __int16 cost_item_count;
 bool instant_payment_enable;
 char Pad3[1];
 BnsTables::Shared::TableRef instant_payment_item;
-int instant_payment_item_tableId(){return 195;};
+int instant_payment_item_tableId() const {return 195;};
 wchar_t* board_image_player;
 wchar_t* board_image_other_pc;
 wchar_t* board_image_special;
@@ -69,7 +70,6 @@ wchar_t* font_recieve_reward_list_item_name;
 	{
 		board_gacha_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::board_gacha_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

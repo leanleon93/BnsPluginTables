@@ -14,15 +14,17 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 pouch_appearance;
-__int8 npc_grade2;
+                signed char pouch_appearance;
+signed char npc_grade2;
 bool private_pouch;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* skeletal_mesh;
+		std::string_view pouch_appearance_EnumValue() const {return Get_pouch_appearance_EnumValue(key.pouch_appearance);};
+std::string_view npc_grade2_EnumValue() const {return Get_npc_grade2_EnumValue(key.npc_grade2);};
+wchar_t* skeletal_mesh;
 wchar_t* anim_set;
 wchar_t* physics_asset;
 wchar_t* custom_anim;
@@ -42,7 +44,6 @@ wchar_t* dropped_pouch_anim_set;
 	{
 		itempouchmesh2_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::itempouchmesh2_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

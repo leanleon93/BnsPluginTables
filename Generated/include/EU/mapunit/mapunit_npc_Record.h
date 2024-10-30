@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 255;};
+int npc_tableId() const {return 265;};
 bool ignore_object_pos;
 bool in_sight_only;
 bool many_counts;

@@ -14,18 +14,18 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 grade;
+                signed char grade;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 level;
+		signed char level;
 char Pad0[3];
 wchar_t* image_tag;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 245; }
+		static __int16 TableId() { return 254; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -34,7 +34,6 @@ wchar_t* image_tag;
 	{
 		mastery_grade_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mastery_grade_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

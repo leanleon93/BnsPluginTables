@@ -14,22 +14,26 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 race;
-__int8 sex;
-__int8 part_type;
-__int8 part_value;
+                signed char race;
+signed char sex;
+signed char part_type;
+signed char part_value;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId(){return 182;};
+		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
+std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
+std::string_view part_type_EnumValue() const {return Get_part_type_EnumValue(key.part_type);};
+BnsTables::Shared::TableRef icon_texture;
+int icon_texture_tableId() const {return 182;};
 __int16 icon_index;
-__int8 param8[96];
+signed char param8[96];
+__int32 param8_Size() const {return 96;};
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 420;};
+int desc_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 93; }
@@ -41,7 +45,6 @@ int desc_tableId(){return 420;};
 	{
 		customizingpreset_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::customizingpreset_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

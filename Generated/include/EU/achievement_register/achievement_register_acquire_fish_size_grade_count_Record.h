@@ -9,9 +9,9 @@ namespace BnsTables::EU {
 	struct achievement_register_acquire_fish_size_grade_count_Record : achievement_register_Record
 	{
 	public:
-		__int8 fish_size_grade;
+		signed char fish_size_grade;
 
-		static __int32 SubType() { return 68; }
+		static __int32 SubType() { return 71; }
 	};
 #pragma pack(pop)
 }

@@ -14,27 +14,31 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 __int16 sp_point[3];
+__int32 sp_point_Size() const {return 3;};
 char Pad0[2];
 wchar_t* sp_show[3];
+__int32 sp_show_Size() const {return 3;};
 wchar_t* immune_breaker_disabale_show;
 __int32 berserk_sequence_invoke_time;
 BnsTables::Shared::TableRef difficulty_type_modify;
-int difficulty_type_modify_tableId(){return 98;};
+int difficulty_type_modify_tableId() const {return 99;};
 bool use_second_gauge;
 char Pad1[1];
 __int16 default_gp;
 __int16 gp_section[11];
-__int8 gp_section_cnt;
-__int8 ui_style;
+__int32 gp_section_Size() const {return 11;};
+signed char gp_section_cnt;
+signed char ui_style;
 BnsTables::Shared::TableRef ui_tooltip;
-int ui_tooltip_tableId(){return 405;};
+int ui_tooltip_tableId() const {return 420;};
 wchar_t* ui_double_sided_left_imageset;
 wchar_t* ui_double_sided_right_imageset;
 __int16 ui_double_sided_left_color_r;
@@ -46,14 +50,18 @@ __int16 ui_double_sided_right_color_g;
 __int16 ui_double_sided_right_color_b;
 __int16 ui_double_sided_right_color_a;
 __int16 ui_fury_color_r[3];
+__int32 ui_fury_color_r_Size() const {return 3;};
 __int16 ui_fury_color_g[3];
+__int32 ui_fury_color_g_Size() const {return 3;};
 __int16 ui_fury_color_b[3];
+__int32 ui_fury_color_b_Size() const {return 3;};
 __int16 ui_fury_color_a[3];
+__int32 ui_fury_color_a_Size() const {return 3;};
 bool use_break;
 char Pad2[1];
 __int16 break_gauge_limit;
 __int16 break_gauge_limit_increase_value;
-__int8 max_break_count;
+signed char max_break_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 46; }
@@ -65,7 +73,6 @@ __int8 max_break_count;
 	{
 		bossnpc_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::bossnpc_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

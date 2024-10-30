@@ -14,23 +14,28 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 item_grade;
-__int8 growth_efficient_level;
-__int8 weapon_cost_type;
+                signed char item_grade;
+signed char growth_efficient_level;
+signed char weapon_cost_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef cost_apply_item[2];
-int cost_apply_item_tableId(){return 195;};
+		std::string_view weapon_cost_type_EnumValue() const {return Get_weapon_cost_type_EnumValue(key.weapon_cost_type);};
+BnsTables::Shared::TableRef cost_apply_item[2];
+__int32 cost_apply_item_Size() const {return 2;};
+int cost_apply_item_tableId() const {return 195;};
 __int16 cost_apply_item_amount[2];
+__int32 cost_apply_item_amount_Size() const {return 2;};
 __int32 cost_apply_money;
 bool cost_remove_separable;
 char Pad0[3];
 BnsTables::Shared::TableRef cost_remove_item[2];
-int cost_remove_item_tableId(){return 195;};
+__int32 cost_remove_item_Size() const {return 2;};
+int cost_remove_item_tableId() const {return 195;};
 __int16 cost_remove_item_amount[2];
+__int32 cost_remove_item_amount_Size() const {return 2;};
 __int32 cost_remove_money;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
@@ -43,7 +48,6 @@ __int32 cost_remove_money;
 	{
 		weapon_appearance_change_cost_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::weapon_appearance_change_cost_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

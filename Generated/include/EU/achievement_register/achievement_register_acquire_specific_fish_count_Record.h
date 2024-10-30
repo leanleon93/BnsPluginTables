@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef fish;
-int fish_tableId(){return 142;};
+int fish_tableId() const {return 147;};
 
-		static __int32 SubType() { return 65; }
+		static __int32 SubType() { return 68; }
 	};
 #pragma pack(pop)
 }

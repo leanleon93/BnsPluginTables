@@ -37,7 +37,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 broadcast;
+signed char broadcast;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
 		static __int16 TableId() { return 43; }
@@ -49,7 +49,6 @@ __int8 broadcast;
 	{
 		boast_event_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::boast_event_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

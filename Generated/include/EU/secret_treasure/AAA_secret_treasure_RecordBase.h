@@ -21,12 +21,12 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef item;
-int item_tableId(){return 189;};
+int item_tableId() const {return 195;};
 __int32 usable_duration;
 bool do_not_use;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 321; }
+		static __int16 TableId() { return 334; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -35,7 +35,6 @@ bool do_not_use;
 	{
 		secret_treasure_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::secret_treasure_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

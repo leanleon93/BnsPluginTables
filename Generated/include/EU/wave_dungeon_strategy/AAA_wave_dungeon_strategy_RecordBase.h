@@ -22,31 +22,31 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId(){return 110;};
-__int8 required_mastery_level;
+int dungeon_tableId() const {return 114;};
+signed char required_mastery_level;
 char Pad0[3];
 BnsTables::Shared::TableRef required_quest;
-int required_quest_tableId(){return 283;};
+int required_quest_tableId() const {return 294;};
 __int16 required_achievement_id;
 __int16 required_achievement_step;
 BnsTables::Shared::TableRef condition_event;
-int condition_event_tableId(){return 62;};
+int condition_event_tableId() const {return 63;};
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::IconRef image;
 BnsTables::Shared::TableRef ability_text;
-int ability_text_tableId(){return 405;};
+int ability_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 405;};
+int desc_tableId() const {return 420;};
 BnsTables::Shared::TableRef ingame_icon_texture;
-int ingame_icon_texture_tableId(){return 178;};
+int ingame_icon_texture_tableId() const {return 182;};
 __int16 ingame_icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef ingame_icon_tooltip;
-int ingame_icon_tooltip_tableId(){return 405;};
+int ingame_icon_tooltip_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 426; }
+		static __int16 TableId() { return 441; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -55,7 +55,6 @@ int ingame_icon_tooltip_tableId(){return 405;};
 	{
 		wave_dungeon_strategy_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::wave_dungeon_strategy_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

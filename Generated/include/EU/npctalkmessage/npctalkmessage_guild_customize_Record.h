@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct npctalkmessage_guild_customize_Record : npctalkmessage_Record
 	{
 	public:
-		__int8 guild_customize_message_type;
+		signed char guild_customize_message_type;
 
 		static __int32 SubType() { return 18; }
 	};

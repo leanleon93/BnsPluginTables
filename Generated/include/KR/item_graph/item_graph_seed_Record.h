@@ -10,14 +10,16 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef seed_item[42];
-int seed_item_tableId(){return 195;};
+__int32 seed_item_Size() const {return 42;};
+int seed_item_tableId() const {return 195;};
 BnsTables::Shared::TableRef seed_item_group;
-int seed_item_group_tableId(){return 201;};
-__int8 seed_item_sub_group[42];
-__int8 node_type;
-__int8 attribute_group;
-__int8 item_equip_type;
-__int8 growth_category;
+int seed_item_group_tableId() const {return 201;};
+signed char seed_item_sub_group[42];
+__int32 seed_item_sub_group_Size() const {return 42;};
+signed char node_type;
+signed char attribute_group;
+signed char item_equip_type;
+signed char growth_category;
 __int16 row;
 __int16 column;
 

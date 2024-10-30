@@ -15,18 +15,19 @@ namespace BnsTables::EU {
 		{
             struct {
                 __int32 parent_skill_id;
-__int8 variation_id;
+signed char variation_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* name;
-__int8 priority;
+signed char priority;
 char Pad0[3];
 BnsTables::Shared::TableRef cast_condition[2];
-int cast_condition_tableId(){return 22;};
-__int8 cast_condition_op;
+__int32 cast_condition_Size() const {return 2;};
+int cast_condition_tableId() const {return 22;};
+signed char cast_condition_op;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 23; }
@@ -38,7 +39,6 @@ __int8 cast_condition_op;
 	{
 		auto_combat_skill_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::auto_combat_skill_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

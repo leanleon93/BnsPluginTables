@@ -31,7 +31,7 @@ char Pad0[2];
 wchar_t* imageset;
 wchar_t* mask_imageset;
 BnsTables::Shared::TableRef area;
-int area_tableId(){return 100;};
+int area_tableId() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 248; }
@@ -43,7 +43,6 @@ int area_tableId(){return 100;};
 	{
 		mapoverlay_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mapoverlay_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

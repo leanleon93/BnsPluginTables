@@ -14,15 +14,17 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 job;
-__int8 job_style[2];
-__int8 race;
+signed char job;
+signed char job_style[2];
+__int32 job_style_Size() const {return 2;};
+signed char race;
 bool context_simple_mode;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 50); }
@@ -35,7 +37,6 @@ bool context_simple_mode;
 	{
 		contextscript_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::contextscript_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

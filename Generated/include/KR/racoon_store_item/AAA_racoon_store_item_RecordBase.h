@@ -23,17 +23,17 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 slot_group;
 BnsTables::Shared::TableRef item;
-int item_tableId(){return 195;};
+int item_tableId() const {return 195;};
 __int16 item_count;
-__int8 item_grade;
+signed char item_grade;
 char Pad0[1];
 __int16 item_prob_weight;
 char Pad1[2];
 __int32 item_cost;
-__int8 cost_type;
+signed char cost_type;
 char Pad2[3];
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId(){return 195;};
+int cost_item_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 301; }
@@ -45,7 +45,6 @@ int cost_item_tableId(){return 195;};
 	{
 		racoon_store_item_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::racoon_store_item_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

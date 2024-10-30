@@ -22,27 +22,32 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 405;};
+int desc_tableId() const {return 420;};
 wchar_t* title;
 wchar_t* title_icon;
 wchar_t* background_image;
 BnsTables::Shared::TableRef attraction_btn_name[3];
-int attraction_btn_name_tableId(){return 405;};
+__int32 attraction_btn_name_Size() const {return 3;};
+int attraction_btn_name_tableId() const {return 420;};
 BnsTables::Shared::TableRef attraction_btn_desc[3];
-int attraction_btn_desc_tableId(){return 405;};
+__int32 attraction_btn_desc_Size() const {return 3;};
+int attraction_btn_desc_tableId() const {return 420;};
 wchar_t* attraction_btn_image[3];
+__int32 attraction_btn_image_Size() const {return 3;};
 BnsTables::Shared::TableRef attraction_name_desc[3];
-int attraction_name_desc_tableId(){return 405;};
-__int8 season_contents_type;
+__int32 attraction_name_desc_Size() const {return 3;};
+int attraction_name_desc_tableId() const {return 420;};
+signed char season_contents_type;
 char Pad0[3];
 BnsTables::Shared::TableRef attraction_shortcut[3];
-int attraction_shortcut_tableId(){return 19;};
-__int8 ranking_contents_type;
+__int32 attraction_shortcut_Size() const {return 3;};
+int attraction_shortcut_tableId() const {return 19;};
+signed char ranking_contents_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 117; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 121; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -51,7 +56,6 @@ __int8 ranking_contents_type;
 	{
 		env_entrance_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::env_entrance_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

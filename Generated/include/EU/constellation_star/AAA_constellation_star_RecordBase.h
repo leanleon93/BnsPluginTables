@@ -22,38 +22,46 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef description;
-int description_tableId(){return 405;};
+int description_tableId() const {return 420;};
 BnsTables::Shared::TableRef constellation;
-int constellation_tableId(){return 63;};
-__int8 star_type;
-__int8 order;
-__int8 required_pc_level;
-__int8 required_pc_mastery_level;
+int constellation_tableId() const {return 64;};
+signed char star_type;
+signed char order;
+signed char required_pc_level;
+signed char required_pc_mastery_level;
 BnsTables::Shared::TableRef required_quest;
-int required_quest_tableId(){return 283;};
+int required_quest_tableId() const {return 294;};
 __int16 required_achievement_id;
 __int16 required_achievement_step;
 __int16 activate_probability;
 char Pad0[2];
 __int32 activate_cost_money;
 BnsTables::Shared::TableRef activate_cost_item[6];
-int activate_cost_item_tableId(){return 189;};
+__int32 activate_cost_item_Size() const {return 6;};
+int activate_cost_item_tableId() const {return 195;};
 __int16 activate_cost_item_count[6];
+__int32 activate_cost_item_count_Size() const {return 6;};
+bool draw_enable;
+char Pad1[3];
 __int32 draw_option_cost_money;
 BnsTables::Shared::TableRef draw_option_cost_item[6];
-int draw_option_cost_item_tableId(){return 189;};
+__int32 draw_option_cost_item_Size() const {return 6;};
+int draw_option_cost_item_tableId() const {return 195;};
 __int16 draw_option_cost_item_count[6];
-__int8 option_select_count;
-char Pad1[3];
+__int32 draw_option_cost_item_count_Size() const {return 6;};
+signed char option_select_count;
+char Pad2[3];
 BnsTables::Shared::TableRef option[50];
-int option_tableId(){return 65;};
+__int32 option_Size() const {return 50;};
+int option_tableId() const {return 66;};
 __int16 option_weight[50];
+__int32 option_weight_Size() const {return 50;};
 __int32 option_weight_total;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 64; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
+		static __int16 TableId() { return 65; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -62,7 +70,6 @@ __int32 option_weight_total;
 	{
 		constellation_star_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::constellation_star_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

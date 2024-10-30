@@ -9,20 +9,21 @@ namespace BnsTables::EU {
 	struct achievement_register_kill_boss_npc_Record : achievement_register_Record
 	{
 	public:
-		BnsTables::Shared::TableRef boss_npc;
-int boss_npc_tableId(){return 255;};
+		BnsTables::Shared::TableRef boss_npc[8];
+__int32 boss_npc_Size() const {return 8;};
+int boss_npc_tableId() const {return 265;};
 bool first_attacker;
 bool last_attacker;
-__int8 max_level;
+signed char max_level;
 bool team_broadcast;
-__int8 difficulty_type;
-__int8 party_member_min_count;
-__int8 party_member_max_count;
+signed char difficulty_type;
+signed char party_member_min_count;
+signed char party_member_max_count;
 bool party_same_job;
-__int8 min_sealed_level;
-__int8 min_sealed_level_op;
-__int8 max_sealed_level;
-__int8 max_sealed_level_op;
+signed char min_sealed_level;
+signed char min_sealed_level_op;
+signed char max_sealed_level;
+signed char max_sealed_level_op;
 
 		static __int32 SubType() { return 1; }
 	};

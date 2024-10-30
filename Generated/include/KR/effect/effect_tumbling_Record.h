@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		__int16 tumbling_speed;
-__int8 tumbling_direction;
+signed char tumbling_direction;
 bool target_yaw_to_back;
 
 		static __int32 SubType() { return 62; }

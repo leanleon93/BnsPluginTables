@@ -20,23 +20,26 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef faction[2];
-int faction_tableId(){return 130;};
-__int8 required_quest_check;
+__int32 faction_Size() const {return 2;};
+int faction_tableId() const {return 135;};
+signed char required_quest_check;
 char Pad0[3];
 BnsTables::Shared::TableRef required_quest[6];
-int required_quest_tableId(){return 283;};
-__int8 required_min_level;
+__int32 required_quest_Size() const {return 6;};
+int required_quest_tableId() const {return 294;};
+signed char required_min_level;
 char Pad1[1];
 __int16 required_min_faction_level;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 443;};
+int zone_tableId() const {return 461;};
 float position_x;
 float position_y;
 
@@ -50,7 +53,6 @@ float position_y;
 	{
 		arenaportal_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::arenaportal_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

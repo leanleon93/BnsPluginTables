@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef basecamp;
-int basecamp_tableId(){return 457;};
+int basecamp_tableId() const {return 457;};
 
 		static __int32 SubType() { return 49; }
 	};

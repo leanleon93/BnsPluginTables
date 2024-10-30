@@ -14,17 +14,18 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 item_exchange_type;
+                signed char item_exchange_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 condition;
+		std::string_view item_exchange_type_EnumValue() const {return Get_item_exchange_type_EnumValue(key.item_exchange_type);};
+signed char condition;
 char Pad0[3];
 wchar_t* icon;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId(){return 420;};
+int name_text_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 227; }
@@ -36,7 +37,6 @@ int name_text_tableId(){return 420;};
 	{
 		job_change_item_exchange_type_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::job_change_item_exchange_type_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

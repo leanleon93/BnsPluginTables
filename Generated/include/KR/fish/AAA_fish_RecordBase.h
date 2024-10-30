@@ -21,15 +21,15 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 fish_grade;
+signed char fish_grade;
 char Pad0[3];
 __int32 size_min;
 __int32 size_max;
 __int16 acquire_life_contents_point;
-__int8 reduce_life_contents_cq_amount;
+signed char reduce_life_contents_cq_amount;
 char Pad1[1];
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 420;};
+int name_tableId() const {return 420;};
 wchar_t* mesh;
 BnsTables::Shared::IconRef icon;
 wchar_t* col;
@@ -38,7 +38,8 @@ __int16 sort_num;
 bool hide;
 char Pad2[1];
 BnsTables::Shared::TableRef fishing_field_group[20];
-int fishing_field_group_tableId(){return 150;};
+__int32 fishing_field_group_Size() const {return 20;};
+int fishing_field_group_tableId() const {return 150;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 17); }
 		static __int16 TableId() { return 147; }
@@ -50,7 +51,6 @@ int fishing_field_group_tableId(){return 150;};
 	{
 		fish_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::fish_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

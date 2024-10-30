@@ -19,38 +19,50 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 challenge_type;
+                signed char challenge_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 required_level;
-__int8 required_mastery_level;
+		std::string_view challenge_type_EnumValue() const {return Get_challenge_type_EnumValue(key.challenge_type);};
+signed char required_level;
+signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef challenge_quest_basic[20];
-int challenge_quest_basic_tableId(){return 294;};
+__int32 challenge_quest_basic_Size() const {return 20;};
+int challenge_quest_basic_tableId() const {return 294;};
 BnsTables::Shared::TableRef challenge_quest_expansion[20];
-int challenge_quest_expansion_tableId(){return 294;};
-__int8 challenge_quest_grade[20];
-__int8 challenge_quest_complete_count;
+__int32 challenge_quest_expansion_Size() const {return 20;};
+int challenge_quest_expansion_tableId() const {return 294;};
+signed char challenge_quest_grade[20];
+__int32 challenge_quest_grade_Size() const {return 20;};
+signed char challenge_quest_complete_count;
 char Pad1[3];
 BnsTables::Shared::ExplicitTableRef challenge_quest_attraction[20];
-__int8 challenge_quest_total_count;
-__int8 challenge_npc_difficulty[20];
+__int32 challenge_quest_attraction_Size() const {return 20;};
+signed char challenge_quest_total_count;
+signed char challenge_npc_difficulty[20];
+__int32 challenge_npc_difficulty_Size() const {return 20;};
 char Pad2[3];
 BnsTables::Shared::TableRef challenge_npc_kill[20];
-int challenge_npc_kill_tableId(){return 265;};
+__int32 challenge_npc_kill_Size() const {return 20;};
+int challenge_npc_kill_tableId() const {return 265;};
 BnsTables::Shared::ExplicitTableRef challenge_npc_attraction[20];
-__int8 challenge_npc_grade[20];
+__int32 challenge_npc_attraction_Size() const {return 20;};
+signed char challenge_npc_grade[20];
+__int32 challenge_npc_grade_Size() const {return 20;};
 BnsTables::Shared::TableRef challenge_npc_quest[20];
-int challenge_npc_quest_tableId(){return 294;};
-__int8 challenge_npc_total_count;
-__int8 challenge_reward_total_count;
-__int8 challenge_count_for_reward[20];
+__int32 challenge_npc_quest_Size() const {return 20;};
+int challenge_npc_quest_tableId() const {return 294;};
+signed char challenge_npc_total_count;
+signed char challenge_reward_total_count;
+signed char challenge_count_for_reward[20];
+__int32 challenge_count_for_reward_Size() const {return 20;};
 char Pad3[2];
 BnsTables::Shared::TableRef reward[20];
-int reward_tableId(){return 52;};
+__int32 reward_Size() const {return 20;};
+int reward_tableId() const {return 52;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 51; }
@@ -62,7 +74,6 @@ int reward_tableId(){return 52;};
 	{
 		challengelist_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::challengelist_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

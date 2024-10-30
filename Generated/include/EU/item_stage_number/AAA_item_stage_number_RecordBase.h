@@ -21,10 +21,10 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef stage_number_name;
-int stage_number_name_tableId(){return 405;};
+int stage_number_name_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 211; }
+		static __int16 TableId() { return 218; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +33,6 @@ int stage_number_name_tableId(){return 405;};
 	{
 		item_stage_number_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::item_stage_number_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

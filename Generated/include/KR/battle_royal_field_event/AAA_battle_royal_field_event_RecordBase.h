@@ -23,9 +23,13 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 default_event_area_radius;
 __int32 notice_time[10];
+__int32 notice_time_Size() const {return 10;};
 __int32 start_time[10];
+__int32 start_time_Size() const {return 10;};
 __int32 duration[10];
+__int32 duration_Size() const {return 10;};
 __int32 toxic_event_area_radius[10];
+__int32 toxic_event_area_radius_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 35; }
@@ -37,7 +41,6 @@ __int32 toxic_event_area_radius[10];
 	{
 		battle_royal_field_event_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::battle_royal_field_event_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

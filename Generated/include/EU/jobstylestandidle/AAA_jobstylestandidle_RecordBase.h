@@ -14,8 +14,8 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 job;
-__int8 job_style;
+                signed char job;
+signed char job_style;
 __int32 index;
 __int32 group_index;
 
@@ -23,12 +23,14 @@ __int32 group_index;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		char Pad0[4];
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+std::string_view job_style_EnumValue() const {return Get_job_style_EnumValue(key.job_style);};
+char Pad0[4];
 wchar_t* job_style_stand_idle_show;
 __int32 event_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 227; }
+		static __int16 TableId() { return 234; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -37,7 +39,6 @@ __int32 event_time;
 	{
 		jobstylestandidle_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::jobstylestandidle_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

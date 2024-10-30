@@ -38,37 +38,45 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef required_faction;
-int required_faction_tableId(){return 130;};
+int required_faction_tableId() const {return 135;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId(){return 283;};
+int required_complete_quest_tableId() const {return 294;};
 BnsTables::Shared::TableRef step_text[30];
-int step_text_tableId(){return 405;};
+__int32 step_text_Size() const {return 30;};
+int step_text_tableId() const {return 420;};
 BnsTables::Shared::TableRef step_subtext[30];
-int step_subtext_tableId(){return 405;};
+__int32 step_subtext_Size() const {return 30;};
+int step_subtext_tableId() const {return 420;};
 BnsTables::Shared::TableRef step_next[30];
-int step_next_tableId(){return 405;};
+__int32 step_next_Size() const {return 30;};
+int step_next_tableId() const {return 420;};
 wchar_t* step_kismet[30];
+__int32 step_kismet_Size() const {return 30;};
 BnsTables::Shared::TableRef step_cinematic[30];
-int step_cinematic_tableId(){return 56;};
+__int32 step_cinematic_Size() const {return 30;};
+int step_cinematic_tableId() const {return 57;};
 wchar_t* step_show[30];
+__int32 step_show_Size() const {return 30;};
 wchar_t* step_camera_show[30];
-__int8 function_step;
+__int32 step_camera_show_Size() const {return 30;};
+signed char function_step;
 char Pad0[3];
 BnsTables::Shared::TableRef end_talk_social;
-int end_talk_social_tableId(){return 367;};
+int end_talk_social_tableId() const {return 382;};
 wchar_t* end_talk_sound;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 60); }
-		static __int16 TableId() { return 260; }
+		static __int16 TableId() { return 270; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -77,7 +85,6 @@ wchar_t* end_talk_sound;
 	{
 		npctalkmessage_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::npctalkmessage_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

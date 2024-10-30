@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -33,7 +34,6 @@ __int16 tax_rate;
 	{
 		market_register_amount_tax_rate_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::market_register_amount_tax_rate_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

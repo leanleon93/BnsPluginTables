@@ -22,17 +22,21 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill_build_up_skill[127];
-int skill_build_up_skill_tableId(){return 327;};
-__int8 skill_build_up_skill_total_count;
+__int32 skill_build_up_skill_Size() const {return 127;};
+int skill_build_up_skill_tableId() const {return 340;};
+signed char skill_build_up_skill_total_count;
 char Pad0[1];
 __int16 skill_build_up_skill_level_min[127];
+__int32 skill_build_up_skill_level_min_Size() const {return 127;};
 __int16 skill_build_up_skill_level_max[127];
+__int32 skill_build_up_skill_level_max_Size() const {return 127;};
 char Pad1[2];
 BnsTables::Shared::TableRef skill_build_up_skill_level_distribution[127];
-int skill_build_up_skill_level_distribution_tableId(){return 291;};
+__int32 skill_build_up_skill_level_distribution_Size() const {return 127;};
+int skill_build_up_skill_level_distribution_tableId() const {return 304;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 328; }
+		static __int16 TableId() { return 341; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -41,7 +45,6 @@ int skill_build_up_skill_level_distribution_tableId(){return 291;};
 	{
 		skill_build_up_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_build_up_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

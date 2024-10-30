@@ -14,13 +14,14 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 idle_type;
+                signed char idle_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* die_anim;
+		std::string_view idle_type_EnumValue() const {return Get_idle_type_EnumValue(key.idle_type);};
+wchar_t* die_anim;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 97; }
@@ -32,7 +33,6 @@ namespace BnsTables::KR {
 	{
 		dieanim_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::dieanim_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,44 +14,59 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 bool enable;
-__int8 alarm_type;
-__int8 sun_start_hour[12];
-__int8 sun_end_hour[12];
-__int8 mon_start_hour[12];
-__int8 mon_end_hour[12];
-__int8 tue_start_hour[12];
-__int8 tue_end_hour[12];
-__int8 wed_start_hour[12];
-__int8 wed_end_hour[12];
-__int8 thu_start_hour[12];
-__int8 thu_end_hour[12];
-__int8 fri_start_hour[12];
-__int8 fri_end_hour[12];
-__int8 sat_start_hour[12];
-__int8 sat_end_hour[12];
-__int8 start_minute;
-__int8 end_minute;
+signed char alarm_type;
+signed char sun_start_hour[12];
+__int32 sun_start_hour_Size() const {return 12;};
+signed char sun_end_hour[12];
+__int32 sun_end_hour_Size() const {return 12;};
+signed char mon_start_hour[12];
+__int32 mon_start_hour_Size() const {return 12;};
+signed char mon_end_hour[12];
+__int32 mon_end_hour_Size() const {return 12;};
+signed char tue_start_hour[12];
+__int32 tue_start_hour_Size() const {return 12;};
+signed char tue_end_hour[12];
+__int32 tue_end_hour_Size() const {return 12;};
+signed char wed_start_hour[12];
+__int32 wed_start_hour_Size() const {return 12;};
+signed char wed_end_hour[12];
+__int32 wed_end_hour_Size() const {return 12;};
+signed char thu_start_hour[12];
+__int32 thu_start_hour_Size() const {return 12;};
+signed char thu_end_hour[12];
+__int32 thu_end_hour_Size() const {return 12;};
+signed char fri_start_hour[12];
+__int32 fri_start_hour_Size() const {return 12;};
+signed char fri_end_hour[12];
+__int32 fri_end_hour_Size() const {return 12;};
+signed char sat_start_hour[12];
+__int32 sat_start_hour_Size() const {return 12;};
+signed char sat_end_hour[12];
+__int32 sat_end_hour_Size() const {return 12;};
+signed char start_minute;
+signed char end_minute;
 BnsTables::Shared::TableRef start_gamemessage;
-int start_gamemessage_tableId(){return 151;};
+int start_gamemessage_tableId() const {return 155;};
 BnsTables::Shared::TableRef start_gamemessage_remain;
-int start_gamemessage_remain_tableId(){return 151;};
+int start_gamemessage_remain_tableId() const {return 155;};
 BnsTables::Shared::TableRef end_gamemessage;
-int end_gamemessage_tableId(){return 151;};
+int end_gamemessage_tableId() const {return 155;};
 BnsTables::Shared::TableRef end_gamemessage_remain;
-int end_gamemessage_remain_tableId(){return 151;};
+int end_gamemessage_remain_tableId() const {return 155;};
 BnsTables::Shared::TableRef clock_alarm_desc_start;
-int clock_alarm_desc_start_tableId(){return 405;};
+int clock_alarm_desc_start_tableId() const {return 420;};
 BnsTables::Shared::TableRef clock_alarm_desc_progressing;
-int clock_alarm_desc_progressing_tableId(){return 405;};
+int clock_alarm_desc_progressing_tableId() const {return 420;};
 BnsTables::Shared::TableRef clock_alarm_desc_end;
-int clock_alarm_desc_end_tableId(){return 405;};
+int clock_alarm_desc_end_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 10; }
@@ -63,7 +78,6 @@ int clock_alarm_desc_end_tableId(){return 405;};
 	{
 		alarm_message_time_table_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::alarm_message_time_table_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

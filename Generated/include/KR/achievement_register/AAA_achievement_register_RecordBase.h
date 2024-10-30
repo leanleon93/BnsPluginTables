@@ -96,13 +96,14 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int16 id;
-__int8 job;
+signed char job;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
+		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
+wchar_t* alias;
 __int16 version;
 char Pad0[2];
 __int32 max_value;
@@ -111,9 +112,10 @@ bool persistant;
 bool increment_from_client;
 char Pad1[1];
 BnsTables::Shared::TableRef achievement[8];
-int achievement_tableId(){return 6;};
+__int32 achievement_Size() const {return 8;};
+int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId(){return 420;};
+int register_name_tableId() const {return 420;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 7; }
@@ -125,7 +127,6 @@ int register_name_tableId(){return 420;};
 	{
 		achievement_register_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::achievement_register_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

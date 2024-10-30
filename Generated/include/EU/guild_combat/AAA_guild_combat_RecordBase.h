@@ -14,22 +14,23 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 season_type;
+                signed char season_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* alias;
-__int8 required_level;
+		std::string_view season_type_EnumValue() const {return Get_season_type_EnumValue(key.season_type);};
+wchar_t* alias;
+signed char required_level;
 char Pad0[1];
 __int16 required_mastery_level;
 BnsTables::Shared::TableRef available_matching_weekly_time;
-int available_matching_weekly_time_tableId(){return 431;};
+int available_matching_weekly_time_tableId() const {return 446;};
 __int16 party_battle_point_bonus_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 163; }
+		static __int16 TableId() { return 167; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +39,6 @@ __int16 party_battle_point_bonus_rate;
 	{
 		guild_combat_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guild_combat_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

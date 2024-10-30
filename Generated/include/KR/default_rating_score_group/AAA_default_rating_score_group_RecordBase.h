@@ -14,14 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 season_contents_type;
+                signed char season_contents_type;
 __int16 group_id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 min_rating_score;
+		std::string_view season_contents_type_EnumValue() const {return Get_season_contents_type_EnumValue(key.season_contents_type);};
+__int32 min_rating_score;
 __int32 max_rating_score;
 __int32 default_rating_score;
 bool is_placement_test;
@@ -36,7 +37,6 @@ bool is_placement_test;
 	{
 		default_rating_score_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::default_rating_score_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

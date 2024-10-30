@@ -14,17 +14,19 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef effect[8];
-int effect_tableId(){return 111;};
+__int32 effect_Size() const {return 8;};
+int effect_tableId() const {return 115;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 112; }
+		static __int16 TableId() { return 116; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -33,7 +35,6 @@ int effect_tableId(){return 111;};
 	{
 		effect_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::effect_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

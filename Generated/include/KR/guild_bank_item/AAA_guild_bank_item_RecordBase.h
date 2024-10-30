@@ -14,14 +14,15 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                __int8 bank_item_type;
+                signed char bank_item_type;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef bank_item;
-int bank_item_tableId(){return 195;};
+		std::string_view bank_item_type_EnumValue() const {return Get_bank_item_type_EnumValue(key.bank_item_type);};
+BnsTables::Shared::TableRef bank_item;
+int bank_item_tableId() const {return 195;};
 __int16 bank_item_round_lot;
 char Pad0[2];
 __int64 bank_item_max_count;
@@ -36,7 +37,6 @@ __int64 bank_item_max_count;
 	{
 		guild_bank_item_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guild_bank_item_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

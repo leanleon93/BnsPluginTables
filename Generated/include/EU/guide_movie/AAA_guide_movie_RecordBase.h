@@ -27,20 +27,20 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int8 category;
+		signed char category;
 char Pad0[3];
 BnsTables::Shared::TableRef title;
-int title_tableId(){return 405;};
-__int8 activation_level;
-__int8 activation_mastery_level;
+int title_tableId() const {return 420;};
+signed char activation_level;
+signed char activation_mastery_level;
 bool use_notice_hud;
 char Pad1[1];
 BnsTables::Shared::TableRef message;
-int message_tableId(){return 151;};
+int message_tableId() const {return 155;};
 wchar_t* movie_url;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 159; }
+		static __int16 TableId() { return 163; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -49,7 +49,6 @@ wchar_t* movie_url;
 	{
 		guide_movie_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::guide_movie_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

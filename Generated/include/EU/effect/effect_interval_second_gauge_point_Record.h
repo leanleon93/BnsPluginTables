@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int16 gp_diff;
 
-		static __int32 SubType() { return 865; }
+		static __int32 SubType() { return 975; }
 	};
 #pragma pack(pop)
 }

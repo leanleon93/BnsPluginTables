@@ -22,43 +22,54 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId(){return 405;};
+int name_tableId() const {return 420;};
 BnsTables::Shared::IconRef shuffle_reward_icon;
 BnsTables::Shared::TableRef shuffle_reward_tooltip;
-int shuffle_reward_tooltip_tableId(){return 405;};
-__int8 upgrade_reward_preview;
+int shuffle_reward_tooltip_tableId() const {return 420;};
+signed char upgrade_reward_preview;
 bool upgrade_reward_warning_message;
-__int8 reward_type;
-__int8 grade;
-__int8 color;
-__int8 glyph_type;
+signed char reward_type;
+signed char grade;
+signed char color;
+signed char glyph_type;
 char Pad0[2];
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
-int cost_item_tableId(){return 189;};
+__int32 cost_item_Size() const {return 4;};
+int cost_item_tableId() const {return 195;};
 __int16 cost_item_count[4];
-__int8 tier_pick_probability;
-__int8 additional_glyph_pick_probability;
+__int32 cost_item_count_Size() const {return 4;};
+signed char tier_pick_probability;
+signed char additional_glyph_pick_probability;
 __int16 grade_prob_weight[8];
+__int32 grade_prob_weight_Size() const {return 8;};
 __int16 grade_prob_weight_total;
 __int16 tier_prob_weight[8];
+__int32 tier_prob_weight_Size() const {return 8;};
 __int16 tier_prob_weight_total;
 __int16 result_glyph_prob_weight[30];
+__int32 result_glyph_prob_weight_Size() const {return 30;};
 __int16 result_glyph_prob_weight_total;
 BnsTables::Shared::TableRef result_glyph[30];
-int result_glyph_tableId(){return 153;};
+__int32 result_glyph_Size() const {return 30;};
+int result_glyph_tableId() const {return 157;};
 __int16 additional_glyph_prob_weight[10];
+__int32 additional_glyph_prob_weight_Size() const {return 10;};
 __int16 additional_glyph_prob_weight_total;
 char Pad1[2];
 BnsTables::Shared::TableRef additional_glyph[10];
-int additional_glyph_tableId(){return 153;};
+__int32 additional_glyph_Size() const {return 10;};
+int additional_glyph_tableId() const {return 157;};
 __int16 cost_group_id[8];
+__int32 cost_group_id_Size() const {return 8;};
 __int16 result_group_id[8];
+__int32 result_group_id_Size() const {return 8;};
 __int16 group_prob_weight[8];
+__int32 group_prob_weight_Size() const {return 8;};
 __int16 group_prob_weight_total;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 155; }
+		static __int16 TableId() { return 159; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -67,7 +78,6 @@ __int16 group_prob_weight_total;
 	{
 		glyph_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::glyph_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

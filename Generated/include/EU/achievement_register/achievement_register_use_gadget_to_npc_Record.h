@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef gadget;
-int gadget_tableId(){return 137;};
+int gadget_tableId() const {return 142;};
 BnsTables::Shared::TableRef npc;
-int npc_tableId(){return 255;};
+int npc_tableId() const {return 265;};
 
 		static __int32 SubType() { return 14; }
 	};

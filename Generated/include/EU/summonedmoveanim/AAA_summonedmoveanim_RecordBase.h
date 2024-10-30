@@ -14,15 +14,18 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 weapon;
-__int8 combat_pose;
-__int8 stance;
+                signed char weapon;
+signed char combat_pose;
+signed char stance;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* upper_idle;
+		std::string_view weapon_EnumValue() const {return Get_weapon_EnumValue(key.weapon);};
+std::string_view combat_pose_EnumValue() const {return Get_combat_pose_EnumValue(key.combat_pose);};
+std::string_view stance_EnumValue() const {return Get_stance_EnumValue(key.stance);};
+wchar_t* upper_idle;
 wchar_t* lower_idle;
 wchar_t* upper_walk_front;
 wchar_t* lower_walk_front;
@@ -85,7 +88,7 @@ wchar_t* upper_rtol;
 wchar_t* lower_rtol;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 393; }
+		static __int16 TableId() { return 408; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -94,7 +97,6 @@ wchar_t* lower_rtol;
 	{
 		summonedmoveanim_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::summonedmoveanim_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,22 +14,23 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                __int8 random_store_number;
-__int8 slot_index;
+                signed char random_store_number;
+signed char slot_index;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		BnsTables::Shared::TableRef required_item;
-int required_item_tableId(){return 189;};
-__int8 required_item_count;
+		std::string_view random_store_number_EnumValue() const {return Get_random_store_number_EnumValue(key.random_store_number);};
+BnsTables::Shared::TableRef required_item;
+int required_item_tableId() const {return 195;};
+signed char required_item_count;
 char Pad0[3];
 BnsTables::Shared::TableRef required_item_for_instant_payment;
-int required_item_for_instant_payment_tableId(){return 189;};
+int required_item_for_instant_payment_tableId() const {return 195;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 126; }
+		static __int16 TableId() { return 130; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -38,7 +39,6 @@ int required_item_for_instant_payment_tableId(){return 189;};
 	{
 		expand_random_store_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::expand_random_store_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

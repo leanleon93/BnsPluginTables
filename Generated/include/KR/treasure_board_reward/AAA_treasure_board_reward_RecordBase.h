@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 __int16 reward_grade;
 char Pad0[2];
 BnsTables::Shared::TableRef reward_item;
-int reward_item_tableId(){return 195;};
+int reward_item_tableId() const {return 195;};
 __int16 reward_item_count;
 __int16 max_draw_count;
 __int32 reward_item_prob_weight;
@@ -39,7 +39,6 @@ __int32 reward_item_prob_weight;
 	{
 		treasure_board_reward_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::treasure_board_reward_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

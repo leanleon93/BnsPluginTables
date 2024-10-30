@@ -22,22 +22,26 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId(){return 461;};
-__int8 required_level;
-__int8 required_mastery_level;
+int zone_tableId() const {return 461;};
+signed char required_level;
+signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_preceding_quest[3];
-int required_preceding_quest_tableId(){return 294;};
-__int8 required_preceding_quest_check;
+__int32 required_preceding_quest_Size() const {return 3;};
+int required_preceding_quest_tableId() const {return 294;};
+signed char required_preceding_quest_check;
 char Pad1[3];
 BnsTables::Shared::TableRef jumping_character_quest_for_back_to_world[3];
-int jumping_character_quest_for_back_to_world_tableId(){return 294;};
+__int32 jumping_character_quest_for_back_to_world_Size() const {return 3;};
+int jumping_character_quest_for_back_to_world_tableId() const {return 294;};
 BnsTables::Shared::TableRef group;
-int group_tableId(){return 16;};
+int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef skill_training_room_name2;
-int skill_training_room_name2_tableId(){return 420;};
+int skill_training_room_name2_tableId() const {return 420;};
 wchar_t* start_default_kismet_name[2];
+__int32 start_default_kismet_name_Size() const {return 2;};
 wchar_t* end_default_kismet_name[2];
+__int32 end_default_kismet_name_Size() const {return 2;};
 wchar_t* stage_change_show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
@@ -50,7 +54,6 @@ wchar_t* stage_change_show;
 	{
 		skill_training_room_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::skill_training_room_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

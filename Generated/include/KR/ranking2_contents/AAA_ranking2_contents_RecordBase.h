@@ -21,15 +21,15 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 contents_type;
-__int8 player_type;
-__int8 score_type;
+signed char contents_type;
+signed char player_type;
+signed char score_type;
 char Pad0[1];
 __int32 minimum_score;
 wchar_t* contents_banner_img;
 BnsTables::Shared::TableRef contents_name;
-int contents_name_tableId(){return 420;};
-__int8 sort_number;
+int contents_name_tableId() const {return 420;};
+signed char sort_number;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
 		static __int16 TableId() { return 309; }
@@ -41,7 +41,6 @@ __int8 sort_number;
 	{
 		ranking2_contents_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::ranking2_contents_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

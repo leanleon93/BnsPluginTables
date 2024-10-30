@@ -14,13 +14,14 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 quest_filtering_type;
+signed char quest_filtering_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 246; }
@@ -32,7 +33,6 @@ __int8 quest_filtering_type;
 	{
 		map_group_2_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::map_group_2_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

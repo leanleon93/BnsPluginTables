@@ -19,7 +19,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -37,7 +38,6 @@ __int32 index;
 	{
 		emoticon_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::emoticon_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

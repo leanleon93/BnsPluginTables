@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -25,8 +26,8 @@ wchar_t* cinema_resource_name;
 wchar_t* teen_cinema_name;
 wchar_t* teen_cinema_resource_name;
 BnsTables::Shared::TableRef costume;
-int costume_tableId(){return 195;};
-__int8 skippable;
+int costume_tableId() const {return 195;};
+signed char skippable;
 bool point_camera;
 bool nameplate_visible;
 
@@ -40,7 +41,6 @@ bool nameplate_visible;
 	{
 		cinematic_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::cinematic_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

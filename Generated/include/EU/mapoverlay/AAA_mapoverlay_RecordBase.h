@@ -31,10 +31,10 @@ char Pad0[2];
 wchar_t* imageset;
 wchar_t* mask_imageset;
 BnsTables::Shared::TableRef area;
-int area_tableId(){return 99;};
+int area_tableId() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 241; }
+		static __int16 TableId() { return 248; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -43,7 +43,6 @@ int area_tableId(){return 99;};
 	{
 		mapoverlay_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::mapoverlay_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

@@ -14,7 +14,8 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
@@ -22,10 +23,12 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 wchar_t* duel_npc_kismet_name;
 BnsTables::Shared::TableRef stage_init_reward_item[10];
-int stage_init_reward_item_tableId(){return 195;};
+__int32 stage_init_reward_item_Size() const {return 10;};
+int stage_init_reward_item_tableId() const {return 195;};
 __int16 stage_init_reward_item_count[10];
+__int32 stage_init_reward_item_count_Size() const {return 10;};
 BnsTables::Shared::TableRef feedback;
-int feedback_tableId(){return 138;};
+int feedback_tableId() const {return 138;};
 wchar_t* npc_portrait_image;
 wchar_t* change_floor_ppv_kismet_name;
 wchar_t* combobox_floor_icon_imageset;
@@ -40,7 +43,6 @@ wchar_t* combobox_floor_icon_imageset;
 	{
 		duel_npc_challenge_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::duel_npc_challenge_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

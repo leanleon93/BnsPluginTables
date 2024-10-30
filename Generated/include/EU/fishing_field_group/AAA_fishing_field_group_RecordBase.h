@@ -22,15 +22,16 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId(){return 405;};
+int name2_tableId() const {return 420;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId(){return 405;};
+int desc_tableId() const {return 420;};
 BnsTables::Shared::TableRef fishing_field[10];
-int fishing_field_tableId(){return 144;};
+__int32 fishing_field_Size() const {return 10;};
+int fishing_field_tableId() const {return 149;};
 __int16 fishing_field_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 145; }
+		static __int16 TableId() { return 150; }
 		static __int32 SubType() { return 0; }
 	};
 #pragma pack(pop)
@@ -39,7 +40,6 @@ __int16 fishing_field_count;
 	{
 		fishing_field_group_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::fishing_field_group_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)

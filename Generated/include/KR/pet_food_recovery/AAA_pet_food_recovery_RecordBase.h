@@ -14,14 +14,17 @@ namespace BnsTables::KR {
 		union Key
 		{
             struct {
-                
+                __int64 autoId;
+
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-__int8 item_grade[4];
+signed char item_grade[4];
+__int32 item_grade_Size() const {return 4;};
 __int16 recovery_amount[4];
+__int32 recovery_amount_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 286; }
@@ -33,7 +36,6 @@ __int16 recovery_amount[4];
 	{
 		pet_food_recovery_Record* _record;
 		int _cacheChunkIndex;
-		//__unaligned __declspec(align(1)) const Data::pet_food_recovery_Record* _debug;
 		bool _makeCopy;
 	};
 #pragma pack(pop)
