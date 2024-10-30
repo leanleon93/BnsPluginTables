@@ -22,9 +22,7 @@ signed char weapon_type;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view weapon_gem_type_EnumValue() const {return Get_weapon_gem_type_EnumValue(key.weapon_gem_type);};
-std::string_view weapon_type_EnumValue() const {return Get_weapon_type_EnumValue(key.weapon_type);};
-wchar_t* effect_show;
+		wchar_t* effect_show;
 BnsTables::Shared::RGB effect_color;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }

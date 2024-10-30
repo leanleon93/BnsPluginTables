@@ -23,9 +23,7 @@ __int32 group_index;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
-std::string_view master_job_style_EnumValue() const {return Get_master_job_style_EnumValue(key.master_job_style);};
-char Pad0[4];
+		char Pad0[4];
 wchar_t* job_style_stand_idle_show;
 __int32 event_time;
 

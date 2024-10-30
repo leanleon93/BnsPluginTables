@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view stance_type_EnumValue() const {return Get_stance_type_EnumValue(key.stance_type);};
-BnsTables::Shared::TableRef name2;
+		BnsTables::Shared::TableRef name2;
 int name2_tableId() const {return 420;};
 bool initialize;
 char Pad0[1];

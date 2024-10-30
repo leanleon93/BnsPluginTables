@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view random_store_number_EnumValue() const {return Get_random_store_number_EnumValue(key.random_store_number);};
-wchar_t* alias;
+		wchar_t* alias;
 signed char limit_level;
 bool free_draw_enable;
 bool item_draw_enable;

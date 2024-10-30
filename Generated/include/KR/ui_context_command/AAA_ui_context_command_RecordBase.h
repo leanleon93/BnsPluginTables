@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view target_EnumValue() const {return Get_target_EnumValue(key.target);};
-signed char command[30];
+		signed char command[30];
 __int32 command_Size() const {return 30;};
 signed char default_command[15];
 __int32 default_command_Size() const {return 15;};

@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
-wchar_t* animset;
+		wchar_t* animset;
 BnsTables::Shared::TableRef moveanim;
 int moveanim_tableId() const {return 408;};
 BnsTables::Shared::TableRef appearance;

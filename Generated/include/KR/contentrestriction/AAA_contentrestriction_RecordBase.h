@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view code_EnumValue() const {return Get_code_EnumValue(key.code);};
-__int16 require_level;
+		__int16 require_level;
 char Pad0[2];
 __int32 require_grade;
 __int16 require_level_post_send;

@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view indicator_EnumValue() const {return Get_indicator_EnumValue(key.indicator);};
-wchar_t* mesh_iconset;
+		wchar_t* mesh_iconset;
 wchar_t* minimap;
 wchar_t* minimap_over;
 wchar_t* minimap_boder;

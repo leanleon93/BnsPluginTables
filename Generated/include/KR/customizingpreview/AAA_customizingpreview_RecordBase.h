@@ -31,10 +31,7 @@ signed char sex;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view preview_type_EnumValue() const {return Get_preview_type_EnumValue(key.preview_type);};
-std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
-std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
-
+		
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 94; }
 		static __int32 SubType() { return 0; }

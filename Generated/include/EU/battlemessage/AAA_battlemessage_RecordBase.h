@@ -22,10 +22,7 @@ signed char effect_type;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view object_type_EnumValue() const {return Get_object_type_EnumValue(key.object_type);};
-std::string_view skill_result_type_EnumValue() const {return Get_skill_result_type_EnumValue(key.skill_result_type);};
-std::string_view effect_type_EnumValue() const {return Get_effect_type_EnumValue(key.effect_type);};
-BnsTables::Shared::TableRef game_message;
+		BnsTables::Shared::TableRef game_message;
 int game_message_tableId() const {return 155;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }

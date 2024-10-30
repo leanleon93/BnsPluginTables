@@ -20,8 +20,7 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view item_exchange_type_EnumValue() const {return Get_item_exchange_type_EnumValue(key.item_exchange_type);};
-signed char condition;
+		signed char condition;
 char Pad0[3];
 wchar_t* icon;
 BnsTables::Shared::TableRef name_text;

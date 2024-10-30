@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view bank_item_type_EnumValue() const {return Get_bank_item_type_EnumValue(key.bank_item_type);};
-BnsTables::Shared::TableRef bank_item;
+		BnsTables::Shared::TableRef bank_item;
 int bank_item_tableId() const {return 195;};
 __int16 bank_item_round_lot;
 char Pad0[2];

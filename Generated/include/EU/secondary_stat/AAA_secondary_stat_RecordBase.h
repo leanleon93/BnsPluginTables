@@ -20,8 +20,7 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view primary_stat_EnumValue() const {return Get_primary_stat_EnumValue(key.primary_stat);};
-__int16 secondary_stat[4];
+		__int16 secondary_stat[4];
 __int32 secondary_stat_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }

@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
-__int16 acquire_quest[4];
+		__int16 acquire_quest[4];
 __int32 acquire_quest_Size() const {return 4;};
 __int16 complete_quest[16];
 __int32 complete_quest_Size() const {return 16;};

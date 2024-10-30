@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view id_EnumValue() const {return Get_id_EnumValue(key.id);};
-wchar_t* alias;
+		wchar_t* alias;
 signed char max_party_member_count;
 bool default_val;
 bool is_pvp;

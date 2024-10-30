@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view param_type_category_EnumValue() const {return Get_param_type_category_EnumValue(key.param_type_category);};
-__int32 param_type[28];
+		__int32 param_type[28];
 __int32 param_type_Size() const {return 28;};
 __int32 master_param_type;
 BnsTables::Shared::TableRef category_name;

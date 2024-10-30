@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view id_EnumValue() const {return Get_id_EnumValue(key.id);};
-wchar_t* alias;
+		wchar_t* alias;
 BnsTables::Shared::TableRef membership_benefit[8];
 __int32 membership_benefit_Size() const {return 8;};
 int membership_benefit_tableId() const {return 258;};

@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view attribute_EnumValue() const {return Get_attribute_EnumValue(key.attribute);};
-__int16 block_caster_flag[4];
+		__int16 block_caster_flag[4];
 __int32 block_caster_flag_Size() const {return 4;};
 __int16 target_flag[8];
 __int32 target_flag_Size() const {return 8;};

@@ -20,8 +20,7 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view key_code_EnumValue() const {return Get_key_code_EnumValue(key.key_code);};
-BnsTables::Shared::TableRef name;
+		BnsTables::Shared::TableRef name;
 int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef short_name;
 int short_name_tableId() const {return 420;};

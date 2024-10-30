@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view category_EnumValue() const {return Get_category_EnumValue(key.category);};
-BnsTables::Shared::TableRef name;
+		BnsTables::Shared::TableRef name;
 int name_tableId() const {return 420;};
 BnsTables::Shared::TableRef icon_texture;
 int icon_texture_tableId() const {return 182;};

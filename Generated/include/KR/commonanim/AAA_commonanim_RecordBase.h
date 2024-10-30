@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view anim_type_EnumValue() const {return Get_anim_type_EnumValue(key.anim_type);};
-wchar_t* anim_name;
+		wchar_t* anim_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 62; }

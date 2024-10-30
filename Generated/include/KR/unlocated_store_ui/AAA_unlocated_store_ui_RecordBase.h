@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view unlocated_store_type_EnumValue() const {return Get_unlocated_store_type_EnumValue(key.unlocated_store_type);};
-wchar_t* title_icon;
+		wchar_t* title_icon;
 BnsTables::Shared::TableRef title_text;
 int title_text_tableId() const {return 420;};
 wchar_t* button_icon;

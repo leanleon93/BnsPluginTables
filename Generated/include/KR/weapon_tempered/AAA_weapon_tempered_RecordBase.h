@@ -21,8 +21,7 @@ signed char level;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view weapon_type_EnumValue() const {return Get_weapon_type_EnumValue(key.weapon_type);};
-wchar_t* show;
+		wchar_t* show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 445; }

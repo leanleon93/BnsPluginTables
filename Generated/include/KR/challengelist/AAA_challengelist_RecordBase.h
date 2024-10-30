@@ -25,8 +25,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view challenge_type_EnumValue() const {return Get_challenge_type_EnumValue(key.challenge_type);};
-signed char required_level;
+		signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef challenge_quest_basic[20];

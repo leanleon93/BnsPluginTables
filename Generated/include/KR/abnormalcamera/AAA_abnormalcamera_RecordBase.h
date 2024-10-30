@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view idle_type_EnumValue() const {return Get_idle_type_EnumValue(key.idle_type);};
-signed char camera_type;
+		signed char camera_type;
 char Pad0[3];
 float location_x;
 float location_y;

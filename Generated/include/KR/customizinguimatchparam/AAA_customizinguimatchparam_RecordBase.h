@@ -22,9 +22,7 @@ signed char sex;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view race_EnumValue() const {return Get_race_EnumValue(key.race);};
-std::string_view sex_EnumValue() const {return Get_sex_EnumValue(key.sex);};
-BnsTables::Shared::TableRef sub_name;
+		BnsTables::Shared::TableRef sub_name;
 int sub_name_tableId() const {return 420;};
 signed char param_index;
 

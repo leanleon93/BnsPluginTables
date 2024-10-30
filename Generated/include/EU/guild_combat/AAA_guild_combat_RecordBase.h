@@ -20,8 +20,7 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view season_type_EnumValue() const {return Get_season_type_EnumValue(key.season_type);};
-wchar_t* alias;
+		wchar_t* alias;
 signed char required_level;
 char Pad0[1];
 __int16 required_mastery_level;

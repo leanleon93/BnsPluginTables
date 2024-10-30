@@ -23,9 +23,7 @@ bool after_combat;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view before_stance_EnumValue() const {return Get_before_stance_EnumValue(key.before_stance);};
-std::string_view after_stance_EnumValue() const {return Get_after_stance_EnumValue(key.after_stance);};
-wchar_t* transit_anim;
+		wchar_t* transit_anim;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 393; }

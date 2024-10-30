@@ -20,8 +20,7 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view job_EnumValue() const {return Get_job_EnumValue(key.job);};
-__int16 gauge_increase_per_sec;
+		__int16 gauge_increase_per_sec;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 391; }

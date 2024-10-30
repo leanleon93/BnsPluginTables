@@ -20,8 +20,7 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		std::string_view ability_EnumValue() const {return Get_ability_EnumValue(key.ability);};
-signed char scale[10];
+		signed char scale[10];
 __int32 scale_Size() const {return 10;};
 char Pad0[2];
 __int32 value[10];
