@@ -44,8 +44,8 @@ char Pad0[2];
 wchar_t* hp_idle;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 411; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 416; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -25,11 +25,11 @@ signed char group;
 char Pad0[1];
 __int16 sort_no;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef action_desc;
-int action_desc_tableId() const {return 420;};
+int action_desc_tableId() const {return 425;};
 BnsTables::Shared::TableRef combo_desc;
-int combo_desc_tableId() const {return 420;};
+int combo_desc_tableId() const {return 425;};
 wchar_t* video;
 __int32 skill[5];
 __int32 skill_Size() const {return 5;};
@@ -37,8 +37,8 @@ signed char skill_slot_type[5];
 __int32 skill_slot_type_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 345; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 350; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

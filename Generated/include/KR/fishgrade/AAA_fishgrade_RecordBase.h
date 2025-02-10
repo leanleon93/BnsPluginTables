@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 420;};
+int name_tableId() const {return 425;};
 wchar_t* grade_symbol;
 signed char grade;
 char Pad0[1];
@@ -31,8 +31,8 @@ bool rare;
 bool cannot_use;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 148; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 149; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

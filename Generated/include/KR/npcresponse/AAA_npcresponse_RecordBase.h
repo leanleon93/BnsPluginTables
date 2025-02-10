@@ -25,29 +25,29 @@ signed char faction_check_type;
 char Pad0[3];
 BnsTables::Shared::TableRef faction[2];
 __int32 faction_Size() const {return 2;};
-int faction_tableId() const {return 135;};
+int faction_tableId() const {return 136;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 294;};
+int required_complete_quest_tableId() const {return 298;};
 signed char faction_level_check_type;
 char Pad1[3];
 BnsTables::Shared::TableRef talk_message;
-int talk_message_tableId() const {return 270;};
+int talk_message_tableId() const {return 274;};
 BnsTables::Shared::TableRef indicator_social;
-int indicator_social_tableId() const {return 185;};
+int indicator_social_tableId() const {return 186;};
 BnsTables::Shared::TableRef approach_social;
-int approach_social_tableId() const {return 382;};
+int approach_social_tableId() const {return 387;};
 BnsTables::Shared::TableRef idle;
-int idle_tableId() const {return 183;};
+int idle_tableId() const {return 184;};
 bool idle_visible;
 char Pad2[3];
 BnsTables::Shared::TableRef idle_start;
-int idle_start_tableId() const {return 382;};
+int idle_start_tableId() const {return 387;};
 BnsTables::Shared::TableRef idle_end;
-int idle_end_tableId() const {return 382;};
+int idle_end_tableId() const {return 387;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 268; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 272; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

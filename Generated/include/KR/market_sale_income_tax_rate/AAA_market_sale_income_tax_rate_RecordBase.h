@@ -24,9 +24,9 @@ namespace BnsTables::KR {
 __int32 tax_rate;
 __int32 membership_tax_rate;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 251; }
-		static __int32 SubType() { return 0; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
+		static __int16 TableId() { return 255; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -42,11 +42,11 @@ __int16 heal_percent_modify_percent;
 char Pad3[2];
 __int32 heal_percent_modify_diff;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 420;};
+int description_tableId() const {return 425;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 352; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 357; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

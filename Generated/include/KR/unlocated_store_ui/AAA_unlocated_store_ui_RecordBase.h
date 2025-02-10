@@ -22,14 +22,14 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* title_icon;
 BnsTables::Shared::TableRef title_text;
-int title_text_tableId() const {return 420;};
+int title_text_tableId() const {return 425;};
 wchar_t* button_icon;
 BnsTables::Shared::TableRef button_text;
-int button_text_tableId() const {return 420;};
+int button_text_tableId() const {return 425;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 431; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 436; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

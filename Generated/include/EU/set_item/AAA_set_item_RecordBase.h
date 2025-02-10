@@ -163,7 +163,7 @@ __int32 slot_equip_type_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 19); }
 		static __int16 TableId() { return 335; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

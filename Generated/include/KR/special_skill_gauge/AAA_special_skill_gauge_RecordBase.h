@@ -23,8 +23,8 @@ namespace BnsTables::KR {
 		__int16 gauge_increase_per_sec;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 391; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 396; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

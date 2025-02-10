@@ -72,7 +72,7 @@ float center_pos_y;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 79); }
 		static __int16 TableId() { return 249; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

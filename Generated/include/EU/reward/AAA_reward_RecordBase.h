@@ -151,7 +151,7 @@ signed char smart_rare_reward_total_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 44); }
 		static __int16 TableId() { return 326; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

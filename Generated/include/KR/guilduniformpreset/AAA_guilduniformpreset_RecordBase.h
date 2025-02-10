@@ -23,20 +23,20 @@ namespace BnsTables::KR {
 		signed char preset_type;
 char Pad0[3];
 BnsTables::Shared::TableRef preset;
-int preset_tableId() const {return 169;};
+int preset_tableId() const {return 170;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 420;};
+int name_tableId() const {return 425;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 182;};
+int icon_texture_tableId() const {return 183;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 420;};
+int desc_tableId() const {return 425;};
 __int32 order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 176; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 177; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

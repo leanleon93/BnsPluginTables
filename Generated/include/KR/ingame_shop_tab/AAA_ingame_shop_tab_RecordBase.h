@@ -22,12 +22,12 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef store_tab_name;
-int store_tab_name_tableId() const {return 420;};
+int store_tab_name_tableId() const {return 425;};
 bool is_retire;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 187; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 188; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

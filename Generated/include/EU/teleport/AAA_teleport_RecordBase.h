@@ -43,7 +43,7 @@ int ui_preceding_quest_tableId() const {return 294;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 23); }
 		static __int16 TableId() { return 416; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

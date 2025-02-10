@@ -25,13 +25,13 @@ signed char upgrade_type;
 char Pad0[3];
 BnsTables::Shared::TableRef upgrade_item[4];
 __int32 upgrade_item_Size() const {return 4;};
-int upgrade_item_tableId() const {return 195;};
+int upgrade_item_tableId() const {return 197;};
 signed char upgrade_item_stack_count[4];
 __int32 upgrade_item_stack_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 221; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 223; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

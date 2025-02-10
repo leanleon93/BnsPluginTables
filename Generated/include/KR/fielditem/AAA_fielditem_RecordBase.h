@@ -33,11 +33,11 @@ bool not_change_create_pos;
 signed char parry_event;
 char Pad1[2];
 BnsTables::Shared::TableRef acquire_quest;
-int acquire_quest_tableId() const {return 294;};
+int acquire_quest_tableId() const {return 298;};
 signed char forwarding_types;
 char Pad2[3];
 BnsTables::Shared::TableRef quests;
-int quests_tableId() const {return 294;};
+int quests_tableId() const {return 298;};
 signed char missions;
 signed char cases;
 __int16 case_subtypes;
@@ -45,11 +45,11 @@ __int16 use_count;
 char Pad3[2];
 BnsTables::Shared::TableRef use_skill3[4];
 __int32 use_skill3_Size() const {return 4;};
-int use_skill3_tableId() const {return 337;};
+int use_skill3_tableId() const {return 341;};
 __int16 consume_use_count[4];
 __int32 consume_use_count_Size() const {return 4;};
 BnsTables::Shared::TableRef throw_skill3;
-int throw_skill3_tableId() const {return 337;};
+int throw_skill3_tableId() const {return 341;};
 bool init_activated;
 char Pad4[3];
 __int32 explosion_time;
@@ -65,10 +65,10 @@ bool change_activator_by_killer;
 char Pad7[3];
 BnsTables::Shared::TableRef target_first_filter[4];
 __int32 target_first_filter_Size() const {return 4;};
-int target_first_filter_tableId() const {return 146;};
+int target_first_filter_tableId() const {return 147;};
 BnsTables::Shared::TableRef target_second_filter[4];
 __int32 target_second_filter_Size() const {return 4;};
-int target_second_filter_tableId() const {return 146;};
+int target_second_filter_tableId() const {return 147;};
 BnsTables::Shared::TableRef first_effect[4];
 __int32 first_effect_Size() const {return 4;};
 int first_effect_tableId() const {return 115;};
@@ -85,12 +85,12 @@ wchar_t* activate_particle_attatch_bone;
 bool throw_target;
 char Pad9[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 wchar_t* mesh_id;
 wchar_t* mesh_col;
 wchar_t* animset_name;
 BnsTables::Shared::TableRef moveanim;
-int moveanim_tableId() const {return 144;};
+int moveanim_tableId() const {return 145;};
 wchar_t* grab_bone;
 wchar_t* pick_up;
 wchar_t* put_down;
@@ -110,15 +110,15 @@ wchar_t* gadget_thrown_start;
 wchar_t* gadget_thrown_particle;
 wchar_t* gadget_landing;
 BnsTables::Shared::TableRef action_name2;
-int action_name2_tableId() const {return 420;};
+int action_name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef action_desc2;
-int action_desc2_tableId() const {return 420;};
+int action_desc2_tableId() const {return 425;};
 BnsTables::Shared::TableRef drop_action_name;
-int drop_action_name_tableId() const {return 420;};
+int drop_action_name_tableId() const {return 425;};
 BnsTables::Shared::TableRef drop_action_desc;
-int drop_action_desc_tableId() const {return 420;};
+int drop_action_desc_tableId() const {return 425;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 420;};
+int description2_tableId() const {return 425;};
 wchar_t* gadget_dropanim;
 wchar_t* gadget_putdown_show;
 bool throw_presentation;
@@ -130,8 +130,8 @@ wchar_t* gadget_consume_in_hand_showdata;
 bool ghost_mode;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 142; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 143; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

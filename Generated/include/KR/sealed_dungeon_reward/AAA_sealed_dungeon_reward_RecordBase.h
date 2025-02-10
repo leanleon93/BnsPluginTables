@@ -27,13 +27,13 @@ signed char sealed_level;
 char Pad0[3];
 BnsTables::Shared::TableRef reward_item[5];
 __int32 reward_item_Size() const {return 5;};
-int reward_item_tableId() const {return 195;};
+int reward_item_tableId() const {return 197;};
 __int16 reward_item_count[5];
 __int32 reward_item_count_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 330; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 335; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

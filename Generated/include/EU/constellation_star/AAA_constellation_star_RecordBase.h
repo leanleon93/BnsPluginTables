@@ -60,9 +60,9 @@ __int16 option_weight[50];
 __int32 option_weight_Size() const {return 50;};
 __int32 option_weight_total;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
 		static __int16 TableId() { return 65; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

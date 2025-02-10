@@ -30,8 +30,8 @@ wchar_t* type2_sample_sound_name;
 wchar_t* type3_sample_sound_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 284; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 288; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

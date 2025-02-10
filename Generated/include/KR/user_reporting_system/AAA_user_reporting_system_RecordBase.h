@@ -23,16 +23,16 @@ __int16 report_reason_code;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef title_category_name;
-int title_category_name_tableId() const {return 420;};
+int title_category_name_tableId() const {return 425;};
 BnsTables::Shared::TableRef report_scene_name;
-int report_scene_name_tableId() const {return 420;};
+int report_scene_name_tableId() const {return 425;};
 BnsTables::Shared::TableRef report_reason_name;
-int report_reason_name_tableId() const {return 420;};
+int report_reason_name_tableId() const {return 425;};
 signed char sort;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 433; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 438; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

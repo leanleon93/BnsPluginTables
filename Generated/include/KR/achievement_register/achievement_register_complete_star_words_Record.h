@@ -6,7 +6,7 @@
 
 namespace BnsTables::KR {
 #pragma pack(push, 1)
-	struct achievement_register_completition_star_words_Record : achievement_register_Record
+	struct achievement_register_complete_star_words_Record : achievement_register_Record
 	{
 	public:
 		

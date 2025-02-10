@@ -25,7 +25,7 @@ signed char pc_job;
 signed char joypad_category;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 420;};
+int name_tableId() const {return 425;};
 wchar_t* default_keycap;
 bool modifier_enabled;
 signed char sort_no;
@@ -36,9 +36,9 @@ signed char usable_joypad_mode;
 bool joypad_customize_enabled;
 bool joypad_overlapped_binding_enabled;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 238; }
-		static __int32 SubType() { return 0; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
+		static __int16 TableId() { return 240; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -13,10 +13,10 @@ namespace BnsTables::KR {
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef msg[2];
 __int32 msg_Size() const {return 2;};
-int msg_tableId() const {return 270;};
+int msg_tableId() const {return 274;};
 BnsTables::Shared::TableRef faction[2];
 __int32 faction_Size() const {return 2;};
-int faction_tableId() const {return 135;};
+int faction_tableId() const {return 136;};
 
 		static __int32 SubType() { return 17; }
 	};

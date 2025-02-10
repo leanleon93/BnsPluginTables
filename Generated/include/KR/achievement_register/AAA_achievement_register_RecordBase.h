@@ -53,7 +53,7 @@ namespace BnsTables::KR {
 		achievement_register_record_sub_zero_durability = 42,
 		achievement_register_record_sub_repair_item = 43,
 		achievement_register_record_sub_check_combination_count = 44,
-		achievement_register_record_sub_completition_star_words = 45,
+		achievement_register_record_sub_complete_star_words = 45,
 		achievement_register_record_sub_detach_post_attachment_count = 46,
 		achievement_register_record_sub_detach_post_attachment_money = 47,
 		achievement_register_record_sub_detach_post_attachment_item = 48,
@@ -114,11 +114,11 @@ BnsTables::Shared::TableRef achievement[8];
 __int32 achievement_Size() const {return 8;};
 int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId() const {return 420;};
+int register_name_tableId() const {return 425;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
 		static __int16 TableId() { return 7; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

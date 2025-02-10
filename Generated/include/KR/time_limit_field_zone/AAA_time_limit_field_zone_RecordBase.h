@@ -29,9 +29,9 @@ char Pad0[2];
 BnsTables::Shared::TableRef required_cost;
 int required_cost_tableId() const {return 77;};
 BnsTables::Shared::TableRef time_limit_field_zone_name2;
-int time_limit_field_zone_name2_tableId() const {return 420;};
+int time_limit_field_zone_name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef time_limit_field_zone_desc;
-int time_limit_field_zone_desc_tableId() const {return 420;};
+int time_limit_field_zone_desc_tableId() const {return 425;};
 signed char ui_text_grade;
 char Pad1[3];
 BnsTables::Shared::TableRef reward_summary;
@@ -41,8 +41,8 @@ int recommend_alias_tableId() const {return 72;};
 __int16 recommend_attack_power;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 421; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 426; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -23,11 +23,11 @@ namespace BnsTables::KR {
 		bool usable;
 char Pad0[3];
 BnsTables::Shared::TableRef gemstone;
-int gemstone_tableId() const {return 195;};
+int gemstone_tableId() const {return 197;};
 __int16 gemstone_amount;
 char Pad1[2];
 BnsTables::Shared::TableRef abrasive;
-int abrasive_tableId() const {return 195;};
+int abrasive_tableId() const {return 197;};
 __int16 abrasive_amount;
 char Pad2[2];
 __int32 base_mileage;
@@ -36,8 +36,8 @@ __int16 bonus_mileage_max;
 __int16 bonus_mileage_scale;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 260; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 264; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -34,13 +34,13 @@ __int16 required_achievement_step;
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 195;};
+int cost_item_tableId() const {return 197;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 160; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 161; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

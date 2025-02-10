@@ -34,8 +34,8 @@ BnsTables::Shared::TableRef area;
 int area_tableId() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 248; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 250; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

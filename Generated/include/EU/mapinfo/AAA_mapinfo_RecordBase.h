@@ -67,7 +67,7 @@ float arena_dungeon_pos_in_parent_y;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 42); }
 		static __int16 TableId() { return 247; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -25,8 +25,8 @@ __int64 transform_item_by_job[17];
 __int32 transform_item_by_job_Size() const {return 17;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 189; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 190; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

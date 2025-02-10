@@ -74,11 +74,11 @@ BnsTables::Shared::UnkFlag target;
 BnsTables::Shared::UnkFlag subject2;
 BnsTables::Shared::UnkFlag target2;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 420;};
+int description_tableId() const {return 425;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 146; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 147; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

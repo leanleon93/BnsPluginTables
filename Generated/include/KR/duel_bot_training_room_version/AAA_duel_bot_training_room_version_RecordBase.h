@@ -24,11 +24,11 @@ namespace BnsTables::KR {
 __int16 version;
 char Pad0[2];
 BnsTables::Shared::TableRef tooltip_info;
-int tooltip_info_tableId() const {return 420;};
+int tooltip_info_tableId() const {return 425;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 107; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

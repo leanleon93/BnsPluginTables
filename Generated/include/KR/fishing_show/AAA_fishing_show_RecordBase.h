@@ -31,8 +31,8 @@ __int32 fishing_show_duration;
 bool loop;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
-		static __int16 TableId() { return 152; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 153; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

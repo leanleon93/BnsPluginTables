@@ -54,7 +54,7 @@ bool click;
 bool front;
 bool show_tooltip;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 __int16 opacity;
 __int16 size_x;
 __int16 size_y;
@@ -70,9 +70,9 @@ wchar_t* outofsight_pressed_imageset;
 float center_pos_x;
 float center_pos_y;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 79); }
-		static __int16 TableId() { return 249; }
-		static __int32 SubType() { return 0; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 81); }
+		static __int16 TableId() { return 251; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

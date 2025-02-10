@@ -23,16 +23,16 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef membership_benefit[8];
 __int32 membership_benefit_Size() const {return 8;};
-int membership_benefit_tableId() const {return 258;};
+int membership_benefit_tableId() const {return 262;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 420;};
+int description_tableId() const {return 425;};
 BnsTables::Shared::IconRef icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
 		static __int16 TableId() { return 54; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

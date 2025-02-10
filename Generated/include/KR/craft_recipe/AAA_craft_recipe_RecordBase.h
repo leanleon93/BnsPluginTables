@@ -22,26 +22,26 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 420;};
+int name_tableId() const {return 425;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 420;};
+int desc_tableId() const {return 425;};
 BnsTables::Shared::TableRef requirement_name;
-int requirement_name_tableId() const {return 420;};
+int requirement_name_tableId() const {return 425;};
 BnsTables::Shared::TableRef location_desc;
-int location_desc_tableId() const {return 420;};
+int location_desc_tableId() const {return 425;};
 signed char category;
 char Pad0[3];
 __int32 inner_category;
 __int32 money_cost;
 BnsTables::Shared::TableRef material[5];
 __int32 material_Size() const {return 5;};
-int material_tableId() const {return 195;};
+int material_tableId() const {return 197;};
 __int16 material_amount[5];
 __int32 material_amount_Size() const {return 5;};
 char Pad1[2];
 BnsTables::Shared::TableRef brand_material[5];
 __int32 brand_material_Size() const {return 5;};
-int brand_material_tableId() const {return 189;};
+int brand_material_tableId() const {return 190;};
 signed char brand_material_condition_type[5];
 __int32 brand_material_condition_type_Size() const {return 5;};
 char Pad2[1];
@@ -50,7 +50,7 @@ __int32 brand_material_amount_Size() const {return 5;};
 __int16 limit_production_exp;
 char Pad3[2];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId() const {return 294;};
+int complete_quest_tableId() const {return 298;};
 __int16 reward_production_exp;
 __int16 reward_production_exp_bonus;
 __int16 half_production_exp_step;
@@ -66,7 +66,7 @@ signed char use_state;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
 		static __int16 TableId() { return 83; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

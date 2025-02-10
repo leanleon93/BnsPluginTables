@@ -30,10 +30,10 @@ signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef challenge_quest_basic[20];
 __int32 challenge_quest_basic_Size() const {return 20;};
-int challenge_quest_basic_tableId() const {return 294;};
+int challenge_quest_basic_tableId() const {return 298;};
 BnsTables::Shared::TableRef challenge_quest_expansion[20];
 __int32 challenge_quest_expansion_Size() const {return 20;};
-int challenge_quest_expansion_tableId() const {return 294;};
+int challenge_quest_expansion_tableId() const {return 298;};
 signed char challenge_quest_grade[20];
 __int32 challenge_quest_grade_Size() const {return 20;};
 signed char challenge_quest_complete_count;
@@ -46,14 +46,14 @@ __int32 challenge_npc_difficulty_Size() const {return 20;};
 char Pad2[3];
 BnsTables::Shared::TableRef challenge_npc_kill[20];
 __int32 challenge_npc_kill_Size() const {return 20;};
-int challenge_npc_kill_tableId() const {return 265;};
+int challenge_npc_kill_tableId() const {return 269;};
 BnsTables::Shared::ExplicitTableRef challenge_npc_attraction[20];
 __int32 challenge_npc_attraction_Size() const {return 20;};
 signed char challenge_npc_grade[20];
 __int32 challenge_npc_grade_Size() const {return 20;};
 BnsTables::Shared::TableRef challenge_npc_quest[20];
 __int32 challenge_npc_quest_Size() const {return 20;};
-int challenge_npc_quest_tableId() const {return 294;};
+int challenge_npc_quest_tableId() const {return 298;};
 signed char challenge_npc_total_count;
 signed char challenge_reward_total_count;
 signed char challenge_count_for_reward[20];
@@ -62,10 +62,13 @@ char Pad3[2];
 BnsTables::Shared::TableRef reward[20];
 __int32 reward_Size() const {return 20;};
 int reward_tableId() const {return 52;};
+BnsTables::Shared::TableRef account_reward_quota[20];
+__int32 account_reward_quota_Size() const {return 20;};
+int account_reward_quota_tableId() const {return 67;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 51; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

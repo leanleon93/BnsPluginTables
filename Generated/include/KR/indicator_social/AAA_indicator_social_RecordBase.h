@@ -27,7 +27,7 @@ __int32 begine_time2[10];
 __int32 begine_time2_Size() const {return 10;};
 BnsTables::Shared::TableRef balloon_text2[10];
 __int32 balloon_text2_Size() const {return 10;};
-int balloon_text2_tableId() const {return 420;};
+int balloon_text2_tableId() const {return 425;};
 __int32 balloon_text2_duration[10];
 __int32 balloon_text2_duration_Size() const {return 10;};
 bool voice_sync[10];
@@ -40,14 +40,14 @@ __int32 rotate2_Size() const {return 10;};
 char Pad1[2];
 BnsTables::Shared::TableRef sub_npc2[10];
 __int32 sub_npc2_Size() const {return 10;};
-int sub_npc2_tableId() const {return 265;};
+int sub_npc2_tableId() const {return 269;};
 BnsTables::Shared::TableRef sub_indicator_social2[10];
 __int32 sub_indicator_social2_Size() const {return 10;};
-int sub_indicator_social2_tableId() const {return 185;};
+int sub_indicator_social2_tableId() const {return 186;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 18); }
-		static __int16 TableId() { return 185; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 186; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

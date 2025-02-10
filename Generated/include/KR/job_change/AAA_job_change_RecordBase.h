@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 461;};
+int zone_tableId() const {return 468;};
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId() const {return 195;};
+int cost_item_tableId() const {return 197;};
 signed char required_level;
 signed char required_mastery_level;
 __int16 required_quest_id[2];
@@ -37,8 +37,8 @@ __int32 appearance_Size() const {return 7;};
 int appearance_tableId() const {return 85;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 2); }
-		static __int16 TableId() { return 225; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 227; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

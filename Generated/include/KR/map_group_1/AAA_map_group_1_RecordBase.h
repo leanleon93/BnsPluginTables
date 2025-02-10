@@ -22,21 +22,21 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef map_group_1_guide;
 BnsTables::Shared::TableRef talk_to_self_quests[127];
 __int32 talk_to_self_quests_Size() const {return 127;};
-int talk_to_self_quests_tableId() const {return 294;};
+int talk_to_self_quests_tableId() const {return 298;};
 BnsTables::Shared::TableRef talk_to_self_quests2[127];
 __int32 talk_to_self_quests2_Size() const {return 127;};
-int talk_to_self_quests2_tableId() const {return 294;};
+int talk_to_self_quests2_tableId() const {return 298;};
 BnsTables::Shared::TableRef talk_to_self_quests3[127];
 __int32 talk_to_self_quests3_Size() const {return 127;};
-int talk_to_self_quests3_tableId() const {return 294;};
+int talk_to_self_quests3_tableId() const {return 298;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 244; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 246; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -21,18 +21,19 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-BnsTables::Shared::TableRef change_set[10];
-__int32 change_set_Size() const {return 10;};
-int change_set_tableId() const {return 366;};
-__int16 change_set_prob_weight[10];
-__int32 change_set_prob_weight_Size() const {return 10;};
+BnsTables::Shared::TableRef change_set[15];
+__int32 change_set_Size() const {return 15;};
+int change_set_tableId() const {return 371;};
+__int16 change_set_prob_weight[15];
+__int32 change_set_prob_weight_Size() const {return 15;};
+char Pad0[2];
 __int32 change_set_total_prob_weight;
 signed char change_set_total_count;
 bool draw_enable;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 367; }
-		static __int32 SubType() { return 0; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
+		static __int16 TableId() { return 372; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

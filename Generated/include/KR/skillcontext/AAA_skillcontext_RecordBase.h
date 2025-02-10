@@ -44,8 +44,8 @@ __int32 cmd_key_left;
 __int32 cmd_key_right;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 13); }
-		static __int16 TableId() { return 346; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 351; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

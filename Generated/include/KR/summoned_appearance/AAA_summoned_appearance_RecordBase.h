@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* animset;
 BnsTables::Shared::TableRef moveanim;
-int moveanim_tableId() const {return 408;};
+int moveanim_tableId() const {return 413;};
 BnsTables::Shared::TableRef appearance;
 int appearance_tableId() const {return 85;};
 wchar_t* sword;
@@ -33,8 +33,8 @@ wchar_t* gun_r;
 wchar_t* gun_l;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 401; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 406; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

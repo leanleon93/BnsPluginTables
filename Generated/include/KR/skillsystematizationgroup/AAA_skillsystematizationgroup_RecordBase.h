@@ -23,28 +23,28 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 420;};
+int description_tableId() const {return 425;};
 signed char sort_no;
 bool use_bookmark;
 char Pad0[2];
 BnsTables::Shared::TableRef bookmark_description;
-int bookmark_description_tableId() const {return 420;};
+int bookmark_description_tableId() const {return 425;};
 wchar_t* category_icon_text[2];
 __int32 category_icon_text_Size() const {return 2;};
 wchar_t* train_icon_text[2];
 __int32 train_icon_text_Size() const {return 2;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 182;};
+int icon_texture_tableId() const {return 183;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef tooltip_description;
-int tooltip_description_tableId() const {return 420;};
+int tooltip_description_tableId() const {return 425;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 362; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 367; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

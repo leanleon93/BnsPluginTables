@@ -22,19 +22,19 @@ BnsTables::Shared::TableRef head_skill_id;
 		};
 		__declspec(align(8)) Key key;
 		char Pad0[4];
-BnsTables::Shared::TableRef change_skill_id[10];
-__int32 change_skill_id_Size() const {return 10;};
-int change_skill_id_tableId() const {return 337;};
+BnsTables::Shared::TableRef change_skill_id[15];
+__int32 change_skill_id_Size() const {return 15;};
+int change_skill_id_tableId() const {return 341;};
 BnsTables::Shared::TableRef head_skill_acquire_route;
-int head_skill_acquire_route_tableId() const {return 214;};
-BnsTables::Shared::TableRef change_skill_acquire_route[10];
-__int32 change_skill_acquire_route_Size() const {return 10;};
-int change_skill_acquire_route_tableId() const {return 214;};
+int head_skill_acquire_route_tableId() const {return 216;};
+BnsTables::Shared::TableRef change_skill_acquire_route[15];
+__int32 change_skill_acquire_route_Size() const {return 15;};
+int change_skill_acquire_route_tableId() const {return 216;};
 signed char equip_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 213; }
-		static __int32 SubType() { return 0; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 215; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

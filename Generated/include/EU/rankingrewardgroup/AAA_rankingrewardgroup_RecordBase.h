@@ -45,7 +45,7 @@ __int32 ranking_buff_imageset_Size() const {return 20;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
 		static __int16 TableId() { return 319; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

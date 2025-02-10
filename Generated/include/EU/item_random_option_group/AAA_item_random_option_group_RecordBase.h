@@ -79,7 +79,7 @@ __int32 draw_cost_sub_item_count_4_Size() const {return 6;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 1); }
 		static __int16 TableId() { return 212; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

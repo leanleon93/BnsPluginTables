@@ -80,8 +80,8 @@ __int32 delay_respawn_time;
 wchar_t* delay_respawn_show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 19); }
-		static __int16 TableId() { return 288; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 292; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

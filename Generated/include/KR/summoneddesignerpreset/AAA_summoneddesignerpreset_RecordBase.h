@@ -23,7 +23,7 @@ signed char race;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 182;};
+int icon_texture_tableId() const {return 183;};
 __int16 icon_index;
 signed char face;
 signed char body;
@@ -34,8 +34,8 @@ signed char body_shape;
 signed char decal;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 404; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 409; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

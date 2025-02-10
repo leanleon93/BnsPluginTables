@@ -24,12 +24,12 @@ signed char sex;
 		__declspec(align(8)) Key key;
 		wchar_t* sequence;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 182;};
+int icon_texture_tableId() const {return 183;};
 __int16 icon_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 88; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -23,12 +23,12 @@ namespace BnsTables::KR {
 		__int32 reputation;
 BnsTables::Shared::TableRef grade_name[2];
 __int32 grade_name_Size() const {return 2;};
-int grade_name_tableId() const {return 420;};
+int grade_name_tableId() const {return 425;};
 __int32 max_faction_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 136; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 137; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

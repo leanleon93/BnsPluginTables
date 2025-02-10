@@ -37,11 +37,11 @@ BnsTables::Shared::TableRef reward[127];
 __int32 reward_Size() const {return 127;};
 int reward_tableId() const {return 120;};
 BnsTables::Shared::TableRef goodsstore_search_item;
-int goodsstore_search_item_tableId() const {return 195;};
+int goodsstore_search_item_tableId() const {return 197;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 119; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

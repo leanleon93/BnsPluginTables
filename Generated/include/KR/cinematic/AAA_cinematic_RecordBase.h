@@ -26,14 +26,14 @@ wchar_t* cinema_resource_name;
 wchar_t* teen_cinema_name;
 wchar_t* teen_cinema_resource_name;
 BnsTables::Shared::TableRef costume;
-int costume_tableId() const {return 195;};
+int costume_tableId() const {return 197;};
 signed char skippable;
 bool point_camera;
 bool nameplate_visible;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 57; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

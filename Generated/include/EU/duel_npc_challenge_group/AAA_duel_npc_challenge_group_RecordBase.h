@@ -35,7 +35,7 @@ wchar_t* combobox_floor_icon_imageset;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 4); }
 		static __int16 TableId() { return 111; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

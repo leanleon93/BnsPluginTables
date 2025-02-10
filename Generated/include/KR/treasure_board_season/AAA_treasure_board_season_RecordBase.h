@@ -24,20 +24,20 @@ namespace BnsTables::KR {
 char Pad0[3];
 BnsTables::Shared::TableRef treasure_board_page[10];
 __int32 treasure_board_page_Size() const {return 10;};
-int treasure_board_page_tableId() const {return 424;};
+int treasure_board_page_tableId() const {return 429;};
 BnsTables::Shared::TableRef season_reward_item;
-int season_reward_item_tableId() const {return 195;};
+int season_reward_item_tableId() const {return 197;};
 __int16 season_reward_item_count;
 char Pad1[2];
 BnsTables::Shared::TableRef season_name;
-int season_name_tableId() const {return 420;};
+int season_name_tableId() const {return 425;};
 wchar_t* season_end_time;
 wchar_t* season_board_symbol_on;
 wchar_t* season_board_symbol_off;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 426; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 431; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -25,8 +25,8 @@ wchar_t* teen_body_material_name;
 wchar_t* body_mesh_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 415; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 420; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

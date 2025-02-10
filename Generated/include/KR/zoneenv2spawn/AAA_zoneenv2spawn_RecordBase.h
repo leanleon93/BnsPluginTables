@@ -23,19 +23,19 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef env2;
-int env2_tableId() const {return 462;};
+int env2_tableId() const {return 469;};
 BnsTables::Shared::TableRef env2place;
-int env2place_tableId() const {return 463;};
+int env2place_tableId() const {return 470;};
 BnsTables::Shared::TableRef random_group;
-int random_group_tableId() const {return 465;};
+int random_group_tableId() const {return 472;};
 BnsTables::Shared::TableRef required_env;
-int required_env_tableId() const {return 464;};
+int required_env_tableId() const {return 471;};
 signed char mapunit_map_depth;
 signed char mapunit_arena_dungeon_map_depth;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 464; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 471; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

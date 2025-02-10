@@ -35,8 +35,8 @@ wchar_t* guide_text_ref;
 __int16 guide_text_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 241; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 243; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

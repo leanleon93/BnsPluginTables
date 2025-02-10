@@ -26,7 +26,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 461;};
+int zone_tableId() const {return 468;};
 wchar_t* alias;
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
@@ -35,12 +35,12 @@ signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_preceding_quest[3];
 __int32 required_preceding_quest_Size() const {return 3;};
-int required_preceding_quest_tableId() const {return 294;};
+int required_preceding_quest_tableId() const {return 298;};
 signed char required_preceding_quest_check;
 char Pad1[1];
 __int16 recommend_attack_power;
 BnsTables::Shared::TableRef standard_gear_weapon;
-int standard_gear_weapon_tableId() const {return 195;};
+int standard_gear_weapon_tableId() const {return 197;};
 __int32 duel_bot_spawn_delay;
 __int32 ready_duration;
 __int16 floor_timeout_duration_second;
@@ -74,11 +74,11 @@ wchar_t* dual_blader_floor_kismet_name;
 wchar_t* bard_floor_kismet_name;
 wchar_t* countdown_sound_name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef dungeon_name2;
-int dungeon_name2_tableId() const {return 420;};
+int dungeon_name2_tableId() const {return 425;};
 BnsTables::Shared::TableRef dungeon_desc;
-int dungeon_desc_tableId() const {return 420;};
+int dungeon_desc_tableId() const {return 425;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
@@ -90,15 +90,15 @@ signed char recommand_mastery_level_max;
 char Pad2[3];
 BnsTables::Shared::TableRef display_quests[12];
 __int32 display_quests_Size() const {return 12;};
-int display_quests_tableId() const {return 294;};
+int display_quests_tableId() const {return 298;};
 BnsTables::Shared::TableRef tactic;
-int tactic_tableId() const {return 420;};
+int tactic_tableId() const {return 425;};
 BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 72;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 41); }
 		static __int16 TableId() { return 102; }
-		static __int32 SubType() { return 0; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

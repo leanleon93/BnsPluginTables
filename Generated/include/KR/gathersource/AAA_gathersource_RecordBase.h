@@ -29,7 +29,7 @@ __int16 max_range;
 char Pad1[2];
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 195;};
+int item_tableId() const {return 197;};
 signed char item_count_min[4];
 __int32 item_count_min_Size() const {return 4;};
 signed char item_count_max[4];
@@ -47,8 +47,8 @@ wchar_t* gather_end_animname;
 wchar_t* gather_stay_animname;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 156; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 157; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

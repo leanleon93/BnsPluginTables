@@ -32,7 +32,7 @@ __int32 context_script_Size() const {return 4;};
 int context_script_tableId() const {return 75;};
 BnsTables::Shared::TableRef tooltip_text[4];
 __int32 tooltip_text_Size() const {return 4;};
-int tooltip_text_tableId() const {return 420;};
+int tooltip_text_tableId() const {return 425;};
 __int32 skill_attack_power_min_param1_slot[4];
 __int32 skill_attack_power_min_param1_slot_Size() const {return 4;};
 __int32 skill_attack_power_max_param1_slot[4];
@@ -51,8 +51,8 @@ __int32 skill_attack_power_max_param4_slot[4];
 __int32 skill_attack_power_max_param4_slot_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 10); }
-		static __int16 TableId() { return 343; }
-		static __int32 SubType() { return 0; }
+		static __int16 TableId() { return 348; }
+		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)
