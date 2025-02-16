@@ -22,21 +22,21 @@ signed char main_type_attributes;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef main_type_name;
-int main_type_name_tableId() const {return 425;};
+int main_type_name_tableId() const {return 427;};
 wchar_t* main_type_icon;
 signed char attack_type;
 char Pad0[3];
 BnsTables::Shared::TableRef attack_type_name;
-int attack_type_name_tableId() const {return 425;};
+int attack_type_name_tableId() const {return 427;};
 wchar_t* attack_type_icon;
 signed char defend_type;
 char Pad1[3];
 BnsTables::Shared::TableRef defend_type_name;
-int defend_type_name_tableId() const {return 425;};
+int defend_type_name_tableId() const {return 427;};
 wchar_t* defend_type_icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 303; }
+		static __int16 TableId() { return 304; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

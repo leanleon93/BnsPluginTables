@@ -54,7 +54,7 @@ signed char start_minute;
 signed char end_minute;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 451; }
+		static __int16 TableId() { return 453; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

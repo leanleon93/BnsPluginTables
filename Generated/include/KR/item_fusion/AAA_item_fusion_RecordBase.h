@@ -15,6 +15,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 __int16 category;
+char Pad_key_0[2];
 __int32 score;
 
             };
@@ -26,10 +27,10 @@ BnsTables::Shared::TableRef cost_group;
 int cost_group_tableId() const {return 77;};
 BnsTables::Shared::TableRef result_item[80];
 __int32 result_item_Size() const {return 80;};
-int result_item_tableId() const {return 197;};
+int result_item_tableId() const {return 198;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 200; }
+		static __int16 TableId() { return 201; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

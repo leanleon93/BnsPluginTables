@@ -25,8 +25,8 @@ signed char store_tab_sort_no;
 char Pad0[3];
 BnsTables::Shared::TableRef store_tab_name;
 int store_tab_name_tableId() const {return 420;};
-wchar_t* start_date;
-wchar_t* end_date;
+__int64 start_date;
+__int64 end_date;
 bool is_retire;
 char Pad1[3];
 __int32 slot_group[8];
@@ -38,7 +38,7 @@ char Pad2[1];
 BnsTables::Shared::TableRef paid_reset_cost_item;
 int paid_reset_cost_item_tableId() const {return 195;};
 __int64 paid_reset_cost_amount;
-wchar_t* auto_reset_time;
+__int64 auto_reset_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 300; }

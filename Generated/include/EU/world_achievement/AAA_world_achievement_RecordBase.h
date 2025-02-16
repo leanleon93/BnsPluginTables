@@ -21,7 +21,7 @@ __int16 grade;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		wchar_t* open_date;
+		__int64 open_date;
 __int32 require_contribution;
 BnsTables::Shared::TableRef reward_item[4];
 __int32 reward_item_Size() const {return 4;};

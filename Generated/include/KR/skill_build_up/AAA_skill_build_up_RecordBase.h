@@ -29,10 +29,10 @@ __int16 required_build_up_point_level[30];
 __int32 required_build_up_point_level_Size() const {return 30;};
 BnsTables::Shared::TableRef skill_modify_info[30];
 __int32 skill_modify_info_Size() const {return 30;};
-int skill_modify_info_tableId() const {return 357;};
+int skill_modify_info_tableId() const {return 359;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 345; }
+		static __int16 TableId() { return 347; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

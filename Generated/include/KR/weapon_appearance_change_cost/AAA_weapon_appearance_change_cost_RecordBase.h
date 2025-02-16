@@ -24,7 +24,7 @@ signed char weapon_cost_type;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef cost_apply_item[2];
 __int32 cost_apply_item_Size() const {return 2;};
-int cost_apply_item_tableId() const {return 197;};
+int cost_apply_item_tableId() const {return 198;};
 __int16 cost_apply_item_amount[2];
 __int32 cost_apply_item_amount_Size() const {return 2;};
 __int32 cost_apply_money;
@@ -32,13 +32,13 @@ bool cost_remove_separable;
 char Pad0[3];
 BnsTables::Shared::TableRef cost_remove_item[2];
 __int32 cost_remove_item_Size() const {return 2;};
-int cost_remove_item_tableId() const {return 197;};
+int cost_remove_item_tableId() const {return 198;};
 __int16 cost_remove_item_amount[2];
 __int32 cost_remove_item_amount_Size() const {return 2;};
 __int32 cost_remove_money;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 447; }
+		static __int16 TableId() { return 449; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -396,7 +396,7 @@ __int64 max_value;
 __int16 version;
 signed char target_type;
 char Pad0[1];
-wchar_t* expiration_time;
+__int64 expiration_time;
 signed char charge_interval;
 signed char charge_day_of_week;
 signed char charge_time;

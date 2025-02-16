@@ -22,7 +22,7 @@ __int16 id;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-BnsTables::Shared::ExplicitTableRef box;
+BnsTables::Shared::XYZ box;
 wchar_t* description;
 BnsTables::Shared::RGB areacolor;
 char Pad0[1];
@@ -32,7 +32,7 @@ float scale_y;
 float scale_z;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 55); }
-		static __int16 TableId() { return 462; }
+		static __int16 TableId() { return 464; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

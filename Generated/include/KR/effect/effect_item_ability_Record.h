@@ -9,8 +9,8 @@ namespace BnsTables::KR {
 	struct effect_item_ability_Record : effect_Record
 	{
 	public:
-		__int16 attack_power_equip_min;
-__int16 attack_power_equip_max;
+		__int32 attack_power_equip_min;
+__int32 attack_power_equip_max;
 __int16 defend_power_equip_value;
 __int16 defend_resist_power_equip_value;
 __int16 attack_hit_base_percent;
@@ -119,16 +119,18 @@ __int16 defend_counter_reduce_percent;
 __int16 attack_attribute_value;
 __int16 attack_attribute_value_equip;
 __int16 attack_attribute_base_percent;
-__int16 pve_boss_level_npc_attack_power_equip_min;
-__int16 pve_boss_level_npc_attack_power_equip_max;
+__int32 pve_boss_level_npc_attack_power_equip_min;
+__int32 pve_boss_level_npc_attack_power_equip_max;
 __int16 pve_boss_level_npc_defend_power_equip_value;
-__int16 pvp_attack_power_equip_min;
-__int16 pvp_attack_power_equip_max;
+char Pad_sub_3[2];
+__int32 pvp_attack_power_equip_min;
+__int32 pvp_attack_power_equip_max;
 __int16 pvp_defend_power_equip_value;
 __int16 r_attack_stiff_duration_equip_value;
 __int16 r_defend_stiff_duration_equip_value;
 __int16 r_aoe_defend_power_value_equip;
 __int16 r_heal_power_equip_value;
+char Pad_sub_4[2];
 __int32 r_defend_strength_equip_value;
 __int32 r_attack_precise_equip_value;
 __int16 r_attack_aoe_pierce_value_equip;

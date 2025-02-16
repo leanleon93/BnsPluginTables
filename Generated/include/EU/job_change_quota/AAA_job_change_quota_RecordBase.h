@@ -23,8 +23,8 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int16 world_cluster_id;
 char Pad0[2];
-wchar_t* start_time;
-wchar_t* end_time;
+__int64 start_time;
+__int64 end_time;
 signed char job[30];
 __int32 job_Size() const {return 30;};
 __int16 quota_mon[30];

@@ -25,7 +25,7 @@ __int32 reward_Size() const {return 4;};
 __int32 reward_value[4];
 __int32 reward_value_Size() const {return 4;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 425;};
+int name2_tableId() const {return 427;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 39; }

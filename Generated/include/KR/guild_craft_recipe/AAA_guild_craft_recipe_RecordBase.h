@@ -37,28 +37,28 @@ char Pad2[3];
 __int32 contract_money;
 BnsTables::Shared::TableRef contract_item[5];
 __int32 contract_item_Size() const {return 5;};
-int contract_item_tableId() const {return 197;};
+int contract_item_tableId() const {return 198;};
 __int16 contract_item_count[5];
 __int32 contract_item_count_Size() const {return 5;};
 char Pad3[2];
 BnsTables::Shared::TableRef contract_bm_item;
-int contract_bm_item_tableId() const {return 197;};
+int contract_bm_item_tableId() const {return 198;};
 __int16 contract_bm_item_count;
 char Pad4[2];
 BnsTables::Shared::TableRef rent_bm_item;
-int rent_bm_item_tableId() const {return 197;};
+int rent_bm_item_tableId() const {return 198;};
 __int16 rent_bm_item_count;
 char Pad5[2];
 BnsTables::Shared::TableRef material[15];
 __int32 material_Size() const {return 15;};
-int material_tableId() const {return 197;};
+int material_tableId() const {return 198;};
 __int16 material_count[15];
 __int32 material_count_Size() const {return 15;};
 __int16 material_donation_point[15];
 __int32 material_donation_point_Size() const {return 15;};
 BnsTables::Shared::TableRef brand_material[3];
 __int32 brand_material_Size() const {return 3;};
-int brand_material_tableId() const {return 190;};
+int brand_material_tableId() const {return 191;};
 signed char brand_material_condition_type[3];
 __int32 brand_material_condition_type_Size() const {return 3;};
 char Pad6[1];
@@ -68,7 +68,7 @@ __int16 brand_material_donation_point[3];
 __int32 brand_material_donation_point_Size() const {return 3;};
 __int32 time_cost;
 BnsTables::Shared::TableRef result;
-int result_tableId() const {return 197;};
+int result_tableId() const {return 198;};
 __int16 result_count;
 signed char result_bonus_guildlevel;
 char Pad7[1];
@@ -77,7 +77,7 @@ signed char result_receive_type;
 signed char use_state;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 169; }
+		static __int16 TableId() { return 170; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

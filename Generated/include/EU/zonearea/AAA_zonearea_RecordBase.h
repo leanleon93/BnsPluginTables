@@ -22,7 +22,7 @@ __int16 id;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-BnsTables::Shared::ExplicitTableRef box;
+BnsTables::Shared::XYZ box;
 wchar_t* description;
 BnsTables::Shared::RGB areacolor;
 char Pad0[1];

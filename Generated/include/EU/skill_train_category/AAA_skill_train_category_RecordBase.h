@@ -15,6 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 signed char job;
+char Pad_key_0[3];
 __int32 view_skill_id;
 
             };

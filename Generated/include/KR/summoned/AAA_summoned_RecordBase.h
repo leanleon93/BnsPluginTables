@@ -34,7 +34,7 @@ __int16 radius;
 bool trace_master_skill_target;
 char Pad2[3];
 BnsTables::Shared::TableRef summoned_sequence;
-int summoned_sequence_tableId() const {return 415;};
+int summoned_sequence_tableId() const {return 417;};
 __int32 seq_skill[30];
 __int32 seq_skill_Size() const {return 30;};
 __int32 spawn_skill_id;
@@ -55,11 +55,11 @@ BnsTables::Shared::TableRef appearance;
 int appearance_tableId() const {return 85;};
 wchar_t* animset;
 BnsTables::Shared::TableRef spawn_social;
-int spawn_social_tableId() const {return 387;};
+int spawn_social_tableId() const {return 389;};
 BnsTables::Shared::TableRef respawn_in_social;
-int respawn_in_social_tableId() const {return 387;};
+int respawn_in_social_tableId() const {return 389;};
 BnsTables::Shared::TableRef respawn_out_social;
-int respawn_out_social_tableId() const {return 387;};
+int respawn_out_social_tableId() const {return 389;};
 wchar_t* spawn_show;
 wchar_t* despawn_show;
 wchar_t* combat_side_player_continuance_show;
@@ -77,19 +77,19 @@ float mapunit_outsight_width;
 float mapunit_outsight_height;
 wchar_t* mapunit_outsight_imageset;
 BnsTables::Shared::TableRef fixed_name;
-int fixed_name_tableId() const {return 425;};
+int fixed_name_tableId() const {return 427;};
 BnsTables::Shared::TableRef nameplate_title_state_normal;
-int nameplate_title_state_normal_tableId() const {return 425;};
+int nameplate_title_state_normal_tableId() const {return 427;};
 BnsTables::Shared::TableRef nameplate_title_state_duel_other_team;
-int nameplate_title_state_duel_other_team_tableId() const {return 425;};
+int nameplate_title_state_duel_other_team_tableId() const {return 427;};
 BnsTables::Shared::TableRef nameplate_name_state_anonymity;
-int nameplate_name_state_anonymity_tableId() const {return 425;};
+int nameplate_name_state_anonymity_tableId() const {return 427;};
 BnsTables::Shared::TableRef nameplate_name_state_duel_other_team;
-int nameplate_name_state_duel_other_team_tableId() const {return 425;};
+int nameplate_name_state_duel_other_team_tableId() const {return 427;};
 float term_sequence_range_sim_check;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 408; }
+		static __int16 TableId() { return 410; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

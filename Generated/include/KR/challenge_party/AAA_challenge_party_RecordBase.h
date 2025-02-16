@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 468;};
+int zone_tableId() const {return 470;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 425;};
+int name2_tableId() const {return 427;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef required_item[2];
 __int32 required_item_Size() const {return 2;};
-int required_item_tableId() const {return 197;};
+int required_item_tableId() const {return 198;};
 __int16 required_item_count[2];
 __int32 required_item_count_Size() const {return 2;};
 bool use_training_mode;

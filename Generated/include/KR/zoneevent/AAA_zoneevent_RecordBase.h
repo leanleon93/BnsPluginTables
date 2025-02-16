@@ -31,7 +31,7 @@ wchar_t* start_kismet_name;
 wchar_t* end_kismet_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 473; }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

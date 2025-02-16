@@ -19,7 +19,7 @@ __int16 theme_version;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef theme_arena_entrance_zone;
 int theme_arena_entrance_zone_tableId() const {return 461;};
-wchar_t* gimmick_week_start_date_time;
+__int64 gimmick_week_start_date_time;
 signed char ui_scroll_slot_index;
 
 		static __int32 SubType() { return 2; }

@@ -15,6 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 signed char job;
+char Pad_key_0[1];
 __int16 grade;
 signed char achievement;
 

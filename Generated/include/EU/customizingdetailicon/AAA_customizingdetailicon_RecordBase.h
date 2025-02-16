@@ -17,6 +17,7 @@ namespace BnsTables::EU {
                 signed char race;
 signed char sex;
 signed char param_index;
+char Pad_key_0[1];
 __int16 order;
 
             };

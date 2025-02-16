@@ -31,7 +31,7 @@ __int16 season_reward_item_count;
 char Pad1[2];
 BnsTables::Shared::TableRef season_name;
 int season_name_tableId() const {return 420;};
-wchar_t* season_end_time;
+__int64 season_end_time;
 wchar_t* season_board_symbol_on;
 wchar_t* season_board_symbol_off;
 

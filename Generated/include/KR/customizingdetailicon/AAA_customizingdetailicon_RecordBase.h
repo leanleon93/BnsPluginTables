@@ -17,6 +17,7 @@ namespace BnsTables::KR {
                 signed char race;
 signed char sex;
 signed char param_index;
+char Pad_key_0[1];
 __int16 order;
 
             };
@@ -26,11 +27,11 @@ __int16 order;
 		signed char param_value;
 char Pad0[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 183;};
+int icon_texture_tableId() const {return 184;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 425;};
+int desc_tableId() const {return 427;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 90; }

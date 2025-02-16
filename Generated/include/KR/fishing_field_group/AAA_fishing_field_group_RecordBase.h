@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 425;};
+int name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 425;};
+int desc_tableId() const {return 427;};
 BnsTables::Shared::TableRef fishing_field[10];
 __int32 fishing_field_Size() const {return 10;};
 int fishing_field_tableId() const {return 150;};

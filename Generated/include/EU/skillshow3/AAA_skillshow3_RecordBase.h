@@ -16,6 +16,7 @@ namespace BnsTables::EU {
             struct {
                 __int32 id;
 signed char variation_id;
+char Pad_key_0[1];
 __int16 skillskin_id;
 
             };

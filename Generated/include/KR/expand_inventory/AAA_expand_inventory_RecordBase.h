@@ -15,6 +15,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 signed char inventory_type;
+char Pad_key_0[1];
 __int16 inventory_size;
 
             };
@@ -29,7 +30,7 @@ signed char charge_type;
 signed char expand_size;
 char Pad1[2];
 BnsTables::Shared::TableRef required_item;
-int required_item_tableId() const {return 197;};
+int required_item_tableId() const {return 198;};
 signed char required_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }

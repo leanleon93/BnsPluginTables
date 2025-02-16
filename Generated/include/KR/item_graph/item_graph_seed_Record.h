@@ -11,9 +11,9 @@ namespace BnsTables::KR {
 	public:
 		BnsTables::Shared::TableRef seed_item[42];
 __int32 seed_item_Size() const {return 42;};
-int seed_item_tableId() const {return 197;};
+int seed_item_tableId() const {return 198;};
 BnsTables::Shared::TableRef seed_item_group;
-int seed_item_group_tableId() const {return 203;};
+int seed_item_group_tableId() const {return 204;};
 signed char seed_item_sub_group[42];
 __int32 seed_item_sub_group_Size() const {return 42;};
 signed char node_type;

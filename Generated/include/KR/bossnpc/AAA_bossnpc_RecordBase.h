@@ -38,7 +38,7 @@ __int32 gp_section_Size() const {return 11;};
 signed char gp_section_cnt;
 signed char ui_style;
 BnsTables::Shared::TableRef ui_tooltip;
-int ui_tooltip_tableId() const {return 425;};
+int ui_tooltip_tableId() const {return 427;};
 wchar_t* ui_double_sided_left_imageset;
 wchar_t* ui_double_sided_right_imageset;
 __int16 ui_double_sided_left_color_r;

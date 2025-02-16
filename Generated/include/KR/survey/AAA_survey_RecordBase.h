@@ -21,13 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef survey_question;
-int survey_question_tableId() const {return 418;};
+int survey_question_tableId() const {return 420;};
 signed char job;
 signed char race;
 char Pad0[2];
 __int32 level;
 BnsTables::Shared::TableRef completed_quest;
-int completed_quest_tableId() const {return 298;};
+int completed_quest_tableId() const {return 299;};
 __int16 start_year;
 signed char start_month;
 signed char start_day;
@@ -39,20 +39,20 @@ signed char end_day;
 signed char end_hour;
 char Pad2[1];
 BnsTables::Shared::TableRef need_item;
-int need_item_tableId() const {return 197;};
+int need_item_tableId() const {return 198;};
 BnsTables::Shared::TableRef fixed_reward_item[4];
 __int32 fixed_reward_item_Size() const {return 4;};
-int fixed_reward_item_tableId() const {return 197;};
+int fixed_reward_item_tableId() const {return 198;};
 signed char fixed_reward_item_count[4];
 __int32 fixed_reward_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_reward_item[4];
 __int32 optional_reward_item_Size() const {return 4;};
-int optional_reward_item_tableId() const {return 197;};
+int optional_reward_item_tableId() const {return 198;};
 signed char optional_reward_item_count[4];
 __int32 optional_reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 417; }
+		static __int16 TableId() { return 419; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

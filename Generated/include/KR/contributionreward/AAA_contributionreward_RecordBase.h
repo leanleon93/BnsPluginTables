@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char contribution_type;
 char Pad0[3];
 BnsTables::Shared::TableRef minimum_group_item;
-int minimum_group_item_tableId() const {return 197;};
+int minimum_group_item_tableId() const {return 198;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
 		static __int16 TableId() { return 76; }

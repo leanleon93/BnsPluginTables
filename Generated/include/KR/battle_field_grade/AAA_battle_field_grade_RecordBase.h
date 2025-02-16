@@ -25,7 +25,7 @@ signed char grade;
 __int16 point_bonus_percent;
 char Pad0[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 425;};
+int name2_tableId() const {return 427;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef medium_icon;
 BnsTables::Shared::IconRef small_icon;

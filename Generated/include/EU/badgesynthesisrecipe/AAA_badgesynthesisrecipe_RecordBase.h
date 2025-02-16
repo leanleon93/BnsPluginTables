@@ -15,6 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 signed char category;
+char Pad_key_0[3];
 __int32 score;
 
             };

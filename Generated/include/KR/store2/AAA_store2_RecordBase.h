@@ -22,20 +22,20 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 425;};
+int name2_tableId() const {return 427;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef none_selected_icon;
 BnsTables::Shared::TableRef faction;
 int faction_tableId() const {return 136;};
 BnsTables::Shared::TableRef item[127];
 __int32 item_Size() const {return 127;};
-int item_tableId() const {return 197;};
+int item_tableId() const {return 198;};
 BnsTables::Shared::TableRef buy_price[127];
 __int32 buy_price_Size() const {return 127;};
-int buy_price_tableId() const {return 192;};
+int buy_price_tableId() const {return 193;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 403; }
+		static __int16 TableId() { return 405; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

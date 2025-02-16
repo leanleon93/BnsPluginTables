@@ -29,7 +29,7 @@ __int16 max_range;
 char Pad1[2];
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 197;};
+int item_tableId() const {return 198;};
 signed char item_count_min[4];
 __int32 item_count_min_Size() const {return 4;};
 signed char item_count_max[4];

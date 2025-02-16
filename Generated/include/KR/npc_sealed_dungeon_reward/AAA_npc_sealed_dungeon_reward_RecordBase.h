@@ -23,14 +23,14 @@ signed char sealed_level;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef reward_default;
-int reward_default_tableId() const {return 331;};
+int reward_default_tableId() const {return 332;};
 BnsTables::Shared::TableRef reward_event;
-int reward_event_tableId() const {return 331;};
+int reward_event_tableId() const {return 332;};
 BnsTables::Shared::TableRef reward_personal_dropped_pouch;
-int reward_personal_dropped_pouch_tableId() const {return 331;};
+int reward_personal_dropped_pouch_tableId() const {return 332;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 273; }
+		static __int16 TableId() { return 274; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

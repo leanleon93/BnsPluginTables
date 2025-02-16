@@ -22,16 +22,16 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 425;};
+int name_tableId() const {return 427;};
 BnsTables::Shared::TableRef faction;
 int faction_tableId() const {return 136;};
 __int16 level;
 char Pad0[2];
 BnsTables::Shared::TableRef party_chat_channel;
-int party_chat_channel_tableId() const {return 276;};
+int party_chat_channel_tableId() const {return 277;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 277; }
+		static __int16 TableId() { return 278; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef guild_battle_field_zone;
-int guild_battle_field_zone_tableId() const {return 166;};
+int guild_battle_field_zone_tableId() const {return 167;};
 signed char min_fixed_channel;
 
 		static __int32 SubType() { return 1; }

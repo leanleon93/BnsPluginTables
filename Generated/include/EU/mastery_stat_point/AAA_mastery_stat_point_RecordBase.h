@@ -15,6 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 signed char stat_point_attribute;
+char Pad_key_0[1];
 __int16 stat_point;
 
             };

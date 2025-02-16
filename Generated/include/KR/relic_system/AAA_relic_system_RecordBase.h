@@ -32,7 +32,7 @@ __int32 ability_base_value_max[40];
 __int32 ability_base_value_max_Size() const {return 40;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 330; }
+		static __int16 TableId() { return 331; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

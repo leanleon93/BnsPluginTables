@@ -12,7 +12,7 @@ namespace BnsTables::KR {
 		signed char public_raid_mode;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId() const {return 294;};
+int public_raid_tableId() const {return 295;};
 
 		static __int32 SubType() { return 2; }
 	};

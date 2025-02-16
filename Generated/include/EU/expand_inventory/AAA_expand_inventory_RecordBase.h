@@ -15,6 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 signed char inventory_type;
+char Pad_key_0[1];
 __int16 inventory_size;
 
             };

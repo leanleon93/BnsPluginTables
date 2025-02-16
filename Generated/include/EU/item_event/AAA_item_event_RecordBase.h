@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-wchar_t* event_expiration_time;
+__int64 event_expiration_time;
 BnsTables::Shared::TableRef name2;
 int name2_tableId() const {return 420;};
 

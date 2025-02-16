@@ -10,11 +10,11 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef weapon_brand;
-int weapon_brand_tableId() const {return 190;};
+int weapon_brand_tableId() const {return 191;};
 signed char weapon_grade;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef weapon_gem_brand;
-int weapon_gem_brand_tableId() const {return 190;};
+int weapon_gem_brand_tableId() const {return 191;};
 signed char weapon_gem_grade;
 signed char weapon_gem_level;
 

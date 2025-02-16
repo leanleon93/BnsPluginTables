@@ -21,12 +21,12 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef skill_train_by_item;
-int skill_train_by_item_tableId() const {return 371;};
+int skill_train_by_item_tableId() const {return 373;};
 BnsTables::Shared::TableRef skill_train_by_item_extract_cost_group[8];
 __int32 skill_train_by_item_extract_cost_group_Size() const {return 8;};
 int skill_train_by_item_extract_cost_group_tableId() const {return 77;};
 BnsTables::Shared::TableRef extract_skill_train_by_item;
-int extract_skill_train_by_item_tableId() const {return 197;};
+int extract_skill_train_by_item_tableId() const {return 198;};
 bool disable_seal_transmitted_equipment;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }

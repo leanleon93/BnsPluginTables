@@ -24,12 +24,12 @@ signed char job_style;
 		wchar_t* alias;
 wchar_t* introduce_job_style_icon;
 BnsTables::Shared::TableRef introduce_job_style_name;
-int introduce_job_style_name_tableId() const {return 425;};
+int introduce_job_style_name_tableId() const {return 427;};
 BnsTables::Shared::TableRef introduce_job_style_play_desc;
-int introduce_job_style_play_desc_tableId() const {return 425;};
+int introduce_job_style_play_desc_tableId() const {return 427;};
 BnsTables::Shared::TableRef introduce_job_style_specialization[5];
 __int32 introduce_job_style_specialization_Size() const {return 5;};
-int introduce_job_style_specialization_tableId() const {return 235;};
+int introduce_job_style_specialization_tableId() const {return 236;};
 BnsTables::Shared::TableRef additive_attachment;
 int additive_attachment_tableId() const {return 14;};
 wchar_t* combat_start_fx_show;
@@ -52,7 +52,7 @@ wchar_t* job_style_gauge_full_charge_particle_ref;
 float job_style_gauge_full_charge_particle_scale;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 16); }
-		static __int16 TableId() { return 234; }
+		static __int16 TableId() { return 235; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

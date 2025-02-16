@@ -26,15 +26,15 @@ __int16 condition_level;
 char Pad0[3];
 BnsTables::Shared::TableRef tutorial_zone[4];
 __int32 tutorial_zone_Size() const {return 4;};
-int tutorial_zone_tableId() const {return 468;};
+int tutorial_zone_tableId() const {return 470;};
 BnsTables::Shared::TableRef train_quest;
-int train_quest_tableId() const {return 298;};
+int train_quest_tableId() const {return 299;};
 BnsTables::Shared::TableRef skip_msg_achievement;
 int skip_msg_achievement_tableId() const {return 6;};
 bool creation_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 238; }
+		static __int16 TableId() { return 239; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

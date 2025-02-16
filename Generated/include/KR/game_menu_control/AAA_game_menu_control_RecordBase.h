@@ -24,14 +24,14 @@ namespace BnsTables::KR {
 signed char required_master_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_acquired_and_complete_quest;
-int required_acquired_and_complete_quest_tableId() const {return 298;};
+int required_acquired_and_complete_quest_tableId() const {return 299;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 298;};
+int required_complete_quest_tableId() const {return 299;};
 signed char restrict_gameoption_display_type;
 signed char restrict_content_type;
 char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
-int notifycenter_message_tableId() const {return 425;};
+int notifycenter_message_tableId() const {return 427;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 155; }

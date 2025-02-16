@@ -15,6 +15,7 @@ namespace BnsTables::EU {
 		{
             struct {
                 signed char reward_contents_type;
+char Pad_key_0[1];
 __int16 id;
 
             };

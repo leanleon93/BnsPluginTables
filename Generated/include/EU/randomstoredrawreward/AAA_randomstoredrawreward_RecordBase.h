@@ -16,6 +16,7 @@ namespace BnsTables::EU {
             struct {
                 __int16 id;
 signed char random_store_number;
+char Pad_key_0[1];
 __int32 required_draw_count;
 
             };

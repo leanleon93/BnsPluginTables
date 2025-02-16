@@ -24,9 +24,9 @@ namespace BnsTables::KR {
 char Pad0[1];
 __int16 sort_no;
 BnsTables::Shared::TableRef charge_of_item_for_instant_payment;
-int charge_of_item_for_instant_payment_tableId() const {return 197;};
+int charge_of_item_for_instant_payment_tableId() const {return 198;};
 BnsTables::Shared::TableRef item_to_be_paid;
-int item_to_be_paid_tableId() const {return 197;};
+int item_to_be_paid_tableId() const {return 198;};
 bool check_equip_characteristics;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }

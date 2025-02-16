@@ -15,6 +15,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 signed char season_contents_type;
+char Pad_key_0[1];
 __int16 group_id;
 
             };

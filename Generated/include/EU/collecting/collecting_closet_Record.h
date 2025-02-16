@@ -37,7 +37,7 @@ __int32 ability_value[3];
 __int32 ability_value_Size() const {return 3;};
 __int32 ability_base_value[3];
 __int32 ability_base_value_Size() const {return 3;};
-wchar_t* expiration_time;
+__int64 expiration_time;
 bool can_not_used;
 
 		static __int32 SubType() { return 0; }

@@ -15,6 +15,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 signed char reward_contents_type;
+char Pad_key_0[1];
 __int16 id;
 
             };
@@ -24,7 +25,7 @@ __int16 id;
 		wchar_t* alias;
 BnsTables::Shared::TableRef reward_item[3];
 __int32 reward_item_Size() const {return 3;};
-int reward_item_tableId() const {return 197;};
+int reward_item_tableId() const {return 198;};
 signed char reward_item_count[3];
 __int32 reward_item_count_Size() const {return 3;};
 char Pad0[1];

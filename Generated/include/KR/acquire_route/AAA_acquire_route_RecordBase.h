@@ -25,7 +25,7 @@ signed char category;
 char Pad0[3];
 BnsTables::Shared::TableRef route_text[5];
 __int32 route_text_Size() const {return 5;};
-int route_text_tableId() const {return 425;};
+int route_text_tableId() const {return 427;};
 BnsTables::Shared::ExplicitTableRef route_ref[5];
 __int32 route_ref_Size() const {return 5;};
 

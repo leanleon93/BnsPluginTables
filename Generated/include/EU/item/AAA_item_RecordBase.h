@@ -417,7 +417,7 @@ bool lock_enable;
 signed char time_limit_type;
 char Pad22[2];
 __int32 usable_duration;
-wchar_t* fixed_expiration_time;
+__int64 fixed_expiration_time;
 signed char delete_expiration_type;
 char Pad23[3];
 BnsTables::Shared::TableRef event_info;

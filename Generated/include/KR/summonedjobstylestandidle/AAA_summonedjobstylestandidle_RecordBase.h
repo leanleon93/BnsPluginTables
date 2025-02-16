@@ -16,6 +16,7 @@ namespace BnsTables::KR {
             struct {
                 signed char job;
 signed char master_job_style;
+char Pad_key_0[2];
 __int32 index;
 __int32 group_index;
 
@@ -23,12 +24,11 @@ __int32 group_index;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		char Pad0[4];
-wchar_t* job_style_stand_idle_show;
+		wchar_t* job_style_stand_idle_show;
 __int32 event_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 410; }
+		static __int16 TableId() { return 412; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

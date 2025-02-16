@@ -1013,9 +1013,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 425;};
+int name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef name3;
-int name3_tableId() const {return 425;};
+int name3_tableId() const {return 427;};
 __int16 level;
 bool show_icon;
 bool show_left_time;
@@ -1144,20 +1144,20 @@ wchar_t* fire_show;
 bool animation_freeze;
 char Pad4[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 183;};
+int icon_texture_tableId() const {return 184;};
 __int16 icon_index;
 char Pad5[2];
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 425;};
+int description2_tableId() const {return 427;};
 BnsTables::Shared::TableRef description3;
-int description3_tableId() const {return 425;};
+int description3_tableId() const {return 427;};
 BnsTables::Shared::TableRef description4;
-int description4_tableId() const {return 425;};
+int description4_tableId() const {return 427;};
 BnsTables::Shared::TableRef description5;
-int description5_tableId() const {return 425;};
+int description5_tableId() const {return 427;};
 BnsTables::Shared::TableRef description_constellation;
-int description_constellation_tableId() const {return 425;};
+int description_constellation_tableId() const {return 427;};
 signed char description2_arg_type[4];
 __int32 description2_arg_type_Size() const {return 4;};
 wchar_t* description2_arg_value[4];
@@ -1165,9 +1165,9 @@ __int32 description2_arg_value_Size() const {return 4;};
 __int32 mount_attach_duration;
 __int32 mount_detach_duration;
 BnsTables::Shared::TableRef linker_abnormal;
-int linker_abnormal_tableId() const {return 242;};
+int linker_abnormal_tableId() const {return 243;};
 BnsTables::Shared::TableRef linkee_abnormal;
-int linkee_abnormal_tableId() const {return 242;};
+int linkee_abnormal_tableId() const {return 243;};
 __int32 link_attach_duration;
 __int32 link_detach_duration;
 bool catch_legs_physics;
@@ -1197,9 +1197,9 @@ char Pad9[3];
 BnsTables::Shared::TableRef attach_notify_message;
 int attach_notify_message_tableId() const {return 156;};
 BnsTables::Shared::TableRef description_item_random_option;
-int description_item_random_option_tableId() const {return 425;};
+int description_item_random_option_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(41, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(42, 1); }
 		static __int16 TableId() { return 115; }
 		static __int32 SubType() { return -1; }
 	};

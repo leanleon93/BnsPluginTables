@@ -27,7 +27,7 @@ BnsTables::Shared::TableRef appearance;
 int appearance_tableId() const {return 85;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 279; }
+		static __int16 TableId() { return 280; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

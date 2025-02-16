@@ -24,33 +24,33 @@ namespace BnsTables::KR {
 bool enable;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 425;};
+int name_tableId() const {return 427;};
 BnsTables::Shared::TableRef text;
-int text_tableId() const {return 425;};
+int text_tableId() const {return 427;};
 signed char max_mentee_count;
 char Pad1[3];
 BnsTables::Shared::TableRef first_quest_id;
-int first_quest_id_tableId() const {return 298;};
+int first_quest_id_tableId() const {return 299;};
 BnsTables::Shared::TableRef last_quest_id;
-int last_quest_id_tableId() const {return 298;};
+int last_quest_id_tableId() const {return 299;};
 signed char limit_finish_count;
 signed char mentor_level;
 signed char mentor_mastery_level;
 char Pad2[1];
 BnsTables::Shared::TableRef mentor_completed_quest;
-int mentor_completed_quest_tableId() const {return 298;};
+int mentor_completed_quest_tableId() const {return 299;};
 BnsTables::Shared::TableRef mentor_completed_achievement;
 int mentor_completed_achievement_tableId() const {return 6;};
 signed char mentee_level;
 signed char mentee_mastery_level;
 char Pad3[2];
 BnsTables::Shared::TableRef mentee_completed_quest;
-int mentee_completed_quest_tableId() const {return 298;};
+int mentee_completed_quest_tableId() const {return 299;};
 BnsTables::Shared::TableRef mentee_completed_achievement;
 int mentee_completed_achievement_tableId() const {return 6;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 263; }
+		static __int16 TableId() { return 264; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -21,13 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 425;};
+int name_tableId() const {return 427;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 183;};
+int icon_texture_tableId() const {return 184;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef none_selected_icon_texture;
-int none_selected_icon_texture_tableId() const {return 183;};
+int none_selected_icon_texture_tableId() const {return 184;};
 __int16 none_selected_icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef join_msg;

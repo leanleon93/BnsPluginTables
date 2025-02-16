@@ -23,8 +23,8 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int16 world_cluster_id;
 char Pad0[2];
-wchar_t* start_time;
-wchar_t* end_time;
+__int64 start_time;
+__int64 end_time;
 signed char job[30];
 __int32 job_Size() const {return 30;};
 __int16 quota_mon[30];
@@ -43,7 +43,7 @@ __int16 quota_sun[30];
 __int32 quota_sun_Size() const {return 30;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 231; }
+		static __int16 TableId() { return 232; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

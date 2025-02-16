@@ -62,11 +62,11 @@ int end_gamemessage_tableId() const {return 156;};
 BnsTables::Shared::TableRef end_gamemessage_remain;
 int end_gamemessage_remain_tableId() const {return 156;};
 BnsTables::Shared::TableRef clock_alarm_desc_start;
-int clock_alarm_desc_start_tableId() const {return 425;};
+int clock_alarm_desc_start_tableId() const {return 427;};
 BnsTables::Shared::TableRef clock_alarm_desc_progressing;
-int clock_alarm_desc_progressing_tableId() const {return 425;};
+int clock_alarm_desc_progressing_tableId() const {return 427;};
 BnsTables::Shared::TableRef clock_alarm_desc_end;
-int clock_alarm_desc_end_tableId() const {return 425;};
+int clock_alarm_desc_end_tableId() const {return 427;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 10; }

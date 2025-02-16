@@ -15,6 +15,7 @@ namespace BnsTables::KR {
 		{
             struct {
                 signed char job;
+char Pad_key_0[3];
 __int32 view_skill_id;
 
             };
@@ -26,16 +27,16 @@ __int16 pc_level;
 __int16 pc_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId() const {return 298;};
+int complete_quest_tableId() const {return 299;};
 BnsTables::Shared::TableRef jumping_pc_complete_quest;
-int jumping_pc_complete_quest_tableId() const {return 298;};
+int jumping_pc_complete_quest_tableId() const {return 299;};
 __int32 consumed_tp;
 signed char sort_id;
 bool ui_invisible;
 bool context_lock_disable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 39); }
-		static __int16 TableId() { return 373; }
+		static __int16 TableId() { return 375; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

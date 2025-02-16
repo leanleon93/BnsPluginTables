@@ -31,7 +31,7 @@ __int64 condition[10];
 __int32 condition_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 390; }
+		static __int16 TableId() { return 392; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

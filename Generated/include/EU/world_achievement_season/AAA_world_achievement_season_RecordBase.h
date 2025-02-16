@@ -22,8 +22,8 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 wchar_t* season_name;
-wchar_t* start_time;
-wchar_t* end_time;
+__int64 start_time;
+__int64 end_time;
 __int32 world_achievement;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
