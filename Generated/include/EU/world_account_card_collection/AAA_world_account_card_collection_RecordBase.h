@@ -22,13 +22,13 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 420;};
+int collection_name_tableId() const {return 426;};
 __int16 collection_season;
 signed char collection_grade;
 char Pad0[1];
 BnsTables::Shared::TableRef collection_card[8];
 __int32 collection_card_Size() const {return 8;};
-int collection_card_tableId() const {return 448;};
+int collection_card_tableId() const {return 455;};
 __int16 collection_card_count[8];
 __int32 collection_card_count_Size() const {return 8;};
 __int16 collection_card_point[8];
@@ -50,7 +50,7 @@ int effect_tableId() const {return 115;};
 wchar_t* effect_desc[5];
 __int32 effect_desc_Size() const {return 5;};
 BnsTables::Shared::TableRef completion_reward_item;
-int completion_reward_item_tableId() const {return 195;};
+int completion_reward_item_tableId() const {return 197;};
 __int16 completion_reward_item_count;
 char Pad3[2];
 __int64 start_time;
@@ -58,9 +58,10 @@ __int64 end_time;
 bool can_not_used;
 char Pad4[3];
 wchar_t* main_image;
+signed char collection_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 447; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
+		static __int16 TableId() { return 453; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

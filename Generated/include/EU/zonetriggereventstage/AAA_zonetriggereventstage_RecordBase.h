@@ -32,18 +32,17 @@ signed char branch_id;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-BnsTables::Shared::TableRef next_cond[2];
-__int32 next_cond_Size() const {return 2;};
-int next_cond_tableId() const {return 475;};
-signed char next_cond_branch_id[2];
-__int32 next_cond_branch_id_Size() const {return 2;};
+BnsTables::Shared::TableRef next_cond[7];
+__int32 next_cond_Size() const {return 7;};
+int next_cond_tableId() const {return 483;};
+signed char next_cond_branch_id[7];
+__int32 next_cond_branch_id_Size() const {return 7;};
 signed char broadcast_context;
-char Pad0[1];
 wchar_t* start_stage_kismet;
 wchar_t* end_stage_kismet;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 16); }
-		static __int16 TableId() { return 476; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 484; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

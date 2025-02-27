@@ -27,14 +27,14 @@ __int32 reward_group_ranking_bottom[20];
 __int32 reward_group_ranking_bottom_Size() const {return 20;};
 BnsTables::Shared::TableRef reward[20];
 __int32 reward_Size() const {return 20;};
-int reward_tableId() const {return 311;};
+int reward_tableId() const {return 316;};
 __int32 effect_reward_group_ranking_top[20];
 __int32 effect_reward_group_ranking_top_Size() const {return 20;};
 __int32 effect_reward_group_ranking_bottom[20];
 __int32 effect_reward_group_ranking_bottom_Size() const {return 20;};
 BnsTables::Shared::TableRef effect_reward[20];
 __int32 effect_reward_Size() const {return 20;};
-int effect_reward_tableId() const {return 310;};
+int effect_reward_tableId() const {return 315;};
 wchar_t* default_job_ranking_imageset_large;
 wchar_t* default_job_ranking_imageset;
 wchar_t* job_ranking_imageset_large[20];
@@ -53,7 +53,7 @@ wchar_t* ranking_top_ranker_imageset[3];
 __int32 ranking_top_ranker_imageset_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 312; }
+		static __int16 TableId() { return 317; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

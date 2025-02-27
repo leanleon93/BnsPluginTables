@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef portal_id[16];
 __int32 portal_id_Size() const {return 16;};
-int portal_id_tableId() const {return 462;};
+int portal_id_tableId() const {return 470;};
 
 		static __int32 SubType() { return 8; }
 	};

@@ -25,8 +25,15 @@ BnsTables::Shared::TableRef npc;
 int npc_tableId() const {return 270;};
 BnsTables::Shared::TableRef reward;
 int reward_tableId() const {return 462;};
+BnsTables::Shared::TableRef teleport;
+int teleport_tableId() const {return 423;};
+signed char recommand_level;
+char Pad0[3];
+BnsTables::Shared::TableRef description;
+int description_tableId() const {return 427;};
+wchar_t* symbol_imageset;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 3); }
 		static __int16 TableId() { return 463; }
 		static __int32 SubType() { return -1; }
 	};

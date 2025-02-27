@@ -25,14 +25,14 @@ __int32 week_reward_exp;
 __int32 week_reward_money;
 BnsTables::Shared::TableRef week_reward_item[4];
 __int32 week_reward_item_Size() const {return 4;};
-int week_reward_item_tableId() const {return 195;};
+int week_reward_item_tableId() const {return 197;};
 __int32 week_reward_item_amount[4];
 __int32 week_reward_item_amount_Size() const {return 4;};
 __int32 season_reward_exp;
 __int32 season_reward_money;
 BnsTables::Shared::TableRef season_reward_item[4];
 __int32 season_reward_item_Size() const {return 4;};
-int season_reward_item_tableId() const {return 195;};
+int season_reward_item_tableId() const {return 197;};
 __int32 season_reward_item_amount[4];
 __int32 season_reward_item_amount_Size() const {return 4;};
 __int16 week_reward_combat_exp_bonus_rate;
@@ -53,7 +53,7 @@ BnsTables::Shared::TableRef guild_ranking_reward_effect;
 int guild_ranking_reward_effect_tableId() const {return 115;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 318; }
+		static __int16 TableId() { return 323; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

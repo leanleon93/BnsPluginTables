@@ -23,10 +23,10 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 wchar_t* specialization_tag_imageset;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 420;};
+int description_tableId() const {return 426;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 233; }
+		static __int16 TableId() { return 235; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

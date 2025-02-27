@@ -24,25 +24,28 @@ namespace BnsTables::EU {
 bool retired;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 426;};
 BnsTables::Shared::TableRef teleport_position;
-int teleport_position_tableId() const {return 473;};
+int teleport_position_tableId() const {return 481;};
 __int16 distance_from_start_teleport;
 char Pad1[2];
 __int32 price_percent;
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 420;};
+int description2_tableId() const {return 426;};
 BnsTables::Shared::TableRef activated_faction;
-int activated_faction_tableId() const {return 135;};
+int activated_faction_tableId() const {return 136;};
 bool joined_faction;
 signed char required_pc_level;
 signed char required_pc_mastery_level;
 signed char required_faction_level;
 BnsTables::Shared::TableRef ui_preceding_quest;
-int ui_preceding_quest_tableId() const {return 294;};
+int ui_preceding_quest_tableId() const {return 298;};
+BnsTables::Shared::TableRef required_quest;
+int required_quest_tableId() const {return 298;};
+bool capital;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 23); }
-		static __int16 TableId() { return 416; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 422; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

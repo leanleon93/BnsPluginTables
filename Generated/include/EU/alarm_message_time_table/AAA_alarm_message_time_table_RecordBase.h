@@ -54,19 +54,19 @@ __int32 sat_end_hour_Size() const {return 12;};
 signed char start_minute;
 signed char end_minute;
 BnsTables::Shared::TableRef start_gamemessage;
-int start_gamemessage_tableId() const {return 155;};
+int start_gamemessage_tableId() const {return 156;};
 BnsTables::Shared::TableRef start_gamemessage_remain;
-int start_gamemessage_remain_tableId() const {return 155;};
+int start_gamemessage_remain_tableId() const {return 156;};
 BnsTables::Shared::TableRef end_gamemessage;
-int end_gamemessage_tableId() const {return 155;};
+int end_gamemessage_tableId() const {return 156;};
 BnsTables::Shared::TableRef end_gamemessage_remain;
-int end_gamemessage_remain_tableId() const {return 155;};
+int end_gamemessage_remain_tableId() const {return 156;};
 BnsTables::Shared::TableRef clock_alarm_desc_start;
-int clock_alarm_desc_start_tableId() const {return 420;};
+int clock_alarm_desc_start_tableId() const {return 426;};
 BnsTables::Shared::TableRef clock_alarm_desc_progressing;
-int clock_alarm_desc_progressing_tableId() const {return 420;};
+int clock_alarm_desc_progressing_tableId() const {return 426;};
 BnsTables::Shared::TableRef clock_alarm_desc_end;
-int clock_alarm_desc_end_tableId() const {return 420;};
+int clock_alarm_desc_end_tableId() const {return 426;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 10; }

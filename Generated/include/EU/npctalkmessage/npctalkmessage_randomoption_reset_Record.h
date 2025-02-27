@@ -2,15 +2,15 @@
  Generated Code! Do not manually edit this code. Modify the generator instead.
 */
 #pragma once
-#include "AAA_achievement_register_RecordBase.h"
+#include "AAA_npctalkmessage_RecordBase.h"
 
 namespace BnsTables::EU {
 #pragma pack(push, 1)
-	struct achievement_register_completition_star_words_Record : achievement_register_Record
+	struct npctalkmessage_randomoption_reset_Record : npctalkmessage_Record
 	{
 	public:
 		
-		static __int32 SubType() { return 45; }
+		static __int32 SubType() { return 21; }
 	};
 #pragma pack(pop)
 }

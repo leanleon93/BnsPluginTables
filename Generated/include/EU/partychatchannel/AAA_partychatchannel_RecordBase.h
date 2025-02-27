@@ -29,17 +29,17 @@ namespace BnsTables::EU {
 signed char chnnelid;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 420;};
+int name_tableId() const {return 426;};
 BnsTables::Shared::TableRef name_party_number;
-int name_party_number_tableId() const {return 420;};
+int name_party_number_tableId() const {return 426;};
 BnsTables::Shared::TableRef district;
 int district_tableId() const {return 101;};
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 244;};
+int map_group_1_tableId() const {return 246;};
 signed char arrange_type;
 char Pad1[3];
 BnsTables::Shared::TableRef group_name;
-int group_name_tableId() const {return 420;};
+int group_name_tableId() const {return 426;};
 signed char grade;
 char Pad2[1];
 __int16 auto_recruittime;
@@ -47,12 +47,12 @@ bool use_team_type;
 bool use_difficulty_type[3];
 __int32 use_difficulty_type_Size() const {return 3;};
 BnsTables::Shared::TableRef interdungeon;
-int interdungeon_tableId() const {return 188;};
+int interdungeon_tableId() const {return 189;};
 BnsTables::Shared::TableRef party_match;
-int party_match_tableId() const {return 273;};
+int party_match_tableId() const {return 277;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 98); }
-		static __int16 TableId() { return 272; }
+		static __int16 TableId() { return 276; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

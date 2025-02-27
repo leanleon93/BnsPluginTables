@@ -26,8 +26,8 @@ char Pad0[2];
 __int32 value[10];
 __int32 value_Size() const {return 10;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 331; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
+		static __int16 TableId() { return 336; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

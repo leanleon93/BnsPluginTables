@@ -25,7 +25,7 @@ signed char achievement;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef reward_item[3];
 __int32 reward_item_Size() const {return 3;};
-int reward_item_tableId() const {return 195;};
+int reward_item_tableId() const {return 197;};
 signed char reward_item_count[3];
 __int32 reward_item_count_Size() const {return 3;};
 char Pad0[1];

@@ -29,16 +29,16 @@ char Pad0[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
 __int32 skill_Size() const {return 40;};
-int skill_tableId() const {return 348;};
+int skill_tableId() const {return 354;};
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 337;};
+int skill3_tableId() const {return 341;};
 BnsTables::Shared::TableRef pc_skill3[2];
 __int32 pc_skill3_Size() const {return 2;};
-int pc_skill3_tableId() const {return 282;};
+int pc_skill3_tableId() const {return 286;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
 __int32 pc_job_style_skill3_Size() const {return 10;};
-int pc_job_style_skill3_tableId() const {return 282;};
+int pc_job_style_skill3_tableId() const {return 286;};
 signed char skill_build_up_level_max;
 char Pad1[1];
 __int16 skill_build_up_point;
@@ -134,27 +134,17 @@ char Pad8[2];
 __int32 attack_attribute_value;
 __int16 attack_attribute_base_percent;
 __int16 attack_attribute_modify;
-__int16 attack_pierce_base_percent;
-__int16 defend_critical_damage_percent;
-__int32 defend_strength_creature_value;
-__int32 attack_precise_creature_value;
-__int16 attack_aoe_pierce_value;
-__int16 attack_abnormal_hit_base_percent;
-__int16 attack_abnormal_hit_value;
-__int16 defend_abnormal_dodge_base_percent;
-__int16 defend_abnormal_dodge_value;
-__int16 support_power_base_percent;
-__int16 support_power_value;
-char Pad9[2];
-__int32 heal_power_value;
-__int16 hypermove_power_value;
-__int16 r_attack_aoe_pierce_modify;
-__int16 r_attack_abnormal_hit_modify;
-__int16 r_defend_abnormal_dodge_modify;
-__int16 r_support_power_modify;
+__int32 attack_abnormal_hit_base_percent;
+__int32 attack_abnormal_hit_value;
+__int32 attack_abnormal_hit_equip_value;
+__int32 defend_abnormal_resistance_base_percent;
+__int32 defend_abnormal_resistance_value;
+__int32 defend_abnormal_resistance_equip_value;
+__int16 attack_abnormal_hit_modify;
+__int16 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 278; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
+		static __int16 TableId() { return 282; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

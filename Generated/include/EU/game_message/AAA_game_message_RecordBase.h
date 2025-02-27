@@ -21,10 +21,11 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
 signed char category;
-char Pad0[3];
+char Pad0[2];
 BnsTables::Shared::TableRef text;
-int text_tableId() const {return 420;};
+int text_tableId() const {return 426;};
 bool chatting;
 char Pad1[3];
 wchar_t* chatting_fontset;
@@ -32,11 +33,11 @@ bool headline2;
 char Pad2[3];
 wchar_t* headline2_fontset;
 BnsTables::Shared::TableRef headline_text;
-int headline_text_tableId() const {return 420;};
+int headline_text_tableId() const {return 426;};
 wchar_t* headline_fontset;
 wchar_t* headline_particle;
 BnsTables::Shared::TableRef boss_headline_text;
-int boss_headline_text_tableId() const {return 420;};
+int boss_headline_text_tableId() const {return 426;};
 wchar_t* boss_headline_fontset;
 signed char sound_track;
 bool stop_previous_track_sound;
@@ -50,11 +51,11 @@ signed char sound2_type;
 signed char guild_battle_type;
 char Pad5[2];
 BnsTables::Shared::TableRef guild_battle_text;
-int guild_battle_text_tableId() const {return 420;};
+int guild_battle_text_tableId() const {return 426;};
 signed char ghost_mode_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 47); }
-		static __int16 TableId() { return 155; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 47); }
+		static __int16 TableId() { return 156; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

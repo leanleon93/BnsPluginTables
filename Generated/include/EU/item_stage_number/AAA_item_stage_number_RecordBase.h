@@ -21,10 +21,10 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef stage_number_name;
-int stage_number_name_tableId() const {return 420;};
+int stage_number_name_tableId() const {return 426;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 218; }
+		static __int16 TableId() { return 220; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

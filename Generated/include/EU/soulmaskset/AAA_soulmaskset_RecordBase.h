@@ -75,7 +75,7 @@ BnsTables::Shared::TableRef transform_appearance;
 int transform_appearance_tableId() const {return 85;};
 wchar_t* transform_animset;
 BnsTables::Shared::TableRef transform_equip_hand_appearance;
-int transform_equip_hand_appearance_tableId() const {return 195;};
+int transform_equip_hand_appearance_tableId() const {return 197;};
 signed char transform_job;
 signed char transform_weapon_type;
 signed char transform_stance;
@@ -97,7 +97,7 @@ bool is_use_field_item;
 bool hide_hair;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 389; }
+		static __int16 TableId() { return 395; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

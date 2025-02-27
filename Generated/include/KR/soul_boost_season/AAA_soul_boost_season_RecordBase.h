@@ -41,9 +41,9 @@ BnsTables::Shared::TableRef season_name_text;
 int season_name_text_tableId() const {return 427;};
 wchar_t* season_banner_image_ref;
 bool is_battle_pass;
+bool is_free_pass;
 signed char required_level;
 signed char required_mastery_level;
-char Pad2[1];
 BnsTables::Shared::TableRef required_preceding_quest[2];
 __int32 required_preceding_quest_Size() const {return 2;};
 int required_preceding_quest_tableId() const {return 299;};
@@ -57,7 +57,7 @@ BnsTables::Shared::TableRef membership_benefit[10];
 __int32 membership_benefit_Size() const {return 10;};
 int membership_benefit_tableId() const {return 263;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
 		static __int16 TableId() { return 395; }
 		static __int32 SubType() { return -1; }
 	};

@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef item_group_name;
-int item_group_name_tableId() const {return 420;};
+int item_group_name_tableId() const {return 426;};
 signed char item_group_category;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }

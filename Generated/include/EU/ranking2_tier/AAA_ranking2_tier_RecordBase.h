@@ -27,7 +27,7 @@ __int32 min_rank[20];
 __int32 min_rank_Size() const {return 20;};
 BnsTables::Shared::TableRef tier_title[20];
 __int32 tier_title_Size() const {return 20;};
-int tier_title_tableId() const {return 420;};
+int tier_title_tableId() const {return 426;};
 wchar_t* tier_image[20];
 __int32 tier_image_Size() const {return 20;};
 wchar_t* tier_image_small[20];
@@ -40,7 +40,7 @@ __int32 gauge_percentage_condition[5];
 __int32 gauge_percentage_condition_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 5); }
-		static __int16 TableId() { return 316; }
+		static __int16 TableId() { return 321; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

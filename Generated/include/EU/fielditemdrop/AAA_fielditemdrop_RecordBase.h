@@ -30,12 +30,12 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef fielditem[3];
 __int32 fielditem_Size() const {return 3;};
-int fielditem_tableId() const {return 142;};
+int fielditem_tableId() const {return 143;};
 signed char prob[3];
 __int32 prob_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 143; }
+		static __int16 TableId() { return 144; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -29,7 +29,8 @@ namespace BnsTables::EU {
 		npctalkmessage_record_sub_guild_customize = 18,
 		npctalkmessage_record_sub_job_change_join = 19,
 		npctalkmessage_record_sub_job_change_show = 20,
-		npctalkmessage_record_sub_count = 21,
+		npctalkmessage_record_sub_randomoption_reset = 21,
+		npctalkmessage_record_sub_count = 22,
     };
 #pragma pack(push, 1)
 	struct npctalkmessage_Record : BnsTables::Shared::DrEl
@@ -46,20 +47,20 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 426;};
 BnsTables::Shared::TableRef required_faction;
-int required_faction_tableId() const {return 135;};
+int required_faction_tableId() const {return 136;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 294;};
+int required_complete_quest_tableId() const {return 298;};
 BnsTables::Shared::TableRef step_text[30];
 __int32 step_text_Size() const {return 30;};
-int step_text_tableId() const {return 420;};
+int step_text_tableId() const {return 426;};
 BnsTables::Shared::TableRef step_subtext[30];
 __int32 step_subtext_Size() const {return 30;};
-int step_subtext_tableId() const {return 420;};
+int step_subtext_tableId() const {return 426;};
 BnsTables::Shared::TableRef step_next[30];
 __int32 step_next_Size() const {return 30;};
-int step_next_tableId() const {return 420;};
+int step_next_tableId() const {return 426;};
 wchar_t* step_kismet[30];
 __int32 step_kismet_Size() const {return 30;};
 BnsTables::Shared::TableRef step_cinematic[30];
@@ -72,11 +73,11 @@ __int32 step_camera_show_Size() const {return 30;};
 signed char function_step;
 char Pad0[3];
 BnsTables::Shared::TableRef end_talk_social;
-int end_talk_social_tableId() const {return 382;};
+int end_talk_social_tableId() const {return 388;};
 wchar_t* end_talk_sound;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 60); }
-		static __int16 TableId() { return 270; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 61); }
+		static __int16 TableId() { return 274; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -29,17 +29,17 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef faction[2];
 __int32 faction_Size() const {return 2;};
-int faction_tableId() const {return 135;};
+int faction_tableId() const {return 136;};
 signed char required_quest_check;
 char Pad0[3];
 BnsTables::Shared::TableRef required_quest[6];
 __int32 required_quest_Size() const {return 6;};
-int required_quest_tableId() const {return 294;};
+int required_quest_tableId() const {return 298;};
 signed char required_min_level;
 char Pad1[1];
 __int16 required_min_faction_level;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 461;};
+int zone_tableId() const {return 469;};
 float position_x;
 float position_y;
 

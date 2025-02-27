@@ -25,7 +25,7 @@ char Pad0[3];
 __int32 slot;
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 337;};
+int skill3_tableId() const {return 341;};
 wchar_t* ui_action_alias[40];
 __int32 ui_action_alias_Size() const {return 40;};
 signed char ui_view_type;

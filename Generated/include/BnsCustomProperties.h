@@ -27,5 +27,5 @@ struct RecordResult {
 	};
 
 	#pragma pack(pop)
-	using FieldVariant = std::variant<std::monostate,__int16,bool,signed char,wchar_t*,__int64,__int32,float,BnsTables::Shared::TableRef,BnsTables::Shared::ExplicitTableRef,BnsTables::Shared::IconRef,BnsTables::Shared::TextRef,BnsTables::Shared::UnkFlag,BnsTables::Shared::RGB,BnsTables::Shared::XYZ>;
+	using FieldVariant = std::variant<std::monostate,__int16,bool,signed char,__int64,__int32,wchar_t*,float,BnsTables::Shared::TableRef,BnsTables::Shared::ExplicitTableRef,BnsTables::Shared::IconRef,BnsTables::Shared::TextRef,BnsTables::Shared::UnkFlag,BnsTables::Shared::RGB,BnsTables::Shared::XYZ>;
 }

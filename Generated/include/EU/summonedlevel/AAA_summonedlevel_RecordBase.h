@@ -157,35 +157,12 @@ __int16 summon_ability_rate_abnormal_defend_base_percent;
 __int16 summon_ability_rate_abnormal_defend_power_value;
 __int16 summon_ability_rate_attack_attribute_value;
 __int16 summon_ability_rate_attack_attribute_base_percent;
-__int32 defend_strength_creature_value;
-__int32 attack_precise_creature_value;
-__int16 attack_aoe_pierce_value;
-__int16 attack_abnormal_hit_base_percent;
-__int16 attack_abnormal_hit_value;
-__int16 defend_abnormal_dodge_base_percent;
-__int16 defend_abnormal_dodge_value;
-__int16 support_power_base_percent;
-__int16 support_power_value;
-char Pad5[2];
-__int32 heal_power_value;
-__int16 hypermove_power_value;
-__int16 r_attack_aoe_pierce_modify;
-__int16 r_attack_abnormal_hit_modify;
-__int16 r_defend_abnormal_dodge_modify;
-__int16 r_support_power_modify;
-__int16 r_summon_ability_rate_defend_strength_creature_value;
-__int16 r_summon_ability_rate_attack_precise_creature_value;
-__int16 r_summon_ability_rate_attack_aoe_pierce_value;
-__int16 r_summon_ability_rate_attack_abnormal_hit_base_percent;
-__int16 r_summon_ability_rate_attack_abnormal_hit_value;
-__int16 r_summon_ability_rate_defend_abnormal_dodge_base_percent;
-__int16 r_summon_ability_rate_defend_abnormal_dodge_value;
-__int16 r_summon_ability_rate_support_power_base_percent;
-__int16 r_summon_ability_rate_support_power_value;
-__int16 r_summon_ability_rate_hypermove_power_value;
+__int16 defend_critical_damage_value;
+__int16 attack_abnormal_hit_modify;
+__int16 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 25); }
-		static __int16 TableId() { return 406; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 28); }
+		static __int16 TableId() { return 412; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -28,16 +28,16 @@ __int32 ability_value;
 BnsTables::Shared::TableRef effect;
 int effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef effect_description;
-int effect_description_tableId() const {return 420;};
+int effect_description_tableId() const {return 426;};
 BnsTables::Shared::TableRef skill_modify_info_group[10];
 __int32 skill_modify_info_group_Size() const {return 10;};
-int skill_modify_info_group_tableId() const {return 353;};
+int skill_modify_info_group_tableId() const {return 359;};
 BnsTables::Shared::TableRef additional_description;
-int additional_description_tableId() const {return 420;};
+int additional_description_tableId() const {return 426;};
 BnsTables::Shared::IconRef draw_option_icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 2); }
-		static __int16 TableId() { return 205; }
+		static __int16 TableId() { return 207; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		wchar_t* system_menu_icon;
 BnsTables::Shared::TableRef hud_notification_menu_name;
-int hud_notification_menu_name_tableId() const {return 420;};
+int hud_notification_menu_name_tableId() const {return 426;};
 BnsTables::Shared::TableRef arena_portal;
 int arena_portal_tableId() const {return 13;};
 

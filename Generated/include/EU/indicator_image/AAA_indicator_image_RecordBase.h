@@ -27,7 +27,7 @@ wchar_t* minimap_boder;
 wchar_t* minimap_boder_over;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 30); }
-		static __int16 TableId() { return 184; }
+		static __int16 TableId() { return 185; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

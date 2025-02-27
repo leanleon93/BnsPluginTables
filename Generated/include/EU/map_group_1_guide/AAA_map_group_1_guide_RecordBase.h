@@ -21,13 +21,13 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 244;};
+int map_group_1_tableId() const {return 246;};
 BnsTables::Shared::TableRef expedition_desc;
-int expedition_desc_tableId() const {return 420;};
+int expedition_desc_tableId() const {return 426;};
 wchar_t* expedition_image;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 245; }
+		static __int16 TableId() { return 247; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

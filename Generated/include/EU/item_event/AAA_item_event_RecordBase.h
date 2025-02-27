@@ -23,10 +23,10 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int64 event_expiration_time;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 426;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 196; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static __int16 TableId() { return 198; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

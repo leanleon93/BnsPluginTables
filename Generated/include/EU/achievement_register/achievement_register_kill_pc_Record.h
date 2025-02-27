@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 135;};
+int faction_tableId() const {return 136;};
 signed char race;
 signed char target_job;
 signed char above_level;

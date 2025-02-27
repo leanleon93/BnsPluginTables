@@ -14,11 +14,11 @@ signed char silhouette_race;
 signed char silhouette_sex;
 char Pad_sub_0[2];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 182;};
+int icon_texture_tableId() const {return 183;};
 __int16 icon_index;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 420;};
+int desc_tableId() const {return 426;};
 
 		static __int32 SubType() { return 4; }
 	};

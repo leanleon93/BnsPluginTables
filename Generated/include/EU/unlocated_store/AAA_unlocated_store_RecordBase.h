@@ -21,13 +21,15 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 BnsTables::Shared::TableRef store2;
-int store2_tableId() const {return 398;};
+int store2_tableId() const {return 404;};
 bool available_only_with_grade_benefit;
 signed char unlocated_store_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 430; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static __int16 TableId() { return 436; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

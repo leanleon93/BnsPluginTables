@@ -23,13 +23,13 @@ namespace BnsTables::EU {
 		signed char random_store_type;
 char Pad0[3];
 BnsTables::Shared::TableRef display_item;
-int display_item_tableId() const {return 195;};
+int display_item_tableId() const {return 197;};
 signed char draw_group;
 signed char probability_group;
 bool new_arrival;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 308; }
+		static __int16 TableId() { return 313; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

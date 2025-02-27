@@ -391,24 +391,26 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 __int64 min_value;
 __int64 max_value;
 __int16 version;
 signed char target_type;
-char Pad0[1];
+char Pad1[1];
 __int64 expiration_time;
 signed char charge_interval;
 signed char charge_day_of_week;
 signed char charge_time;
-char Pad1[1];
+char Pad2[1];
 __int64 charge_amount_per_interval;
 bool consume_key_record;
-char Pad2[3];
+char Pad3[3];
 BnsTables::Shared::TableRef consume_order[4];
 __int32 consume_order_Size() const {return 4;};
 int consume_order_tableId() const {return 67;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
 		static __int16 TableId() { return 67; }
 		static __int32 SubType() { return -1; }
 	};

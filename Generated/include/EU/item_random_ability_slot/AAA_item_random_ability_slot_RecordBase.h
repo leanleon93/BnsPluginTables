@@ -31,10 +31,10 @@ __int32 item_ability_section_percent_Size() const {return 3;};
 char Pad1[1];
 BnsTables::Shared::TableRef item_ability_section[3];
 __int32 item_ability_section_Size() const {return 3;};
-int item_ability_section_tableId() const {return 210;};
+int item_ability_section_tableId() const {return 212;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 211; }
+		static __int16 TableId() { return 213; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

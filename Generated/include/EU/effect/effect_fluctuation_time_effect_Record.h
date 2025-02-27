@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_fluctuation_time_effect_Record : effect_Record
 	{
 	public:
-		wchar_t* effect_type;
+		__int16 effect_type;
 char Pad_sub_0[2];
 __int32 fluctuation_time_effect_duration;
 __int32 effect_duration_fluctuation_max;

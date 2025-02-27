@@ -24,12 +24,12 @@ namespace BnsTables::EU {
 signed char arg_type[4];
 __int32 arg_type_Size() const {return 4;};
 BnsTables::Shared::TableRef text;
-int text_tableId() const {return 420;};
+int text_tableId() const {return 426;};
 BnsTables::Shared::IconRef icon;
 signed char skill_modify_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 10); }
-		static __int16 TableId() { return 364; }
+		static __int16 TableId() { return 370; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

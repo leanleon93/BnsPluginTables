@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 426;};
 signed char sort_id;
 signed char unique_group;
 signed char target_type;

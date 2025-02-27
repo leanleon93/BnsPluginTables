@@ -111,28 +111,9 @@ __int16 abnormal_defend_power_modify;
 __int32 attack_attribute_value;
 __int16 attack_attribute_base_percent;
 __int16 attack_attribute_modify;
-__int16 attack_pierce_base_percent;
-__int16 defend_critical_damage_percent;
-__int32 defend_strength_creature_value;
-__int32 attack_precise_creature_value;
-__int16 attack_aoe_pierce_value;
-__int16 attack_abnormal_hit_base_percent;
-__int16 attack_abnormal_hit_value;
-__int16 defend_abnormal_dodge_base_percent;
-__int16 defend_abnormal_dodge_value;
-__int16 support_power_base_percent;
-__int16 support_power_value;
-char Pad6[2];
-__int32 heal_power_value;
-__int16 hypermove_power_value;
-__int16 r_ability_rate_max_guard_gauge_equip;
-__int16 r_attack_aoe_pierce_modify;
-__int16 r_attack_abnormal_hit_modify;
-__int16 r_defend_abnormal_dodge_modify;
-__int16 r_support_power_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
-		static __int16 TableId() { return 253; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 15); }
+		static __int16 TableId() { return 257; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

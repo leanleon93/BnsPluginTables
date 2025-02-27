@@ -25,7 +25,7 @@ __int16 max_amount;
 __int16 tax_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 250; }
+		static __int16 TableId() { return 254; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

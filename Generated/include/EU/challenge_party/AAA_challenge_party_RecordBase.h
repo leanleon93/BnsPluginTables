@@ -22,13 +22,13 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 461;};
+int zone_tableId() const {return 469;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 426;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef required_item[2];
 __int32 required_item_Size() const {return 2;};
-int required_item_tableId() const {return 195;};
+int required_item_tableId() const {return 197;};
 __int16 required_item_count[2];
 __int32 required_item_count_Size() const {return 2;};
 bool use_training_mode;

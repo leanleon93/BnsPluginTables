@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct filter_effect_stack_count_Record : filter_Record
 	{
 	public:
-		wchar_t* effect_type;
+		__int16 effect_type;
 signed char effect_slot;
 signed char term_op;
 signed char op[2];

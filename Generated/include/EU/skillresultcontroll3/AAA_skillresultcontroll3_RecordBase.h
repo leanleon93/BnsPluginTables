@@ -35,7 +35,7 @@ bool immune_miss_result[5];
 __int32 immune_miss_result_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 355; }
+		static __int16 TableId() { return 361; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

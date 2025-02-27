@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int16 gauge_increase_per_sec;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 391; }
+		static __int16 TableId() { return 397; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

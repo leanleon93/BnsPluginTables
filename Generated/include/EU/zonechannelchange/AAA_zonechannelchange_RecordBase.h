@@ -8,30 +8,29 @@
 namespace BnsTables::EU {
 
 #pragma pack(push, 1)
-	struct secondary_stat_Record : BnsTables::Shared::DrEl
+	struct zonechannelchange_Record : BnsTables::Shared::DrEl
 	{
 	public:
 		union Key
 		{
             struct {
-                __int16 primary_stat;
+                __int32 zone;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int16 secondary_stat[4];
-__int32 secondary_stat_Size() const {return 4;};
+		__int32 price;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 333; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 467; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)
-	struct __declspec(align(4)) secondary_stat_RecordPtr // : DrRecordPtr
+	struct __declspec(align(4)) zonechannelchange_RecordPtr // : DrRecordPtr
 	{
-		secondary_stat_Record* _record;
+		zonechannelchange_Record* _record;
 		int _cacheChunkIndex;
 		bool _makeCopy;
 	};

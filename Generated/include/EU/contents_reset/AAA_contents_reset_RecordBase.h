@@ -25,7 +25,7 @@ BnsTables::Shared::ExplicitTableRef reset_target;
 __int32 reset_money;
 BnsTables::Shared::TableRef reset_item[4];
 __int32 reset_item_Size() const {return 4;};
-int reset_item_tableId() const {return 195;};
+int reset_item_tableId() const {return 197;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef quota;

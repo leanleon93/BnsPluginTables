@@ -30,17 +30,17 @@ namespace BnsTables::EU {
 		signed char category;
 char Pad0[3];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 420;};
+int title_tableId() const {return 426;};
 signed char activation_level;
 signed char activation_mastery_level;
 bool use_notice_hud;
 char Pad1[1];
 BnsTables::Shared::TableRef message;
-int message_tableId() const {return 155;};
+int message_tableId() const {return 156;};
 wchar_t* movie_url;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 163; }
+		static __int16 TableId() { return 164; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

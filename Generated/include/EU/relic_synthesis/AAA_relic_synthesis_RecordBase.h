@@ -23,18 +23,18 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 195;};
+int required_item_tableId() const {return 197;};
 __int16 required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 __int32 money_cost;
 BnsTables::Shared::TableRef result_item[100];
 __int32 result_item_Size() const {return 100;};
-int result_item_tableId() const {return 195;};
+int result_item_tableId() const {return 197;};
 __int16 result_item_rate[100];
 __int32 result_item_rate_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 324; }
+		static __int16 TableId() { return 329; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

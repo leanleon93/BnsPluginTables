@@ -33,7 +33,7 @@ char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
 int notifycenter_message_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
 		static __int16 TableId() { return 155; }
 		static __int32 SubType() { return -1; }
 	};

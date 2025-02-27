@@ -29,9 +29,9 @@ signed char min_level;
 signed char max_level;
 char Pad0[1];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 420;};
+int title_tableId() const {return 426;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 420;};
+int description_tableId() const {return 426;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 69; }

@@ -26,11 +26,11 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef subject_name;
-int subject_name_tableId() const {return 420;};
+int subject_name_tableId() const {return 426;};
 BnsTables::Shared::TableRef group_data_id;
-int group_data_id_tableId() const {return 371;};
+int group_data_id_tableId() const {return 377;};
 BnsTables::Shared::TableRef system_msg;
-int system_msg_tableId() const {return 155;};
+int system_msg_tableId() const {return 156;};
 wchar_t* start_kismet_name[2];
 __int32 start_kismet_name_Size() const {return 2;};
 wchar_t* end_kismet_name[2];
@@ -38,7 +38,7 @@ __int32 end_kismet_name_Size() const {return 2;};
 __int16 sort_number;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 372; }
+		static __int16 TableId() { return 378; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

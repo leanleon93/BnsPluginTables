@@ -11,10 +11,10 @@ namespace BnsTables::EU {
 	public:
 		BnsTables::Shared::TableRef item_brand[8];
 __int32 item_brand_Size() const {return 8;};
-int item_brand_tableId() const {return 189;};
+int item_brand_tableId() const {return 190;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 420;};
+int slot_name_tableId() const {return 426;};
 
 		static __int32 SubType() { return 8; }
 	};

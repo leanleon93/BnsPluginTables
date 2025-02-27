@@ -21,8 +21,9 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
 signed char rule_usage;
-char Pad0[3];
+char Pad0[2];
 BnsTables::Shared::ExplicitTableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
 signed char required_item_min_level[4];
@@ -31,12 +32,12 @@ __int16 required_item_stack_count[4];
 __int32 required_item_stack_count_Size() const {return 4;};
 BnsTables::Shared::TableRef normal_item[4];
 __int32 normal_item_Size() const {return 4;};
-int normal_item_tableId() const {return 195;};
+int normal_item_tableId() const {return 197;};
 __int16 normal_item_stack_count[4];
 __int32 normal_item_stack_count_Size() const {return 4;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 197; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
+		static __int16 TableId() { return 199; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

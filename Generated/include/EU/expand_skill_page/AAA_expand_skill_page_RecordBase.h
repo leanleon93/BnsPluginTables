@@ -25,7 +25,7 @@ signed char charge_type;
 char Pad0[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 195;};
+int required_item_tableId() const {return 197;};
 signed char required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 

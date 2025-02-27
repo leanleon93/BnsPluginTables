@@ -32,25 +32,25 @@ __int16 modify_skill_duration;
 char Pad1[2];
 BnsTables::Shared::TableRef gimmick_option_fixed[5];
 __int32 gimmick_option_fixed_Size() const {return 5;};
-int gimmick_option_fixed_tableId() const {return 327;};
+int gimmick_option_fixed_tableId() const {return 332;};
 BnsTables::Shared::TableRef gimmick_option_week_1[2];
 __int32 gimmick_option_week_1_Size() const {return 2;};
-int gimmick_option_week_1_tableId() const {return 327;};
+int gimmick_option_week_1_tableId() const {return 332;};
 BnsTables::Shared::TableRef gimmick_option_week_2[2];
 __int32 gimmick_option_week_2_Size() const {return 2;};
-int gimmick_option_week_2_tableId() const {return 327;};
+int gimmick_option_week_2_tableId() const {return 332;};
 BnsTables::Shared::TableRef gimmick_option_week_3[2];
 __int32 gimmick_option_week_3_Size() const {return 2;};
-int gimmick_option_week_3_tableId() const {return 327;};
+int gimmick_option_week_3_tableId() const {return 332;};
 BnsTables::Shared::TableRef gimmick_option_week_4[2];
 __int32 gimmick_option_week_4_Size() const {return 2;};
-int gimmick_option_week_4_tableId() const {return 327;};
+int gimmick_option_week_4_tableId() const {return 332;};
 BnsTables::Shared::TableRef gimmick_option_week_5[2];
 __int32 gimmick_option_week_5_Size() const {return 2;};
-int gimmick_option_week_5_tableId() const {return 327;};
+int gimmick_option_week_5_tableId() const {return 332;};
 BnsTables::Shared::TableRef target_boss_npc[3];
 __int32 target_boss_npc_Size() const {return 3;};
-int target_boss_npc_tableId() const {return 265;};
+int target_boss_npc_tableId() const {return 269;};
 BnsTables::Shared::TableRef boss_npc_effect_week_1[5];
 __int32 boss_npc_effect_week_1_Size() const {return 5;};
 int boss_npc_effect_week_1_tableId() const {return 115;};
@@ -72,15 +72,15 @@ wchar_t* boss_npc_effect_tooltip_week_3;
 wchar_t* boss_npc_effect_tooltip_week_4;
 wchar_t* boss_npc_effect_tooltip_week_5;
 BnsTables::Shared::TableRef boss_npc_effect_icon_week_1;
-int boss_npc_effect_icon_week_1_tableId() const {return 182;};
+int boss_npc_effect_icon_week_1_tableId() const {return 183;};
 BnsTables::Shared::TableRef boss_npc_effect_icon_week_2;
-int boss_npc_effect_icon_week_2_tableId() const {return 182;};
+int boss_npc_effect_icon_week_2_tableId() const {return 183;};
 BnsTables::Shared::TableRef boss_npc_effect_icon_week_3;
-int boss_npc_effect_icon_week_3_tableId() const {return 182;};
+int boss_npc_effect_icon_week_3_tableId() const {return 183;};
 BnsTables::Shared::TableRef boss_npc_effect_icon_week_4;
-int boss_npc_effect_icon_week_4_tableId() const {return 182;};
+int boss_npc_effect_icon_week_4_tableId() const {return 183;};
 BnsTables::Shared::TableRef boss_npc_effect_icon_week_5;
-int boss_npc_effect_icon_week_5_tableId() const {return 182;};
+int boss_npc_effect_icon_week_5_tableId() const {return 183;};
 __int16 boss_npc_effect_icon_index_week_1;
 __int16 boss_npc_effect_icon_index_week_2;
 __int16 boss_npc_effect_icon_index_week_3;
@@ -105,7 +105,7 @@ int recommend_alias_sealed_dungeon_tableId() const {return 72;};
 bool hide_skill_decal;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 4); }
-		static __int16 TableId() { return 329; }
+		static __int16 TableId() { return 334; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

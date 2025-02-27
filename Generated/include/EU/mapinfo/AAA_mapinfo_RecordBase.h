@@ -24,16 +24,16 @@ namespace BnsTables::EU {
 __int16 group_id;
 __int16 floor;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 420;};
+int name2_tableId() const {return 426;};
 BnsTables::Shared::TableRef parent_mapinfo;
-int parent_mapinfo_tableId() const {return 247;};
+int parent_mapinfo_tableId() const {return 249;};
 float scale;
 BnsTables::Shared::TableRef district;
 int district_tableId() const {return 101;};
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 244;};
+int map_group_1_tableId() const {return 246;};
 BnsTables::Shared::TableRef map_group_2;
-int map_group_2_tableId() const {return 246;};
+int map_group_2_tableId() const {return 248;};
 float local_axis_x;
 float local_axis_y;
 __int16 image_size;
@@ -47,26 +47,27 @@ wchar_t* conditional_imageset;
 wchar_t* conditional_imageset_alphamap;
 BnsTables::Shared::TableRef overlay[30];
 __int32 overlay_Size() const {return 30;};
-int overlay_tableId() const {return 248;};
+int overlay_tableId() const {return 250;};
 bool use_pos_in_parent;
 char Pad2[3];
 float pos_in_parent_x;
 float pos_in_parent_y;
 BnsTables::Shared::TableRef terrain;
-int terrain_tableId() const {return 419;};
+int terrain_tableId() const {return 425;};
 float zoom;
 __int16 sort_no;
 bool show_navigaion_list;
 char Pad3[1];
 BnsTables::Shared::TableRef arena_dungeon_parent_mapinfo;
-int arena_dungeon_parent_mapinfo_tableId() const {return 247;};
+int arena_dungeon_parent_mapinfo_tableId() const {return 249;};
 bool arena_dungeon_use_pos_in_parent;
 char Pad4[3];
 float arena_dungeon_pos_in_parent_x;
 float arena_dungeon_pos_in_parent_y;
+bool capital;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 42); }
-		static __int16 TableId() { return 247; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
+		static __int16 TableId() { return 249; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

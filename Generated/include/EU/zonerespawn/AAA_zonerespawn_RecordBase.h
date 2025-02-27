@@ -23,14 +23,14 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 456;};
+int area_tableId() const {return 463;};
 BnsTables::Shared::XYZ center;
 BnsTables::Shared::TableRef activated_faction[4];
 __int32 activated_faction_Size() const {return 4;};
-int activated_faction_tableId() const {return 135;};
+int activated_faction_tableId() const {return 136;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 46); }
-		static __int16 TableId() { return 471; }
+		static __int16 TableId() { return 479; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

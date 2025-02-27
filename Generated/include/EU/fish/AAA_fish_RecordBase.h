@@ -29,7 +29,7 @@ __int16 acquire_life_contents_point;
 signed char reduce_life_contents_cq_amount;
 char Pad1[1];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 420;};
+int name_tableId() const {return 426;};
 wchar_t* mesh;
 BnsTables::Shared::IconRef icon;
 wchar_t* col;
@@ -39,10 +39,10 @@ bool hide;
 char Pad2[1];
 BnsTables::Shared::TableRef fishing_field_group[20];
 __int32 fishing_field_group_Size() const {return 20;};
-int fishing_field_group_tableId() const {return 150;};
+int fishing_field_group_tableId() const {return 151;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 17); }
-		static __int16 TableId() { return 147; }
+		static __int16 TableId() { return 148; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

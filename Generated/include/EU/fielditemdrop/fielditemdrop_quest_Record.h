@@ -13,7 +13,7 @@ namespace BnsTables::EU {
 signed char drop_place;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 456;};
+int area_tableId() const {return 463;};
 
 		static __int32 SubType() { return 2; }
 	};

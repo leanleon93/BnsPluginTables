@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef season_group;
-int season_group_tableId() const {return 314;};
+int season_group_tableId() const {return 319;};
 signed char season_number;
 signed char season_type;
 char Pad0[2];
@@ -34,21 +34,21 @@ wchar_t* name_pt;
 wchar_t* name_th;
 wchar_t* name_vn;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 420;};
+int name_text_tableId() const {return 426;};
 bool job_ranking;
 char Pad1[3];
 BnsTables::Shared::TableRef total_season;
-int total_season_tableId() const {return 313;};
+int total_season_tableId() const {return 318;};
 BnsTables::Shared::TableRef season_schedule[20];
 __int32 season_schedule_Size() const {return 20;};
-int season_schedule_tableId() const {return 315;};
+int season_schedule_tableId() const {return 320;};
 BnsTables::Shared::TableRef main_season_schedule;
-int main_season_schedule_tableId() const {return 315;};
+int main_season_schedule_tableId() const {return 320;};
 wchar_t* season_representative_icon;
 wchar_t* list_background_imageset;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 3); }
-		static __int16 TableId() { return 313; }
+		static __int16 TableId() { return 318; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
