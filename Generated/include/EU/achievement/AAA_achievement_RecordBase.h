@@ -38,7 +38,7 @@ bool progress_show;
 char Pad2[3];
 BnsTables::Shared::TableRef step_complete_reward_item[5];
 __int32 step_complete_reward_item_Size() const {return 5;};
-int step_complete_reward_item_tableId() const {return 197;};
+int step_complete_reward_item_tableId() const {return 198;};
 __int16 step_complete_reward_item_count[5];
 __int32 step_complete_reward_item_count_Size() const {return 5;};
 char Pad3[2];
@@ -50,7 +50,7 @@ signed char step_complete_reward_type;
 char Pad5[3];
 BnsTables::Shared::TableRef step_complete_reward_final_item[5];
 __int32 step_complete_reward_final_item_Size() const {return 5;};
-int step_complete_reward_final_item_tableId() const {return 197;};
+int step_complete_reward_final_item_tableId() const {return 198;};
 __int16 step_complete_reward_final_item_count[5];
 __int32 step_complete_reward_final_item_count_Size() const {return 5;};
 __int16 current_step_score;
@@ -70,30 +70,30 @@ signed char category_1;
 signed char category_2;
 char Pad8[2];
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 246;};
+int map_group_1_tableId() const {return 247;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 426;};
+int name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 426;};
+int description2_tableId() const {return 427;};
 BnsTables::Shared::TableRef title_name;
-int title_name_tableId() const {return 426;};
+int title_name_tableId() const {return 427;};
 BnsTables::Shared::TableRef title_image_text;
-int title_image_text_tableId() const {return 426;};
+int title_image_text_tableId() const {return 427;};
 BnsTables::Shared::TableRef title_thumbnail_icon_text;
-int title_thumbnail_icon_text_tableId() const {return 426;};
+int title_thumbnail_icon_text_tableId() const {return 427;};
 __int16 sort_no;
 char Pad9[2];
 BnsTables::Shared::TableRef completed_game_message;
 int completed_game_message_tableId() const {return 156;};
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 420;};
+int talk_social_tableId() const {return 421;};
 BnsTables::Shared::IconRef title_chat_ui_icon;
 wchar_t* title_thumbnail_frame_fx;
 signed char title_grade;
 signed char title_infield_ui_border_effect;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 2); }
 		static __int16 TableId() { return 6; }
 		static __int32 SubType() { return -1; }
 	};

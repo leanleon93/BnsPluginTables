@@ -21,18 +21,18 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 426;};
+int name2_tableId() const {return 427;};
 wchar_t* lobby_race_imageset;
 wchar_t* character_info_race_imageset;
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 426;};
+int desc_tableId() const {return 427;};
 signed char male_customize_zoomcamera_add_height;
 signed char female_customize_zoomcamera_add_height;
 char Pad0[2];
 wchar_t* lobby_race_bgm;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 304; }
+		static __int16 TableId() { return 305; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -113,7 +113,7 @@ __int16 attack_attribute_base_percent;
 __int16 attack_attribute_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 15); }
-		static __int16 TableId() { return 257; }
+		static __int16 TableId() { return 258; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

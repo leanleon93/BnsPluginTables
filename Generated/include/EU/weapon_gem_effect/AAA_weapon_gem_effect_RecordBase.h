@@ -26,7 +26,7 @@ signed char weapon_type;
 BnsTables::Shared::RGB effect_color;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 449; }
+		static __int16 TableId() { return 450; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

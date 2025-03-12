@@ -82,13 +82,13 @@ __int32 count_10_ability_value_Size() const {return 8;};
 __int32 count_10_ability_base_value[8];
 __int32 count_10_ability_base_value_Size() const {return 8;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 426;};
+int name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef set_item[15];
 __int32 set_item_Size() const {return 15;};
-int set_item_tableId() const {return 197;};
+int set_item_tableId() const {return 198;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 327; }
+		static __int16 TableId() { return 328; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

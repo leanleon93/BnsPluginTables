@@ -34,7 +34,7 @@ __int16 required_achievement_step;
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 197;};
+int cost_item_tableId() const {return 198;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 

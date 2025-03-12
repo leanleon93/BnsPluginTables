@@ -25,7 +25,7 @@ __int32 exp;
 __int32 money;
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 197;};
+int item_tableId() const {return 198;};
 __int32 item_count[4];
 __int32 item_count_Size() const {return 4;};
 __int16 tax_reward_rate;
@@ -44,7 +44,7 @@ BnsTables::Shared::TableRef guild_ranking_reward_effect;
 int guild_ranking_reward_effect_tableId() const {return 115;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 316; }
+		static __int16 TableId() { return 317; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

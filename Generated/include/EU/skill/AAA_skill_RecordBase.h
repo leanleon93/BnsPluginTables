@@ -33,12 +33,12 @@ signed char variation_4_level;
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 426;};
+int name2_tableId() const {return 427;};
 __int16 short_cut_key;
 __int16 short_cut_key_classic;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 354; }
+		static __int16 TableId() { return 355; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

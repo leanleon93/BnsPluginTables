@@ -29,16 +29,16 @@ char Pad0[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
 __int32 skill_Size() const {return 40;};
-int skill_tableId() const {return 354;};
+int skill_tableId() const {return 355;};
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 341;};
+int skill3_tableId() const {return 342;};
 BnsTables::Shared::TableRef pc_skill3[2];
 __int32 pc_skill3_Size() const {return 2;};
-int pc_skill3_tableId() const {return 286;};
+int pc_skill3_tableId() const {return 287;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
 __int32 pc_job_style_skill3_Size() const {return 10;};
-int pc_job_style_skill3_tableId() const {return 286;};
+int pc_job_style_skill3_tableId() const {return 287;};
 signed char skill_build_up_level_max;
 char Pad1[1];
 __int16 skill_build_up_point;
@@ -144,7 +144,7 @@ __int16 attack_abnormal_hit_modify;
 __int16 defend_abnormal_resistance_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 282; }
+		static __int16 TableId() { return 283; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

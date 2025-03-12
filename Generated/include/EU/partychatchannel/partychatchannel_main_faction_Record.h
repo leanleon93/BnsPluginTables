@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef faction_1_party_match;
-int faction_1_party_match_tableId() const {return 277;};
+int faction_1_party_match_tableId() const {return 278;};
 BnsTables::Shared::TableRef faction_2_party_match;
-int faction_2_party_match_tableId() const {return 277;};
+int faction_2_party_match_tableId() const {return 278;};
 
 		static __int32 SubType() { return 1; }
 	};

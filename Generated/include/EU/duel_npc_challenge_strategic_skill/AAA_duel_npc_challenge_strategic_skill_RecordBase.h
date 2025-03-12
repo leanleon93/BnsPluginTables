@@ -29,17 +29,17 @@ namespace BnsTables::EU {
 signed char max_strategic_skill_level;
 char Pad0[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 183;};
+int icon_texture_tableId() const {return 184;};
 __int16 icon_index;
 signed char grade;
 char Pad1[1];
 wchar_t* skill_image_set;
 BnsTables::Shared::TableRef skill_tooltip;
-int skill_tooltip_tableId() const {return 426;};
+int skill_tooltip_tableId() const {return 427;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 426;};
+int description2_tableId() const {return 427;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 426;};
+int name2_tableId() const {return 427;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 112; }

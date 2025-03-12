@@ -24,7 +24,7 @@ signed char sex;
 		wchar_t* hidden_mesh_path;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 283; }
+		static __int16 TableId() { return 284; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 __int16 mastery_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 383; }
+		static __int16 TableId() { return 384; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

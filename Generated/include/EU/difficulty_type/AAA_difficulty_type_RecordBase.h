@@ -26,7 +26,7 @@ bool default_val;
 bool is_pvp;
 char Pad0[1];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 426;};
+int name_tableId() const {return 427;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 98; }

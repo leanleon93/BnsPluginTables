@@ -24,16 +24,16 @@ BnsTables::Shared::TableRef head_skill_id;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef change_skill_id[15];
 __int32 change_skill_id_Size() const {return 15;};
-int change_skill_id_tableId() const {return 341;};
+int change_skill_id_tableId() const {return 342;};
 BnsTables::Shared::TableRef head_skill_acquire_route;
-int head_skill_acquire_route_tableId() const {return 216;};
+int head_skill_acquire_route_tableId() const {return 217;};
 BnsTables::Shared::TableRef change_skill_acquire_route[15];
 __int32 change_skill_acquire_route_Size() const {return 15;};
-int change_skill_acquire_route_tableId() const {return 216;};
+int change_skill_acquire_route_tableId() const {return 217;};
 signed char equip_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 215; }
+		static __int16 TableId() { return 216; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

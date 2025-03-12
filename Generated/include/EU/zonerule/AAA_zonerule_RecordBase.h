@@ -33,7 +33,7 @@ signed char apply_content_ban_id;
 bool allow_invite_party_in_arena;
 bool show_leave_zone_popup_when_no_party_in_arena_enterance;
 BnsTables::Shared::TableRef required_available_weekly_time;
-int required_available_weekly_time_tableId() const {return 452;};
+int required_available_weekly_time_tableId() const {return 453;};
 bool town;
 bool reentrance_pcspawn_check_later_when_enterworld;
 bool infinite_durability;
@@ -48,7 +48,7 @@ bool is_world_boss_spawn_zone;
 bool use_default_skill;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
-		static __int16 TableId() { return 480; }
+		static __int16 TableId() { return 481; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

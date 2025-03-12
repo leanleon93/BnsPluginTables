@@ -410,7 +410,7 @@ BnsTables::Shared::TableRef consume_order[4];
 __int32 consume_order_Size() const {return 4;};
 int consume_order_tableId() const {return 67;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 1); }
 		static __int16 TableId() { return 67; }
 		static __int32 SubType() { return -1; }
 	};

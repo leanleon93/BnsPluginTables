@@ -13,7 +13,7 @@ namespace BnsTables::EU {
 char Pad_sub_0[3];
 wchar_t* end_talk_sound_ok;
 BnsTables::Shared::TableRef fail_population_message;
-int fail_population_message_tableId() const {return 274;};
+int fail_population_message_tableId() const {return 275;};
 
 		static __int32 SubType() { return 14; }
 	};

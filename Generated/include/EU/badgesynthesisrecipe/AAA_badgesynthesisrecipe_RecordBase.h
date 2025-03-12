@@ -25,7 +25,7 @@ __int32 score;
 		wchar_t* alias;
 BnsTables::Shared::TableRef result_item[80];
 __int32 result_item_Size() const {return 80;};
-int result_item_tableId() const {return 197;};
+int result_item_tableId() const {return 198;};
 __int16 result_item_rate[80];
 __int32 result_item_rate_Size() const {return 80;};
 __int32 result_item_rate_sum_by_grade[9];

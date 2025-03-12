@@ -22,16 +22,16 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef master_idle;
-int master_idle_tableId() const {return 270;};
+int master_idle_tableId() const {return 271;};
 BnsTables::Shared::TableRef npc[5];
 __int32 npc_Size() const {return 5;};
-int npc_tableId() const {return 269;};
+int npc_tableId() const {return 270;};
 BnsTables::Shared::TableRef idle[5];
 __int32 idle_Size() const {return 5;};
-int idle_tableId() const {return 270;};
+int idle_tableId() const {return 271;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 184; }
+		static __int16 TableId() { return 185; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

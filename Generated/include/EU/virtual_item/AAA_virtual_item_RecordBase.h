@@ -23,17 +23,17 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 426;};
+int name2_tableId() const {return 427;};
 bool talkable;
 char Pad0[3];
 wchar_t* talk_mesh;
 wchar_t* talk_animset;
 BnsTables::Shared::TableRef message[9];
 __int32 message_Size() const {return 9;};
-int message_tableId() const {return 274;};
+int message_tableId() const {return 275;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 442; }
+		static __int16 TableId() { return 443; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -28,7 +28,7 @@ float fade_out;
 float moving_blend;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 293; }
+		static __int16 TableId() { return 294; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

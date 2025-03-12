@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone[40];
 __int32 zone_Size() const {return 40;};
-int zone_tableId() const {return 469;};
+int zone_tableId() const {return 470;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 50; }

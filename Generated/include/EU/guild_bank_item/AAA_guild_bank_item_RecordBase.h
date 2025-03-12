@@ -21,13 +21,13 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef bank_item;
-int bank_item_tableId() const {return 197;};
+int bank_item_tableId() const {return 198;};
 __int16 bank_item_round_lot;
 char Pad0[2];
 __int64 bank_item_max_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 165; }
+		static __int16 TableId() { return 166; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

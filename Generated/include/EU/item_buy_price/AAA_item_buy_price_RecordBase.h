@@ -25,12 +25,12 @@ signed char publisher;
 char Pad0[3];
 __int32 money;
 BnsTables::Shared::TableRef required_itembrand;
-int required_itembrand_tableId() const {return 190;};
+int required_itembrand_tableId() const {return 191;};
 signed char required_itembrand_condition_type;
 char Pad1[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 197;};
+int required_item_tableId() const {return 198;};
 __int16 required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 __int32 required_faction_score;
@@ -56,8 +56,8 @@ signed char required_level;
 signed char required_mastery_level;
 __int16 required_account_level;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 192; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
+		static __int16 TableId() { return 193; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

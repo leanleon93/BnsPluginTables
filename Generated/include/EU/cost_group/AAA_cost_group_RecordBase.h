@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef item[8];
 __int32 item_Size() const {return 8;};
-int item_tableId() const {return 197;};
+int item_tableId() const {return 198;};
 __int16 item_amount[8];
 __int32 item_amount_Size() const {return 8;};
 signed char item_total_count;

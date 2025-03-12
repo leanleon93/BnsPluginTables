@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef end_talk_social_ok;
-int end_talk_social_ok_tableId() const {return 388;};
+int end_talk_social_ok_tableId() const {return 389;};
 
 		static __int32 SubType() { return 9; }
 	};

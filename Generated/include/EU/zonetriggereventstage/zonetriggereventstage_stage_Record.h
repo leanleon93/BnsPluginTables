@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		BnsTables::Shared::TableRef fail_cond[3];
 __int32 fail_cond_Size() const {return 3;};
-int fail_cond_tableId() const {return 483;};
+int fail_cond_tableId() const {return 484;};
 
 		static __int32 SubType() { return 4; }
 	};

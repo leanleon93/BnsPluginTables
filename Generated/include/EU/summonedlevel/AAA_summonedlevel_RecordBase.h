@@ -162,7 +162,7 @@ __int16 attack_abnormal_hit_modify;
 __int16 defend_abnormal_resistance_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 28); }
-		static __int16 TableId() { return 412; }
+		static __int16 TableId() { return 413; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

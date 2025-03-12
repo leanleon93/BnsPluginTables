@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int16 sort_order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 193; }
+		static __int16 TableId() { return 194; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

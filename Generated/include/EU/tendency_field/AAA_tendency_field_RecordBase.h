@@ -27,17 +27,17 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_zone;
-int main_zone_tableId() const {return 469;};
+int main_zone_tableId() const {return 470;};
 BnsTables::Shared::TableRef sub_zone[7];
 __int32 sub_zone_Size() const {return 7;};
-int sub_zone_tableId() const {return 469;};
+int sub_zone_tableId() const {return 470;};
 bool enable_change_channel;
 signed char required_level;
 signed char required_mastery_level;
 char Pad0[1];
 BnsTables::Shared::TableRef required_preceding_quest[3];
 __int32 required_preceding_quest_Size() const {return 3;};
-int required_preceding_quest_tableId() const {return 298;};
+int required_preceding_quest_tableId() const {return 299;};
 signed char required_preceding_quest_check;
 bool required_activated_main_faction;
 bool restrict_enter_zone_when_manifest_tendency;
@@ -55,7 +55,7 @@ char Pad3[2];
 __int64 quest_pack_simple_quest_refresh_money;
 BnsTables::Shared::TableRef weekly_time_table_for_added_reward[2];
 __int32 weekly_time_table_for_added_reward_Size() const {return 2;};
-int weekly_time_table_for_added_reward_tableId() const {return 452;};
+int weekly_time_table_for_added_reward_tableId() const {return 453;};
 __int32 weekly_bonus_point_percent[2];
 __int32 weekly_bonus_point_percent_Size() const {return 2;};
 BnsTables::Shared::TableRef group;
@@ -73,9 +73,9 @@ __int32 tendency_start_kismet_name_Size() const {return 3;};
 wchar_t* tendency_end_kismet_name[3];
 __int32 tendency_end_kismet_name_Size() const {return 3;};
 BnsTables::Shared::TableRef tendency_field_name2;
-int tendency_field_name2_tableId() const {return 426;};
+int tendency_field_name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef tendency_field_desc;
-int tendency_field_desc_tableId() const {return 426;};
+int tendency_field_desc_tableId() const {return 427;};
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 signed char ui_text_grade;
@@ -111,17 +111,17 @@ signed char recommand_mastery_level_max;
 __int16 recommend_attack_power;
 char Pad6[2];
 BnsTables::Shared::TableRef standard_gear_weapon;
-int standard_gear_weapon_tableId() const {return 197;};
+int standard_gear_weapon_tableId() const {return 198;};
 BnsTables::Shared::TableRef display_quests[12];
 __int32 display_quests_Size() const {return 12;};
-int display_quests_tableId() const {return 298;};
+int display_quests_tableId() const {return 299;};
 BnsTables::Shared::TableRef tactic;
-int tactic_tableId() const {return 426;};
+int tactic_tableId() const {return 427;};
 BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 72;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 22); }
-		static __int16 TableId() { return 424; }
+		static __int16 TableId() { return 425; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

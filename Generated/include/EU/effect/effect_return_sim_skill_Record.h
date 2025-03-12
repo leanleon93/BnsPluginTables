@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef skill;
-int skill_tableId() const {return 354;};
+int skill_tableId() const {return 355;};
 BnsTables::Shared::TableRef skill3;
-int skill3_tableId() const {return 341;};
+int skill3_tableId() const {return 342;};
 bool finish;
 
 		static __int32 SubType() { return 50; }
