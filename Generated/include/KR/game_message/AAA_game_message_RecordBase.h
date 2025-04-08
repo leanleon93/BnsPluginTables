@@ -53,7 +53,7 @@ BnsTables::Shared::TableRef guild_battle_text;
 int guild_battle_text_tableId() const {return 427;};
 signed char ghost_mode_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 47); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 156; }
 		static __int32 SubType() { return -1; }
 	};

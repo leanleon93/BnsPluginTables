@@ -21,11 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 __int32 money;
 BnsTables::Shared::TableRef required_itembrand;
 int required_itembrand_tableId() const {return 191;};
 signed char required_itembrand_condition_type;
-char Pad0[3];
+char Pad1[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
 int required_item_tableId() const {return 198;};
@@ -45,7 +47,7 @@ signed char check_team_duel_grade;
 signed char check_battle_field_grade_occupation_war;
 signed char check_battle_field_grade_capture_the_flag;
 signed char check_battle_field_grade_lead_the_ball;
-char Pad1[1];
+char Pad2[1];
 __int16 check_closet_collecting_grade;
 BnsTables::Shared::TableRef check_content_quota;
 int check_content_quota_tableId() const {return 67;};
@@ -54,7 +56,7 @@ signed char required_level;
 signed char required_mastery_level;
 __int16 required_account_level;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
 		static __int16 TableId() { return 193; }
 		static __int32 SubType() { return -1; }
 	};

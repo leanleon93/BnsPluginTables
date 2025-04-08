@@ -1199,7 +1199,7 @@ int attach_notify_message_tableId() const {return 156;};
 BnsTables::Shared::TableRef description_item_random_option;
 int description_item_random_option_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(42, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(44, 0); }
 		static __int16 TableId() { return 115; }
 		static __int32 SubType() { return -1; }
 	};

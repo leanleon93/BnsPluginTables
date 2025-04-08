@@ -26,7 +26,7 @@ char Pad0[3];
 BnsTables::Shared::TableRef name2;
 int name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef teleport_position;
-int teleport_position_tableId() const {return 482;};
+int teleport_position_tableId() const {return 483;};
 __int16 distance_from_start_teleport;
 char Pad1[2];
 __int32 price_percent;

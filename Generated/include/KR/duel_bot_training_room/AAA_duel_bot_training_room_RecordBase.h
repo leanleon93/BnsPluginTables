@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 470;};
+int zone_tableId() const {return 471;};
 wchar_t* alias;
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};

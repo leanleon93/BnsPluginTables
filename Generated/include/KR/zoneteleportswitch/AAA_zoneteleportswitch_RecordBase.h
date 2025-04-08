@@ -29,7 +29,7 @@ BnsTables::Shared::TableRef activate_teleport;
 int activate_teleport_tableId() const {return 423;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 483; }
+		static __int16 TableId() { return 484; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

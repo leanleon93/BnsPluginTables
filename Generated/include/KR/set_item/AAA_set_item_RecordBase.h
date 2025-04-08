@@ -21,6 +21,8 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 BnsTables::Shared::TableRef count_1_effect[2];
 __int32 count_1_effect_Size() const {return 2;};
 int count_1_effect_tableId() const {return 115;};
@@ -161,7 +163,7 @@ __int32 slot_tag_icon_Size() const {return 10;};
 signed char slot_equip_type[10];
 __int32 slot_equip_type_Size() const {return 10;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 19); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 19); }
 		static __int16 TableId() { return 340; }
 		static __int32 SubType() { return -1; }
 	};

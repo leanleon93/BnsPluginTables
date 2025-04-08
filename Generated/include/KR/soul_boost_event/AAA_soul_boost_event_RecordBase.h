@@ -78,7 +78,7 @@ __int32 core_reward_item_Size() const {return 10;};
 int core_reward_item_tableId() const {return 198;};
 bool purchase_grade;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 1); }
 		static __int16 TableId() { return 390; }
 		static __int32 SubType() { return -1; }
 	};

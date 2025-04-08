@@ -21,8 +21,9 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
 bool blind_auction;
-char Pad0[3];
+char Pad0[2];
 BnsTables::Shared::TableRef fixed_item[8];
 __int32 fixed_item_Size() const {return 8;};
 int fixed_item_tableId() const {return 198;};
@@ -151,7 +152,7 @@ __int32 smart_rare_reward_prob_weight[120];
 __int32 smart_rare_reward_prob_weight_Size() const {return 120;};
 signed char smart_rare_reward_total_count;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 46); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 47); }
 		static __int16 TableId() { return 332; }
 		static __int32 SubType() { return -1; }
 	};

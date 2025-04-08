@@ -21,7 +21,9 @@ signed char guild_type;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 money;
+		signed char publisher;
+char Pad0[3];
+__int32 money;
 BnsTables::Shared::TableRef required_item[5];
 __int32 required_item_Size() const {return 5;};
 int required_item_tableId() const {return 198;};
@@ -65,7 +67,7 @@ signed char guildcraft_big_rentable_count;
 BnsTables::Shared::TableRef levelup_text;
 int levelup_text_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 11); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 174; }
 		static __int32 SubType() { return -1; }
 	};

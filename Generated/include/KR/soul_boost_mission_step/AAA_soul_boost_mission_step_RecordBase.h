@@ -55,7 +55,7 @@ wchar_t* description_vn;
 BnsTables::Shared::TableRef description_text;
 int description_text_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 1); }
 		static __int16 TableId() { return 393; }
 		static __int32 SubType() { return -1; }
 	};

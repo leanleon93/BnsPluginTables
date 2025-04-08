@@ -445,7 +445,7 @@ BnsTables::Shared::TableRef job_change_item_exchange_group;
 int job_change_item_exchange_group_tableId() const {return 229;};
 BnsTables::Shared::TableRef manipulate_zone_env2_list[10];
 __int32 manipulate_zone_env2_list_Size() const {return 10;};
-int manipulate_zone_env2_list_tableId() const {return 471;};
+int manipulate_zone_env2_list_tableId() const {return 472;};
 BnsTables::Shared::TableRef name2;
 int name2_tableId() const {return 427;};
 BnsTables::Shared::TableRef nickname;
@@ -535,7 +535,7 @@ BnsTables::Shared::TableRef randomoption_reset_cost_group;
 int randomoption_reset_cost_group_tableId() const {return 77;};
 bool recommend_in_item_growth;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(60, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(61, 1); }
 		static __int16 TableId() { return 198; }
 		static __int32 SubType() { return -1; }
 	};

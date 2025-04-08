@@ -22,15 +22,15 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_zone;
-int main_zone_tableId() const {return 470;};
+int main_zone_tableId() const {return 471;};
 BnsTables::Shared::TableRef battle_zone[10];
 __int32 battle_zone_Size() const {return 10;};
-int battle_zone_tableId() const {return 470;};
+int battle_zone_tableId() const {return 471;};
 BnsTables::Shared::TableRef field_break_zone[2];
 __int32 field_break_zone_Size() const {return 2;};
-int field_break_zone_tableId() const {return 470;};
+int field_break_zone_tableId() const {return 471;};
 BnsTables::Shared::TableRef field_break_boss_zone;
-int field_break_boss_zone_tableId() const {return 470;};
+int field_break_boss_zone_tableId() const {return 471;};
 signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];
@@ -43,13 +43,13 @@ BnsTables::Shared::TableRef field_break_zone_imprint_effect;
 int field_break_zone_imprint_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef field_break_zone_imprint_env[2];
 __int32 field_break_zone_imprint_env_Size() const {return 2;};
-int field_break_zone_imprint_env_tableId() const {return 473;};
+int field_break_zone_imprint_env_tableId() const {return 474;};
 BnsTables::Shared::TableRef boss_battle_zone_entrance_effect;
 int boss_battle_zone_entrance_effect_tableId() const {return 115;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef finish_pc_respawn;
-int finish_pc_respawn_tableId() const {return 479;};
+int finish_pc_respawn_tableId() const {return 480;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 445; }

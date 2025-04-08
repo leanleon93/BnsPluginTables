@@ -34,15 +34,15 @@ signed char branch_id;
 		wchar_t* alias;
 BnsTables::Shared::TableRef next_cond[7];
 __int32 next_cond_Size() const {return 7;};
-int next_cond_tableId() const {return 484;};
+int next_cond_tableId() const {return 485;};
 signed char next_cond_branch_id[7];
 __int32 next_cond_branch_id_Size() const {return 7;};
 signed char broadcast_context;
 wchar_t* start_stage_kismet;
 wchar_t* end_stage_kismet;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 485; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
+		static __int16 TableId() { return 486; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

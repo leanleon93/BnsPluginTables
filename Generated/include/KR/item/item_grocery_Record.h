@@ -66,7 +66,7 @@ char Pad_sub_8[2];
 BnsTables::Shared::TableRef valid_attraction_name;
 int valid_attraction_name_tableId() const {return 427;};
 BnsTables::Shared::TableRef dest_zone;
-int dest_zone_tableId() const {return 470;};
+int dest_zone_tableId() const {return 471;};
 signed char expand_weapon_gem_slot_level[2];
 __int32 expand_weapon_gem_slot_level_Size() const {return 2;};
 char Pad_sub_9[2];

@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		bool season_enable;
 char Pad0[3];
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 470;};
+int zone_tableId() const {return 471;};
 wchar_t* alias;
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};

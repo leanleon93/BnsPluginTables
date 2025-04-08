@@ -21,7 +21,7 @@ BnsTables::Shared::TableRef event_channel_text;
 int event_channel_text_tableId() const {return 427;};
 BnsTables::Shared::TableRef event_notify_diff_zone[6];
 __int32 event_notify_diff_zone_Size() const {return 6;};
-int event_notify_diff_zone_tableId() const {return 470;};
+int event_notify_diff_zone_tableId() const {return 471;};
 BnsTables::Shared::TableRef event_notify_diff_zone_msg;
 int event_notify_diff_zone_msg_tableId() const {return 156;};
 BnsTables::Shared::TableRef event_notify_diff_channel_msg;

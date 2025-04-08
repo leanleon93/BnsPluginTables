@@ -8,35 +8,33 @@
 namespace BnsTables::KR {
 
 #pragma pack(push, 1)
-	struct zonepcspawn_Record : BnsTables::Shared::DrEl
+	struct world_group_Record : BnsTables::Shared::DrEl
 	{
 	public:
 		union Key
 		{
             struct {
-                __int32 zone;
-__int16 id;
+                __int16 id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-BnsTables::Shared::XYZ pos;
-BnsTables::Shared::XYZ summon_pos;
-__int16 yaw;
-char Pad0[2];
-wchar_t* description;
+__int16 world[10];
+__int32 world_Size() const {return 10;};
+BnsTables::Shared::TableRef lobby_desc;
+int lobby_desc_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 49); }
-		static __int16 TableId() { return 480; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
+		static __int16 TableId() { return 464; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)
-	struct __declspec(align(4)) zonepcspawn_RecordPtr // : DrRecordPtr
+	struct __declspec(align(4)) world_group_RecordPtr // : DrRecordPtr
 	{
-		zonepcspawn_Record* _record;
+		world_group_Record* _record;
 		int _cacheChunkIndex;
 		bool _makeCopy;
 	};

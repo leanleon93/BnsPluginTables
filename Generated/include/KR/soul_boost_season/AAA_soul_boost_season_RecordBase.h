@@ -56,8 +56,10 @@ __int32 item_point_per_cost_unit;
 BnsTables::Shared::TableRef membership_benefit[10];
 __int32 membership_benefit_Size() const {return 10;};
 int membership_benefit_tableId() const {return 263;};
+__int16 world_group[10];
+__int32 world_group_Size() const {return 10;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
 		static __int16 TableId() { return 395; }
 		static __int32 SubType() { return -1; }
 	};

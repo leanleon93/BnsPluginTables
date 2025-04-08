@@ -12,13 +12,13 @@ namespace BnsTables::KR {
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef arrow_control_point[6];
 __int32 arrow_control_point_Size() const {return 6;};
-int arrow_control_point_tableId() const {return 473;};
+int arrow_control_point_tableId() const {return 474;};
 BnsTables::Shared::TableRef opening_tip_off_control_point;
-int opening_tip_off_control_point_tableId() const {return 473;};
+int opening_tip_off_control_point_tableId() const {return 474;};
 BnsTables::Shared::TableRef alpha_goal_post;
-int alpha_goal_post_tableId() const {return 473;};
+int alpha_goal_post_tableId() const {return 474;};
 BnsTables::Shared::TableRef beta_goal_post;
-int beta_goal_post_tableId() const {return 473;};
+int beta_goal_post_tableId() const {return 474;};
 __int16 goal_post_enable_delay_second;
 signed char ball_spawn_max_count;
 char Pad_sub_1[1];

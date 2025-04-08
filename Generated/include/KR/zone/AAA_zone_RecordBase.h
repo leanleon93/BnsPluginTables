@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 bool deprecated_zone;
 char Pad0[3];
 BnsTables::Shared::TableRef transfer_pcspawn_by_deprecated;
-int transfer_pcspawn_by_deprecated_tableId() const {return 479;};
+int transfer_pcspawn_by_deprecated_tableId() const {return 480;};
 BnsTables::Shared::TableRef chat_channel;
 int chat_channel_tableId() const {return 404;};
 signed char zone_type2;
@@ -46,15 +46,15 @@ __int16 terrain;
 __int16 region;
 char Pad3[2];
 BnsTables::Shared::TableRef respawn;
-int respawn_tableId() const {return 480;};
+int respawn_tableId() const {return 481;};
 BnsTables::Shared::TableRef respawn_by_activated_faction_required_faction[2];
 __int32 respawn_by_activated_faction_required_faction_Size() const {return 2;};
 int respawn_by_activated_faction_required_faction_tableId() const {return 136;};
 BnsTables::Shared::TableRef respawn_by_activated_faction[2];
 __int32 respawn_by_activated_faction_Size() const {return 2;};
-int respawn_by_activated_faction_tableId() const {return 480;};
+int respawn_by_activated_faction_tableId() const {return 481;};
 BnsTables::Shared::TableRef basecamp;
-int basecamp_tableId() const {return 465;};
+int basecamp_tableId() const {return 466;};
 BnsTables::Shared::TableRef description2;
 int description2_tableId() const {return 427;};
 wchar_t* kismet_name;
@@ -62,11 +62,11 @@ wchar_t* enter_kismet_name;
 wchar_t* leave_kismet_name;
 wchar_t* aiid;
 BnsTables::Shared::TableRef reentrance_pcspawn;
-int reentrance_pcspawn_tableId() const {return 479;};
+int reentrance_pcspawn_tableId() const {return 480;};
 BnsTables::Shared::TableRef reentrance_pcspawn_in_arena;
-int reentrance_pcspawn_in_arena_tableId() const {return 479;};
+int reentrance_pcspawn_in_arena_tableId() const {return 480;};
 BnsTables::Shared::TableRef sealed_dungeon_reentrance_pcspawn_in_arena;
-int sealed_dungeon_reentrance_pcspawn_in_arena_tableId() const {return 479;};
+int sealed_dungeon_reentrance_pcspawn_in_arena_tableId() const {return 480;};
 bool use_zone_exit;
 char Pad4[3];
 BnsTables::Shared::TableRef map;
@@ -88,13 +88,13 @@ signed char phase_id[40];
 __int32 phase_id_Size() const {return 40;};
 BnsTables::Shared::TableRef phase_zone[17];
 __int32 phase_zone_Size() const {return 17;};
-int phase_zone_tableId() const {return 470;};
+int phase_zone_tableId() const {return 471;};
 bool phase_zone_disable_in_arena[17];
 __int32 phase_zone_disable_in_arena_Size() const {return 17;};
 bool default_phase_zone;
 char Pad5[2];
 BnsTables::Shared::TableRef phase_main_zone;
-int phase_main_zone_tableId() const {return 470;};
+int phase_main_zone_tableId() const {return 471;};
 __int16 default_phase_pc_spawn_id;
 signed char dungeon_step;
 bool is_arena_entrance;
@@ -102,7 +102,7 @@ signed char enable_ghost_mode;
 bool available_infield_contents;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 1); }
-		static __int16 TableId() { return 470; }
+		static __int16 TableId() { return 471; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

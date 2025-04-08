@@ -13,7 +13,7 @@ namespace BnsTables::KR {
 signed char drop_place;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 464;};
+int area_tableId() const {return 465;};
 
 		static __int32 SubType() { return 2; }
 	};

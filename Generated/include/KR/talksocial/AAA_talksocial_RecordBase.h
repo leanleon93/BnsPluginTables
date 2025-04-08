@@ -59,7 +59,7 @@ wchar_t* summoned_show[3];
 __int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 20); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 421; }
 		static __int32 SubType() { return -1; }
 	};
