@@ -23,6 +23,8 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef time_limit_quota;
 int time_limit_quota_tableId() const {return 67;};
+BnsTables::Shared::TableRef group;
+int group_tableId() const {return 16;};
 signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];
@@ -43,7 +45,7 @@ int recommend_alias_tableId() const {return 72;};
 __int16 recommend_attack_power;
 signed char entrance_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 428; }
 		static __int32 SubType() { return -1; }
 	};
