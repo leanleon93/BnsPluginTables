@@ -106,6 +106,11 @@ __int32 unseal_consume_item2_stack_count_Size() const {return 4;};
 BnsTables::Shared::TableRef skill3;
 int skill3_tableId() const {return 342;};
 wchar_t* equip_show;
+bool sub_ability_random_draw_enable;
+char Pad_sub_10[3];
+BnsTables::Shared::TableRef sub_ability_random_draw_cost[8];
+__int32 sub_ability_random_draw_cost_Size() const {return 8;};
+int sub_ability_random_draw_cost_tableId() const {return 77;};
 
 		static __int32 SubType() { return 3; }
 	};
