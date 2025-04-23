@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		__int32 enable_duration;
 
-		static __int32 SubType() { return 948; }
+		static __int32 SubType() { return 951; }
 	};
 #pragma pack(pop)
 }

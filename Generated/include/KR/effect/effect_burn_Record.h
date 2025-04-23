@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		
-		static __int32 SubType() { return 928; }
+		static __int32 SubType() { return 931; }
 	};
 #pragma pack(pop)
 }

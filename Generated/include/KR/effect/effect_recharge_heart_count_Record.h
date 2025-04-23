@@ -12,7 +12,7 @@ namespace BnsTables::KR {
 		signed char instant_heart_count;
 signed char heart_count;
 
-		static __int32 SubType() { return 946; }
+		static __int32 SubType() { return 949; }
 	};
 #pragma pack(pop)
 }

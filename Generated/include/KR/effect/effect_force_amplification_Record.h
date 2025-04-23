@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		__int16 ability_percent;
 
-		static __int32 SubType() { return 115; }
+		static __int32 SubType() { return 118; }
 	};
 #pragma pack(pop)
 }

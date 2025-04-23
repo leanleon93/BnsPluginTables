@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		signed char soul_mask_id;
 
-		static __int32 SubType() { return 983; }
+		static __int32 SubType() { return 986; }
 	};
 #pragma pack(pop)
 }

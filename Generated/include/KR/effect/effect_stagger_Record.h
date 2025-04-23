@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		__int16 speed_percent;
 
-		static __int32 SubType() { return 99; }
+		static __int32 SubType() { return 102; }
 	};
 #pragma pack(pop)
 }

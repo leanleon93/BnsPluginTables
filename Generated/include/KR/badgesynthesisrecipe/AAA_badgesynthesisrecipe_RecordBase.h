@@ -31,7 +31,7 @@ __int32 result_item_rate_Size() const {return 80;};
 __int32 result_item_rate_sum_by_grade[9];
 __int32 result_item_rate_sum_by_grade_Size() const {return 9;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
 		static __int16 TableId() { return 29; }
 		static __int32 SubType() { return -1; }
 	};

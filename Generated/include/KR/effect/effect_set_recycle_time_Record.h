@@ -16,7 +16,7 @@ __int32 recycle_group_id_Size() const {return 2;};
 __int32 recycle_group_set_time[2];
 __int32 recycle_group_set_time_Size() const {return 2;};
 
-		static __int32 SubType() { return 923; }
+		static __int32 SubType() { return 926; }
 	};
 #pragma pack(pop)
 }

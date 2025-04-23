@@ -78,7 +78,7 @@ __int32 success_option_list_id_all[5];
 __int32 success_option_list_id_all_Size() const {return 5;};
 signed char success_option_list_id_all_count;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 4); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 5); }
 		static __int16 TableId() { return 207; }
 		static __int32 SubType() { return -1; }
 	};

@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		__int32 diff_hyper_energy;
 
-		static __int32 SubType() { return 986; }
+		static __int32 SubType() { return 989; }
 	};
 #pragma pack(pop)
 }
