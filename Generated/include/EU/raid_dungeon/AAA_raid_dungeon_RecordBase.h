@@ -59,7 +59,7 @@ signed char step_count;
 char Pad5[3];
 BnsTables::Shared::TableRef zone[9];
 __int32 zone_Size() const {return 9;};
-int zone_tableId() const {return 470;};
+int zone_tableId() const {return 471;};
 BnsTables::Shared::TableRef boss_npc[9];
 __int32 boss_npc_Size() const {return 9;};
 int boss_npc_tableId() const {return 270;};

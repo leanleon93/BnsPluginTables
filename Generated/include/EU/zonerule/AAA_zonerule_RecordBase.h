@@ -48,7 +48,7 @@ bool is_world_boss_spawn_zone;
 bool use_default_skill;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
-		static __int16 TableId() { return 481; }
+		static __int16 TableId() { return 482; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

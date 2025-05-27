@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 470;};
+int zone_tableId() const {return 471;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 bool ui_filter_attraction_quest_only;

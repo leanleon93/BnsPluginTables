@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 470;};
+int zone_tableId() const {return 471;};
 __int16 require_score;
 __int16 last_round;
 wchar_t* alias;

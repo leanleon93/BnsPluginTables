@@ -18,7 +18,7 @@ int bind_quota_tableId() const {return 67;};
 __int16 theme_version;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef theme_arena_entrance_zone;
-int theme_arena_entrance_zone_tableId() const {return 470;};
+int theme_arena_entrance_zone_tableId() const {return 471;};
 __int64 gimmick_week_start_date_time;
 signed char ui_scroll_slot_index;
 

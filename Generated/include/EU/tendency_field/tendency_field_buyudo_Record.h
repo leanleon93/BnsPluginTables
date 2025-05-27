@@ -72,9 +72,9 @@ __int32 defeat_field_play_point_bonus_percent;
 __int32 defeat_faction_score_bonus_percent;
 __int32 defeat_bonus_point_percent;
 BnsTables::Shared::TableRef reentrance_faction1_spawn;
-int reentrance_faction1_spawn_tableId() const {return 479;};
+int reentrance_faction1_spawn_tableId() const {return 480;};
 BnsTables::Shared::TableRef reentrance_faction2_spawn;
-int reentrance_faction2_spawn_tableId() const {return 479;};
+int reentrance_faction2_spawn_tableId() const {return 480;};
 
 		static __int32 SubType() { return 1; }
 	};
