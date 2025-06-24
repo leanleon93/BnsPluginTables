@@ -32,8 +32,10 @@ signed char restrict_content_type;
 char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
 int notifycenter_message_tableId() const {return 427;};
+BnsTables::Shared::TableRef unavailability_confirm_text;
+int unavailability_confirm_text_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
 		static __int16 TableId() { return 155; }
 		static __int32 SubType() { return -1; }
 	};

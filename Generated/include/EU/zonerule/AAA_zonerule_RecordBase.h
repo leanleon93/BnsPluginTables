@@ -46,8 +46,9 @@ bool allow_invite_party_in_same_channel_only;
 bool enable_performance_option;
 bool is_world_boss_spawn_zone;
 bool use_default_skill;
+bool apply_membership_benefit;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
 		static __int16 TableId() { return 482; }
 		static __int32 SubType() { return -1; }
 	};

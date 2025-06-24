@@ -87,7 +87,7 @@ BnsTables::Shared::TableRef boss_npc_section[8];
 __int32 boss_npc_section_Size() const {return 8;};
 int boss_npc_section_tableId() const {return 427;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 4); }
 		static __int16 TableId() { return 295; }
 		static __int32 SubType() { return -1; }
 	};

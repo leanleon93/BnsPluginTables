@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct public_raid_public_raid_3_Record : public_raid_Record
 	{
 	public:
-		
+		bool enable_time_limit_field_zone;
+
 		static __int32 SubType() { return 2; }
 	};
 #pragma pack(pop)

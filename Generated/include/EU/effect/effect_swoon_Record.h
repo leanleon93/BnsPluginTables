@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		__int32 heal_hp_diff;
 __int16 heal_hp_percent;
 
-		static __int32 SubType() { return 106; }
+		static __int32 SubType() { return 109; }
 	};
 #pragma pack(pop)
 }

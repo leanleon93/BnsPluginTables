@@ -17,7 +17,8 @@ namespace BnsTables::EU {
 		zonetriggereventcond_record_sub_boss_challenge_timeout_event = 6,
 		zonetriggereventcond_record_sub_boss_challenge_round_score_event = 7,
 		zonetriggereventcond_record_sub_boss_challenge_boss_npc_killed_event = 8,
-		zonetriggereventcond_record_sub_count = 9,
+		zonetriggereventcond_record_sub_random_time_interval_event = 9,
+		zonetriggereventcond_record_sub_count = 10,
     };
 #pragma pack(push, 1)
 	struct zonetriggereventcond_Record : BnsTables::Shared::DrEl
@@ -38,7 +39,7 @@ char Pad0[3];
 BnsTables::Shared::TableRef cond_event_message;
 int cond_event_message_tableId() const {return 156;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
 		static __int16 TableId() { return 485; }
 		static __int32 SubType() { return -1; }
 	};

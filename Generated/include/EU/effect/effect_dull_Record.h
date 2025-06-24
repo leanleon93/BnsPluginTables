@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		__int16 move_speed_percent;
 __int16 cast_speed_percent;
 
-		static __int32 SubType() { return 920; }
+		static __int32 SubType() { return 923; }
 	};
 #pragma pack(pop)
 }

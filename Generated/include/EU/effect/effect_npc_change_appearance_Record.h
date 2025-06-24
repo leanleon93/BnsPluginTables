@@ -14,7 +14,7 @@ int npc_tableId() const {return 270;};
 BnsTables::Shared::TableRef weapon;
 int weapon_tableId() const {return 198;};
 
-		static __int32 SubType() { return 985; }
+		static __int32 SubType() { return 988; }
 	};
 #pragma pack(pop)
 }
