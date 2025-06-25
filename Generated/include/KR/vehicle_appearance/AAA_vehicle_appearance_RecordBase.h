@@ -35,7 +35,7 @@ wchar_t* move_vehicle_idle;
 wchar_t* attach_rider_bone;
 wchar_t* attach_vehicle_socket;
 BnsTables::Shared::TableRef stand_idle;
-int stand_idle_tableId() const {return 401;};
+int stand_idle_tableId() const {return 408;};
 wchar_t* effect_show;
 signed char foot_print_type;
 char Pad0[3];
@@ -43,7 +43,7 @@ float preview_mesh_zoom_out_value;
 float preview_mesh_light_brightness;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 441; }
+		static __int16 TableId() { return 448; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

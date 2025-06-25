@@ -22,20 +22,20 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef one_time_draw_item;
-int one_time_draw_item_tableId() const {return 198;};
+int one_time_draw_item_tableId() const {return 202;};
 __int16 one_time_draw_item_count;
 char Pad0[2];
 BnsTables::Shared::TableRef five_times_draw_item;
-int five_times_draw_item_tableId() const {return 198;};
+int five_times_draw_item_tableId() const {return 202;};
 __int16 five_times_draw_item_count;
 signed char reset_condition;
 signed char reset_price_type;
 BnsTables::Shared::TableRef reset_price_item;
-int reset_price_item_tableId() const {return 198;};
+int reset_price_item_tableId() const {return 202;};
 __int16 reset_price_item_count;
 char Pad1[2];
 BnsTables::Shared::TableRef quota;
-int quota_tableId() const {return 67;};
+int quota_tableId() const {return 69;};
 __int32 reward_grade_prob_weight[10];
 __int32 reward_grade_prob_weight_Size() const {return 10;};
 __int32 reward_grade_total_prob_weight;
@@ -44,17 +44,17 @@ __int32 draw_count_in_grade_Size() const {return 10;};
 __int32 max_draw_count;
 BnsTables::Shared::TableRef treasure_board_reward[59];
 __int32 treasure_board_reward_Size() const {return 59;};
-int treasure_board_reward_tableId() const {return 432;};
+int treasure_board_reward_tableId() const {return 439;};
 __int16 treasure_board_reward_grade[59];
 __int32 treasure_board_reward_grade_Size() const {return 59;};
 char Pad2[2];
 BnsTables::Shared::TableRef treasure_board_name;
-int treasure_board_name_tableId() const {return 427;};
+int treasure_board_name_tableId() const {return 434;};
 wchar_t* treasure_board_symbol_on;
 wchar_t* treasure_board_symbol_off;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 431; }
+		static __int16 TableId() { return 438; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -24,16 +24,16 @@ namespace BnsTables::KR {
 signed char max_repeat;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef map_group_1[2];
 __int32 map_group_1_Size() const {return 2;};
-int map_group_1_tableId() const {return 247;};
+int map_group_1_tableId() const {return 253;};
 BnsTables::Shared::TableRef group2;
-int group2_tableId() const {return 427;};
+int group2_tableId() const {return 434;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 427;};
+int desc_tableId() const {return 434;};
 BnsTables::Shared::TableRef completed_desc;
-int completed_desc_tableId() const {return 427;};
+int completed_desc_tableId() const {return 434;};
 signed char category;
 bool completed_list;
 signed char grade;
@@ -47,13 +47,13 @@ signed char reset_by_acquire_time;
 signed char reset_day_of_week;
 signed char reset_day_of_month;
 BnsTables::Shared::TableRef main_faction;
-int main_faction_tableId() const {return 136;};
+int main_faction_tableId() const {return 139;};
 signed char production;
 signed char save_type;
 bool invoke_fx_msg;
 char Pad1[1];
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId() const {return 114;};
+int dungeon_tableId() const {return 117;};
 signed char dungeon_type;
 signed char content_type;
 bool retired;
@@ -69,14 +69,14 @@ char Pad3[3];
 __int32 reset_money;
 BnsTables::Shared::TableRef reset_item[4];
 __int32 reset_item_Size() const {return 4;};
-int reset_item_tableId() const {return 198;};
+int reset_item_tableId() const {return 202;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef acquire_talksocial;
-int acquire_talksocial_tableId() const {return 421;};
+int acquire_talksocial_tableId() const {return 428;};
 float acquire_talksocial_delay;
 BnsTables::Shared::TableRef complete_talksocial;
-int complete_talksocial_tableId() const {return 421;};
+int complete_talksocial_tableId() const {return 428;};
 float complete_talksocial_delay;
 bool check_vitality;
 char Pad4[1];
@@ -100,7 +100,7 @@ bool cinema_check;
 char Pad5[3];
 __int32 fatigability_consume_amount;
 BnsTables::Shared::TableRef dungeon2;
-int dungeon2_tableId() const {return 114;};
+int dungeon2_tableId() const {return 117;};
 signed char duel_mission_steps[16];
 __int32 duel_mission_steps_Size() const {return 16;};
 signed char duel_missions[16];
@@ -112,10 +112,10 @@ __int32 duel_case_subtypes_Size() const {return 16;};
 signed char exceed_level_next_level;
 char Pad6[3];
 BnsTables::Shared::TableRef contents_reset;
-int contents_reset_tableId() const {return 73;};
+int contents_reset_tableId() const {return 75;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
-		static __int16 TableId() { return 299; }
+		static __int16 TableId() { return 306; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

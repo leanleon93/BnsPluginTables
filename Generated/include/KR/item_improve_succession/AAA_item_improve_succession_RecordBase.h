@@ -21,22 +21,25 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+signed char succession_type;
+char Pad0[2];
 __int32 seed_improve_id;
 signed char seed_improve_level;
-char Pad0[3];
+char Pad1[3];
 __int32 result_improve_id;
 signed char result_improve_level;
-char Pad1[3];
+char Pad2[3];
 __int32 feed_main_improve_id;
 signed char feed_main_improve_level;
-char Pad2[3];
+char Pad3[3];
 BnsTables::Shared::TableRef feed_main_ingredient;
-int feed_main_ingredient_tableId() const {return 198;};
+int feed_main_ingredient_tableId() const {return 202;};
 __int16 feed_main_ingredient_count;
-char Pad3[2];
+char Pad4[2];
 BnsTables::Shared::TableRef feed_sub_ingredient[8];
 __int32 feed_sub_ingredient_Size() const {return 8;};
-int feed_sub_ingredient_tableId() const {return 198;};
+int feed_sub_ingredient_tableId() const {return 202;};
 __int16 feed_sub_ingredient_count[8];
 __int32 feed_sub_ingredient_count_Size() const {return 8;};
 __int32 cost_money;
@@ -44,10 +47,16 @@ signed char feed_succession_option_step[5];
 __int32 feed_succession_option_step_Size() const {return 5;};
 signed char result_succession_option_step[5];
 __int32 result_succession_option_step_Size() const {return 5;};
+signed char seed_succession_option_step[5];
+__int32 seed_succession_option_step_Size() const {return 5;};
 bool keep_main_ingredient_spirit;
+BnsTables::Shared::TableRef result_item_candidate[20];
+__int32 result_item_candidate_Size() const {return 20;};
+int result_item_candidate_tableId() const {return 202;};
+bool keep_seed_ingredient_spirit;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 211; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
+		static __int16 TableId() { return 215; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

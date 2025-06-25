@@ -28,7 +28,7 @@ __int32 default_rating_score;
 bool is_placement_test;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 96; }
+		static __int16 TableId() { return 99; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

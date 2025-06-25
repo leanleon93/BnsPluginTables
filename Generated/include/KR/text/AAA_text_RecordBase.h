@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 BnsTables::Shared::TextRef text;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 427; }
+		static __int16 TableId() { return 434; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

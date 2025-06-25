@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_card[8];
 __int32 collection_card_Size() const {return 8;};
-int collection_card_tableId() const {return 456;};
+int collection_card_tableId() const {return 463;};
 __int16 collection_card_count[8];
 __int32 collection_card_count_Size() const {return 8;};
 __int64 start_time;
@@ -36,11 +36,11 @@ __int32 ability_value_Size() const {return 3;};
 __int32 ability_base_value[3];
 __int32 ability_base_value_Size() const {return 3;};
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 427;};
+int collection_name_tableId() const {return 434;};
 signed char collection_category;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 459; }
+		static __int16 TableId() { return 466; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

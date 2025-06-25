@@ -38,7 +38,7 @@ __int32 skill_stone_1_recommend_score;
 __int32 skill_stone_2_recommend_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 72; }
+		static __int16 TableId() { return 74; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -26,6 +26,8 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char server_type;
+char Pad0[3];
 wchar_t* background_texture;
 wchar_t* background_sub_texture;
 __int16 background_texture_width;
@@ -35,7 +37,7 @@ __int32 slot_index_Size() const {return 120;};
 float slot_offset_x;
 float slot_offset_y;
 __int16 slot_column_count;
-char Pad0[2];
+char Pad1[2];
 float slot_gap_x;
 float slot_gap_y;
 wchar_t* player_unit_imageset;
@@ -69,7 +71,7 @@ wchar_t* goal_icon_back_particle_ref;
 wchar_t* background_particle_ref;
 float background_particle_scale;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 14); }
 		static __int16 TableId() { return 15; }
 		static __int32 SubType() { return -1; }
 	};

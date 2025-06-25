@@ -37,7 +37,7 @@ char Pad2[1];
 wchar_t* sub_level_ref;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 127; }
+		static __int16 TableId() { return 130; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

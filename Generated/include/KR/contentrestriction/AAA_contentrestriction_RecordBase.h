@@ -33,8 +33,8 @@ bool post_receive;
 bool personal_trade;
 bool account_inventory_goods_receive;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 68; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
+		static __int16 TableId() { return 70; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

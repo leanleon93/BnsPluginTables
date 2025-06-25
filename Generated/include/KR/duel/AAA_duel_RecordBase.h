@@ -32,38 +32,38 @@ __int32 round_preparation_duration;
 __int32 round_duration;
 __int32 round_restart_duration;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 471;};
+int zone_tableId() const {return 478;};
 BnsTables::Shared::TableRef arena_outside_alpha_side_pc_spawn[3];
 __int32 arena_outside_alpha_side_pc_spawn_Size() const {return 3;};
-int arena_outside_alpha_side_pc_spawn_tableId() const {return 480;};
+int arena_outside_alpha_side_pc_spawn_tableId() const {return 487;};
 BnsTables::Shared::TableRef arena_outside_beta_side_pc_spawn[3];
 __int32 arena_outside_beta_side_pc_spawn_Size() const {return 3;};
-int arena_outside_beta_side_pc_spawn_tableId() const {return 480;};
+int arena_outside_beta_side_pc_spawn_tableId() const {return 487;};
 BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 115;};
+int effect_tableId() const {return 118;};
 bool is_unrated_match;
 char Pad0[3];
 BnsTables::Shared::TableRef loading_description_1;
-int loading_description_1_tableId() const {return 427;};
+int loading_description_1_tableId() const {return 434;};
 BnsTables::Shared::TableRef loading_description_2;
-int loading_description_2_tableId() const {return 427;};
+int loading_description_2_tableId() const {return 434;};
 BnsTables::Shared::IconRef loading_icon;
 BnsTables::Shared::TableRef boast;
 int boast_tableId() const {return 42;};
 BnsTables::Shared::TableRef attraction_quest[5];
 __int32 attraction_quest_Size() const {return 5;};
-int attraction_quest_tableId() const {return 299;};
+int attraction_quest_tableId() const {return 306;};
 bool ui_filter_attraction_quest_only;
 char Pad1[3];
 BnsTables::Shared::TableRef duel_name2;
-int duel_name2_tableId() const {return 427;};
+int duel_name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef duel_desc;
-int duel_desc_tableId() const {return 427;};
+int duel_desc_tableId() const {return 434;};
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 BnsTables::Shared::TableRef weekly_time_table_for_added_reward[2];
 __int32 weekly_time_table_for_added_reward_Size() const {return 2;};
-int weekly_time_table_for_added_reward_tableId() const {return 453;};
+int weekly_time_table_for_added_reward_tableId() const {return 460;};
 __int32 bonus_point_percent[2];
 __int32 bonus_point_percent_Size() const {return 2;};
 __int32 bonus_exp_percent[2];
@@ -71,15 +71,15 @@ __int32 bonus_exp_percent_Size() const {return 2;};
 signed char camera_world_pos_index;
 char Pad2[3];
 BnsTables::Shared::TableRef disable_calc_rating_score_weekly_time;
-int disable_calc_rating_score_weekly_time_tableId() const {return 453;};
+int disable_calc_rating_score_weekly_time_tableId() const {return 460;};
 BnsTables::Shared::TableRef available_normal_matching_weekly_time;
-int available_normal_matching_weekly_time_tableId() const {return 453;};
+int available_normal_matching_weekly_time_tableId() const {return 460;};
 BnsTables::Shared::TableRef available_ingame_championship_matching_weekly_time;
-int available_ingame_championship_matching_weekly_time_tableId() const {return 453;};
+int available_ingame_championship_matching_weekly_time_tableId() const {return 460;};
 bool is_championship;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 35); }
-		static __int16 TableId() { return 108; }
+		static __int16 TableId() { return 111; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

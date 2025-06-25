@@ -11,8 +11,8 @@ namespace BnsTables::KR {
 	public:
 		signed char min_growing_channel;
 char Pad_sub_0[1];
-__int16 total_duration_minute[2];
-__int32 total_duration_minute_Size() const {return 2;};
+__int16 total_duration_minute[7];
+__int32 total_duration_minute_Size() const {return 7;};
 
 		static __int32 SubType() { return 1; }
 	};

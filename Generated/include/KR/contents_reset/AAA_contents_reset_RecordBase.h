@@ -25,17 +25,17 @@ BnsTables::Shared::ExplicitTableRef reset_target;
 __int32 reset_money;
 BnsTables::Shared::TableRef reset_item[4];
 __int32 reset_item_Size() const {return 4;};
-int reset_item_tableId() const {return 198;};
+int reset_item_tableId() const {return 202;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef quota;
-int quota_tableId() const {return 67;};
+int quota_tableId() const {return 69;};
 signed char max_unbind_count;
 char Pad0[3];
 __int64 quota_recharge_amount;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 73; }
+		static __int16 TableId() { return 75; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

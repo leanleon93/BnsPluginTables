@@ -33,29 +33,29 @@ __int32 variable_skill3_id_Size() const {return 32;};
 signed char variable_skill3_variation_id[32];
 __int32 variable_skill3_variation_id_Size() const {return 32;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 184;};
+int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef trait_symbol;
-int trait_symbol_tableId() const {return 184;};
+int trait_symbol_tableId() const {return 188;};
 __int16 trait_symbol_index;
 char Pad2[2];
 BnsTables::Shared::TableRef tooltip_train_name;
-int tooltip_train_name_tableId() const {return 427;};
+int tooltip_train_name_tableId() const {return 434;};
 BnsTables::Shared::TableRef tooltip_train_description;
-int tooltip_train_description_tableId() const {return 427;};
+int tooltip_train_description_tableId() const {return 434;};
 BnsTables::Shared::TableRef tooltip_effect_description;
-int tooltip_effect_description_tableId() const {return 427;};
+int tooltip_effect_description_tableId() const {return 434;};
 BnsTables::Shared::TableRef tooltip_skill_systematization_group[6];
 __int32 tooltip_skill_systematization_group_Size() const {return 6;};
-int tooltip_skill_systematization_group_tableId() const {return 369;};
+int tooltip_skill_systematization_group_tableId() const {return 376;};
 __int32 tooltip_acquire_skill_list_skill3_id[6];
 __int32 tooltip_acquire_skill_list_skill3_id_Size() const {return 6;};
 BnsTables::Shared::TableRef tooltip_acquire_skill_list_skill3_description[6];
 __int32 tooltip_acquire_skill_list_skill3_description_Size() const {return 6;};
-int tooltip_acquire_skill_list_skill3_description_tableId() const {return 427;};
+int tooltip_acquire_skill_list_skill3_description_tableId() const {return 434;};
 __int32 tooltip_variable_skill_list_skill3_id[6];
 __int32 tooltip_variable_skill_list_skill3_id_Size() const {return 6;};
 signed char tooltip_variable_skill_list_skill3_variation_id[6];
@@ -63,10 +63,10 @@ __int32 tooltip_variable_skill_list_skill3_variation_id_Size() const {return 6;}
 char Pad3[2];
 BnsTables::Shared::TableRef tooltip_variable_skill_list_skill3_description[6];
 __int32 tooltip_variable_skill_list_skill3_description_Size() const {return 6;};
-int tooltip_variable_skill_list_skill3_description_tableId() const {return 427;};
+int tooltip_variable_skill_list_skill3_description_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 382; }
+		static __int16 TableId() { return 389; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

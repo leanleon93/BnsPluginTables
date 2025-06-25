@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		BnsTables::Shared::TableRef env2[8];
 __int32 env2_Size() const {return 8;};
-int env2_tableId() const {return 472;};
+int env2_tableId() const {return 479;};
 signed char env2_state[8];
 __int32 env2_state_Size() const {return 8;};
 

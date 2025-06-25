@@ -25,12 +25,12 @@ signed char stat_point_job;
 		__int16 required_stat_point;
 char Pad0[2];
 BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 115;};
+int effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 427;};
+int description_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 262; }
+		static __int16 TableId() { return 268; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

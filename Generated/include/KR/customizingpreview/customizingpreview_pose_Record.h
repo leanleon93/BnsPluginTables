@@ -12,7 +12,7 @@ namespace BnsTables::KR {
 		wchar_t* pose_showname;
 __int32 pose_show_duration;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 184;};
+int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
 
 		static __int32 SubType() { return 0; }

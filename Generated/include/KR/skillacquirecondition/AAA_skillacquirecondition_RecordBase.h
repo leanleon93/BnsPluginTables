@@ -26,15 +26,15 @@ signed char variation_level;
 signed char pc_job;
 char Pad0[2];
 BnsTables::Shared::TableRef training_name;
-int training_name_tableId() const {return 427;};
+int training_name_tableId() const {return 434;};
 BnsTables::Shared::IconRef training_icon;
 BnsTables::Shared::TableRef main_info;
-int main_info_tableId() const {return 427;};
+int main_info_tableId() const {return 434;};
 BnsTables::Shared::TableRef sub_info;
-int sub_info_tableId() const {return 427;};
+int sub_info_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
-		static __int16 TableId() { return 343; }
+		static __int16 TableId() { return 350; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

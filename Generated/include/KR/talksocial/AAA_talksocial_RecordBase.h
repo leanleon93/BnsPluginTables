@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 bool use_at_dead;
 bool use_at_exhaustion;
 bool use_at_restoration;
@@ -36,9 +36,9 @@ signed char use_job;
 bool use_at_equip_accessory;
 char Pad0[1];
 BnsTables::Shared::TableRef msg;
-int msg_tableId() const {return 156;};
+int msg_tableId() const {return 159;};
 BnsTables::Shared::TableRef msg_target;
-int msg_target_tableId() const {return 156;};
+int msg_target_tableId() const {return 159;};
 bool can_move;
 bool can_sit;
 char Pad1[2];
@@ -61,7 +61,7 @@ __int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 421; }
+		static __int16 TableId() { return 428; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

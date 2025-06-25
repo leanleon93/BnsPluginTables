@@ -12,7 +12,7 @@ namespace BnsTables::KR {
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef effect[4];
 __int32 effect_Size() const {return 4;};
-int effect_tableId() const {return 115;};
+int effect_tableId() const {return 118;};
 
 		static __int32 SubType() { return 10; }
 	};

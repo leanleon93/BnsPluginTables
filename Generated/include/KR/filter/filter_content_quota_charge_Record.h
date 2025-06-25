@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef content_quota;
-int content_quota_tableId() const {return 67;};
+int content_quota_tableId() const {return 69;};
 signed char op;
 char Pad_sub_0[3];
 __int64 charge_value;

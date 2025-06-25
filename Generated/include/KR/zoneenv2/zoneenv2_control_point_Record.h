@@ -11,9 +11,9 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef manipulation_required_field_item;
-int manipulation_required_field_item_tableId() const {return 143;};
+int manipulation_required_field_item_tableId() const {return 146;};
 BnsTables::Shared::TableRef manipulation_drop_field_item;
-int manipulation_drop_field_item_tableId() const {return 144;};
+int manipulation_drop_field_item_tableId() const {return 147;};
 __int16 occupation_zone_score;
 __int16 occupation_bonus_zone_score_per_sec;
 wchar_t* friend_occupation_additive_effect;

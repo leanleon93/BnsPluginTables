@@ -22,17 +22,17 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId() const {return 114;};
+int dungeon_tableId() const {return 117;};
 signed char sealed_level;
 char Pad0[3];
 BnsTables::Shared::TableRef reward_item[5];
 __int32 reward_item_Size() const {return 5;};
-int reward_item_tableId() const {return 198;};
+int reward_item_tableId() const {return 202;};
 __int16 reward_item_count[5];
 __int32 reward_item_count_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 336; }
+		static __int16 TableId() { return 343; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

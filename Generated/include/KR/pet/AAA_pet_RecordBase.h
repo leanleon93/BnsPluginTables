@@ -35,9 +35,11 @@ wchar_t* spawn_show;
 wchar_t* effect_show;
 wchar_t* despawn_show;
 wchar_t* food_show;
+wchar_t* soul_gem_skill_cast_show;
+wchar_t* soul_gem_skill_finish_show;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 290; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
+		static __int16 TableId() { return 297; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

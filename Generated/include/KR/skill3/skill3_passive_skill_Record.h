@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		BnsTables::Shared::TableRef passive_effect[8];
 __int32 passive_effect_Size() const {return 8;};
-int passive_effect_tableId() const {return 115;};
+int passive_effect_tableId() const {return 118;};
 signed char summoned_job;
 bool summoned_use_only;
 

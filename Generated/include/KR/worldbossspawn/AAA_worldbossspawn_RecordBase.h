@@ -22,19 +22,19 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 270;};
+int npc_tableId() const {return 276;};
 BnsTables::Shared::TableRef reward;
-int reward_tableId() const {return 462;};
+int reward_tableId() const {return 469;};
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 423;};
+int teleport_tableId() const {return 430;};
 signed char recommand_level;
 char Pad0[3];
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 427;};
+int description_tableId() const {return 434;};
 wchar_t* symbol_imageset;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 3); }
-		static __int16 TableId() { return 463; }
+		static __int16 TableId() { return 470; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

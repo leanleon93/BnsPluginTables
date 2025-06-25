@@ -22,26 +22,26 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 471;};
+int zone_tableId() const {return 478;};
 __int32 play_time;
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId() const {return 295;};
+int public_raid_tableId() const {return 302;};
 BnsTables::Shared::TableRef reward[4];
 __int32 reward_Size() const {return 4;};
-int reward_tableId() const {return 183;};
+int reward_tableId() const {return 187;};
 __int32 reward_time[4];
 __int32 reward_time_Size() const {return 4;};
 BnsTables::Shared::TableRef finish_reward;
-int finish_reward_tableId() const {return 183;};
+int finish_reward_tableId() const {return 187;};
 BnsTables::Shared::TableRef timeout_reward;
-int timeout_reward_tableId() const {return 183;};
+int timeout_reward_tableId() const {return 187;};
 BnsTables::Shared::TableRef goal_foot_switch;
-int goal_foot_switch_tableId() const {return 474;};
+int goal_foot_switch_tableId() const {return 481;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 182; }
+		static __int16 TableId() { return 186; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -32,7 +32,7 @@ float scale_y;
 float scale_z;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 55); }
-		static __int16 TableId() { return 465; }
+		static __int16 TableId() { return 472; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

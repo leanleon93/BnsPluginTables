@@ -27,7 +27,7 @@ bool initial_value[5];
 __int32 initial_value_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 175; }
+		static __int16 TableId() { return 179; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

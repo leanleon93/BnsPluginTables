@@ -20,12 +20,13 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int64 interval;
+		signed char price_type;
+char Pad0[3];
+__int64 interval;
 __int32 tax_rate;
-__int32 membership_tax_rate;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 256; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static __int16 TableId() { return 262; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

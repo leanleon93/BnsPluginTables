@@ -21,6 +21,8 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 BnsTables::Shared::ExplicitTableRef reward_item_common[24];
 __int32 reward_item_common_Size() const {return 24;};
 signed char reward_item_common_category[24];
@@ -83,12 +85,12 @@ signed char bonus_reward_item_hard_condition_type[24];
 __int32 bonus_reward_item_hard_condition_type_Size() const {return 24;};
 signed char bonus_reward_difficulty_type[3];
 __int32 bonus_reward_difficulty_type_Size() const {return 3;};
-char Pad0[1];
+char Pad1[1];
 BnsTables::Shared::TableRef bonus_reward_quota[3];
 __int32 bonus_reward_quota_Size() const {return 3;};
-int bonus_reward_quota_tableId() const {return 67;};
+int bonus_reward_quota_tableId() const {return 69;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 9); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 18; }
 		static __int32 SubType() { return -1; }
 	};

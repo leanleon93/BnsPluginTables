@@ -25,7 +25,7 @@ char Pad0[3];
 __int32 slot;
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 342;};
+int skill3_tableId() const {return 349;};
 wchar_t* ui_action_alias[40];
 __int32 ui_action_alias_Size() const {return 40;};
 signed char ui_view_type;
@@ -39,7 +39,7 @@ __int32 condition_check_flag_Size() const {return 4;};
 signed char condition_check_flag_op;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
-		static __int16 TableId() { return 113; }
+		static __int16 TableId() { return 116; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

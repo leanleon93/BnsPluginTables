@@ -10,15 +10,15 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef weapon_brand;
-int weapon_brand_tableId() const {return 191;};
+int weapon_brand_tableId() const {return 195;};
 signed char weapon_grade;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef weapon_gem[8];
 __int32 weapon_gem_Size() const {return 8;};
-int weapon_gem_tableId() const {return 198;};
+int weapon_gem_tableId() const {return 202;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 427;};
+int slot_name_tableId() const {return 434;};
 
 		static __int32 SubType() { return 38; }
 	};

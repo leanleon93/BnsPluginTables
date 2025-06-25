@@ -30,10 +30,10 @@ namespace BnsTables::KR {
 __int16 mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef quest;
-int quest_tableId() const {return 299;};
+int quest_tableId() const {return 306;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 383; }
+		static __int16 TableId() { return 390; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

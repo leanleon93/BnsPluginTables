@@ -29,7 +29,7 @@ __int32 skill_2[12];
 __int32 skill_2_Size() const {return 12;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 128; }
+		static __int16 TableId() { return 131; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

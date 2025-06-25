@@ -12,11 +12,11 @@ namespace BnsTables::KR {
 		signed char max_wave;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef entrance_quota;
-int entrance_quota_tableId() const {return 67;};
+int entrance_quota_tableId() const {return 69;};
 __int16 reward_box_data_id;
 __int16 reward_data_id;
 BnsTables::Shared::TableRef contents_reset;
-int contents_reset_tableId() const {return 73;};
+int contents_reset_tableId() const {return 75;};
 
 		static __int32 SubType() { return 3; }
 	};

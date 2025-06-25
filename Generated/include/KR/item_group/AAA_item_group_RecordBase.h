@@ -23,11 +23,11 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef member_item[50];
 __int32 member_item_Size() const {return 50;};
-int member_item_tableId() const {return 198;};
+int member_item_tableId() const {return 202;};
 signed char member_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 205; }
+		static __int16 TableId() { return 209; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
