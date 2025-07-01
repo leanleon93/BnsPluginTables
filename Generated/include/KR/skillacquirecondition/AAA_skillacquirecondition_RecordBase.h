@@ -33,7 +33,7 @@ int main_info_tableId() const {return 434;};
 BnsTables::Shared::TableRef sub_info;
 int sub_info_tableId() const {return 434;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 350; }
 		static __int32 SubType() { return -1; }
 	};

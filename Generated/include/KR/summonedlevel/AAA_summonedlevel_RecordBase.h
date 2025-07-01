@@ -165,7 +165,7 @@ char Pad8[2];
 __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 420; }
 		static __int32 SubType() { return -1; }
 	};

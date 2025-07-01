@@ -32,7 +32,7 @@ char Pad0[2];
 BnsTables::Shared::TableRef quest;
 int quest_tableId() const {return 306;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 390; }
 		static __int32 SubType() { return -1; }
 	};

@@ -3,8 +3,39 @@
 */
 #pragma once
 #include <variant>
+#include <concepts>
+#include <type_traits>
 
 namespace BnsTables::Shared {
+	template <typename T>
+	concept HasStaticSubType = requires {
+		{ T::SubType() } -> std::convertible_to<__int32>;
+	};
+	template <typename T>
+	concept HasStaticTableId = requires {
+		{ T::TableId() } -> std::convertible_to<__int16>;
+	};
+	template <typename T>
+	concept HasAllStaticSubTableConcepts = HasStaticSubType<T> && HasStaticTableId<T>;
+
+	template <typename T>
+	concept HasTableId = requires(T t) {
+		{ t.TableId() } -> std::same_as<__int16>;
+	};
+
+	template <typename T>
+	concept HasSubType = requires(T t) {
+		{ t.SubType() } -> std::same_as<__int32>;
+	};
+
+	template <typename T>
+	concept HasIsNull = requires(T t) {
+		{ t.IsNull() } -> std::same_as<bool>;
+	};
+
+	template <typename T>
+	concept HasAllCommonRecordConcepts = HasTableId<T> && HasSubType<T> && HasIsNull<T>;
+
 	#pragma pack(push, 1)
 	const struct ExplicitTableRef {__int32 TableId; __int64 Key; };
 const struct IconRef {__int64 IcontextureId; __int32 IconIndex; };
