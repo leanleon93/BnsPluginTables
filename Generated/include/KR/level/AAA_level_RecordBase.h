@@ -60,7 +60,7 @@ signed char exceed_level_next_level;
 char Pad1[1];
 __int16 teleport_price_level_weight;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 247; }
 		static __int32 SubType() { return -1; }
 	};
