@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_embers_Record : effect_Record
 	{
 	public:
-		__int16 additional_power_percent;
+		char Pad_sub_0[3];
+__int16 additional_power_percent;
 
 		static __int32 SubType() { return 126; }
 	};

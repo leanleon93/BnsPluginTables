@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_bleeding_Record : effect_Record
 	{
 	public:
-		__int64 hp_diff;
+		char Pad_sub_0[3];
+__int64 hp_diff;
 __int32 bleeding_max_hp_percent;
 
 		static __int32 SubType() { return 66; }

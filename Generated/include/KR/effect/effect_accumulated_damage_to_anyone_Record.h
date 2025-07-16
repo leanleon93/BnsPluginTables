@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_accumulated_damage_to_anyone_Record : effect_Record
 	{
 	public:
-		__int64 max_accumulate_damage;
+		char Pad_sub_0[3];
+__int64 max_accumulate_damage;
 
 		static __int32 SubType() { return 1; }
 	};

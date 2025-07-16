@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_buff_max_hp_Record : effect_Record
 	{
 	public:
-		__int32 max_hp_diff;
+		char Pad_sub_0[3];
+__int32 max_hp_diff;
 __int16 buff_max_hp_percent;
 
 		static __int32 SubType() { return 67; }

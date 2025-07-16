@@ -31,7 +31,7 @@ int description_tableId() const {return 434;};
 BnsTables::Shared::IconRef icon;
 wchar_t* icon_image_set;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
 		static __int16 TableId() { return 269; }
 		static __int32 SubType() { return -1; }
 	};

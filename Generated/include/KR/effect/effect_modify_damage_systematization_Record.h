@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_modify_damage_systematization_Record : effect_Record
 	{
 	public:
-		BnsTables::Shared::TableRef systematization;
+		char Pad_sub_0[3];
+BnsTables::Shared::TableRef systematization;
 int systematization_tableId() const {return 374;};
 __int16 damage_rate;
 

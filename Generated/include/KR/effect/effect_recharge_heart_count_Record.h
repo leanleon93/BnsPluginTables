@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_recharge_heart_count_Record : effect_Record
 	{
 	public:
-		signed char instant_heart_count;
+		char Pad_sub_0[3];
+signed char instant_heart_count;
 signed char heart_count;
 
 		static __int32 SubType() { return 949; }

@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_vital_attacked_Record : effect_Record
 	{
 	public:
-		__int16 ability_percent;
+		char Pad_sub_0[3];
+__int16 ability_percent;
 
 		static __int32 SubType() { return 122; }
 	};

@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_time_bomb_Record : effect_Record
 	{
 	public:
-		__int16 dispel_attribute[4];
+		char Pad_sub_0[3];
+__int16 dispel_attribute[4];
 __int32 dispel_attribute_Size() const {return 4;};
 __int64 dispel_attribute_value;
 __int64 dispel_attribute_value_2;

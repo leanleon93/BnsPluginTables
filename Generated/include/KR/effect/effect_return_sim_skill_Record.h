@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_return_sim_skill_Record : effect_Record
 	{
 	public:
-		BnsTables::Shared::TableRef skill;
+		char Pad_sub_0[3];
+BnsTables::Shared::TableRef skill;
 int skill_tableId() const {return 362;};
 BnsTables::Shared::TableRef skill3;
 int skill3_tableId() const {return 349;};
