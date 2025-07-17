@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 int name2_tableId() const {return 427;};
 wchar_t* icon;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 61); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 60); }
 		static __int16 TableId() { return 435; }
 		static __int32 SubType() { return -1; }
 	};

@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_extend_link_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-__int32 extend_duration;
+		__int32 extend_duration;
 
 		static __int32 SubType() { return 40; }
 	};

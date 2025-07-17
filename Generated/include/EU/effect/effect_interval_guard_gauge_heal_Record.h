@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		__int32 guard_gauge_diff;
 __int16 guard_gauge_percent;
 
-		static __int32 SubType() { return 101; }
+		static __int32 SubType() { return 98; }
 	};
 #pragma pack(pop)
 }

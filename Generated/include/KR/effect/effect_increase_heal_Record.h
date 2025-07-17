@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_increase_heal_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-__int16 additional_heal_percent;
+		__int16 additional_heal_percent;
 __int16 additional_heal_diff;
 
 		static __int32 SubType() { return 117; }

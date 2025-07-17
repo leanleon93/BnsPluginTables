@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		
-		static __int32 SubType() { return 822; }
+		static __int32 SubType() { return 819; }
 	};
 #pragma pack(pop)
 }

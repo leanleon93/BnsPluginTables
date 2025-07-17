@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_transit_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-__int32 zone_id;
+		__int32 zone_id;
 signed char pc_spawn;
 
 		static __int32 SubType() { return 47; }

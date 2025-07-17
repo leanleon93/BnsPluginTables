@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_set_recycle_time_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-signed char recycle_group[2];
+		signed char recycle_group[2];
 __int32 recycle_group_Size() const {return 2;};
 signed char recycle_group_id[2];
 __int32 recycle_group_id_Size() const {return 2;};

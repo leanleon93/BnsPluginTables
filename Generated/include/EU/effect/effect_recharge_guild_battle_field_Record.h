@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int32 enable_duration;
 
-		static __int32 SubType() { return 951; }
+		static __int32 SubType() { return 948; }
 	};
 #pragma pack(pop)
 }

@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_immune_attribute_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-__int16 immune_attribute[4];
+		__int16 immune_attribute[4];
 __int32 immune_attribute_Size() const {return 4;};
 __int64 immune_attribute_value;
 __int64 immune_attribute_value_2;

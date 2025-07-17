@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int16 speed_percent;
 
-		static __int32 SubType() { return 102; }
+		static __int32 SubType() { return 99; }
 	};
 #pragma pack(pop)
 }

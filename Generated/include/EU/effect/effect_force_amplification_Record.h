@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int16 ability_percent;
 
-		static __int32 SubType() { return 118; }
+		static __int32 SubType() { return 115; }
 	};
 #pragma pack(pop)
 }

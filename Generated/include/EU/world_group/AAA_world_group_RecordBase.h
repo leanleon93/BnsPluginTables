@@ -25,9 +25,8 @@ __int16 world[10];
 __int32 world_Size() const {return 10;};
 BnsTables::Shared::TableRef lobby_desc;
 int lobby_desc_tableId() const {return 427;};
-bool steam;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 464; }
 		static __int32 SubType() { return -1; }
 	};

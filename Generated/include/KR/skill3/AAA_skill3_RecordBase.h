@@ -135,7 +135,7 @@ int skill_style_tableId() const {return 373;};
 BnsTables::Shared::TableRef skill_arcane_info;
 int skill_arcane_info_tableId() const {return 351;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 9); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 10); }
 		static __int16 TableId() { return 349; }
 		static __int32 SubType() { return -1; }
 	};

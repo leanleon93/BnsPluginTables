@@ -1201,9 +1201,8 @@ BnsTables::Shared::TableRef attach_notify_message;
 int attach_notify_message_tableId() const {return 159;};
 BnsTables::Shared::TableRef description_item_random_option;
 int description_item_random_option_tableId() const {return 434;};
-bool block_reattach_when_encounter_sync_player;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(45, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(45, 1); }
 		static __int16 TableId() { return 118; }
 		static __int32 SubType() { return -1; }
 	};

@@ -15,7 +15,7 @@ __int64 dispel_attribute_value;
 __int64 dispel_attribute_value_2;
 __int64 dispel_attribute_value_3;
 
-		static __int32 SubType() { return 943; }
+		static __int32 SubType() { return 940; }
 	};
 #pragma pack(pop)
 }

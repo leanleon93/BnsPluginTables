@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_soul_mask_1_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-signed char soul_mask_id;
+		signed char soul_mask_id;
 
 		static __int32 SubType() { return 986; }
 	};

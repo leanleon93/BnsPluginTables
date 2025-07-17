@@ -44,7 +44,6 @@ bool can_sit;
 char Pad1[2];
 __int32 duration;
 wchar_t* show;
-wchar_t* show_simple;
 wchar_t* kun_show;
 wchar_t* gon_male_show;
 wchar_t* gon_female_show;
@@ -60,7 +59,7 @@ wchar_t* summoned_show[3];
 __int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 421; }
 		static __int32 SubType() { return -1; }
 	};

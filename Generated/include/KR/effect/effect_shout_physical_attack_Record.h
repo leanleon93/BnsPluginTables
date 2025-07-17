@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_shout_physical_attack_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-__int16 shout_power_percent;
+		__int16 shout_power_percent;
 
 		static __int32 SubType() { return 34; }
 	};

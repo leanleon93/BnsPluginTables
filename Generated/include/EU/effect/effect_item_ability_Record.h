@@ -138,7 +138,7 @@ __int16 r_support_power_equip_value;
 __int16 r_hypermove_power_equip_value;
 __int16 defend_difficulty_type_damage_reduce_percent;
 
-		static __int32 SubType() { return 964; }
+		static __int32 SubType() { return 961; }
 	};
 #pragma pack(pop)
 }

@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		signed char instant_heart_count;
 signed char heart_count;
 
-		static __int32 SubType() { return 949; }
+		static __int32 SubType() { return 946; }
 	};
 #pragma pack(pop)
 }

@@ -538,7 +538,7 @@ BnsTables::Shared::TableRef randomoption_reset_cost_group;
 int randomoption_reset_cost_group_tableId() const {return 79;};
 bool recommend_in_item_growth;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(64, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(65, 0); }
 		static __int16 TableId() { return 202; }
 		static __int32 SubType() { return -1; }
 	};

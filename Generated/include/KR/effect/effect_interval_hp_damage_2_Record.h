@@ -9,8 +9,7 @@ namespace BnsTables::KR {
 	struct effect_interval_hp_damage_2_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
-__int64 hp_diff;
+		__int64 hp_diff;
 __int16 hp_percent;
 
 		static __int32 SubType() { return 87; }
