@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 478;};
+int zone_tableId() const {return 479;};
 BnsTables::Shared::TableRef public_raid;
 int public_raid_tableId() const {return 302;};
 signed char required_level;
@@ -39,7 +39,7 @@ BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 __int32 waiting_time_before_move;
 BnsTables::Shared::TableRef enter_pc_spawn;
-int enter_pc_spawn_tableId() const {return 487;};
+int enter_pc_spawn_tableId() const {return 488;};
 BnsTables::Shared::TableRef extra_skill_context_script;
 int extra_skill_context_script_tableId() const {return 77;};
 bool enable_infinite_hyper_energy;

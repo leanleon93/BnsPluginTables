@@ -148,7 +148,7 @@ int action_name_tableId() const {return 434;};
 BnsTables::Shared::TableRef action_desc;
 int action_desc_tableId() const {return 434;};
 BnsTables::Shared::TableRef manipulate_transit_zone;
-int manipulate_transit_zone_tableId() const {return 478;};
+int manipulate_transit_zone_tableId() const {return 479;};
 signed char forwarding_types[120];
 __int32 forwarding_types_Size() const {return 120;};
 BnsTables::Shared::TableRef quests[120];

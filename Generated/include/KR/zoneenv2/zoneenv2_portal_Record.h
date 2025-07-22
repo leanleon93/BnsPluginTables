@@ -13,14 +13,14 @@ namespace BnsTables::KR {
 signed char portal_type;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef transit_zone;
-int transit_zone_tableId() const {return 478;};
+int transit_zone_tableId() const {return 479;};
 BnsTables::Shared::TableRef transit_dungeon;
 int transit_dungeon_tableId() const {return 117;};
 bool transit_reentrance_pcspawn;
 char Pad_sub_2[1];
 __int16 transit_pc_spawn;
 BnsTables::Shared::TableRef transit_pc_spawn_in_arena;
-int transit_pc_spawn_in_arena_tableId() const {return 487;};
+int transit_pc_spawn_in_arena_tableId() const {return 488;};
 BnsTables::Shared::TableRef transit_leave_cinematic;
 int transit_leave_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef transit_enter_cinematic;

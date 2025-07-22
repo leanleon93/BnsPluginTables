@@ -27,10 +27,10 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_zone;
-int main_zone_tableId() const {return 478;};
+int main_zone_tableId() const {return 479;};
 BnsTables::Shared::TableRef sub_zone[7];
 __int32 sub_zone_Size() const {return 7;};
-int sub_zone_tableId() const {return 478;};
+int sub_zone_tableId() const {return 479;};
 bool enable_change_channel;
 signed char required_level;
 signed char required_mastery_level;

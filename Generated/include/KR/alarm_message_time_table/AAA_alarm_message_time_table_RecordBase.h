@@ -53,7 +53,7 @@ int hud_icon_tooltip_desc_tableId() const {return 434;};
 wchar_t* hud_icon_normal;
 wchar_t* hud_icon_activated;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
 		static __int16 TableId() { return 10; }
 		static __int32 SubType() { return -1; }
 	};

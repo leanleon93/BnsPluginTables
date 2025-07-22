@@ -8,33 +8,29 @@
 namespace BnsTables::KR {
 
 #pragma pack(push, 1)
-	struct zonecampfire_Record : BnsTables::Shared::DrEl
+	struct worldbossspawngroup_Record : BnsTables::Shared::DrEl
 	{
 	public:
 		union Key
 		{
             struct {
-                __int32 zone;
-__int16 id;
+                __int32 id;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
-BnsTables::Shared::TableRef campfire;
-int campfire_tableId() const {return 47;};
-BnsTables::Shared::XYZ position;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 475; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 471; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)
-	struct __declspec(align(4)) zonecampfire_RecordPtr // : DrRecordPtr
+	struct __declspec(align(4)) worldbossspawngroup_RecordPtr // : DrRecordPtr
 	{
-		zonecampfire_Record* _record;
+		worldbossspawngroup_Record* _record;
 		int _cacheChunkIndex;
 		bool _makeCopy;
 	};

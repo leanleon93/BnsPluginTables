@@ -207,7 +207,7 @@ bool force_show_nameplate;
 bool need_to_show_probability;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 479; }
+		static __int16 TableId() { return 480; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

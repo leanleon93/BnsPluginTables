@@ -33,7 +33,7 @@ BnsTables::Shared::TableRef description;
 int description_tableId() const {return 434;};
 wchar_t* symbol_imageset;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 4); }
 		static __int16 TableId() { return 470; }
 		static __int32 SubType() { return -1; }
 	};

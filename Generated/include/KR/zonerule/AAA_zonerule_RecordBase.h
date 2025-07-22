@@ -49,7 +49,7 @@ bool use_default_skill;
 bool apply_membership_benefit;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 1); }
-		static __int16 TableId() { return 489; }
+		static __int16 TableId() { return 490; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

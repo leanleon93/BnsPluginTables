@@ -13,7 +13,7 @@ namespace BnsTables::KR {
 signed char airdash_level;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef transit_zone;
-int transit_zone_tableId() const {return 478;};
+int transit_zone_tableId() const {return 479;};
 __int16 transit_pc_spawn;
 char Pad_sub_2[2];
 BnsTables::Shared::TableRef transit_leave_social;

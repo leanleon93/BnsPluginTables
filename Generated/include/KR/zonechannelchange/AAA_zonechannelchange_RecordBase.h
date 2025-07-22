@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		__int32 price;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 476; }
+		static __int16 TableId() { return 477; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

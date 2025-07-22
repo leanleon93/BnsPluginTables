@@ -37,8 +37,10 @@ wchar_t* despawn_show;
 wchar_t* food_show;
 wchar_t* soul_gem_skill_cast_show;
 wchar_t* soul_gem_skill_finish_show;
+__int32 soul_gem_skill_id[30];
+__int32 soul_gem_skill_id_Size() const {return 30;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
 		static __int16 TableId() { return 297; }
 		static __int32 SubType() { return -1; }
 	};

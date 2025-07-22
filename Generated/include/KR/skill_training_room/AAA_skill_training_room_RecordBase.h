@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 478;};
+int zone_tableId() const {return 479;};
 signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];

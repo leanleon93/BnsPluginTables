@@ -356,6 +356,7 @@ __int32 override_group_Size() const {return 5;};
 __int32 override_group_bit_flags;
 bool force_hit_show_play;
 bool base_skill;
+bool hide_other_effect_show;
 
 		static __int32 SubType() { return 0; }
 	};

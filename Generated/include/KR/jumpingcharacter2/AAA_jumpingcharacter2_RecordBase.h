@@ -30,7 +30,7 @@ BnsTables::Shared::TableRef quest_to_complete[20];
 __int32 quest_to_complete_Size() const {return 20;};
 int quest_to_complete_tableId() const {return 306;};
 BnsTables::Shared::TableRef warp_to_pcspawn;
-int warp_to_pcspawn_tableId() const {return 487;};
+int warp_to_pcspawn_tableId() const {return 488;};
 BnsTables::Shared::TableRef faction1_item;
 int faction1_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef faction2_item;

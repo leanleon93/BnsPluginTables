@@ -32,7 +32,7 @@ wchar_t* description;
 __int16 sync;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 52); }
-		static __int16 TableId() { return 486; }
+		static __int16 TableId() { return 487; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

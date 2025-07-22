@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone[2];
 __int32 zone_Size() const {return 2;};
-int zone_tableId() const {return 478;};
+int zone_tableId() const {return 479;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef attraction_quest[5];
