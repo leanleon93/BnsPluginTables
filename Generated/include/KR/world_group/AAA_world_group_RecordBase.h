@@ -30,7 +30,7 @@ signed char contents_type;
 char Pad0[2];
 wchar_t* data_publisher_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 4); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 6); }
 		static __int16 TableId() { return 472; }
 		static __int32 SubType() { return -1; }
 	};

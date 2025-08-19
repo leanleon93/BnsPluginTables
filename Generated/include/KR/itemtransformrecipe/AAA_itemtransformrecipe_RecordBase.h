@@ -136,8 +136,9 @@ char Pad10[1];
 __int32 recipe_score;
 signed char recipe_series;
 signed char definite_discount_minimum_value;
+__int16 sort_no;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 4); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 5); }
 		static __int16 TableId() { return 226; }
 		static __int32 SubType() { return -1; }
 	};

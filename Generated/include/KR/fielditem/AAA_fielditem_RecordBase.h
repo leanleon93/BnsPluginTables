@@ -129,7 +129,7 @@ wchar_t* gadget_consume_showdata;
 wchar_t* gadget_consume_in_hand_showdata;
 bool ghost_mode;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 146; }
 		static __int32 SubType() { return -1; }
 	};
