@@ -24,7 +24,7 @@ __int16 round;
 		wchar_t* alias;
 BnsTables::Shared::TableRef spawn_effect[2];
 __int32 spawn_effect_Size() const {return 2;};
-int spawn_effect_tableId() const {return 115;};
+int spawn_effect_tableId() const {return 118;};
 __int32 boss_spawn_delay;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }

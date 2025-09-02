@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 signed char apperance_type;
 char Pad0[3];
 BnsTables::Shared::TableRef item_alias;
-int item_alias_tableId() const {return 198;};
+int item_alias_tableId() const {return 202;};
 __int32 set_score[14];
 __int32 set_score_Size() const {return 14;};
 wchar_t* apperance_begin_show[14];

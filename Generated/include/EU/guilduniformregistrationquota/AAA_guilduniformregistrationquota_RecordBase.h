@@ -21,11 +21,11 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef payment_item;
-int payment_item_tableId() const {return 198;};
+int payment_item_tableId() const {return 202;};
 __int32 payment_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 180; }
+		static __int16 TableId() { return 184; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -22,17 +22,17 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef group_item;
-int group_item_tableId() const {return 198;};
+int group_item_tableId() const {return 202;};
 signed char craft_union_type;
 signed char craft_union_sub_type;
 __int16 display_index;
 __int16 required_craft_exp;
 char Pad0[2];
 BnsTables::Shared::TableRef required_completion_quest;
-int required_completion_quest_tableId() const {return 299;};
+int required_completion_quest_tableId() const {return 306;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 81; }
+		static __int16 TableId() { return 83; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

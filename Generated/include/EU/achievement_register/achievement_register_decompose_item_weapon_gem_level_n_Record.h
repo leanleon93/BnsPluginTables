@@ -10,14 +10,14 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef weapon_gem_brand;
-int weapon_gem_brand_tableId() const {return 191;};
+int weapon_gem_brand_tableId() const {return 195;};
 signed char weapon_gem_grade;
 signed char weapon_gem_level[8];
 __int32 weapon_gem_level_Size() const {return 8;};
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 427;};
+int slot_name_tableId() const {return 434;};
 
 		static __int32 SubType() { return 36; }
 	};

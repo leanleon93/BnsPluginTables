@@ -22,35 +22,35 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 427;};
+int description_tableId() const {return 434;};
 BnsTables::Shared::TableRef noti_quest_id;
-int noti_quest_id_tableId() const {return 299;};
+int noti_quest_id_tableId() const {return 306;};
 signed char noti_level;
 signed char noti_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef cave;
 int cave_tableId() const {return 49;};
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId() const {return 114;};
+int dungeon_tableId() const {return 117;};
 BnsTables::Shared::TableRef raid_dungeon;
-int raid_dungeon_tableId() const {return 308;};
+int raid_dungeon_tableId() const {return 315;};
 BnsTables::Shared::TableRef boss_challenge;
 int boss_challenge_tableId() const {return 44;};
 BnsTables::Shared::TableRef duel_bot_challenge;
-int duel_bot_challenge_tableId() const {return 102;};
+int duel_bot_challenge_tableId() const {return 105;};
 BnsTables::Shared::TableRef duel_bot_training_room;
-int duel_bot_training_room_tableId() const {return 105;};
+int duel_bot_training_room_tableId() const {return 108;};
 BnsTables::Shared::TableRef tendency_field;
-int tendency_field_tableId() const {return 425;};
+int tendency_field_tableId() const {return 432;};
 bool event;
 char Pad1[3];
 BnsTables::Shared::TableRef simple_field;
-int simple_field_tableId() const {return 341;};
+int simple_field_tableId() const {return 348;};
 BnsTables::Shared::TableRef classic_field_zone;
 int classic_field_zone_tableId() const {return 58;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 70; }
+		static __int16 TableId() { return 72; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

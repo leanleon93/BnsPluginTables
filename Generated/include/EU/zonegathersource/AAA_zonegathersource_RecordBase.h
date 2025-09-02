@@ -24,10 +24,10 @@ __int16 id;
 		wchar_t* alias;
 BnsTables::Shared::XYZ pos;
 BnsTables::Shared::TableRef gather_source;
-int gather_source_tableId() const {return 157;};
+int gather_source_tableId() const {return 160;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 478; }
+		static __int16 TableId() { return 486; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

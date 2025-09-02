@@ -26,7 +26,7 @@ char Pad0[1];
 __int16 value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 123; }
+		static __int16 TableId() { return 126; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -24,19 +24,19 @@ namespace BnsTables::EU {
 signed char required_master_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_acquired_and_complete_quest;
-int required_acquired_and_complete_quest_tableId() const {return 299;};
+int required_acquired_and_complete_quest_tableId() const {return 306;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 299;};
+int required_complete_quest_tableId() const {return 306;};
 signed char restrict_gameoption_display_type;
 signed char restrict_content_type;
 char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
-int notifycenter_message_tableId() const {return 427;};
+int notifycenter_message_tableId() const {return 434;};
 BnsTables::Shared::TableRef unavailability_confirm_text;
-int unavailability_confirm_text_tableId() const {return 427;};
+int unavailability_confirm_text_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
-		static __int16 TableId() { return 155; }
+		static __int16 TableId() { return 158; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

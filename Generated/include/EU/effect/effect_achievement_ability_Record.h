@@ -9,12 +9,13 @@ namespace BnsTables::EU {
 	struct effect_achievement_ability_Record : effect_Record
 	{
 	public:
-		__int32 attack_power_creature_min;
+		char Pad_sub_0[3];
+__int32 attack_power_creature_min;
 __int32 attack_power_creature_max;
 __int16 attack_hit_value;
 __int16 attack_pierce_value;
 __int16 attack_damage_modify_diff;
-char Pad_sub_0[2];
+char Pad_sub_1[2];
 __int32 max_hp;
 __int16 defend_power_creature_value;
 __int16 defend_dodge_value;

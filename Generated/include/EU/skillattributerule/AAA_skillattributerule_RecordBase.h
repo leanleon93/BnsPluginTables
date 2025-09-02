@@ -30,7 +30,7 @@ signed char auto_skill_result[8];
 __int32 auto_skill_result_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 345; }
+		static __int16 TableId() { return 352; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

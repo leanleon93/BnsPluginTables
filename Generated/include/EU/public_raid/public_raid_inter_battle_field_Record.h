@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef portal_ticket_item_info;
-int portal_ticket_item_info_tableId() const {return 198;};
+int portal_ticket_item_info_tableId() const {return 202;};
 BnsTables::Shared::TableRef entrance_quota;
-int entrance_quota_tableId() const {return 67;};
+int entrance_quota_tableId() const {return 69;};
 BnsTables::Shared::TableRef arena_portal;
 int arena_portal_tableId() const {return 13;};
 signed char arena_move_max_party_member_count;

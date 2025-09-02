@@ -22,43 +22,43 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 471;};
+int zone_tableId() const {return 479;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef effect[2];
 __int32 effect_Size() const {return 2;};
-int effect_tableId() const {return 115;};
+int effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef respawn_effect;
-int respawn_effect_tableId() const {return 115;};
+int respawn_effect_tableId() const {return 118;};
 __int32 respawn_delay;
 BnsTables::Shared::TableRef refiner[3];
 __int32 refiner_Size() const {return 3;};
-int refiner_tableId() const {return 474;};
+int refiner_tableId() const {return 482;};
 BnsTables::Shared::TableRef respawn_by_refiner[3];
 __int32 respawn_by_refiner_Size() const {return 3;};
-int respawn_by_refiner_tableId() const {return 481;};
+int respawn_by_refiner_tableId() const {return 489;};
 BnsTables::Shared::TableRef airdash_1_by_refiner[3];
 __int32 airdash_1_by_refiner_Size() const {return 3;};
-int airdash_1_by_refiner_tableId() const {return 474;};
+int airdash_1_by_refiner_tableId() const {return 482;};
 BnsTables::Shared::TableRef airdash_2_by_refiner[3];
 __int32 airdash_2_by_refiner_Size() const {return 3;};
-int airdash_2_by_refiner_tableId() const {return 474;};
+int airdash_2_by_refiner_tableId() const {return 482;};
 BnsTables::Shared::TableRef guild_battle_field_zone_name2;
-int guild_battle_field_zone_name2_tableId() const {return 427;};
+int guild_battle_field_zone_name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef guild_battle_field_zone_desc;
-int guild_battle_field_zone_desc_tableId() const {return 427;};
+int guild_battle_field_zone_desc_tableId() const {return 434;};
 wchar_t* thumbnail_image;
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 BnsTables::Shared::TableRef last_boss;
-int last_boss_tableId() const {return 270;};
+int last_boss_tableId() const {return 276;};
 __int16 pc_spawn_id[6];
 __int32 pc_spawn_id_Size() const {return 6;};
 signed char pc_spawn_id_count;
 char Pad0[3];
 BnsTables::Shared::TableRef gate_replica[6];
 __int32 gate_replica_Size() const {return 6;};
-int gate_replica_tableId() const {return 474;};
+int gate_replica_tableId() const {return 482;};
 signed char gate_open_ready_minute;
 signed char sun_gate_open_hour[12];
 __int32 sun_gate_open_hour_Size() const {return 12;};
@@ -136,7 +136,7 @@ signed char required_level_max;
 __int16 required_faction_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 18); }
-		static __int16 TableId() { return 167; }
+		static __int16 TableId() { return 171; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

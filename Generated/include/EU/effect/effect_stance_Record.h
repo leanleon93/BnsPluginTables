@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_stance_Record : effect_Record
 	{
 	public:
-		signed char stance;
+		char Pad_sub_0[3];
+signed char stance;
 
 		static __int32 SubType() { return 18; }
 	};

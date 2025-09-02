@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 471;};
+int zone_tableId() const {return 479;};
 signed char pos_count;
 char Pad0[3];
 __int32 pos_x[20];
@@ -34,7 +34,7 @@ __int32 pos_z_end;
 signed char cell_attribute;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 468; }
+		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

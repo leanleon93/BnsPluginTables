@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_initialize_recycle_group_Record : effect_Record
 	{
 	public:
-		signed char initialize_recycle_group[2];
+		char Pad_sub_0[3];
+signed char initialize_recycle_group[2];
 __int32 initialize_recycle_group_Size() const {return 2;};
 signed char initialize_recycle_group_id[2];
 __int32 initialize_recycle_group_id_Size() const {return 2;};

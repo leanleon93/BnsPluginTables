@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_guard_gauge_heal_Record : effect_Record
 	{
 	public:
-		__int32 guard_gauge_diff;
+		char Pad_sub_0[3];
+__int32 guard_gauge_diff;
 __int16 guard_gauge_percent;
 
 		static __int32 SubType() { return 24; }

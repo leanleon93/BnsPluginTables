@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_increase_special_skill_gauge_Record : effect_Record
 	{
 	public:
-		__int16 increase_amount;
+		char Pad_sub_0[3];
+__int16 increase_amount;
 
 		static __int32 SubType() { return 55; }
 	};

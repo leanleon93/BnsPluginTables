@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_hp_transfer_Record : effect_Record
 	{
 	public:
-		__int32 hp_diff;
+		char Pad_sub_0[3];
+__int32 hp_diff;
 __int16 hp_percent;
 __int16 limit_hp_min;
 

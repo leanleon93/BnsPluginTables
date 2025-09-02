@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_internal_injury_Record : effect_Record
 	{
 	public:
-		__int16 ability_percent;
+		char Pad_sub_0[3];
+__int16 ability_percent;
 
 		static __int32 SubType() { return 104; }
 	};

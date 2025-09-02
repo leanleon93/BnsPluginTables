@@ -24,7 +24,7 @@ __int16 id;
 		wchar_t* alias;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 470; }
+		static __int16 TableId() { return 478; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

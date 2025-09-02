@@ -25,12 +25,12 @@ signed char publisher;
 char Pad0[3];
 __int32 money;
 BnsTables::Shared::TableRef required_itembrand;
-int required_itembrand_tableId() const {return 191;};
+int required_itembrand_tableId() const {return 195;};
 signed char required_itembrand_condition_type;
 char Pad1[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 198;};
+int required_item_tableId() const {return 202;};
 __int16 required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 __int32 required_faction_score;
@@ -50,14 +50,17 @@ signed char check_battle_field_grade_lead_the_ball;
 char Pad2[1];
 __int16 check_closet_collecting_grade;
 BnsTables::Shared::TableRef check_content_quota;
-int check_content_quota_tableId() const {return 67;};
+int check_content_quota_tableId() const {return 69;};
 __int32 check_soul_boost_season_bm;
 signed char required_level;
 signed char required_mastery_level;
 __int16 required_account_level;
+__int64 start_time;
+__int64 end_time;
+signed char item_slot_display_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
-		static __int16 TableId() { return 193; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
+		static __int16 TableId() { return 197; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef primary_item_brand;
-int primary_item_brand_tableId() const {return 191;};
+int primary_item_brand_tableId() const {return 195;};
 BnsTables::Shared::TableRef secondary_item_brand;
-int secondary_item_brand_tableId() const {return 191;};
+int secondary_item_brand_tableId() const {return 195;};
 signed char primary_item_grade;
 signed char secondary_item_grade;
 

@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_set_second_gauge_point_Record : effect_Record
 	{
 	public:
-		__int16 gp_fix;
+		char Pad_sub_0[3];
+__int16 gp_fix;
 
 		static __int32 SubType() { return 980; }
 	};

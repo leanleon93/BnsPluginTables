@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_instantaneous_death_Record : effect_Record
 	{
 	public:
-		signed char death_probability;
+		char Pad_sub_0[3];
+signed char death_probability;
 bool exhaustion;
 
 		static __int32 SubType() { return 51; }

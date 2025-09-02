@@ -23,19 +23,19 @@ namespace BnsTables::EU {
 		signed char preset_type;
 char Pad0[3];
 BnsTables::Shared::TableRef preset;
-int preset_tableId() const {return 171;};
+int preset_tableId() const {return 175;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 184;};
+int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 427;};
+int desc_tableId() const {return 434;};
 __int32 order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 178; }
+		static __int16 TableId() { return 182; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

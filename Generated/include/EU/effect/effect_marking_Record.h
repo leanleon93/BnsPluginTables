@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_marking_Record : effect_Record
 	{
 	public:
-		__int16 speed_percent;
+		char Pad_sub_0[3];
+__int16 speed_percent;
 
 		static __int32 SubType() { return 121; }
 	};

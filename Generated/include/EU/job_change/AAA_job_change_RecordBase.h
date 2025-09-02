@@ -22,9 +22,9 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 471;};
+int zone_tableId() const {return 479;};
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId() const {return 198;};
+int cost_item_tableId() const {return 202;};
 signed char required_level;
 signed char required_mastery_level;
 __int16 required_quest_id[2];
@@ -34,10 +34,10 @@ __int16 required_achievement_step;
 char Pad0[2];
 BnsTables::Shared::TableRef appearance[7];
 __int32 appearance_Size() const {return 7;};
-int appearance_tableId() const {return 85;};
+int appearance_tableId() const {return 87;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 2); }
-		static __int16 TableId() { return 228; }
+		static __int16 TableId() { return 232; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

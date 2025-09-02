@@ -22,9 +22,9 @@ signed char job;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 115;};
+int effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef duel_effect;
-int duel_effect_tableId() const {return 115;};
+int duel_effect_tableId() const {return 118;};
 __int32 party_battle_point_bonus_percent;
 __int32 party_battle_exp_bonus_percent;
 __int32 duel_point_bonus_percent;
@@ -45,7 +45,7 @@ __int32 challenge_reward_account_exp_bonus_percent;
 signed char pet_gem_transform_money_cost_discount_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 281; }
+		static __int16 TableId() { return 288; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

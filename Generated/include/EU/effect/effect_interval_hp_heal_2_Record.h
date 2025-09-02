@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_interval_hp_heal_2_Record : effect_Record
 	{
 	public:
-		__int32 hp_diff;
+		char Pad_sub_0[3];
+__int32 hp_diff;
 __int16 hp_percent;
 
 		static __int32 SubType() { return 81; }

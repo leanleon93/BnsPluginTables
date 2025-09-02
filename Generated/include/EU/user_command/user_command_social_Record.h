@@ -12,9 +12,9 @@ namespace BnsTables::EU {
 		signed char social_type;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 421;};
+int talk_social_tableId() const {return 428;};
 BnsTables::Shared::TableRef state_social;
-int state_social_tableId() const {return 403;};
+int state_social_tableId() const {return 410;};
 
 		static __int32 SubType() { return 1; }
 	};

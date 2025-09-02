@@ -9,7 +9,8 @@ namespace BnsTables::EU {
 	struct effect_soul_mask_1_Record : effect_Record
 	{
 	public:
-		signed char soul_mask_id;
+		char Pad_sub_0[3];
+signed char soul_mask_id;
 
 		static __int32 SubType() { return 986; }
 	};

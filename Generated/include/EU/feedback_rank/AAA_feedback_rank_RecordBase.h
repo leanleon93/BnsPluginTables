@@ -27,10 +27,10 @@ __int32 rank_score[10];
 __int32 rank_score_Size() const {return 10;};
 BnsTables::Shared::TableRef rank_title[10];
 __int32 rank_title_Size() const {return 10;};
-int rank_title_tableId() const {return 427;};
+int rank_title_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 140; }
+		static __int16 TableId() { return 143; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -51,7 +51,7 @@ __int32 param8_Size() const {return 96;};
 float decal_radius;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 85; }
+		static __int16 TableId() { return 87; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

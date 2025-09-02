@@ -9,8 +9,8 @@ namespace BnsTables::EU {
 	struct alarm_message_time_table_world_boss_Record : alarm_message_time_table_Record
 	{
 	public:
-		BnsTables::Shared::TableRef world_boss_spawn;
-int world_boss_spawn_tableId() const {return 463;};
+		BnsTables::Shared::TableRef world_boss_spawn_group;
+int world_boss_spawn_group_tableId() const {return 471;};
 
 		static __int32 SubType() { return 1; }
 	};

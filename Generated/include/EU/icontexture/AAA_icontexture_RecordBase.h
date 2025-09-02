@@ -28,7 +28,7 @@ __int16 texture_width;
 __int16 texture_height;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 184; }
+		static __int16 TableId() { return 188; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

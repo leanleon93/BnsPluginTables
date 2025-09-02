@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef duel_npc_challenge;
-int duel_npc_challenge_tableId() const {return 110;};
+int duel_npc_challenge_tableId() const {return 113;};
 
 		static __int32 SubType() { return 3; }
 	};
