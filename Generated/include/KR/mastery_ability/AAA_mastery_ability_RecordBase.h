@@ -27,7 +27,7 @@ __int64 max_guard_gauge;
 __int16 max_sp;
 __int16 modify_cast_speed_percent;
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_value;

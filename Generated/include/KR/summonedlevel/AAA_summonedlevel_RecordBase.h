@@ -28,7 +28,7 @@ bool is_duelbot_summoned;
 __int16 modify_cast_speed_percent;
 char Pad0[2];
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_base_percent;
