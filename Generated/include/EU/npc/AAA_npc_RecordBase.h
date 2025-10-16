@@ -124,6 +124,8 @@ signed char contribution_peaktime_reward_sat_end_hour;
 char Pad6[2];
 BnsTables::Shared::TableRef personal_dropped_pouch_reward;
 int personal_dropped_pouch_reward_tableId() const {return 339;};
+BnsTables::Shared::TableRef personal_dropped_pouch_event_reward;
+int personal_dropped_pouch_event_reward_tableId() const {return 339;};
 BnsTables::Shared::TableRef personal_dropped_pouch_reward_difficulty_type[3];
 __int32 personal_dropped_pouch_reward_difficulty_type_Size() const {return 3;};
 int personal_dropped_pouch_reward_difficulty_type_tableId() const {return 339;};
@@ -418,7 +420,7 @@ __int32 fatigability_consume_amount;
 __int16 release_contents_group;
 bool ignore_optimize;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
 		static __int16 TableId() { return 276; }
 		static __int32 SubType() { return -1; }
 	};

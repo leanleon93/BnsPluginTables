@@ -28,8 +28,10 @@ BnsTables::Shared::TableRef reward_event;
 int reward_event_tableId() const {return 339;};
 BnsTables::Shared::TableRef reward_personal_dropped_pouch;
 int reward_personal_dropped_pouch_tableId() const {return 339;};
+BnsTables::Shared::TableRef reward_personal_dropped_pouch_event;
+int reward_personal_dropped_pouch_event_tableId() const {return 339;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 280; }
 		static __int32 SubType() { return -1; }
 	};

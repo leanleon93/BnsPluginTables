@@ -116,7 +116,7 @@ int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
 int register_name_tableId() const {return 434;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 3); }
 		static __int16 TableId() { return 7; }
 		static __int32 SubType() { return -1; }
 	};
