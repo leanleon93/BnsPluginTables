@@ -36,7 +36,7 @@ __int32 ability_value[5];
 __int32 ability_value_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 248; }
+		static __int16 TableId() { return 249; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

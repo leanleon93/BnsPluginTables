@@ -43,7 +43,7 @@ __int16 quota_sun[30];
 __int32 quota_sun_Size() const {return 30;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 236; }
+		static __int16 TableId() { return 237; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

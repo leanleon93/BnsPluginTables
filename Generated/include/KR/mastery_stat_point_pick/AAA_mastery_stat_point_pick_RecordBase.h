@@ -27,10 +27,10 @@ char Pad0[2];
 BnsTables::Shared::TableRef effect;
 int effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 268; }
+		static __int16 TableId() { return 269; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -23,9 +23,9 @@ namespace BnsTables::KR {
 		BnsTables::Shared::IconRef title_icon;
 BnsTables::Shared::IconRef normal_icon;
 BnsTables::Shared::TableRef slogan;
-int slogan_tableId() const {return 434;};
+int slogan_tableId() const {return 435;};
 BnsTables::Shared::TableRef introduction_description;
-int introduction_description_tableId() const {return 434;};
+int introduction_description_tableId() const {return 435;};
 signed char associated_craft[2];
 __int32 associated_craft_Size() const {return 2;};
 char Pad0[2];
@@ -34,13 +34,13 @@ __int32 representative_product_item_Size() const {return 8;};
 int representative_product_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef representative_product_label[8];
 __int32 representative_product_label_Size() const {return 8;};
-int representative_product_label_tableId() const {return 434;};
+int representative_product_label_tableId() const {return 435;};
 BnsTables::Shared::TableRef special_product_item[4];
 __int32 special_product_item_Size() const {return 4;};
 int special_product_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef special_product_label[4];
 __int32 special_product_label_Size() const {return 4;};
-int special_product_label_tableId() const {return 434;};
+int special_product_label_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 84; }

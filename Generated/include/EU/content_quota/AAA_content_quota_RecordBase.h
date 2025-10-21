@@ -725,7 +725,8 @@ namespace BnsTables::EU {
 		content_quota_record_sub_market_targeted_sale = 714,
 		content_quota_record_sub_fatigability = 715,
 		content_quota_record_sub_fatigability_pccafe = 716,
-		content_quota_record_sub_count = 717,
+		content_quota_record_sub_dungeon_enter_ticket = 717,
+		content_quota_record_sub_count = 718,
     };
 #pragma pack(push, 1)
 	struct content_quota_Record : BnsTables::Shared::DrEl
@@ -760,7 +761,7 @@ BnsTables::Shared::TableRef consume_order[4];
 __int32 consume_order_Size() const {return 4;};
 int consume_order_tableId() const {return 69;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(12, 0); }
 		static __int16 TableId() { return 69; }
 		static __int32 SubType() { return -1; }
 	};

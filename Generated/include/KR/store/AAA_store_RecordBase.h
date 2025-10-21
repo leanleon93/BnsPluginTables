@@ -36,7 +36,7 @@ __int16 faction_level[100];
 __int32 faction_level_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 414; }
+		static __int16 TableId() { return 415; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

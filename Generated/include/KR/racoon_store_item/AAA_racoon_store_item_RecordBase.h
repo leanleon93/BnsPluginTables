@@ -36,7 +36,7 @@ BnsTables::Shared::TableRef cost_item;
 int cost_item_tableId() const {return 202;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 314; }
+		static __int16 TableId() { return 315; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

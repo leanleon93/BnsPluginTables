@@ -30,7 +30,7 @@ namespace BnsTables::KR {
 		signed char category;
 char Pad0[3];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 434;};
+int title_tableId() const {return 435;};
 signed char activation_level;
 signed char activation_mastery_level;
 bool use_notice_hud;

@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 441; }
+		static __int16 TableId() { return 442; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

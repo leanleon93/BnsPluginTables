@@ -29,7 +29,7 @@ int reward_item_tableId() const {return 202;};
 __int16 reward_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 454; }
+		static __int16 TableId() { return 455; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

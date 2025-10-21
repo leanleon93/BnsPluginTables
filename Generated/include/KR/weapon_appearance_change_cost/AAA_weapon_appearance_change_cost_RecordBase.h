@@ -38,7 +38,7 @@ __int32 cost_remove_item_amount_Size() const {return 2;};
 __int32 cost_remove_money;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 456; }
+		static __int16 TableId() { return 457; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -22,12 +22,12 @@ signed char server_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef parent_skill;
-int parent_skill_tableId() const {return 349;};
+int parent_skill_tableId() const {return 350;};
 BnsTables::Shared::TableRef base_skill;
-int base_skill_tableId() const {return 349;};
+int base_skill_tableId() const {return 350;};
 BnsTables::Shared::TableRef change_skill[4];
 __int32 change_skill_Size() const {return 4;};
-int change_skill_tableId() const {return 349;};
+int change_skill_tableId() const {return 350;};
 signed char row;
 signed char column;
 signed char job;
@@ -43,7 +43,7 @@ signed char job_specialization[3];
 __int32 job_specialization_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 353; }
+		static __int16 TableId() { return 354; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

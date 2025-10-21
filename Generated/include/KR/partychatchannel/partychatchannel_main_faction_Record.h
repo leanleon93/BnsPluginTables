@@ -10,9 +10,9 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef faction_1_party_match;
-int faction_1_party_match_tableId() const {return 285;};
+int faction_1_party_match_tableId() const {return 286;};
 BnsTables::Shared::TableRef faction_2_party_match;
-int faction_2_party_match_tableId() const {return 285;};
+int faction_2_party_match_tableId() const {return 286;};
 
 		static __int32 SubType() { return 1; }
 	};

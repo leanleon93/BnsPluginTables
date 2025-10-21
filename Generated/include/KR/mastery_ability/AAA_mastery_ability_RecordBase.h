@@ -115,7 +115,7 @@ char Pad7[2];
 __int32 attack_attribute_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 264; }
+		static __int16 TableId() { return 265; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

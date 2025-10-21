@@ -38,7 +38,7 @@ __int32 basic_party_battle_point;
 __int32 basic_field_play_point;
 BnsTables::Shared::TableRef fixed_skill3[4];
 __int32 fixed_skill3_Size() const {return 4;};
-int fixed_skill3_tableId() const {return 349;};
+int fixed_skill3_tableId() const {return 350;};
 BnsTables::Shared::ExplicitTableRef fixed_common_slot[4];
 __int32 fixed_common_slot_Size() const {return 4;};
 signed char fixed_common_item_count[4];
@@ -623,11 +623,11 @@ BnsTables::Shared::TableRef dungeon_additional_reward_cost_b[4];
 __int32 dungeon_additional_reward_cost_b_Size() const {return 4;};
 int dungeon_additional_reward_cost_b_tableId() const {return 79;};
 BnsTables::Shared::TableRef sealed_dungeon_reward;
-int sealed_dungeon_reward_tableId() const {return 309;};
+int sealed_dungeon_reward_tableId() const {return 310;};
 __int32 sealed_dungeon_reward_data_id;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 307; }
+		static __int16 TableId() { return 308; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

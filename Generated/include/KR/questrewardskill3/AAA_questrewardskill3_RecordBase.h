@@ -25,10 +25,10 @@ signed char job_style;
 char Pad0[3];
 BnsTables::Shared::TableRef skill3[4];
 __int32 skill3_Size() const {return 4;};
-int skill3_tableId() const {return 349;};
+int skill3_tableId() const {return 350;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 308; }
+		static __int16 TableId() { return 309; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

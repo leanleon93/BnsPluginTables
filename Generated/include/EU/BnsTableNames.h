@@ -576,7 +576,7 @@ namespace BnsTables::EU {
 				{66, BnsTables::Shared::TableVersion(2, 3)},
 				{67, BnsTables::Shared::TableVersion(2, 3)},
 				{68, BnsTables::Shared::TableVersion(2, 0)},
-				{69, BnsTables::Shared::TableVersion(11, 0)},
+				{69, BnsTables::Shared::TableVersion(12, 0)},
 				{70, BnsTables::Shared::TableVersion(4, 0)},
 				{71, BnsTables::Shared::TableVersion(0, 5)},
 				{72, BnsTables::Shared::TableVersion(0, 2)},

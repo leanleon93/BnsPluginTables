@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef event_name_text;
-int event_name_text_tableId() const {return 434;};
+int event_name_text_tableId() const {return 435;};
 wchar_t* event_name;
 wchar_t* event_name_en;
 wchar_t* event_name_fr;
@@ -42,10 +42,10 @@ __int32 grade_point[100];
 __int32 grade_point_Size() const {return 100;};
 BnsTables::Shared::TableRef grade_reward[100];
 __int32 grade_reward_Size() const {return 100;};
-int grade_reward_tableId() const {return 398;};
+int grade_reward_tableId() const {return 399;};
 BnsTables::Shared::TableRef bm_grade_reward[100];
 __int32 bm_grade_reward_Size() const {return 100;};
-int bm_grade_reward_tableId() const {return 398;};
+int bm_grade_reward_tableId() const {return 399;};
 __int32 exchange_reward_point;
 BnsTables::Shared::TableRef exchange_reward_item;
 int exchange_reward_item_tableId() const {return 202;};
@@ -72,14 +72,14 @@ signed char unlocated_store_type;
 char Pad5[1];
 BnsTables::Shared::TableRef mission_step[40];
 __int32 mission_step_Size() const {return 40;};
-int mission_step_tableId() const {return 400;};
+int mission_step_tableId() const {return 401;};
 BnsTables::Shared::TableRef core_reward_item[10];
 __int32 core_reward_item_Size() const {return 10;};
 int core_reward_item_tableId() const {return 202;};
 bool purchase_grade;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 1); }
-		static __int16 TableId() { return 397; }
+		static __int16 TableId() { return 398; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

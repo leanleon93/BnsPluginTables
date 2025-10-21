@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef systematization;
-int systematization_tableId() const {return 374;};
+int systematization_tableId() const {return 375;};
 __int16 damage_rate;
 
 		static __int32 SubType() { return 957; }

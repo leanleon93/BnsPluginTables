@@ -41,7 +41,7 @@ signed char random_item_selected_count;
 signed char random_item_total_input_count;
 char Pad2[2];
 BnsTables::Shared::TableRef random_item_tooltip_text;
-int random_item_tooltip_text_tableId() const {return 434;};
+int random_item_tooltip_text_tableId() const {return 435;};
 signed char paid_bonus_reward_total_count;
 char Pad3[3];
 __int32 paid_item_cost;
@@ -63,10 +63,10 @@ signed char paid_random_item_selected_count;
 signed char paid_random_item_total_input_count;
 char Pad5[2];
 BnsTables::Shared::TableRef paid_random_item_tooltip_text;
-int paid_random_item_tooltip_text_tableId() const {return 434;};
+int paid_random_item_tooltip_text_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 304; }
+		static __int16 TableId() { return 305; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

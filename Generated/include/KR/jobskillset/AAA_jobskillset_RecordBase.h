@@ -34,7 +34,7 @@ __int32 style_level_5_skill[2];
 __int32 style_level_5_skill_Size() const {return 2;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 238; }
+		static __int16 TableId() { return 239; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

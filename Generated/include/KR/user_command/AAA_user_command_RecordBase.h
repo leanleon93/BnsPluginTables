@@ -28,10 +28,10 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef text;
-int text_tableId() const {return 434;};
+int text_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 41); }
-		static __int16 TableId() { return 446; }
+		static __int16 TableId() { return 447; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

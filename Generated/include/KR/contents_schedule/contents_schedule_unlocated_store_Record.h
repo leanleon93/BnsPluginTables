@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef unlocated_store;
-int unlocated_store_tableId() const {return 444;};
+int unlocated_store_tableId() const {return 445;};
 
 		static __int32 SubType() { return 3; }
 	};

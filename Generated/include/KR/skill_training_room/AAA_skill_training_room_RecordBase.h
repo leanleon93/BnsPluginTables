@@ -22,22 +22,22 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 479;};
+int zone_tableId() const {return 480;};
 signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_preceding_quest[3];
 __int32 required_preceding_quest_Size() const {return 3;};
-int required_preceding_quest_tableId() const {return 306;};
+int required_preceding_quest_tableId() const {return 307;};
 signed char required_preceding_quest_check;
 char Pad1[3];
 BnsTables::Shared::TableRef jumping_character_quest_for_back_to_world[3];
 __int32 jumping_character_quest_for_back_to_world_Size() const {return 3;};
-int jumping_character_quest_for_back_to_world_tableId() const {return 306;};
+int jumping_character_quest_for_back_to_world_tableId() const {return 307;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef skill_training_room_name2;
-int skill_training_room_name2_tableId() const {return 434;};
+int skill_training_room_name2_tableId() const {return 435;};
 wchar_t* start_default_kismet_name[2];
 __int32 start_default_kismet_name_Size() const {return 2;};
 wchar_t* end_default_kismet_name[2];
@@ -45,7 +45,7 @@ __int32 end_default_kismet_name_Size() const {return 2;};
 wchar_t* stage_change_show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 384; }
+		static __int16 TableId() { return 385; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -43,11 +43,11 @@ __int16 icon_index;
 char Pad3[2];
 wchar_t* card_image_set;
 BnsTables::Shared::TableRef card_tooltip;
-int card_tooltip_tableId() const {return 434;};
+int card_tooltip_tableId() const {return 435;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 434;};
+int description2_tableId() const {return 435;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 106; }

@@ -27,7 +27,7 @@ __int32 ability_value_Size() const {return 4;};
 __int32 ability_base_value[4];
 __int32 ability_base_value_Size() const {return 4;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 38; }

@@ -70,7 +70,7 @@ __int32 mileage_save_Size() const {return 5;};
 char Pad2[3];
 BnsTables::Shared::TableRef mileage_random_distribution[5];
 __int32 mileage_random_distribution_Size() const {return 5;};
-int mileage_random_distribution_tableId() const {return 317;};
+int mileage_random_distribution_tableId() const {return 318;};
 signed char cost_item_discount_minimum_value[5];
 __int32 cost_item_discount_minimum_value_Size() const {return 5;};
 char Pad3[3];

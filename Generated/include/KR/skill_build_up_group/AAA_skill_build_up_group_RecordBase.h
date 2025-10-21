@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill_build_up_skill[127];
 __int32 skill_build_up_skill_Size() const {return 127;};
-int skill_build_up_skill_tableId() const {return 354;};
+int skill_build_up_skill_tableId() const {return 355;};
 signed char skill_build_up_skill_total_count;
 char Pad0[1];
 __int16 skill_build_up_skill_level_min[127];
@@ -33,10 +33,10 @@ __int32 skill_build_up_skill_level_max_Size() const {return 127;};
 char Pad1[2];
 BnsTables::Shared::TableRef skill_build_up_skill_level_distribution[127];
 __int32 skill_build_up_skill_level_distribution_Size() const {return 127;};
-int skill_build_up_skill_level_distribution_tableId() const {return 317;};
+int skill_build_up_skill_level_distribution_tableId() const {return 318;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 355; }
+		static __int16 TableId() { return 356; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

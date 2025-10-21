@@ -127,7 +127,7 @@ __int32 auction_price_contribution_rank_bottom[20];
 __int32 auction_price_contribution_rank_bottom_Size() const {return 20;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 469; }
+		static __int16 TableId() { return 470; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

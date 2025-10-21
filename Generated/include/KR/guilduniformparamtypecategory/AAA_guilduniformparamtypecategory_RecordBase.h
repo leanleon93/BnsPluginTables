@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 __int32 param_type_Size() const {return 28;};
 __int32 master_param_type;
 BnsTables::Shared::TableRef category_name;
-int category_name_tableId() const {return 434;};
+int category_name_tableId() const {return 435;};
 signed char payment_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }

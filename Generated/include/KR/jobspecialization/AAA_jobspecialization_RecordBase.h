@@ -24,9 +24,9 @@ signed char specialization;
 		wchar_t* job_specialization_icon;
 wchar_t* job_specialization_icon_overlay;
 BnsTables::Shared::TableRef job_specialization_name;
-int job_specialization_name_tableId() const {return 434;};
+int job_specialization_name_tableId() const {return 435;};
 BnsTables::Shared::TableRef job_specialization_desc;
-int job_specialization_desc_tableId() const {return 434;};
+int job_specialization_desc_tableId() const {return 435;};
 signed char sort_order;
 char Pad0[1];
 __int16 lobby_chart_value_melee;
@@ -35,7 +35,7 @@ __int16 lobby_chart_value_protection;
 __int16 lobby_chart_value_distance;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 239; }
+		static __int16 TableId() { return 240; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

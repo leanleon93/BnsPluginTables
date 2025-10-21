@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		BnsTables::Shared::TableRef boss_npc[8];
 __int32 boss_npc_Size() const {return 8;};
-int boss_npc_tableId() const {return 276;};
+int boss_npc_tableId() const {return 277;};
 bool first_attacker;
 bool last_attacker;
 signed char max_level;

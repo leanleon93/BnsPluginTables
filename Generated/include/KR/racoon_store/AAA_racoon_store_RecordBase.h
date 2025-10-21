@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char store_tab_sort_no;
 char Pad0[3];
 BnsTables::Shared::TableRef store_tab_name;
-int store_tab_name_tableId() const {return 434;};
+int store_tab_name_tableId() const {return 435;};
 __int64 start_date;
 __int64 end_date;
 bool is_retire;
@@ -41,7 +41,7 @@ __int64 paid_reset_cost_amount;
 __int64 auto_reset_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 313; }
+		static __int16 TableId() { return 314; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

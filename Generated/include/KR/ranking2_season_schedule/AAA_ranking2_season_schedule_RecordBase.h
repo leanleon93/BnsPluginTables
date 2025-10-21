@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef season;
-int season_tableId() const {return 326;};
+int season_tableId() const {return 327;};
 signed char schedule_number;
 char Pad0[3];
 __int64 start_time;
 __int64 end_time;
 BnsTables::Shared::TableRef reward_group;
-int reward_group_tableId() const {return 325;};
+int reward_group_tableId() const {return 326;};
 bool is_join_reward;
 bool is_job_reward;
 char Pad1[2];
@@ -39,7 +39,7 @@ __int16 lucky_tax_reward_rate;
 bool show_accumurate_reward;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 328; }
+		static __int16 TableId() { return 329; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

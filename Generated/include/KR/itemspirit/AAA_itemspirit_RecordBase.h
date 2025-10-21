@@ -31,7 +31,7 @@ signed char success_probability;
 char Pad0[2];
 __int32 money_cost;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId() const {return 317;};
+int distribution_type_tableId() const {return 318;};
 BnsTables::Shared::TableRef fixed_ingredient[8];
 __int32 fixed_ingredient_Size() const {return 8;};
 int fixed_ingredient_tableId() const {return 202;};

@@ -105,18 +105,18 @@ __int32 random_item_Size() const {return 90;};
 int random_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef smart_fixed_reward[8];
 __int32 smart_fixed_reward_Size() const {return 8;};
-int smart_fixed_reward_tableId() const {return 395;};
+int smart_fixed_reward_tableId() const {return 396;};
 __int16 smart_group_1_2_probability;
 __int16 smart_group_1_prob_weight;
 BnsTables::Shared::TableRef smart_group_1_reward[16];
 __int32 smart_group_1_reward_Size() const {return 16;};
-int smart_group_1_reward_tableId() const {return 395;};
+int smart_group_1_reward_tableId() const {return 396;};
 signed char smart_group_1_assured_count;
 signed char smart_group_1_reward_total_count;
 __int16 smart_group_2_prob_weight;
 BnsTables::Shared::TableRef smart_group_2_reward[16];
 __int32 smart_group_2_reward_Size() const {return 16;};
-int smart_group_2_reward_tableId() const {return 395;};
+int smart_group_2_reward_tableId() const {return 396;};
 signed char smart_group_2_assured_count;
 signed char smart_group_2_reward_total_count;
 char Pad11[2];
@@ -125,7 +125,7 @@ __int16 smart_group_3_probability;
 char Pad12[2];
 BnsTables::Shared::TableRef smart_group_3_reward[32];
 __int32 smart_group_3_reward_Size() const {return 32;};
-int smart_group_3_reward_tableId() const {return 395;};
+int smart_group_3_reward_tableId() const {return 396;};
 __int16 smart_group_3_reward_prob_weight[32];
 __int32 smart_group_3_reward_prob_weight_Size() const {return 32;};
 __int32 smart_group_3_reward_total_prob_weight;
@@ -134,26 +134,26 @@ char Pad13[1];
 __int16 smart_group_4_probability;
 BnsTables::Shared::TableRef smart_group_4_reward[10];
 __int32 smart_group_4_reward_Size() const {return 10;};
-int smart_group_4_reward_tableId() const {return 395;};
+int smart_group_4_reward_tableId() const {return 396;};
 signed char smart_group_4_selected_count;
 signed char smart_group_4_reward_total_count;
 __int16 smart_group_5_probability;
 BnsTables::Shared::TableRef smart_group_5_reward[10];
 __int32 smart_group_5_reward_Size() const {return 10;};
-int smart_group_5_reward_tableId() const {return 395;};
+int smart_group_5_reward_tableId() const {return 396;};
 signed char smart_group_5_selected_count;
 signed char smart_group_5_reward_total_count;
 char Pad14[2];
 BnsTables::Shared::TableRef smart_rare_reward[120];
 __int32 smart_rare_reward_Size() const {return 120;};
-int smart_rare_reward_tableId() const {return 395;};
+int smart_rare_reward_tableId() const {return 396;};
 __int32 smart_rare_reward_prob_weight_type;
 __int32 smart_rare_reward_prob_weight[120];
 __int32 smart_rare_reward_prob_weight_Size() const {return 120;};
 signed char smart_rare_reward_total_count;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 47); }
-		static __int16 TableId() { return 339; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 48); }
+		static __int16 TableId() { return 340; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -28,10 +28,10 @@ BnsTables::Shared::TableRef event_effect[4];
 __int32 event_effect_Size() const {return 4;};
 int event_effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 267; }
+		static __int16 TableId() { return 268; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

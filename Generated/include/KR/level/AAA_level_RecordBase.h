@@ -55,13 +55,13 @@ __int32 tencent_vitality_max[4];
 __int32 tencent_vitality_max_Size() const {return 4;};
 wchar_t* level_guide_path;
 BnsTables::Shared::TableRef exceed_level_quest;
-int exceed_level_quest_tableId() const {return 306;};
+int exceed_level_quest_tableId() const {return 307;};
 signed char exceed_level_next_level;
 char Pad1[1];
 __int16 teleport_price_level_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 247; }
+		static __int16 TableId() { return 248; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

@@ -38,7 +38,7 @@ __int16 stat_point_defender_max;
 signed char teleport_price_level_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 266; }
+		static __int16 TableId() { return 267; }
 		static __int32 SubType() { return -1; }
 	};
 #pragma pack(pop)

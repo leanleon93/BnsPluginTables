@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 276;};
+int npc_tableId() const {return 277;};
 BnsTables::Shared::TableRef weapon;
 int weapon_tableId() const {return 202;};
 
