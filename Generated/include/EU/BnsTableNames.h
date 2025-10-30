@@ -1011,7 +1011,7 @@ namespace BnsTables::EU {
 			return BnsTables::Shared::TableVersion();
 		}
 		static const std::wstring GetTableName(__int16 id) {
-			const std::unordered_map<__int16, std::wstring> NamesForIds = {
+			static const std::unordered_map<__int16, std::wstring>* NamesForIds = new std::unordered_map<__int16, std::wstring>({
 				{1, L"ability-list"},
 				{2, L"abnormalcamera"},
 				{3, L"abnormalmoveanim"},
@@ -1507,15 +1507,15 @@ namespace BnsTables::EU {
 				{493, L"zonetriggereventcond"},
 				{494, L"zonetriggereventstage"},
 
-			};
-			auto it = NamesForIds.find(id);
-			if (it != NamesForIds.end()) {
+			});
+			auto it = NamesForIds->find(id);
+			if (it != NamesForIds->end()) {
 				return it->second;
 			}
 			return L"";
 		}
 		static const __int16 GetTableId(std::wstring name) {
-			const std::unordered_map<std::wstring, __int16> IdsForNames = {
+			static const std::unordered_map<std::wstring, __int16>* IdsForNames = new std::unordered_map<std::wstring, __int16>({
 				{L"ability-list", 1},
 				{L"abnormalcamera", 2},
 				{L"abnormalmoveanim", 3},
@@ -2011,9 +2011,9 @@ namespace BnsTables::EU {
 				{L"zonetriggereventcond", 493},
 				{L"zonetriggereventstage", 494},
 
-			};
-			auto it = IdsForNames.find(name);
-			if (it != IdsForNames.end()) {
+			});
+			auto it = IdsForNames->find(name);
+			if (it != IdsForNames->end()) {
 				return it->second;
 			}
 			return -1;
