@@ -31,6 +31,12 @@ __int16 reward_item_count;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 454; }
 		static __int32 SubType() { return -1; }
+		enum class difficulty_type {
+			none = 0,
+			easy = 1,
+			normal = 2,
+			hard = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

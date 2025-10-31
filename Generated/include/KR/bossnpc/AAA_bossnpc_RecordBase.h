@@ -66,6 +66,12 @@ signed char max_break_count;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 46; }
 		static __int32 SubType() { return -1; }
+		enum class ui_style {
+			none = 0,
+			fury = 1,
+			absorb_level = 2,
+			double_sided = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -123,6 +123,21 @@ int recommend_alias_tableId() const {return 74;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 22); }
 		static __int16 TableId() { return 432; }
 		static __int32 SubType() { return -1; }
+		enum class required_preceding_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
+
+		enum class tendency_1_reset_score_type {
+			none = 0,
+			tendency_1 = 1,
+			tendency_2 = 2,
+			tendency_3 = 3,
+			tendency_1_2 = 4,
+			tendency_1_3 = 5,
+			tendency_2_3 = 6,
+			tendency_1_2_3 = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -31,6 +31,11 @@ int required_item_for_instant_payment_tableId() const {return 202;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 133; }
 		static __int32 SubType() { return -1; }
+		enum class random_store_number {
+			invalid_number = 0,
+			random_store_1 = 1,
+			random_store_2 = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

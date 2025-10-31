@@ -29,6 +29,15 @@ bool calculate_dash_position_include_radius;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 361; }
 		static __int32 SubType() { return -1; }
+		enum class dash_type {
+			none = 0,
+			dash = 1,
+			rear_dash = 2,
+			left_dash = 3,
+			right_dash = 4,
+			zero_point_dash = 5,
+			position_dash = 6,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

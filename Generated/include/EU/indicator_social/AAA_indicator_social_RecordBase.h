@@ -48,6 +48,11 @@ int sub_indicator_social2_tableId() const {return 191;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 18); }
 		static __int16 TableId() { return 191; }
 		static __int32 SubType() { return -1; }
+		enum class rotate2 {
+			keep = 0,
+			server_yaw = 1,
+			toplayer = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

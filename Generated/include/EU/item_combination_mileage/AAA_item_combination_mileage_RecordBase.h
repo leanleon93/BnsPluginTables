@@ -33,6 +33,11 @@ __int32 reward_item_count;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 201; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			star_stone = 0,
+			card = 1,
+			glyph = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

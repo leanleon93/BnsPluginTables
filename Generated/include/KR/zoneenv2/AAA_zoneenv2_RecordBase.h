@@ -209,6 +209,46 @@ bool need_to_show_probability;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 481; }
 		static __int32 SubType() { return -1; }
+		enum class category {
+			collect = 0,
+			manipulate = 1,
+			pick_up = 2,
+			put_down = 3,
+			recharge_heart = 4,
+			default_val = 5,
+		};
+
+		enum class show_confirm_type {
+			none = 0,
+			manipulate_consume_item = 1,
+		};
+
+		enum class manipulate_notification_range {
+			none = 0,
+			party = 1,
+			team = 2,
+		};
+
+		enum class forwarding_types {
+			progress_mission = 0,
+			acquire_quest = 1,
+			skill_target = 2,
+			mission_step_rollback = 3,
+		};
+
+		enum class expedition_type {
+			none = 0,
+			collection = 1,
+			card = 2,
+			monster = 3,
+			story = 4,
+			view_point = 5,
+		};
+
+		enum class portal_type {
+			door = 0,
+			button = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

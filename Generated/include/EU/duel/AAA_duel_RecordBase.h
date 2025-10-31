@@ -81,6 +81,11 @@ bool is_championship;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 35); }
 		static __int16 TableId() { return 111; }
 		static __int32 SubType() { return -1; }
+		enum class duel_type {
+			none = 0,
+			death_match_1vs1 = 1,
+			tag_match_3vs3 = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

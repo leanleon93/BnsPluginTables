@@ -278,6 +278,15 @@ int dungeon_challenge_reward_npc_tableId() const {return 276;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
 		static __int16 TableId() { return 117; }
 		static __int32 SubType() { return -1; }
+		enum class dungeon_type {
+			unbind = 0,
+			bind = 1,
+		};
+
+		enum class required_preceding_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

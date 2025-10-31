@@ -51,6 +51,10 @@ wchar_t* hp_idle;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 10); }
 		static __int16 TableId() { return 408; }
 		static __int32 SubType() { return -1; }
+		enum class idle_event_type_1 {
+			animation = 0,
+			show = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

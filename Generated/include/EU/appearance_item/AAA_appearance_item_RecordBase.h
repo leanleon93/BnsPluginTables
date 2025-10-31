@@ -40,6 +40,12 @@ wchar_t* balloon_widget;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
 		static __int16 TableId() { return 11; }
 		static __int32 SubType() { return -1; }
+		enum class appearance_type {
+			Normal = 0,
+			Idle = 1,
+			Hypermove = 2,
+			UI = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

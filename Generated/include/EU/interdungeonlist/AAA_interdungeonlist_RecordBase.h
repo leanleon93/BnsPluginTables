@@ -54,6 +54,16 @@ signed char first_clear_type;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 194; }
 		static __int32 SubType() { return -1; }
+		enum class required_complete_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
+
+		enum class first_clear_type {
+			none = 0,
+			sealed_dungeon = 1,
+			duel_npc_challenge = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

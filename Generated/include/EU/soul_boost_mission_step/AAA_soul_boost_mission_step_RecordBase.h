@@ -58,6 +58,22 @@ int description_text_tableId() const {return 434;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 1); }
 		static __int16 TableId() { return 400; }
 		static __int32 SubType() { return -1; }
+		enum class open_condition_type {
+			none = 0,
+			free = 1,
+			season = 2,
+			participate_character = 3,
+			newbie_event = 4,
+			mission_task_count = 5,
+			character_level = 6,
+			character_mastery_level = 7,
+		};
+
+		enum class viewable_type {
+			none = 0,
+			before_open = 1,
+			after_open = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -63,6 +63,30 @@ __int16 summon_base_dir_relative_angle;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 17); }
 		static __int16 TableId() { return 363; }
 		static __int32 SubType() { return -1; }
+		enum class cast_dir_caster {
+			value_360 = 0,
+			front_180 = 1,
+			back_180 = 2,
+			front_90 = 3,
+			back_90 = 4,
+			front_15 = 5,
+			front_30 = 6,
+			front_45 = 7,
+			front_60 = 8,
+			front_120 = 9,
+			front_270 = 10,
+		};
+
+		enum class summon_base_pos_type {
+			caster = 0,
+			target = 1,
+		};
+
+		enum class summon_base_dir_type {
+			caster = 0,
+			target = 1,
+			caster_to_target = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

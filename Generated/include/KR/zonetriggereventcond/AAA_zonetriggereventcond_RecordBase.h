@@ -42,6 +42,27 @@ int cond_event_message_tableId() const {return 159;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
 		static __int16 TableId() { return 494; }
 		static __int32 SubType() { return -1; }
+		enum class cond_contents_type {
+			none = 0,
+			faction_stage_faction_1_win = 1,
+			faction_stage_faction_2_win = 2,
+		};
+
+		enum class event_day_of_week {
+			sun = 0,
+			mon = 1,
+			tue = 2,
+			wed = 3,
+			thu = 4,
+			fri = 5,
+			sat = 6,
+			thu_fri = 7,
+			mon_tue_wed_thu = 8,
+			fri_sat_sun = 9,
+			tue_thu = 10,
+			weekend = 11,
+			entire_week = 12,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

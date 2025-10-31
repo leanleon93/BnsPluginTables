@@ -29,6 +29,14 @@ __int64 bank_item_max_count;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 170; }
 		static __int32 SubType() { return -1; }
+		enum class bank_item_type {
+			none = 0,
+			gemstone = 1,
+			moonstone = 2,
+			tokeniron = 3,
+			tokensilver = 4,
+			tokengold = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

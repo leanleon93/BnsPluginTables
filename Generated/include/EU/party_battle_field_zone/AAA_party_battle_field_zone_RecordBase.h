@@ -112,6 +112,13 @@ __int32 notify_msg_score_value_Size() const {return 3;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 22); }
 		static __int16 TableId() { return 283; }
 		static __int32 SubType() { return -1; }
+		enum class set_env_operation {
+			none = 0,
+			open = 1,
+			close = 2,
+			enable = 3,
+			disable = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -33,8 +33,13 @@ __int32 valid_zone_Size() const {return 2;};
 int valid_zone_tableId() const {return 480;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 508; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+		enum class progress_mission {
+			y = 0,
+			reaction_only = 1,
+			n = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

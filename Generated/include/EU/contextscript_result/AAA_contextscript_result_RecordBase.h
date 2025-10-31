@@ -45,8 +45,26 @@ signed char skillbar_ui_effect;
 signed char special_ui_effect;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 499; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+		enum class control_mode {
+			classic = 0,
+			bns = 1,
+		};
+
+		enum class key_status {
+			press = 0,
+			unpress = 1,
+		};
+
+		enum class stance_ui_effect {
+			none = 0,
+			key_change = 1,
+			combo = 2,
+			event = 3,
+			immune_break = 4,
+			combo_highlight = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

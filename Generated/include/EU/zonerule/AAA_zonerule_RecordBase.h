@@ -51,6 +51,30 @@ bool apply_membership_benefit;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 1); }
 		static __int16 TableId() { return 490; }
 		static __int32 SubType() { return -1; }
+		enum class pvp_mode_type {
+			none = 0,
+			free_for_all = 1,
+		};
+
+		enum class apply_content_ban_id {
+			invalid = 0,
+			duel = 1,
+			faction_battle_field = 2,
+			dungeon = 3,
+			attendance = 4,
+			jumping_character = 5,
+			duel_bot_challenge = 6,
+			fraud = 7,
+			zone_rule_group = 8,
+			party_battle_field_matching = 9,
+			duel_matching = 10,
+		};
+
+		enum class auto_mode_type {
+			disallow = 0,
+			basic = 1,
+			advanced = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

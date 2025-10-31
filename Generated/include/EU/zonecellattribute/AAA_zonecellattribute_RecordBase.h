@@ -36,6 +36,10 @@ signed char cell_attribute;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return -1; }
+		enum class cell_attribute {
+			invalid = 0,
+			safe = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

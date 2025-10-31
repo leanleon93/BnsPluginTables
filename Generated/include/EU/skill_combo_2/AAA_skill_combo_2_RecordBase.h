@@ -39,6 +39,33 @@ __int32 skill_slot_type_Size() const {return 5;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 359; }
 		static __int32 SubType() { return -1; }
+		enum class group {
+			none = 0,
+			target_down = 1,
+			target_stun = 2,
+			target_kneel = 3,
+			target_midair_1 = 4,
+			target_midair_2 = 5,
+			target_back = 6,
+			target_hit_critical = 7,
+			player_down = 8,
+			player_sprint_jump = 9,
+			player_gliding = 10,
+			player_dodge = 11,
+			player_parry = 12,
+			r_combo = 13,
+			success_skill_counter = 14,
+			success_skill_triplekick = 15,
+			success_skill_slidestep = 16,
+			success_skill_right = 17,
+			success_skill_takedown = 18,
+		};
+
+		enum class skill_slot_type {
+			none = 0,
+			skill_start = 1,
+			combo = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

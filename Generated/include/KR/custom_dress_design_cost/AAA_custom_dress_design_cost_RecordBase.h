@@ -46,6 +46,13 @@ __int32 required_money_cost;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 88; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			none = 0,
+			costume = 1,
+			costume_attach = 2,
+			head_attach = 3,
+			face_attach = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

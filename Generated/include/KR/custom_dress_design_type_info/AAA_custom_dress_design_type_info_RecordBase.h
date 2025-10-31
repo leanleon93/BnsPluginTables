@@ -38,6 +38,29 @@ int desc_tableId() const {return 435;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 89; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			none = 0,
+			costume = 1,
+			costume_attach = 2,
+			head_attach = 3,
+			face_attach = 4,
+		};
+
+		enum class design_type {
+			none = 0,
+			color = 1,
+			pattern = 2,
+			saturation = 3,
+		};
+
+		enum class customize_category {
+			none = 0,
+			center = 1,
+			sub = 2,
+			leg = 3,
+			dressline = 4,
+			hair = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

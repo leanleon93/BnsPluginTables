@@ -107,6 +107,22 @@ int boss_npc_section_tableId() const {return 435;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 12); }
 		static __int16 TableId() { return 316; }
 		static __int32 SubType() { return -1; }
+		enum class dungeon_type {
+			unbind = 0,
+			bind = 1,
+		};
+
+		enum class personal_binding_slot {
+			none = 0,
+			slot_1 = 1,
+			slot_2 = 2,
+			slot_3 = 3,
+		};
+
+		enum class required_preceding_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

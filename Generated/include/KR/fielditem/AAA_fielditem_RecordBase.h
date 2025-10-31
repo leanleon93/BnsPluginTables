@@ -132,6 +132,25 @@ bool ghost_mode;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 146; }
 		static __int32 SubType() { return -1; }
+		enum class parry_event {
+			none = 0,
+			decrease_use_count = 1,
+		};
+
+		enum class forwarding_types {
+			progress_mission = 0,
+			acquire_quest = 1,
+			skill_target = 2,
+			mission_step_rollback = 3,
+		};
+
+		enum class target_state {
+			all = 0,
+			friend_val = 1,
+			enemy = 2,
+			my_party = 3,
+			my_team = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

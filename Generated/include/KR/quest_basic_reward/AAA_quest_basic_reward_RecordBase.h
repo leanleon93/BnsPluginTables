@@ -29,8 +29,25 @@ int faction_tableId() const {return 139;};
 __int16 faction_reputation;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 511; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+		enum class production_id {
+			none = 0,
+			production_type_1 = 1,
+			production_type_2 = 2,
+			production_type_3 = 3,
+			production_type_4 = 4,
+			production_type_5 = 5,
+			production_type_6 = 6,
+			production_type_7 = 7,
+			gathering_type_1 = 8,
+			gathering_type_2 = 9,
+			gathering_type_3 = 10,
+			gathering_type_4 = 11,
+			gathering_type_5 = 12,
+			gathering_type_6 = 13,
+			gathering_type_7 = 14,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

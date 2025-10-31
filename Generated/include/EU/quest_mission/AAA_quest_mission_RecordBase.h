@@ -52,8 +52,19 @@ __int32 variation_reward_tendency_score[8];
 __int32 variation_reward_tendency_score_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 513; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+		enum class simple_quest_play_section {
+			none = 0,
+			our = 1,
+			enemy = 2,
+		};
+
+		enum class variation_required_condition_type {
+			none = 0,
+			field_play_point = 1,
+			faction_score = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

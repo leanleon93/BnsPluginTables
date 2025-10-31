@@ -69,6 +69,10 @@ bool capital;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
 		static __int16 TableId() { return 256; }
 		static __int32 SubType() { return -1; }
+		enum class imageset_condition_category {
+			none = 0,
+			quest_complete = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

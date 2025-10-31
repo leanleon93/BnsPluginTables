@@ -53,6 +53,15 @@ __int32 tooltip_arg_4_Size() const {return 4;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
 		static __int16 TableId() { return 65; }
 		static __int32 SubType() { return -1; }
+		enum class tooltip_arg_type_1 {
+			none = 0,
+			time = 1,
+			stack_count = 2,
+			percent = 3,
+			counter = 4,
+			distance = 5,
+			number = 6,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

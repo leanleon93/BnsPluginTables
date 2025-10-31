@@ -42,6 +42,15 @@ signed char broadcast;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 43; }
 		static __int32 SubType() { return -1; }
+		enum class broadcast {
+			guild = 0,
+			world = 1,
+		};
+
+		enum class op_type {
+			or_more = 0,
+			equal = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

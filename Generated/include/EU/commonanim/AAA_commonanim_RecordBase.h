@@ -25,6 +25,15 @@ namespace BnsTables::EU {
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 64; }
 		static __int32 SubType() { return -1; }
+		enum class anim_type {
+			dead = 0,
+			die = 1,
+			loot = 2,
+			mount_linker = 3,
+			mount_linkee = 4,
+			inhalation_linker = 5,
+			inhalation_linkee = 6,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

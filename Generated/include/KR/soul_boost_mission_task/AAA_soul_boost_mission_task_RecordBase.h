@@ -61,6 +61,23 @@ int description_text_tableId() const {return 435;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
 		static __int16 TableId() { return 402; }
 		static __int32 SubType() { return -1; }
+		enum class proceedable_type {
+			none = 0,
+			before_open = 1,
+			after_open = 2,
+		};
+
+		enum class actor_type {
+			none = 0,
+			character = 1,
+			account = 2,
+		};
+
+		enum class mission_task_repeat_type {
+			none = 0,
+			daily = 1,
+			weekly = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

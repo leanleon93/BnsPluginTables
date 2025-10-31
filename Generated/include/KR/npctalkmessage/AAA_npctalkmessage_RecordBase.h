@@ -79,6 +79,37 @@ wchar_t* end_talk_sound;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 61); }
 		static __int16 TableId() { return 282; }
 		static __int32 SubType() { return -1; }
+		enum class craft_message_type {
+			none = 0,
+			join = 1,
+			ask = 2,
+			busy = 3,
+			receive = 4,
+			need_level = 5,
+			full_craft = 6,
+		};
+
+		enum class store_message_type {
+			sale = 0,
+			NotAuthority = 1,
+		};
+
+		enum class population_statistics {
+			none = 0,
+			faction_1_high = 1,
+			equal = 2,
+			faction_1_low = 3,
+			joined_guild = 4,
+			transfer_cooltime = 5,
+		};
+
+		enum class guild_customize_message_type {
+			none = 0,
+			EnterCustomize = 1,
+			NotAuthority = 2,
+			ActivateFaction = 3,
+			WaitingArena = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

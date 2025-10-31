@@ -36,6 +36,15 @@ int description_tableId() const {return 434;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 71; }
 		static __int32 SubType() { return -1; }
+		enum class category {
+			none = 0,
+			boss_monster = 1,
+			craft = 2,
+			achievement = 3,
+			daily_quest = 4,
+			faction_battle = 5,
+			arena_match = 6,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

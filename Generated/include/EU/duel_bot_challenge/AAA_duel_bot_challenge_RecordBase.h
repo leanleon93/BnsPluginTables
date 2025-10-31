@@ -99,6 +99,10 @@ int recommend_alias_tableId() const {return 74;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 41); }
 		static __int16 TableId() { return 105; }
 		static __int32 SubType() { return -1; }
+		enum class required_preceding_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -46,6 +46,23 @@ float position_y;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 13; }
 		static __int32 SubType() { return -1; }
+		enum class required_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
+
+		enum class public_raid_mode {
+			public_raid_1 = 0,
+			public_raid_2 = 1,
+			public_raid_2_party_mode = 2,
+			public_raid_2_championship = 3,
+			public_raid_2_party_mode_championship = 4,
+			public_raid_3 = 5,
+			public_raid_4 = 6,
+			public_raid_5 = 7,
+			inter_battle_field = 8,
+			guerrilla_event = 9,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

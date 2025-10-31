@@ -138,6 +138,26 @@ wchar_t* skill_skin_desc;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 10); }
 		static __int16 TableId() { return 371; }
 		static __int32 SubType() { return -1; }
+		enum class chain_type {
+			none_chain = 0,
+			chain = 1,
+			chain_loop = 2,
+		};
+
+		enum class create_phantom_type {
+			none = 0,
+			cast_start_stance = 1,
+			fire_start_stance = 2,
+			cast_start_instance = 3,
+			fire_start_instance = 4,
+		};
+
+		enum class phantom_shoot_type {
+			phantom_shoot_right = 0,
+			phantom_shoot_left = 1,
+			phantom_shoot_double_side = 2,
+			phantom_shoot_bit_flags_index = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

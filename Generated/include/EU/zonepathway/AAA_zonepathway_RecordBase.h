@@ -34,6 +34,12 @@ __int16 sync;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 52); }
 		static __int16 TableId() { return 487; }
 		static __int32 SubType() { return -1; }
+		enum class move_type {
+			walk = 0,
+			run = 1,
+			warp = 2,
+			sprint = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

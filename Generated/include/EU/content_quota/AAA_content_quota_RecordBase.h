@@ -764,6 +764,44 @@ int consume_order_tableId() const {return 69;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(12, 0); }
 		static __int16 TableId() { return 69; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class target_type {
+			character = 0,
+			account = 1,
+		};
+
+		enum class charge_interval {
+			none = 0,
+			hourly = 1,
+			daily = 2,
+			weekly = 3,
+		};
+
+		enum class charge_day_of_week {
+			sun = 0,
+			mon = 1,
+			tue = 2,
+			wed = 3,
+			thu = 4,
+			fri = 5,
+			sat = 6,
+		};
+
+		enum class detail_content_name_by_admin {
+			none = 0,
+			time_limit_heart_basic = 1,
+			time_limit_heart_item = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

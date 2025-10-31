@@ -63,6 +63,11 @@ int guild_battle_field_teleport_tableId() const {return 431;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 20); }
 		static __int16 TableId() { return 139; }
 		static __int32 SubType() { return -1; }
+		enum class category {
+			gang = 0,
+			main = 1,
+			second = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -63,8 +63,33 @@ BnsTables::Shared::TableRef giveup_warp_to_pcspawn;
 int giveup_warp_to_pcspawn_tableId() const {return 489;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 506; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+		enum class completion_type {
+			and_val = 0,
+			or_val = 1,
+		};
+
+		enum class mission_map_type {
+			location = 0,
+			mapunit = 1,
+		};
+
+		enum class map_zoom_rate {
+			none = 0,
+			min = 1,
+			max = 2,
+		};
+
+		enum class guide_message_category {
+			guide = 0,
+			situation = 1,
+		};
+
+		enum class time_limit_type {
+			none = 0,
+			until = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

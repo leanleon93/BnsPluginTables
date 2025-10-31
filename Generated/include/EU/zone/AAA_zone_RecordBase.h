@@ -104,6 +104,36 @@ bool available_infield_contents;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 1); }
 		static __int16 TableId() { return 479; }
 		static __int32 SubType() { return -1; }
+		enum class zone_type2 {
+			none = 0,
+			persistent = 1,
+			single = 2,
+			instant = 3,
+		};
+
+		enum class effect_link_type {
+			effect_persistant = 0,
+			effect_single = 1,
+			effect_instant = 2,
+			effect_conflictarea = 3,
+			effect_dungeon_wayin = 4,
+			effect_dungeon = 5,
+			effect_blocked = 6,
+			effect_single_normal = 7,
+			effect_single_higher = 8,
+			effect_single_veryhigher = 9,
+			effect_single_hero = 10,
+			effect_instant_normal = 11,
+			effect_instant_higher = 12,
+			effect_instant_veryhigher = 13,
+			effect_raid_dungeon = 14,
+		};
+
+		enum class enable_ghost_mode {
+			none = 0,
+			basic = 1,
+			phase = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

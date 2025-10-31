@@ -33,6 +33,10 @@ signed char recommend_setting_cast_condition_op;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 21; }
 		static __int32 SubType() { return -1; }
+		enum class recommend_setting_cast_condition_op {
+			or_val = 0,
+			and_val = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

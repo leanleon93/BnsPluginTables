@@ -33,6 +33,10 @@ signed char sort;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 447; }
 		static __int32 SubType() { return -1; }
+		enum class title_category {
+			user = 0,
+			guild = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

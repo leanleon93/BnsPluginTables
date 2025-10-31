@@ -58,6 +58,20 @@ int dungeon_tableId() const {return 117;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 285; }
 		static __int32 SubType() { return -1; }
+		enum class chnnelid {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
+			value_4 = 4,
+			value_5 = 5,
+			value_6 = 6,
+		};
+
+		enum class arrange_type {
+			district = 0,
+			group_name = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

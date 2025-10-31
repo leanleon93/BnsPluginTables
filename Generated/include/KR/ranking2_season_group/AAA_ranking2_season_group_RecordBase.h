@@ -45,6 +45,12 @@ __int32 world_group_Size() const {return 10;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 328; }
 		static __int32 SubType() { return -1; }
+		enum class contents_score_type {
+			invalid = 0,
+			contents_single = 1,
+			contents_total = 2,
+			tier_total = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

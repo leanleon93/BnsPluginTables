@@ -41,6 +41,15 @@ int recipe_id_tableId() const {return 183;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 180; }
 		static __int32 SubType() { return -1; }
+		enum class param_type_category {
+			none = 0,
+			style = 1,
+			top = 2,
+			bottoms = 3,
+			point_color = 4,
+			face = 5,
+			head = 6,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

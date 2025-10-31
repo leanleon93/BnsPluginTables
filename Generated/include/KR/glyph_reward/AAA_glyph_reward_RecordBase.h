@@ -76,6 +76,41 @@ __int32 mileage_weight;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
 		static __int16 TableId() { return 163; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class upgrade_reward_preview {
+			fixed_score = 0,
+			random_score = 1,
+		};
+
+		enum class reward_type {
+			acquire = 0,
+			upgrade = 1,
+			shuffle = 2,
+		};
+
+		enum class color {
+			none = 0,
+			red = 1,
+			yellow = 2,
+			blue = 3,
+		};
+
+		enum class glyph_type {
+			none = 0,
+			normal = 1,
+			special = 2,
+			material = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

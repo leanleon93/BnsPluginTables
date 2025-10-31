@@ -28,6 +28,16 @@ wchar_t* value;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 282; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			none = 0,
+			nck = 1,
+			nca = 2,
+			ncj = 3,
+			nct = 4,
+			inv = 5,
+			tx = 6,
+			nck_neo_gold = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

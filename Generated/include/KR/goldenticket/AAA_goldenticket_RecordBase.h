@@ -33,6 +33,14 @@ bool ticket_enable;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 166; }
 		static __int32 SubType() { return -1; }
+		enum class ticket_type {
+			none = 0,
+			shuffle_glyph_cost_ticket = 1,
+			shuffle_worldaccountcard_cost_ticket = 2,
+			transform_cost_ticket = 3,
+			improve_option_draw_cost_ticket = 4,
+			extract_skill_cost_ticket = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

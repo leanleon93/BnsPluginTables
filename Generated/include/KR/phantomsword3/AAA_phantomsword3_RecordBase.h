@@ -82,6 +82,16 @@ wchar_t* delay_respawn_show;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 19); }
 		static __int16 TableId() { return 301; }
 		static __int32 SubType() { return -1; }
+		enum class fly_type {
+			none = 0,
+			bone = 1,
+			bone_pos_only = 2,
+			force_caster_bone = 3,
+			force_caster_bone_pos_only = 4,
+			ground = 5,
+			laser = 6,
+			ninecurve = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

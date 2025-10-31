@@ -38,6 +38,20 @@ int cost_item_tableId() const {return 202;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 315; }
 		static __int32 SubType() { return -1; }
+		enum class item_grade {
+			none = 0,
+			good = 1,
+			great = 2,
+			big_great = 3,
+		};
+
+		enum class cost_type {
+			none = 0,
+			item = 1,
+			stone = 2,
+			red_stone = 3,
+			money = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

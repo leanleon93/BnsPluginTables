@@ -69,6 +69,40 @@ int account_reward_quota_tableId() const {return 69;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 51; }
 		static __int32 SubType() { return -1; }
+		enum class challenge_type {
+			none = 0,
+			sun = 1,
+			mon = 2,
+			tue = 3,
+			wed = 4,
+			thu = 5,
+			fri = 6,
+			sat = 7,
+			week1 = 8,
+			week2 = 9,
+			week3 = 10,
+			week4 = 11,
+			week5 = 12,
+			week6 = 13,
+			week7 = 14,
+			week8 = 15,
+			week9 = 16,
+			week10 = 17,
+		};
+
+		enum class challenge_npc_grade {
+			none = 0,
+			grade1 = 1,
+			grade2 = 2,
+			grade3 = 3,
+		};
+
+		enum class challenge_npc_difficulty {
+			none = 0,
+			easy = 1,
+			normal = 2,
+			hard = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -56,6 +56,15 @@ wchar_t* treasure_board_symbol_off;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 438; }
 		static __int32 SubType() { return -1; }
+		enum class reset_condition {
+			normal = 0,
+			draw_all = 1,
+		};
+
+		enum class reset_price_type {
+			free = 0,
+			item = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

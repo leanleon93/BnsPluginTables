@@ -30,6 +30,43 @@ __int32 event_time;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 243; }
 		static __int32 SubType() { return -1; }
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class job_style {
+			base_1 = 0,
+			base_2 = 1,
+			base_3 = 2,
+			base_4 = 3,
+			base_5 = 4,
+			advanced_1 = 5,
+			advanced_2 = 6,
+			advanced_3 = 7,
+			advanced_4 = 8,
+			advanced_5 = 9,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

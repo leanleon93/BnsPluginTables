@@ -37,6 +37,12 @@ __int32 order;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 182; }
 		static __int32 SubType() { return -1; }
+		enum class preset_type {
+			none = 0,
+			costume = 1,
+			face = 2,
+			head = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

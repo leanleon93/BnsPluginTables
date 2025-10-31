@@ -25,8 +25,13 @@ char Pad0[2];
 wchar_t* desc;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 528; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+		enum class question_type {
+			single_selection_question = 0,
+			multiple_selection_question = 1,
+			subjective_question = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

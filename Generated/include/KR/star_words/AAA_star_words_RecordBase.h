@@ -45,6 +45,7 @@ int return_draw_cost_group_tableId() const {return 79;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 4); }
 		static __int16 TableId() { return 410; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

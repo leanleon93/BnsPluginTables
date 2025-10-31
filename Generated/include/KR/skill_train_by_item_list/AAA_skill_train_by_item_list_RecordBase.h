@@ -34,6 +34,7 @@ bool draw_enable;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
 		static __int16 TableId() { return 382; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

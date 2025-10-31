@@ -41,6 +41,19 @@ __int32 cost_item_count_Size() const {return 4;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 164; }
 		static __int32 SubType() { return -1; }
+		enum class slot_type {
+			none = 0,
+			normal = 1,
+			special = 2,
+			material = 3,
+		};
+
+		enum class slot_color {
+			none = 0,
+			red = 1,
+			yellow = 2,
+			blue = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

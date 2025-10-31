@@ -54,6 +54,10 @@ int finish_pc_respawn_tableId() const {return 488;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 452; }
 		static __int32 SubType() { return -1; }
+		enum class required_preceding_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

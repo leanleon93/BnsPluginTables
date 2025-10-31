@@ -48,6 +48,17 @@ int idle_end_tableId() const {return 396;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 279; }
 		static __int32 SubType() { return -1; }
+		enum class faction_check_type {
+			is = 0,
+			is_not = 1,
+			is_none = 2,
+		};
+
+		enum class faction_level_check_type {
+			none = 0,
+			check_for_success = 1,
+			check_for_fail = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

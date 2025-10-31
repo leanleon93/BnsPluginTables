@@ -36,6 +36,21 @@ bool account_inventory_goods_receive;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
 		static __int16 TableId() { return 70; }
 		static __int32 SubType() { return -1; }
+		enum class code {
+			invalid = 0,
+			nckorea = 1,
+			tencent = 2,
+			innova = 3,
+			ncjapan = 4,
+			sea = 5,
+			nctaiwan = 6,
+			ncwest = 7,
+			garena = 8,
+			rncs = 9,
+			rtx = 10,
+			zncs = 11,
+			ztx = 12,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

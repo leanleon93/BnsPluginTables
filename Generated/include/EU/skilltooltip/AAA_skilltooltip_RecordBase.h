@@ -59,6 +59,22 @@ int item_replace_text_tableId() const {return 434;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 15); }
 		static __int16 TableId() { return 379; }
 		static __int32 SubType() { return -1; }
+		enum class tooltip_group {
+			M1 = 0,
+			M2 = 1,
+			SUB = 2,
+			STANCE = 3,
+			CONDITION = 4,
+		};
+
+		enum class ect_order {
+			CTE = 0,
+			CET = 1,
+			TCE = 2,
+			TEC = 3,
+			ECT = 4,
+			ETC = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

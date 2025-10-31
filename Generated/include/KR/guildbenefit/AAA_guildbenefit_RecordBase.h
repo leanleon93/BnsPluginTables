@@ -46,6 +46,11 @@ __int32 guild_point;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 172; }
 		static __int32 SubType() { return -1; }
+		enum class benefit_type {
+			none = 0,
+			ability_set = 1,
+			reward_set = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -36,6 +36,13 @@ signed char mapunit_arena_dungeon_map_depth;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
 		static __int16 TableId() { return 483; }
 		static __int32 SubType() { return -1; }
+		enum class mapunit_map_depth {
+			value_1 = 0,
+			value_2 = 1,
+			value_3 = 2,
+			value_4 = 3,
+			value_5 = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

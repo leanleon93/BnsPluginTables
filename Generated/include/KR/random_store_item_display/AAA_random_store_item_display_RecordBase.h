@@ -31,6 +31,23 @@ bool new_arrival;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 322; }
 		static __int32 SubType() { return -1; }
+		enum class random_store_type {
+			none = 0,
+			paid = 1,
+			free = 2,
+		};
+
+		enum class draw_group {
+			none = 0,
+			premium = 1,
+			normal = 2,
+		};
+
+		enum class probability_group {
+			none = 0,
+			rare = 1,
+			normal = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

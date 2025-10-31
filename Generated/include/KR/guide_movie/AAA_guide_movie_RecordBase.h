@@ -42,6 +42,19 @@ wchar_t* movie_url;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 169; }
 		static __int32 SubType() { return -1; }
+		enum class category {
+			none = 0,
+			category1 = 1,
+			category2 = 2,
+			category3 = 3,
+			category4 = 4,
+			category5 = 5,
+			category6 = 6,
+			category7 = 7,
+			category8 = 8,
+			category9 = 9,
+			category10 = 10,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

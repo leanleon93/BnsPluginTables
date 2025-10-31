@@ -24,8 +24,9 @@ char Pad0[3];
 wchar_t* name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
-		static __int16 TableId() { return 503; }
+		static __int16 TableId() { return 0; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

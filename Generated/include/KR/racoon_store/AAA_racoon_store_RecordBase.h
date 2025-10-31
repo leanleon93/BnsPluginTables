@@ -43,6 +43,13 @@ __int64 auto_reset_time;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 314; }
 		static __int32 SubType() { return -1; }
+		enum class paid_reset_cost_type {
+			none = 0,
+			item = 1,
+			stone = 2,
+			red_stone = 3,
+			money = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

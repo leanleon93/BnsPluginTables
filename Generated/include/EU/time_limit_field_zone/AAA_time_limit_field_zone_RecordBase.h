@@ -48,6 +48,10 @@ signed char entrance_type;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 435; }
 		static __int32 SubType() { return -1; }
+		enum class entrance_type {
+			default_val = 0,
+			public_raid3 = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

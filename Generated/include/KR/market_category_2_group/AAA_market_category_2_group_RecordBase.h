@@ -35,6 +35,33 @@ int name2_tableId() const {return 435;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 260; }
 		static __int32 SubType() { return -1; }
+		enum class market_category_2 {
+			none = 0,
+			weapon = 1,
+			equip_gem = 2,
+			accessory = 3,
+			dress = 4,
+			weapon_gem = 5,
+			medicine = 6,
+			food = 7,
+			build_up_stone = 8,
+			talisman = 9,
+			tool = 10,
+			equip_material = 11,
+			union_material = 12,
+			dress_material = 13,
+			etc_material = 14,
+			coin = 15,
+			deed = 16,
+			quest = 17,
+			etc_change = 18,
+			etc_box = 19,
+			badge = 20,
+			relic = 21,
+			skill_train_by_item_extract = 22,
+			gold = 23,
+			spirit = 24,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)
