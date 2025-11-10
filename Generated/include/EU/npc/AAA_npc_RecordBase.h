@@ -852,7 +852,7 @@ bool ignore_optimize;
 
 		enum class size_type {
 			none = 0,
-			small = 1,
+			small_val = 1,
 			regular = 2,
 			huge = 3,
 		};
