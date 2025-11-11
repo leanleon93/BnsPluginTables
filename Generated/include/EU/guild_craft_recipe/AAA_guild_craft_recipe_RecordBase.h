@@ -81,7 +81,7 @@ signed char use_state;
 		static __int32 SubType() { return -1; }
 		enum class craft_type {
 			none = 0,
-			small = 1,
+			small_val = 1,
 			big = 2,
 		};
 
