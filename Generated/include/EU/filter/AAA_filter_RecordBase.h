@@ -556,7 +556,7 @@ int description_tableId() const {return 434;};
 			guild_invitation_refusal = 243,
 			pvp_safe_area = 244,
 			zone_move_state = 245,
-			private_reserve_5 = 246,
+			pc_cafe_personal_customize = 246,
 			private_reserve_6 = 247,
 			private_reserve_7 = 248,
 			private_reserve_8 = 249,

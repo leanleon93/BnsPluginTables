@@ -27,9 +27,9 @@ BnsTables::Shared::TableRef charge_of_item_for_instant_payment;
 int charge_of_item_for_instant_payment_tableId() const {return 202;};
 BnsTables::Shared::TableRef item_to_be_paid;
 int item_to_be_paid_tableId() const {return 202;};
-bool check_equip_characteristics;
+bool use_pc_cafe;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 60; }
 		static __int32 SubType() { return -1; }
 		enum class category {

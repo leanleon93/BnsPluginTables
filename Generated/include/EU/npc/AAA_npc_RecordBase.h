@@ -229,7 +229,7 @@ __int64 max_hp;
 __int16 max_sp;
 __int16 modify_cast_speed_percent;
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_base_percent;
@@ -420,7 +420,7 @@ __int32 fatigability_consume_amount;
 __int16 release_contents_group;
 bool ignore_optimize;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
 		static __int16 TableId() { return 276; }
 		static __int32 SubType() { return -1; }
 		enum class boss_type {
@@ -852,7 +852,7 @@ bool ignore_optimize;
 
 		enum class size_type {
 			none = 0,
-			small_val = 1,
+			small = 1,
 			regular = 2,
 			huge = 3,
 		};
