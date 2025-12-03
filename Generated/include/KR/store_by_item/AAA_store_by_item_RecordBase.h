@@ -23,15 +23,15 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef acquire_item[100];
 __int32 acquire_item_Size() const {return 100;};
-int acquire_item_tableId() const {return 202;};
+int acquire_item_tableId() const {return 203;};
 BnsTables::Shared::TableRef dispose_item[100];
 __int32 dispose_item_Size() const {return 100;};
-int dispose_item_tableId() const {return 202;};
+int dispose_item_tableId() const {return 203;};
 __int16 dispose_item_count[100];
 __int32 dispose_item_count_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 414; }
+		static __int16 TableId() { return 417; }
 		static __int32 SubType() { return -1; }
 
 	};

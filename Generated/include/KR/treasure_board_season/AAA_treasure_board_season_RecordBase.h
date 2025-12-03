@@ -24,19 +24,19 @@ namespace BnsTables::KR {
 char Pad0[3];
 BnsTables::Shared::TableRef treasure_board_page[10];
 __int32 treasure_board_page_Size() const {return 10;};
-int treasure_board_page_tableId() const {return 439;};
+int treasure_board_page_tableId() const {return 442;};
 BnsTables::Shared::TableRef season_reward_item;
-int season_reward_item_tableId() const {return 202;};
+int season_reward_item_tableId() const {return 203;};
 __int16 season_reward_item_count;
 char Pad1[2];
 BnsTables::Shared::TableRef season_name;
-int season_name_tableId() const {return 435;};
+int season_name_tableId() const {return 438;};
 __int64 season_end_time;
 wchar_t* season_board_symbol_on;
 wchar_t* season_board_symbol_off;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 441; }
+		static __int16 TableId() { return 444; }
 		static __int32 SubType() { return -1; }
 
 	};

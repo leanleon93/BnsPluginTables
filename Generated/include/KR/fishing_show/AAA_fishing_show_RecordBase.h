@@ -31,7 +31,7 @@ __int32 fishing_show_duration;
 bool loop;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
-		static __int16 TableId() { return 156; }
+		static __int16 TableId() { return 157; }
 		static __int32 SubType() { return -1; }
 		enum class show_type {
 			none = 0,

@@ -10,13 +10,13 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef tip;
-int tip_tableId() const {return 435;};
+int tip_tableId() const {return 438;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef candidate_name;
-int candidate_name_tableId() const {return 435;};
+int candidate_name_tableId() const {return 438;};
 BnsTables::Shared::TableRef single_name;
-int single_name_tableId() const {return 435;};
+int single_name_tableId() const {return 438;};
 
 		static __int32 SubType() { return 0; }
 	};

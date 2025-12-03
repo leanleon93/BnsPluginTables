@@ -25,12 +25,12 @@ signed char charge_type;
 char Pad0[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 202;};
+int required_item_tableId() const {return 203;};
 signed char required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 136; }
+		static __int16 TableId() { return 137; }
 		static __int32 SubType() { return -1; }
 		enum class charge_type {
 			item = 0,

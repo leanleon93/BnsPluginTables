@@ -27,16 +27,16 @@ __int32 skill_variation_id_Size() const {return 8;};
 bool include_inheritance_skill;
 char Pad0[3];
 BnsTables::Shared::TableRef item_sim_skill;
-int item_sim_skill_tableId() const {return 350;};
+int item_sim_skill_tableId() const {return 353;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 435;};
+int description2_tableId() const {return 438;};
 BnsTables::Shared::TableRef item_skill_tooltip;
-int item_skill_tooltip_tableId() const {return 435;};
+int item_skill_tooltip_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
-		static __int16 TableId() { return 222; }
+		static __int16 TableId() { return 223; }
 		static __int32 SubType() { return -1; }
 
 	};

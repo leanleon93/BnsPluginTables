@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		signed char id;
 char Pad0[3];
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 480;};
+int zone_tableId() const {return 483;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }

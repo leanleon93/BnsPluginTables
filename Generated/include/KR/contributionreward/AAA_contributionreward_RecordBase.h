@@ -24,10 +24,10 @@ namespace BnsTables::KR {
 signed char contribution_type;
 char Pad0[3];
 BnsTables::Shared::TableRef minimum_group_item;
-int minimum_group_item_tableId() const {return 202;};
+int minimum_group_item_tableId() const {return 203;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 15); }
-		static __int16 TableId() { return 78; }
+		static __int16 TableId() { return 79; }
 		static __int32 SubType() { return -1; }
 		enum class contribution_type {
 			normal = 0,

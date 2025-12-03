@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_hp_drain_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int32 hp_diff;
 __int16 hp_percent;
 char Pad_sub_1[2];

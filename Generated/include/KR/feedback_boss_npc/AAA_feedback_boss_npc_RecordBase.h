@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 277;};
+int npc_tableId() const {return 279;};
 BnsTables::Shared::TableRef skill_score[8];
 __int32 skill_score_Size() const {return 8;};
-int skill_score_tableId() const {return 144;};
+int skill_score_tableId() const {return 145;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 141; }
+		static __int16 TableId() { return 142; }
 		static __int32 SubType() { return -1; }
 
 	};

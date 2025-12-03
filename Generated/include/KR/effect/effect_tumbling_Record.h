@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_tumbling_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int16 tumbling_speed;
 signed char tumbling_direction;
 bool target_yaw_to_back;

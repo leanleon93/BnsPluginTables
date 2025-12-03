@@ -12,7 +12,7 @@ namespace BnsTables::KR {
 		signed char system_social_type;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 429;};
+int talk_social_tableId() const {return 432;};
 
 		static __int32 SubType() { return 2; }
 	};

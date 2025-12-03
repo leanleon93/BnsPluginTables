@@ -9,22 +9,21 @@ namespace BnsTables::KR {
 	struct item_costume_Record : item_Record
 	{
 	public:
-		char Pad_sub_0[3];
-bool guild_used;
-char Pad_sub_1[3];
+		bool guild_used;
+char Pad_sub_0[3];
 __int32 closet_group_id;
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 429;};
+int talk_social_tableId() const {return 432;};
 BnsTables::Shared::TableRef pair_costume;
-int pair_costume_tableId() const {return 202;};
+int pair_costume_tableId() const {return 203;};
 BnsTables::Shared::TableRef pair_costume_brand;
-int pair_costume_brand_tableId() const {return 195;};
+int pair_costume_brand_tableId() const {return 196;};
 wchar_t* pair_costume_signal_show;
 wchar_t* pair_costume_signal_detach_show;
 signed char custom_dress_design_state;
-char Pad_sub_2[3];
+char Pad_sub_1[3];
 BnsTables::Shared::TableRef skill_skin;
-int skill_skin_tableId() const {return 372;};
+int skill_skin_tableId() const {return 375;};
 
 		static __int32 SubType() { return 1; }
 	};

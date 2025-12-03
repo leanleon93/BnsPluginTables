@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		__int16 sort_order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 198; }
+		static __int16 TableId() { return 199; }
 		static __int32 SubType() { return -1; }
 		enum class game_category_3 {
 			none = 0,

@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_card[8];
 __int32 collection_card_Size() const {return 8;};
-int collection_card_tableId() const {return 464;};
+int collection_card_tableId() const {return 467;};
 __int16 collection_card_count[8];
 __int32 collection_card_count_Size() const {return 8;};
 __int64 start_time;
@@ -35,12 +35,15 @@ __int32 ability_value[3];
 __int32 ability_value_Size() const {return 3;};
 __int32 ability_base_value[3];
 __int32 ability_base_value_Size() const {return 3;};
+__int16 ability_percent_rate[3];
+__int32 ability_percent_rate_Size() const {return 3;};
+char Pad0[2];
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 435;};
+int collection_name_tableId() const {return 438;};
 signed char collection_category;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 467; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static __int16 TableId() { return 470; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,
@@ -118,6 +121,8 @@ signed char collection_category;
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 
 		enum class collection_category {

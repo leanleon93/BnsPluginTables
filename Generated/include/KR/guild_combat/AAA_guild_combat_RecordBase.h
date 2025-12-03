@@ -25,11 +25,11 @@ signed char required_level;
 char Pad0[1];
 __int16 required_mastery_level;
 BnsTables::Shared::TableRef available_matching_weekly_time;
-int available_matching_weekly_time_tableId() const {return 461;};
+int available_matching_weekly_time_tableId() const {return 464;};
 __int16 party_battle_point_bonus_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 173; }
+		static __int16 TableId() { return 174; }
 		static __int32 SubType() { return -1; }
 		enum class season_type {
 			invalid = 0,
@@ -64,6 +64,16 @@ __int16 party_battle_point_bonus_rate;
 			tier_total = 29,
 			hyper_racing_game = 30,
 			duel_npc_challenge = 31,
+			heroic_dungeon_1 = 32,
+			heroic_dungeon_2 = 33,
+			heroic_dungeon_3 = 34,
+			heroic_dungeon_4 = 35,
+			heroic_dungeon_5 = 36,
+			heroic_dungeon_6 = 37,
+			heroic_dungeon_7 = 38,
+			heroic_dungeon_8 = 39,
+			heroic_dungeon_9 = 40,
+			heroic_dungeon_10 = 41,
 		};
 	};
 #pragma pack(pop)

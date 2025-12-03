@@ -36,7 +36,7 @@ float near_height;
 float modulate_factor;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 290; }
+		static __int16 TableId() { return 292; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -29,17 +29,17 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef faction[2];
 __int32 faction_Size() const {return 2;};
-int faction_tableId() const {return 139;};
+int faction_tableId() const {return 140;};
 signed char required_quest_check;
 char Pad0[3];
 BnsTables::Shared::TableRef required_quest[6];
 __int32 required_quest_Size() const {return 6;};
-int required_quest_tableId() const {return 307;};
+int required_quest_tableId() const {return 309;};
 signed char required_min_level;
 char Pad1[1];
 __int16 required_min_faction_level;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 480;};
+int zone_tableId() const {return 483;};
 float position_x;
 float position_y;
 

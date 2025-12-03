@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
-		static __int16 TableId() { return 346; }
+		static __int16 TableId() { return 349; }
 		static __int32 SubType() { return -1; }
 
 	};

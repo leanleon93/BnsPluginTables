@@ -22,11 +22,11 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId() const {return 202;};
+int cost_item_tableId() const {return 203;};
 __int16 cost_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
-		static __int16 TableId() { return 234; }
+		static __int16 TableId() { return 236; }
 		static __int32 SubType() { return -1; }
 
 	};

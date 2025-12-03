@@ -23,10 +23,10 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef pc_effect[2];
 __int32 pc_effect_Size() const {return 2;};
-int pc_effect_tableId() const {return 118;};
+int pc_effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef duel_bot_effect[2];
 __int32 duel_bot_effect_Size() const {return 2;};
-int duel_bot_effect_tableId() const {return 118;};
+int duel_bot_effect_tableId() const {return 119;};
 bool immune_caster_block_skill;
 char Pad0[1];
 __int16 fail_caster_flag[4];
@@ -38,19 +38,19 @@ __int32 fail_caster_effect_attribute_Size() const {return 4;};
 signed char fail_caster_effect_attribute_op;
 char Pad2[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 char Pad3[2];
 wchar_t* card_image_set;
 BnsTables::Shared::TableRef card_tooltip;
-int card_tooltip_tableId() const {return 435;};
+int card_tooltip_tableId() const {return 438;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 435;};
+int description2_tableId() const {return 438;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 106; }
+		static __int16 TableId() { return 107; }
 		static __int32 SubType() { return -1; }
 		enum class fail_caster_flag {
 			none = 0,

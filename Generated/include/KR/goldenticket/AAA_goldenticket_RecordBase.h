@@ -22,16 +22,16 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 signed char ticket_type;
 char Pad0[3];
 BnsTables::Shared::TableRef ticket_item;
-int ticket_item_tableId() const {return 202;};
+int ticket_item_tableId() const {return 203;};
 __int16 ticket_item_count;
 bool ticket_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 166; }
+		static __int16 TableId() { return 167; }
 		static __int32 SubType() { return -1; }
 		enum class ticket_type {
 			none = 0,

@@ -25,7 +25,7 @@ signed char pc_job;
 signed char joypad_category;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 wchar_t* default_keycap;
 bool modifier_enabled;
 signed char sort_no;
@@ -35,9 +35,10 @@ __int16 option_sort_no;
 signed char usable_joypad_mode;
 bool joypad_customize_enabled;
 bool joypad_overlapped_binding_enabled;
+signed char contents_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 247; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 4); }
+		static __int16 TableId() { return 249; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,
@@ -291,6 +292,11 @@ bool joypad_overlapped_binding_enabled;
 			any = 1,
 			ui = 2,
 			action = 3,
+		};
+
+		enum class contents_type {
+			normal = 0,
+			gold_specialized = 1,
 		};
 	};
 #pragma pack(pop)

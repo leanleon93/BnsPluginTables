@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_interval_second_gauge_point_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int16 gp_diff;
 
 		static __int32 SubType() { return 978; }

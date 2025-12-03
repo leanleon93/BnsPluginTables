@@ -106,6 +106,8 @@ namespace BnsTables::KR {
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

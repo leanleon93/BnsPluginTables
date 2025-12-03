@@ -28,10 +28,10 @@ __int32 market_category_3_Size() const {return 10;};
 signed char addtional_filtering_type;
 char Pad1[1];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 261; }
+		static __int16 TableId() { return 263; }
 		static __int32 SubType() { return -1; }
 		enum class market_category_3 {
 			none = 0,

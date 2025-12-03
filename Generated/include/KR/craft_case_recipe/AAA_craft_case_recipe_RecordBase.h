@@ -24,20 +24,20 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef group_alias;
-int group_alias_tableId() const {return 83;};
+int group_alias_tableId() const {return 84;};
 signed char case_option;
 char Pad1[3];
 __int32 craft_duration;
 signed char use_state;
 char Pad2[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 435;};
+int desc_tableId() const {return 438;};
 BnsTables::Shared::TableRef requirement_name;
-int requirement_name_tableId() const {return 435;};
+int requirement_name_tableId() const {return 438;};
 BnsTables::Shared::TableRef location_desc;
-int location_desc_tableId() const {return 435;};
+int location_desc_tableId() const {return 438;};
 __int16 required_craft_exp;
 char Pad3[2];
 __int32 required_achievement_id;
@@ -58,7 +58,7 @@ __int16 half_craft_bonus_exp_step;
 __int16 zero_craft_bonus_exp_step;
 BnsTables::Shared::TableRef reward_item[5];
 __int32 reward_item_Size() const {return 5;};
-int reward_item_tableId() const {return 202;};
+int reward_item_tableId() const {return 203;};
 __int32 reward_item_min[5];
 __int32 reward_item_min_Size() const {return 5;};
 __int32 reward_item_max[5];
@@ -67,10 +67,10 @@ __int32 reward_item_reference[5];
 __int32 reward_item_reference_Size() const {return 5;};
 BnsTables::Shared::TableRef reward_item_random_distribution[5];
 __int32 reward_item_random_distribution_Size() const {return 5;};
-int reward_item_random_distribution_tableId() const {return 318;};
+int reward_item_random_distribution_tableId() const {return 320;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 81; }
+		static __int16 TableId() { return 82; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

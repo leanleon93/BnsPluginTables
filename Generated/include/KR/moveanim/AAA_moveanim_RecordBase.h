@@ -87,7 +87,7 @@ wchar_t* upper_rtol;
 wchar_t* lower_rtol;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 273; }
+		static __int16 TableId() { return 275; }
 		static __int32 SubType() { return -1; }
 		enum class weapon {
 			none = 0,
@@ -187,6 +187,7 @@ wchar_t* lower_rtol;
 			catch_friend = 6,
 			inhalation_catch = 7,
 			range_catch = 8,
+			fixate_catch = 9,
 		};
 	};
 #pragma pack(pop)

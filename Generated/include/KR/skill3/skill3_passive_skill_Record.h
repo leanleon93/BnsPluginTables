@@ -9,9 +9,10 @@ namespace BnsTables::KR {
 	struct skill3_passive_skill_Record : skill3_Record
 	{
 	public:
-		BnsTables::Shared::TableRef passive_effect[8];
+		char Pad_sub_0[3];
+BnsTables::Shared::TableRef passive_effect[8];
 __int32 passive_effect_Size() const {return 8;};
-int passive_effect_tableId() const {return 118;};
+int passive_effect_tableId() const {return 119;};
 signed char summoned_job;
 bool summoned_use_only;
 

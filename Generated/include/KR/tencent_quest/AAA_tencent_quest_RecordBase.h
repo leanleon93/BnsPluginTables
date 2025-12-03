@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		bool check_vitality;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 432; }
+		static __int16 TableId() { return 435; }
 		static __int32 SubType() { return -1; }
 
 	};

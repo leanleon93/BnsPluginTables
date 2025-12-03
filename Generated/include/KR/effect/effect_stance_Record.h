@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_stance_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 signed char stance;
 
 		static __int32 SubType() { return 18; }

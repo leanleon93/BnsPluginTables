@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill_build_up_group[10];
 __int32 skill_build_up_group_Size() const {return 10;};
-int skill_build_up_group_tableId() const {return 356;};
+int skill_build_up_group_tableId() const {return 359;};
 __int16 skill_build_up_group_weight[10];
 __int32 skill_build_up_group_weight_Size() const {return 10;};
 __int32 skill_build_up_group_total_weight;
@@ -31,7 +31,7 @@ signed char skill_build_up_group_total_count;
 bool draw_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 357; }
+		static __int16 TableId() { return 360; }
 		static __int32 SubType() { return -1; }
 
 	};

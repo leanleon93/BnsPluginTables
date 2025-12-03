@@ -24,7 +24,7 @@ bool dispose_quest;
 signed char step;
 char Pad0[1];
 BnsTables::Shared::TableRef fail_talksocial;
-int fail_talksocial_tableId() const {return 429;};
+int fail_talksocial_tableId() const {return 432;};
 float fail_talksocial_delay;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }

@@ -21,26 +21,26 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef none_selected_icon_texture;
-int none_selected_icon_texture_tableId() const {return 188;};
+int none_selected_icon_texture_tableId() const {return 189;};
 __int16 none_selected_icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef join_msg;
-int join_msg_tableId() const {return 159;};
+int join_msg_tableId() const {return 160;};
 BnsTables::Shared::TableRef level_up_msg;
-int level_up_msg_tableId() const {return 159;};
+int level_up_msg_tableId() const {return 160;};
 BnsTables::Shared::TableRef max_level_msg;
-int max_level_msg_tableId() const {return 159;};
+int max_level_msg_tableId() const {return 160;};
 __int32 need_exp_for_level[100];
 __int32 need_exp_for_level_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 82; }
+		static __int16 TableId() { return 83; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,

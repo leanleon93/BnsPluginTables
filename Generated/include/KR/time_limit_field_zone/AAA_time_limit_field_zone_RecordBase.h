@@ -29,30 +29,30 @@ signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_cost;
-int required_cost_tableId() const {return 79;};
+int required_cost_tableId() const {return 80;};
 BnsTables::Shared::TableRef time_limit_field_zone_name2;
-int time_limit_field_zone_name2_tableId() const {return 435;};
+int time_limit_field_zone_name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef time_limit_field_zone_desc;
-int time_limit_field_zone_desc_tableId() const {return 435;};
+int time_limit_field_zone_desc_tableId() const {return 438;};
 BnsTables::Shared::TableRef time_limit_field_zone_desc2;
-int time_limit_field_zone_desc2_tableId() const {return 435;};
+int time_limit_field_zone_desc2_tableId() const {return 438;};
 signed char ui_text_grade;
 char Pad1[3];
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 BnsTables::Shared::TableRef field_bonus_effect_desc1;
-int field_bonus_effect_desc1_tableId() const {return 435;};
+int field_bonus_effect_desc1_tableId() const {return 438;};
 BnsTables::Shared::TableRef field_bonus_effect_desc2;
-int field_bonus_effect_desc2_tableId() const {return 435;};
+int field_bonus_effect_desc2_tableId() const {return 438;};
 BnsTables::Shared::TableRef field_bonus_effect_desc3;
-int field_bonus_effect_desc3_tableId() const {return 435;};
+int field_bonus_effect_desc3_tableId() const {return 438;};
 BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 74;};
 __int16 recommend_attack_power;
 signed char entrance_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 436; }
+		static __int16 TableId() { return 439; }
 		static __int32 SubType() { return -1; }
 		enum class entrance_type {
 			default_val = 0,

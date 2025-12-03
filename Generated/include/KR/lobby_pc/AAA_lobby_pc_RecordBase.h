@@ -26,11 +26,11 @@ signed char category;
 		wchar_t* anim_set;
 wchar_t* additional_anim_set;
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId() const {return 87;};
+int appearance_tableId() const {return 88;};
 wchar_t* select_anim;
 wchar_t* idle_anim;
 BnsTables::Shared::TableRef equip_hand;
-int equip_hand_tableId() const {return 202;};
+int equip_hand_tableId() const {return 203;};
 wchar_t* pc_pos;
 wchar_t* camera_pos;
 wchar_t* camera_target;
@@ -54,7 +54,7 @@ float preview_world_cam_near_height;
 float preview_world_cam_modulate_factor;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 252; }
+		static __int16 TableId() { return 254; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -26,17 +26,17 @@ signed char design_type;
 signed char customize_category;
 char Pad0[2];
 BnsTables::Shared::TableRef price_ref;
-int price_ref_tableId() const {return 89;};
+int price_ref_tableId() const {return 90;};
 signed char min_value;
 signed char max_value;
 char Pad1[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 435;};
+int desc_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 89; }
+		static __int16 TableId() { return 90; }
 		static __int32 SubType() { return -1; }
 		enum class item_type {
 			none = 0,

@@ -26,7 +26,7 @@ char Pad0[3];
 __int32 level;
 BnsTables::Shared::TableRef reward_item[5];
 __int32 reward_item_Size() const {return 5;};
-int reward_item_tableId() const {return 202;};
+int reward_item_tableId() const {return 203;};
 signed char reward_item_count[5];
 __int32 reward_item_count_Size() const {return 5;};
 signed char ability[5];
@@ -36,7 +36,7 @@ __int32 ability_value[5];
 __int32 ability_value_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 249; }
+		static __int16 TableId() { return 251; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,
@@ -125,6 +125,8 @@ __int32 ability_value_Size() const {return 5;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

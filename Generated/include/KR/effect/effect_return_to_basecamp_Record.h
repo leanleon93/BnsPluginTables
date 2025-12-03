@@ -9,9 +9,9 @@ namespace BnsTables::KR {
 	struct effect_return_to_basecamp_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 BnsTables::Shared::TableRef basecamp;
-int basecamp_tableId() const {return 475;};
+int basecamp_tableId() const {return 478;};
 
 		static __int32 SubType() { return 49; }
 	};

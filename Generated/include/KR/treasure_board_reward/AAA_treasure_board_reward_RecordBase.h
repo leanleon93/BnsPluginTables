@@ -24,13 +24,13 @@ namespace BnsTables::KR {
 __int16 reward_grade;
 char Pad0[2];
 BnsTables::Shared::TableRef reward_item;
-int reward_item_tableId() const {return 202;};
+int reward_item_tableId() const {return 203;};
 __int16 reward_item_count;
 __int16 max_draw_count;
 __int32 reward_item_prob_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 440; }
+		static __int16 TableId() { return 443; }
 		static __int32 SubType() { return -1; }
 
 	};

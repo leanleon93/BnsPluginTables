@@ -25,7 +25,7 @@ signed char production_id;
 char Pad0[1];
 __int16 production_exp;
 BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 139;};
+int faction_tableId() const {return 140;};
 __int16 faction_reputation;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }

@@ -40,22 +40,22 @@ __int32 ability_base_value_Size() const {return 5;};
 bool boss;
 char Pad2[3];
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 254;};
+int map_group_1_tableId() const {return 256;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 435;};
+int description_tableId() const {return 438;};
 BnsTables::Shared::TableRef story;
-int story_tableId() const {return 435;};
+int story_tableId() const {return 438;};
 wchar_t* boss_image;
 BnsTables::Shared::IconRef target_icon[5];
 __int32 target_icon_Size() const {return 5;};
 BnsTables::Shared::TableRef target_desc[5];
 __int32 target_desc_Size() const {return 5;};
-int target_desc_tableId() const {return 435;};
+int target_desc_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
-		static __int16 TableId() { return 466; }
+		static __int16 TableId() { return 469; }
 		static __int32 SubType() { return -1; }
 		enum class expedition_type {
 			none = 0,
@@ -147,6 +147,8 @@ int target_desc_tableId() const {return 435;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

@@ -44,7 +44,7 @@ __int32 cmd_key_left;
 __int32 cmd_key_right;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 13); }
-		static __int16 TableId() { return 361; }
+		static __int16 TableId() { return 364; }
 		static __int32 SubType() { return -1; }
 		enum class playerstance {
 			stance_none = 0,
@@ -142,6 +142,7 @@ __int32 cmd_key_right;
 			catch_friend = 6,
 			inhalation_catch = 7,
 			range_catch = 8,
+			fixate_catch = 9,
 		};
 
 		enum class playerlinkstage {

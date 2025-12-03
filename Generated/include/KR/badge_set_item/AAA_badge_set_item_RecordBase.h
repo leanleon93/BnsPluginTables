@@ -23,9 +23,9 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef effect[2];
 __int32 effect_Size() const {return 2;};
-int effect_tableId() const {return 118;};
+int effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 27; }

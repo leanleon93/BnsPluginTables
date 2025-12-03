@@ -31,7 +31,7 @@ char Pad1[2];
 __int32 next_step_interval;
 __int32 command_action_input_offset;
 BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 118;};
+int effect_tableId() const {return 119;};
 signed char result[2];
 __int32 result_Size() const {return 2;};
 signed char result_event_type[2];
@@ -40,12 +40,12 @@ signed char result_count;
 char Pad2[1];
 __int16 caster_pass_state;
 BnsTables::Shared::TableRef caster_pass_effect;
-int caster_pass_effect_tableId() const {return 118;};
+int caster_pass_effect_tableId() const {return 119;};
 __int16 target_pass_state;
 signed char target_pass_state_count;
 char Pad3[1];
 BnsTables::Shared::TableRef target_pass_effect;
-int target_pass_effect_tableId() const {return 118;};
+int target_pass_effect_tableId() const {return 119;};
 signed char target_pass_effect_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }

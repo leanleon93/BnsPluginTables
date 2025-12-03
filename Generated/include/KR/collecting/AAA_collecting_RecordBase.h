@@ -26,9 +26,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 61; }
 		static __int32 SubType() { return -1; }
 		enum class category {
@@ -122,6 +122,8 @@ int name_tableId() const {return 435;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 BnsTables::Shared::ExplicitTableRef target_item[20];
 __int32 target_item_Size() const {return 20;};
 signed char target_item_condition_type[20];
@@ -38,10 +38,10 @@ __int32 total_improve_level_Size() const {return 30;};
 char Pad1[2];
 BnsTables::Shared::TableRef total_improve_level_effect[30];
 __int32 total_improve_level_effect_Size() const {return 30;};
-int total_improve_level_effect_tableId() const {return 118;};
+int total_improve_level_effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef total_improve_level_effect_description[30];
 __int32 total_improve_level_effect_description_Size() const {return 30;};
-int total_improve_level_effect_description_tableId() const {return 435;};
+int total_improve_level_effect_description_tableId() const {return 438;};
 signed char total_improve_level_ability[30];
 __int32 total_improve_level_ability_Size() const {return 30;};
 char Pad2[2];
@@ -56,10 +56,10 @@ __int16 min_improve_level[30];
 __int32 min_improve_level_Size() const {return 30;};
 BnsTables::Shared::TableRef min_improve_level_effect[30];
 __int32 min_improve_level_effect_Size() const {return 30;};
-int min_improve_level_effect_tableId() const {return 118;};
+int min_improve_level_effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef min_improve_level_effect_description[30];
 __int32 min_improve_level_effect_description_Size() const {return 30;};
-int min_improve_level_effect_description_tableId() const {return 435;};
+int min_improve_level_effect_description_tableId() const {return 438;};
 signed char min_improve_level_ability[30];
 __int32 min_improve_level_ability_Size() const {return 30;};
 char Pad3[2];
@@ -72,7 +72,7 @@ __int32 min_improve_level_condition_event_Size() const {return 30;};
 int min_improve_level_condition_event_tableId() const {return 65;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 214; }
+		static __int16 TableId() { return 215; }
 		static __int32 SubType() { return -1; }
 		enum class target_item_condition_type {
 			none = 0,
@@ -296,6 +296,8 @@ int min_improve_level_condition_event_tableId() const {return 65;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

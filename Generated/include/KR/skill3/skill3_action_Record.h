@@ -9,8 +9,9 @@ namespace BnsTables::KR {
 	struct skill3_action_Record : skill3_Record
 	{
 	public:
-		signed char action_type;
-char Pad_sub_0[3];
+		char Pad_sub_0[3];
+signed char action_type;
+char Pad_sub_1[3];
 __int32 max_hyper_energy_point;
 __int16 consume_hyper_energy_point;
 

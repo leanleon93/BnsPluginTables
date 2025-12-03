@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_item_ability_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int32 attack_power_equip_min;
 __int32 attack_power_equip_max;
 __int16 defend_power_equip_value;

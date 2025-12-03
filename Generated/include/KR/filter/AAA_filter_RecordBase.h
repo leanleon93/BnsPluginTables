@@ -74,10 +74,10 @@ BnsTables::Shared::UnkFlag target;
 BnsTables::Shared::UnkFlag subject2;
 BnsTables::Shared::UnkFlag target2;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 435;};
+int description_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 150; }
+		static __int16 TableId() { return 151; }
 		static __int32 SubType() { return -1; }
 		enum class value {
 			race_none = 0,

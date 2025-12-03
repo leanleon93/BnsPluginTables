@@ -22,12 +22,12 @@ signed char server_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef parent_skill;
-int parent_skill_tableId() const {return 350;};
+int parent_skill_tableId() const {return 353;};
 BnsTables::Shared::TableRef base_skill;
-int base_skill_tableId() const {return 350;};
+int base_skill_tableId() const {return 353;};
 BnsTables::Shared::TableRef change_skill[4];
 __int32 change_skill_Size() const {return 4;};
-int change_skill_tableId() const {return 350;};
+int change_skill_tableId() const {return 353;};
 signed char row;
 signed char column;
 signed char job;
@@ -35,15 +35,15 @@ signed char equip_type;
 signed char tier;
 char Pad0[3];
 BnsTables::Shared::TableRef base_skill_acquire_route;
-int base_skill_acquire_route_tableId() const {return 221;};
+int base_skill_acquire_route_tableId() const {return 222;};
 BnsTables::Shared::TableRef change_skill_acquire_route[4];
 __int32 change_skill_acquire_route_Size() const {return 4;};
-int change_skill_acquire_route_tableId() const {return 221;};
+int change_skill_acquire_route_tableId() const {return 222;};
 signed char job_specialization[3];
 __int32 job_specialization_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 354; }
+		static __int16 TableId() { return 357; }
 		static __int32 SubType() { return -1; }
 		enum class server_type {
 			nck = 0,

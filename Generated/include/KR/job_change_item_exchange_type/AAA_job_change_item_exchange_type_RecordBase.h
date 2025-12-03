@@ -24,10 +24,10 @@ namespace BnsTables::KR {
 char Pad0[3];
 wchar_t* icon;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 435;};
+int name_text_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 235; }
+		static __int16 TableId() { return 237; }
 		static __int32 SubType() { return -1; }
 		enum class item_exchange_type {
 			none = 0,

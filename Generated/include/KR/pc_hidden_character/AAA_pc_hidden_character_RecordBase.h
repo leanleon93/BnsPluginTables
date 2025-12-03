@@ -24,7 +24,7 @@ signed char sex;
 		wchar_t* hidden_mesh_path;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 292; }
+		static __int16 TableId() { return 294; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

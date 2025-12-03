@@ -32,24 +32,24 @@ __int16 revised_event_probability_in_exec[5];
 __int32 revised_event_probability_in_exec_Size() const {return 5;};
 char Pad0[2];
 BnsTables::Shared::TableRef skill_modify_limit;
-int skill_modify_limit_tableId() const {return 369;};
+int skill_modify_limit_tableId() const {return 372;};
 bool is_ego_skill;
 bool use_ego_skill_training_sequence;
 char Pad1[2];
 BnsTables::Shared::TableRef systematization[16];
 __int32 systematization_Size() const {return 16;};
-int systematization_tableId() const {return 375;};
+int systematization_tableId() const {return 378;};
 __int16 damage_rate_pvp;
 __int16 damage_rate_standard_stats;
 BnsTables::Shared::TableRef quest;
-int quest_tableId() const {return 307;};
+int quest_tableId() const {return 309;};
 signed char mission;
 signed char caseindex;
 signed char forwardingtype;
 char Pad2[1];
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 signed char ui_stance[3];
 __int32 ui_stance_Size() const {return 3;};
 char Pad3[1];
@@ -69,43 +69,43 @@ bool stop_exec_show;
 bool weapon_property;
 bool auto_casting;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 char Pad4[2];
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef main_info1;
-int main_info1_tableId() const {return 435;};
+int main_info1_tableId() const {return 438;};
 BnsTables::Shared::TableRef main_info2;
-int main_info2_tableId() const {return 435;};
+int main_info2_tableId() const {return 438;};
 BnsTables::Shared::TableRef sub_info;
-int sub_info_tableId() const {return 435;};
+int sub_info_tableId() const {return 438;};
 BnsTables::Shared::TableRef main_info1_diff;
-int main_info1_diff_tableId() const {return 435;};
+int main_info1_diff_tableId() const {return 438;};
 BnsTables::Shared::TableRef main_info2_diff;
-int main_info2_diff_tableId() const {return 435;};
+int main_info2_diff_tableId() const {return 438;};
 BnsTables::Shared::TableRef sub_info_diff;
-int sub_info_diff_tableId() const {return 435;};
+int sub_info_diff_tableId() const {return 438;};
 BnsTables::Shared::TableRef main_tooltip_1[5];
 __int32 main_tooltip_1_Size() const {return 5;};
-int main_tooltip_1_tableId() const {return 380;};
+int main_tooltip_1_tableId() const {return 383;};
 BnsTables::Shared::TableRef main_tooltip_2[5];
 __int32 main_tooltip_2_Size() const {return 5;};
-int main_tooltip_2_tableId() const {return 380;};
+int main_tooltip_2_tableId() const {return 383;};
 BnsTables::Shared::TableRef sub_tooltip[15];
 __int32 sub_tooltip_Size() const {return 15;};
-int sub_tooltip_tableId() const {return 380;};
+int sub_tooltip_tableId() const {return 383;};
 BnsTables::Shared::TableRef stance_tooltip[5];
 __int32 stance_tooltip_Size() const {return 5;};
-int stance_tooltip_tableId() const {return 380;};
+int stance_tooltip_tableId() const {return 383;};
 BnsTables::Shared::TableRef condition_tooltip[5];
 __int32 condition_tooltip_Size() const {return 5;};
-int condition_tooltip_tableId() const {return 380;};
+int condition_tooltip_tableId() const {return 383;};
 BnsTables::Shared::TableRef ui_combo;
-int ui_combo_tableId() const {return 360;};
+int ui_combo_tableId() const {return 363;};
 signed char ui_category_display_type;
 char Pad5[3];
 BnsTables::Shared::TableRef ui_main_buff;
-int ui_main_buff_tableId() const {return 118;};
+int ui_main_buff_tableId() const {return 119;};
 bool show_cast_bar;
 bool show_exec_bar;
 bool show_repeat_bar;
@@ -129,14 +129,15 @@ char Pad8[3];
 float bullet_effect_show_offset;
 float bullet_effect_duration;
 BnsTables::Shared::TableRef description_weapon_soul_gem;
-int description_weapon_soul_gem_tableId() const {return 435;};
+int description_weapon_soul_gem_tableId() const {return 438;};
 BnsTables::Shared::TableRef skill_style;
-int skill_style_tableId() const {return 374;};
+int skill_style_tableId() const {return 377;};
 BnsTables::Shared::TableRef skill_arcane_info;
-int skill_arcane_info_tableId() const {return 352;};
+int skill_arcane_info_tableId() const {return 355;};
+bool ignore_hit_reaction;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 13); }
-		static __int16 TableId() { return 350; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
+		static __int16 TableId() { return 353; }
 		static __int32 SubType() { return -1; }
 		enum class ui_stance {
 			stance_none = 0,
@@ -598,6 +599,12 @@ int skill_arcane_info_tableId() const {return 352;};
 			link_target = 4,
 			my_master = 5,
 			my_masters_link_target = 6,
+		};
+
+		enum class charge_cancel_force_use_unpress_skill {
+			none = 0,
+			not_enough_sp2_by_repeat_condition = 1,
+			over_charge = 2,
 		};
 
 		enum class perfect_dodge {

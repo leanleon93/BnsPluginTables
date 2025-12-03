@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 __int16 mastery_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 392; }
+		static __int16 TableId() { return 395; }
 		static __int32 SubType() { return -1; }
 
 	};

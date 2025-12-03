@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef env2spawn;
-int env2spawn_tableId() const {return 483;};
+int env2spawn_tableId() const {return 486;};
 wchar_t* disable_imageset;
 wchar_t* disable_over_imageset;
 wchar_t* disable_pressed_imageset;
