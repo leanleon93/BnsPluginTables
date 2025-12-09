@@ -69,12 +69,12 @@ wchar_t* outofsight_over_imageset;
 wchar_t* outofsight_pressed_imageset;
 float center_pos_x;
 float center_pos_y;
-bool is_mapunit_apply;
+bool is_mapunit_detach;
 char Pad3[3];
-__int32 apply_zone_id[5];
-__int32 apply_zone_id_Size() const {return 5;};
+__int32 detach_zone_id[5];
+__int32 detach_zone_id_Size() const {return 5;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 82); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 83); }
 		static __int16 TableId() { return 261; }
 		static __int32 SubType() { return -1; }
 		enum class category {
