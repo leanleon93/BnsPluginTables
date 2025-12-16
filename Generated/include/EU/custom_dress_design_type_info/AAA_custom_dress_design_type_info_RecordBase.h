@@ -31,9 +31,9 @@ signed char min_value;
 signed char max_value;
 char Pad1[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 434;};
+int desc_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 89; }

@@ -34,10 +34,10 @@ __int32 random_item_Size() const {return 20;};
 signed char random_item_condition[20];
 __int32 random_item_condition_Size() const {return 20;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 316; }
+		static __int16 TableId() { return 317; }
 		static __int32 SubType() { return -1; }
 		enum class fixed_item_condition {
 			none = 0,

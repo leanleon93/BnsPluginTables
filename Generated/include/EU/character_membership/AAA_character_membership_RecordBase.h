@@ -23,11 +23,11 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef membership_benefit[8];
 __int32 membership_benefit_Size() const {return 8;};
-int membership_benefit_tableId() const {return 269;};
+int membership_benefit_tableId() const {return 270;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 435;};
 BnsTables::Shared::IconRef icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }

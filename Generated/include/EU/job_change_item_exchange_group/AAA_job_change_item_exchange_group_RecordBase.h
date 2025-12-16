@@ -26,7 +26,7 @@ int cost_item_tableId() const {return 202;};
 __int16 cost_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
-		static __int16 TableId() { return 233; }
+		static __int16 TableId() { return 234; }
 		static __int32 SubType() { return -1; }
 
 	};

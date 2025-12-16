@@ -13,7 +13,7 @@ namespace BnsTables::EU {
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef msg[2];
 __int32 msg_Size() const {return 2;};
-int msg_tableId() const {return 281;};
+int msg_tableId() const {return 282;};
 BnsTables::Shared::TableRef faction[2];
 __int32 faction_Size() const {return 2;};
 int faction_tableId() const {return 139;};

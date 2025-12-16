@@ -18,7 +18,7 @@ signed char item_min_level[8];
 __int32 item_min_level_Size() const {return 8;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 434;};
+int slot_name_tableId() const {return 435;};
 
 		static __int32 SubType() { return 4; }
 	};

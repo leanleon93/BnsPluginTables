@@ -29,7 +29,7 @@ __int16 acquire_life_contents_point;
 signed char reduce_life_contents_cq_amount;
 char Pad1[1];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 wchar_t* mesh;
 BnsTables::Shared::IconRef icon;
 wchar_t* col;

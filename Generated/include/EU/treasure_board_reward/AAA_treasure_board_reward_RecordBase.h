@@ -30,7 +30,7 @@ __int16 max_draw_count;
 __int32 reward_item_prob_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 439; }
+		static __int16 TableId() { return 440; }
 		static __int32 SubType() { return -1; }
 
 	};

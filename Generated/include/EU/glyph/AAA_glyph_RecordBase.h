@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 signed char glyph_type;
 signed char color;
 signed char grade;
@@ -39,7 +39,7 @@ int condition_event_min_tableId() const {return 65;};
 BnsTables::Shared::TableRef condition_event_max;
 int condition_event_max_tableId() const {return 65;};
 BnsTables::Shared::TableRef flavor_text;
-int flavor_text_tableId() const {return 434;};
+int flavor_text_tableId() const {return 435;};
 signed char reward_tier;
 signed char ability[5];
 __int32 ability_Size() const {return 5;};

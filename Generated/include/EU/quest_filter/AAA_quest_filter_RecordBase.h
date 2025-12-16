@@ -26,7 +26,7 @@ BnsTables::Shared::UnkFlag target;
 BnsTables::Shared::UnkFlag subject2;
 BnsTables::Shared::UnkFlag target2;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }

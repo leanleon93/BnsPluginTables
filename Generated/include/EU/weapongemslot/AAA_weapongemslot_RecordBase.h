@@ -27,7 +27,7 @@ __int16 delete_slot_consume_item_stack_count[4];
 __int32 delete_slot_consume_item_stack_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 458; }
+		static __int16 TableId() { return 459; }
 		static __int32 SubType() { return -1; }
 
 	};

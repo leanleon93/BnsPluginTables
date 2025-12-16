@@ -26,7 +26,7 @@ bool new_faq;
 bool hot_faq;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 299; }
+		static __int16 TableId() { return 300; }
 		static __int32 SubType() { return -1; }
 
 	};

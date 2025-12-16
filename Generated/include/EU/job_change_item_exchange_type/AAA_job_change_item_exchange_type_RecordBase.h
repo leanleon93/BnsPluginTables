@@ -24,10 +24,10 @@ namespace BnsTables::EU {
 char Pad0[3];
 wchar_t* icon;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 434;};
+int name_text_tableId() const {return 435;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 234; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
+		static __int16 TableId() { return 235; }
 		static __int32 SubType() { return -1; }
 		enum class item_exchange_type {
 			none = 0,
@@ -69,12 +69,16 @@ int name_text_tableId() const {return 434;};
 			armlet_1 = 36,
 			armlet_2 = 37,
 			weapon_enchant_gem = 38,
+			skill_train_by_item = 39,
+			weapon_soul_gem = 40,
 		};
 
 		enum class condition {
 			item_equip_type = 0,
 			weapon_appearance = 1,
 			weapon_enchant_gem = 2,
+			skill_train_by_item = 3,
+			weapon_soul_gem = 4,
 		};
 	};
 #pragma pack(pop)

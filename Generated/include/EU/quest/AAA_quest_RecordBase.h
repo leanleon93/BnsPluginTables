@@ -24,16 +24,16 @@ namespace BnsTables::EU {
 signed char max_repeat;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef map_group_1[2];
 __int32 map_group_1_Size() const {return 2;};
-int map_group_1_tableId() const {return 253;};
+int map_group_1_tableId() const {return 254;};
 BnsTables::Shared::TableRef group2;
-int group2_tableId() const {return 434;};
+int group2_tableId() const {return 435;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 434;};
+int desc_tableId() const {return 435;};
 BnsTables::Shared::TableRef completed_desc;
-int completed_desc_tableId() const {return 434;};
+int completed_desc_tableId() const {return 435;};
 signed char category;
 bool completed_list;
 signed char grade;
@@ -73,10 +73,10 @@ int reset_item_tableId() const {return 202;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef acquire_talksocial;
-int acquire_talksocial_tableId() const {return 428;};
+int acquire_talksocial_tableId() const {return 429;};
 float acquire_talksocial_delay;
 BnsTables::Shared::TableRef complete_talksocial;
-int complete_talksocial_tableId() const {return 428;};
+int complete_talksocial_tableId() const {return 429;};
 float complete_talksocial_delay;
 bool check_vitality;
 char Pad4[1];
@@ -115,7 +115,7 @@ BnsTables::Shared::TableRef contents_reset;
 int contents_reset_tableId() const {return 75;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
-		static __int16 TableId() { return 306; }
+		static __int16 TableId() { return 307; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			epic = 0,

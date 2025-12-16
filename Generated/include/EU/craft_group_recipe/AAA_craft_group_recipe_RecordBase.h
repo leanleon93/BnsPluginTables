@@ -29,7 +29,7 @@ __int16 display_index;
 __int16 required_craft_exp;
 char Pad0[2];
 BnsTables::Shared::TableRef required_completion_quest;
-int required_completion_quest_tableId() const {return 306;};
+int required_completion_quest_tableId() const {return 307;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 83; }

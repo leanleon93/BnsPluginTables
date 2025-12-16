@@ -21,13 +21,13 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef survey_question;
-int survey_question_tableId() const {return 427;};
+int survey_question_tableId() const {return 428;};
 signed char job;
 signed char race;
 char Pad0[2];
 __int32 level;
 BnsTables::Shared::TableRef completed_quest;
-int completed_quest_tableId() const {return 306;};
+int completed_quest_tableId() const {return 307;};
 __int16 start_year;
 signed char start_month;
 signed char start_day;
@@ -52,7 +52,7 @@ signed char optional_reward_item_count[4];
 __int32 optional_reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 426; }
+		static __int16 TableId() { return 427; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

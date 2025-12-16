@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill;
-int skill_tableId() const {return 349;};
+int skill_tableId() const {return 350;};
 signed char skill_result[8];
 __int32 skill_result_Size() const {return 8;};
 

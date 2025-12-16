@@ -23,14 +23,14 @@ namespace BnsTables::EU {
 		__int16 required_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_preceding_epic_quest;
-int required_preceding_epic_quest_tableId() const {return 306;};
+int required_preceding_epic_quest_tableId() const {return 307;};
 BnsTables::Shared::TableRef last_epic_quest_to_complete;
-int last_epic_quest_to_complete_tableId() const {return 306;};
+int last_epic_quest_to_complete_tableId() const {return 307;};
 BnsTables::Shared::TableRef quest_to_complete[20];
 __int32 quest_to_complete_Size() const {return 20;};
-int quest_to_complete_tableId() const {return 306;};
+int quest_to_complete_tableId() const {return 307;};
 BnsTables::Shared::TableRef warp_to_pcspawn;
-int warp_to_pcspawn_tableId() const {return 488;};
+int warp_to_pcspawn_tableId() const {return 489;};
 BnsTables::Shared::TableRef faction1_item;
 int faction1_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef faction2_item;
@@ -44,7 +44,7 @@ __int16 reward_item_count[4];
 __int32 reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 243; }
+		static __int16 TableId() { return 244; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		BnsTables::Shared::TableRef gadget;
 int gadget_tableId() const {return 146;};
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 276;};
+int npc_tableId() const {return 277;};
 
 		static __int32 SubType() { return 14; }
 	};

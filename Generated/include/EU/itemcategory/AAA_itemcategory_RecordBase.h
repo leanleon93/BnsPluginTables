@@ -228,6 +228,9 @@ namespace BnsTables::EU {
 			relic_1 = 199,
 			star_stone = 200,
 			skill_train_by_item_extract = 201,
+			transform_coupon = 202,
+			worldaccountcard_coupon = 203,
+			glyph_coupon = 204,
 		};
 	};
 #pragma pack(pop)

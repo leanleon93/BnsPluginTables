@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 signed char sort_id;
 signed char unique_group;
 signed char target_type;
@@ -254,6 +254,9 @@ signed char check_around_op;
 			gimig_9 = 186,
 			gimig_10 = 187,
 			jungcheobburga3 = 188,
+			pirdeuboseu_1 = 189,
+			pirdeuboseu_2 = 190,
+			pirdeuboseu_3 = 191,
 		};
 
 		enum class check_fail_effect_flag {

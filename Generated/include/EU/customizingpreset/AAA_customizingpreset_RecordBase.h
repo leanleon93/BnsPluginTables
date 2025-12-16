@@ -30,7 +30,7 @@ signed char param8[96];
 __int32 param8_Size() const {return 96;};
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 434;};
+int desc_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 95; }

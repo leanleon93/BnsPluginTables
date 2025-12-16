@@ -28,11 +28,11 @@ char Pad0[1];
 __int32 minimum_score;
 wchar_t* contents_banner_img;
 BnsTables::Shared::TableRef contents_name;
-int contents_name_tableId() const {return 434;};
+int contents_name_tableId() const {return 435;};
 signed char sort_number;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
-		static __int16 TableId() { return 322; }
+		static __int16 TableId() { return 323; }
 		static __int32 SubType() { return -1; }
 		enum class contents_type {
 			invalid = 0,

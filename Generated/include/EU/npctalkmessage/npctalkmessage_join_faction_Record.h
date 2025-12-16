@@ -12,9 +12,9 @@ namespace BnsTables::EU {
 		signed char population_statistics;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef end_talk_social_ok;
-int end_talk_social_ok_tableId() const {return 396;};
+int end_talk_social_ok_tableId() const {return 397;};
 BnsTables::Shared::TableRef fail_population_message;
-int fail_population_message_tableId() const {return 281;};
+int fail_population_message_tableId() const {return 282;};
 
 		static __int32 SubType() { return 13; }
 	};

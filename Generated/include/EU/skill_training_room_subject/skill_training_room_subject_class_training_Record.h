@@ -11,17 +11,17 @@ namespace BnsTables::EU {
 	public:
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef main_skill;
-int main_skill_tableId() const {return 349;};
+int main_skill_tableId() const {return 350;};
 BnsTables::Shared::TableRef skill_combo_desc;
-int skill_combo_desc_tableId() const {return 434;};
+int skill_combo_desc_tableId() const {return 435;};
 BnsTables::Shared::TableRef skill_combo_tips_main;
-int skill_combo_tips_main_tableId() const {return 434;};
+int skill_combo_tips_main_tableId() const {return 435;};
 BnsTables::Shared::TableRef skill_combo_tips_desc;
-int skill_combo_tips_desc_tableId() const {return 434;};
+int skill_combo_tips_desc_tableId() const {return 435;};
 BnsTables::Shared::TableRef skill_training_sequence;
-int skill_training_sequence_tableId() const {return 387;};
+int skill_training_sequence_tableId() const {return 388;};
 BnsTables::Shared::TableRef guide_text;
-int guide_text_tableId() const {return 434;};
+int guide_text_tableId() const {return 435;};
 signed char base_job_style;
 signed char advanced_job_style;
 signed char advanced_tier_variation[5];

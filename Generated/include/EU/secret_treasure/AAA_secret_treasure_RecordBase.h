@@ -26,7 +26,7 @@ __int32 usable_duration;
 bool do_not_use;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 346; }
+		static __int16 TableId() { return 347; }
 		static __int32 SubType() { return -1; }
 
 	};

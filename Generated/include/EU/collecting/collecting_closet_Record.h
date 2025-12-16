@@ -22,7 +22,7 @@ __int32 collect_closet_subreplace_Size() const {return 8;};
 int collect_closet_subreplace_tableId() const {return 60;};
 BnsTables::Shared::TableRef collect_skill_skin[4];
 __int32 collect_skill_skin_Size() const {return 4;};
-int collect_skill_skin_tableId() const {return 371;};
+int collect_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef reward_item[6];
 __int32 reward_item_Size() const {return 6;};
 int reward_item_tableId() const {return 202;};

@@ -28,7 +28,7 @@ __int16 mileage_range_max[5];
 __int32 mileage_range_max_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 227; }
+		static __int16 TableId() { return 228; }
 		static __int32 SubType() { return -1; }
 
 	};

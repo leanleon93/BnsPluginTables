@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef upgrade_grocery;
-int upgrade_grocery_tableId() const {return 228;};
+int upgrade_grocery_tableId() const {return 229;};
 signed char required_inven_capacity;
 char Pad1[3];
 __int32 money_cost;
@@ -33,7 +33,7 @@ signed char main_ingredient_condition_type;
 signed char main_ingredient_min_level;
 __int16 main_ingredient_stack_count;
 BnsTables::Shared::TableRef main_ingredient_title_name;
-int main_ingredient_title_name_tableId() const {return 434;};
+int main_ingredient_title_name_tableId() const {return 435;};
 BnsTables::Shared::TableRef main_ingredient_title_item;
 int main_ingredient_title_item_tableId() const {return 202;};
 bool keep_main_ingredient_weapon_gem_slot;
@@ -50,7 +50,7 @@ __int16 sub_ingredient_stack_count[7];
 __int32 sub_ingredient_stack_count_Size() const {return 7;};
 BnsTables::Shared::TableRef sub_ingredient_title_name[7];
 __int32 sub_ingredient_title_name_Size() const {return 7;};
-int sub_ingredient_title_name_tableId() const {return 434;};
+int sub_ingredient_title_name_tableId() const {return 435;};
 BnsTables::Shared::TableRef sub_ingredient_title_item[7];
 __int32 sub_ingredient_title_item_Size() const {return 7;};
 int sub_ingredient_title_item_tableId() const {return 202;};
@@ -97,12 +97,12 @@ __int32 random_item_select_prop_weight_Size() const {return 10;};
 bool random_failure_mileage_save;
 char Pad6[1];
 BnsTables::Shared::TableRef random_failure_mileage_distribution_type;
-int random_failure_mileage_distribution_type_tableId() const {return 317;};
+int random_failure_mileage_distribution_type_tableId() const {return 318;};
 BnsTables::Shared::TableRef random_failure_mileage_influence_recipe[2];
 __int32 random_failure_mileage_influence_recipe_Size() const {return 2;};
 int random_failure_mileage_influence_recipe_tableId() const {return 226;};
 BnsTables::Shared::TableRef random_retry_cost;
-int random_retry_cost_tableId() const {return 227;};
+int random_retry_cost_tableId() const {return 228;};
 signed char main_ingredient_weapon_gem_type;
 char Pad7[1];
 __int16 main_ingredient_weapon_gem_level;
@@ -118,9 +118,9 @@ __int16 weapon_gem_transform_fail_probability;
 BnsTables::Shared::TableRef title_item;
 int title_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef title_name;
-int title_name_tableId() const {return 434;};
+int title_name_tableId() const {return 435;};
 BnsTables::Shared::TableRef title_reward;
-int title_reward_tableId() const {return 316;};
+int title_reward_tableId() const {return 317;};
 signed char upper_category;
 signed char category;
 bool use_random;
@@ -128,7 +128,7 @@ char Pad9[1];
 BnsTables::Shared::TableRef fail_effect;
 int fail_effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef quest;
-int quest_tableId() const {return 306;};
+int quest_tableId() const {return 307;};
 bool bm_ingredient_recipe;
 signed char warning;
 signed char event_index;
@@ -137,8 +137,10 @@ __int32 recipe_score;
 signed char recipe_series;
 signed char definite_discount_minimum_value;
 __int16 sort_no;
+BnsTables::Shared::TableRef coupon_item;
+int coupon_item_tableId() const {return 202;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 5); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 226; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
@@ -288,36 +290,45 @@ __int16 sort_no;
 
 		enum class category {
 			none = 0,
-			event = 1,
-			material = 2,
-			costume = 3,
-			weapon = 4,
-			legendary_weapon = 5,
-			accessory = 6,
-			weapon_gem_adder = 7,
-			weapon_gem2 = 8,
-			piece = 9,
-			purification = 10,
-			special = 11,
-			pet = 12,
-			pet_legend = 13,
-			pet_change = 14,
-			taiji_gem = 15,
-			division = 16,
-			weapon_enchant_gem = 17,
-			sewing = 18,
-			weapon_transform = 19,
-			accessory_transform = 20,
-			equip_gem = 21,
-			card = 22,
-			spirit = 23,
-			etc = 24,
-			pet_gem = 25,
-			common_1 = 26,
-			common_2 = 27,
-			common_3 = 28,
-			common_4 = 29,
-			common_5 = 30,
+			event_1 = 1,
+			event_2 = 2,
+			event_3 = 3,
+			event_4 = 4,
+			event_5 = 5,
+			event_6 = 6,
+			event_7 = 7,
+			event_8 = 8,
+			event_9 = 9,
+			event_10 = 10,
+			material = 11,
+			costume = 12,
+			weapon = 13,
+			legendary_weapon = 14,
+			accessory = 15,
+			weapon_gem_adder = 16,
+			weapon_gem2 = 17,
+			piece = 18,
+			purification = 19,
+			special = 20,
+			pet = 21,
+			pet_legend = 22,
+			pet_change = 23,
+			taiji_gem = 24,
+			division = 25,
+			weapon_enchant_gem = 26,
+			sewing = 27,
+			weapon_transform = 28,
+			accessory_transform = 29,
+			equip_gem = 30,
+			card = 31,
+			spirit = 32,
+			etc = 33,
+			pet_gem = 34,
+			common_1 = 35,
+			common_2 = 36,
+			common_3 = 37,
+			common_4 = 38,
+			common_5 = 39,
 		};
 
 		enum class warning {

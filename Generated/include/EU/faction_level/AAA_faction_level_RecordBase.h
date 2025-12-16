@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int32 reputation;
 BnsTables::Shared::TableRef grade_name[2];
 __int32 grade_name_Size() const {return 2;};
-int grade_name_tableId() const {return 434;};
+int grade_name_tableId() const {return 435;};
 __int32 max_faction_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }

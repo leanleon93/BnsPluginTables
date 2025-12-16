@@ -21,11 +21,11 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 wchar_t* icon;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 61); }
-		static __int16 TableId() { return 442; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 62); }
+		static __int16 TableId() { return 443; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,
@@ -130,30 +130,31 @@ wchar_t* icon;
 			buy_collection_item_by_instant_payment = 99,
 			slate = 100,
 			search_museum_info = 101,
-			show_card_painting = 102,
-			inventory_to_card_collection = 103,
-			card_collection_to_inventory = 104,
-			select_collection_card = 105,
-			deselect_collection_card = 106,
-			batched_use_grocery = 107,
-			improve_succession_auto_register = 108,
-			open_equipment_guide = 109,
-			open_guide_movie = 110,
-			inventory_to_card_expedition = 111,
-			card_collection_to_expedition = 112,
-			move_inventory_to_relics = 113,
-			move_relics_to_inventory = 114,
-			add_combine_relics = 115,
-			add_enhance_relics = 116,
-			add_disassemble_relics = 117,
-			add_item_bookmark = 118,
-			remove_item_bookmark = 119,
-			attach_starstone = 120,
-			show_item_probability = 121,
-			open_worldaccount_cardbook = 122,
-			achievement_search = 123,
-			register_to_related_ui = 124,
-			show_decompose_probability = 125,
+			search_card_collection_info = 102,
+			show_card_painting = 103,
+			inventory_to_card_collection = 104,
+			card_collection_to_inventory = 105,
+			select_collection_card = 106,
+			deselect_collection_card = 107,
+			batched_use_grocery = 108,
+			improve_succession_auto_register = 109,
+			open_equipment_guide = 110,
+			open_guide_movie = 111,
+			inventory_to_card_expedition = 112,
+			card_collection_to_expedition = 113,
+			move_inventory_to_relics = 114,
+			move_relics_to_inventory = 115,
+			add_combine_relics = 116,
+			add_enhance_relics = 117,
+			add_disassemble_relics = 118,
+			add_item_bookmark = 119,
+			remove_item_bookmark = 120,
+			attach_starstone = 121,
+			show_item_probability = 122,
+			open_worldaccount_cardbook = 123,
+			achievement_search = 124,
+			register_to_related_ui = 125,
+			show_decompose_probability = 126,
 		};
 	};
 #pragma pack(pop)

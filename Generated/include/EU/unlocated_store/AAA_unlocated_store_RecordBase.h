@@ -24,12 +24,12 @@ namespace BnsTables::EU {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef store2;
-int store2_tableId() const {return 412;};
+int store2_tableId() const {return 413;};
 bool available_only_with_grade_benefit;
 signed char unlocated_store_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 444; }
+		static __int16 TableId() { return 445; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

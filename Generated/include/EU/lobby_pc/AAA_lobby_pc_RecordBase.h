@@ -54,7 +54,7 @@ float preview_world_cam_near_height;
 float preview_world_cam_modulate_factor;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 251; }
+		static __int16 TableId() { return 252; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

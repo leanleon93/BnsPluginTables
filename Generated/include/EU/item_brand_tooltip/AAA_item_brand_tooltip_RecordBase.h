@@ -22,7 +22,7 @@ signed char item_condition_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 __int16 game_category_3;
 signed char item_grade;
 signed char equip_level;
@@ -38,25 +38,25 @@ BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef tag_icon;
 BnsTables::Shared::IconRef tag_icon_grade;
 BnsTables::Shared::TableRef main_info;
-int main_info_tableId() const {return 434;};
+int main_info_tableId() const {return 435;};
 BnsTables::Shared::TableRef sub_info;
-int sub_info_tableId() const {return 434;};
+int sub_info_tableId() const {return 435;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 434;};
+int description2_tableId() const {return 435;};
 BnsTables::Shared::TableRef description4_title;
-int description4_title_tableId() const {return 434;};
+int description4_title_tableId() const {return 435;};
 BnsTables::Shared::TableRef description5_title;
-int description5_title_tableId() const {return 434;};
+int description5_title_tableId() const {return 435;};
 BnsTables::Shared::TableRef description6_title;
-int description6_title_tableId() const {return 434;};
+int description6_title_tableId() const {return 435;};
 BnsTables::Shared::TableRef description4;
-int description4_tableId() const {return 434;};
+int description4_tableId() const {return 435;};
 BnsTables::Shared::TableRef description5;
-int description5_tableId() const {return 434;};
+int description5_tableId() const {return 435;};
 BnsTables::Shared::TableRef description6;
-int description6_tableId() const {return 434;};
+int description6_tableId() const {return 435;};
 BnsTables::Shared::TableRef store_description;
-int store_description_tableId() const {return 434;};
+int store_description_tableId() const {return 435;};
 BnsTables::Shared::TableRef title_item;
 int title_item_tableId() const {return 202;};
 bool show_related_item;
@@ -346,6 +346,9 @@ int related_item_tableId() const {return 202;};
 			relic_1 = 199,
 			star_stone = 200,
 			skill_train_by_item_extract = 201,
+			transform_coupon = 202,
+			worldaccountcard_coupon = 203,
+			glyph_coupon = 204,
 		};
 
 		enum class equip_job_check {

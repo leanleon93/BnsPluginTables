@@ -61,7 +61,7 @@ char Pad1[1];
 __int16 summon_base_dir_relative_angle;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 17); }
-		static __int16 TableId() { return 363; }
+		static __int16 TableId() { return 364; }
 		static __int32 SubType() { return -1; }
 		enum class cast_dir_caster {
 			value_360 = 0,

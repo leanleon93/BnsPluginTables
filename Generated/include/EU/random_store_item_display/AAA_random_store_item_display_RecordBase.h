@@ -29,7 +29,7 @@ signed char probability_group;
 bool new_arrival;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 321; }
+		static __int16 TableId() { return 322; }
 		static __int32 SubType() { return -1; }
 		enum class random_store_type {
 			none = 0,

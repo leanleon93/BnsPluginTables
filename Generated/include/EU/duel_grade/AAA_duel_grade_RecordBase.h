@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 __int16 duel_point_bonus_percent;
 char Pad0[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef medium_icon;
 BnsTables::Shared::IconRef small_icon;

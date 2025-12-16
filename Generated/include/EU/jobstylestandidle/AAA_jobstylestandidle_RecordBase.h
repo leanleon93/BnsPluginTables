@@ -28,7 +28,7 @@ __int32 group_index;
 __int32 event_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 242; }
+		static __int16 TableId() { return 243; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

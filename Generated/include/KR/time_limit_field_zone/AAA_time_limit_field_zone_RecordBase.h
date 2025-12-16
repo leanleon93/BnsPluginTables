@@ -51,12 +51,13 @@ int recommend_alias_tableId() const {return 74;};
 __int16 recommend_attack_power;
 signed char entrance_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
 		static __int16 TableId() { return 439; }
 		static __int32 SubType() { return -1; }
 		enum class entrance_type {
 			default_val = 0,
 			public_raid3 = 1,
+			public_raid3_in_world = 2,
 		};
 	};
 #pragma pack(pop)

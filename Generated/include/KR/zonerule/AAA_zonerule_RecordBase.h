@@ -47,8 +47,9 @@ bool enable_performance_option;
 bool is_world_boss_spawn_zone;
 bool use_default_skill;
 bool apply_membership_benefit;
+bool is_timelimitzone_entrance;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 1); }
 		static __int16 TableId() { return 494; }
 		static __int32 SubType() { return -1; }
 		enum class pvp_mode_type {

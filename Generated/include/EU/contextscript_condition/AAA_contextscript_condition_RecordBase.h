@@ -445,6 +445,9 @@ __int16 immune_breaker_attribute;
 			gimig_9 = 186,
 			gimig_10 = 187,
 			jungcheobburga3 = 188,
+			pirdeuboseu_1 = 189,
+			pirdeuboseu_2 = 190,
+			pirdeuboseu_3 = 191,
 		};
 	};
 #pragma pack(pop)

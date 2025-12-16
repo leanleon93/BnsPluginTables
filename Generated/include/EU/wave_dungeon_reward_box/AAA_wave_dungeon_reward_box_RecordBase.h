@@ -29,7 +29,7 @@ BnsTables::Shared::TableRef bronze_box;
 int bronze_box_tableId() const {return 202;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 453; }
+		static __int16 TableId() { return 454; }
 		static __int32 SubType() { return -1; }
 		enum class difficulty_type {
 			none = 0,

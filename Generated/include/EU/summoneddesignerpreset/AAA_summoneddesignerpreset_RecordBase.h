@@ -34,7 +34,7 @@ signed char body_shape;
 signed char decal;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 418; }
+		static __int16 TableId() { return 419; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

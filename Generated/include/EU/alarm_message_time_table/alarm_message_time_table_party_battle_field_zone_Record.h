@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef party_battle_field_zone;
-int party_battle_field_zone_tableId() const {return 283;};
+int party_battle_field_zone_tableId() const {return 284;};
 
 		static __int32 SubType() { return 2; }
 	};
