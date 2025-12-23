@@ -50,14 +50,16 @@ BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 74;};
 __int16 recommend_attack_power;
 signed char entrance_type;
+char Pad2[1];
+__int32 parent_time_limit_field_zone;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
 		static __int16 TableId() { return 439; }
 		static __int32 SubType() { return -1; }
 		enum class entrance_type {
 			default_val = 0,
 			public_raid3 = 1,
-			public_raid3_in_world = 2,
+			special_entrance_in_world = 2,
 		};
 	};
 #pragma pack(pop)
