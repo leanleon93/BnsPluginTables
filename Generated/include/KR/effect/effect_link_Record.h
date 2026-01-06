@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_link_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 signed char link_type;
 signed char link_stage;
 char Pad_sub_1[2];

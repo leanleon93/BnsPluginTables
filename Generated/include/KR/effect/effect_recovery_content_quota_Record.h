@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_recovery_content_quota_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 __int32 content_quota_id;
 __int16 value;
 char Pad_sub_1[2];

@@ -1203,8 +1203,9 @@ BnsTables::Shared::TableRef description_item_random_option;
 int description_item_random_option_tableId() const {return 438;};
 bool block_reattach_when_encounter_sync_player;
 signed char fx_condition_channel;
+bool force_context_update;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(46, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(46, 3); }
 		static __int16 TableId() { return 119; }
 		static __int32 SubType() { return -1; }
 		enum class buff_type {

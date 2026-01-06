@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_part_attack_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 BnsTables::Shared::TableRef head_effect[2];
 __int32 head_effect_Size() const {return 2;};
 int head_effect_tableId() const {return 119;};

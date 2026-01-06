@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_guard_gauge_heal_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 __int32 guard_gauge_diff;
 __int16 guard_gauge_percent;
 

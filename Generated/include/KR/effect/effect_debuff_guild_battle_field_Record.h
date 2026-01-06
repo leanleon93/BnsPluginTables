@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_debuff_guild_battle_field_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 __int32 hp_diff;
 __int16 hp_percent;
 

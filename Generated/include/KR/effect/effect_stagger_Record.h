@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_stagger_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 __int16 speed_percent;
 
 		static __int32 SubType() { return 102; }

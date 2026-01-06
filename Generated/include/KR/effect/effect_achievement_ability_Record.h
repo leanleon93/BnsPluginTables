@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_achievement_ability_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 __int32 attack_power_creature_min;
 __int32 attack_power_creature_max;
 __int16 attack_hit_value;

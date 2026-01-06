@@ -9,7 +9,7 @@ namespace BnsTables::KR {
 	struct effect_mastery_stat_equip_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 __int16 modify_ability_for_mastery[16];
 __int32 modify_ability_for_mastery_Size() const {return 16;};
 __int64 modify_ability_diff_for_mastery[16];
