@@ -32,8 +32,15 @@ wchar_t* item_get_sound;
 wchar_t* fielditem_drop_sound;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 219; }
+		static __int16 TableId() { return 223; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			weapon = 0,
+			gem = 1,
+			costume = 2,
+			grocery = 3,
+			fielditem = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

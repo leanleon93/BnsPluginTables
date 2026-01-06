@@ -24,8 +24,9 @@ signed char job;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 bool deprecated;
+bool gold_server_deprecated;
 bool complete_from_client;
-char Pad0[2];
+char Pad0[1];
 BnsTables::Shared::TableRef register_ref[5];
 __int32 register_ref_Size() const {return 5;};
 int register_ref_tableId() const {return 7;};
@@ -38,7 +39,7 @@ bool progress_show;
 char Pad2[3];
 BnsTables::Shared::TableRef step_complete_reward_item[5];
 __int32 step_complete_reward_item_Size() const {return 5;};
-int step_complete_reward_item_tableId() const {return 198;};
+int step_complete_reward_item_tableId() const {return 202;};
 __int16 step_complete_reward_item_count[5];
 __int32 step_complete_reward_item_count_Size() const {return 5;};
 char Pad3[2];
@@ -50,7 +51,7 @@ signed char step_complete_reward_type;
 char Pad5[3];
 BnsTables::Shared::TableRef step_complete_reward_final_item[5];
 __int32 step_complete_reward_final_item_Size() const {return 5;};
-int step_complete_reward_final_item_tableId() const {return 198;};
+int step_complete_reward_final_item_tableId() const {return 202;};
 __int16 step_complete_reward_final_item_count[5];
 __int32 step_complete_reward_final_item_count_Size() const {return 5;};
 __int16 current_step_score;
@@ -58,7 +59,7 @@ signed char ability;
 char Pad6[1];
 __int16 ability_value;
 BnsTables::Shared::TableRef completed_effect;
-int completed_effect_tableId() const {return 115;};
+int completed_effect_tableId() const {return 118;};
 signed char completed_effect_category;
 char Pad7[1];
 __int16 completed_effect_order;
@@ -70,32 +71,130 @@ signed char category_1;
 signed char category_2;
 char Pad8[2];
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 247;};
+int map_group_1_tableId() const {return 253;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 427;};
+int description2_tableId() const {return 434;};
 BnsTables::Shared::TableRef title_name;
-int title_name_tableId() const {return 427;};
+int title_name_tableId() const {return 434;};
 BnsTables::Shared::TableRef title_image_text;
-int title_image_text_tableId() const {return 427;};
+int title_image_text_tableId() const {return 434;};
 BnsTables::Shared::TableRef title_thumbnail_icon_text;
-int title_thumbnail_icon_text_tableId() const {return 427;};
+int title_thumbnail_icon_text_tableId() const {return 434;};
 __int16 sort_no;
 char Pad9[2];
 BnsTables::Shared::TableRef completed_game_message;
-int completed_game_message_tableId() const {return 156;};
+int completed_game_message_tableId() const {return 159;};
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 421;};
+int talk_social_tableId() const {return 428;};
 BnsTables::Shared::IconRef title_chat_ui_icon;
 wchar_t* title_thumbnail_frame_fx;
 signed char title_grade;
 signed char title_infield_ui_border_effect;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 3); }
 		static __int16 TableId() { return 6; }
 		static __int32 SubType() { return -1; }
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class register_type {
+			none = 0,
+			above = 1,
+			below = 2,
+			bits_on = 3,
+		};
+
+		enum class step_complete_reward_game_cash_type {
+			game_cash = 0,
+			blue = 1,
+			red = 2,
+		};
+
+		enum class step_complete_reward_type {
+			invalid = 0,
+			item = 1,
+			game_cash = 2,
+			skill_build_up_point = 3,
+		};
+
+		enum class ability {
+			none = 0,
+			attack_power_creature_min_max = 1,
+			attack_hit_value = 2,
+			attack_pierce_value = 3,
+			attack_damage_modify_diff = 4,
+			max_hp = 5,
+			defend_power_creature_value = 6,
+			defend_dodge_value = 7,
+			defend_parry_value = 8,
+			defend_damage_modify_diff = 9,
+		};
+
+		enum class completed_effect_category {
+			value_0 = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
+			value_4 = 4,
+			value_5 = 5,
+			value_6 = 6,
+		};
+
+		enum class category_1 {
+			none = 0,
+			growth = 1,
+			item = 2,
+			combat = 3,
+			economy = 4,
+			community = 5,
+		};
+
+		enum class category_2 {
+			none = 0,
+			level_up = 1,
+			quest = 2,
+			acquire_skill = 3,
+			consumable = 4,
+			collect = 5,
+			growth = 6,
+			decompose = 7,
+			repair = 8,
+			equip_gem = 9,
+			attach_gem = 10,
+			dungeon = 11,
+			faction = 12,
+			etc = 13,
+			auction = 14,
+			production = 15,
+			social_action = 16,
+			picture = 17,
+			event = 18,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

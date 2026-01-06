@@ -32,16 +32,16 @@ char Pad1[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
 __int32 skill_Size() const {return 40;};
-int skill_tableId() const {return 362;};
+int skill_tableId() const {return 363;};
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 349;};
+int skill3_tableId() const {return 350;};
 BnsTables::Shared::TableRef pc_skill3[2];
 __int32 pc_skill3_Size() const {return 2;};
-int pc_skill3_tableId() const {return 294;};
+int pc_skill3_tableId() const {return 295;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
 __int32 pc_job_style_skill3_Size() const {return 10;};
-int pc_job_style_skill3_tableId() const {return 294;};
+int pc_job_style_skill3_tableId() const {return 295;};
 signed char skill_build_up_level_max;
 char Pad2[1];
 __int16 skill_build_up_point;
@@ -49,7 +49,7 @@ __int64 max_hp;
 __int16 speed;
 __int16 modify_cast_speed_percent;
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_value;
@@ -148,8 +148,74 @@ __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 290; }
+		static __int16 TableId() { return 291; }
 		static __int32 SubType() { return -1; }
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class contents_type {
+			invalid = 0,
+			normal = 1,
+			duel = 2,
+			dungeon = 3,
+			battle_royal = 4,
+		};
+
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class sex {
+			sex_none = 0,
+			nam = 1,
+			yeo = 2,
+			jung = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

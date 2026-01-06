@@ -29,17 +29,17 @@ namespace BnsTables::EU {
 signed char chnnelid;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 BnsTables::Shared::TableRef name_party_number;
-int name_party_number_tableId() const {return 427;};
+int name_party_number_tableId() const {return 434;};
 BnsTables::Shared::TableRef district;
-int district_tableId() const {return 101;};
+int district_tableId() const {return 104;};
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 247;};
+int map_group_1_tableId() const {return 253;};
 signed char arrange_type;
 char Pad1[3];
 BnsTables::Shared::TableRef group_name;
-int group_name_tableId() const {return 427;};
+int group_name_tableId() const {return 434;};
 signed char grade;
 char Pad2[1];
 __int16 auto_recruittime;
@@ -47,15 +47,31 @@ bool use_team_type;
 bool use_difficulty_type[3];
 __int32 use_difficulty_type_Size() const {return 3;};
 BnsTables::Shared::TableRef interdungeon;
-int interdungeon_tableId() const {return 190;};
+int interdungeon_tableId() const {return 194;};
 BnsTables::Shared::TableRef party_match;
-int party_match_tableId() const {return 278;};
+int party_match_tableId() const {return 285;};
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 423;};
+int teleport_tableId() const {return 430;};
+BnsTables::Shared::TableRef dungeon;
+int dungeon_tableId() const {return 117;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 99); }
-		static __int16 TableId() { return 277; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 284; }
 		static __int32 SubType() { return -1; }
+		enum class chnnelid {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
+			value_4 = 4,
+			value_5 = 5,
+			value_6 = 6,
+		};
+
+		enum class arrange_type {
+			district = 0,
+			group_name = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

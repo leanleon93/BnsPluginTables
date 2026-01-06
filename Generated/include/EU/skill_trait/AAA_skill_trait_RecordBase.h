@@ -33,29 +33,29 @@ __int32 variable_skill3_id_Size() const {return 32;};
 signed char variable_skill3_variation_id[32];
 __int32 variable_skill3_variation_id_Size() const {return 32;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 184;};
+int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef trait_symbol;
-int trait_symbol_tableId() const {return 184;};
+int trait_symbol_tableId() const {return 188;};
 __int16 trait_symbol_index;
 char Pad2[2];
 BnsTables::Shared::TableRef tooltip_train_name;
-int tooltip_train_name_tableId() const {return 427;};
+int tooltip_train_name_tableId() const {return 434;};
 BnsTables::Shared::TableRef tooltip_train_description;
-int tooltip_train_description_tableId() const {return 427;};
+int tooltip_train_description_tableId() const {return 434;};
 BnsTables::Shared::TableRef tooltip_effect_description;
-int tooltip_effect_description_tableId() const {return 427;};
+int tooltip_effect_description_tableId() const {return 434;};
 BnsTables::Shared::TableRef tooltip_skill_systematization_group[6];
 __int32 tooltip_skill_systematization_group_Size() const {return 6;};
-int tooltip_skill_systematization_group_tableId() const {return 369;};
+int tooltip_skill_systematization_group_tableId() const {return 376;};
 __int32 tooltip_acquire_skill_list_skill3_id[6];
 __int32 tooltip_acquire_skill_list_skill3_id_Size() const {return 6;};
 BnsTables::Shared::TableRef tooltip_acquire_skill_list_skill3_description[6];
 __int32 tooltip_acquire_skill_list_skill3_description_Size() const {return 6;};
-int tooltip_acquire_skill_list_skill3_description_tableId() const {return 427;};
+int tooltip_acquire_skill_list_skill3_description_tableId() const {return 434;};
 __int32 tooltip_variable_skill_list_skill3_id[6];
 __int32 tooltip_variable_skill_list_skill3_id_Size() const {return 6;};
 signed char tooltip_variable_skill_list_skill3_variation_id[6];
@@ -63,11 +63,48 @@ __int32 tooltip_variable_skill_list_skill3_variation_id_Size() const {return 6;}
 char Pad3[2];
 BnsTables::Shared::TableRef tooltip_variable_skill_list_skill3_description[6];
 __int32 tooltip_variable_skill_list_skill3_description_Size() const {return 6;};
-int tooltip_variable_skill_list_skill3_description_tableId() const {return 427;};
+int tooltip_variable_skill_list_skill3_description_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 382; }
+		static __int16 TableId() { return 389; }
 		static __int32 SubType() { return -1; }
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class job_style {
+			base_1 = 0,
+			base_2 = 1,
+			base_3 = 2,
+			base_4 = 3,
+			base_5 = 4,
+			advanced_1 = 5,
+			advanced_2 = 6,
+			advanced_3 = 7,
+			advanced_4 = 8,
+			advanced_5 = 9,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

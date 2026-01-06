@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char item_grade;
 char Pad0[2];
 BnsTables::Shared::TableRef grade_name;
-int grade_name_tableId() const {return 434;};
+int grade_name_tableId() const {return 435;};
 __int32 mileage_max;
 BnsTables::Shared::TableRef reward_item;
 int reward_item_tableId() const {return 202;};
@@ -33,6 +33,11 @@ __int32 reward_item_count;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 201; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			star_stone = 0,
+			card = 1,
+			glyph = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

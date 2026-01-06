@@ -26,9 +26,9 @@ __int32 duration;
 char Pad0[3];
 wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 434;};
+int desc_tableId() const {return 435;};
 BnsTables::Shared::TableRef icon_texture;
 int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
@@ -46,6 +46,11 @@ __int32 guild_point;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 172; }
 		static __int32 SubType() { return -1; }
+		enum class benefit_type {
+			none = 0,
+			ability_set = 1,
+			reward_set = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

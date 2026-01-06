@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 __int32 enhance_money;
 BnsTables::Shared::TableRef enhance_required_item[4];
 __int32 enhance_required_item_Size() const {return 4;};
-int enhance_required_item_tableId() const {return 198;};
+int enhance_required_item_tableId() const {return 202;};
 __int16 enhance_required_item_count[4];
 __int32 enhance_required_item_count_Size() const {return 4;};
 bool enhance_reset_enable;
@@ -32,13 +32,14 @@ char Pad0[3];
 __int32 enhance_reset_money;
 BnsTables::Shared::TableRef enhance_reset_required_item[4];
 __int32 enhance_reset_required_item_Size() const {return 4;};
-int enhance_reset_required_item_tableId() const {return 198;};
+int enhance_reset_required_item_tableId() const {return 202;};
 __int16 enhance_reset_required_item_count[4];
 __int32 enhance_reset_required_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 326; }
+		static __int16 TableId() { return 333; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -23,16 +23,20 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef membership_benefit[8];
 __int32 membership_benefit_Size() const {return 8;};
-int membership_benefit_tableId() const {return 263;};
+int membership_benefit_tableId() const {return 269;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 427;};
+int description_tableId() const {return 434;};
 BnsTables::Shared::IconRef icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
 		static __int16 TableId() { return 54; }
 		static __int32 SubType() { return -1; }
+		enum class id {
+			none = 0,
+			market_membership = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

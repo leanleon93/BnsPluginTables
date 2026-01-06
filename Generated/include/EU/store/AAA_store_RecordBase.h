@@ -22,22 +22,23 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 136;};
+int faction_tableId() const {return 139;};
 __int16 sell_rate;
 __int16 buy_rate;
 __int16 resell_rate;
 char Pad0[2];
 BnsTables::Shared::TableRef item[100];
 __int32 item_Size() const {return 100;};
-int item_tableId() const {return 198;};
+int item_tableId() const {return 202;};
 __int16 faction_reputation[100];
 __int32 faction_reputation_Size() const {return 100;};
 __int16 faction_level[100];
 __int32 faction_level_Size() const {return 100;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 407; }
+		static __int16 TableId() { return 414; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 bool use_at_dead;
 bool use_at_exhaustion;
 bool use_at_restoration;
@@ -61,8 +61,32 @@ __int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 428; }
+		static __int16 TableId() { return 429; }
 		static __int32 SubType() { return -1; }
+		enum class use_job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -33,11 +33,11 @@ bool not_change_create_pos;
 signed char parry_event;
 char Pad1[2];
 BnsTables::Shared::TableRef acquire_quest;
-int acquire_quest_tableId() const {return 306;};
+int acquire_quest_tableId() const {return 307;};
 signed char forwarding_types;
 char Pad2[3];
 BnsTables::Shared::TableRef quests;
-int quests_tableId() const {return 306;};
+int quests_tableId() const {return 307;};
 signed char missions;
 signed char cases;
 __int16 case_subtypes;
@@ -45,11 +45,11 @@ __int16 use_count;
 char Pad3[2];
 BnsTables::Shared::TableRef use_skill3[4];
 __int32 use_skill3_Size() const {return 4;};
-int use_skill3_tableId() const {return 349;};
+int use_skill3_tableId() const {return 350;};
 __int16 consume_use_count[4];
 __int32 consume_use_count_Size() const {return 4;};
 BnsTables::Shared::TableRef throw_skill3;
-int throw_skill3_tableId() const {return 349;};
+int throw_skill3_tableId() const {return 350;};
 bool init_activated;
 char Pad4[3];
 __int32 explosion_time;
@@ -85,7 +85,7 @@ wchar_t* activate_particle_attatch_bone;
 bool throw_target;
 char Pad9[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 wchar_t* mesh_id;
 wchar_t* mesh_col;
 wchar_t* animset_name;
@@ -110,15 +110,15 @@ wchar_t* gadget_thrown_start;
 wchar_t* gadget_thrown_particle;
 wchar_t* gadget_landing;
 BnsTables::Shared::TableRef action_name2;
-int action_name2_tableId() const {return 434;};
+int action_name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef action_desc2;
-int action_desc2_tableId() const {return 434;};
+int action_desc2_tableId() const {return 435;};
 BnsTables::Shared::TableRef drop_action_name;
-int drop_action_name_tableId() const {return 434;};
+int drop_action_name_tableId() const {return 435;};
 BnsTables::Shared::TableRef drop_action_desc;
-int drop_action_desc_tableId() const {return 434;};
+int drop_action_desc_tableId() const {return 435;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 434;};
+int description2_tableId() const {return 435;};
 wchar_t* gadget_dropanim;
 wchar_t* gadget_putdown_show;
 bool throw_presentation;
@@ -129,9 +129,28 @@ wchar_t* gadget_consume_showdata;
 wchar_t* gadget_consume_in_hand_showdata;
 bool ghost_mode;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 146; }
 		static __int32 SubType() { return -1; }
+		enum class parry_event {
+			none = 0,
+			decrease_use_count = 1,
+		};
+
+		enum class forwarding_types {
+			progress_mission = 0,
+			acquire_quest = 1,
+			skill_target = 2,
+			mission_step_rollback = 3,
+		};
+
+		enum class target_state {
+			all = 0,
+			friend_val = 1,
+			enemy = 2,
+			my_party = 3,
+			my_team = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

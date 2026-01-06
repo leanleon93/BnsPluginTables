@@ -37,6 +37,10 @@ int content_quota_tableId() const {return 69;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 192; }
 		static __int32 SubType() { return -1; }
+		enum class cost_type {
+			none = 0,
+			red_stone = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

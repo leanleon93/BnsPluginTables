@@ -55,34 +55,34 @@ __int32 count_10_effect_Size() const {return 2;};
 int count_10_effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef count_1_skill_modify_info_group[10];
 __int32 count_1_skill_modify_info_group_Size() const {return 10;};
-int count_1_skill_modify_info_group_tableId() const {return 367;};
+int count_1_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_2_skill_modify_info_group[10];
 __int32 count_2_skill_modify_info_group_Size() const {return 10;};
-int count_2_skill_modify_info_group_tableId() const {return 367;};
+int count_2_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_3_skill_modify_info_group[10];
 __int32 count_3_skill_modify_info_group_Size() const {return 10;};
-int count_3_skill_modify_info_group_tableId() const {return 367;};
+int count_3_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_4_skill_modify_info_group[10];
 __int32 count_4_skill_modify_info_group_Size() const {return 10;};
-int count_4_skill_modify_info_group_tableId() const {return 367;};
+int count_4_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_5_skill_modify_info_group[10];
 __int32 count_5_skill_modify_info_group_Size() const {return 10;};
-int count_5_skill_modify_info_group_tableId() const {return 367;};
+int count_5_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_6_skill_modify_info_group[10];
 __int32 count_6_skill_modify_info_group_Size() const {return 10;};
-int count_6_skill_modify_info_group_tableId() const {return 367;};
+int count_6_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_7_skill_modify_info_group[10];
 __int32 count_7_skill_modify_info_group_Size() const {return 10;};
-int count_7_skill_modify_info_group_tableId() const {return 367;};
+int count_7_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_8_skill_modify_info_group[10];
 __int32 count_8_skill_modify_info_group_Size() const {return 10;};
-int count_8_skill_modify_info_group_tableId() const {return 367;};
+int count_8_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_9_skill_modify_info_group[10];
 __int32 count_9_skill_modify_info_group_Size() const {return 10;};
-int count_9_skill_modify_info_group_tableId() const {return 367;};
+int count_9_skill_modify_info_group_tableId() const {return 368;};
 BnsTables::Shared::TableRef count_10_skill_modify_info_group[10];
 __int32 count_10_skill_modify_info_group_Size() const {return 10;};
-int count_10_skill_modify_info_group_tableId() const {return 367;};
+int count_10_skill_modify_info_group_tableId() const {return 368;};
 bool count_1_tooltip[2];
 __int32 count_1_tooltip_Size() const {return 2;};
 bool count_2_tooltip[2];
@@ -105,67 +105,125 @@ bool count_10_tooltip[2];
 __int32 count_10_tooltip_Size() const {return 2;};
 BnsTables::Shared::TableRef count_1_talksocial[8];
 __int32 count_1_talksocial_Size() const {return 8;};
-int count_1_talksocial_tableId() const {return 428;};
+int count_1_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_2_talksocial[8];
 __int32 count_2_talksocial_Size() const {return 8;};
-int count_2_talksocial_tableId() const {return 428;};
+int count_2_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_3_talksocial[8];
 __int32 count_3_talksocial_Size() const {return 8;};
-int count_3_talksocial_tableId() const {return 428;};
+int count_3_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_4_talksocial[8];
 __int32 count_4_talksocial_Size() const {return 8;};
-int count_4_talksocial_tableId() const {return 428;};
+int count_4_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_5_talksocial[8];
 __int32 count_5_talksocial_Size() const {return 8;};
-int count_5_talksocial_tableId() const {return 428;};
+int count_5_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_6_talksocial[8];
 __int32 count_6_talksocial_Size() const {return 8;};
-int count_6_talksocial_tableId() const {return 428;};
+int count_6_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_7_talksocial[8];
 __int32 count_7_talksocial_Size() const {return 8;};
-int count_7_talksocial_tableId() const {return 428;};
+int count_7_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_8_talksocial[8];
 __int32 count_8_talksocial_Size() const {return 8;};
-int count_8_talksocial_tableId() const {return 428;};
+int count_8_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_9_talksocial[8];
 __int32 count_9_talksocial_Size() const {return 8;};
-int count_9_talksocial_tableId() const {return 428;};
+int count_9_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_10_talksocial[8];
 __int32 count_10_talksocial_Size() const {return 8;};
-int count_10_talksocial_tableId() const {return 428;};
+int count_10_talksocial_tableId() const {return 429;};
 BnsTables::Shared::TableRef count_1_skill_skin;
-int count_1_skill_skin_tableId() const {return 371;};
+int count_1_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_2_skill_skin;
-int count_2_skill_skin_tableId() const {return 371;};
+int count_2_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_3_skill_skin;
-int count_3_skill_skin_tableId() const {return 371;};
+int count_3_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_4_skill_skin;
-int count_4_skill_skin_tableId() const {return 371;};
+int count_4_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_5_skill_skin;
-int count_5_skill_skin_tableId() const {return 371;};
+int count_5_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_6_skill_skin;
-int count_6_skill_skin_tableId() const {return 371;};
+int count_6_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_7_skill_skin;
-int count_7_skill_skin_tableId() const {return 371;};
+int count_7_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_8_skill_skin;
-int count_8_skill_skin_tableId() const {return 371;};
+int count_8_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_9_skill_skin;
-int count_9_skill_skin_tableId() const {return 371;};
+int count_9_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef count_10_skill_skin;
-int count_10_skill_skin_tableId() const {return 371;};
+int count_10_skill_skin_tableId() const {return 372;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef slot_name[10];
 __int32 slot_name_Size() const {return 10;};
-int slot_name_tableId() const {return 434;};
+int slot_name_tableId() const {return 435;};
 BnsTables::Shared::IconRef slot_tag_icon[10];
 __int32 slot_tag_icon_Size() const {return 10;};
 signed char slot_equip_type[10];
 __int32 slot_equip_type_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 19); }
-		static __int16 TableId() { return 347; }
+		static __int16 TableId() { return 348; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class slot_equip_type {
+			none = 0,
+			weapon = 1,
+			costume = 2,
+			earring = 3,
+			eyeglass = 4,
+			hat = 5,
+			ring = 6,
+			necklace = 7,
+			gem_1 = 8,
+			gem_2 = 9,
+			gem_3 = 10,
+			gem_4 = 11,
+			gem_5 = 12,
+			gem_6 = 13,
+			gem_7 = 14,
+			gem_8 = 15,
+			attach = 16,
+			belt = 17,
+			bracelet = 18,
+			soul = 19,
+			soul_2 = 20,
+			gloves = 21,
+			pet_1 = 22,
+			pet_2 = 23,
+			rune_1 = 24,
+			rune_2 = 25,
+			nova = 26,
+			badge_1_premium = 27,
+			badge_2_premium = 28,
+			badge_3_premium = 29,
+			badge_1_normal = 30,
+			badge_2_normal = 31,
+			badge_3_normal = 32,
+			badge_appearance = 33,
+			vehicle = 34,
+			normal_state_appearance = 35,
+			idle_state_appearance = 36,
+			chatting_symbol = 37,
+			portrait_appearance = 38,
+			hypermove_appearance = 39,
+			name_plate_appearance = 40,
+			speech_bubble_appearance = 41,
+			talk_social = 42,
+			armlet_1 = 43,
+			armlet_2 = 44,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -37,6 +37,7 @@ __int32 fatigability_consume_amount;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 114; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

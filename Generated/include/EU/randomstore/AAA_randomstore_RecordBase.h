@@ -28,17 +28,17 @@ bool money_draw_enable;
 bool instant_payment_draw_enable;
 char Pad0[3];
 BnsTables::Shared::TableRef charge_of_item_draw;
-int charge_of_item_draw_tableId() const {return 198;};
+int charge_of_item_draw_tableId() const {return 202;};
 __int64 charge_of_money_draw;
 BnsTables::Shared::TableRef charge_of_item_instant_payment_draw;
-int charge_of_item_instant_payment_draw_tableId() const {return 198;};
+int charge_of_item_instant_payment_draw_tableId() const {return 202;};
 BnsTables::Shared::TableRef charge_of_item_five_times_draw;
-int charge_of_item_five_times_draw_tableId() const {return 198;};
+int charge_of_item_five_times_draw_tableId() const {return 202;};
 signed char charge_of_item_count_five_times_draw;
 char Pad1[3];
 __int64 charge_of_money_five_times_draw;
 BnsTables::Shared::TableRef charge_of_item_instant_payment_five_times_draw;
-int charge_of_item_instant_payment_five_times_draw_tableId() const {return 198;};
+int charge_of_item_instant_payment_five_times_draw_tableId() const {return 202;};
 bool free_reward_draw_enable;
 char Pad2[3];
 __int32 free_reward_draw_add_value;
@@ -48,8 +48,13 @@ __int16 premium_reward_draw_premium_draw_count;
 __int32 acquire_draw_reward_set_repeat_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 311; }
+		static __int16 TableId() { return 318; }
 		static __int32 SubType() { return -1; }
+		enum class random_store_number {
+			invalid_number = 0,
+			random_store_1 = 1,
+			random_store_2 = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -24,28 +24,35 @@ signed char resource_index;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 184;};
+int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 427;};
+int desc_tableId() const {return 434;};
 __int32 order;
 bool usable;
 bool reset_design;
 char Pad1[2];
 BnsTables::Shared::TableRef required_item[3];
 __int32 required_item_Size() const {return 3;};
-int required_item_tableId() const {return 198;};
+int required_item_tableId() const {return 202;};
 __int16 required_item_count[3];
 __int32 required_item_count_Size() const {return 3;};
 char Pad2[2];
 __int32 required_money_cost;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 86; }
+		static __int16 TableId() { return 88; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			none = 0,
+			costume = 1,
+			costume_attach = 2,
+			head_attach = 3,
+			face_attach = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

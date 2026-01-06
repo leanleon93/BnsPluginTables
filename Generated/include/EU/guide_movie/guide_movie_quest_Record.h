@@ -10,9 +10,9 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef acquire_quest_id;
-int acquire_quest_id_tableId() const {return 299;};
+int acquire_quest_id_tableId() const {return 306;};
 BnsTables::Shared::TableRef complete_quest_id;
-int complete_quest_id_tableId() const {return 299;};
+int complete_quest_id_tableId() const {return 306;};
 
 		static __int32 SubType() { return 1; }
 	};

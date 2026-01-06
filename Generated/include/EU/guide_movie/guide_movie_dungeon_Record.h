@@ -12,21 +12,21 @@ namespace BnsTables::EU {
 		BnsTables::Shared::TableRef cave;
 int cave_tableId() const {return 49;};
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId() const {return 114;};
+int dungeon_tableId() const {return 117;};
 BnsTables::Shared::TableRef raid_dungeon;
-int raid_dungeon_tableId() const {return 308;};
+int raid_dungeon_tableId() const {return 315;};
 BnsTables::Shared::TableRef boss_challenge;
 int boss_challenge_tableId() const {return 44;};
 BnsTables::Shared::TableRef duel_bot_challenge;
-int duel_bot_challenge_tableId() const {return 102;};
+int duel_bot_challenge_tableId() const {return 105;};
 BnsTables::Shared::TableRef duel_bot_training_room;
-int duel_bot_training_room_tableId() const {return 105;};
+int duel_bot_training_room_tableId() const {return 108;};
 BnsTables::Shared::TableRef tendency_field;
-int tendency_field_tableId() const {return 425;};
+int tendency_field_tableId() const {return 432;};
 BnsTables::Shared::TableRef simple_field;
-int simple_field_tableId() const {return 341;};
+int simple_field_tableId() const {return 348;};
 BnsTables::Shared::TableRef time_limit_field;
-int time_limit_field_tableId() const {return 428;};
+int time_limit_field_tableId() const {return 435;};
 
 		static __int32 SubType() { return 3; }
 	};

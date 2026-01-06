@@ -30,12 +30,12 @@ signed char result_top_rank_count;
 signed char top_rank_history_count;
 char Pad2[2];
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId() const {return 198;};
+int cost_item_tableId() const {return 202;};
 __int16 cost_item_count;
 bool instant_payment_enable;
 char Pad3[1];
 BnsTables::Shared::TableRef instant_payment_item;
-int instant_payment_item_tableId() const {return 198;};
+int instant_payment_item_tableId() const {return 202;};
 wchar_t* board_image_player;
 wchar_t* board_image_other_pc;
 wchar_t* board_image_special;
@@ -63,6 +63,7 @@ wchar_t* font_recieve_reward_list_item_name;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
 		static __int16 TableId() { return 40; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

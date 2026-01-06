@@ -23,33 +23,33 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone[2];
 __int32 zone_Size() const {return 2;};
-int zone_tableId() const {return 478;};
+int zone_tableId() const {return 480;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef attraction_quest[5];
 __int32 attraction_quest_Size() const {return 5;};
-int attraction_quest_tableId() const {return 306;};
+int attraction_quest_tableId() const {return 307;};
 bool ui_filter_attraction_quest_only;
 char Pad0[3];
 BnsTables::Shared::TableRef respawn_confirm_text;
-int respawn_confirm_text_tableId() const {return 434;};
+int respawn_confirm_text_tableId() const {return 435;};
 BnsTables::Shared::TableRef escape_cave_confirm_text;
-int escape_cave_confirm_text_tableId() const {return 434;};
+int escape_cave_confirm_text_tableId() const {return 435;};
 __int16 recommend_attack_power;
 char Pad1[2];
 BnsTables::Shared::TableRef standard_gear_weapon;
 int standard_gear_weapon_tableId() const {return 202;};
 BnsTables::Shared::TableRef classic_field_zone_name2;
-int classic_field_zone_name2_tableId() const {return 434;};
+int classic_field_zone_name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef classic_field_zone_desc;
-int classic_field_zone_desc_tableId() const {return 434;};
+int classic_field_zone_desc_tableId() const {return 435;};
 wchar_t* thumbnail_image;
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 signed char ui_text_grade;
 char Pad2[3];
 BnsTables::Shared::TableRef tactic;
-int tactic_tableId() const {return 434;};
+int tactic_tableId() const {return 435;};
 BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 74;};
 signed char recommend_level_min;
@@ -60,6 +60,7 @@ signed char recommend_mastery_level_max;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 17); }
 		static __int16 TableId() { return 58; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

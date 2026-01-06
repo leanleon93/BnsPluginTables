@@ -28,8 +28,36 @@ float fade_out;
 float moving_blend;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 294; }
+		static __int16 TableId() { return 301; }
 		static __int32 SubType() { return -1; }
+		enum class after_pose {
+			standing = 0,
+			dead = 1,
+			dead_back = 2,
+			dead_front = 3,
+			stagger = 4,
+			down = 5,
+			front_down = 6,
+			air = 7,
+			air_back = 8,
+			kneel = 9,
+			burrow = 10,
+			picking = 11,
+			mount_linker = 12,
+			mount_linkee = 13,
+			catch_val = 14,
+			catched = 15,
+			catch_nonehuman = 16,
+			catched_nonehuman = 17,
+			catch_friend = 18,
+			catched_friend = 19,
+			hardwall = 20,
+			ironfotess = 21,
+			sit = 22,
+			bomb_kneel = 23,
+			inhalation_catch_sword = 24,
+			inhalation_catch_nonehuman_sword = 25,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

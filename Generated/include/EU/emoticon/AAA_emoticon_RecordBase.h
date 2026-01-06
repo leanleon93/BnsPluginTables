@@ -29,8 +29,9 @@ namespace BnsTables::EU {
 __int32 index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 118; }
+		static __int16 TableId() { return 121; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

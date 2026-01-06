@@ -26,9 +26,9 @@ int dungeon_tableId() const {return 117;};
 BnsTables::Shared::TableRef cave;
 int cave_tableId() const {return 49;};
 BnsTables::Shared::TableRef party_battle_field;
-int party_battle_field_tableId() const {return 283;};
+int party_battle_field_tableId() const {return 284;};
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId() const {return 302;};
+int public_raid_tableId() const {return 303;};
 BnsTables::Shared::TableRef battle_royal_field;
 int battle_royal_field_tableId() const {return 32;};
 BnsTables::Shared::TableRef sealed_dungeon;
@@ -37,7 +37,7 @@ BnsTables::Shared::TableRef duel_npc_challenge;
 int duel_npc_challenge_tableId() const {return 113;};
 BnsTables::Shared::TableRef required_complete_quest[2];
 __int32 required_complete_quest_Size() const {return 2;};
-int required_complete_quest_tableId() const {return 306;};
+int required_complete_quest_tableId() const {return 307;};
 signed char required_complete_quest_check;
 bool use_difficulty_type[3];
 __int32 use_difficulty_type_Size() const {return 3;};
@@ -54,6 +54,16 @@ signed char first_clear_type;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 194; }
 		static __int32 SubType() { return -1; }
+		enum class required_complete_quest_check {
+			and_val = 0,
+			or_val = 1,
+		};
+
+		enum class first_clear_type {
+			none = 0,
+			sealed_dungeon = 1,
+			duel_npc_challenge = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

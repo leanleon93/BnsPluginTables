@@ -26,18 +26,23 @@ __int32 required_draw_count;
 		wchar_t* alias;
 BnsTables::Shared::TableRef fixed_reward[4];
 __int32 fixed_reward_Size() const {return 4;};
-int fixed_reward_tableId() const {return 198;};
+int fixed_reward_tableId() const {return 202;};
 signed char fixed_reward_count[4];
 __int32 fixed_reward_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_reward[8];
 __int32 optional_reward_Size() const {return 8;};
-int optional_reward_tableId() const {return 198;};
+int optional_reward_tableId() const {return 202;};
 signed char optional_reward_count[8];
 __int32 optional_reward_count_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 312; }
+		static __int16 TableId() { return 319; }
 		static __int32 SubType() { return -1; }
+		enum class random_store_number {
+			invalid_number = 0,
+			random_store_1 = 1,
+			random_store_2 = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

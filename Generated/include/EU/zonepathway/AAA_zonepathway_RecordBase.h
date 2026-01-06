@@ -27,13 +27,19 @@ BnsTables::Shared::XYZ pos;
 signed char move_type;
 char Pad0[3];
 BnsTables::Shared::TableRef warp_social;
-int warp_social_tableId() const {return 389;};
+int warp_social_tableId() const {return 396;};
 wchar_t* description;
 __int16 sync;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 52); }
-		static __int16 TableId() { return 479; }
+		static __int16 TableId() { return 486; }
 		static __int32 SubType() { return -1; }
+		enum class move_type {
+			walk = 0,
+			run = 1,
+			warp = 2,
+			sprint = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -26,7 +26,7 @@ wchar_t* cinema_resource_name;
 wchar_t* teen_cinema_name;
 wchar_t* teen_cinema_resource_name;
 BnsTables::Shared::TableRef costume;
-int costume_tableId() const {return 198;};
+int costume_tableId() const {return 202;};
 signed char skippable;
 bool point_camera;
 bool nameplate_visible;
@@ -34,6 +34,13 @@ bool nameplate_visible;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 57; }
 		static __int32 SubType() { return -1; }
+		enum class skippable {
+			none = 0,
+			skip = 1,
+			party_skip = 2,
+			team_skip = 3,
+			auto_skip = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 bool use_at_dead;
 bool use_at_exhaustion;
 bool use_at_restoration;
@@ -36,14 +36,15 @@ signed char use_job;
 bool use_at_equip_accessory;
 char Pad0[1];
 BnsTables::Shared::TableRef msg;
-int msg_tableId() const {return 156;};
+int msg_tableId() const {return 159;};
 BnsTables::Shared::TableRef msg_target;
-int msg_target_tableId() const {return 156;};
+int msg_target_tableId() const {return 159;};
 bool can_move;
 bool can_sit;
 char Pad1[2];
 __int32 duration;
 wchar_t* show;
+wchar_t* show_simple;
 wchar_t* kun_show;
 wchar_t* gon_male_show;
 wchar_t* gon_female_show;
@@ -59,9 +60,33 @@ wchar_t* summoned_show[3];
 __int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 421; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static __int16 TableId() { return 428; }
 		static __int32 SubType() { return -1; }
+		enum class use_job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

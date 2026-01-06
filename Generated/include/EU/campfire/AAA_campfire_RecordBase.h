@@ -29,13 +29,14 @@ wchar_t* animset_name;
 wchar_t* anim_show;
 wchar_t* despawn_show;
 BnsTables::Shared::TableRef party_match;
-int party_match_tableId() const {return 278;};
+int party_match_tableId() const {return 285;};
 BnsTables::Shared::TableRef map_tooltip;
-int map_tooltip_tableId() const {return 427;};
+int map_tooltip_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 47; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

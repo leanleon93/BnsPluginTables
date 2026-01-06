@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 signed char apperance_type;
 char Pad0[3];
 BnsTables::Shared::TableRef item_alias;
-int item_alias_tableId() const {return 198;};
+int item_alias_tableId() const {return 202;};
 __int32 set_score[14];
 __int32 set_score_Size() const {return 14;};
 wchar_t* apperance_begin_show[14];
@@ -35,6 +35,10 @@ __int32 apperance_end_show_Size() const {return 14;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 26; }
 		static __int32 SubType() { return -1; }
+		enum class apperance_type {
+			Default_val = 0,
+			Item = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

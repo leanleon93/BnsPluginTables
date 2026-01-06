@@ -22,12 +22,21 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 signed char partychanneltype;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 411; }
+		static __int16 TableId() { return 412; }
 		static __int32 SubType() { return -1; }
+		enum class partychanneltype {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
+			value_4 = 4,
+			value_5 = 5,
+			value_6 = 6,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

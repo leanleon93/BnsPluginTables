@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_shooter_lock_on_Record : effect_Record
 	{
 	public:
-		__int64 lock_on_target_id;
+		char Pad_sub_0[3];
+__int64 lock_on_target_id;
 
 		static __int32 SubType() { return 975; }
 	};

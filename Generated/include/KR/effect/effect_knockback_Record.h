@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_knockback_Record : effect_Record
 	{
 	public:
-		__int16 knockback_speed;
+		char Pad_sub_0[3];
+__int16 knockback_speed;
 bool caster_dash;
 signed char knockback_direction;
 signed char knockback_type;

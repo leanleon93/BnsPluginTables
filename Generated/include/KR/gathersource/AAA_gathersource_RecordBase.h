@@ -49,6 +49,9 @@ wchar_t* gather_stay_animname;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 160; }
 		static __int32 SubType() { return -1; }
+		enum class gather_type {
+			hand_collection = 0,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

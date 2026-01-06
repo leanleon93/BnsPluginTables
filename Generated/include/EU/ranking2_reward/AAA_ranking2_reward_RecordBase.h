@@ -25,7 +25,7 @@ __int32 exp;
 __int32 money;
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 198;};
+int item_tableId() const {return 202;};
 __int32 item_count[4];
 __int32 item_count_Size() const {return 4;};
 __int16 tax_reward_rate;
@@ -41,11 +41,19 @@ char Pad1[3];
 __int32 guild_bank_item_count[5];
 __int32 guild_bank_item_count_Size() const {return 5;};
 BnsTables::Shared::TableRef guild_ranking_reward_effect;
-int guild_ranking_reward_effect_tableId() const {return 115;};
+int guild_ranking_reward_effect_tableId() const {return 118;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 317; }
+		static __int16 TableId() { return 324; }
 		static __int32 SubType() { return -1; }
+		enum class guild_bank_item {
+			none = 0,
+			gemstone = 1,
+			moonstone = 2,
+			tokeniron = 3,
+			tokensilver = 4,
+			tokengold = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

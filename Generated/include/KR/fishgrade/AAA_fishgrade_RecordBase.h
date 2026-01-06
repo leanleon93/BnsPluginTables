@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 wchar_t* grade_symbol;
 signed char grade;
 char Pad0[1];
@@ -33,6 +33,18 @@ bool cannot_use;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 152; }
 		static __int32 SubType() { return -1; }
+		enum class grade {
+			fish_grade_1 = 0,
+			fish_grade_2 = 1,
+			fish_grade_3 = 2,
+			fish_grade_4 = 3,
+			fish_grade_5 = 4,
+			fish_grade_6 = 5,
+			fish_grade_7 = 6,
+			fish_grade_8 = 7,
+			fish_grade_9 = 8,
+			fish_grade_10 = 9,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -21,13 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef survey_question;
-int survey_question_tableId() const {return 427;};
+int survey_question_tableId() const {return 428;};
 signed char job;
 signed char race;
 char Pad0[2];
 __int32 level;
 BnsTables::Shared::TableRef completed_quest;
-int completed_quest_tableId() const {return 306;};
+int completed_quest_tableId() const {return 307;};
 __int16 start_year;
 signed char start_month;
 signed char start_day;
@@ -52,8 +52,48 @@ signed char optional_reward_item_count[4];
 __int32 optional_reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 426; }
+		static __int16 TableId() { return 427; }
 		static __int32 SubType() { return -1; }
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

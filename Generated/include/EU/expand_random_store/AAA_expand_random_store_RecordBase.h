@@ -22,15 +22,20 @@ signed char slot_index;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef required_item;
-int required_item_tableId() const {return 198;};
+int required_item_tableId() const {return 202;};
 signed char required_item_count;
 char Pad0[3];
 BnsTables::Shared::TableRef required_item_for_instant_payment;
-int required_item_for_instant_payment_tableId() const {return 198;};
+int required_item_for_instant_payment_tableId() const {return 202;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 130; }
+		static __int16 TableId() { return 133; }
 		static __int32 SubType() { return -1; }
+		enum class random_store_number {
+			invalid_number = 0,
+			random_store_1 = 1,
+			random_store_2 = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

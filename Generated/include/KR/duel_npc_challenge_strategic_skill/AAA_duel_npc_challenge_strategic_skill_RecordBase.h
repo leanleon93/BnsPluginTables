@@ -35,15 +35,16 @@ signed char grade;
 char Pad1[1];
 wchar_t* skill_image_set;
 BnsTables::Shared::TableRef skill_tooltip;
-int skill_tooltip_tableId() const {return 434;};
+int skill_tooltip_tableId() const {return 435;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 434;};
+int description2_tableId() const {return 435;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 115; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

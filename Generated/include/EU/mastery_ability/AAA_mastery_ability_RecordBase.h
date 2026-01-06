@@ -53,8 +53,8 @@ __int16 defend_immune_base_percent;
 char Pad1[2];
 __int32 attack_power_creature_min;
 __int32 attack_power_creature_max;
-__int16 attack_power_equip_min;
-__int16 attack_power_equip_max;
+__int32 attack_power_equip_min;
+__int32 attack_power_equip_max;
 __int32 defend_power_creature_value;
 __int32 defend_power_equip_value;
 __int16 defend_resist_power_creature_value;
@@ -85,36 +85,78 @@ __int32 abnormal_attack_power_value;
 __int16 abnormal_attack_base_percent;
 __int16 abnormal_defend_power_value;
 __int16 abnormal_defend_base_percent;
-__int16 heal_power_modify;
-__int16 aoe_defend_power_modify;
-__int16 attack_hit_value_modify;
-__int16 attack_critical_value_modify;
-__int16 defend_critical_value_modify;
-__int16 defend_dodge_value_modify;
-__int16 defend_parry_value_modify;
-__int16 defend_physical_value_modify;
-__int16 defend_force_value_modify;
-__int16 attack_stiff_duration_value_modify;
-__int16 defend_stiff_duration_value_modify;
-__int16 cast_duration_value_modify;
-__int16 attack_critical_damage_modify;
-__int16 defend_critical_damage_modify;
-__int16 attack_pierce_modify;
-__int16 attack_parry_pierce_modify;
-__int16 defend_parry_reduce_modify;
-__int16 attack_perfect_parry_damage_modify;
-__int16 defend_perfect_parry_reduce_modify;
-__int16 attack_counter_damage_modify;
-__int16 defend_counter_reduce_modify;
-__int16 abnormal_attack_power_modify;
-__int16 abnormal_defend_power_modify;
+char Pad6[2];
+__int32 heal_power_modify;
+__int32 aoe_defend_power_modify;
+__int32 attack_hit_value_modify;
+__int32 attack_critical_value_modify;
+__int32 defend_critical_value_modify;
+__int32 defend_dodge_value_modify;
+__int32 defend_parry_value_modify;
+__int32 defend_physical_value_modify;
+__int32 defend_force_value_modify;
+__int32 attack_stiff_duration_value_modify;
+__int32 defend_stiff_duration_value_modify;
+__int32 cast_duration_value_modify;
+__int32 attack_critical_damage_modify;
+__int32 defend_critical_damage_modify;
+__int32 attack_pierce_modify;
+__int32 attack_parry_pierce_modify;
+__int32 defend_parry_reduce_modify;
+__int32 attack_perfect_parry_damage_modify;
+__int32 defend_perfect_parry_reduce_modify;
+__int32 attack_counter_damage_modify;
+__int32 defend_counter_reduce_modify;
+__int32 abnormal_attack_power_modify;
+__int32 abnormal_defend_power_modify;
 __int32 attack_attribute_value;
 __int16 attack_attribute_base_percent;
-__int16 attack_attribute_modify;
+char Pad7[2];
+__int32 attack_attribute_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 15); }
-		static __int16 TableId() { return 258; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 264; }
 		static __int32 SubType() { return -1; }
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

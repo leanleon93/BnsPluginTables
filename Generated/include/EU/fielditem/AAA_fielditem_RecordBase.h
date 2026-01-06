@@ -28,16 +28,16 @@ __int32 pickup_duration;
 __int32 putdown_duration;
 BnsTables::Shared::TableRef equip_effect[4];
 __int32 equip_effect_Size() const {return 4;};
-int equip_effect_tableId() const {return 115;};
+int equip_effect_tableId() const {return 118;};
 bool not_change_create_pos;
 signed char parry_event;
 char Pad1[2];
 BnsTables::Shared::TableRef acquire_quest;
-int acquire_quest_tableId() const {return 299;};
+int acquire_quest_tableId() const {return 306;};
 signed char forwarding_types;
 char Pad2[3];
 BnsTables::Shared::TableRef quests;
-int quests_tableId() const {return 299;};
+int quests_tableId() const {return 306;};
 signed char missions;
 signed char cases;
 __int16 case_subtypes;
@@ -45,11 +45,11 @@ __int16 use_count;
 char Pad3[2];
 BnsTables::Shared::TableRef use_skill3[4];
 __int32 use_skill3_Size() const {return 4;};
-int use_skill3_tableId() const {return 342;};
+int use_skill3_tableId() const {return 349;};
 __int16 consume_use_count[4];
 __int32 consume_use_count_Size() const {return 4;};
 BnsTables::Shared::TableRef throw_skill3;
-int throw_skill3_tableId() const {return 342;};
+int throw_skill3_tableId() const {return 349;};
 bool init_activated;
 char Pad4[3];
 __int32 explosion_time;
@@ -60,21 +60,21 @@ signed char target_state;
 char Pad6[3];
 BnsTables::Shared::TableRef invoke_effect[4];
 __int32 invoke_effect_Size() const {return 4;};
-int invoke_effect_tableId() const {return 115;};
+int invoke_effect_tableId() const {return 118;};
 bool change_activator_by_killer;
 char Pad7[3];
 BnsTables::Shared::TableRef target_first_filter[4];
 __int32 target_first_filter_Size() const {return 4;};
-int target_first_filter_tableId() const {return 147;};
+int target_first_filter_tableId() const {return 150;};
 BnsTables::Shared::TableRef target_second_filter[4];
 __int32 target_second_filter_Size() const {return 4;};
-int target_second_filter_tableId() const {return 147;};
+int target_second_filter_tableId() const {return 150;};
 BnsTables::Shared::TableRef first_effect[4];
 __int32 first_effect_Size() const {return 4;};
-int first_effect_tableId() const {return 115;};
+int first_effect_tableId() const {return 118;};
 BnsTables::Shared::TableRef second_effect[4];
 __int32 second_effect_Size() const {return 4;};
-int second_effect_tableId() const {return 115;};
+int second_effect_tableId() const {return 118;};
 bool activated_effect;
 char Pad8[3];
 wchar_t* activate_show[3];
@@ -85,12 +85,12 @@ wchar_t* activate_particle_attatch_bone;
 bool throw_target;
 char Pad9[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 wchar_t* mesh_id;
 wchar_t* mesh_col;
 wchar_t* animset_name;
 BnsTables::Shared::TableRef moveanim;
-int moveanim_tableId() const {return 145;};
+int moveanim_tableId() const {return 148;};
 wchar_t* grab_bone;
 wchar_t* pick_up;
 wchar_t* put_down;
@@ -110,15 +110,15 @@ wchar_t* gadget_thrown_start;
 wchar_t* gadget_thrown_particle;
 wchar_t* gadget_landing;
 BnsTables::Shared::TableRef action_name2;
-int action_name2_tableId() const {return 427;};
+int action_name2_tableId() const {return 434;};
 BnsTables::Shared::TableRef action_desc2;
-int action_desc2_tableId() const {return 427;};
+int action_desc2_tableId() const {return 434;};
 BnsTables::Shared::TableRef drop_action_name;
-int drop_action_name_tableId() const {return 427;};
+int drop_action_name_tableId() const {return 434;};
 BnsTables::Shared::TableRef drop_action_desc;
-int drop_action_desc_tableId() const {return 427;};
+int drop_action_desc_tableId() const {return 434;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 427;};
+int description2_tableId() const {return 434;};
 wchar_t* gadget_dropanim;
 wchar_t* gadget_putdown_show;
 bool throw_presentation;
@@ -130,8 +130,27 @@ wchar_t* gadget_consume_in_hand_showdata;
 bool ghost_mode;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 143; }
+		static __int16 TableId() { return 146; }
 		static __int32 SubType() { return -1; }
+		enum class parry_event {
+			none = 0,
+			decrease_use_count = 1,
+		};
+
+		enum class forwarding_types {
+			progress_mission = 0,
+			acquire_quest = 1,
+			skill_target = 2,
+			mission_step_rollback = 3,
+		};
+
+		enum class target_state {
+			all = 0,
+			friend_val = 1,
+			enemy = 2,
+			my_party = 3,
+			my_team = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

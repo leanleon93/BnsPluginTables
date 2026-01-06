@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int32 ingame_shop_tab_id;
 BnsTables::Shared::TableRef item;
-int item_tableId() const {return 198;};
+int item_tableId() const {return 202;};
 __int16 item_count;
 signed char cost_type;
 char Pad0[1];
@@ -32,11 +32,15 @@ signed char level;
 signed char mastery_level;
 char Pad1[2];
 BnsTables::Shared::TableRef content_quota;
-int content_quota_tableId() const {return 67;};
+int content_quota_tableId() const {return 69;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 188; }
+		static __int16 TableId() { return 192; }
 		static __int32 SubType() { return -1; }
+		enum class cost_type {
+			none = 0,
+			red_stone = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

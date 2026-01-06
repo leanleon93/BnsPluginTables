@@ -31,11 +31,12 @@ char Pad0[2];
 wchar_t* imageset;
 wchar_t* mask_imageset;
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 100;};
+int area_tableId() const {return 103;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 251; }
+		static __int16 TableId() { return 257; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

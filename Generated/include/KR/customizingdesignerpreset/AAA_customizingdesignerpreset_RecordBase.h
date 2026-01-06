@@ -29,11 +29,33 @@ signed char param8[96];
 __int32 param8_Size() const {return 96;};
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 434;};
+int desc_tableId() const {return 435;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 91; }
 		static __int32 SubType() { return -1; }
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class sex {
+			sex_none = 0,
+			nam = 1,
+			yeo = 2,
+			jung = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

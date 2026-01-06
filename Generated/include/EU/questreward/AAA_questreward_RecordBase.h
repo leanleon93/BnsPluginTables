@@ -38,7 +38,7 @@ __int32 basic_party_battle_point;
 __int32 basic_field_play_point;
 BnsTables::Shared::TableRef fixed_skill3[4];
 __int32 fixed_skill3_Size() const {return 4;};
-int fixed_skill3_tableId() const {return 342;};
+int fixed_skill3_tableId() const {return 349;};
 BnsTables::Shared::ExplicitTableRef fixed_common_slot[4];
 __int32 fixed_common_slot_Size() const {return 4;};
 signed char fixed_common_item_count[4];
@@ -50,7 +50,7 @@ __int32 optional_common_slot_Size() const {return 4;};
 signed char optional_common_item_count[4];
 __int32 optional_common_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_1_faction;
-int fixed_1_faction_tableId() const {return 136;};
+int fixed_1_faction_tableId() const {return 139;};
 signed char fixed_1_job[16];
 __int32 fixed_1_job_Size() const {return 16;};
 signed char fixed_1_sex[4];
@@ -66,7 +66,7 @@ __int32 fixed_1_item_count_Size() const {return 4;};
 signed char fixed_1_skill_var_idx[4];
 __int32 fixed_1_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_2_faction;
-int fixed_2_faction_tableId() const {return 136;};
+int fixed_2_faction_tableId() const {return 139;};
 signed char fixed_2_job[16];
 __int32 fixed_2_job_Size() const {return 16;};
 signed char fixed_2_sex[4];
@@ -82,7 +82,7 @@ __int32 fixed_2_item_count_Size() const {return 4;};
 signed char fixed_2_skill_var_idx[4];
 __int32 fixed_2_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_3_faction;
-int fixed_3_faction_tableId() const {return 136;};
+int fixed_3_faction_tableId() const {return 139;};
 signed char fixed_3_job[16];
 __int32 fixed_3_job_Size() const {return 16;};
 signed char fixed_3_sex[4];
@@ -98,7 +98,7 @@ __int32 fixed_3_item_count_Size() const {return 4;};
 signed char fixed_3_skill_var_idx[4];
 __int32 fixed_3_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_4_faction;
-int fixed_4_faction_tableId() const {return 136;};
+int fixed_4_faction_tableId() const {return 139;};
 signed char fixed_4_job[16];
 __int32 fixed_4_job_Size() const {return 16;};
 signed char fixed_4_sex[4];
@@ -114,7 +114,7 @@ __int32 fixed_4_item_count_Size() const {return 4;};
 signed char fixed_4_skill_var_idx[4];
 __int32 fixed_4_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_5_faction;
-int fixed_5_faction_tableId() const {return 136;};
+int fixed_5_faction_tableId() const {return 139;};
 signed char fixed_5_job[16];
 __int32 fixed_5_job_Size() const {return 16;};
 signed char fixed_5_sex[4];
@@ -130,7 +130,7 @@ __int32 fixed_5_item_count_Size() const {return 4;};
 signed char fixed_5_skill_var_idx[4];
 __int32 fixed_5_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_6_faction;
-int fixed_6_faction_tableId() const {return 136;};
+int fixed_6_faction_tableId() const {return 139;};
 signed char fixed_6_job[16];
 __int32 fixed_6_job_Size() const {return 16;};
 signed char fixed_6_sex[4];
@@ -146,7 +146,7 @@ __int32 fixed_6_item_count_Size() const {return 4;};
 signed char fixed_6_skill_var_idx[4];
 __int32 fixed_6_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_7_faction;
-int fixed_7_faction_tableId() const {return 136;};
+int fixed_7_faction_tableId() const {return 139;};
 signed char fixed_7_job[16];
 __int32 fixed_7_job_Size() const {return 16;};
 signed char fixed_7_sex[4];
@@ -162,7 +162,7 @@ __int32 fixed_7_item_count_Size() const {return 4;};
 signed char fixed_7_skill_var_idx[4];
 __int32 fixed_7_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_8_faction;
-int fixed_8_faction_tableId() const {return 136;};
+int fixed_8_faction_tableId() const {return 139;};
 signed char fixed_8_job[16];
 __int32 fixed_8_job_Size() const {return 16;};
 signed char fixed_8_sex[4];
@@ -178,7 +178,7 @@ __int32 fixed_8_item_count_Size() const {return 4;};
 signed char fixed_8_skill_var_idx[4];
 __int32 fixed_8_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_9_faction;
-int fixed_9_faction_tableId() const {return 136;};
+int fixed_9_faction_tableId() const {return 139;};
 signed char fixed_9_job[16];
 __int32 fixed_9_job_Size() const {return 16;};
 signed char fixed_9_sex[4];
@@ -194,7 +194,7 @@ __int32 fixed_9_item_count_Size() const {return 4;};
 signed char fixed_9_skill_var_idx[4];
 __int32 fixed_9_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_10_faction;
-int fixed_10_faction_tableId() const {return 136;};
+int fixed_10_faction_tableId() const {return 139;};
 signed char fixed_10_job[16];
 __int32 fixed_10_job_Size() const {return 16;};
 signed char fixed_10_sex[4];
@@ -210,7 +210,7 @@ __int32 fixed_10_item_count_Size() const {return 4;};
 signed char fixed_10_skill_var_idx[4];
 __int32 fixed_10_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_11_faction;
-int fixed_11_faction_tableId() const {return 136;};
+int fixed_11_faction_tableId() const {return 139;};
 signed char fixed_11_job[16];
 __int32 fixed_11_job_Size() const {return 16;};
 signed char fixed_11_sex[4];
@@ -226,7 +226,7 @@ __int32 fixed_11_item_count_Size() const {return 4;};
 signed char fixed_11_skill_var_idx[4];
 __int32 fixed_11_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_12_faction;
-int fixed_12_faction_tableId() const {return 136;};
+int fixed_12_faction_tableId() const {return 139;};
 signed char fixed_12_job[16];
 __int32 fixed_12_job_Size() const {return 16;};
 signed char fixed_12_sex[4];
@@ -242,7 +242,7 @@ __int32 fixed_12_item_count_Size() const {return 4;};
 signed char fixed_12_skill_var_idx[4];
 __int32 fixed_12_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_13_faction;
-int fixed_13_faction_tableId() const {return 136;};
+int fixed_13_faction_tableId() const {return 139;};
 signed char fixed_13_job[16];
 __int32 fixed_13_job_Size() const {return 16;};
 signed char fixed_13_sex[4];
@@ -258,7 +258,7 @@ __int32 fixed_13_item_count_Size() const {return 4;};
 signed char fixed_13_skill_var_idx[4];
 __int32 fixed_13_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_14_faction;
-int fixed_14_faction_tableId() const {return 136;};
+int fixed_14_faction_tableId() const {return 139;};
 signed char fixed_14_job[16];
 __int32 fixed_14_job_Size() const {return 16;};
 signed char fixed_14_sex[4];
@@ -274,7 +274,7 @@ __int32 fixed_14_item_count_Size() const {return 4;};
 signed char fixed_14_skill_var_idx[4];
 __int32 fixed_14_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_15_faction;
-int fixed_15_faction_tableId() const {return 136;};
+int fixed_15_faction_tableId() const {return 139;};
 signed char fixed_15_job[16];
 __int32 fixed_15_job_Size() const {return 16;};
 signed char fixed_15_sex[4];
@@ -290,7 +290,7 @@ __int32 fixed_15_item_count_Size() const {return 4;};
 signed char fixed_15_skill_var_idx[4];
 __int32 fixed_15_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef fixed_16_faction;
-int fixed_16_faction_tableId() const {return 136;};
+int fixed_16_faction_tableId() const {return 139;};
 signed char fixed_16_job[16];
 __int32 fixed_16_job_Size() const {return 16;};
 signed char fixed_16_sex[4];
@@ -306,7 +306,7 @@ __int32 fixed_16_item_count_Size() const {return 4;};
 signed char fixed_16_skill_var_idx[4];
 __int32 fixed_16_skill_var_idx_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_1_faction;
-int optional_1_faction_tableId() const {return 136;};
+int optional_1_faction_tableId() const {return 139;};
 signed char optional_1_job[16];
 __int32 optional_1_job_Size() const {return 16;};
 signed char optional_1_sex[4];
@@ -320,7 +320,7 @@ __int32 optional_1_slot_Size() const {return 4;};
 signed char optional_1_item_count[4];
 __int32 optional_1_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_2_faction;
-int optional_2_faction_tableId() const {return 136;};
+int optional_2_faction_tableId() const {return 139;};
 signed char optional_2_job[16];
 __int32 optional_2_job_Size() const {return 16;};
 signed char optional_2_sex[4];
@@ -334,7 +334,7 @@ __int32 optional_2_slot_Size() const {return 4;};
 signed char optional_2_item_count[4];
 __int32 optional_2_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_3_faction;
-int optional_3_faction_tableId() const {return 136;};
+int optional_3_faction_tableId() const {return 139;};
 signed char optional_3_job[16];
 __int32 optional_3_job_Size() const {return 16;};
 signed char optional_3_sex[4];
@@ -348,7 +348,7 @@ __int32 optional_3_slot_Size() const {return 4;};
 signed char optional_3_item_count[4];
 __int32 optional_3_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_4_faction;
-int optional_4_faction_tableId() const {return 136;};
+int optional_4_faction_tableId() const {return 139;};
 signed char optional_4_job[16];
 __int32 optional_4_job_Size() const {return 16;};
 signed char optional_4_sex[4];
@@ -362,7 +362,7 @@ __int32 optional_4_slot_Size() const {return 4;};
 signed char optional_4_item_count[4];
 __int32 optional_4_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_5_faction;
-int optional_5_faction_tableId() const {return 136;};
+int optional_5_faction_tableId() const {return 139;};
 signed char optional_5_job[16];
 __int32 optional_5_job_Size() const {return 16;};
 signed char optional_5_sex[4];
@@ -376,7 +376,7 @@ __int32 optional_5_slot_Size() const {return 4;};
 signed char optional_5_item_count[4];
 __int32 optional_5_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_6_faction;
-int optional_6_faction_tableId() const {return 136;};
+int optional_6_faction_tableId() const {return 139;};
 signed char optional_6_job[16];
 __int32 optional_6_job_Size() const {return 16;};
 signed char optional_6_sex[4];
@@ -390,7 +390,7 @@ __int32 optional_6_slot_Size() const {return 4;};
 signed char optional_6_item_count[4];
 __int32 optional_6_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_7_faction;
-int optional_7_faction_tableId() const {return 136;};
+int optional_7_faction_tableId() const {return 139;};
 signed char optional_7_job[16];
 __int32 optional_7_job_Size() const {return 16;};
 signed char optional_7_sex[4];
@@ -404,7 +404,7 @@ __int32 optional_7_slot_Size() const {return 4;};
 signed char optional_7_item_count[4];
 __int32 optional_7_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_8_faction;
-int optional_8_faction_tableId() const {return 136;};
+int optional_8_faction_tableId() const {return 139;};
 signed char optional_8_job[16];
 __int32 optional_8_job_Size() const {return 16;};
 signed char optional_8_sex[4];
@@ -418,7 +418,7 @@ __int32 optional_8_slot_Size() const {return 4;};
 signed char optional_8_item_count[4];
 __int32 optional_8_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_9_faction;
-int optional_9_faction_tableId() const {return 136;};
+int optional_9_faction_tableId() const {return 139;};
 signed char optional_9_job[16];
 __int32 optional_9_job_Size() const {return 16;};
 signed char optional_9_sex[4];
@@ -432,7 +432,7 @@ __int32 optional_9_slot_Size() const {return 4;};
 signed char optional_9_item_count[4];
 __int32 optional_9_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_10_faction;
-int optional_10_faction_tableId() const {return 136;};
+int optional_10_faction_tableId() const {return 139;};
 signed char optional_10_job[16];
 __int32 optional_10_job_Size() const {return 16;};
 signed char optional_10_sex[4];
@@ -446,7 +446,7 @@ __int32 optional_10_slot_Size() const {return 4;};
 signed char optional_10_item_count[4];
 __int32 optional_10_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_11_faction;
-int optional_11_faction_tableId() const {return 136;};
+int optional_11_faction_tableId() const {return 139;};
 signed char optional_11_job[16];
 __int32 optional_11_job_Size() const {return 16;};
 signed char optional_11_sex[4];
@@ -460,7 +460,7 @@ __int32 optional_11_slot_Size() const {return 4;};
 signed char optional_11_item_count[4];
 __int32 optional_11_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_12_faction;
-int optional_12_faction_tableId() const {return 136;};
+int optional_12_faction_tableId() const {return 139;};
 signed char optional_12_job[16];
 __int32 optional_12_job_Size() const {return 16;};
 signed char optional_12_sex[4];
@@ -474,7 +474,7 @@ __int32 optional_12_slot_Size() const {return 4;};
 signed char optional_12_item_count[4];
 __int32 optional_12_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_13_faction;
-int optional_13_faction_tableId() const {return 136;};
+int optional_13_faction_tableId() const {return 139;};
 signed char optional_13_job[16];
 __int32 optional_13_job_Size() const {return 16;};
 signed char optional_13_sex[4];
@@ -488,7 +488,7 @@ __int32 optional_13_slot_Size() const {return 4;};
 signed char optional_13_item_count[4];
 __int32 optional_13_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_14_faction;
-int optional_14_faction_tableId() const {return 136;};
+int optional_14_faction_tableId() const {return 139;};
 signed char optional_14_job[16];
 __int32 optional_14_job_Size() const {return 16;};
 signed char optional_14_sex[4];
@@ -502,7 +502,7 @@ __int32 optional_14_slot_Size() const {return 4;};
 signed char optional_14_item_count[4];
 __int32 optional_14_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_15_faction;
-int optional_15_faction_tableId() const {return 136;};
+int optional_15_faction_tableId() const {return 139;};
 signed char optional_15_job[16];
 __int32 optional_15_job_Size() const {return 16;};
 signed char optional_15_sex[4];
@@ -516,7 +516,7 @@ __int32 optional_15_slot_Size() const {return 4;};
 signed char optional_15_item_count[4];
 __int32 optional_15_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef optional_16_faction;
-int optional_16_faction_tableId() const {return 136;};
+int optional_16_faction_tableId() const {return 139;};
 signed char optional_16_job[16];
 __int32 optional_16_job_Size() const {return 16;};
 signed char optional_16_sex[4];
@@ -531,43 +531,43 @@ signed char optional_16_item_count[4];
 __int32 optional_16_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef dayofweek_sun_fixed_item[2];
 __int32 dayofweek_sun_fixed_item_Size() const {return 2;};
-int dayofweek_sun_fixed_item_tableId() const {return 198;};
+int dayofweek_sun_fixed_item_tableId() const {return 202;};
 signed char dayofweek_sun_fixed_item_count[2];
 __int32 dayofweek_sun_fixed_item_count_Size() const {return 2;};
 char Pad33[2];
 BnsTables::Shared::TableRef dayofweek_mon_fixed_item[2];
 __int32 dayofweek_mon_fixed_item_Size() const {return 2;};
-int dayofweek_mon_fixed_item_tableId() const {return 198;};
+int dayofweek_mon_fixed_item_tableId() const {return 202;};
 signed char dayofweek_mon_fixed_item_count[2];
 __int32 dayofweek_mon_fixed_item_count_Size() const {return 2;};
 char Pad34[2];
 BnsTables::Shared::TableRef dayofweek_tue_fixed_item[2];
 __int32 dayofweek_tue_fixed_item_Size() const {return 2;};
-int dayofweek_tue_fixed_item_tableId() const {return 198;};
+int dayofweek_tue_fixed_item_tableId() const {return 202;};
 signed char dayofweek_tue_fixed_item_count[2];
 __int32 dayofweek_tue_fixed_item_count_Size() const {return 2;};
 char Pad35[2];
 BnsTables::Shared::TableRef dayofweek_wed_fixed_item[2];
 __int32 dayofweek_wed_fixed_item_Size() const {return 2;};
-int dayofweek_wed_fixed_item_tableId() const {return 198;};
+int dayofweek_wed_fixed_item_tableId() const {return 202;};
 signed char dayofweek_wed_fixed_item_count[2];
 __int32 dayofweek_wed_fixed_item_count_Size() const {return 2;};
 char Pad36[2];
 BnsTables::Shared::TableRef dayofweek_thu_fixed_item[2];
 __int32 dayofweek_thu_fixed_item_Size() const {return 2;};
-int dayofweek_thu_fixed_item_tableId() const {return 198;};
+int dayofweek_thu_fixed_item_tableId() const {return 202;};
 signed char dayofweek_thu_fixed_item_count[2];
 __int32 dayofweek_thu_fixed_item_count_Size() const {return 2;};
 char Pad37[2];
 BnsTables::Shared::TableRef dayofweek_fri_fixed_item[2];
 __int32 dayofweek_fri_fixed_item_Size() const {return 2;};
-int dayofweek_fri_fixed_item_tableId() const {return 198;};
+int dayofweek_fri_fixed_item_tableId() const {return 202;};
 signed char dayofweek_fri_fixed_item_count[2];
 __int32 dayofweek_fri_fixed_item_count_Size() const {return 2;};
 char Pad38[2];
 BnsTables::Shared::TableRef dayofweek_sat_fixed_item[2];
 __int32 dayofweek_sat_fixed_item_Size() const {return 2;};
-int dayofweek_sat_fixed_item_tableId() const {return 198;};
+int dayofweek_sat_fixed_item_tableId() const {return 202;};
 signed char dayofweek_sat_fixed_item_count[2];
 __int32 dayofweek_sat_fixed_item_count_Size() const {return 2;};
 char Pad39[2];
@@ -580,55 +580,135 @@ __int32 dayofweek_fri_bonus_money;
 __int32 dayofweek_sat_bonus_money;
 BnsTables::Shared::TableRef newbie_party_fixed_item[2];
 __int32 newbie_party_fixed_item_Size() const {return 2;};
-int newbie_party_fixed_item_tableId() const {return 198;};
+int newbie_party_fixed_item_tableId() const {return 202;};
 signed char newbie_party_fixed_item_count[2];
 __int32 newbie_party_fixed_item_count_Size() const {return 2;};
 char Pad40[2];
 BnsTables::Shared::TableRef oldbie_party_fixed_item[2];
 __int32 oldbie_party_fixed_item_Size() const {return 2;};
-int oldbie_party_fixed_item_tableId() const {return 198;};
+int oldbie_party_fixed_item_tableId() const {return 202;};
 signed char oldbie_party_fixed_item_count[2];
 __int32 oldbie_party_fixed_item_count_Size() const {return 2;};
 char Pad41[2];
 BnsTables::Shared::TableRef mentor_fixed_item[2];
 __int32 mentor_fixed_item_Size() const {return 2;};
-int mentor_fixed_item_tableId() const {return 198;};
+int mentor_fixed_item_tableId() const {return 202;};
 signed char mentor_fixed_item_count[2];
 __int32 mentor_fixed_item_count_Size() const {return 2;};
 char Pad42[2];
 BnsTables::Shared::TableRef hongmoon_item[2];
 __int32 hongmoon_item_Size() const {return 2;};
-int hongmoon_item_tableId() const {return 198;};
+int hongmoon_item_tableId() const {return 202;};
 __int16 hongmoon_item_count[2];
 __int32 hongmoon_item_count_Size() const {return 2;};
 BnsTables::Shared::TableRef membership_item[2];
 __int32 membership_item_Size() const {return 2;};
-int membership_item_tableId() const {return 198;};
+int membership_item_tableId() const {return 202;};
 __int16 membership_item_count[2];
 __int32 membership_item_count_Size() const {return 2;};
 BnsTables::Shared::TableRef pccafe_item[2];
 __int32 pccafe_item_Size() const {return 2;};
-int pccafe_item_tableId() const {return 198;};
+int pccafe_item_tableId() const {return 202;};
 __int16 pccafe_item_count[2];
 __int32 pccafe_item_count_Size() const {return 2;};
 BnsTables::Shared::TableRef dungeon_additional_reward_item[4];
 __int32 dungeon_additional_reward_item_Size() const {return 4;};
-int dungeon_additional_reward_item_tableId() const {return 198;};
+int dungeon_additional_reward_item_tableId() const {return 202;};
 signed char dungeon_additional_reward_item_count[4];
 __int32 dungeon_additional_reward_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef dungeon_additional_reward_cost_a[4];
 __int32 dungeon_additional_reward_cost_a_Size() const {return 4;};
-int dungeon_additional_reward_cost_a_tableId() const {return 77;};
+int dungeon_additional_reward_cost_a_tableId() const {return 79;};
 BnsTables::Shared::TableRef dungeon_additional_reward_cost_b[4];
 __int32 dungeon_additional_reward_cost_b_Size() const {return 4;};
-int dungeon_additional_reward_cost_b_tableId() const {return 77;};
+int dungeon_additional_reward_cost_b_tableId() const {return 79;};
 BnsTables::Shared::TableRef sealed_dungeon_reward;
-int sealed_dungeon_reward_tableId() const {return 302;};
+int sealed_dungeon_reward_tableId() const {return 309;};
 __int32 sealed_dungeon_reward_data_id;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 300; }
+		static __int16 TableId() { return 307; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class quest_first_progress {
+			none = 0,
+			y = 1,
+			n = 2,
+		};
+
+		enum class quest_completion_count_op {
+			eq = 0,
+			neq = 1,
+			gt = 2,
+			ge = 3,
+			lt = 4,
+			le = 5,
+		};
+
+		enum class fixed_1_job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class fixed_1_sex {
+			sex_none = 0,
+			nam = 1,
+			yeo = 2,
+			jung = 3,
+		};
+
+		enum class fixed_1_race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class fixed_1_difficulty_type {
+			none = 0,
+			easy = 1,
+			normal = 2,
+			hard = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

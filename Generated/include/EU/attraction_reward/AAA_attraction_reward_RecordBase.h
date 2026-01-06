@@ -25,7 +25,7 @@ __int16 id;
 		wchar_t* alias;
 BnsTables::Shared::TableRef reward_item[3];
 __int32 reward_item_Size() const {return 3;};
-int reward_item_tableId() const {return 198;};
+int reward_item_tableId() const {return 202;};
 signed char reward_item_count[3];
 __int32 reward_item_count_Size() const {return 3;};
 char Pad0[1];
@@ -34,6 +34,11 @@ __int32 reward_exp;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 17; }
 		static __int32 SubType() { return -1; }
+		enum class reward_contents_type {
+			none = 0,
+			battle_royal_field = 1,
+			battle_royal_field_for_party = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

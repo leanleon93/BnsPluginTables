@@ -38,7 +38,7 @@ __int32 basic_party_battle_point;
 __int32 basic_field_play_point;
 BnsTables::Shared::TableRef fixed_skill3[4];
 __int32 fixed_skill3_Size() const {return 4;};
-int fixed_skill3_tableId() const {return 349;};
+int fixed_skill3_tableId() const {return 350;};
 BnsTables::Shared::ExplicitTableRef fixed_common_slot[4];
 __int32 fixed_common_slot_Size() const {return 4;};
 signed char fixed_common_item_count[4];
@@ -623,12 +623,92 @@ BnsTables::Shared::TableRef dungeon_additional_reward_cost_b[4];
 __int32 dungeon_additional_reward_cost_b_Size() const {return 4;};
 int dungeon_additional_reward_cost_b_tableId() const {return 79;};
 BnsTables::Shared::TableRef sealed_dungeon_reward;
-int sealed_dungeon_reward_tableId() const {return 309;};
+int sealed_dungeon_reward_tableId() const {return 310;};
 __int32 sealed_dungeon_reward_data_id;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 307; }
+		static __int16 TableId() { return 308; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class quest_first_progress {
+			none = 0,
+			y = 1,
+			n = 2,
+		};
+
+		enum class quest_completion_count_op {
+			eq = 0,
+			neq = 1,
+			gt = 2,
+			ge = 3,
+			lt = 4,
+			le = 5,
+		};
+
+		enum class fixed_1_job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class fixed_1_sex {
+			sex_none = 0,
+			nam = 1,
+			yeo = 2,
+			jung = 3,
+		};
+
+		enum class fixed_1_race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class fixed_1_difficulty_type {
+			none = 0,
+			easy = 1,
+			normal = 2,
+			hard = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

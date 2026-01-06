@@ -54,7 +54,7 @@ bool click;
 bool front;
 bool show_tooltip;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 427;};
+int name2_tableId() const {return 434;};
 __int16 opacity;
 __int16 size_x;
 __int16 size_y;
@@ -71,8 +71,61 @@ float center_pos_x;
 float center_pos_y;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 81); }
-		static __int16 TableId() { return 252; }
+		static __int16 TableId() { return 258; }
 		static __int32 SubType() { return -1; }
+		enum class category {
+			none = 0,
+			player = 1,
+			party = 2,
+			team = 3,
+			guild = 4,
+			friend_val = 5,
+			revenge_enemy = 6,
+			faction = 7,
+			duel_enemy = 8,
+			quest = 9,
+			npc = 10,
+			env = 11,
+			teleport = 12,
+			airdash = 13,
+			link = 14,
+			convoy = 15,
+			spawned_env = 16,
+			static_val = 17,
+			auction = 18,
+			store = 19,
+			camp = 20,
+			party_camp = 21,
+			roulette = 22,
+			field_boss = 23,
+			gather = 24,
+			craft = 25,
+			gather_env = 26,
+			heart = 27,
+			enter_arena = 28,
+			weapon_box = 29,
+			refiner = 30,
+			dungeon_3 = 31,
+			dungeon_4 = 32,
+			dungeon_5 = 33,
+			raid_dungeon = 34,
+			classic_field = 35,
+			faction_battle_field = 36,
+			guild_battle_field = 37,
+			party_battle_startpoint = 38,
+			party_battle_enemy = 39,
+			fishing_field = 40,
+			expedition_env = 41,
+			wandering_npc = 42,
+		};
+
+		enum class map_depth {
+			value_1 = 0,
+			value_2 = 1,
+			value_3 = 2,
+			value_4 = 3,
+			value_5 = 4,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

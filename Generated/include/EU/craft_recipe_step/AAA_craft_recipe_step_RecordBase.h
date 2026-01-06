@@ -30,8 +30,9 @@ bool output_customizable[3];
 __int32 output_customizable_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 84; }
+		static __int16 TableId() { return 86; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

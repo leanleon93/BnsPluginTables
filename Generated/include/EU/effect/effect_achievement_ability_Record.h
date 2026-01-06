@@ -21,7 +21,7 @@ __int16 defend_dodge_value;
 __int16 defend_parry_value;
 __int16 defend_damage_modify_diff;
 
-		static __int32 SubType() { return 962; }
+		static __int32 SubType() { return 965; }
 	};
 #pragma pack(pop)
 }

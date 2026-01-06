@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		bool modifiable_by_admin;
 signed char detail_content_name_by_admin;
 
-		static __int32 SubType() { return 362; }
+		static __int32 SubType() { return 712; }
 	};
 #pragma pack(pop)
 }

@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item;
-int item_tableId() const {return 198;};
+int item_tableId() const {return 202;};
 bool disabled;
 char Pad0[1];
 __int16 sort_no;
@@ -31,17 +31,18 @@ wchar_t* card_original_image[4];
 __int32 card_original_image_Size() const {return 4;};
 BnsTables::Shared::TableRef card_original_image_desc[4];
 __int32 card_original_image_desc_Size() const {return 4;};
-int card_original_image_desc_tableId() const {return 427;};
+int card_original_image_desc_tableId() const {return 434;};
 bool set_card_original_image;
 bool special_effect;
 __int16 season;
 BnsTables::Shared::TableRef expedition[8];
 __int32 expedition_Size() const {return 8;};
-int expedition_tableId() const {return 458;};
+int expedition_tableId() const {return 465;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 456; }
+		static __int16 TableId() { return 463; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

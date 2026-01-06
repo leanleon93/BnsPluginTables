@@ -15,7 +15,7 @@ char Pad_sub_1[3];
 __int32 transient_enchant_duration;
 BnsTables::Shared::TableRef transient_ehchant_effect[2];
 __int32 transient_ehchant_effect_Size() const {return 2;};
-int transient_ehchant_effect_tableId() const {return 115;};
+int transient_ehchant_effect_tableId() const {return 118;};
 
 		static __int32 SubType() { return 5; }
 	};

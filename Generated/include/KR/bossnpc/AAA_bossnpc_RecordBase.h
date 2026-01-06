@@ -38,7 +38,7 @@ __int32 gp_section_Size() const {return 11;};
 signed char gp_section_cnt;
 signed char ui_style;
 BnsTables::Shared::TableRef ui_tooltip;
-int ui_tooltip_tableId() const {return 434;};
+int ui_tooltip_tableId() const {return 435;};
 wchar_t* ui_double_sided_left_imageset;
 wchar_t* ui_double_sided_right_imageset;
 __int16 ui_double_sided_left_color_r;
@@ -66,6 +66,12 @@ signed char max_break_count;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 46; }
 		static __int32 SubType() { return -1; }
+		enum class ui_style {
+			none = 0,
+			fury = 1,
+			absorb_level = 2,
+			double_sided = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

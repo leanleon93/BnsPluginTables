@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_particle_socket_Record : effect_Record
 	{
 	public:
-		wchar_t* effect_particle;
+		char Pad_sub_0[3];
+wchar_t* effect_particle;
 wchar_t* effect_particle2;
 wchar_t* effect_particle3;
 wchar_t* effect_particle4;

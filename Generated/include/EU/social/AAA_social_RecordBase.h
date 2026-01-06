@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int32 duration;
 BnsTables::Shared::TableRef balloon_text;
-int balloon_text_tableId() const {return 427;};
+int balloon_text_tableId() const {return 434;};
 bool voice_sync;
 char Pad0[3];
 wchar_t* show;
@@ -35,13 +35,29 @@ char Pad1[3];
 BnsTables::Shared::TableRef spawn_cinematic;
 int spawn_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef message;
-int message_tableId() const {return 156;};
+int message_tableId() const {return 159;};
 signed char message_target_type;
 signed char message_contents_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 25); }
-		static __int16 TableId() { return 389; }
+		static __int16 TableId() { return 396; }
 		static __int32 SubType() { return -1; }
+		enum class rotate {
+			keep = 0,
+			server_yaw = 1,
+			toplayer = 2,
+		};
+
+		enum class message_target_type {
+			none = 0,
+			activated_faction_1 = 1,
+			activated_faction_2 = 2,
+		};
+
+		enum class message_contents_type {
+			none = 0,
+			faction_stage_in_volume = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

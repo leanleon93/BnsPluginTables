@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		__int16 additional_power_percent;
 
-		static __int32 SubType() { return 123; }
+		static __int32 SubType() { return 126; }
 	};
 #pragma pack(pop)
 }

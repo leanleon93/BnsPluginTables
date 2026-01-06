@@ -22,15 +22,21 @@ signed char difficulty_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef gold_box;
-int gold_box_tableId() const {return 198;};
+int gold_box_tableId() const {return 202;};
 BnsTables::Shared::TableRef silver_box;
-int silver_box_tableId() const {return 198;};
+int silver_box_tableId() const {return 202;};
 BnsTables::Shared::TableRef bronze_box;
-int bronze_box_tableId() const {return 198;};
+int bronze_box_tableId() const {return 202;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 446; }
+		static __int16 TableId() { return 453; }
 		static __int32 SubType() { return -1; }
+		enum class difficulty_type {
+			none = 0,
+			easy = 1,
+			normal = 2,
+			hard = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

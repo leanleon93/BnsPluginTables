@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
@@ -35,6 +35,16 @@ __int32 cost_item_count_Size() const {return 4;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 162; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

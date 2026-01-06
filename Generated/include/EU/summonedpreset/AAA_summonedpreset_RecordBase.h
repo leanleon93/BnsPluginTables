@@ -25,17 +25,43 @@ signed char part_value;
 		wchar_t* alias;
 __int32 price;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 184;};
+int icon_texture_tableId() const {return 188;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 427;};
+int desc_tableId() const {return 434;};
 signed char param8[96];
 __int32 param8_Size() const {return 96;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 416; }
+		static __int16 TableId() { return 423; }
 		static __int32 SubType() { return -1; }
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class part_type {
+			none = 0,
+			face = 1,
+			body = 2,
+			eye_color = 3,
+			eye = 4,
+			body_color = 5,
+			body_shape = 6,
+			decal = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

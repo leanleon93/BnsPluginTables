@@ -34,6 +34,10 @@ wchar_t* detach_show;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 14; }
 		static __int32 SubType() { return -1; }
+		enum class skel_index {
+			none = 0,
+			launcher_l = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

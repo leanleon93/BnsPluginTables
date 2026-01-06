@@ -26,18 +26,41 @@ signed char design_type;
 signed char customize_category;
 char Pad0[2];
 BnsTables::Shared::TableRef price_ref;
-int price_ref_tableId() const {return 87;};
+int price_ref_tableId() const {return 89;};
 signed char min_value;
 signed char max_value;
 char Pad1[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 427;};
+int desc_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 87; }
+		static __int16 TableId() { return 89; }
 		static __int32 SubType() { return -1; }
+		enum class item_type {
+			none = 0,
+			costume = 1,
+			costume_attach = 2,
+			head_attach = 3,
+			face_attach = 4,
+		};
+
+		enum class design_type {
+			none = 0,
+			color = 1,
+			pattern = 2,
+			saturation = 3,
+		};
+
+		enum class customize_category {
+			none = 0,
+			center = 1,
+			sub = 2,
+			leg = 3,
+			dressline = 4,
+			hair = 5,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

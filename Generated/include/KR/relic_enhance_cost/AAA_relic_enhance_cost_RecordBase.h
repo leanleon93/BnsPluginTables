@@ -37,8 +37,9 @@ __int16 enhance_reset_required_item_count[4];
 __int32 enhance_reset_required_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 333; }
+		static __int16 TableId() { return 334; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

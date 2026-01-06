@@ -23,12 +23,13 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 465;};
+int area_tableId() const {return 472;};
 BnsTables::Shared::XYZ center;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 466; }
+		static __int16 TableId() { return 473; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

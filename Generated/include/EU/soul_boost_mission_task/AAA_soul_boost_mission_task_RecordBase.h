@@ -29,15 +29,15 @@ wchar_t* name_pt;
 wchar_t* name_th;
 wchar_t* name_vn;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 427;};
+int name_text_tableId() const {return 434;};
 BnsTables::Shared::TableRef event;
-int event_tableId() const {return 390;};
+int event_tableId() const {return 397;};
 BnsTables::Shared::TableRef mission_step;
-int mission_step_tableId() const {return 393;};
+int mission_step_tableId() const {return 400;};
 signed char task_number;
 char Pad0[3];
 BnsTables::Shared::TableRef mission;
-int mission_tableId() const {return 392;};
+int mission_tableId() const {return 399;};
 signed char proceedable_type;
 signed char actor_type;
 char Pad1[2];
@@ -56,11 +56,28 @@ wchar_t* description_pt;
 wchar_t* description_th;
 wchar_t* description_vn;
 BnsTables::Shared::TableRef description_text;
-int description_text_tableId() const {return 427;};
+int description_text_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 394; }
+		static __int16 TableId() { return 401; }
 		static __int32 SubType() { return -1; }
+		enum class proceedable_type {
+			none = 0,
+			before_open = 1,
+			after_open = 2,
+		};
+
+		enum class actor_type {
+			none = 0,
+			character = 1,
+			account = 2,
+		};
+
+		enum class mission_task_repeat_type {
+			none = 0,
+			daily = 1,
+			weekly = 2,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

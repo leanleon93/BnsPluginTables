@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 478;};
+int zone_tableId() const {return 480;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef required_item[2];
 __int32 required_item_Size() const {return 2;};
@@ -44,6 +44,7 @@ __int32 kill_score;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 14); }
 		static __int16 TableId() { return 53; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

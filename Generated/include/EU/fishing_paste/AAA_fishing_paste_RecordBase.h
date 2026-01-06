@@ -22,12 +22,13 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item;
-int item_tableId() const {return 198;};
+int item_tableId() const {return 202;};
 bool use_auto_fishing;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 152; }
+		static __int16 TableId() { return 155; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

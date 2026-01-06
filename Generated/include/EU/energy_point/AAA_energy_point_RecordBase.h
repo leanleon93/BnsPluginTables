@@ -29,19 +29,20 @@ signed char multiple_value[8];
 __int32 multiple_value_Size() const {return 8;};
 __int64 multiple_value_hidden;
 BnsTables::Shared::TableRef additional_effect;
-int additional_effect_tableId() const {return 115;};
+int additional_effect_tableId() const {return 118;};
 signed char reset_hour;
 signed char reward_count;
 char Pad1[2];
 BnsTables::Shared::TableRef reward[127];
 __int32 reward_Size() const {return 127;};
-int reward_tableId() const {return 120;};
+int reward_tableId() const {return 123;};
 BnsTables::Shared::TableRef goodsstore_search_item;
-int goodsstore_search_item_tableId() const {return 198;};
+int goodsstore_search_item_tableId() const {return 202;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 119; }
+		static __int16 TableId() { return 122; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

@@ -44,18 +44,27 @@ __int32 draw_count_in_grade_Size() const {return 10;};
 __int32 max_draw_count;
 BnsTables::Shared::TableRef treasure_board_reward[59];
 __int32 treasure_board_reward_Size() const {return 59;};
-int treasure_board_reward_tableId() const {return 439;};
+int treasure_board_reward_tableId() const {return 440;};
 __int16 treasure_board_reward_grade[59];
 __int32 treasure_board_reward_grade_Size() const {return 59;};
 char Pad2[2];
 BnsTables::Shared::TableRef treasure_board_name;
-int treasure_board_name_tableId() const {return 434;};
+int treasure_board_name_tableId() const {return 435;};
 wchar_t* treasure_board_symbol_on;
 wchar_t* treasure_board_symbol_off;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 438; }
+		static __int16 TableId() { return 439; }
 		static __int32 SubType() { return -1; }
+		enum class reset_condition {
+			normal = 0,
+			draw_all = 1,
+		};
+
+		enum class reset_price_type {
+			free = 0,
+			item = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

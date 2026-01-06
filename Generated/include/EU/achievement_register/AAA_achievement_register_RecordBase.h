@@ -114,11 +114,176 @@ BnsTables::Shared::TableRef achievement[8];
 __int32 achievement_Size() const {return 8;};
 int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId() const {return 427;};
+int register_name_tableId() const {return 434;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
 		static __int16 TableId() { return 7; }
 		static __int32 SubType() { return -1; }
+		enum class job {
+			job_none = 0,
+			geomsa = 1,
+			gweonsa = 2,
+			gigongsa = 3,
+			gyeogsa = 4,
+			yeogsa = 5,
+			sohwansa = 6,
+			amsarja = 7,
+			gwigeomsa = 8,
+			jusursa = 9,
+			gigweonsa = 10,
+			tusa = 11,
+			gungsa = 12,
+			changsursa = 13,
+			noejeonsursa = 14,
+			ssanggeomsa = 15,
+			agsa = 16,
+			pc_max = 17,
+			sohwansu_ruki = 18,
+			sohwansu_striker = 19,
+			sohwansu_defender = 20,
+			sohwansu_controller = 21,
+		};
+
+		enum class difficulty_type {
+			none = 0,
+			easy = 1,
+			normal = 2,
+			hard = 3,
+		};
+
+		enum class min_sealed_level_op {
+			none = 0,
+			or_more = 1,
+			or_less = 2,
+			over = 3,
+			under = 4,
+			equal = 5,
+		};
+
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
+
+		enum class equip_type {
+			none = 0,
+			weapon = 1,
+			costume = 2,
+			earring = 3,
+			eyeglass = 4,
+			hat = 5,
+			ring = 6,
+			necklace = 7,
+			gem_1 = 8,
+			gem_2 = 9,
+			gem_3 = 10,
+			gem_4 = 11,
+			gem_5 = 12,
+			gem_6 = 13,
+			gem_7 = 14,
+			gem_8 = 15,
+			attach = 16,
+			belt = 17,
+			bracelet = 18,
+			soul = 19,
+			soul_2 = 20,
+			gloves = 21,
+			pet_1 = 22,
+			pet_2 = 23,
+			rune_1 = 24,
+			rune_2 = 25,
+			nova = 26,
+			badge_1_premium = 27,
+			badge_2_premium = 28,
+			badge_3_premium = 29,
+			badge_1_normal = 30,
+			badge_2_normal = 31,
+			badge_3_normal = 32,
+			badge_appearance = 33,
+			vehicle = 34,
+			normal_state_appearance = 35,
+			idle_state_appearance = 36,
+			chatting_symbol = 37,
+			portrait_appearance = 38,
+			hypermove_appearance = 39,
+			name_plate_appearance = 40,
+			speech_bubble_appearance = 41,
+			talk_social = 42,
+			armlet_1 = 43,
+			armlet_2 = 44,
+		};
+
+		enum class reset_type {
+			none = 0,
+			daily = 1,
+			weekly = 2,
+			monthly = 3,
+		};
+
+		enum class reset_by_acquire_time {
+			none = 0,
+			daily = 1,
+			weekly = 2,
+		};
+
+		enum class duel_type {
+			none = 0,
+			solo = 1,
+			team = 2,
+		};
+
+		enum class env2_state {
+			none = 0,
+			open = 1,
+			close = 2,
+			empty = 3,
+			step_1 = 4,
+			step_2 = 5,
+			step_3 = 6,
+			step_4 = 7,
+			step_5 = 8,
+			step_6 = 9,
+			step_7 = 10,
+		};
+
+		enum class result {
+			none = 0,
+			blank = 1,
+			normal = 2,
+			rare = 3,
+			premium = 4,
+		};
+
+		enum class party_battle_type {
+			none = 0,
+			occupation_war = 1,
+			capture_the_flag = 2,
+			lead_the_ball = 3,
+		};
+
+		enum class fish_size_grade {
+			fish_grade_1 = 0,
+			fish_grade_2 = 1,
+			fish_grade_3 = 2,
+			fish_grade_4 = 3,
+			fish_grade_5 = 4,
+			fish_grade_6 = 5,
+			fish_grade_7 = 6,
+			fish_grade_8 = 7,
+			fish_grade_9 = 8,
+			fish_grade_10 = 9,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

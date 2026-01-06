@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
@@ -32,6 +32,7 @@ __int32 cost_item_count_Size() const {return 4;};
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 48; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

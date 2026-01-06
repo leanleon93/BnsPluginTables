@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_recharge_guild_battle_field_Record : effect_Record
 	{
 	public:
-		__int32 enable_duration;
+		char Pad_sub_0[3];
+__int32 enable_duration;
 
 		static __int32 SubType() { return 951; }
 	};

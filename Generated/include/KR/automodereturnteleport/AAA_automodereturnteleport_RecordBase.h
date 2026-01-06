@@ -22,13 +22,14 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* name;
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 430;};
+int teleport_tableId() const {return 431;};
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 276;};
+int npc_tableId() const {return 277;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 24; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

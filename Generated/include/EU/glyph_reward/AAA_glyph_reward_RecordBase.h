@@ -21,28 +21,30 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 427;};
+int name_tableId() const {return 434;};
 BnsTables::Shared::IconRef shuffle_reward_icon;
 BnsTables::Shared::TableRef shuffle_reward_tooltip;
-int shuffle_reward_tooltip_tableId() const {return 427;};
+int shuffle_reward_tooltip_tableId() const {return 434;};
 signed char upgrade_reward_preview;
 bool upgrade_reward_warning_message;
 signed char reward_type;
 signed char grade;
 signed char color;
 signed char glyph_type;
-char Pad0[2];
+char Pad1[2];
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 198;};
+int cost_item_tableId() const {return 202;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 signed char tier_pick_probability;
 signed char additional_glyph_pick_probability;
-__int16 grade_prob_weight[8];
-__int32 grade_prob_weight_Size() const {return 8;};
+__int16 grade_prob_weight[9];
+__int32 grade_prob_weight_Size() const {return 9;};
 __int16 grade_prob_weight_total;
 __int16 tier_prob_weight[8];
 __int32 tier_prob_weight_Size() const {return 8;};
@@ -50,16 +52,17 @@ __int16 tier_prob_weight_total;
 __int16 result_glyph_prob_weight[30];
 __int32 result_glyph_prob_weight_Size() const {return 30;};
 __int16 result_glyph_prob_weight_total;
+char Pad2[2];
 BnsTables::Shared::TableRef result_glyph[30];
 __int32 result_glyph_Size() const {return 30;};
-int result_glyph_tableId() const {return 158;};
+int result_glyph_tableId() const {return 161;};
 __int16 additional_glyph_prob_weight[10];
 __int32 additional_glyph_prob_weight_Size() const {return 10;};
 __int16 additional_glyph_prob_weight_total;
-char Pad1[2];
+char Pad3[2];
 BnsTables::Shared::TableRef additional_glyph[10];
 __int32 additional_glyph_Size() const {return 10;};
-int additional_glyph_tableId() const {return 158;};
+int additional_glyph_tableId() const {return 161;};
 __int16 cost_group_id[8];
 __int32 cost_group_id_Size() const {return 8;};
 __int16 result_group_id[8];
@@ -67,12 +70,47 @@ __int32 result_group_id_Size() const {return 8;};
 __int16 group_prob_weight[8];
 __int32 group_prob_weight_Size() const {return 8;};
 __int16 group_prob_weight_total;
-char Pad2[2];
+char Pad4[2];
 __int32 mileage_weight;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 160; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static __int16 TableId() { return 163; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
+		enum class upgrade_reward_preview {
+			fixed_score = 0,
+			random_score = 1,
+		};
+
+		enum class reward_type {
+			acquire = 0,
+			upgrade = 1,
+			shuffle = 2,
+		};
+
+		enum class color {
+			none = 0,
+			red = 1,
+			yellow = 2,
+			blue = 3,
+		};
+
+		enum class glyph_type {
+			none = 0,
+			normal = 1,
+			special = 2,
+			material = 3,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

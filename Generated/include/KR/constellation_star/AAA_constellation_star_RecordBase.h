@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 434;};
+int name_tableId() const {return 435;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 435;};
 BnsTables::Shared::TableRef constellation;
 int constellation_tableId() const {return 66;};
 signed char star_type;
@@ -32,7 +32,7 @@ signed char order;
 signed char required_pc_level;
 signed char required_pc_mastery_level;
 BnsTables::Shared::TableRef required_quest;
-int required_quest_tableId() const {return 306;};
+int required_quest_tableId() const {return 307;};
 __int16 required_achievement_id;
 __int16 required_achievement_step;
 __int16 activate_probability;
@@ -63,6 +63,7 @@ __int32 option_weight_total;
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
 		static __int16 TableId() { return 67; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

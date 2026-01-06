@@ -21,12 +21,14 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
 BnsTables::Shared::TableRef group_item[30];
 __int32 group_item_Size() const {return 30;};
-int group_item_tableId() const {return 198;};
+int group_item_tableId() const {return 202;};
 BnsTables::Shared::TableRef auction_item[30];
 __int32 auction_item_Size() const {return 30;};
-int auction_item_tableId() const {return 198;};
+int auction_item_tableId() const {return 202;};
 __int32 auction_price_contribution_rate[20];
 __int32 auction_price_contribution_rate_Size() const {return 20;};
 __int32 auction_price_contribution_rank_top[20];
@@ -34,9 +36,19 @@ __int32 auction_price_contribution_rank_top_Size() const {return 20;};
 __int32 auction_price_contribution_rank_bottom[20];
 __int32 auction_price_contribution_rank_bottom_Size() const {return 20;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 4); }
-		static __int16 TableId() { return 462; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
+		static __int16 TableId() { return 469; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

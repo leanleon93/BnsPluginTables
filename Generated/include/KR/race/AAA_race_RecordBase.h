@@ -21,19 +21,34 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 435;};
 wchar_t* lobby_race_imageset;
 wchar_t* character_info_race_imageset;
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 434;};
+int desc_tableId() const {return 435;};
 signed char male_customize_zoomcamera_add_height;
 signed char female_customize_zoomcamera_add_height;
 char Pad0[2];
 wchar_t* lobby_race_bgm;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 312; }
+		static __int16 TableId() { return 313; }
 		static __int32 SubType() { return -1; }
+		enum class race {
+			race_none = 0,
+			geon = 1,
+			gon = 2,
+			rin = 3,
+			jin = 4,
+			nabbeunmob = 5,
+			deonabbeunmob = 6,
+			museounmob = 7,
+			deomuseounmob = 8,
+			deodeomuseounmob = 9,
+			goyangi = 10,
+			gangrimche = 11,
+			aggwi = 12,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

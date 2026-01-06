@@ -37,8 +37,22 @@ char Pad2[1];
 wchar_t* sub_level_ref;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 127; }
+		static __int16 TableId() { return 130; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			none = 0,
+			nc_korea = 1,
+			tencent = 2,
+			nc_taiwan = 3,
+			nc_japan = 4,
+			nc_west = 5,
+			innova = 6,
+			rncs = 7,
+			rtx = 8,
+			zncs = 9,
+			ztx = 10,
+			all = 11,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

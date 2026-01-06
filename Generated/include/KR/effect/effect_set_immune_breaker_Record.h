@@ -9,9 +9,10 @@ namespace BnsTables::KR {
 	struct effect_set_immune_breaker_Record : effect_Record
 	{
 	public:
-		__int16 immune_breaker_attribute;
+		char Pad_sub_0[3];
+__int16 immune_breaker_attribute;
 signed char immune_breaker_count;
-char Pad_sub_0[1];
+char Pad_sub_1[1];
 __int32 immune_breaker_duration;
 
 		static __int32 SubType() { return 27; }

@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_dull_Record : effect_Record
 	{
 	public:
-		__int16 move_speed_percent;
+		char Pad_sub_0[3];
+__int16 move_speed_percent;
 __int16 cast_speed_percent;
 
 		static __int32 SubType() { return 923; }

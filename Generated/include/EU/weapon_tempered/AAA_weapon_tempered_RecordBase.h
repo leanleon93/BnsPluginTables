@@ -24,8 +24,30 @@ signed char level;
 		wchar_t* show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 452; }
+		static __int16 TableId() { return 459; }
 		static __int32 SubType() { return -1; }
+		enum class weapon_type {
+			none = 0,
+			bare_hand = 1,
+			sword = 2,
+			gauntlet = 3,
+			aura_bangle = 4,
+			pistol = 5,
+			rifle = 6,
+			two_handed_axe = 7,
+			bow = 8,
+			staff = 9,
+			dagger = 10,
+			pet_1 = 11,
+			pet_2 = 12,
+			gun = 13,
+			great_sword = 14,
+			long_bow = 15,
+			spear = 16,
+			orb = 17,
+			dual_blade = 18,
+			instrument = 19,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

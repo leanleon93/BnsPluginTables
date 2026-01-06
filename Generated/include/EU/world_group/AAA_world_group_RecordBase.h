@@ -24,11 +24,24 @@ namespace BnsTables::EU {
 __int16 world[10];
 __int32 world_Size() const {return 10;};
 BnsTables::Shared::TableRef lobby_desc;
-int lobby_desc_tableId() const {return 427;};
+int lobby_desc_tableId() const {return 434;};
+signed char platform_type;
+signed char contents_type;
+char Pad0[2];
+wchar_t* data_publisher_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 464; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 4); }
+		static __int16 TableId() { return 471; }
 		static __int32 SubType() { return -1; }
+		enum class platform_type {
+			normal = 0,
+			steam = 1,
+		};
+
+		enum class contents_type {
+			normal = 0,
+			gold_specialized = 1,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

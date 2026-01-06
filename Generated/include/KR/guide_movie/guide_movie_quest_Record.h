@@ -10,9 +10,9 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef acquire_quest_id;
-int acquire_quest_id_tableId() const {return 306;};
+int acquire_quest_id_tableId() const {return 307;};
 BnsTables::Shared::TableRef complete_quest_id;
-int complete_quest_id_tableId() const {return 306;};
+int complete_quest_id_tableId() const {return 307;};
 
 		static __int32 SubType() { return 1; }
 	};

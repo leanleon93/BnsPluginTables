@@ -12,13 +12,13 @@ namespace BnsTables::KR {
 		signed char max_sealed_level;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef modify_data;
-int modify_data_tableId() const {return 342;};
+int modify_data_tableId() const {return 343;};
 BnsTables::Shared::TableRef bind_quota;
 int bind_quota_tableId() const {return 69;};
 __int16 theme_version;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef theme_arena_entrance_zone;
-int theme_arena_entrance_zone_tableId() const {return 478;};
+int theme_arena_entrance_zone_tableId() const {return 480;};
 __int64 gimmick_week_start_date_time;
 signed char ui_scroll_slot_index;
 

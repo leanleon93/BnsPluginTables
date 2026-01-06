@@ -9,7 +9,8 @@ namespace BnsTables::KR {
 	struct effect_desire_increase_Record : effect_Record
 	{
 	public:
-		__int16 hate_diff;
+		char Pad_sub_0[3];
+__int16 hate_diff;
 __int16 desire_attack_normal_diff;
 
 		static __int32 SubType() { return 30; }

@@ -27,7 +27,7 @@ BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef zone[16];
 __int32 zone_Size() const {return 16;};
-int zone_tableId() const {return 478;};
+int zone_tableId() const {return 480;};
 bool enable_heart_count;
 signed char max_instant_heart_count;
 __int16 pc_max;
@@ -50,33 +50,33 @@ __int32 skill_score_recommend_use_item_point;
 __int16 skill_score_recommend_use_item_bonus;
 char Pad3[2];
 BnsTables::Shared::TableRef skill_score_boss_npc;
-int skill_score_boss_npc_tableId() const {return 276;};
+int skill_score_boss_npc_tableId() const {return 277;};
 __int16 skill_score_boss_npc_bonus;
 char Pad4[2];
 BnsTables::Shared::TableRef attraction_quest[5];
 __int32 attraction_quest_Size() const {return 5;};
-int attraction_quest_tableId() const {return 306;};
+int attraction_quest_tableId() const {return 307;};
 bool ui_filter_attraction_quest_only;
 char Pad5[3];
 BnsTables::Shared::TableRef respawn_confirm_text;
-int respawn_confirm_text_tableId() const {return 434;};
+int respawn_confirm_text_tableId() const {return 435;};
 BnsTables::Shared::TableRef escape_cave_confirm_text;
-int escape_cave_confirm_text_tableId() const {return 434;};
+int escape_cave_confirm_text_tableId() const {return 435;};
 signed char ui_text_grade;
 char Pad6[3];
 BnsTables::Shared::TableRef cave2_name2;
-int cave2_name2_tableId() const {return 434;};
+int cave2_name2_tableId() const {return 435;};
 BnsTables::Shared::TableRef cave2_desc;
-int cave2_desc_tableId() const {return 434;};
+int cave2_desc_tableId() const {return 435;};
 BnsTables::Shared::TableRef arena_entrance_zone;
-int arena_entrance_zone_tableId() const {return 478;};
+int arena_entrance_zone_tableId() const {return 480;};
 wchar_t* arena_minimap;
 bool arena_disable_zone_phase;
 signed char required_level;
 signed char required_mastery_level;
 char Pad7[1];
 BnsTables::Shared::TableRef quest_for_ignoring_required_level;
-int quest_for_ignoring_required_level_tableId() const {return 306;};
+int quest_for_ignoring_required_level_tableId() const {return 307;};
 BnsTables::Shared::TableRef gs_item_blade_master;
 int gs_item_blade_master_tableId() const {return 202;};
 BnsTables::Shared::TableRef gs_item_kung_fu_fighter;
@@ -121,15 +121,16 @@ signed char recommand_mastery_level_min;
 signed char recommand_mastery_level_max;
 BnsTables::Shared::TableRef display_quests[12];
 __int32 display_quests_Size() const {return 12;};
-int display_quests_tableId() const {return 306;};
+int display_quests_tableId() const {return 307;};
 BnsTables::Shared::TableRef tactic;
-int tactic_tableId() const {return 434;};
+int tactic_tableId() const {return 435;};
 BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 74;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 37); }
 		static __int16 TableId() { return 49; }
 		static __int32 SubType() { return -1; }
+
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)
