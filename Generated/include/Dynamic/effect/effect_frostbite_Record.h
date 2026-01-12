@@ -1,0 +1,14 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
+#pragma once
+#include "../../EU/effect/effect_frostbite_Record.h"
+#include "../../KR/effect/effect_frostbite_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using effect_frostbite_Record = BnsTables::KR::effect_frostbite_Record;
+	#else
+		using effect_frostbite_Record = BnsTables::EU::effect_frostbite_Record;
+	#endif
+}

@@ -1,0 +1,14 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
+#pragma once
+#include "../../EU/filter/filter_skill3_id_Record.h"
+#include "../../KR/filter/filter_skill3_id_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using filter_skill3_id_Record = BnsTables::KR::filter_skill3_id_Record;
+	#else
+		using filter_skill3_id_Record = BnsTables::EU::filter_skill3_id_Record;
+	#endif
+}
