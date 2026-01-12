@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/racoon_store_item/AAA_racoon_store_item_RecordBase.h"
 #include "../../KR/racoon_store_item/AAA_racoon_store_item_RecordBase.h"

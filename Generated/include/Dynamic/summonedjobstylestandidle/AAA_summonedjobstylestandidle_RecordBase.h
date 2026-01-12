@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/summonedjobstylestandidle/AAA_summonedjobstylestandidle_RecordBase.h"
 #include "../../KR/summonedjobstylestandidle/AAA_summonedjobstylestandidle_RecordBase.h"

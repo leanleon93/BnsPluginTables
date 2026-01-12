@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/item_graph/AAA_item_graph_RecordBase.h"
 #include "../../KR/item_graph/AAA_item_graph_RecordBase.h"

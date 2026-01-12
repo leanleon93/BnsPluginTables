@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npctalkmessage/npctalkmessage_guild_customize_Record.h"
 #include "../../KR/npctalkmessage/npctalkmessage_guild_customize_Record.h"

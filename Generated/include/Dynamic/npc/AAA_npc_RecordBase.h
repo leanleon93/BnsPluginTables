@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npc/AAA_npc_RecordBase.h"
 #include "../../KR/npc/AAA_npc_RecordBase.h"

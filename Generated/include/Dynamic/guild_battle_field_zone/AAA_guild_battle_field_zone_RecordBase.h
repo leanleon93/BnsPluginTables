@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/guild_battle_field_zone/AAA_guild_battle_field_zone_RecordBase.h"
 #include "../../KR/guild_battle_field_zone/AAA_guild_battle_field_zone_RecordBase.h"

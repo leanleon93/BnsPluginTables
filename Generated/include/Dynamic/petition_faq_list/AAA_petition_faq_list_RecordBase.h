@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/petition_faq_list/AAA_petition_faq_list_RecordBase.h"
 #include "../../KR/petition_faq_list/AAA_petition_faq_list_RecordBase.h"

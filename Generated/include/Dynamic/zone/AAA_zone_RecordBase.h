@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zone/AAA_zone_RecordBase.h"
 #include "../../KR/zone/AAA_zone_RecordBase.h"

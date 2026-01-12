@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/fishing_show/AAA_fishing_show_RecordBase.h"
 #include "../../KR/fishing_show/AAA_fishing_show_RecordBase.h"

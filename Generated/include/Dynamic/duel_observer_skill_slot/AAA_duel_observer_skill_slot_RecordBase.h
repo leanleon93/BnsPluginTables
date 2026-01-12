@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/duel_observer_skill_slot/AAA_duel_observer_skill_slot_RecordBase.h"
 #include "../../KR/duel_observer_skill_slot/AAA_duel_observer_skill_slot_RecordBase.h"

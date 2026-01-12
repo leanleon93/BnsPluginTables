@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/jackpot_boss_zone/AAA_jackpot_boss_zone_RecordBase.h"
 #include "../../KR/jackpot_boss_zone/AAA_jackpot_boss_zone_RecordBase.h"

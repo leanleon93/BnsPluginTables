@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/fieldbossspawn/AAA_fieldbossspawn_RecordBase.h"
 #include "../../KR/fieldbossspawn/AAA_fieldbossspawn_RecordBase.h"

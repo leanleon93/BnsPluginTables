@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect/effect_recall_to_position_Record.h"
 #include "../../KR/effect/effect_recall_to_position_Record.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/summonedlevel/AAA_summonedlevel_RecordBase.h"
 #include "../../KR/summonedlevel/AAA_summonedlevel_RecordBase.h"

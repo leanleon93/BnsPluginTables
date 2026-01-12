@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/user_command/user_command_command_Record.h"
 #include "../../KR/user_command/user_command_command_Record.h"

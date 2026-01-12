@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skillskineffect/AAA_skillskineffect_RecordBase.h"
 #include "../../KR/skillskineffect/AAA_skillskineffect_RecordBase.h"

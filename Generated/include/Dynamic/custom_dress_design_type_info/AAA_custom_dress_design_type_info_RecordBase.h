@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/custom_dress_design_type_info/AAA_custom_dress_design_type_info_RecordBase.h"
 #include "../../KR/custom_dress_design_type_info/AAA_custom_dress_design_type_info_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/market_category_3_group/AAA_market_category_3_group_RecordBase.h"
 #include "../../KR/market_category_3_group/AAA_market_category_3_group_RecordBase.h"

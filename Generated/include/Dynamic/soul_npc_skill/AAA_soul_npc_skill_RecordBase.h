@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/soul_npc_skill/AAA_soul_npc_skill_RecordBase.h"
 #include "../../KR/soul_npc_skill/AAA_soul_npc_skill_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/dieanim/AAA_dieanim_RecordBase.h"
 #include "../../KR/dieanim/AAA_dieanim_RecordBase.h"

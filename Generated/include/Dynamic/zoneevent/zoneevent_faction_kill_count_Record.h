@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zoneevent/zoneevent_faction_kill_count_Record.h"
 #include "../../KR/zoneevent/zoneevent_faction_kill_count_Record.h"

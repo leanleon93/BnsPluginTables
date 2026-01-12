@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/questrewardskill3/AAA_questrewardskill3_RecordBase.h"
 #include "../../KR/questrewardskill3/AAA_questrewardskill3_RecordBase.h"

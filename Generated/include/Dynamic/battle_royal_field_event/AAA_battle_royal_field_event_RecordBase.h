@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/battle_royal_field_event/AAA_battle_royal_field_event_RecordBase.h"
 #include "../../KR/battle_royal_field_event/AAA_battle_royal_field_event_RecordBase.h"

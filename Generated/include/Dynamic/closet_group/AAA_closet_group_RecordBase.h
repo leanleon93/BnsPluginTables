@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/closet_group/AAA_closet_group_RecordBase.h"
 #include "../../KR/closet_group/AAA_closet_group_RecordBase.h"

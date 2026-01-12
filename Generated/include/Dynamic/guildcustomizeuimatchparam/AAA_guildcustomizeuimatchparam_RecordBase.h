@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/guildcustomizeuimatchparam/AAA_guildcustomizeuimatchparam_RecordBase.h"
 #include "../../KR/guildcustomizeuimatchparam/AAA_guildcustomizeuimatchparam_RecordBase.h"

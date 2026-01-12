@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/duel_bot_challenge_strategic_tool/AAA_duel_bot_challenge_strategic_tool_RecordBase.h"
 #include "../../KR/duel_bot_challenge_strategic_tool/AAA_duel_bot_challenge_strategic_tool_RecordBase.h"

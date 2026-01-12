@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/vehicle/AAA_vehicle_RecordBase.h"
 #include "../../KR/vehicle/AAA_vehicle_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/itemtransformrecipemileage/AAA_itemtransformrecipemileage_RecordBase.h"
 #include "../../KR/itemtransformrecipemileage/AAA_itemtransformrecipemileage_RecordBase.h"

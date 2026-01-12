@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/map_group_2/AAA_map_group_2_RecordBase.h"
 #include "../../KR/map_group_2/AAA_map_group_2_RecordBase.h"

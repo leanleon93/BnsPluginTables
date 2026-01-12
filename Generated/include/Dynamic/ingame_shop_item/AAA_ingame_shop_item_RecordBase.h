@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/ingame_shop_item/AAA_ingame_shop_item_RecordBase.h"
 #include "../../KR/ingame_shop_item/AAA_ingame_shop_item_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/boast/boast_duel_Record.h"
 #include "../../KR/boast/boast_duel_Record.h"

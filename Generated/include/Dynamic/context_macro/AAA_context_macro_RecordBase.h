@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 
 #include "../../KR/context_macro/AAA_context_macro_RecordBase.h"

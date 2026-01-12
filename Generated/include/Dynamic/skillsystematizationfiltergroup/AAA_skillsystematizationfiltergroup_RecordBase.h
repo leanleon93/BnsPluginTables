@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skillsystematizationfiltergroup/AAA_skillsystematizationfiltergroup_RecordBase.h"
 #include "../../KR/skillsystematizationfiltergroup/AAA_skillsystematizationfiltergroup_RecordBase.h"

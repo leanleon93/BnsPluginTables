@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zonebasecamp/AAA_zonebasecamp_RecordBase.h"
 #include "../../KR/zonebasecamp/AAA_zonebasecamp_RecordBase.h"

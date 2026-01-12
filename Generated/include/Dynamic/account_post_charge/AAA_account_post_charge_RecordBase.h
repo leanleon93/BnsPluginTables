@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/account_post_charge/AAA_account_post_charge_RecordBase.h"
 #include "../../KR/account_post_charge/AAA_account_post_charge_RecordBase.h"

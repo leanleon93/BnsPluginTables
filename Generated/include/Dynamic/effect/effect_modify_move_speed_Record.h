@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect/effect_modify_move_speed_Record.h"
 #include "../../KR/effect/effect_modify_move_speed_Record.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/item_random_option_group/AAA_item_random_option_group_RecordBase.h"
 #include "../../KR/item_random_option_group/AAA_item_random_option_group_RecordBase.h"

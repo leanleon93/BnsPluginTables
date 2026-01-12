@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/quest_giveup_loss/AAA_quest_giveup_loss_RecordBase.h"
 #include "../../KR/quest_giveup_loss/AAA_quest_giveup_loss_RecordBase.h"

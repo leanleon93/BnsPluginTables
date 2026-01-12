@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/party_battle_field_zone/party_battle_field_zone_capture_the_flag_Record.h"
 #include "../../KR/party_battle_field_zone/party_battle_field_zone_capture_the_flag_Record.h"

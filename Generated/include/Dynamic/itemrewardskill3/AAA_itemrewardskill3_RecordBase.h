@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/itemrewardskill3/AAA_itemrewardskill3_RecordBase.h"
 #include "../../KR/itemrewardskill3/AAA_itemrewardskill3_RecordBase.h"

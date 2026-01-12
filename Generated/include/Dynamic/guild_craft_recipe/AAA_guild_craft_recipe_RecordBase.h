@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/guild_craft_recipe/AAA_guild_craft_recipe_RecordBase.h"
 #include "../../KR/guild_craft_recipe/AAA_guild_craft_recipe_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/battlemessage/AAA_battlemessage_RecordBase.h"
 #include "../../KR/battlemessage/AAA_battlemessage_RecordBase.h"

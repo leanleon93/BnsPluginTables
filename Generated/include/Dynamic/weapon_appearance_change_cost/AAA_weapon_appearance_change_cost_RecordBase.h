@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/weapon_appearance_change_cost/AAA_weapon_appearance_change_cost_RecordBase.h"
 #include "../../KR/weapon_appearance_change_cost/AAA_weapon_appearance_change_cost_RecordBase.h"

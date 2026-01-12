@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/customizingpreset/AAA_customizingpreset_RecordBase.h"
 #include "../../KR/customizingpreset/AAA_customizingpreset_RecordBase.h"

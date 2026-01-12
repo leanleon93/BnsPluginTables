@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/envresponse/AAA_envresponse_RecordBase.h"
 #include "../../KR/envresponse/AAA_envresponse_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/trainskillversion/AAA_trainskillversion_RecordBase.h"
 #include "../../KR/trainskillversion/AAA_trainskillversion_RecordBase.h"

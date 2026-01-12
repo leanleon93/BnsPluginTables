@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect/effect_ruin_phantom_Record.h"
 #include "../../KR/effect/effect_ruin_phantom_Record.h"

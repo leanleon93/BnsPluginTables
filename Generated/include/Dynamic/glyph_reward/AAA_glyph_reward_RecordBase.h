@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/glyph_reward/AAA_glyph_reward_RecordBase.h"
 #include "../../KR/glyph_reward/AAA_glyph_reward_RecordBase.h"

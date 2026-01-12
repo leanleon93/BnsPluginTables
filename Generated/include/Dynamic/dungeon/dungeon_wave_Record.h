@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/dungeon/dungeon_wave_Record.h"
 #include "../../KR/dungeon/dungeon_wave_Record.h"

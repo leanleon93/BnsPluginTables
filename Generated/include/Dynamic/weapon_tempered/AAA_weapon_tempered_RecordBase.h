@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/weapon_tempered/AAA_weapon_tempered_RecordBase.h"
 #include "../../KR/weapon_tempered/AAA_weapon_tempered_RecordBase.h"

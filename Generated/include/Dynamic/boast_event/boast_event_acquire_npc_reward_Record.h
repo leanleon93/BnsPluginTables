@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/boast_event/boast_event_acquire_npc_reward_Record.h"
 #include "../../KR/boast_event/boast_event_acquire_npc_reward_Record.h"

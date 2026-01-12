@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zoneconvoy/AAA_zoneconvoy_RecordBase.h"
 #include "../../KR/zoneconvoy/AAA_zoneconvoy_RecordBase.h"

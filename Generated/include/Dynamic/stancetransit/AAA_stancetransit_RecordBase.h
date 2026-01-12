@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/stancetransit/AAA_stancetransit_RecordBase.h"
 #include "../../KR/stancetransit/AAA_stancetransit_RecordBase.h"

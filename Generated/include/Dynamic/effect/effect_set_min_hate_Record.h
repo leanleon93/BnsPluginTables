@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect/effect_set_min_hate_Record.h"
 #include "../../KR/effect/effect_set_min_hate_Record.h"

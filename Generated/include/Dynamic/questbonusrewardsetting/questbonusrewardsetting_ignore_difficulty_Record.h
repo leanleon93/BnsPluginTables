@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/questbonusrewardsetting/questbonusrewardsetting_ignore_difficulty_Record.h"
 #include "../../KR/questbonusrewardsetting/questbonusrewardsetting_ignore_difficulty_Record.h"

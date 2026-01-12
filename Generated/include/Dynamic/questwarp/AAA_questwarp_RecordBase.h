@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/questwarp/AAA_questwarp_RecordBase.h"
 #include "../../KR/questwarp/AAA_questwarp_RecordBase.h"

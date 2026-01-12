@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/alarm_message_time_table/alarm_message_time_table_public_raid_Record.h"
 #include "../../KR/alarm_message_time_table/alarm_message_time_table_public_raid_Record.h"

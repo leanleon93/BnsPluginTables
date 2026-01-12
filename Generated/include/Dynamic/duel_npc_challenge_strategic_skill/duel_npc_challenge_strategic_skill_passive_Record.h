@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/duel_npc_challenge_strategic_skill/duel_npc_challenge_strategic_skill_passive_Record.h"
 #include "../../KR/duel_npc_challenge_strategic_skill/duel_npc_challenge_strategic_skill_passive_Record.h"

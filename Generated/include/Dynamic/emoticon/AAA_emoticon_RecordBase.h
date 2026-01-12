@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/emoticon/AAA_emoticon_RecordBase.h"
 #include "../../KR/emoticon/AAA_emoticon_RecordBase.h"

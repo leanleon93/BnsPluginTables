@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/tutorialskillsequence_step/AAA_tutorialskillsequence_step_RecordBase.h"
 #include "../../KR/tutorialskillsequence_step/AAA_tutorialskillsequence_step_RecordBase.h"

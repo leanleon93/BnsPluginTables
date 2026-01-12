@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npcindicatormoveanim/AAA_npcindicatormoveanim_RecordBase.h"
 #include "../../KR/npcindicatormoveanim/AAA_npcindicatormoveanim_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/sealed_dungeon_level/AAA_sealed_dungeon_level_RecordBase.h"
 #include "../../KR/sealed_dungeon_level/AAA_sealed_dungeon_level_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/talksocial/AAA_talksocial_RecordBase.h"
 #include "../../KR/talksocial/AAA_talksocial_RecordBase.h"

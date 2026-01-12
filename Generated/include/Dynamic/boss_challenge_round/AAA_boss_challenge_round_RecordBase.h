@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/boss_challenge_round/AAA_boss_challenge_round_RecordBase.h"
 #include "../../KR/boss_challenge_round/AAA_boss_challenge_round_RecordBase.h"

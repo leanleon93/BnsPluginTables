@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect_group/AAA_effect_group_RecordBase.h"
 #include "../../KR/effect_group/AAA_effect_group_RecordBase.h"

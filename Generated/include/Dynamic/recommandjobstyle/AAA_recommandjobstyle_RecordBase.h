@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 
 #include "../../KR/recommandjobstyle/AAA_recommandjobstyle_RecordBase.h"

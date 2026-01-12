@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/standidle/AAA_standidle_RecordBase.h"
 #include "../../KR/standidle/AAA_standidle_RecordBase.h"

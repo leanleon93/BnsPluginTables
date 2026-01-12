@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/duel_npc_challenge/AAA_duel_npc_challenge_RecordBase.h"
 #include "../../KR/duel_npc_challenge/AAA_duel_npc_challenge_RecordBase.h"

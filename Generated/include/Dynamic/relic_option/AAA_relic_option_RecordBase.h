@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/relic_option/AAA_relic_option_RecordBase.h"
 #include "../../KR/relic_option/AAA_relic_option_RecordBase.h"

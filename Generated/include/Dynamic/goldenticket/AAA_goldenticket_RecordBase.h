@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/goldenticket/AAA_goldenticket_RecordBase.h"
 #include "../../KR/goldenticket/AAA_goldenticket_RecordBase.h"

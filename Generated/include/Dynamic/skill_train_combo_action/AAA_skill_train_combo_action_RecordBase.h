@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skill_train_combo_action/AAA_skill_train_combo_action_RecordBase.h"
 #include "../../KR/skill_train_combo_action/AAA_skill_train_combo_action_RecordBase.h"

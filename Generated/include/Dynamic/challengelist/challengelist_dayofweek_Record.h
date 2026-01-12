@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/challengelist/challengelist_dayofweek_Record.h"
 #include "../../KR/challengelist/challengelist_dayofweek_Record.h"

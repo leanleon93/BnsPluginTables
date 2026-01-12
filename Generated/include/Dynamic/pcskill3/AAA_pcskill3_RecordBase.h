@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/pcskill3/AAA_pcskill3_RecordBase.h"
 #include "../../KR/pcskill3/AAA_pcskill3_RecordBase.h"

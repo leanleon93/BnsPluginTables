@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/weeklytimetable/AAA_weeklytimetable_RecordBase.h"
 #include "../../KR/weeklytimetable/AAA_weeklytimetable_RecordBase.h"

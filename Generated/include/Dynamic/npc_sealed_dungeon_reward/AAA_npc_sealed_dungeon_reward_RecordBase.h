@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npc_sealed_dungeon_reward/AAA_npc_sealed_dungeon_reward_RecordBase.h"
 #include "../../KR/npc_sealed_dungeon_reward/AAA_npc_sealed_dungeon_reward_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/tencent_quest/AAA_tencent_quest_RecordBase.h"
 #include "../../KR/tencent_quest/AAA_tencent_quest_RecordBase.h"

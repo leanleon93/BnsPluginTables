@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/levelupreward/AAA_levelupreward_RecordBase.h"
 #include "../../KR/levelupreward/AAA_levelupreward_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/content_quota/content_quota_market_targeted_sale_Record.h"
 #include "../../KR/content_quota/content_quota_market_targeted_sale_Record.h"

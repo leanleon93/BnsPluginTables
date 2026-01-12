@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/auto_combat_skill_cast_condition/AAA_auto_combat_skill_cast_condition_RecordBase.h"
 #include "../../KR/auto_combat_skill_cast_condition/AAA_auto_combat_skill_cast_condition_RecordBase.h"

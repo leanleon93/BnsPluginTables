@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 
 #include "../../KR/item_transform_recipe_world_limit/AAA_item_transform_recipe_world_limit_RecordBase.h"

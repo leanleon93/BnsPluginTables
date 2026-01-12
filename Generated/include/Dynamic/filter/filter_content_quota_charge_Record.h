@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/filter/filter_content_quota_charge_Record.h"
 #include "../../KR/filter/filter_content_quota_charge_Record.h"

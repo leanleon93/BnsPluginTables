@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zoneenv2place/zoneenv2place_refiner_Record.h"
 #include "../../KR/zoneenv2place/zoneenv2place_refiner_Record.h"

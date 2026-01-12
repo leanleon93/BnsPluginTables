@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/guilduniformpreset/AAA_guilduniformpreset_RecordBase.h"
 #include "../../KR/guilduniformpreset/AAA_guilduniformpreset_RecordBase.h"

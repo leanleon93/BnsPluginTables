@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npctalkmessage/npctalkmessage_select_join_faction_Record.h"
 #include "../../KR/npctalkmessage/npctalkmessage_select_join_faction_Record.h"

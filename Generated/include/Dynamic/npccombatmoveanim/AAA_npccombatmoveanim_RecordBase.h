@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npccombatmoveanim/AAA_npccombatmoveanim_RecordBase.h"
 #include "../../KR/npccombatmoveanim/AAA_npccombatmoveanim_RecordBase.h"

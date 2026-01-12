@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/secret_treasure/AAA_secret_treasure_RecordBase.h"
 #include "../../KR/secret_treasure/AAA_secret_treasure_RecordBase.h"

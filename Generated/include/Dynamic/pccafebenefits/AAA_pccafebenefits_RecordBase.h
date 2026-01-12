@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/pccafebenefits/AAA_pccafebenefits_RecordBase.h"
 #include "../../KR/pccafebenefits/AAA_pccafebenefits_RecordBase.h"

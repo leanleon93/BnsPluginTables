@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/public_raid/AAA_public_raid_RecordBase.h"
 #include "../../KR/public_raid/AAA_public_raid_RecordBase.h"

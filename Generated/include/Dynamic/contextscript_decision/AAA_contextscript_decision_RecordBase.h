@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/contextscript_decision/AAA_contextscript_decision_RecordBase.h"
 #include "../../KR/contextscript_decision/AAA_contextscript_decision_RecordBase.h"

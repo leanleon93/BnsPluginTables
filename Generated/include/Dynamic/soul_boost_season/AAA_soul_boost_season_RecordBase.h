@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/soul_boost_season/AAA_soul_boost_season_RecordBase.h"
 #include "../../KR/soul_boost_season/AAA_soul_boost_season_RecordBase.h"

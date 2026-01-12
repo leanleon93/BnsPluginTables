@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/pet_food_recovery/AAA_pet_food_recovery_RecordBase.h"
 #include "../../KR/pet_food_recovery/AAA_pet_food_recovery_RecordBase.h"

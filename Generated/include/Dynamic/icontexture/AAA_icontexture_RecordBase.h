@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/icontexture/AAA_icontexture_RecordBase.h"
 #include "../../KR/icontexture/AAA_icontexture_RecordBase.h"

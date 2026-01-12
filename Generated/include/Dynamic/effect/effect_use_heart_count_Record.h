@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect/effect_use_heart_count_Record.h"
 #include "../../KR/effect/effect_use_heart_count_Record.h"

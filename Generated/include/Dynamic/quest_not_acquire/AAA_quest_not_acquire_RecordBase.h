@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/quest_not_acquire/AAA_quest_not_acquire_RecordBase.h"
 #include "../../KR/quest_not_acquire/AAA_quest_not_acquire_RecordBase.h"

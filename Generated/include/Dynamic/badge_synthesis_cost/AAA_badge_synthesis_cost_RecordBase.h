@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/badge_synthesis_cost/AAA_badge_synthesis_cost_RecordBase.h"
 #include "../../KR/badge_synthesis_cost/AAA_badge_synthesis_cost_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zonetriggereventcond/zonetriggereventcond_random_time_interval_event_Record.h"
 #include "../../KR/zonetriggereventcond/zonetriggereventcond_random_time_interval_event_Record.h"

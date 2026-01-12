@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/filter/filter_effect_attribute_Record.h"
 #include "../../KR/filter/filter_effect_attribute_Record.h"

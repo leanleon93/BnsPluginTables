@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/acquire_route/AAA_acquire_route_RecordBase.h"
 #include "../../KR/acquire_route/AAA_acquire_route_RecordBase.h"

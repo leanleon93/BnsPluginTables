@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skillmodifylimit/AAA_skillmodifylimit_RecordBase.h"
 #include "../../KR/skillmodifylimit/AAA_skillmodifylimit_RecordBase.h"

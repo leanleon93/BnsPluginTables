@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/terrain/AAA_terrain_RecordBase.h"
 #include "../../KR/terrain/AAA_terrain_RecordBase.h"

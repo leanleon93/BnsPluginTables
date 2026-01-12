@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/relic_enhance_cost/AAA_relic_enhance_cost_RecordBase.h"
 #include "../../KR/relic_enhance_cost/AAA_relic_enhance_cost_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/loadingimage/AAA_loadingimage_RecordBase.h"
 #include "../../KR/loadingimage/AAA_loadingimage_RecordBase.h"

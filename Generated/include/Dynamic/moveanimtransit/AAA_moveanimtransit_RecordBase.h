@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/moveanimtransit/AAA_moveanimtransit_RecordBase.h"
 #include "../../KR/moveanimtransit/AAA_moveanimtransit_RecordBase.h"

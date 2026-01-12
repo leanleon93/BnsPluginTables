@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/questbonusrewardsetting/questbonusrewardsetting_difficulty_type_Record.h"
 #include "../../KR/questbonusrewardsetting/questbonusrewardsetting_difficulty_type_Record.h"

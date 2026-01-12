@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/customizingpreview/customizingpreview_light_Record.h"
 #include "../../KR/customizingpreview/customizingpreview_light_Record.h"

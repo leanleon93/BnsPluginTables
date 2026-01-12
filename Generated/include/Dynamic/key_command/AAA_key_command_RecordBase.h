@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/key_command/AAA_key_command_RecordBase.h"
 #include "../../KR/key_command/AAA_key_command_RecordBase.h"

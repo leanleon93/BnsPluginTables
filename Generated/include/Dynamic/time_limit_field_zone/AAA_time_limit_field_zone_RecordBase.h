@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/time_limit_field_zone/AAA_time_limit_field_zone_RecordBase.h"
 #include "../../KR/time_limit_field_zone/AAA_time_limit_field_zone_RecordBase.h"

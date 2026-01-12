@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/unlocated_store_ui/AAA_unlocated_store_ui_RecordBase.h"
 #include "../../KR/unlocated_store_ui/AAA_unlocated_store_ui_RecordBase.h"

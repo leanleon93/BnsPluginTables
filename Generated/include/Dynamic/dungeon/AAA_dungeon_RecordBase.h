@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/dungeon/AAA_dungeon_RecordBase.h"
 #include "../../KR/dungeon/AAA_dungeon_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/slatescroll/AAA_slatescroll_RecordBase.h"
 #include "../../KR/slatescroll/AAA_slatescroll_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/contentrestriction/AAA_contentrestriction_RecordBase.h"
 #include "../../KR/contentrestriction/AAA_contentrestriction_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/npctalkmessage/npctalkmessage_summoned_name_change_Record.h"
 #include "../../KR/npctalkmessage/npctalkmessage_summoned_name_change_Record.h"

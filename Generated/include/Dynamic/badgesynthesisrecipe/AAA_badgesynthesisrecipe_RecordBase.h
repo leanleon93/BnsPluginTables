@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/badgesynthesisrecipe/AAA_badgesynthesisrecipe_RecordBase.h"
 #include "../../KR/badgesynthesisrecipe/AAA_badgesynthesisrecipe_RecordBase.h"

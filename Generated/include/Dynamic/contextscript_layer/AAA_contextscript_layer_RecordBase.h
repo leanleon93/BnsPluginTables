@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/contextscript_layer/AAA_contextscript_layer_RecordBase.h"
 #include "../../KR/contextscript_layer/AAA_contextscript_layer_RecordBase.h"

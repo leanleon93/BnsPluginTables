@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/attraction_shortcut/attraction_shortcut_dungeon_Record.h"
 #include "../../KR/attraction_shortcut/attraction_shortcut_dungeon_Record.h"

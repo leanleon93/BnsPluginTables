@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/jobskillset/AAA_jobskillset_RecordBase.h"
 #include "../../KR/jobskillset/AAA_jobskillset_RecordBase.h"

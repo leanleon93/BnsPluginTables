@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/achievement_register/achievement_register_kill_pc_Record.h"
 #include "../../KR/achievement_register/achievement_register_kill_pc_Record.h"

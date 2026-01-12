@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/duel_bot_challenge/duel_bot_challenge_time_attack_mode_Record.h"
 #include "../../KR/duel_bot_challenge/duel_bot_challenge_time_attack_mode_Record.h"

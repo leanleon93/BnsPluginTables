@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/boast_event/boast_event_treasureboard_season_reward_Record.h"
 #include "../../KR/boast_event/boast_event_treasureboard_season_reward_Record.h"

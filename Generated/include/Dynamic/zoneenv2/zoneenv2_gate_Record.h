@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zoneenv2/zoneenv2_gate_Record.h"
 #include "../../KR/zoneenv2/zoneenv2_gate_Record.h"

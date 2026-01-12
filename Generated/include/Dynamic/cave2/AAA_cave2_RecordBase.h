@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/cave2/AAA_cave2_RecordBase.h"
 #include "../../KR/cave2/AAA_cave2_RecordBase.h"

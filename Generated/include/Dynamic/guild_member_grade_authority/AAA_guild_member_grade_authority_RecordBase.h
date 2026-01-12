@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/guild_member_grade_authority/AAA_guild_member_grade_authority_RecordBase.h"
 #include "../../KR/guild_member_grade_authority/AAA_guild_member_grade_authority_RecordBase.h"

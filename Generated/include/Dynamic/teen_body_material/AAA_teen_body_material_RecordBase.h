@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/teen_body_material/AAA_teen_body_material_RecordBase.h"
 #include "../../KR/teen_body_material/AAA_teen_body_material_RecordBase.h"

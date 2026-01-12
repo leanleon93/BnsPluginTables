@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/pc_hidden_character/AAA_pc_hidden_character_RecordBase.h"
 #include "../../KR/pc_hidden_character/AAA_pc_hidden_character_RecordBase.h"

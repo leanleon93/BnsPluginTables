@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/contextscript_stance/AAA_contextscript_stance_RecordBase.h"
 #include "../../KR/contextscript_stance/AAA_contextscript_stance_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/weapongemslot/AAA_weapongemslot_RecordBase.h"
 #include "../../KR/weapongemslot/AAA_weapongemslot_RecordBase.h"

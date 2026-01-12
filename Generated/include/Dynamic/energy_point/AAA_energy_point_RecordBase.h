@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/energy_point/AAA_energy_point_RecordBase.h"
 #include "../../KR/energy_point/AAA_energy_point_RecordBase.h"

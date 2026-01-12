@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zoneteleportswitch/AAA_zoneteleportswitch_RecordBase.h"
 #include "../../KR/zoneteleportswitch/AAA_zoneteleportswitch_RecordBase.h"

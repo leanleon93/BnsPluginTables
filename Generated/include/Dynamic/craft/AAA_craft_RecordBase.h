@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/craft/AAA_craft_RecordBase.h"
 #include "../../KR/craft/AAA_craft_RecordBase.h"

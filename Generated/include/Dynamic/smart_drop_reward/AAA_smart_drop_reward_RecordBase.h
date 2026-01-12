@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/smart_drop_reward/AAA_smart_drop_reward_RecordBase.h"
 #include "../../KR/smart_drop_reward/AAA_smart_drop_reward_RecordBase.h"

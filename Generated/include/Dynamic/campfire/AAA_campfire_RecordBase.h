@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/campfire/AAA_campfire_RecordBase.h"
 #include "../../KR/campfire/AAA_campfire_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/customizingdetailicon/AAA_customizingdetailicon_RecordBase.h"
 #include "../../KR/customizingdetailicon/AAA_customizingdetailicon_RecordBase.h"

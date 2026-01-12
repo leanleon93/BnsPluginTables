@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/effect/effect_opening_eyes_Record.h"
 #include "../../KR/effect/effect_opening_eyes_Record.h"

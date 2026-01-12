@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/slatestone/AAA_slatestone_RecordBase.h"
 #include "../../KR/slatestone/AAA_slatestone_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zoneenv2spawnrandomgroup/AAA_zoneenv2spawnrandomgroup_RecordBase.h"
 #include "../../KR/zoneenv2spawnrandomgroup/AAA_zoneenv2spawnrandomgroup_RecordBase.h"

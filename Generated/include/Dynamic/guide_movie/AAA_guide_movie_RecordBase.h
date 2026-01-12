@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/guide_movie/AAA_guide_movie_RecordBase.h"
 #include "../../KR/guide_movie/AAA_guide_movie_RecordBase.h"

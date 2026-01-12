@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skipquest/skipquest_job_Record.h"
 #include "../../KR/skipquest/skipquest_job_Record.h"

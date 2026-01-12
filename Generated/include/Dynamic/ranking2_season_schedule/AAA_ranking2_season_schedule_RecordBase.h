@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/ranking2_season_schedule/AAA_ranking2_season_schedule_RecordBase.h"
 #include "../../KR/ranking2_season_schedule/AAA_ranking2_season_schedule_RecordBase.h"

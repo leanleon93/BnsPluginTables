@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/questreward/AAA_questreward_RecordBase.h"
 #include "../../KR/questreward/AAA_questreward_RecordBase.h"

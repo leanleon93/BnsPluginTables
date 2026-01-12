@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/surveyquestions_question/AAA_surveyquestions_question_RecordBase.h"
 #include "../../KR/surveyquestions_question/AAA_surveyquestions_question_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/flying_circus_game/AAA_flying_circus_game_RecordBase.h"
 #include "../../KR/flying_circus_game/AAA_flying_circus_game_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/partychatchannel/AAA_partychatchannel_RecordBase.h"
 #include "../../KR/partychatchannel/AAA_partychatchannel_RecordBase.h"

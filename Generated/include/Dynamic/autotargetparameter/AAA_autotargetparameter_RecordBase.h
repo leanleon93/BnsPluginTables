@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/autotargetparameter/AAA_autotargetparameter_RecordBase.h"
 #include "../../KR/autotargetparameter/AAA_autotargetparameter_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/item_buy_price/AAA_item_buy_price_RecordBase.h"
 #include "../../KR/item_buy_price/AAA_item_buy_price_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/battle_field_grade/AAA_battle_field_grade_RecordBase.h"
 #include "../../KR/battle_field_grade/AAA_battle_field_grade_RecordBase.h"

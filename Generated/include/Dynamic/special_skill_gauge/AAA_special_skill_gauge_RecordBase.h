@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/special_skill_gauge/AAA_special_skill_gauge_RecordBase.h"
 #include "../../KR/special_skill_gauge/AAA_special_skill_gauge_RecordBase.h"

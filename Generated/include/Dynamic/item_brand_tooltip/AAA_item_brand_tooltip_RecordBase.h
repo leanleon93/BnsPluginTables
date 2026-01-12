@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/item_brand_tooltip/AAA_item_brand_tooltip_RecordBase.h"
 #include "../../KR/item_brand_tooltip/AAA_item_brand_tooltip_RecordBase.h"

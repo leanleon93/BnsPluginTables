@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/achievement_register/achievement_register_party_battle_win_count_Record.h"
 #include "../../KR/achievement_register/achievement_register_party_battle_win_count_Record.h"

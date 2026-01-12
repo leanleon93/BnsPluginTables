@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/contents_schedule/contents_schedule_random_store_1_Record.h"
 #include "../../KR/contents_schedule/contents_schedule_random_store_1_Record.h"

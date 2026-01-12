@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/feedback/AAA_feedback_RecordBase.h"
 #include "../../KR/feedback/AAA_feedback_RecordBase.h"

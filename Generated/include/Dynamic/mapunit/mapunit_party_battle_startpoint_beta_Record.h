@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/mapunit/mapunit_party_battle_startpoint_beta_Record.h"
 #include "../../KR/mapunit/mapunit_party_battle_startpoint_beta_Record.h"

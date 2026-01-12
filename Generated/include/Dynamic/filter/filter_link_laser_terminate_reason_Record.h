@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/filter/filter_link_laser_terminate_reason_Record.h"
 #include "../../KR/filter/filter_link_laser_terminate_reason_Record.h"

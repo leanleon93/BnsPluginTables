@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skillresultcontroll3/AAA_skillresultcontroll3_RecordBase.h"
 #include "../../KR/skillresultcontroll3/AAA_skillresultcontroll3_RecordBase.h"

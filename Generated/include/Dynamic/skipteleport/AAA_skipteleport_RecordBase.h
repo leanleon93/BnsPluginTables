@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skipteleport/AAA_skipteleport_RecordBase.h"
 #include "../../KR/skipteleport/AAA_skipteleport_RecordBase.h"

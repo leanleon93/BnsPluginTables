@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/skill/skill_passive_skill_Record.h"
 #include "../../KR/skill/skill_passive_skill_Record.h"

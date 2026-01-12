@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/passive_effect_move_anim/AAA_passive_effect_move_anim_RecordBase.h"
 #include "../../KR/passive_effect_move_anim/AAA_passive_effect_move_anim_RecordBase.h"

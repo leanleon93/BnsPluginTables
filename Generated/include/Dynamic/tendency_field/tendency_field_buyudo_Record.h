@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/tendency_field/tendency_field_buyudo_Record.h"
 #include "../../KR/tendency_field/tendency_field_buyudo_Record.h"

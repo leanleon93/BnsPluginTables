@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/achievement_register/achievement_register_decompose_item_weapon_gem_level_n_Record.h"
 #include "../../KR/achievement_register/achievement_register_decompose_item_weapon_gem_level_n_Record.h"

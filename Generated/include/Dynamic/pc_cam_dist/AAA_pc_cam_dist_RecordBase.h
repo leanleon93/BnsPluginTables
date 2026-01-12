@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/pc_cam_dist/AAA_pc_cam_dist_RecordBase.h"
 #include "../../KR/pc_cam_dist/AAA_pc_cam_dist_RecordBase.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/arenaportal/arenaportal_duel_Record.h"
 #include "../../KR/arenaportal/arenaportal_duel_Record.h"

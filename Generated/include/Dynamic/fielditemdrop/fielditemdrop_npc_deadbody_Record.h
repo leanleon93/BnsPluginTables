@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/fielditemdrop/fielditemdrop_npc_deadbody_Record.h"
 #include "../../KR/fielditemdrop/fielditemdrop_npc_deadbody_Record.h"

@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/mapunit/mapunit_fishing_field_Record.h"
 #include "../../KR/mapunit/mapunit_fishing_field_Record.h"

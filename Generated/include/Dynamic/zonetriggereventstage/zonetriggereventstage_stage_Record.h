@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/zonetriggereventstage/zonetriggereventstage_stage_Record.h"
 #include "../../KR/zonetriggereventstage/zonetriggereventstage_stage_Record.h"

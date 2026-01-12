@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/commonanim/AAA_commonanim_RecordBase.h"
 #include "../../KR/commonanim/AAA_commonanim_RecordBase.h"

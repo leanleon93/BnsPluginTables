@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/itemspirit/AAA_itemspirit_RecordBase.h"
 #include "../../KR/itemspirit/AAA_itemspirit_RecordBase.h"

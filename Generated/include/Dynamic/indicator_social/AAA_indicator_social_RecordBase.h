@@ -1,3 +1,6 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
 #pragma once
 #include "../../EU/indicator_social/AAA_indicator_social_RecordBase.h"
 #include "../../KR/indicator_social/AAA_indicator_social_RecordBase.h"
