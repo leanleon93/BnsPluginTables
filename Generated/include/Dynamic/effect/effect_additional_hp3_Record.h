@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/effect/effect_additional_hp3_Record.h"
+#include "../../KR/effect/effect_additional_hp3_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using effect_additional_hp3_Record = BnsTables::KR::effect_additional_hp3_Record;
+	#else
+		using effect_additional_hp3_Record = BnsTables::EU::effect_additional_hp3_Record;
+	#endif
+}

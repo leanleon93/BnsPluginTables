@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/effect/effect_glyph_condition_event_6_Record.h"
+#include "../../KR/effect/effect_glyph_condition_event_6_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using effect_glyph_condition_event_6_Record = BnsTables::KR::effect_glyph_condition_event_6_Record;
+	#else
+		using effect_glyph_condition_event_6_Record = BnsTables::EU::effect_glyph_condition_event_6_Record;
+	#endif
+}

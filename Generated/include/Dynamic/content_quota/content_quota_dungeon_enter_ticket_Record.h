@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/content_quota/content_quota_dungeon_enter_ticket_Record.h"
+#include "../../KR/content_quota/content_quota_dungeon_enter_ticket_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using content_quota_dungeon_enter_ticket_Record = BnsTables::KR::content_quota_dungeon_enter_ticket_Record;
+	#else
+		using content_quota_dungeon_enter_ticket_Record = BnsTables::EU::content_quota_dungeon_enter_ticket_Record;
+	#endif
+}

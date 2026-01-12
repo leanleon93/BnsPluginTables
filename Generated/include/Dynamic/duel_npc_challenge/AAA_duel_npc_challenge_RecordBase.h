@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/duel_npc_challenge/AAA_duel_npc_challenge_RecordBase.h"
+#include "../../KR/duel_npc_challenge/AAA_duel_npc_challenge_RecordBase.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using duel_npc_challenge_Record = BnsTables::KR::duel_npc_challenge_Record;
+	#else
+		using duel_npc_challenge_Record = BnsTables::EU::duel_npc_challenge_Record;
+	#endif
+}

@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/content_quota/content_quota_item_buy_680_Record.h"
+#include "../../KR/content_quota/content_quota_item_buy_680_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using content_quota_item_buy_680_Record = BnsTables::KR::content_quota_item_buy_680_Record;
+	#else
+		using content_quota_item_buy_680_Record = BnsTables::EU::content_quota_item_buy_680_Record;
+	#endif
+}

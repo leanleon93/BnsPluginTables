@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/effect/effect_external_injury_damage_Record.h"
+#include "../../KR/effect/effect_external_injury_damage_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using effect_external_injury_damage_Record = BnsTables::KR::effect_external_injury_damage_Record;
+	#else
+		using effect_external_injury_damage_Record = BnsTables::EU::effect_external_injury_damage_Record;
+	#endif
+}

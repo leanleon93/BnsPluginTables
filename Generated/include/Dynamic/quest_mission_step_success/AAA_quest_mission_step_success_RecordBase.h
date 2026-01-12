@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/quest_mission_step_success/AAA_quest_mission_step_success_RecordBase.h"
+#include "../../KR/quest_mission_step_success/AAA_quest_mission_step_success_RecordBase.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using quest_mission_step_success_Record = BnsTables::KR::quest_mission_step_success_Record;
+	#else
+		using quest_mission_step_success_Record = BnsTables::EU::quest_mission_step_success_Record;
+	#endif
+}

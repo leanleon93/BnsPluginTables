@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/effect/effect_oceanic_Record.h"
+#include "../../KR/effect/effect_oceanic_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using effect_oceanic_Record = BnsTables::KR::effect_oceanic_Record;
+	#else
+		using effect_oceanic_Record = BnsTables::EU::effect_oceanic_Record;
+	#endif
+}

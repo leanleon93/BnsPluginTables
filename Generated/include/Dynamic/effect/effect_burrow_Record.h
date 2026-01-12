@@ -1,0 +1,11 @@
+#pragma once
+#include "../../EU/effect/effect_burrow_Record.h"
+#include "../../KR/effect/effect_burrow_Record.h"
+
+namespace BnsTables::Dynamic {
+	#ifdef BNSKR
+		using effect_burrow_Record = BnsTables::KR::effect_burrow_Record;
+	#else
+		using effect_burrow_Record = BnsTables::EU::effect_burrow_Record;
+	#endif
+}
