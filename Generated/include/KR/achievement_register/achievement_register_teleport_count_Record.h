@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 434;};
+int teleport_tableId() const {return 437;};
 
 		static __int32 SubType() { return 22; }
 	};

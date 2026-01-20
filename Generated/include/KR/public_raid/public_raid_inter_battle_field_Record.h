@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef portal_ticket_item_info;
-int portal_ticket_item_info_tableId() const {return 203;};
+int portal_ticket_item_info_tableId() const {return 204;};
 BnsTables::Shared::TableRef entrance_quota;
 int entrance_quota_tableId() const {return 69;};
 BnsTables::Shared::TableRef arena_portal;

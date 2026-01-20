@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef raid_dungeon;
-int raid_dungeon_tableId() const {return 318;};
+int raid_dungeon_tableId() const {return 319;};
 
 		static __int32 SubType() { return 3; }
 	};

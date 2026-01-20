@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 slot_group;
 BnsTables::Shared::TableRef item;
-int item_tableId() const {return 203;};
+int item_tableId() const {return 204;};
 __int16 item_count;
 signed char item_grade;
 char Pad0[1];
@@ -33,10 +33,10 @@ __int32 item_cost;
 signed char cost_type;
 char Pad2[3];
 BnsTables::Shared::TableRef cost_item;
-int cost_item_tableId() const {return 203;};
+int cost_item_tableId() const {return 204;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 317; }
+		static __int16 TableId() { return 318; }
 		static __int32 SubType() { return -1; }
 		enum class item_grade {
 			none = 0,

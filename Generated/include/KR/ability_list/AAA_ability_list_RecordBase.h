@@ -35,7 +35,7 @@ __int32 ability_value_max[20];
 __int32 ability_value_max_Size() const {return 20;};
 BnsTables::Shared::TableRef ability_value_distribution[20];
 __int32 ability_value_distribution_Size() const {return 20;};
-int ability_value_distribution_tableId() const {return 320;};
+int ability_value_distribution_tableId() const {return 321;};
 bool draw_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }

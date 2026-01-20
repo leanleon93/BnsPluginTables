@@ -23,7 +23,7 @@ signed char effect_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef game_message;
-int game_message_tableId() const {return 160;};
+int game_message_tableId() const {return 161;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 31; }

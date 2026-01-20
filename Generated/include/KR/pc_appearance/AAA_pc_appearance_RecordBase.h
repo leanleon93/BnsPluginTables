@@ -27,7 +27,7 @@ BnsTables::Shared::TableRef appearance;
 int appearance_tableId() const {return 88;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 290; }
+		static __int16 TableId() { return 291; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

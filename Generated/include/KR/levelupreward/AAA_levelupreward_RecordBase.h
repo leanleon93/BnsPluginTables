@@ -26,7 +26,7 @@ char Pad0[3];
 __int32 level;
 BnsTables::Shared::TableRef reward_item[5];
 __int32 reward_item_Size() const {return 5;};
-int reward_item_tableId() const {return 203;};
+int reward_item_tableId() const {return 204;};
 signed char reward_item_count[5];
 __int32 reward_item_count_Size() const {return 5;};
 signed char ability[5];
@@ -36,7 +36,7 @@ __int32 ability_value[5];
 __int32 ability_value_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 251; }
+		static __int16 TableId() { return 252; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

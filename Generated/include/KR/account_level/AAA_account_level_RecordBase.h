@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 __int64 exp;
 signed char ability[8];
 __int32 ability_Size() const {return 8;};

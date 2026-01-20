@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 438;};
+int name2_tableId() const {return 441;};
 signed char sort_id;
 signed char unique_group;
 signed char target_type;

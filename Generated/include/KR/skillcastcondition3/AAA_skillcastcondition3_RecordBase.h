@@ -100,7 +100,7 @@ bool fail_target_catch_linker;
 bool fail_target_catch_linked;
 char Pad10[1];
 BnsTables::Shared::TableRef gather_range;
-int gather_range_tableId() const {return 367;};
+int gather_range_tableId() const {return 370;};
 __int16 check_style_score;
 __int16 check_hp_value;
 signed char check_hp_type;
@@ -153,7 +153,7 @@ __int32 fail_recycle_group_id_Size() const {return 4;};
 signed char fail_recycle_group_op;
 BnsTables::Shared::TableRef soul_mask[2];
 __int32 soul_mask_Size() const {return 2;};
-int soul_mask_tableId() const {return 407;};
+int soul_mask_tableId() const {return 410;};
 bool fail_soulmask_except_normal;
 bool is_special_skill;
 signed char lockon_skill_type;
@@ -206,7 +206,7 @@ __int32 simple_context_fail_recycle_group_id_Size() const {return 4;};
 signed char simple_context_fail_recycle_group_op;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
-		static __int16 TableId() { return 362; }
+		static __int16 TableId() { return 365; }
 		static __int32 SubType() { return -1; }
 		enum class stance {
 			stance_none = 0,

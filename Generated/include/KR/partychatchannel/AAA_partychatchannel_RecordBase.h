@@ -29,17 +29,17 @@ namespace BnsTables::KR {
 signed char chnnelid;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 BnsTables::Shared::TableRef name_party_number;
-int name_party_number_tableId() const {return 438;};
+int name_party_number_tableId() const {return 441;};
 BnsTables::Shared::TableRef district;
 int district_tableId() const {return 105;};
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 256;};
+int map_group_1_tableId() const {return 257;};
 signed char arrange_type;
 char Pad1[3];
 BnsTables::Shared::TableRef group_name;
-int group_name_tableId() const {return 438;};
+int group_name_tableId() const {return 441;};
 signed char grade;
 char Pad2[1];
 __int16 auto_recruittime;
@@ -47,17 +47,17 @@ bool use_team_type;
 bool use_difficulty_type[3];
 __int32 use_difficulty_type_Size() const {return 3;};
 BnsTables::Shared::TableRef interdungeon;
-int interdungeon_tableId() const {return 195;};
+int interdungeon_tableId() const {return 196;};
 BnsTables::Shared::TableRef party_match;
-int party_match_tableId() const {return 288;};
+int party_match_tableId() const {return 289;};
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 434;};
+int teleport_tableId() const {return 437;};
 BnsTables::Shared::TableRef dungeon;
 int dungeon_tableId() const {return 118;};
 __int32 guide_movie_id;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 287; }
+		static __int16 TableId() { return 288; }
 		static __int32 SubType() { return -1; }
 		enum class chnnelid {
 			none = 0,

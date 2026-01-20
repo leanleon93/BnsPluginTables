@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		signed char id;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 438;};
+int name2_tableId() const {return 441;};
 __int16 required_register_value;
 signed char step;
 bool show_kill_mapunit;
 BnsTables::Shared::TableRef reward[3];
 __int32 reward_Size() const {return 3;};
-int reward_tableId() const {return 310;};
+int reward_tableId() const {return 311;};
 bool reset_teleport_recycle_time;
 char Pad1[3];
 BnsTables::Shared::ExplicitTableRef required_attraction;

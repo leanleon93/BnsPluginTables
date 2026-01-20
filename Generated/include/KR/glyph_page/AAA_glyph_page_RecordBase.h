@@ -24,16 +24,16 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 203;};
+int cost_item_tableId() const {return 204;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 163; }
+		static __int16 TableId() { return 164; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

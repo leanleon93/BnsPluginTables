@@ -26,15 +26,15 @@ __int16 condition_level;
 char Pad0[3];
 BnsTables::Shared::TableRef tutorial_zone[4];
 __int32 tutorial_zone_Size() const {return 4;};
-int tutorial_zone_tableId() const {return 483;};
+int tutorial_zone_tableId() const {return 486;};
 BnsTables::Shared::TableRef train_quest;
-int train_quest_tableId() const {return 309;};
+int train_quest_tableId() const {return 310;};
 BnsTables::Shared::TableRef skip_msg_achievement;
 int skip_msg_achievement_tableId() const {return 6;};
 bool creation_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 247; }
+		static __int16 TableId() { return 248; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

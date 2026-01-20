@@ -114,7 +114,7 @@ BnsTables::Shared::TableRef achievement[8];
 __int32 achievement_Size() const {return 8;};
 int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId() const {return 438;};
+int register_name_tableId() const {return 441;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 3); }
 		static __int16 TableId() { return 7; }

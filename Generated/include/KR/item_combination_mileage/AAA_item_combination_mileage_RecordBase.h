@@ -24,14 +24,14 @@ namespace BnsTables::KR {
 signed char item_grade;
 char Pad0[2];
 BnsTables::Shared::TableRef grade_name;
-int grade_name_tableId() const {return 438;};
+int grade_name_tableId() const {return 441;};
 __int32 mileage_max;
 BnsTables::Shared::TableRef reward_item;
-int reward_item_tableId() const {return 203;};
+int reward_item_tableId() const {return 204;};
 __int32 reward_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 202; }
+		static __int16 TableId() { return 203; }
 		static __int32 SubType() { return -1; }
 		enum class item_type {
 			star_stone = 0,

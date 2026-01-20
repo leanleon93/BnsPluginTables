@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[1];
 BnsTables::Shared::TableRef basecamp;
-int basecamp_tableId() const {return 478;};
+int basecamp_tableId() const {return 481;};
 
 		static __int32 SubType() { return 49; }
 	};

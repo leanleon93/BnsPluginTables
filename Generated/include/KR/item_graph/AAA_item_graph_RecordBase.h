@@ -27,7 +27,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 16); }
-		static __int16 TableId() { return 208; }
+		static __int16 TableId() { return 209; }
 		static __int32 SubType() { return -1; }
 		enum class seed_item_sub_group {
 			sub_group_1 = 0,

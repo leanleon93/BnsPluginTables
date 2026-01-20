@@ -23,7 +23,7 @@ signed char sex;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef sub_name;
-int sub_name_tableId() const {return 438;};
+int sub_name_tableId() const {return 441;};
 signed char param_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }

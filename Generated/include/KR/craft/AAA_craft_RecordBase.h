@@ -21,21 +21,21 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 189;};
+int icon_texture_tableId() const {return 190;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef none_selected_icon_texture;
-int none_selected_icon_texture_tableId() const {return 189;};
+int none_selected_icon_texture_tableId() const {return 190;};
 __int16 none_selected_icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef join_msg;
-int join_msg_tableId() const {return 160;};
+int join_msg_tableId() const {return 161;};
 BnsTables::Shared::TableRef level_up_msg;
-int level_up_msg_tableId() const {return 160;};
+int level_up_msg_tableId() const {return 161;};
 BnsTables::Shared::TableRef max_level_msg;
-int max_level_msg_tableId() const {return 160;};
+int max_level_msg_tableId() const {return 161;};
 __int32 need_exp_for_level[100];
 __int32 need_exp_for_level_Size() const {return 100;};
 

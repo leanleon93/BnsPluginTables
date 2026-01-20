@@ -13,7 +13,7 @@ namespace BnsTables::KR {
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef branch_msg[4];
 __int32 branch_msg_Size() const {return 4;};
-int branch_msg_tableId() const {return 284;};
+int branch_msg_tableId() const {return 285;};
 
 		static __int32 SubType() { return 0; }
 	};

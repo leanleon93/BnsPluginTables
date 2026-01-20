@@ -24,7 +24,7 @@ signed char sex;
 		__declspec(align(8)) Key key;
 		wchar_t* sequence;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 189;};
+int icon_texture_tableId() const {return 190;};
 __int16 icon_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }

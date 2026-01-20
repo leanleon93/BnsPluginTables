@@ -26,7 +26,7 @@ signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef option[50];
 __int32 option_Size() const {return 50;};
-int option_tableId() const {return 213;};
+int option_tableId() const {return 214;};
 __int16 option_weight[50];
 __int32 option_weight_Size() const {return 50;};
 __int32 option_weight_total;
@@ -34,38 +34,38 @@ __int32 draw_cost_money[4];
 __int32 draw_cost_money_Size() const {return 4;};
 BnsTables::Shared::TableRef draw_cost_main_item[4];
 __int32 draw_cost_main_item_Size() const {return 4;};
-int draw_cost_main_item_tableId() const {return 203;};
+int draw_cost_main_item_tableId() const {return 204;};
 __int16 draw_cost_main_item_count[4];
 __int32 draw_cost_main_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef draw_cost_sub_item_1[6];
 __int32 draw_cost_sub_item_1_Size() const {return 6;};
-int draw_cost_sub_item_1_tableId() const {return 203;};
+int draw_cost_sub_item_1_tableId() const {return 204;};
 __int16 draw_cost_sub_item_count_1[6];
 __int32 draw_cost_sub_item_count_1_Size() const {return 6;};
 BnsTables::Shared::TableRef draw_cost_sub_item_2[6];
 __int32 draw_cost_sub_item_2_Size() const {return 6;};
-int draw_cost_sub_item_2_tableId() const {return 203;};
+int draw_cost_sub_item_2_tableId() const {return 204;};
 __int16 draw_cost_sub_item_count_2[6];
 __int32 draw_cost_sub_item_count_2_Size() const {return 6;};
 BnsTables::Shared::TableRef draw_cost_sub_item_3[6];
 __int32 draw_cost_sub_item_3_Size() const {return 6;};
-int draw_cost_sub_item_3_tableId() const {return 203;};
+int draw_cost_sub_item_3_tableId() const {return 204;};
 __int16 draw_cost_sub_item_count_3[6];
 __int32 draw_cost_sub_item_count_3_Size() const {return 6;};
 BnsTables::Shared::TableRef draw_cost_sub_item_4[6];
 __int32 draw_cost_sub_item_4_Size() const {return 6;};
-int draw_cost_sub_item_4_tableId() const {return 203;};
+int draw_cost_sub_item_4_tableId() const {return 204;};
 __int16 draw_cost_sub_item_count_4[6];
 __int32 draw_cost_sub_item_count_4_Size() const {return 6;};
 BnsTables::Shared::TableRef succession_random_option[50];
 __int32 succession_random_option_Size() const {return 50;};
-int succession_random_option_tableId() const {return 213;};
+int succession_random_option_tableId() const {return 214;};
 __int16 succession_random_option_weight[50];
 __int32 succession_random_option_weight_Size() const {return 50;};
 __int32 succession_random_option_weight_total;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 214; }
+		static __int16 TableId() { return 215; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 wchar_t* grade_symbol;
 signed char grade;
 char Pad0[1];

@@ -34,12 +34,12 @@ __int32 feed_main_improve_id;
 signed char feed_main_improve_level;
 char Pad3[3];
 BnsTables::Shared::TableRef feed_main_ingredient;
-int feed_main_ingredient_tableId() const {return 203;};
+int feed_main_ingredient_tableId() const {return 204;};
 __int16 feed_main_ingredient_count;
 char Pad4[2];
 BnsTables::Shared::TableRef feed_sub_ingredient[8];
 __int32 feed_sub_ingredient_Size() const {return 8;};
-int feed_sub_ingredient_tableId() const {return 203;};
+int feed_sub_ingredient_tableId() const {return 204;};
 __int16 feed_sub_ingredient_count[8];
 __int32 feed_sub_ingredient_count_Size() const {return 8;};
 __int32 cost_money;
@@ -52,11 +52,14 @@ __int32 seed_succession_option_step_Size() const {return 5;};
 bool keep_main_ingredient_spirit;
 BnsTables::Shared::TableRef result_item_candidate[20];
 __int32 result_item_candidate_Size() const {return 20;};
-int result_item_candidate_tableId() const {return 203;};
+int result_item_candidate_tableId() const {return 204;};
 bool keep_seed_ingredient_spirit;
+signed char seed_improve_option_main_ability_fixed_value;
+signed char seed_improve_option_level_sub_ability_random_value[5];
+__int32 seed_improve_option_level_sub_ability_random_value_Size() const {return 5;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 216; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 2); }
+		static __int16 TableId() { return 217; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,
@@ -72,6 +75,7 @@ bool keep_seed_ingredient_spirit;
 		enum class succession_type {
 			default_val = 0,
 			option_succession = 1,
+			option_gem_succession = 2,
 		};
 	};
 #pragma pack(pop)

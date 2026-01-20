@@ -28,7 +28,7 @@ float fade_out;
 float moving_blend;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 304; }
+		static __int16 TableId() { return 305; }
 		static __int32 SubType() { return -1; }
 		enum class after_pose {
 			standing = 0,

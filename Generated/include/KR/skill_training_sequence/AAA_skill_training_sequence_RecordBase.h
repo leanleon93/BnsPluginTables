@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char repeat_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 391; }
+		static __int16 TableId() { return 394; }
 		static __int32 SubType() { return -1; }
 
 	};

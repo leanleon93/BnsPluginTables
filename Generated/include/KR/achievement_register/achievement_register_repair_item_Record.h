@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef item_brand;
-int item_brand_tableId() const {return 196;};
+int item_brand_tableId() const {return 197;};
 signed char item_grade;
 
 		static __int32 SubType() { return 43; }

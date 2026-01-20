@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 __int16 group;
 signed char grade;
 bool duplication_permission;
@@ -44,7 +44,7 @@ BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef icon_case;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 398; }
+		static __int16 TableId() { return 401; }
 		static __int32 SubType() { return -1; }
 		enum class modify_ability {
 			none = 0,

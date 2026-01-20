@@ -26,10 +26,10 @@ __int32 variation_value_max;
 __int32 variation_value_with_special_item_min;
 __int32 variation_value_with_special_item_max;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId() const {return 320;};
+int distribution_type_tableId() const {return 321;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 218; }
+		static __int16 TableId() { return 219; }
 		static __int32 SubType() { return -1; }
 
 	};

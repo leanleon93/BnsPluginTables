@@ -24,18 +24,19 @@ namespace BnsTables::KR {
 signed char required_master_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_acquired_and_complete_quest;
-int required_acquired_and_complete_quest_tableId() const {return 309;};
+int required_acquired_and_complete_quest_tableId() const {return 310;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 309;};
+int required_complete_quest_tableId() const {return 310;};
 signed char restrict_gameoption_display_type;
 signed char restrict_content_type;
 char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
-int notifycenter_message_tableId() const {return 438;};
+int notifycenter_message_tableId() const {return 441;};
 BnsTables::Shared::TableRef unavailability_confirm_text;
-int unavailability_confirm_text_tableId() const {return 438;};
+int unavailability_confirm_text_tableId() const {return 441;};
+bool use_record;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 159; }
 		static __int32 SubType() { return -1; }
 		enum class menu_type {

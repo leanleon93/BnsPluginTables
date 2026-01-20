@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 wchar_t* duel_npc_kismet_name;
 BnsTables::Shared::TableRef stage_init_reward_item[10];
 __int32 stage_init_reward_item_Size() const {return 10;};
-int stage_init_reward_item_tableId() const {return 203;};
+int stage_init_reward_item_tableId() const {return 204;};
 __int16 stage_init_reward_item_count[10];
 __int32 stage_init_reward_item_count_Size() const {return 10;};
 BnsTables::Shared::TableRef feedback;

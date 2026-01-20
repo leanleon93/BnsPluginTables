@@ -25,17 +25,17 @@ __int16 grade;
 __int32 require_contribution;
 BnsTables::Shared::TableRef reward_item[4];
 __int32 reward_item_Size() const {return 4;};
-int reward_item_tableId() const {return 203;};
+int reward_item_tableId() const {return 204;};
 __int32 reward_item_count[4];
 __int32 reward_item_count_Size() const {return 4;};
 __int32 accumulate_game_cash;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 wchar_t* grade_image;
 bool is_max_grade;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 471; }
+		static __int16 TableId() { return 474; }
 		static __int32 SubType() { return -1; }
 
 	};

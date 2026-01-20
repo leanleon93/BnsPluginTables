@@ -30,7 +30,7 @@ signed char charge_type;
 signed char expand_size;
 char Pad1[2];
 BnsTables::Shared::TableRef required_item;
-int required_item_tableId() const {return 203;};
+int required_item_tableId() const {return 204;};
 signed char required_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }

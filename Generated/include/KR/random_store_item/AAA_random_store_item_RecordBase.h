@@ -22,16 +22,16 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item;
-int item_tableId() const {return 203;};
+int item_tableId() const {return 204;};
 __int16 item_count;
 char Pad0[2];
 __int32 item_price_money;
 BnsTables::Shared::TableRef item_price_item;
-int item_price_item_tableId() const {return 203;};
+int item_price_item_tableId() const {return 204;};
 __int16 item_price_item_amount;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 323; }
+		static __int16 TableId() { return 324; }
 		static __int32 SubType() { return -1; }
 
 	};

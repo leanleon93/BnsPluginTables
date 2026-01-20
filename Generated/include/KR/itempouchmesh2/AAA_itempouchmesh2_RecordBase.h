@@ -33,7 +33,7 @@ wchar_t* mark_particle;
 wchar_t* dropped_pouch_anim_set;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 217; }
+		static __int16 TableId() { return 218; }
 		static __int32 SubType() { return -1; }
 		enum class pouch_appearance {
 			none = 0,

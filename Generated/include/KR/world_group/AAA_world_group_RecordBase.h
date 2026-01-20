@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 __int16 world[10];
 __int32 world_Size() const {return 10;};
 BnsTables::Shared::TableRef lobby_desc;
-int lobby_desc_tableId() const {return 438;};
+int lobby_desc_tableId() const {return 441;};
 signed char platform_type;
 signed char contents_type;
 char Pad0[2];
@@ -33,7 +33,7 @@ signed char deny_creation_job[5];
 __int32 deny_creation_job_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 476; }
+		static __int16 TableId() { return 479; }
 		static __int32 SubType() { return -1; }
 		enum class platform_type {
 			normal = 0,

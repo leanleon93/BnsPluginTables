@@ -25,12 +25,12 @@ signed char publisher;
 char Pad0[3];
 __int32 money;
 BnsTables::Shared::TableRef required_itembrand;
-int required_itembrand_tableId() const {return 196;};
+int required_itembrand_tableId() const {return 197;};
 signed char required_itembrand_condition_type;
 char Pad1[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 203;};
+int required_item_tableId() const {return 204;};
 __int16 required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 __int32 required_faction_score;
@@ -60,7 +60,7 @@ __int64 end_time;
 signed char item_slot_display_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 198; }
+		static __int16 TableId() { return 199; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

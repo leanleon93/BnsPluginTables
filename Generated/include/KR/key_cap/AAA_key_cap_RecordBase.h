@@ -21,17 +21,17 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 438;};
+int name_tableId() const {return 441;};
 BnsTables::Shared::TableRef short_name;
-int short_name_tableId() const {return 438;};
+int short_name_tableId() const {return 441;};
 BnsTables::Shared::TableRef image;
-int image_tableId() const {return 438;};
+int image_tableId() const {return 441;};
 BnsTables::Shared::IconRef icon;
 wchar_t* scroll_imageset;
 float scroll_imageset_scale;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
-		static __int16 TableId() { return 248; }
+		static __int16 TableId() { return 249; }
 		static __int32 SubType() { return -1; }
 		enum class key_code {
 			none = 0,

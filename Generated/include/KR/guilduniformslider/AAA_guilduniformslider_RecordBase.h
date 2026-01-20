@@ -26,7 +26,7 @@ signed char step;
 signed char required_guild_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 186; }
+		static __int16 TableId() { return 187; }
 		static __int32 SubType() { return -1; }
 
 	};

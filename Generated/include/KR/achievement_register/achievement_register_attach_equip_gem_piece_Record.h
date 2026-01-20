@@ -10,9 +10,9 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef primary_item_brand;
-int primary_item_brand_tableId() const {return 196;};
+int primary_item_brand_tableId() const {return 197;};
 BnsTables::Shared::TableRef secondary_item_brand;
-int secondary_item_brand_tableId() const {return 196;};
+int secondary_item_brand_tableId() const {return 197;};
 signed char primary_item_grade;
 signed char secondary_item_grade;
 

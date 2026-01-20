@@ -29,7 +29,7 @@ __int16 max_range;
 char Pad1[2];
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 203;};
+int item_tableId() const {return 204;};
 signed char item_count_min[4];
 __int32 item_count_min_Size() const {return 4;};
 signed char item_count_max[4];
@@ -47,7 +47,7 @@ wchar_t* gather_end_animname;
 wchar_t* gather_stay_animname;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 161; }
+		static __int16 TableId() { return 162; }
 		static __int32 SubType() { return -1; }
 		enum class gather_type {
 			hand_collection = 0,

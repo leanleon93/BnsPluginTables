@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 279;};
+int npc_tableId() const {return 280;};
 signed char min_exchange_score;
 
 		static __int32 SubType() { return 21; }

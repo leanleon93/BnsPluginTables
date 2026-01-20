@@ -27,7 +27,7 @@ __int16 recovery_amount[4];
 __int32 recovery_amount_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 301; }
+		static __int16 TableId() { return 302; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 438;};
+int collection_name_tableId() const {return 441;};
 __int16 collection_season;
 signed char collection_grade;
 char Pad0[1];
 BnsTables::Shared::TableRef collection_card[8];
 __int32 collection_card_Size() const {return 8;};
-int collection_card_tableId() const {return 467;};
+int collection_card_tableId() const {return 470;};
 __int16 collection_card_count[8];
 __int32 collection_card_count_Size() const {return 8;};
 __int16 collection_card_point[8];
@@ -51,7 +51,7 @@ int effect_tableId() const {return 119;};
 wchar_t* effect_desc[5];
 __int32 effect_desc_Size() const {return 5;};
 BnsTables::Shared::TableRef completion_reward_item;
-int completion_reward_item_tableId() const {return 203;};
+int completion_reward_item_tableId() const {return 204;};
 __int16 completion_reward_item_count;
 char Pad2[2];
 __int64 start_time;
@@ -61,8 +61,8 @@ char Pad3[3];
 wchar_t* main_image;
 signed char collection_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
-		static __int16 TableId() { return 465; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 3); }
+		static __int16 TableId() { return 468; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,

@@ -24,12 +24,12 @@ namespace BnsTables::KR {
 signed char arg_type[4];
 __int32 arg_type_Size() const {return 4;};
 BnsTables::Shared::TableRef text;
-int text_tableId() const {return 438;};
+int text_tableId() const {return 441;};
 BnsTables::Shared::IconRef icon;
 signed char skill_modify_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 10); }
-		static __int16 TableId() { return 382; }
+		static __int16 TableId() { return 385; }
 		static __int32 SubType() { return -1; }
 		enum class arg_type {
 			none = 0,

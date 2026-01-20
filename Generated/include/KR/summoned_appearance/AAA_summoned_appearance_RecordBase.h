@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* animset;
 BnsTables::Shared::TableRef moveanim;
-int moveanim_tableId() const {return 426;};
+int moveanim_tableId() const {return 429;};
 BnsTables::Shared::TableRef appearance;
 int appearance_tableId() const {return 88;};
 wchar_t* sword;
@@ -33,7 +33,7 @@ wchar_t* gun_r;
 wchar_t* gun_l;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 419; }
+		static __int16 TableId() { return 422; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

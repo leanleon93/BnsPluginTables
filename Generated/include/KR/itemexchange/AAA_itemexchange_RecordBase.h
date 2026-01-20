@@ -32,12 +32,12 @@ __int16 required_item_stack_count[4];
 __int32 required_item_stack_count_Size() const {return 4;};
 BnsTables::Shared::TableRef normal_item[4];
 __int32 normal_item_Size() const {return 4;};
-int normal_item_tableId() const {return 203;};
+int normal_item_tableId() const {return 204;};
 __int16 normal_item_stack_count[4];
 __int32 normal_item_stack_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 6); }
-		static __int16 TableId() { return 205; }
+		static __int16 TableId() { return 206; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

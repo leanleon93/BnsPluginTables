@@ -10,9 +10,9 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef seed_item_brand;
-int seed_item_brand_tableId() const {return 196;};
+int seed_item_brand_tableId() const {return 197;};
 BnsTables::Shared::TableRef feed_item_brand;
-int feed_item_brand_tableId() const {return 196;};
+int feed_item_brand_tableId() const {return 197;};
 signed char seed_item_before_level;
 signed char seed_item_growth_level;
 signed char feed_item_level;

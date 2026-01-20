@@ -25,7 +25,7 @@ wchar_t* title;
 wchar_t* greeting;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 431; }
+		static __int16 TableId() { return 434; }
 		static __int32 SubType() { return -1; }
 
 	};
