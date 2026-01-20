@@ -25,7 +25,7 @@ signed char customize_factor[28];
 __int32 customize_factor_Size() const {return 28;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 175; }
+		static __int16 TableId() { return 176; }
 		static __int32 SubType() { return -1; }
 
 	};

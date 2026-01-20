@@ -28,24 +28,24 @@ signed char level;
 signed char mastery_level;
 char Pad0[3];
 BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 139;};
+int faction_tableId() const {return 140;};
 __int16 speed;
 __int16 radius;
 __int16 scale;
 char Pad1[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId() const {return 87;};
+int appearance_tableId() const {return 88;};
 wchar_t* animset;
 BnsTables::Shared::TableRef summoned_name2;
-int summoned_name2_tableId() const {return 435;};
+int summoned_name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef summoned_appearance;
-int summoned_appearance_tableId() const {return 87;};
+int summoned_appearance_tableId() const {return 88;};
 wchar_t* summoned_animset;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 107; }
+		static __int16 TableId() { return 108; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

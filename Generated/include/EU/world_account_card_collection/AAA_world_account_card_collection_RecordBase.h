@@ -22,13 +22,13 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 435;};
+int collection_name_tableId() const {return 438;};
 __int16 collection_season;
 signed char collection_grade;
 char Pad0[1];
 BnsTables::Shared::TableRef collection_card[8];
 __int32 collection_card_Size() const {return 8;};
-int collection_card_tableId() const {return 464;};
+int collection_card_tableId() const {return 467;};
 __int16 collection_card_count[8];
 __int32 collection_card_count_Size() const {return 8;};
 __int16 collection_card_point[8];
@@ -41,27 +41,28 @@ __int32 ability_Size() const {return 5;};
 char Pad1[3];
 __int32 ability_base_value[5];
 __int32 ability_base_value_Size() const {return 5;};
+__int16 ability_percent_rate[5];
+__int32 ability_percent_rate_Size() const {return 5;};
 __int16 effect_activate_point_range[5];
 __int32 effect_activate_point_range_Size() const {return 5;};
-char Pad2[2];
 BnsTables::Shared::TableRef effect[5];
 __int32 effect_Size() const {return 5;};
-int effect_tableId() const {return 118;};
+int effect_tableId() const {return 119;};
 wchar_t* effect_desc[5];
 __int32 effect_desc_Size() const {return 5;};
 BnsTables::Shared::TableRef completion_reward_item;
-int completion_reward_item_tableId() const {return 202;};
+int completion_reward_item_tableId() const {return 203;};
 __int16 completion_reward_item_count;
-char Pad3[2];
+char Pad2[2];
 __int64 start_time;
 __int64 end_time;
 bool can_not_used;
-char Pad4[3];
+char Pad3[3];
 wchar_t* main_image;
 signed char collection_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 462; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
+		static __int16 TableId() { return 465; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,
@@ -139,6 +140,8 @@ signed char collection_type;
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 
 		enum class collection_type {

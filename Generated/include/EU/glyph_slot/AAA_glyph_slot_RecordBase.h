@@ -26,7 +26,7 @@ char Pad0[2];
 __int32 required_level;
 __int32 required_mastery_level;
 BnsTables::Shared::TableRef required_sealed_dungeon;
-int required_sealed_dungeon_tableId() const {return 117;};
+int required_sealed_dungeon_tableId() const {return 118;};
 __int16 required_sealed_level;
 __int16 required_quest_id;
 __int16 required_achievement_id;
@@ -34,12 +34,12 @@ __int16 required_achievement_step;
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 202;};
+int cost_item_tableId() const {return 203;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 164; }
+		static __int16 TableId() { return 165; }
 		static __int32 SubType() { return -1; }
 		enum class slot_type {
 			none = 0,

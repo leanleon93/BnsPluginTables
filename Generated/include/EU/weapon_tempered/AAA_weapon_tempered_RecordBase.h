@@ -24,7 +24,7 @@ signed char level;
 		wchar_t* show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 460; }
+		static __int16 TableId() { return 463; }
 		static __int32 SubType() { return -1; }
 		enum class weapon_type {
 			none = 0,

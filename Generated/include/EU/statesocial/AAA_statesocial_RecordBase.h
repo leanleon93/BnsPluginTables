@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef sit_state_social;
-int sit_state_social_tableId() const {return 411;};
+int sit_state_social_tableId() const {return 414;};
 bool can_sitdown;
 char Pad0[3];
 wchar_t* start_transit;
@@ -30,7 +30,7 @@ wchar_t* idle;
 wchar_t* end_transit;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 411; }
+		static __int16 TableId() { return 414; }
 		static __int32 SubType() { return -1; }
 
 	};

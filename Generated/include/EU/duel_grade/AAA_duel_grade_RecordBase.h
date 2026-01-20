@@ -24,18 +24,18 @@ namespace BnsTables::EU {
 __int16 duel_point_bonus_percent;
 char Pad0[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef medium_icon;
 BnsTables::Shared::IconRef small_icon;
 BnsTables::Shared::IconRef extrasmall_icon;
 BnsTables::Shared::TableRef grade_level_up_message;
-int grade_level_up_message_tableId() const {return 159;};
+int grade_level_up_message_tableId() const {return 160;};
 BnsTables::Shared::TableRef grade_level_down_message;
-int grade_level_down_message_tableId() const {return 159;};
+int grade_level_down_message_tableId() const {return 160;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 112; }
+		static __int16 TableId() { return 113; }
 		static __int32 SubType() { return -1; }
 
 	};

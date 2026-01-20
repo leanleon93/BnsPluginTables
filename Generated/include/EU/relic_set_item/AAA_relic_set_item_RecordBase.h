@@ -82,13 +82,13 @@ __int32 count_10_ability_value_Size() const {return 8;};
 __int32 count_10_ability_base_value[8];
 __int32 count_10_ability_base_value_Size() const {return 8;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef set_item[15];
 __int32 set_item_Size() const {return 15;};
-int set_item_tableId() const {return 202;};
+int set_item_tableId() const {return 203;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 336; }
+		static __int16 TableId() { return 339; }
 		static __int32 SubType() { return -1; }
 		enum class count_1_ability {
 			none = 0,
@@ -166,6 +166,8 @@ int set_item_tableId() const {return 202;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

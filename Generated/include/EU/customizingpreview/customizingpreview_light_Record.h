@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 __int16 light_index;
 

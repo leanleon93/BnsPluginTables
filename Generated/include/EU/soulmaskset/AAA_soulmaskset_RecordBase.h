@@ -70,12 +70,12 @@ __int32 jin_female_accessory_mesh_col_Size() const {return 3;};
 bool is_accessory_skel_hair;
 char Pad0[3];
 BnsTables::Shared::TableRef context_script;
-int context_script_tableId() const {return 77;};
+int context_script_tableId() const {return 78;};
 BnsTables::Shared::TableRef transform_appearance;
-int transform_appearance_tableId() const {return 87;};
+int transform_appearance_tableId() const {return 88;};
 wchar_t* transform_animset;
 BnsTables::Shared::TableRef transform_equip_hand_appearance;
-int transform_equip_hand_appearance_tableId() const {return 202;};
+int transform_equip_hand_appearance_tableId() const {return 203;};
 signed char transform_job;
 signed char transform_weapon_type;
 signed char transform_stance;
@@ -83,11 +83,11 @@ bool ui_show_job_target_indicator;
 bool ui_show_job_style_gauge;
 char Pad1[3];
 BnsTables::Shared::TableRef transform_appearance_jin;
-int transform_appearance_jin_tableId() const {return 87;};
+int transform_appearance_jin_tableId() const {return 88;};
 BnsTables::Shared::TableRef transform_appearance_gon;
-int transform_appearance_gon_tableId() const {return 87;};
+int transform_appearance_gon_tableId() const {return 88;};
 BnsTables::Shared::TableRef transform_appearance_kun;
-int transform_appearance_kun_tableId() const {return 87;};
+int transform_appearance_kun_tableId() const {return 88;};
 bool is_race_transform_appearance;
 bool is_use_grocery;
 bool is_use_equiped_skill;
@@ -97,7 +97,7 @@ bool is_use_field_item;
 bool hide_hair;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 404; }
+		static __int16 TableId() { return 407; }
 		static __int32 SubType() { return -1; }
 		enum class soulmask_type {
 			normal = 0,

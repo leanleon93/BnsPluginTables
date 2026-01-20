@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int32 tax;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 264; }
+		static __int16 TableId() { return 266; }
 		static __int32 SubType() { return -1; }
 
 	};

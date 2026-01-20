@@ -25,16 +25,16 @@ signed char part_value;
 		wchar_t* alias;
 __int32 price;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 435;};
+int desc_tableId() const {return 438;};
 signed char param8[96];
 __int32 param8_Size() const {return 96;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 424; }
+		static __int16 TableId() { return 427; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int32 version;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 438; }
+		static __int16 TableId() { return 441; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

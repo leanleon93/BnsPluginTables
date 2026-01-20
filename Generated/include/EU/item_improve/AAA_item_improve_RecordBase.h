@@ -26,36 +26,36 @@ signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef cost_main_brand[5];
 __int32 cost_main_brand_Size() const {return 5;};
-int cost_main_brand_tableId() const {return 195;};
+int cost_main_brand_tableId() const {return 196;};
 BnsTables::Shared::TableRef cost_main_item[5];
 __int32 cost_main_item_Size() const {return 5;};
-int cost_main_item_tableId() const {return 202;};
+int cost_main_item_tableId() const {return 203;};
 __int16 cost_main_item_count[5];
 __int32 cost_main_item_count_Size() const {return 5;};
 char Pad1[2];
 BnsTables::Shared::TableRef cost_sub_item_1[8];
 __int32 cost_sub_item_1_Size() const {return 8;};
-int cost_sub_item_1_tableId() const {return 202;};
+int cost_sub_item_1_tableId() const {return 203;};
 __int16 cost_sub_item_count_1[8];
 __int32 cost_sub_item_count_1_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_2[8];
 __int32 cost_sub_item_2_Size() const {return 8;};
-int cost_sub_item_2_tableId() const {return 202;};
+int cost_sub_item_2_tableId() const {return 203;};
 __int16 cost_sub_item_count_2[8];
 __int32 cost_sub_item_count_2_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_3[8];
 __int32 cost_sub_item_3_Size() const {return 8;};
-int cost_sub_item_3_tableId() const {return 202;};
+int cost_sub_item_3_tableId() const {return 203;};
 __int16 cost_sub_item_count_3[8];
 __int32 cost_sub_item_count_3_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_4[8];
 __int32 cost_sub_item_4_Size() const {return 8;};
-int cost_sub_item_4_tableId() const {return 202;};
+int cost_sub_item_4_tableId() const {return 203;};
 __int16 cost_sub_item_count_4[8];
 __int32 cost_sub_item_count_4_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_5[8];
 __int32 cost_sub_item_5_Size() const {return 8;};
-int cost_sub_item_5_tableId() const {return 202;};
+int cost_sub_item_5_tableId() const {return 203;};
 __int16 cost_sub_item_count_5[8];
 __int32 cost_sub_item_count_5_Size() const {return 8;};
 __int32 cost_money[5];
@@ -70,7 +70,7 @@ __int32 mileage_save_Size() const {return 5;};
 char Pad2[3];
 BnsTables::Shared::TableRef mileage_random_distribution[5];
 __int32 mileage_random_distribution_Size() const {return 5;};
-int mileage_random_distribution_tableId() const {return 318;};
+int mileage_random_distribution_tableId() const {return 320;};
 signed char cost_item_discount_minimum_value[5];
 __int32 cost_item_discount_minimum_value_Size() const {return 5;};
 char Pad3[3];
@@ -85,7 +85,7 @@ __int32 success_option_list_id_all_Size() const {return 5;};
 signed char success_option_list_id_all_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 211; }
+		static __int16 TableId() { return 212; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

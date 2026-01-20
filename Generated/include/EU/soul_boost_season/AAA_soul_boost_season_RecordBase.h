@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef soul_boost_event;
-int soul_boost_event_tableId() const {return 398;};
+int soul_boost_event_tableId() const {return 401;};
 signed char max_pc_count;
 char Pad0[3];
 __int64 start_time;
@@ -38,7 +38,7 @@ wchar_t* season_name_pt;
 wchar_t* season_name_th;
 wchar_t* season_name_vn;
 BnsTables::Shared::TableRef season_name_text;
-int season_name_text_tableId() const {return 435;};
+int season_name_text_tableId() const {return 438;};
 wchar_t* season_banner_image_ref;
 bool is_battle_pass;
 bool is_free_pass;
@@ -46,21 +46,21 @@ signed char required_level;
 signed char required_mastery_level;
 BnsTables::Shared::TableRef required_preceding_quest[2];
 __int32 required_preceding_quest_Size() const {return 2;};
-int required_preceding_quest_tableId() const {return 307;};
+int required_preceding_quest_tableId() const {return 309;};
 BnsTables::Shared::TableRef purchase_grade_item[10];
 __int32 purchase_grade_item_Size() const {return 10;};
-int purchase_grade_item_tableId() const {return 202;};
+int purchase_grade_item_tableId() const {return 203;};
 __int32 bm_enable_cost;
 __int32 item_point_cost_unit;
 __int32 item_point_per_cost_unit;
 BnsTables::Shared::TableRef membership_benefit[10];
 __int32 membership_benefit_Size() const {return 10;};
-int membership_benefit_tableId() const {return 270;};
+int membership_benefit_tableId() const {return 272;};
 __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 403; }
+		static __int16 TableId() { return 406; }
 		static __int32 SubType() { return -1; }
 
 	};

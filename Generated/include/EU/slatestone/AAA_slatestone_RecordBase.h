@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 __int16 group;
 signed char grade;
 bool duplication_permission;
@@ -44,7 +44,7 @@ BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef icon_case;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 395; }
+		static __int16 TableId() { return 398; }
 		static __int32 SubType() { return -1; }
 		enum class modify_ability {
 			none = 0,
@@ -122,6 +122,8 @@ BnsTables::Shared::IconRef icon_case;
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

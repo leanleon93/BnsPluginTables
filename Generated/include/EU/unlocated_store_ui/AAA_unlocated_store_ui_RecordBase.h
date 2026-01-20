@@ -22,13 +22,13 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* title_icon;
 BnsTables::Shared::TableRef title_text;
-int title_text_tableId() const {return 435;};
+int title_text_tableId() const {return 438;};
 wchar_t* button_icon;
 BnsTables::Shared::TableRef button_text;
-int button_text_tableId() const {return 435;};
+int button_text_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 446; }
+		static __int16 TableId() { return 449; }
 		static __int32 SubType() { return -1; }
 		enum class unlocated_store_type {
 			unlocated_none = 0,

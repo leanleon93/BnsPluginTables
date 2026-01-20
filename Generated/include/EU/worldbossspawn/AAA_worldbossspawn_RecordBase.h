@@ -22,19 +22,19 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 277;};
+int npc_tableId() const {return 279;};
 BnsTables::Shared::TableRef reward;
-int reward_tableId() const {return 470;};
+int reward_tableId() const {return 473;};
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 431;};
+int teleport_tableId() const {return 434;};
 signed char recommand_level;
 char Pad0[3];
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 435;};
+int description_tableId() const {return 438;};
 wchar_t* symbol_imageset;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 4); }
-		static __int16 TableId() { return 471; }
+		static __int16 TableId() { return 474; }
 		static __int32 SubType() { return -1; }
 
 	};

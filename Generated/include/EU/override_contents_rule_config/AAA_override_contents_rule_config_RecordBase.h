@@ -26,7 +26,7 @@ wchar_t* config_name;
 wchar_t* value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 283; }
+		static __int16 TableId() { return 285; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			none = 0,

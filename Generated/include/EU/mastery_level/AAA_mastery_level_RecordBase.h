@@ -25,7 +25,7 @@ __int16 skill_build_up_point;
 bool cannot_mastery_exp_up_in_min_exp;
 char Pad0[1];
 BnsTables::Shared::TableRef unlock_item;
-int unlock_item_tableId() const {return 202;};
+int unlock_item_tableId() const {return 203;};
 __int16 unlock_item_count;
 signed char acquire_tp;
 char Pad1[1];
@@ -38,7 +38,7 @@ __int16 stat_point_defender_max;
 signed char teleport_price_level_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 267; }
+		static __int16 TableId() { return 269; }
 		static __int32 SubType() { return -1; }
 
 	};

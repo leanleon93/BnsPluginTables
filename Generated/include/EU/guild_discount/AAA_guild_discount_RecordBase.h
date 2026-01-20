@@ -35,7 +35,7 @@ signed char purify_item_discount_rate;
 signed char item_improve;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 177; }
+		static __int16 TableId() { return 178; }
 		static __int32 SubType() { return -1; }
 
 	};

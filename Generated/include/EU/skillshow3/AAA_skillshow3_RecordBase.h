@@ -136,7 +136,7 @@ wchar_t* trigger_critical_show;
 wchar_t* skill_skin_desc;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 10); }
-		static __int16 TableId() { return 371; }
+		static __int16 TableId() { return 374; }
 		static __int32 SubType() { return -1; }
 		enum class chain_type {
 			none_chain = 0,

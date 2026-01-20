@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_particle_socket_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 wchar_t* effect_particle;
 wchar_t* effect_particle2;
 wchar_t* effect_particle3;

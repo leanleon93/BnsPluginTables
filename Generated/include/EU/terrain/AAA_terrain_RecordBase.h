@@ -34,7 +34,7 @@ char Pad0[1];
 __int16 release_contents_group;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 434; }
+		static __int16 TableId() { return 437; }
 		static __int32 SubType() { return -1; }
 
 	};

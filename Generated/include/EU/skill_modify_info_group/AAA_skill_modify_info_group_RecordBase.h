@@ -25,10 +25,10 @@ signed char job_style;
 char Pad0[3];
 BnsTables::Shared::TableRef skill_modify_info[4];
 __int32 skill_modify_info_Size() const {return 4;};
-int skill_modify_info_tableId() const {return 367;};
+int skill_modify_info_tableId() const {return 370;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 368; }
+		static __int16 TableId() { return 371; }
 		static __int32 SubType() { return -1; }
 		enum class job_style {
 			base_1 = 0,

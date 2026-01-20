@@ -25,15 +25,15 @@ signed char grade;
 __int16 point_bonus_percent;
 char Pad0[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef medium_icon;
 BnsTables::Shared::IconRef small_icon;
 BnsTables::Shared::IconRef extrasmall_icon;
 BnsTables::Shared::TableRef grade_level_up_message;
-int grade_level_up_message_tableId() const {return 159;};
+int grade_level_up_message_tableId() const {return 160;};
 BnsTables::Shared::TableRef grade_level_down_message;
-int grade_level_down_message_tableId() const {return 159;};
+int grade_level_down_message_tableId() const {return 160;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 30; }
@@ -71,6 +71,16 @@ int grade_level_down_message_tableId() const {return 159;};
 			tier_total = 29,
 			hyper_racing_game = 30,
 			duel_npc_challenge = 31,
+			heroic_dungeon_1 = 32,
+			heroic_dungeon_2 = 33,
+			heroic_dungeon_3 = 34,
+			heroic_dungeon_4 = 35,
+			heroic_dungeon_5 = 36,
+			heroic_dungeon_6 = 37,
+			heroic_dungeon_7 = 38,
+			heroic_dungeon_8 = 39,
+			heroic_dungeon_9 = 40,
+			heroic_dungeon_10 = 41,
 		};
 	};
 #pragma pack(pop)

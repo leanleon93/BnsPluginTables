@@ -23,14 +23,14 @@ namespace BnsTables::EU {
 char Pad0[3];
 BnsTables::Shared::TableRef mapunit[10];
 __int32 mapunit_Size() const {return 10;};
-int mapunit_tableId() const {return 259;};
+int mapunit_tableId() const {return 261;};
 __int16 range_min;
 __int16 range_max;
 signed char progress_mission;
 char Pad1[3];
 BnsTables::Shared::TableRef valid_zone[2];
 __int32 valid_zone_Size() const {return 2;};
-int valid_zone_tableId() const {return 480;};
+int valid_zone_tableId() const {return 483;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }

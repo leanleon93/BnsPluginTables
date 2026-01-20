@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_modify_hyper_energy_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int32 diff_hyper_energy;
 
 		static __int32 SubType() { return 989; }

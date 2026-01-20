@@ -27,9 +27,11 @@ __int32 ability_Size() const {return 7;};
 char Pad0[3];
 __int32 ability_base_value[7];
 __int32 ability_base_value_Size() const {return 7;};
+__int16 ability_percent_rate[7];
+__int32 ability_percent_rate_Size() const {return 7;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 463; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static __int16 TableId() { return 466; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,
@@ -107,6 +109,8 @@ __int32 ability_base_value_Size() const {return 7;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

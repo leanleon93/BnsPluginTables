@@ -24,7 +24,7 @@ signed char after_idle;
 		wchar_t* transit_anim_seq;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 274; }
+		static __int16 TableId() { return 276; }
 		static __int32 SubType() { return -1; }
 		enum class after_idle {
 			normal = 0,

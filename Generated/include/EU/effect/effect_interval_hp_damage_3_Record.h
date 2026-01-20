@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_interval_hp_damage_3_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int64 hp_diff;
 __int16 hp_percent;
 

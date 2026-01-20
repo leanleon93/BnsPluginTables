@@ -1016,9 +1016,9 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef name3;
-int name3_tableId() const {return 435;};
+int name3_tableId() const {return 438;};
 __int16 level;
 bool show_icon;
 bool show_left_time;
@@ -1037,7 +1037,7 @@ signed char stack_count;
 bool reattach_effect_after_changing_stack_count;
 char Pad1[1];
 BnsTables::Shared::TableRef transform_effect;
-int transform_effect_tableId() const {return 118;};
+int transform_effect_tableId() const {return 119;};
 signed char buff_type;
 signed char binding_skill_step_type;
 __int16 immune_breaker_attribute;
@@ -1083,22 +1083,22 @@ signed char event_effect_target[4];
 __int32 event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef event_effect[4];
 __int32 event_effect_Size() const {return 4;};
-int event_effect_tableId() const {return 118;};
+int event_effect_tableId() const {return 119;};
 signed char second_slot_event_effect_target[4];
 __int32 second_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef second_slot_event_effect[4];
 __int32 second_slot_event_effect_Size() const {return 4;};
-int second_slot_event_effect_tableId() const {return 118;};
+int second_slot_event_effect_tableId() const {return 119;};
 signed char third_slot_event_effect_target[4];
 __int32 third_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef third_slot_event_effect[4];
 __int32 third_slot_event_effect_Size() const {return 4;};
-int third_slot_event_effect_tableId() const {return 118;};
+int third_slot_event_effect_tableId() const {return 119;};
 signed char fourth_slot_event_effect_target[4];
 __int32 fourth_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef fourth_slot_event_effect[4];
 __int32 fourth_slot_event_effect_Size() const {return 4;};
-int fourth_slot_event_effect_tableId() const {return 118;};
+int fourth_slot_event_effect_tableId() const {return 119;};
 __int16 modify_ability[8];
 __int32 modify_ability_Size() const {return 8;};
 __int64 modify_ability_diff[8];
@@ -1147,20 +1147,20 @@ wchar_t* fire_show;
 bool animation_freeze;
 char Pad4[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 char Pad5[2];
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 435;};
+int description2_tableId() const {return 438;};
 BnsTables::Shared::TableRef description3;
-int description3_tableId() const {return 435;};
+int description3_tableId() const {return 438;};
 BnsTables::Shared::TableRef description4;
-int description4_tableId() const {return 435;};
+int description4_tableId() const {return 438;};
 BnsTables::Shared::TableRef description5;
-int description5_tableId() const {return 435;};
+int description5_tableId() const {return 438;};
 BnsTables::Shared::TableRef description_constellation;
-int description_constellation_tableId() const {return 435;};
+int description_constellation_tableId() const {return 438;};
 signed char description2_arg_type[4];
 __int32 description2_arg_type_Size() const {return 4;};
 wchar_t* description2_arg_value[4];
@@ -1168,9 +1168,9 @@ __int32 description2_arg_value_Size() const {return 4;};
 __int32 mount_attach_duration;
 __int32 mount_detach_duration;
 BnsTables::Shared::TableRef linker_abnormal;
-int linker_abnormal_tableId() const {return 250;};
+int linker_abnormal_tableId() const {return 252;};
 BnsTables::Shared::TableRef linkee_abnormal;
-int linkee_abnormal_tableId() const {return 250;};
+int linkee_abnormal_tableId() const {return 252;};
 __int32 link_attach_duration;
 __int32 link_detach_duration;
 bool catch_legs_physics;
@@ -1198,13 +1198,14 @@ __int32 transit_time;
 signed char duel_warp;
 char Pad9[3];
 BnsTables::Shared::TableRef attach_notify_message;
-int attach_notify_message_tableId() const {return 159;};
+int attach_notify_message_tableId() const {return 160;};
 BnsTables::Shared::TableRef description_item_random_option;
-int description_item_random_option_tableId() const {return 435;};
+int description_item_random_option_tableId() const {return 438;};
 bool block_reattach_when_encounter_sync_player;
+signed char fx_condition_channel;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(46, 0); }
-		static __int16 TableId() { return 118; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(46, 2); }
+		static __int16 TableId() { return 119; }
 		static __int32 SubType() { return -1; }
 		enum class buff_type {
 			instant = 0,
@@ -2393,6 +2394,22 @@ bool block_reattach_when_encounter_sync_player;
 			battle_zone = 2,
 		};
 
+		enum class fx_condition_channel {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
+			value_4 = 4,
+			value_5 = 5,
+			value_6 = 6,
+			value_7 = 7,
+			value_8 = 8,
+			value_9 = 9,
+			value_10 = 10,
+			value_11 = 11,
+			value_12 = 12,
+		};
+
 		enum class stance {
 			stance_none = 0,
 			npcgibonjase = 1,
@@ -2461,6 +2478,7 @@ bool block_reattach_when_encounter_sync_player;
 			catch_friend = 6,
 			inhalation_catch = 7,
 			range_catch = 8,
+			fixate_catch = 9,
 		};
 
 		enum class link_stage {

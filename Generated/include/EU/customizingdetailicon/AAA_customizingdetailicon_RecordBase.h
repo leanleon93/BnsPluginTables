@@ -27,14 +27,14 @@ __int16 order;
 		signed char param_value;
 char Pad0[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 189;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 435;};
+int desc_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 92; }
+		static __int16 TableId() { return 93; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

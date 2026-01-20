@@ -27,7 +27,7 @@ wchar_t* minimap_boder;
 wchar_t* minimap_boder_over;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 30); }
-		static __int16 TableId() { return 190; }
+		static __int16 TableId() { return 191; }
 		static __int32 SubType() { return -1; }
 		enum class indicator {
 			default_val = 0,

@@ -32,7 +32,7 @@ __int32 ability_base_value_max[40];
 __int32 ability_base_value_max_Size() const {return 40;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 339; }
+		static __int16 TableId() { return 342; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,
@@ -110,6 +110,8 @@ __int32 ability_base_value_max_Size() const {return 40;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

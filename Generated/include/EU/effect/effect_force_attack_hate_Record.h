@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_force_attack_hate_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 signed char hate_multiply_value;
 char Pad_sub_1[3];
 __int32 hate_diff_value;

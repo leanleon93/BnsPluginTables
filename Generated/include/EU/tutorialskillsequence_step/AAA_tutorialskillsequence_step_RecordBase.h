@@ -31,13 +31,13 @@ __int32 result_event_type_Size() const {return 2;};
 char Pad1[1];
 __int16 caster_fail_state;
 BnsTables::Shared::TableRef caster_fail_effect;
-int caster_fail_effect_tableId() const {return 118;};
+int caster_fail_effect_tableId() const {return 119;};
 __int16 caster_pass_state;
 __int16 target_pass_state;
 signed char target_pass_state_count;
 char Pad2[3];
 BnsTables::Shared::TableRef target_pass_effect;
-int target_pass_effect_tableId() const {return 118;};
+int target_pass_effect_tableId() const {return 119;};
 signed char target_pass_effect_count;
 bool check_only_cast_skill;
 

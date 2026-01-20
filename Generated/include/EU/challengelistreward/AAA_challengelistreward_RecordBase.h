@@ -25,7 +25,7 @@ signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef reward_item[6];
 __int32 reward_item_Size() const {return 6;};
-int reward_item_tableId() const {return 202;};
+int reward_item_tableId() const {return 203;};
 __int16 reward_item_count[6];
 __int32 reward_item_count_Size() const {return 6;};
 __int32 reward_money;

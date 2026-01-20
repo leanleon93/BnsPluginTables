@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 118;};
+int effect_tableId() const {return 119;};
 
 		static __int32 SubType() { return 1; }
 	};

@@ -13,10 +13,10 @@ namespace BnsTables::EU {
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef msg[2];
 __int32 msg_Size() const {return 2;};
-int msg_tableId() const {return 282;};
+int msg_tableId() const {return 284;};
 BnsTables::Shared::TableRef faction[2];
 __int32 faction_Size() const {return 2;};
-int faction_tableId() const {return 139;};
+int faction_tableId() const {return 140;};
 
 		static __int32 SubType() { return 17; }
 	};

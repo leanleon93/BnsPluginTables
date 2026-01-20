@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef world_boss_spawn_group;
-int world_boss_spawn_group_tableId() const {return 472;};
+int world_boss_spawn_group_tableId() const {return 475;};
 
 		static __int32 SubType() { return 1; }
 	};

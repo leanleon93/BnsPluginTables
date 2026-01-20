@@ -23,15 +23,15 @@ __int16 stat_point;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef stat_effect;
-int stat_effect_tableId() const {return 118;};
+int stat_effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef event_effect[4];
 __int32 event_effect_Size() const {return 4;};
-int event_effect_tableId() const {return 118;};
+int event_effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 435;};
+int description_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 268; }
+		static __int16 TableId() { return 270; }
 		static __int32 SubType() { return -1; }
 		enum class stat_point_attribute {
 			attacker = 0,

@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 __int32 charge_money;
 BnsTables::Shared::TableRef charge_item[2];
 __int32 charge_item_Size() const {return 2;};
-int charge_item_tableId() const {return 202;};
+int charge_item_tableId() const {return 203;};
 __int32 charge_item_amount[2];
 __int32 charge_item_amount_Size() const {return 2;};
 

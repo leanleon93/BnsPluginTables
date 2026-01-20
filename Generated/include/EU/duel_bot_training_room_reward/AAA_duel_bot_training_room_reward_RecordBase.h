@@ -25,14 +25,14 @@ signed char achievement;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef reward_item[3];
 __int32 reward_item_Size() const {return 3;};
-int reward_item_tableId() const {return 202;};
+int reward_item_tableId() const {return 203;};
 signed char reward_item_count[3];
 __int32 reward_item_count_Size() const {return 3;};
 char Pad0[1];
 __int32 reward_exp;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 109; }
+		static __int16 TableId() { return 110; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

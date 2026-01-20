@@ -28,11 +28,11 @@ char Pad0[1];
 __int32 minimum_score;
 wchar_t* contents_banner_img;
 BnsTables::Shared::TableRef contents_name;
-int contents_name_tableId() const {return 435;};
+int contents_name_tableId() const {return 438;};
 signed char sort_number;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
-		static __int16 TableId() { return 323; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
+		static __int16 TableId() { return 325; }
 		static __int32 SubType() { return -1; }
 		enum class contents_type {
 			invalid = 0,
@@ -67,6 +67,16 @@ signed char sort_number;
 			tier_total = 29,
 			hyper_racing_game = 30,
 			duel_npc_challenge = 31,
+			heroic_dungeon_1 = 32,
+			heroic_dungeon_2 = 33,
+			heroic_dungeon_3 = 34,
+			heroic_dungeon_4 = 35,
+			heroic_dungeon_5 = 36,
+			heroic_dungeon_6 = 37,
+			heroic_dungeon_7 = 38,
+			heroic_dungeon_8 = 39,
+			heroic_dungeon_9 = 40,
+			heroic_dungeon_10 = 41,
 		};
 
 		enum class player_type {

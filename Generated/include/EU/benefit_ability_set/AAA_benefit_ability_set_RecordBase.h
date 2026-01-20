@@ -27,7 +27,7 @@ __int32 ability_value_Size() const {return 4;};
 __int32 ability_base_value[4];
 __int32 ability_base_value_Size() const {return 4;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 38; }
@@ -108,6 +108,8 @@ int name2_tableId() const {return 435;};
 			attack_critical_base_percent = 72,
 			attack_abnormal_hit_value = 73,
 			defend_abnormal_resistance_value = 74,
+			additional_exp_diff_by_kill = 75,
+			additional_exp_percent_by_kill = 76,
 		};
 	};
 #pragma pack(pop)

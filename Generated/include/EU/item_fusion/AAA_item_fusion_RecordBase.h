@@ -24,13 +24,13 @@ __int32 score;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef cost_group;
-int cost_group_tableId() const {return 79;};
+int cost_group_tableId() const {return 80;};
 BnsTables::Shared::TableRef result_item[80];
 __int32 result_item_Size() const {return 80;};
-int result_item_tableId() const {return 202;};
+int result_item_tableId() const {return 203;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 205; }
+		static __int16 TableId() { return 206; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,

@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_dull_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int16 move_speed_percent;
 __int16 cast_speed_percent;
 

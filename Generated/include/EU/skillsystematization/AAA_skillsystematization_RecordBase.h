@@ -25,18 +25,18 @@ signed char systematization;
 char Pad0[3];
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 438;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 435;};
+int description_tableId() const {return 438;};
 signed char sort_no;
 char Pad1[3];
 BnsTables::Shared::TableRef group;
-int group_tableId() const {return 377;};
+int group_tableId() const {return 380;};
 BnsTables::Shared::TableRef filter_group;
-int filter_group_tableId() const {return 376;};
+int filter_group_tableId() const {return 379;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 375; }
+		static __int16 TableId() { return 378; }
 		static __int32 SubType() { return -1; }
 		enum class systematization {
 			none = 0,

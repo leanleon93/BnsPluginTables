@@ -26,7 +26,7 @@ signed char weapon_type;
 BnsTables::Shared::RGB effect_color;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 458; }
+		static __int16 TableId() { return 461; }
 		static __int32 SubType() { return -1; }
 		enum class weapon_gem_type {
 			none = 0,

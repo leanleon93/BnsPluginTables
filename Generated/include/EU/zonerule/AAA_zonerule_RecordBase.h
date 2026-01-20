@@ -33,7 +33,7 @@ signed char apply_content_ban_id;
 bool allow_invite_party_in_arena;
 bool show_leave_zone_popup_when_no_party_in_arena_enterance;
 BnsTables::Shared::TableRef required_available_weekly_time;
-int required_available_weekly_time_tableId() const {return 461;};
+int required_available_weekly_time_tableId() const {return 464;};
 bool town;
 bool reentrance_pcspawn_check_later_when_enterworld;
 bool infinite_durability;
@@ -47,9 +47,10 @@ bool enable_performance_option;
 bool is_world_boss_spawn_zone;
 bool use_default_skill;
 bool apply_membership_benefit;
+bool is_timelimitzone_entrance;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 1); }
-		static __int16 TableId() { return 491; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 1); }
+		static __int16 TableId() { return 494; }
 		static __int32 SubType() { return -1; }
 		enum class pvp_mode_type {
 			none = 0,

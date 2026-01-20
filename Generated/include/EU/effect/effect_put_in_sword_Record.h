@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_put_in_sword_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int16 speed_percent;
 
 		static __int32 SubType() { return 64; }

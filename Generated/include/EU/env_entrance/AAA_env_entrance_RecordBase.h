@@ -22,23 +22,23 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 435;};
+int name_tableId() const {return 438;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 435;};
+int desc_tableId() const {return 438;};
 wchar_t* title;
 wchar_t* title_icon;
 wchar_t* background_image;
 BnsTables::Shared::TableRef attraction_btn_name[3];
 __int32 attraction_btn_name_Size() const {return 3;};
-int attraction_btn_name_tableId() const {return 435;};
+int attraction_btn_name_tableId() const {return 438;};
 BnsTables::Shared::TableRef attraction_btn_desc[3];
 __int32 attraction_btn_desc_Size() const {return 3;};
-int attraction_btn_desc_tableId() const {return 435;};
+int attraction_btn_desc_tableId() const {return 438;};
 wchar_t* attraction_btn_image[3];
 __int32 attraction_btn_image_Size() const {return 3;};
 BnsTables::Shared::TableRef attraction_name_desc[3];
 __int32 attraction_name_desc_Size() const {return 3;};
-int attraction_name_desc_tableId() const {return 435;};
+int attraction_name_desc_tableId() const {return 438;};
 signed char season_contents_type;
 char Pad0[3];
 BnsTables::Shared::TableRef attraction_shortcut[3];
@@ -47,7 +47,7 @@ int attraction_shortcut_tableId() const {return 19;};
 signed char ranking_contents_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 124; }
+		static __int16 TableId() { return 125; }
 		static __int32 SubType() { return -1; }
 		enum class season_contents_type {
 			invalid = 0,
@@ -102,6 +102,16 @@ signed char ranking_contents_type;
 			tier_total = 29,
 			hyper_racing_game = 30,
 			duel_npc_challenge = 31,
+			heroic_dungeon_1 = 32,
+			heroic_dungeon_2 = 33,
+			heroic_dungeon_3 = 34,
+			heroic_dungeon_4 = 35,
+			heroic_dungeon_5 = 36,
+			heroic_dungeon_6 = 37,
+			heroic_dungeon_7 = 38,
+			heroic_dungeon_8 = 39,
+			heroic_dungeon_9 = 40,
+			heroic_dungeon_10 = 41,
 		};
 	};
 #pragma pack(pop)

@@ -28,17 +28,17 @@ signed char acquire_mileage_type;
 signed char save_point;
 char Pad1[2];
 BnsTables::Shared::TableRef check_success_item;
-int check_success_item_tableId() const {return 202;};
+int check_success_item_tableId() const {return 203;};
 BnsTables::Shared::TableRef success_reward_item;
-int success_reward_item_tableId() const {return 202;};
+int success_reward_item_tableId() const {return 203;};
 signed char success_reward_item_count;
 signed char reward_max;
 char Pad2[2];
 BnsTables::Shared::TableRef item_transform_recipe;
-int item_transform_recipe_tableId() const {return 226;};
+int item_transform_recipe_tableId() const {return 227;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 227; }
+		static __int16 TableId() { return 228; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

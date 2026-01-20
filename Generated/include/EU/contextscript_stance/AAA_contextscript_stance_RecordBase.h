@@ -94,6 +94,7 @@ __int16 abnormal_flag;
 			catch_friend = 6,
 			inhalation_catch = 7,
 			range_catch = 8,
+			fixate_catch = 9,
 		};
 
 		enum class abnormal_flag {

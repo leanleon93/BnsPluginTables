@@ -23,7 +23,7 @@ signed char level;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_ingredient;
-int main_ingredient_tableId() const {return 202;};
+int main_ingredient_tableId() const {return 203;};
 signed char applicable_part[4];
 __int32 applicable_part_Size() const {return 4;};
 bool use_random_ability_value;
@@ -31,10 +31,10 @@ signed char success_probability;
 char Pad0[2];
 __int32 money_cost;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId() const {return 318;};
+int distribution_type_tableId() const {return 320;};
 BnsTables::Shared::TableRef fixed_ingredient[8];
 __int32 fixed_ingredient_Size() const {return 8;};
-int fixed_ingredient_tableId() const {return 202;};
+int fixed_ingredient_tableId() const {return 203;};
 __int16 fixed_ingredient_stack_count[8];
 __int32 fixed_ingredient_stack_count_Size() const {return 8;};
 signed char attach_ability[10];
@@ -57,7 +57,7 @@ char Pad2[2];
 __int32 select_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 224; }
+		static __int16 TableId() { return 225; }
 		static __int32 SubType() { return -1; }
 		enum class applicable_part {
 			none = 0,

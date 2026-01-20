@@ -23,14 +23,14 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill3[10];
 __int32 skill3_Size() const {return 10;};
-int skill3_tableId() const {return 350;};
+int skill3_tableId() const {return 353;};
 wchar_t* soul_particle;
 wchar_t* target_ui_imageset;
 BnsTables::Shared::TableRef soul_tooltip;
-int soul_tooltip_tableId() const {return 435;};
+int soul_tooltip_tableId() const {return 438;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 405; }
+		static __int16 TableId() { return 408; }
 		static __int32 SubType() { return -1; }
 
 	};

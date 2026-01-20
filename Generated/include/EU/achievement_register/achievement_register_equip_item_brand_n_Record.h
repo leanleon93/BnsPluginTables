@@ -11,14 +11,14 @@ namespace BnsTables::EU {
 	public:
 		BnsTables::Shared::TableRef item_brand[8];
 __int32 item_brand_Size() const {return 8;};
-int item_brand_tableId() const {return 195;};
+int item_brand_tableId() const {return 196;};
 signed char equip_type[8];
 __int32 equip_type_Size() const {return 8;};
 signed char item_min_level[8];
 __int32 item_min_level_Size() const {return 8;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 435;};
+int slot_name_tableId() const {return 438;};
 
 		static __int32 SubType() { return 4; }
 	};

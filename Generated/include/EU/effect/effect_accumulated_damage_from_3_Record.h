@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_accumulated_damage_from_3_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int64 max_accumulate_damage;
 
 		static __int32 SubType() { return 4; }

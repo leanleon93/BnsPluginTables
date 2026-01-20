@@ -23,11 +23,11 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef beauty_item[120];
 __int32 beauty_item_Size() const {return 120;};
-int beauty_item_tableId() const {return 424;};
+int beauty_item_tableId() const {return 427;};
 __int16 sell_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 417; }
+		static __int16 TableId() { return 420; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 wchar_t* scroll_level_font;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 342; }
+		static __int16 TableId() { return 345; }
 		static __int32 SubType() { return -1; }
 
 	};

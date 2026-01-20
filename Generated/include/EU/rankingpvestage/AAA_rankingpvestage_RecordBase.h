@@ -25,7 +25,7 @@ __int32 ranking_npc_grade_text_Size() const {return 30;};
 bool use_ranking_npc_grade;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 331; }
+		static __int16 TableId() { return 333; }
 		static __int32 SubType() { return -1; }
 
 	};

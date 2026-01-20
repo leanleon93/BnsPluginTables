@@ -9,7 +9,7 @@ namespace BnsTables::EU {
 	struct effect_additional_hp_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[3];
+		char Pad_sub_0[2];
 __int32 hp_diff;
 __int16 additional_max_hp_percent;
 bool absorb_last_damage;

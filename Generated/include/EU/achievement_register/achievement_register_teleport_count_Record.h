@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 431;};
+int teleport_tableId() const {return 434;};
 
 		static __int32 SubType() { return 22; }
 	};
