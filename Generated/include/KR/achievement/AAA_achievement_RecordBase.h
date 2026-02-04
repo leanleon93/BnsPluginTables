@@ -93,8 +93,11 @@ BnsTables::Shared::IconRef title_chat_ui_icon;
 wchar_t* title_thumbnail_frame_fx;
 signed char title_grade;
 signed char title_infield_ui_border_effect;
+char Pad10[2];
+__int64 start_time;
+__int64 end_time;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 4); }
 		static __int16 TableId() { return 6; }
 		static __int32 SubType() { return -1; }
 		enum class job {

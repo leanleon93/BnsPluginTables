@@ -520,7 +520,7 @@ namespace BnsTables::KR {
 				{3, BnsTables::Shared::TableVersion(0, 40)},
 				{4, BnsTables::Shared::TableVersion(2, 0)},
 				{5, BnsTables::Shared::TableVersion(0, 1)},
-				{6, BnsTables::Shared::TableVersion(3, 3)},
+				{6, BnsTables::Shared::TableVersion(3, 4)},
 				{7, BnsTables::Shared::TableVersion(5, 3)},
 				{8, BnsTables::Shared::TableVersion(0, 1)},
 				{9, BnsTables::Shared::TableVersion(0, 2)},
