@@ -1023,7 +1023,7 @@ namespace BnsTables::KR {
 
 		return arr;
 	}();
-	const std::unordered_map<std::wstring_view, int>& GetTableNameToIdMap() {
+	inline const std::unordered_map<std::wstring_view, int>& GetTableNameToIdMap() {
 		static const std::unordered_map<std::wstring_view, int> TableNameToIdMap = [] {
 			std::unordered_map<std::wstring_view, int> map;
 			for (std::size_t i = 1; i <= TableCount; ++i) {
