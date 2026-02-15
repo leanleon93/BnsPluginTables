@@ -3,10 +3,1038 @@
 */
 #pragma once
 #include <string>
+#include <array>
+#include <string_view>
 #include <unordered_map>
+#include <cstddef>
 #include "../BnsCustomProperties.h"
+
 namespace BnsTables::EU {
-	const __int16 TableCount = 498;
+	struct TableEntry {
+		std::wstring_view name;
+		int id;
+
+		constexpr bool operator<(const TableEntry& other) const {
+			return name < other.name;
+		}
+	};
+	constexpr __int16 TableCount = 498;
+	constexpr std::array<BnsTables::Shared::TableVersion, TableCount + 1> VersionsForIds = [] {
+		std::array<BnsTables::Shared::TableVersion, TableCount + 1> arr = {};
+		arr[1] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[2] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[3] = BnsTables::Shared::TableVersion(0, 40, true);
+		arr[4] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[5] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[6] = BnsTables::Shared::TableVersion(3, 3, true);
+		arr[7] = BnsTables::Shared::TableVersion(5, 3, true);
+		arr[8] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[9] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[10] = BnsTables::Shared::TableVersion(2, 3, true);
+		arr[11] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[12] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[13] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[14] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[15] = BnsTables::Shared::TableVersion(0, 14, true);
+		arr[16] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[17] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[18] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[19] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[20] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[21] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[22] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[23] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[24] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[25] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[26] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[27] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[28] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[29] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[30] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[31] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[32] = BnsTables::Shared::TableVersion(0, 21, true);
+		arr[33] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[34] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[35] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[36] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[37] = BnsTables::Shared::TableVersion(8, 0, true);
+		arr[38] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[39] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[40] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[41] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[42] = BnsTables::Shared::TableVersion(2, 3, true);
+		arr[43] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[44] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[45] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[46] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[47] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[48] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[49] = BnsTables::Shared::TableVersion(0, 37, true);
+		arr[50] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[51] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[52] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[53] = BnsTables::Shared::TableVersion(0, 14, true);
+		arr[54] = BnsTables::Shared::TableVersion(2, 3, true);
+		arr[55] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[56] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[57] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[58] = BnsTables::Shared::TableVersion(0, 17, true);
+		arr[59] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[60] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[61] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[62] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[63] = BnsTables::Shared::TableVersion(2, 5, true);
+		arr[64] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[65] = BnsTables::Shared::TableVersion(2, 2, true);
+		arr[66] = BnsTables::Shared::TableVersion(2, 3, true);
+		arr[67] = BnsTables::Shared::TableVersion(2, 3, true);
+		arr[68] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[69] = BnsTables::Shared::TableVersion(12, 0, true);
+		arr[70] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[71] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[72] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[73] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[74] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[75] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[76] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[77] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[78] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[79] = BnsTables::Shared::TableVersion(0, 15, true);
+		arr[80] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[81] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[82] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[83] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[84] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[85] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[86] = BnsTables::Shared::TableVersion(0, 12, true);
+		arr[87] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[88] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[89] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[90] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[91] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[92] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[93] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[94] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[95] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[96] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[97] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[98] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[99] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[100] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[101] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[102] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[103] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[104] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[105] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[106] = BnsTables::Shared::TableVersion(0, 41, true);
+		arr[107] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[108] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[109] = BnsTables::Shared::TableVersion(0, 12, true);
+		arr[110] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[111] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[112] = BnsTables::Shared::TableVersion(0, 35, true);
+		arr[113] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[114] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[115] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[116] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[117] = BnsTables::Shared::TableVersion(0, 12, true);
+		arr[118] = BnsTables::Shared::TableVersion(10, 0, true);
+		arr[119] = BnsTables::Shared::TableVersion(46, 2, true);
+		arr[120] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[121] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[122] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[123] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[124] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[125] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[126] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[127] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[128] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[129] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[130] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[131] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[132] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[133] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[134] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[135] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[136] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[137] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[138] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[139] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[140] = BnsTables::Shared::TableVersion(0, 20, true);
+		arr[141] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[142] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[143] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[144] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[145] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[146] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[147] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[148] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[149] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[150] = BnsTables::Shared::TableVersion(0, 17, true);
+		arr[151] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[152] = BnsTables::Shared::TableVersion(0, 17, true);
+		arr[153] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[154] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[155] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[156] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[157] = BnsTables::Shared::TableVersion(0, 12, true);
+		arr[158] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[159] = BnsTables::Shared::TableVersion(2, 2, true);
+		arr[160] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[161] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[162] = BnsTables::Shared::TableVersion(8, 0, true);
+		arr[163] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[164] = BnsTables::Shared::TableVersion(7, 0, true);
+		arr[165] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[166] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[167] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[168] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[169] = BnsTables::Shared::TableVersion(4, 1, true);
+		arr[170] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[171] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[172] = BnsTables::Shared::TableVersion(0, 18, true);
+		arr[173] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[174] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[175] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[176] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[177] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[178] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[179] = BnsTables::Shared::TableVersion(1, 11, true);
+		arr[180] = BnsTables::Shared::TableVersion(0, 11, true);
+		arr[181] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[182] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[183] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[184] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[185] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[186] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[187] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[188] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[189] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[190] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[191] = BnsTables::Shared::TableVersion(0, 30, true);
+		arr[192] = BnsTables::Shared::TableVersion(0, 18, true);
+		arr[193] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[194] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[195] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[196] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[197] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[198] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[199] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[200] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[201] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[202] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[203] = BnsTables::Shared::TableVersion(68, 0, true);
+		arr[204] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[205] = BnsTables::Shared::TableVersion(1, 6, true);
+		arr[206] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[207] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[208] = BnsTables::Shared::TableVersion(1, 16, true);
+		arr[209] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[210] = BnsTables::Shared::TableVersion(1, 3, true);
+		arr[211] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[212] = BnsTables::Shared::TableVersion(8, 0, true);
+		arr[213] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[214] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[215] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[216] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[217] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[218] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[219] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[220] = BnsTables::Shared::TableVersion(9, 0, true);
+		arr[221] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[222] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[223] = BnsTables::Shared::TableVersion(0, 13, true);
+		arr[224] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[225] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[226] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[227] = BnsTables::Shared::TableVersion(6, 1, true);
+		arr[228] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[229] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[230] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[231] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[232] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[233] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[234] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[235] = BnsTables::Shared::TableVersion(3, 2, true);
+		arr[236] = BnsTables::Shared::TableVersion(2, 3, true);
+		arr[237] = BnsTables::Shared::TableVersion(1, 3, true);
+		arr[238] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[239] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[240] = BnsTables::Shared::TableVersion(0, 61, true);
+		arr[241] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[242] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[243] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[244] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[245] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[246] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[247] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[248] = BnsTables::Shared::TableVersion(0, 13, true);
+		arr[249] = BnsTables::Shared::TableVersion(1, 4, true);
+		arr[250] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[251] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[252] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[253] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[254] = BnsTables::Shared::TableVersion(0, 11, true);
+		arr[255] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[256] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[257] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[258] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[259] = BnsTables::Shared::TableVersion(1, 5, true);
+		arr[260] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[261] = BnsTables::Shared::TableVersion(1, 83, true);
+		arr[262] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[263] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[264] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[265] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[266] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[267] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[268] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[269] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[270] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[271] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[272] = BnsTables::Shared::TableVersion(8, 0, true);
+		arr[273] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[274] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[275] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[276] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[277] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[278] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[279] = BnsTables::Shared::TableVersion(9, 1, true);
+		arr[280] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[281] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[282] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[283] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[284] = BnsTables::Shared::TableVersion(0, 61, true);
+		arr[285] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[286] = BnsTables::Shared::TableVersion(1, 22, true);
+		arr[287] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[288] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[289] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[290] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[291] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[292] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[293] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[294] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[295] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[296] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[297] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[298] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[299] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[300] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[301] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[302] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[303] = BnsTables::Shared::TableVersion(1, 19, true);
+		arr[304] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[305] = BnsTables::Shared::TableVersion(5, 4, true);
+		arr[306] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[307] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[308] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[309] = BnsTables::Shared::TableVersion(12, 0, true);
+		arr[310] = BnsTables::Shared::TableVersion(6, 1, true);
+		arr[311] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[312] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[313] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[314] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[315] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[316] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[317] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[318] = BnsTables::Shared::TableVersion(6, 12, true);
+		arr[319] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[320] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[321] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[322] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[323] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[324] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[325] = BnsTables::Shared::TableVersion(11, 0, true);
+		arr[326] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[327] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[328] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[329] = BnsTables::Shared::TableVersion(9, 3, true);
+		arr[330] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[331] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[332] = BnsTables::Shared::TableVersion(2, 5, true);
+		arr[333] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[334] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[335] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[336] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[337] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[338] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[339] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[340] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[341] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[342] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[343] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[344] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[345] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[346] = BnsTables::Shared::TableVersion(6, 4, true);
+		arr[347] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[348] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[349] = BnsTables::Shared::TableVersion(0, 13, true);
+		arr[350] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[351] = BnsTables::Shared::TableVersion(1, 19, true);
+		arr[352] = BnsTables::Shared::TableVersion(0, 61, true);
+		arr[353] = BnsTables::Shared::TableVersion(11, 0, true);
+		arr[354] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[355] = BnsTables::Shared::TableVersion(5, 1, true);
+		arr[356] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[357] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[358] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[359] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[360] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[361] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[362] = BnsTables::Shared::TableVersion(7, 0, true);
+		arr[363] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[364] = BnsTables::Shared::TableVersion(1, 13, true);
+		arr[365] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[366] = BnsTables::Shared::TableVersion(5, 1, true);
+		arr[367] = BnsTables::Shared::TableVersion(0, 17, true);
+		arr[368] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[369] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[370] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[371] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[372] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[373] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[374] = BnsTables::Shared::TableVersion(2, 10, true);
+		arr[375] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[376] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[377] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[378] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[379] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[380] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[381] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[382] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[383] = BnsTables::Shared::TableVersion(0, 15, true);
+		arr[384] = BnsTables::Shared::TableVersion(7, 0, true);
+		arr[385] = BnsTables::Shared::TableVersion(2, 2, true);
+		arr[386] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[387] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[388] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[389] = BnsTables::Shared::TableVersion(0, 12, true);
+		arr[390] = BnsTables::Shared::TableVersion(0, 11, true);
+		arr[391] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[392] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[393] = BnsTables::Shared::TableVersion(0, 11, true);
+		arr[394] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[395] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[396] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[397] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[398] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[399] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[400] = BnsTables::Shared::TableVersion(0, 25, true);
+		arr[401] = BnsTables::Shared::TableVersion(8, 1, true);
+		arr[402] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[403] = BnsTables::Shared::TableVersion(6, 0, true);
+		arr[404] = BnsTables::Shared::TableVersion(8, 1, true);
+		arr[405] = BnsTables::Shared::TableVersion(8, 0, true);
+		arr[406] = BnsTables::Shared::TableVersion(6, 1, true);
+		arr[407] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[408] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[409] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[410] = BnsTables::Shared::TableVersion(0, 295, true);
+		arr[411] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[412] = BnsTables::Shared::TableVersion(0, 10, true);
+		arr[413] = BnsTables::Shared::TableVersion(4, 4, true);
+		arr[414] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[415] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[416] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[417] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[418] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[419] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[420] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[421] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[422] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[423] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[424] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[425] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[426] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[427] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[428] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[429] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[430] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[431] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[432] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[433] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[434] = BnsTables::Shared::TableVersion(1, 2, true);
+		arr[435] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[436] = BnsTables::Shared::TableVersion(0, 22, true);
+		arr[437] = BnsTables::Shared::TableVersion(0, 11, true);
+		arr[438] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[439] = BnsTables::Shared::TableVersion(1, 4, true);
+		arr[440] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[441] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[442] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[443] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[444] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[445] = BnsTables::Shared::TableVersion(0, 7, true);
+		arr[446] = BnsTables::Shared::TableVersion(0, 62, true);
+		arr[447] = BnsTables::Shared::TableVersion(0, 46, true);
+		arr[448] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[449] = BnsTables::Shared::TableVersion(0, 1, true);
+		arr[450] = BnsTables::Shared::TableVersion(0, 41, true);
+		arr[451] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[452] = BnsTables::Shared::TableVersion(0, 8, true);
+		arr[453] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[454] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[455] = BnsTables::Shared::TableVersion(1, 4, true);
+		arr[456] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[457] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[458] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[459] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[460] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[461] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[462] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[463] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[464] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[465] = BnsTables::Shared::TableVersion(4, 1, true);
+		arr[466] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[467] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[468] = BnsTables::Shared::TableVersion(3, 0, true);
+		arr[469] = BnsTables::Shared::TableVersion(5, 1, true);
+		arr[470] = BnsTables::Shared::TableVersion(2, 1, true);
+		arr[471] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[472] = BnsTables::Shared::TableVersion(1, 1, true);
+		arr[473] = BnsTables::Shared::TableVersion(4, 0, true);
+		arr[474] = BnsTables::Shared::TableVersion(3, 4, true);
+		arr[475] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[476] = BnsTables::Shared::TableVersion(2, 0, true);
+		arr[477] = BnsTables::Shared::TableVersion(0, 56, true);
+		arr[478] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[479] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[480] = BnsTables::Shared::TableVersion(0, 3, true);
+		arr[481] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[482] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[483] = BnsTables::Shared::TableVersion(9, 1, true);
+		arr[484] = BnsTables::Shared::TableVersion(5, 0, true);
+		arr[485] = BnsTables::Shared::TableVersion(1, 0, true);
+		arr[486] = BnsTables::Shared::TableVersion(0, 9, true);
+		arr[487] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[488] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[489] = BnsTables::Shared::TableVersion(0, 4, true);
+		arr[490] = BnsTables::Shared::TableVersion(0, 5, true);
+		arr[491] = BnsTables::Shared::TableVersion(1, 52, true);
+		arr[492] = BnsTables::Shared::TableVersion(0, 49, true);
+		arr[493] = BnsTables::Shared::TableVersion(0, 46, true);
+		arr[494] = BnsTables::Shared::TableVersion(11, 1, true);
+		arr[495] = BnsTables::Shared::TableVersion(0, 2, true);
+		arr[496] = BnsTables::Shared::TableVersion(0, 6, true);
+		arr[497] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[498] = BnsTables::Shared::TableVersion(2, 1, true);
+
+		return arr;
+	}();
+	constexpr std::array<const wchar_t*, TableCount + 1> NamesForIds = [] {
+		std::array<const wchar_t*, TableCount + 1> arr = {};
+		arr[1] = L"ability-list";
+		arr[2] = L"abnormalcamera";
+		arr[3] = L"abnormalmoveanim";
+		arr[4] = L"account-level";
+		arr[5] = L"account-post-charge";
+		arr[6] = L"achievement";
+		arr[7] = L"achievement-register";
+		arr[8] = L"acquire-route";
+		arr[9] = L"acquire-route-list";
+		arr[10] = L"alarm-message-time-table";
+		arr[11] = L"appearance-item";
+		arr[12] = L"arenamatchingrule";
+		arr[13] = L"arenaportal";
+		arr[14] = L"attachment";
+		arr[15] = L"attendance";
+		arr[16] = L"attraction-group";
+		arr[17] = L"attraction-reward";
+		arr[18] = L"attractionrewardsummary";
+		arr[19] = L"attraction-shortcut";
+		arr[20] = L"auto-combat-customized-skill-cast-condition";
+		arr[21] = L"auto-combat-customized-skill";
+		arr[22] = L"auto-combat-skill-cast-condition";
+		arr[23] = L"auto-combat-skill";
+		arr[24] = L"automodereturnteleport";
+		arr[25] = L"autotargetparameter";
+		arr[26] = L"badge-appearance";
+		arr[27] = L"badge-set-item";
+		arr[28] = L"badge-synthesis-cost";
+		arr[29] = L"badgesynthesisrecipe";
+		arr[30] = L"battle-field-grade";
+		arr[31] = L"battlemessage";
+		arr[32] = L"battle-royal-field";
+		arr[33] = L"battle-royal-field-effect-pouch";
+		arr[34] = L"battleroyalfieldeffectpouchmesh";
+		arr[35] = L"battle-royal-field-event";
+		arr[36] = L"battle-royal-field-item-spawn-position";
+		arr[37] = L"benefit-ability";
+		arr[38] = L"benefit-ability-set";
+		arr[39] = L"benefit-reward-set";
+		arr[40] = L"board-gacha";
+		arr[41] = L"board-gacha-reward";
+		arr[42] = L"boast";
+		arr[43] = L"boast-event";
+		arr[44] = L"boss-challenge";
+		arr[45] = L"boss-challenge-round";
+		arr[46] = L"bossnpc";
+		arr[47] = L"campfire";
+		arr[48] = L"card-collection-page";
+		arr[49] = L"cave2";
+		arr[50] = L"cave";
+		arr[51] = L"challengelist";
+		arr[52] = L"challengelistreward";
+		arr[53] = L"challenge-party";
+		arr[54] = L"character-membership";
+		arr[55] = L"chat-channel-option";
+		arr[56] = L"cinema-result";
+		arr[57] = L"cinematic";
+		arr[58] = L"classic-field-zone";
+		arr[59] = L"closet-collecting-grade";
+		arr[60] = L"closet-group";
+		arr[61] = L"collecting";
+		arr[62] = L"combat-power-compliment";
+		arr[63] = L"combat-power";
+		arr[64] = L"commonanim";
+		arr[65] = L"condition-event";
+		arr[66] = L"constellation";
+		arr[67] = L"constellation-star";
+		arr[68] = L"constellation-star-option";
+		arr[69] = L"content-quota";
+		arr[70] = L"contentrestriction";
+		arr[71] = L"contents-guide";
+		arr[72] = L"contentsjournal2noti";
+		arr[73] = L"contentsjournal";
+		arr[74] = L"contentsjournalrecommenditem";
+		arr[75] = L"contents-reset";
+		arr[76] = L"contents-schedule";
+		arr[77] = L"context-macro";
+		arr[78] = L"contextscript";
+		arr[79] = L"contributionreward";
+		arr[80] = L"cost-group";
+		arr[81] = L"craft2";
+		arr[82] = L"craft-case-recipe";
+		arr[83] = L"craft";
+		arr[84] = L"craft-group-recipe";
+		arr[85] = L"craft-introduction";
+		arr[86] = L"craft-recipe";
+		arr[87] = L"craft-recipe-step";
+		arr[88] = L"creatureappearance";
+		arr[89] = L"custom-dress-design-cost";
+		arr[90] = L"custom-dress-design-type-info";
+		arr[91] = L"customdressmotion";
+		arr[92] = L"customizingdesignerpreset";
+		arr[93] = L"customizingdetailicon";
+		arr[94] = L"customizingdetailslider";
+		arr[95] = L"customizingignoreparam";
+		arr[96] = L"customizingpreset";
+		arr[97] = L"customizingpreview";
+		arr[98] = L"customizinguimatchparam";
+		arr[99] = L"data-publisher-version";
+		arr[100] = L"default-rating-score-group";
+		arr[101] = L"dieanim";
+		arr[102] = L"difficulty-type";
+		arr[103] = L"difficulty-type-modify";
+		arr[104] = L"discovery-area";
+		arr[105] = L"district";
+		arr[106] = L"duel-bot-challenge";
+		arr[107] = L"duel-bot-challenge-strategic-tool";
+		arr[108] = L"duel-bot";
+		arr[109] = L"duel-bot-training-room";
+		arr[110] = L"duel-bot-training-room-reward";
+		arr[111] = L"duel-bot-training-room-version";
+		arr[112] = L"duel";
+		arr[113] = L"duel-grade";
+		arr[114] = L"duel-npc-challenge";
+		arr[115] = L"duel-npc-challenge-group";
+		arr[116] = L"duel-npc-challenge-strategic-skill";
+		arr[117] = L"duel-observer-skill-slot";
+		arr[118] = L"dungeon";
+		arr[119] = L"effect";
+		arr[120] = L"effect-group";
+		arr[121] = L"effect-list";
+		arr[122] = L"emoticon";
+		arr[123] = L"energy-point";
+		arr[124] = L"energy-point-reward";
+		arr[125] = L"env-entrance";
+		arr[126] = L"envresponse";
+		arr[127] = L"equip-gem-piece";
+		arr[128] = L"equip-item-group";
+		arr[129] = L"equip-item-guide";
+		arr[130] = L"equip-item-guide-item-list";
+		arr[131] = L"event-contents";
+		arr[132] = L"event-skill";
+		arr[133] = L"expand-inventory";
+		arr[134] = L"expand-random-store";
+		arr[135] = L"expand-relic-inventory";
+		arr[136] = L"expand-relic-page";
+		arr[137] = L"expand-skill-page";
+		arr[138] = L"extract-skill-train-by-item";
+		arr[139] = L"faction-battle-field-zone";
+		arr[140] = L"faction";
+		arr[141] = L"faction-level";
+		arr[142] = L"feedback-boss-npc";
+		arr[143] = L"feedback";
+		arr[144] = L"feedback-rank";
+		arr[145] = L"feedback-skill-score";
+		arr[146] = L"fieldbossspawn";
+		arr[147] = L"fielditem";
+		arr[148] = L"fielditemdrop";
+		arr[149] = L"field-item-move-anim";
+		arr[150] = L"field-zone";
+		arr[151] = L"filter";
+		arr[152] = L"fish";
+		arr[153] = L"fishgrade";
+		arr[154] = L"fishing-field";
+		arr[155] = L"fishing-field-group";
+		arr[156] = L"fishing-paste";
+		arr[157] = L"fishing-show";
+		arr[158] = L"flying-circus-game";
+		arr[159] = L"game-menu-control";
+		arr[160] = L"game-message";
+		arr[161] = L"gathersource";
+		arr[162] = L"glyph";
+		arr[163] = L"glyph-page";
+		arr[164] = L"glyph-reward";
+		arr[165] = L"glyph-slot";
+		arr[166] = L"gm-spawn-npc";
+		arr[167] = L"goldenticket";
+		arr[168] = L"goodsicon";
+		arr[169] = L"gradebenefits";
+		arr[170] = L"guide-movie";
+		arr[171] = L"guild-bank-item";
+		arr[172] = L"guild-battle-field-zone";
+		arr[173] = L"guildbenefit";
+		arr[174] = L"guild-combat";
+		arr[175] = L"guild-craft-recipe";
+		arr[176] = L"guildcustomizepreset";
+		arr[177] = L"guildcustomizeuimatchparam";
+		arr[178] = L"guild-discount";
+		arr[179] = L"guildlevel";
+		arr[180] = L"guild-member-grade-authority";
+		arr[181] = L"guilduniformcomponent";
+		arr[182] = L"guilduniformparamtypecategory";
+		arr[183] = L"guilduniformpreset";
+		arr[184] = L"guilduniformrecipe";
+		arr[185] = L"guilduniformregistrationquota";
+		arr[186] = L"guilduniformslider";
+		arr[187] = L"hyper-racing-game";
+		arr[188] = L"hyper-racing-game-reward";
+		arr[189] = L"icontexture";
+		arr[190] = L"indicator-idle";
+		arr[191] = L"indicator-image";
+		arr[192] = L"indicator-social";
+		arr[193] = L"ingame-shop-item";
+		arr[194] = L"ingame-shop-tab";
+		arr[195] = L"interdungeonlist";
+		arr[196] = L"item-brand";
+		arr[197] = L"item-brand-tooltip";
+		arr[198] = L"item-buy-price";
+		arr[199] = L"itemcategory";
+		arr[200] = L"item-combat";
+		arr[201] = L"item-combination";
+		arr[202] = L"item-combination-mileage";
+		arr[203] = L"item";
+		arr[204] = L"item-event";
+		arr[205] = L"itemexchange";
+		arr[206] = L"item-fusion";
+		arr[207] = L"itemgearscore";
+		arr[208] = L"item-graph";
+		arr[209] = L"item-graph-seed-group";
+		arr[210] = L"item-group";
+		arr[211] = L"itemgrowth";
+		arr[212] = L"item-improve";
+		arr[213] = L"item-improve-option";
+		arr[214] = L"item-improve-option-list";
+		arr[215] = L"item-improve-set-bonus";
+		arr[216] = L"item-improve-succession";
+		arr[217] = L"itempouchmesh2";
+		arr[218] = L"item-random-ability-section";
+		arr[219] = L"item-random-ability-slot";
+		arr[220] = L"item-random-option-group";
+		arr[221] = L"itemrewardskill3";
+		arr[222] = L"itemrewardskillacquireroute";
+		arr[223] = L"itemskill";
+		arr[224] = L"itemsound";
+		arr[225] = L"itemspirit";
+		arr[226] = L"item-stage-number";
+		arr[227] = L"itemtransformrecipe";
+		arr[228] = L"itemtransformrecipemileage";
+		arr[229] = L"item-transform-recipe-world-limit";
+		arr[230] = L"item-transform-retry-cost";
+		arr[231] = L"itemtransformupgradeitem";
+		arr[232] = L"item-usable-group";
+		arr[233] = L"itemusablerelation";
+		arr[234] = L"jackpot-boss-zone";
+		arr[235] = L"job-change";
+		arr[236] = L"job-change-item-exchange-group";
+		arr[237] = L"job-change-item-exchange-type";
+		arr[238] = L"job-change-quest";
+		arr[239] = L"job-change-quota";
+		arr[240] = L"job";
+		arr[241] = L"jobskillset";
+		arr[242] = L"jobspecialization";
+		arr[243] = L"job-style";
+		arr[244] = L"job-style-specialization";
+		arr[245] = L"jobstylestandidle";
+		arr[246] = L"jumpingcharacter2";
+		arr[247] = L"jumpingcharacter";
+		arr[248] = L"key-cap";
+		arr[249] = L"key-command";
+		arr[250] = L"level";
+		arr[251] = L"levelupreward";
+		arr[252] = L"linkmoveanim";
+		arr[253] = L"loadingimage";
+		arr[254] = L"lobby-pc";
+		arr[255] = L"map-area";
+		arr[256] = L"map-group-1";
+		arr[257] = L"map-group-1-guide";
+		arr[258] = L"map-group-2";
+		arr[259] = L"mapinfo";
+		arr[260] = L"mapoverlay";
+		arr[261] = L"mapunit";
+		arr[262] = L"market-category-2-group";
+		arr[263] = L"market-category-3-group";
+		arr[264] = L"market-register-amount-tax-rate";
+		arr[265] = L"market-sale-income-tax-rate";
+		arr[266] = L"market-targeted-sale-income-tax";
+		arr[267] = L"mastery-ability";
+		arr[268] = L"mastery-grade";
+		arr[269] = L"mastery-level";
+		arr[270] = L"mastery-stat-point";
+		arr[271] = L"mastery-stat-point-pick";
+		arr[272] = L"membership-benefit";
+		arr[273] = L"mentoring";
+		arr[274] = L"mileageplan";
+		arr[275] = L"moveanim";
+		arr[276] = L"moveanimtransit";
+		arr[277] = L"newbie-care";
+		arr[278] = L"npccombatmoveanim";
+		arr[279] = L"npc";
+		arr[280] = L"npcindicatormoveanim";
+		arr[281] = L"npcmoveanim";
+		arr[282] = L"npcresponse";
+		arr[283] = L"npc-sealed-dungeon-reward";
+		arr[284] = L"npctalkmessage";
+		arr[285] = L"override-contents-rule-config";
+		arr[286] = L"party-battle-field-zone";
+		arr[287] = L"partychatchannel";
+		arr[288] = L"partymatch";
+		arr[289] = L"passive-effect-move-anim";
+		arr[290] = L"pc-appearance";
+		arr[291] = L"pccafebenefits";
+		arr[292] = L"pc-cam-dist";
+		arr[293] = L"pc";
+		arr[294] = L"pc-hidden-character";
+		arr[295] = L"pcinitialsetting";
+		arr[296] = L"pc-race-sex-job";
+		arr[297] = L"pcskill3";
+		arr[298] = L"pc-voice";
+		arr[299] = L"pc-voice-set";
+		arr[300] = L"pet";
+		arr[301] = L"pet-food-recovery";
+		arr[302] = L"petition-faq-list";
+		arr[303] = L"phantomsword3";
+		arr[304] = L"posetransit";
+		arr[305] = L"public-raid";
+		arr[306] = L"public-raid-event";
+		arr[307] = L"questbonusreward";
+		arr[308] = L"questbonusrewardsetting";
+		arr[309] = L"quest";
+		arr[310] = L"questreward";
+		arr[311] = L"questrewardskill3";
+		arr[312] = L"quest-sealed-dungeon-reward";
+		arr[313] = L"questwarp";
+		arr[314] = L"race2-attributes-info";
+		arr[315] = L"race";
+		arr[316] = L"racoon-store";
+		arr[317] = L"racoon-store-item";
+		arr[318] = L"raid-dungeon";
+		arr[319] = L"randombox-preview";
+		arr[320] = L"random-distribution";
+		arr[321] = L"randomstore";
+		arr[322] = L"randomstoredrawreward";
+		arr[323] = L"random-store-item";
+		arr[324] = L"random-store-item-display";
+		arr[325] = L"ranking2-contents";
+		arr[326] = L"ranking2-effect-reward";
+		arr[327] = L"ranking2-reward";
+		arr[328] = L"ranking2-reward-group";
+		arr[329] = L"ranking2-season";
+		arr[330] = L"ranking2-season-group";
+		arr[331] = L"ranking2-season-schedule";
+		arr[332] = L"ranking2-tier";
+		arr[333] = L"rankingpvestage";
+		arr[334] = L"rankingreward";
+		arr[335] = L"rankingrewardgroup";
+		arr[336] = L"recommandjobstyle";
+		arr[337] = L"relic-enhance-cost";
+		arr[338] = L"relic-option";
+		arr[339] = L"relic-set-item";
+		arr[340] = L"relic-symbol";
+		arr[341] = L"relic-synthesis";
+		arr[342] = L"relic-system";
+		arr[343] = L"reward";
+		arr[344] = L"sealed-dungeon-gimmick";
+		arr[345] = L"sealed-dungeon-level";
+		arr[346] = L"sealed-dungeon-modify";
+		arr[347] = L"sealed-dungeon-reward";
+		arr[348] = L"season-ability-goal";
+		arr[349] = L"season-contents";
+		arr[350] = L"secret-treasure";
+		arr[351] = L"set-item";
+		arr[352] = L"simple-field";
+		arr[353] = L"skill3";
+		arr[354] = L"skillacquirecondition";
+		arr[355] = L"skill-arcane-info";
+		arr[356] = L"skillattributerule";
+		arr[357] = L"skillbookcatalogueitem";
+		arr[358] = L"skill-build-up";
+		arr[359] = L"skill-build-up-group";
+		arr[360] = L"skill-build-up-group-list";
+		arr[361] = L"skill-by-equipment";
+		arr[362] = L"skillcastcondition3";
+		arr[363] = L"skill-combo-2";
+		arr[364] = L"skillcontext";
+		arr[365] = L"skilldashattribute3";
+		arr[366] = L"skill";
+		arr[367] = L"skillgatherrange3";
+		arr[368] = L"skill-inheritance";
+		arr[369] = L"skill-message";
+		arr[370] = L"skill-modify-info";
+		arr[371] = L"skill-modify-info-group";
+		arr[372] = L"skillmodifylimit";
+		arr[373] = L"skillresultcontroll3";
+		arr[374] = L"skillshow3";
+		arr[375] = L"skillskin";
+		arr[376] = L"skillskineffect";
+		arr[377] = L"skillstyle";
+		arr[378] = L"skillsystematization";
+		arr[379] = L"skillsystematizationfiltergroup";
+		arr[380] = L"skillsystematizationgroup";
+		arr[381] = L"skilltargetfilter3";
+		arr[382] = L"skilltooltipattribute";
+		arr[383] = L"skilltooltip";
+		arr[384] = L"skill-train-by-item";
+		arr[385] = L"skill-train-by-item-list";
+		arr[386] = L"skill-train-category";
+		arr[387] = L"skill-train-combo-action";
+		arr[388] = L"skill-training-room";
+		arr[389] = L"skill-training-room-group";
+		arr[390] = L"skill-training-room-subject";
+		arr[391] = L"skill-training-sequence";
+		arr[392] = L"skill-train-simple-context-flow";
+		arr[393] = L"skill-trait";
+		arr[394] = L"skipquest";
+		arr[395] = L"skipteleport";
+		arr[396] = L"slatescroll";
+		arr[397] = L"slatescrollstone";
+		arr[398] = L"slatestone";
+		arr[399] = L"smart-drop-reward";
+		arr[400] = L"social";
+		arr[401] = L"soul-boost-event";
+		arr[402] = L"soul-boost-grade-reward";
+		arr[403] = L"soul-boost-mission";
+		arr[404] = L"soul-boost-mission-step";
+		arr[405] = L"soul-boost-mission-task";
+		arr[406] = L"soul-boost-season";
+		arr[407] = L"soulmaskset";
+		arr[408] = L"soul-npc-skill";
+		arr[409] = L"special-skill-gauge";
+		arr[410] = L"stance";
+		arr[411] = L"stancetransit";
+		arr[412] = L"standidle";
+		arr[413] = L"star-words";
+		arr[414] = L"statesocial";
+		arr[415] = L"static-chat-channel";
+		arr[416] = L"store2";
+		arr[417] = L"store-by-item";
+		arr[418] = L"store";
+		arr[419] = L"summoned-appearance";
+		arr[420] = L"summonedbeautyshop";
+		arr[421] = L"summoned";
+		arr[422] = L"summoneddesignerpreset";
+		arr[423] = L"summonedjobstylestandidle";
+		arr[424] = L"summonedlevel";
+		arr[425] = L"summonedmasterylevel";
+		arr[426] = L"summonedmoveanim";
+		arr[427] = L"summonedpreset";
+		arr[428] = L"summoned-sequence";
+		arr[429] = L"summonedstandidle";
+		arr[430] = L"survey";
+		arr[431] = L"surveyquestions";
+		arr[432] = L"talksocial";
+		arr[433] = L"teen-body-material";
+		arr[434] = L"teleport";
+		arr[435] = L"tencent-quest";
+		arr[436] = L"tendency-field";
+		arr[437] = L"terrain";
+		arr[438] = L"text";
+		arr[439] = L"time-limit-field-zone";
+		arr[440] = L"timezoneinfomation";
+		arr[441] = L"trainskillversion";
+		arr[442] = L"treasure-board-page";
+		arr[443] = L"treasure-board-reward";
+		arr[444] = L"treasure-board-season";
+		arr[445] = L"tutorialskillsequence";
+		arr[446] = L"ui-command";
+		arr[447] = L"ui-context-command";
+		arr[448] = L"unlocated-store";
+		arr[449] = L"unlocated-store-ui";
+		arr[450] = L"user-command";
+		arr[451] = L"user-reporting-system";
+		arr[452] = L"vehicle-appearance";
+		arr[453] = L"vehicle";
+		arr[454] = L"virtual-item";
+		arr[455] = L"wantedmission";
+		arr[456] = L"war-field";
+		arr[457] = L"wave-dungeon-reward-box";
+		arr[458] = L"wave-dungeon-reward";
+		arr[459] = L"wave-dungeon-strategy";
+		arr[460] = L"weapon-appearance-change-cost";
+		arr[461] = L"weapon-gem-effect";
+		arr[462] = L"weapongemslot";
+		arr[463] = L"weapon-tempered";
+		arr[464] = L"weeklytimetable";
+		arr[465] = L"world-account-card-collection";
+		arr[466] = L"world-account-card-cumulative";
+		arr[467] = L"world-account-card";
+		arr[468] = L"world-account-combination";
+		arr[469] = L"worldaccountexpedition";
+		arr[470] = L"world-account-museum";
+		arr[471] = L"world-achievement";
+		arr[472] = L"world-achievement-season";
+		arr[473] = L"worldbossreward";
+		arr[474] = L"worldbossspawn";
+		arr[475] = L"worldbossspawngroup";
+		arr[476] = L"world-group";
+		arr[477] = L"zonearea";
+		arr[478] = L"zonebasecamp";
+		arr[479] = L"zonecampfire";
+		arr[480] = L"zonecellattribute";
+		arr[481] = L"zonechannelchange";
+		arr[482] = L"zoneconvoy";
+		arr[483] = L"zone";
+		arr[484] = L"zoneenv2";
+		arr[485] = L"zoneenv2place";
+		arr[486] = L"zoneenv2spawn";
+		arr[487] = L"zoneenv2spawnrandomgroup";
+		arr[488] = L"zoneevent";
+		arr[489] = L"zoneex";
+		arr[490] = L"zonegathersource";
+		arr[491] = L"zonepathway";
+		arr[492] = L"zonepcspawn";
+		arr[493] = L"zonerespawn";
+		arr[494] = L"zonerule";
+		arr[495] = L"zoneteleportposition";
+		arr[496] = L"zoneteleportswitch";
+		arr[497] = L"zonetriggereventcond";
+		arr[498] = L"zonetriggereventstage";
+
+		return arr;
+	}();
+	const std::unordered_map<std::wstring_view, int>& GetTableNameToIdMap() {
+		static const std::unordered_map<std::wstring_view, int> TableNameToIdMap = [] {
+			std::unordered_map<std::wstring_view, int> map;
+			for (std::size_t i = 1; i <= TableCount; ++i) {
+				map[NamesForIds[i]] = static_cast<int>(i);
+			}
+			return map;
+			}();
+		return TableNameToIdMap;
+	}
 	enum class TableNameEnum : __int16 {
 		ability_list = 1,
 		abnormalcamera = 2,
@@ -511,1528 +1539,24 @@ namespace BnsTables::EU {
 	class TableNames {
 		public:
 		static const BnsTables::Shared::TableVersion GetTableVersion(__int16 id) {
-			const std::unordered_map<__int16, BnsTables::Shared::TableVersion> VersionsForIds = {
-				{1, BnsTables::Shared::TableVersion(6, 0)},
-				{2, BnsTables::Shared::TableVersion(0, 3)},
-				{3, BnsTables::Shared::TableVersion(0, 40)},
-				{4, BnsTables::Shared::TableVersion(2, 0)},
-				{5, BnsTables::Shared::TableVersion(0, 1)},
-				{6, BnsTables::Shared::TableVersion(3, 3)},
-				{7, BnsTables::Shared::TableVersion(5, 3)},
-				{8, BnsTables::Shared::TableVersion(0, 1)},
-				{9, BnsTables::Shared::TableVersion(0, 2)},
-				{10, BnsTables::Shared::TableVersion(2, 3)},
-				{11, BnsTables::Shared::TableVersion(0, 6)},
-				{12, BnsTables::Shared::TableVersion(0, 10)},
-				{13, BnsTables::Shared::TableVersion(6, 0)},
-				{14, BnsTables::Shared::TableVersion(1, 0)},
-				{15, BnsTables::Shared::TableVersion(0, 14)},
-				{16, BnsTables::Shared::TableVersion(0, 3)},
-				{17, BnsTables::Shared::TableVersion(0, 3)},
-				{18, BnsTables::Shared::TableVersion(2, 0)},
-				{19, BnsTables::Shared::TableVersion(2, 0)},
-				{20, BnsTables::Shared::TableVersion(0, 4)},
-				{21, BnsTables::Shared::TableVersion(0, 2)},
-				{22, BnsTables::Shared::TableVersion(0, 7)},
-				{23, BnsTables::Shared::TableVersion(0, 2)},
-				{24, BnsTables::Shared::TableVersion(0, 1)},
-				{25, BnsTables::Shared::TableVersion(0, 1)},
-				{26, BnsTables::Shared::TableVersion(0, 5)},
-				{27, BnsTables::Shared::TableVersion(0, 1)},
-				{28, BnsTables::Shared::TableVersion(1, 0)},
-				{29, BnsTables::Shared::TableVersion(2, 1)},
-				{30, BnsTables::Shared::TableVersion(1, 0)},
-				{31, BnsTables::Shared::TableVersion(0, 3)},
-				{32, BnsTables::Shared::TableVersion(0, 21)},
-				{33, BnsTables::Shared::TableVersion(0, 7)},
-				{34, BnsTables::Shared::TableVersion(0, 2)},
-				{35, BnsTables::Shared::TableVersion(0, 7)},
-				{36, BnsTables::Shared::TableVersion(0, 2)},
-				{37, BnsTables::Shared::TableVersion(8, 0)},
-				{38, BnsTables::Shared::TableVersion(1, 0)},
-				{39, BnsTables::Shared::TableVersion(0, 2)},
-				{40, BnsTables::Shared::TableVersion(0, 6)},
-				{41, BnsTables::Shared::TableVersion(0, 1)},
-				{42, BnsTables::Shared::TableVersion(2, 3)},
-				{43, BnsTables::Shared::TableVersion(5, 0)},
-				{44, BnsTables::Shared::TableVersion(0, 10)},
-				{45, BnsTables::Shared::TableVersion(0, 3)},
-				{46, BnsTables::Shared::TableVersion(3, 0)},
-				{47, BnsTables::Shared::TableVersion(0, 8)},
-				{48, BnsTables::Shared::TableVersion(1, 0)},
-				{49, BnsTables::Shared::TableVersion(0, 37)},
-				{50, BnsTables::Shared::TableVersion(0, 4)},
-				{51, BnsTables::Shared::TableVersion(1, 0)},
-				{52, BnsTables::Shared::TableVersion(1, 1)},
-				{53, BnsTables::Shared::TableVersion(0, 14)},
-				{54, BnsTables::Shared::TableVersion(2, 3)},
-				{55, BnsTables::Shared::TableVersion(0, 2)},
-				{56, BnsTables::Shared::TableVersion(1, 2)},
-				{57, BnsTables::Shared::TableVersion(1, 1)},
-				{58, BnsTables::Shared::TableVersion(0, 17)},
-				{59, BnsTables::Shared::TableVersion(0, 2)},
-				{60, BnsTables::Shared::TableVersion(3, 1)},
-				{61, BnsTables::Shared::TableVersion(1, 1)},
-				{62, BnsTables::Shared::TableVersion(1, 0)},
-				{63, BnsTables::Shared::TableVersion(2, 5)},
-				{64, BnsTables::Shared::TableVersion(0, 5)},
-				{65, BnsTables::Shared::TableVersion(2, 2)},
-				{66, BnsTables::Shared::TableVersion(2, 3)},
-				{67, BnsTables::Shared::TableVersion(2, 3)},
-				{68, BnsTables::Shared::TableVersion(2, 0)},
-				{69, BnsTables::Shared::TableVersion(12, 0)},
-				{70, BnsTables::Shared::TableVersion(4, 0)},
-				{71, BnsTables::Shared::TableVersion(0, 5)},
-				{72, BnsTables::Shared::TableVersion(0, 2)},
-				{73, BnsTables::Shared::TableVersion(0, 10)},
-				{74, BnsTables::Shared::TableVersion(0, 3)},
-				{75, BnsTables::Shared::TableVersion(4, 0)},
-				{76, BnsTables::Shared::TableVersion(1, 0)},
-				{77, BnsTables::Shared::TableVersion(1, 2)},
-				{78, BnsTables::Shared::TableVersion(0, 6)},
-				{79, BnsTables::Shared::TableVersion(0, 15)},
-				{80, BnsTables::Shared::TableVersion(1, 0)},
-				{81, BnsTables::Shared::TableVersion(0, 1)},
-				{82, BnsTables::Shared::TableVersion(1, 0)},
-				{83, BnsTables::Shared::TableVersion(0, 5)},
-				{84, BnsTables::Shared::TableVersion(0, 4)},
-				{85, BnsTables::Shared::TableVersion(0, 1)},
-				{86, BnsTables::Shared::TableVersion(0, 12)},
-				{87, BnsTables::Shared::TableVersion(0, 3)},
-				{88, BnsTables::Shared::TableVersion(1, 0)},
-				{89, BnsTables::Shared::TableVersion(0, 3)},
-				{90, BnsTables::Shared::TableVersion(0, 2)},
-				{91, BnsTables::Shared::TableVersion(0, 2)},
-				{92, BnsTables::Shared::TableVersion(0, 7)},
-				{93, BnsTables::Shared::TableVersion(2, 0)},
-				{94, BnsTables::Shared::TableVersion(1, 0)},
-				{95, BnsTables::Shared::TableVersion(0, 2)},
-				{96, BnsTables::Shared::TableVersion(0, 8)},
-				{97, BnsTables::Shared::TableVersion(0, 5)},
-				{98, BnsTables::Shared::TableVersion(0, 1)},
-				{99, BnsTables::Shared::TableVersion(1, 0)},
-				{100, BnsTables::Shared::TableVersion(1, 0)},
-				{101, BnsTables::Shared::TableVersion(0, 3)},
-				{102, BnsTables::Shared::TableVersion(0, 3)},
-				{103, BnsTables::Shared::TableVersion(0, 2)},
-				{104, BnsTables::Shared::TableVersion(0, 10)},
-				{105, BnsTables::Shared::TableVersion(0, 3)},
-				{106, BnsTables::Shared::TableVersion(0, 41)},
-				{107, BnsTables::Shared::TableVersion(0, 7)},
-				{108, BnsTables::Shared::TableVersion(2, 0)},
-				{109, BnsTables::Shared::TableVersion(0, 12)},
-				{110, BnsTables::Shared::TableVersion(0, 4)},
-				{111, BnsTables::Shared::TableVersion(0, 2)},
-				{112, BnsTables::Shared::TableVersion(0, 35)},
-				{113, BnsTables::Shared::TableVersion(0, 3)},
-				{114, BnsTables::Shared::TableVersion(2, 1)},
-				{115, BnsTables::Shared::TableVersion(2, 0)},
-				{116, BnsTables::Shared::TableVersion(2, 0)},
-				{117, BnsTables::Shared::TableVersion(0, 12)},
-				{118, BnsTables::Shared::TableVersion(10, 0)},
-				{119, BnsTables::Shared::TableVersion(46, 2)},
-				{120, BnsTables::Shared::TableVersion(0, 7)},
-				{121, BnsTables::Shared::TableVersion(1, 1)},
-				{122, BnsTables::Shared::TableVersion(0, 5)},
-				{123, BnsTables::Shared::TableVersion(0, 2)},
-				{124, BnsTables::Shared::TableVersion(0, 3)},
-				{125, BnsTables::Shared::TableVersion(1, 0)},
-				{126, BnsTables::Shared::TableVersion(0, 2)},
-				{127, BnsTables::Shared::TableVersion(0, 2)},
-				{128, BnsTables::Shared::TableVersion(1, 1)},
-				{129, BnsTables::Shared::TableVersion(1, 2)},
-				{130, BnsTables::Shared::TableVersion(1, 0)},
-				{131, BnsTables::Shared::TableVersion(0, 5)},
-				{132, BnsTables::Shared::TableVersion(0, 6)},
-				{133, BnsTables::Shared::TableVersion(3, 0)},
-				{134, BnsTables::Shared::TableVersion(0, 3)},
-				{135, BnsTables::Shared::TableVersion(1, 0)},
-				{136, BnsTables::Shared::TableVersion(1, 0)},
-				{137, BnsTables::Shared::TableVersion(0, 1)},
-				{138, BnsTables::Shared::TableVersion(3, 0)},
-				{139, BnsTables::Shared::TableVersion(2, 0)},
-				{140, BnsTables::Shared::TableVersion(0, 20)},
-				{141, BnsTables::Shared::TableVersion(0, 4)},
-				{142, BnsTables::Shared::TableVersion(1, 2)},
-				{143, BnsTables::Shared::TableVersion(5, 0)},
-				{144, BnsTables::Shared::TableVersion(1, 1)},
-				{145, BnsTables::Shared::TableVersion(1, 0)},
-				{146, BnsTables::Shared::TableVersion(0, 6)},
-				{147, BnsTables::Shared::TableVersion(2, 0)},
-				{148, BnsTables::Shared::TableVersion(0, 9)},
-				{149, BnsTables::Shared::TableVersion(0, 5)},
-				{150, BnsTables::Shared::TableVersion(0, 17)},
-				{151, BnsTables::Shared::TableVersion(3, 1)},
-				{152, BnsTables::Shared::TableVersion(0, 17)},
-				{153, BnsTables::Shared::TableVersion(0, 5)},
-				{154, BnsTables::Shared::TableVersion(0, 9)},
-				{155, BnsTables::Shared::TableVersion(0, 1)},
-				{156, BnsTables::Shared::TableVersion(0, 4)},
-				{157, BnsTables::Shared::TableVersion(0, 12)},
-				{158, BnsTables::Shared::TableVersion(0, 1)},
-				{159, BnsTables::Shared::TableVersion(2, 2)},
-				{160, BnsTables::Shared::TableVersion(3, 1)},
-				{161, BnsTables::Shared::TableVersion(1, 0)},
-				{162, BnsTables::Shared::TableVersion(8, 0)},
-				{163, BnsTables::Shared::TableVersion(2, 0)},
-				{164, BnsTables::Shared::TableVersion(7, 0)},
-				{165, BnsTables::Shared::TableVersion(5, 0)},
-				{166, BnsTables::Shared::TableVersion(1, 0)},
-				{167, BnsTables::Shared::TableVersion(1, 0)},
-				{168, BnsTables::Shared::TableVersion(0, 1)},
-				{169, BnsTables::Shared::TableVersion(4, 1)},
-				{170, BnsTables::Shared::TableVersion(1, 0)},
-				{171, BnsTables::Shared::TableVersion(0, 2)},
-				{172, BnsTables::Shared::TableVersion(0, 18)},
-				{173, BnsTables::Shared::TableVersion(0, 4)},
-				{174, BnsTables::Shared::TableVersion(1, 0)},
-				{175, BnsTables::Shared::TableVersion(0, 3)},
-				{176, BnsTables::Shared::TableVersion(0, 2)},
-				{177, BnsTables::Shared::TableVersion(0, 1)},
-				{178, BnsTables::Shared::TableVersion(2, 0)},
-				{179, BnsTables::Shared::TableVersion(1, 11)},
-				{180, BnsTables::Shared::TableVersion(0, 11)},
-				{181, BnsTables::Shared::TableVersion(0, 8)},
-				{182, BnsTables::Shared::TableVersion(0, 4)},
-				{183, BnsTables::Shared::TableVersion(0, 2)},
-				{184, BnsTables::Shared::TableVersion(0, 1)},
-				{185, BnsTables::Shared::TableVersion(0, 2)},
-				{186, BnsTables::Shared::TableVersion(0, 4)},
-				{187, BnsTables::Shared::TableVersion(2, 0)},
-				{188, BnsTables::Shared::TableVersion(1, 0)},
-				{189, BnsTables::Shared::TableVersion(0, 8)},
-				{190, BnsTables::Shared::TableVersion(0, 1)},
-				{191, BnsTables::Shared::TableVersion(0, 30)},
-				{192, BnsTables::Shared::TableVersion(0, 18)},
-				{193, BnsTables::Shared::TableVersion(1, 0)},
-				{194, BnsTables::Shared::TableVersion(1, 0)},
-				{195, BnsTables::Shared::TableVersion(5, 0)},
-				{196, BnsTables::Shared::TableVersion(2, 0)},
-				{197, BnsTables::Shared::TableVersion(0, 10)},
-				{198, BnsTables::Shared::TableVersion(6, 0)},
-				{199, BnsTables::Shared::TableVersion(0, 1)},
-				{200, BnsTables::Shared::TableVersion(3, 0)},
-				{201, BnsTables::Shared::TableVersion(3, 0)},
-				{202, BnsTables::Shared::TableVersion(1, 0)},
-				{203, BnsTables::Shared::TableVersion(68, 0)},
-				{204, BnsTables::Shared::TableVersion(2, 1)},
-				{205, BnsTables::Shared::TableVersion(1, 6)},
-				{206, BnsTables::Shared::TableVersion(0, 3)},
-				{207, BnsTables::Shared::TableVersion(0, 4)},
-				{208, BnsTables::Shared::TableVersion(1, 16)},
-				{209, BnsTables::Shared::TableVersion(0, 1)},
-				{210, BnsTables::Shared::TableVersion(1, 3)},
-				{211, BnsTables::Shared::TableVersion(0, 5)},
-				{212, BnsTables::Shared::TableVersion(8, 0)},
-				{213, BnsTables::Shared::TableVersion(5, 0)},
-				{214, BnsTables::Shared::TableVersion(6, 0)},
-				{215, BnsTables::Shared::TableVersion(6, 0)},
-				{216, BnsTables::Shared::TableVersion(4, 0)},
-				{217, BnsTables::Shared::TableVersion(0, 5)},
-				{218, BnsTables::Shared::TableVersion(0, 3)},
-				{219, BnsTables::Shared::TableVersion(0, 3)},
-				{220, BnsTables::Shared::TableVersion(9, 0)},
-				{221, BnsTables::Shared::TableVersion(1, 0)},
-				{222, BnsTables::Shared::TableVersion(0, 2)},
-				{223, BnsTables::Shared::TableVersion(0, 13)},
-				{224, BnsTables::Shared::TableVersion(0, 2)},
-				{225, BnsTables::Shared::TableVersion(0, 8)},
-				{226, BnsTables::Shared::TableVersion(1, 1)},
-				{227, BnsTables::Shared::TableVersion(6, 1)},
-				{228, BnsTables::Shared::TableVersion(0, 2)},
-				{229, BnsTables::Shared::TableVersion(1, 0)},
-				{230, BnsTables::Shared::TableVersion(0, 1)},
-				{231, BnsTables::Shared::TableVersion(0, 1)},
-				{232, BnsTables::Shared::TableVersion(0, 2)},
-				{233, BnsTables::Shared::TableVersion(0, 5)},
-				{234, BnsTables::Shared::TableVersion(0, 5)},
-				{235, BnsTables::Shared::TableVersion(3, 2)},
-				{236, BnsTables::Shared::TableVersion(2, 3)},
-				{237, BnsTables::Shared::TableVersion(1, 3)},
-				{238, BnsTables::Shared::TableVersion(2, 0)},
-				{239, BnsTables::Shared::TableVersion(1, 0)},
-				{240, BnsTables::Shared::TableVersion(0, 61)},
-				{241, BnsTables::Shared::TableVersion(0, 3)},
-				{242, BnsTables::Shared::TableVersion(0, 4)},
-				{243, BnsTables::Shared::TableVersion(0, 2)},
-				{244, BnsTables::Shared::TableVersion(1, 0)},
-				{245, BnsTables::Shared::TableVersion(0, 7)},
-				{246, BnsTables::Shared::TableVersion(0, 1)},
-				{247, BnsTables::Shared::TableVersion(1, 0)},
-				{248, BnsTables::Shared::TableVersion(0, 13)},
-				{249, BnsTables::Shared::TableVersion(1, 4)},
-				{250, BnsTables::Shared::TableVersion(4, 0)},
-				{251, BnsTables::Shared::TableVersion(2, 0)},
-				{252, BnsTables::Shared::TableVersion(0, 2)},
-				{253, BnsTables::Shared::TableVersion(0, 9)},
-				{254, BnsTables::Shared::TableVersion(0, 11)},
-				{255, BnsTables::Shared::TableVersion(0, 2)},
-				{256, BnsTables::Shared::TableVersion(0, 7)},
-				{257, BnsTables::Shared::TableVersion(0, 1)},
-				{258, BnsTables::Shared::TableVersion(0, 1)},
-				{259, BnsTables::Shared::TableVersion(1, 5)},
-				{260, BnsTables::Shared::TableVersion(0, 8)},
-				{261, BnsTables::Shared::TableVersion(1, 83)},
-				{262, BnsTables::Shared::TableVersion(0, 3)},
-				{263, BnsTables::Shared::TableVersion(1, 2)},
-				{264, BnsTables::Shared::TableVersion(0, 2)},
-				{265, BnsTables::Shared::TableVersion(2, 0)},
-				{266, BnsTables::Shared::TableVersion(1, 0)},
-				{267, BnsTables::Shared::TableVersion(1, 0)},
-				{268, BnsTables::Shared::TableVersion(0, 1)},
-				{269, BnsTables::Shared::TableVersion(2, 0)},
-				{270, BnsTables::Shared::TableVersion(0, 5)},
-				{271, BnsTables::Shared::TableVersion(0, 5)},
-				{272, BnsTables::Shared::TableVersion(8, 0)},
-				{273, BnsTables::Shared::TableVersion(0, 3)},
-				{274, BnsTables::Shared::TableVersion(0, 1)},
-				{275, BnsTables::Shared::TableVersion(0, 4)},
-				{276, BnsTables::Shared::TableVersion(0, 3)},
-				{277, BnsTables::Shared::TableVersion(1, 0)},
-				{278, BnsTables::Shared::TableVersion(0, 1)},
-				{279, BnsTables::Shared::TableVersion(9, 1)},
-				{280, BnsTables::Shared::TableVersion(0, 1)},
-				{281, BnsTables::Shared::TableVersion(0, 3)},
-				{282, BnsTables::Shared::TableVersion(0, 5)},
-				{283, BnsTables::Shared::TableVersion(2, 0)},
-				{284, BnsTables::Shared::TableVersion(0, 61)},
-				{285, BnsTables::Shared::TableVersion(3, 0)},
-				{286, BnsTables::Shared::TableVersion(1, 22)},
-				{287, BnsTables::Shared::TableVersion(1, 1)},
-				{288, BnsTables::Shared::TableVersion(0, 6)},
-				{289, BnsTables::Shared::TableVersion(0, 3)},
-				{290, BnsTables::Shared::TableVersion(0, 7)},
-				{291, BnsTables::Shared::TableVersion(1, 0)},
-				{292, BnsTables::Shared::TableVersion(0, 5)},
-				{293, BnsTables::Shared::TableVersion(6, 0)},
-				{294, BnsTables::Shared::TableVersion(0, 1)},
-				{295, BnsTables::Shared::TableVersion(3, 0)},
-				{296, BnsTables::Shared::TableVersion(0, 3)},
-				{297, BnsTables::Shared::TableVersion(0, 4)},
-				{298, BnsTables::Shared::TableVersion(0, 3)},
-				{299, BnsTables::Shared::TableVersion(0, 5)},
-				{300, BnsTables::Shared::TableVersion(0, 9)},
-				{301, BnsTables::Shared::TableVersion(1, 0)},
-				{302, BnsTables::Shared::TableVersion(0, 4)},
-				{303, BnsTables::Shared::TableVersion(1, 19)},
-				{304, BnsTables::Shared::TableVersion(0, 7)},
-				{305, BnsTables::Shared::TableVersion(5, 4)},
-				{306, BnsTables::Shared::TableVersion(0, 3)},
-				{307, BnsTables::Shared::TableVersion(0, 1)},
-				{308, BnsTables::Shared::TableVersion(3, 0)},
-				{309, BnsTables::Shared::TableVersion(12, 0)},
-				{310, BnsTables::Shared::TableVersion(6, 1)},
-				{311, BnsTables::Shared::TableVersion(0, 3)},
-				{312, BnsTables::Shared::TableVersion(1, 0)},
-				{313, BnsTables::Shared::TableVersion(1, 0)},
-				{314, BnsTables::Shared::TableVersion(1, 1)},
-				{315, BnsTables::Shared::TableVersion(0, 9)},
-				{316, BnsTables::Shared::TableVersion(2, 0)},
-				{317, BnsTables::Shared::TableVersion(3, 0)},
-				{318, BnsTables::Shared::TableVersion(6, 12)},
-				{319, BnsTables::Shared::TableVersion(0, 5)},
-				{320, BnsTables::Shared::TableVersion(0, 4)},
-				{321, BnsTables::Shared::TableVersion(0, 8)},
-				{322, BnsTables::Shared::TableVersion(0, 2)},
-				{323, BnsTables::Shared::TableVersion(0, 2)},
-				{324, BnsTables::Shared::TableVersion(0, 3)},
-				{325, BnsTables::Shared::TableVersion(11, 0)},
-				{326, BnsTables::Shared::TableVersion(1, 0)},
-				{327, BnsTables::Shared::TableVersion(4, 0)},
-				{328, BnsTables::Shared::TableVersion(3, 0)},
-				{329, BnsTables::Shared::TableVersion(9, 3)},
-				{330, BnsTables::Shared::TableVersion(5, 0)},
-				{331, BnsTables::Shared::TableVersion(6, 0)},
-				{332, BnsTables::Shared::TableVersion(2, 5)},
-				{333, BnsTables::Shared::TableVersion(1, 1)},
-				{334, BnsTables::Shared::TableVersion(0, 5)},
-				{335, BnsTables::Shared::TableVersion(0, 6)},
-				{336, BnsTables::Shared::TableVersion(1, 0)},
-				{337, BnsTables::Shared::TableVersion(1, 0)},
-				{338, BnsTables::Shared::TableVersion(5, 0)},
-				{339, BnsTables::Shared::TableVersion(4, 0)},
-				{340, BnsTables::Shared::TableVersion(0, 5)},
-				{341, BnsTables::Shared::TableVersion(1, 0)},
-				{342, BnsTables::Shared::TableVersion(2, 0)},
-				{343, BnsTables::Shared::TableVersion(3, 0)},
-				{344, BnsTables::Shared::TableVersion(1, 1)},
-				{345, BnsTables::Shared::TableVersion(1, 1)},
-				{346, BnsTables::Shared::TableVersion(6, 4)},
-				{347, BnsTables::Shared::TableVersion(1, 2)},
-				{348, BnsTables::Shared::TableVersion(0, 6)},
-				{349, BnsTables::Shared::TableVersion(0, 13)},
-				{350, BnsTables::Shared::TableVersion(0, 1)},
-				{351, BnsTables::Shared::TableVersion(1, 19)},
-				{352, BnsTables::Shared::TableVersion(0, 61)},
-				{353, BnsTables::Shared::TableVersion(11, 0)},
-				{354, BnsTables::Shared::TableVersion(0, 2)},
-				{355, BnsTables::Shared::TableVersion(5, 1)},
-				{356, BnsTables::Shared::TableVersion(0, 7)},
-				{357, BnsTables::Shared::TableVersion(5, 0)},
-				{358, BnsTables::Shared::TableVersion(2, 0)},
-				{359, BnsTables::Shared::TableVersion(3, 1)},
-				{360, BnsTables::Shared::TableVersion(4, 0)},
-				{361, BnsTables::Shared::TableVersion(0, 10)},
-				{362, BnsTables::Shared::TableVersion(7, 0)},
-				{363, BnsTables::Shared::TableVersion(0, 5)},
-				{364, BnsTables::Shared::TableVersion(1, 13)},
-				{365, BnsTables::Shared::TableVersion(0, 3)},
-				{366, BnsTables::Shared::TableVersion(5, 1)},
-				{367, BnsTables::Shared::TableVersion(0, 17)},
-				{368, BnsTables::Shared::TableVersion(0, 4)},
-				{369, BnsTables::Shared::TableVersion(0, 1)},
-				{370, BnsTables::Shared::TableVersion(0, 3)},
-				{371, BnsTables::Shared::TableVersion(0, 4)},
-				{372, BnsTables::Shared::TableVersion(0, 4)},
-				{373, BnsTables::Shared::TableVersion(0, 8)},
-				{374, BnsTables::Shared::TableVersion(2, 10)},
-				{375, BnsTables::Shared::TableVersion(1, 1)},
-				{376, BnsTables::Shared::TableVersion(1, 1)},
-				{377, BnsTables::Shared::TableVersion(0, 2)},
-				{378, BnsTables::Shared::TableVersion(0, 7)},
-				{379, BnsTables::Shared::TableVersion(0, 1)},
-				{380, BnsTables::Shared::TableVersion(0, 3)},
-				{381, BnsTables::Shared::TableVersion(0, 3)},
-				{382, BnsTables::Shared::TableVersion(0, 10)},
-				{383, BnsTables::Shared::TableVersion(0, 15)},
-				{384, BnsTables::Shared::TableVersion(7, 0)},
-				{385, BnsTables::Shared::TableVersion(2, 2)},
-				{386, BnsTables::Shared::TableVersion(1, 0)},
-				{387, BnsTables::Shared::TableVersion(0, 2)},
-				{388, BnsTables::Shared::TableVersion(0, 9)},
-				{389, BnsTables::Shared::TableVersion(0, 12)},
-				{390, BnsTables::Shared::TableVersion(0, 11)},
-				{391, BnsTables::Shared::TableVersion(0, 5)},
-				{392, BnsTables::Shared::TableVersion(0, 6)},
-				{393, BnsTables::Shared::TableVersion(0, 11)},
-				{394, BnsTables::Shared::TableVersion(1, 0)},
-				{395, BnsTables::Shared::TableVersion(1, 0)},
-				{396, BnsTables::Shared::TableVersion(0, 4)},
-				{397, BnsTables::Shared::TableVersion(0, 1)},
-				{398, BnsTables::Shared::TableVersion(2, 0)},
-				{399, BnsTables::Shared::TableVersion(3, 1)},
-				{400, BnsTables::Shared::TableVersion(0, 25)},
-				{401, BnsTables::Shared::TableVersion(8, 1)},
-				{402, BnsTables::Shared::TableVersion(2, 0)},
-				{403, BnsTables::Shared::TableVersion(6, 0)},
-				{404, BnsTables::Shared::TableVersion(8, 1)},
-				{405, BnsTables::Shared::TableVersion(8, 0)},
-				{406, BnsTables::Shared::TableVersion(6, 1)},
-				{407, BnsTables::Shared::TableVersion(0, 7)},
-				{408, BnsTables::Shared::TableVersion(0, 4)},
-				{409, BnsTables::Shared::TableVersion(0, 1)},
-				{410, BnsTables::Shared::TableVersion(0, 295)},
-				{411, BnsTables::Shared::TableVersion(0, 1)},
-				{412, BnsTables::Shared::TableVersion(0, 10)},
-				{413, BnsTables::Shared::TableVersion(4, 4)},
-				{414, BnsTables::Shared::TableVersion(0, 1)},
-				{415, BnsTables::Shared::TableVersion(1, 1)},
-				{416, BnsTables::Shared::TableVersion(2, 0)},
-				{417, BnsTables::Shared::TableVersion(0, 4)},
-				{418, BnsTables::Shared::TableVersion(0, 8)},
-				{419, BnsTables::Shared::TableVersion(0, 8)},
-				{420, BnsTables::Shared::TableVersion(0, 1)},
-				{421, BnsTables::Shared::TableVersion(0, 6)},
-				{422, BnsTables::Shared::TableVersion(0, 3)},
-				{423, BnsTables::Shared::TableVersion(0, 1)},
-				{424, BnsTables::Shared::TableVersion(2, 0)},
-				{425, BnsTables::Shared::TableVersion(1, 0)},
-				{426, BnsTables::Shared::TableVersion(0, 1)},
-				{427, BnsTables::Shared::TableVersion(0, 4)},
-				{428, BnsTables::Shared::TableVersion(0, 5)},
-				{429, BnsTables::Shared::TableVersion(0, 3)},
-				{430, BnsTables::Shared::TableVersion(0, 6)},
-				{431, BnsTables::Shared::TableVersion(0, 1)},
-				{432, BnsTables::Shared::TableVersion(2, 1)},
-				{433, BnsTables::Shared::TableVersion(0, 3)},
-				{434, BnsTables::Shared::TableVersion(1, 2)},
-				{435, BnsTables::Shared::TableVersion(0, 2)},
-				{436, BnsTables::Shared::TableVersion(0, 22)},
-				{437, BnsTables::Shared::TableVersion(0, 11)},
-				{438, BnsTables::Shared::TableVersion(0, 6)},
-				{439, BnsTables::Shared::TableVersion(1, 4)},
-				{440, BnsTables::Shared::TableVersion(0, 1)},
-				{441, BnsTables::Shared::TableVersion(0, 1)},
-				{442, BnsTables::Shared::TableVersion(1, 1)},
-				{443, BnsTables::Shared::TableVersion(0, 3)},
-				{444, BnsTables::Shared::TableVersion(0, 2)},
-				{445, BnsTables::Shared::TableVersion(0, 7)},
-				{446, BnsTables::Shared::TableVersion(0, 62)},
-				{447, BnsTables::Shared::TableVersion(0, 46)},
-				{448, BnsTables::Shared::TableVersion(2, 0)},
-				{449, BnsTables::Shared::TableVersion(0, 1)},
-				{450, BnsTables::Shared::TableVersion(0, 41)},
-				{451, BnsTables::Shared::TableVersion(1, 1)},
-				{452, BnsTables::Shared::TableVersion(0, 8)},
-				{453, BnsTables::Shared::TableVersion(4, 0)},
-				{454, BnsTables::Shared::TableVersion(0, 3)},
-				{455, BnsTables::Shared::TableVersion(1, 4)},
-				{456, BnsTables::Shared::TableVersion(0, 3)},
-				{457, BnsTables::Shared::TableVersion(1, 0)},
-				{458, BnsTables::Shared::TableVersion(2, 0)},
-				{459, BnsTables::Shared::TableVersion(2, 1)},
-				{460, BnsTables::Shared::TableVersion(0, 3)},
-				{461, BnsTables::Shared::TableVersion(0, 2)},
-				{462, BnsTables::Shared::TableVersion(0, 2)},
-				{463, BnsTables::Shared::TableVersion(1, 0)},
-				{464, BnsTables::Shared::TableVersion(1, 0)},
-				{465, BnsTables::Shared::TableVersion(4, 1)},
-				{466, BnsTables::Shared::TableVersion(2, 1)},
-				{467, BnsTables::Shared::TableVersion(0, 6)},
-				{468, BnsTables::Shared::TableVersion(3, 0)},
-				{469, BnsTables::Shared::TableVersion(5, 1)},
-				{470, BnsTables::Shared::TableVersion(2, 1)},
-				{471, BnsTables::Shared::TableVersion(1, 0)},
-				{472, BnsTables::Shared::TableVersion(1, 1)},
-				{473, BnsTables::Shared::TableVersion(4, 0)},
-				{474, BnsTables::Shared::TableVersion(3, 4)},
-				{475, BnsTables::Shared::TableVersion(1, 0)},
-				{476, BnsTables::Shared::TableVersion(2, 0)},
-				{477, BnsTables::Shared::TableVersion(0, 56)},
-				{478, BnsTables::Shared::TableVersion(0, 5)},
-				{479, BnsTables::Shared::TableVersion(0, 3)},
-				{480, BnsTables::Shared::TableVersion(0, 3)},
-				{481, BnsTables::Shared::TableVersion(1, 0)},
-				{482, BnsTables::Shared::TableVersion(0, 6)},
-				{483, BnsTables::Shared::TableVersion(9, 1)},
-				{484, BnsTables::Shared::TableVersion(5, 0)},
-				{485, BnsTables::Shared::TableVersion(1, 0)},
-				{486, BnsTables::Shared::TableVersion(0, 9)},
-				{487, BnsTables::Shared::TableVersion(0, 2)},
-				{488, BnsTables::Shared::TableVersion(0, 5)},
-				{489, BnsTables::Shared::TableVersion(0, 4)},
-				{490, BnsTables::Shared::TableVersion(0, 5)},
-				{491, BnsTables::Shared::TableVersion(1, 52)},
-				{492, BnsTables::Shared::TableVersion(0, 49)},
-				{493, BnsTables::Shared::TableVersion(0, 46)},
-				{494, BnsTables::Shared::TableVersion(11, 1)},
-				{495, BnsTables::Shared::TableVersion(0, 2)},
-				{496, BnsTables::Shared::TableVersion(0, 6)},
-				{497, BnsTables::Shared::TableVersion(3, 1)},
-				{498, BnsTables::Shared::TableVersion(2, 1)},
-
-			};
-			auto it = VersionsForIds.find(id);
-			if (it != VersionsForIds.end()) {
-				return it->second;
+			if (id > 0 && id <= TableCount) {
+				return VersionsForIds[id];
 			}
 			return BnsTables::Shared::TableVersion();
 		}
 		static const std::wstring GetTableName(__int16 id) {
-			static const std::unordered_map<__int16, std::wstring>* NamesForIds = new std::unordered_map<__int16, std::wstring>({
-				{1, L"ability-list"},
-				{2, L"abnormalcamera"},
-				{3, L"abnormalmoveanim"},
-				{4, L"account-level"},
-				{5, L"account-post-charge"},
-				{6, L"achievement"},
-				{7, L"achievement-register"},
-				{8, L"acquire-route"},
-				{9, L"acquire-route-list"},
-				{10, L"alarm-message-time-table"},
-				{11, L"appearance-item"},
-				{12, L"arenamatchingrule"},
-				{13, L"arenaportal"},
-				{14, L"attachment"},
-				{15, L"attendance"},
-				{16, L"attraction-group"},
-				{17, L"attraction-reward"},
-				{18, L"attractionrewardsummary"},
-				{19, L"attraction-shortcut"},
-				{20, L"auto-combat-customized-skill-cast-condition"},
-				{21, L"auto-combat-customized-skill"},
-				{22, L"auto-combat-skill-cast-condition"},
-				{23, L"auto-combat-skill"},
-				{24, L"automodereturnteleport"},
-				{25, L"autotargetparameter"},
-				{26, L"badge-appearance"},
-				{27, L"badge-set-item"},
-				{28, L"badge-synthesis-cost"},
-				{29, L"badgesynthesisrecipe"},
-				{30, L"battle-field-grade"},
-				{31, L"battlemessage"},
-				{32, L"battle-royal-field"},
-				{33, L"battle-royal-field-effect-pouch"},
-				{34, L"battleroyalfieldeffectpouchmesh"},
-				{35, L"battle-royal-field-event"},
-				{36, L"battle-royal-field-item-spawn-position"},
-				{37, L"benefit-ability"},
-				{38, L"benefit-ability-set"},
-				{39, L"benefit-reward-set"},
-				{40, L"board-gacha"},
-				{41, L"board-gacha-reward"},
-				{42, L"boast"},
-				{43, L"boast-event"},
-				{44, L"boss-challenge"},
-				{45, L"boss-challenge-round"},
-				{46, L"bossnpc"},
-				{47, L"campfire"},
-				{48, L"card-collection-page"},
-				{49, L"cave2"},
-				{50, L"cave"},
-				{51, L"challengelist"},
-				{52, L"challengelistreward"},
-				{53, L"challenge-party"},
-				{54, L"character-membership"},
-				{55, L"chat-channel-option"},
-				{56, L"cinema-result"},
-				{57, L"cinematic"},
-				{58, L"classic-field-zone"},
-				{59, L"closet-collecting-grade"},
-				{60, L"closet-group"},
-				{61, L"collecting"},
-				{62, L"combat-power-compliment"},
-				{63, L"combat-power"},
-				{64, L"commonanim"},
-				{65, L"condition-event"},
-				{66, L"constellation"},
-				{67, L"constellation-star"},
-				{68, L"constellation-star-option"},
-				{69, L"content-quota"},
-				{70, L"contentrestriction"},
-				{71, L"contents-guide"},
-				{72, L"contentsjournal2noti"},
-				{73, L"contentsjournal"},
-				{74, L"contentsjournalrecommenditem"},
-				{75, L"contents-reset"},
-				{76, L"contents-schedule"},
-				{77, L"context-macro"},
-				{78, L"contextscript"},
-				{79, L"contributionreward"},
-				{80, L"cost-group"},
-				{81, L"craft2"},
-				{82, L"craft-case-recipe"},
-				{83, L"craft"},
-				{84, L"craft-group-recipe"},
-				{85, L"craft-introduction"},
-				{86, L"craft-recipe"},
-				{87, L"craft-recipe-step"},
-				{88, L"creatureappearance"},
-				{89, L"custom-dress-design-cost"},
-				{90, L"custom-dress-design-type-info"},
-				{91, L"customdressmotion"},
-				{92, L"customizingdesignerpreset"},
-				{93, L"customizingdetailicon"},
-				{94, L"customizingdetailslider"},
-				{95, L"customizingignoreparam"},
-				{96, L"customizingpreset"},
-				{97, L"customizingpreview"},
-				{98, L"customizinguimatchparam"},
-				{99, L"data-publisher-version"},
-				{100, L"default-rating-score-group"},
-				{101, L"dieanim"},
-				{102, L"difficulty-type"},
-				{103, L"difficulty-type-modify"},
-				{104, L"discovery-area"},
-				{105, L"district"},
-				{106, L"duel-bot-challenge"},
-				{107, L"duel-bot-challenge-strategic-tool"},
-				{108, L"duel-bot"},
-				{109, L"duel-bot-training-room"},
-				{110, L"duel-bot-training-room-reward"},
-				{111, L"duel-bot-training-room-version"},
-				{112, L"duel"},
-				{113, L"duel-grade"},
-				{114, L"duel-npc-challenge"},
-				{115, L"duel-npc-challenge-group"},
-				{116, L"duel-npc-challenge-strategic-skill"},
-				{117, L"duel-observer-skill-slot"},
-				{118, L"dungeon"},
-				{119, L"effect"},
-				{120, L"effect-group"},
-				{121, L"effect-list"},
-				{122, L"emoticon"},
-				{123, L"energy-point"},
-				{124, L"energy-point-reward"},
-				{125, L"env-entrance"},
-				{126, L"envresponse"},
-				{127, L"equip-gem-piece"},
-				{128, L"equip-item-group"},
-				{129, L"equip-item-guide"},
-				{130, L"equip-item-guide-item-list"},
-				{131, L"event-contents"},
-				{132, L"event-skill"},
-				{133, L"expand-inventory"},
-				{134, L"expand-random-store"},
-				{135, L"expand-relic-inventory"},
-				{136, L"expand-relic-page"},
-				{137, L"expand-skill-page"},
-				{138, L"extract-skill-train-by-item"},
-				{139, L"faction-battle-field-zone"},
-				{140, L"faction"},
-				{141, L"faction-level"},
-				{142, L"feedback-boss-npc"},
-				{143, L"feedback"},
-				{144, L"feedback-rank"},
-				{145, L"feedback-skill-score"},
-				{146, L"fieldbossspawn"},
-				{147, L"fielditem"},
-				{148, L"fielditemdrop"},
-				{149, L"field-item-move-anim"},
-				{150, L"field-zone"},
-				{151, L"filter"},
-				{152, L"fish"},
-				{153, L"fishgrade"},
-				{154, L"fishing-field"},
-				{155, L"fishing-field-group"},
-				{156, L"fishing-paste"},
-				{157, L"fishing-show"},
-				{158, L"flying-circus-game"},
-				{159, L"game-menu-control"},
-				{160, L"game-message"},
-				{161, L"gathersource"},
-				{162, L"glyph"},
-				{163, L"glyph-page"},
-				{164, L"glyph-reward"},
-				{165, L"glyph-slot"},
-				{166, L"gm-spawn-npc"},
-				{167, L"goldenticket"},
-				{168, L"goodsicon"},
-				{169, L"gradebenefits"},
-				{170, L"guide-movie"},
-				{171, L"guild-bank-item"},
-				{172, L"guild-battle-field-zone"},
-				{173, L"guildbenefit"},
-				{174, L"guild-combat"},
-				{175, L"guild-craft-recipe"},
-				{176, L"guildcustomizepreset"},
-				{177, L"guildcustomizeuimatchparam"},
-				{178, L"guild-discount"},
-				{179, L"guildlevel"},
-				{180, L"guild-member-grade-authority"},
-				{181, L"guilduniformcomponent"},
-				{182, L"guilduniformparamtypecategory"},
-				{183, L"guilduniformpreset"},
-				{184, L"guilduniformrecipe"},
-				{185, L"guilduniformregistrationquota"},
-				{186, L"guilduniformslider"},
-				{187, L"hyper-racing-game"},
-				{188, L"hyper-racing-game-reward"},
-				{189, L"icontexture"},
-				{190, L"indicator-idle"},
-				{191, L"indicator-image"},
-				{192, L"indicator-social"},
-				{193, L"ingame-shop-item"},
-				{194, L"ingame-shop-tab"},
-				{195, L"interdungeonlist"},
-				{196, L"item-brand"},
-				{197, L"item-brand-tooltip"},
-				{198, L"item-buy-price"},
-				{199, L"itemcategory"},
-				{200, L"item-combat"},
-				{201, L"item-combination"},
-				{202, L"item-combination-mileage"},
-				{203, L"item"},
-				{204, L"item-event"},
-				{205, L"itemexchange"},
-				{206, L"item-fusion"},
-				{207, L"itemgearscore"},
-				{208, L"item-graph"},
-				{209, L"item-graph-seed-group"},
-				{210, L"item-group"},
-				{211, L"itemgrowth"},
-				{212, L"item-improve"},
-				{213, L"item-improve-option"},
-				{214, L"item-improve-option-list"},
-				{215, L"item-improve-set-bonus"},
-				{216, L"item-improve-succession"},
-				{217, L"itempouchmesh2"},
-				{218, L"item-random-ability-section"},
-				{219, L"item-random-ability-slot"},
-				{220, L"item-random-option-group"},
-				{221, L"itemrewardskill3"},
-				{222, L"itemrewardskillacquireroute"},
-				{223, L"itemskill"},
-				{224, L"itemsound"},
-				{225, L"itemspirit"},
-				{226, L"item-stage-number"},
-				{227, L"itemtransformrecipe"},
-				{228, L"itemtransformrecipemileage"},
-				{229, L"item-transform-recipe-world-limit"},
-				{230, L"item-transform-retry-cost"},
-				{231, L"itemtransformupgradeitem"},
-				{232, L"item-usable-group"},
-				{233, L"itemusablerelation"},
-				{234, L"jackpot-boss-zone"},
-				{235, L"job-change"},
-				{236, L"job-change-item-exchange-group"},
-				{237, L"job-change-item-exchange-type"},
-				{238, L"job-change-quest"},
-				{239, L"job-change-quota"},
-				{240, L"job"},
-				{241, L"jobskillset"},
-				{242, L"jobspecialization"},
-				{243, L"job-style"},
-				{244, L"job-style-specialization"},
-				{245, L"jobstylestandidle"},
-				{246, L"jumpingcharacter2"},
-				{247, L"jumpingcharacter"},
-				{248, L"key-cap"},
-				{249, L"key-command"},
-				{250, L"level"},
-				{251, L"levelupreward"},
-				{252, L"linkmoveanim"},
-				{253, L"loadingimage"},
-				{254, L"lobby-pc"},
-				{255, L"map-area"},
-				{256, L"map-group-1"},
-				{257, L"map-group-1-guide"},
-				{258, L"map-group-2"},
-				{259, L"mapinfo"},
-				{260, L"mapoverlay"},
-				{261, L"mapunit"},
-				{262, L"market-category-2-group"},
-				{263, L"market-category-3-group"},
-				{264, L"market-register-amount-tax-rate"},
-				{265, L"market-sale-income-tax-rate"},
-				{266, L"market-targeted-sale-income-tax"},
-				{267, L"mastery-ability"},
-				{268, L"mastery-grade"},
-				{269, L"mastery-level"},
-				{270, L"mastery-stat-point"},
-				{271, L"mastery-stat-point-pick"},
-				{272, L"membership-benefit"},
-				{273, L"mentoring"},
-				{274, L"mileageplan"},
-				{275, L"moveanim"},
-				{276, L"moveanimtransit"},
-				{277, L"newbie-care"},
-				{278, L"npccombatmoveanim"},
-				{279, L"npc"},
-				{280, L"npcindicatormoveanim"},
-				{281, L"npcmoveanim"},
-				{282, L"npcresponse"},
-				{283, L"npc-sealed-dungeon-reward"},
-				{284, L"npctalkmessage"},
-				{285, L"override-contents-rule-config"},
-				{286, L"party-battle-field-zone"},
-				{287, L"partychatchannel"},
-				{288, L"partymatch"},
-				{289, L"passive-effect-move-anim"},
-				{290, L"pc-appearance"},
-				{291, L"pccafebenefits"},
-				{292, L"pc-cam-dist"},
-				{293, L"pc"},
-				{294, L"pc-hidden-character"},
-				{295, L"pcinitialsetting"},
-				{296, L"pc-race-sex-job"},
-				{297, L"pcskill3"},
-				{298, L"pc-voice"},
-				{299, L"pc-voice-set"},
-				{300, L"pet"},
-				{301, L"pet-food-recovery"},
-				{302, L"petition-faq-list"},
-				{303, L"phantomsword3"},
-				{304, L"posetransit"},
-				{305, L"public-raid"},
-				{306, L"public-raid-event"},
-				{307, L"questbonusreward"},
-				{308, L"questbonusrewardsetting"},
-				{309, L"quest"},
-				{310, L"questreward"},
-				{311, L"questrewardskill3"},
-				{312, L"quest-sealed-dungeon-reward"},
-				{313, L"questwarp"},
-				{314, L"race2-attributes-info"},
-				{315, L"race"},
-				{316, L"racoon-store"},
-				{317, L"racoon-store-item"},
-				{318, L"raid-dungeon"},
-				{319, L"randombox-preview"},
-				{320, L"random-distribution"},
-				{321, L"randomstore"},
-				{322, L"randomstoredrawreward"},
-				{323, L"random-store-item"},
-				{324, L"random-store-item-display"},
-				{325, L"ranking2-contents"},
-				{326, L"ranking2-effect-reward"},
-				{327, L"ranking2-reward"},
-				{328, L"ranking2-reward-group"},
-				{329, L"ranking2-season"},
-				{330, L"ranking2-season-group"},
-				{331, L"ranking2-season-schedule"},
-				{332, L"ranking2-tier"},
-				{333, L"rankingpvestage"},
-				{334, L"rankingreward"},
-				{335, L"rankingrewardgroup"},
-				{336, L"recommandjobstyle"},
-				{337, L"relic-enhance-cost"},
-				{338, L"relic-option"},
-				{339, L"relic-set-item"},
-				{340, L"relic-symbol"},
-				{341, L"relic-synthesis"},
-				{342, L"relic-system"},
-				{343, L"reward"},
-				{344, L"sealed-dungeon-gimmick"},
-				{345, L"sealed-dungeon-level"},
-				{346, L"sealed-dungeon-modify"},
-				{347, L"sealed-dungeon-reward"},
-				{348, L"season-ability-goal"},
-				{349, L"season-contents"},
-				{350, L"secret-treasure"},
-				{351, L"set-item"},
-				{352, L"simple-field"},
-				{353, L"skill3"},
-				{354, L"skillacquirecondition"},
-				{355, L"skill-arcane-info"},
-				{356, L"skillattributerule"},
-				{357, L"skillbookcatalogueitem"},
-				{358, L"skill-build-up"},
-				{359, L"skill-build-up-group"},
-				{360, L"skill-build-up-group-list"},
-				{361, L"skill-by-equipment"},
-				{362, L"skillcastcondition3"},
-				{363, L"skill-combo-2"},
-				{364, L"skillcontext"},
-				{365, L"skilldashattribute3"},
-				{366, L"skill"},
-				{367, L"skillgatherrange3"},
-				{368, L"skill-inheritance"},
-				{369, L"skill-message"},
-				{370, L"skill-modify-info"},
-				{371, L"skill-modify-info-group"},
-				{372, L"skillmodifylimit"},
-				{373, L"skillresultcontroll3"},
-				{374, L"skillshow3"},
-				{375, L"skillskin"},
-				{376, L"skillskineffect"},
-				{377, L"skillstyle"},
-				{378, L"skillsystematization"},
-				{379, L"skillsystematizationfiltergroup"},
-				{380, L"skillsystematizationgroup"},
-				{381, L"skilltargetfilter3"},
-				{382, L"skilltooltipattribute"},
-				{383, L"skilltooltip"},
-				{384, L"skill-train-by-item"},
-				{385, L"skill-train-by-item-list"},
-				{386, L"skill-train-category"},
-				{387, L"skill-train-combo-action"},
-				{388, L"skill-training-room"},
-				{389, L"skill-training-room-group"},
-				{390, L"skill-training-room-subject"},
-				{391, L"skill-training-sequence"},
-				{392, L"skill-train-simple-context-flow"},
-				{393, L"skill-trait"},
-				{394, L"skipquest"},
-				{395, L"skipteleport"},
-				{396, L"slatescroll"},
-				{397, L"slatescrollstone"},
-				{398, L"slatestone"},
-				{399, L"smart-drop-reward"},
-				{400, L"social"},
-				{401, L"soul-boost-event"},
-				{402, L"soul-boost-grade-reward"},
-				{403, L"soul-boost-mission"},
-				{404, L"soul-boost-mission-step"},
-				{405, L"soul-boost-mission-task"},
-				{406, L"soul-boost-season"},
-				{407, L"soulmaskset"},
-				{408, L"soul-npc-skill"},
-				{409, L"special-skill-gauge"},
-				{410, L"stance"},
-				{411, L"stancetransit"},
-				{412, L"standidle"},
-				{413, L"star-words"},
-				{414, L"statesocial"},
-				{415, L"static-chat-channel"},
-				{416, L"store2"},
-				{417, L"store-by-item"},
-				{418, L"store"},
-				{419, L"summoned-appearance"},
-				{420, L"summonedbeautyshop"},
-				{421, L"summoned"},
-				{422, L"summoneddesignerpreset"},
-				{423, L"summonedjobstylestandidle"},
-				{424, L"summonedlevel"},
-				{425, L"summonedmasterylevel"},
-				{426, L"summonedmoveanim"},
-				{427, L"summonedpreset"},
-				{428, L"summoned-sequence"},
-				{429, L"summonedstandidle"},
-				{430, L"survey"},
-				{431, L"surveyquestions"},
-				{432, L"talksocial"},
-				{433, L"teen-body-material"},
-				{434, L"teleport"},
-				{435, L"tencent-quest"},
-				{436, L"tendency-field"},
-				{437, L"terrain"},
-				{438, L"text"},
-				{439, L"time-limit-field-zone"},
-				{440, L"timezoneinfomation"},
-				{441, L"trainskillversion"},
-				{442, L"treasure-board-page"},
-				{443, L"treasure-board-reward"},
-				{444, L"treasure-board-season"},
-				{445, L"tutorialskillsequence"},
-				{446, L"ui-command"},
-				{447, L"ui-context-command"},
-				{448, L"unlocated-store"},
-				{449, L"unlocated-store-ui"},
-				{450, L"user-command"},
-				{451, L"user-reporting-system"},
-				{452, L"vehicle-appearance"},
-				{453, L"vehicle"},
-				{454, L"virtual-item"},
-				{455, L"wantedmission"},
-				{456, L"war-field"},
-				{457, L"wave-dungeon-reward-box"},
-				{458, L"wave-dungeon-reward"},
-				{459, L"wave-dungeon-strategy"},
-				{460, L"weapon-appearance-change-cost"},
-				{461, L"weapon-gem-effect"},
-				{462, L"weapongemslot"},
-				{463, L"weapon-tempered"},
-				{464, L"weeklytimetable"},
-				{465, L"world-account-card-collection"},
-				{466, L"world-account-card-cumulative"},
-				{467, L"world-account-card"},
-				{468, L"world-account-combination"},
-				{469, L"worldaccountexpedition"},
-				{470, L"world-account-museum"},
-				{471, L"world-achievement"},
-				{472, L"world-achievement-season"},
-				{473, L"worldbossreward"},
-				{474, L"worldbossspawn"},
-				{475, L"worldbossspawngroup"},
-				{476, L"world-group"},
-				{477, L"zonearea"},
-				{478, L"zonebasecamp"},
-				{479, L"zonecampfire"},
-				{480, L"zonecellattribute"},
-				{481, L"zonechannelchange"},
-				{482, L"zoneconvoy"},
-				{483, L"zone"},
-				{484, L"zoneenv2"},
-				{485, L"zoneenv2place"},
-				{486, L"zoneenv2spawn"},
-				{487, L"zoneenv2spawnrandomgroup"},
-				{488, L"zoneevent"},
-				{489, L"zoneex"},
-				{490, L"zonegathersource"},
-				{491, L"zonepathway"},
-				{492, L"zonepcspawn"},
-				{493, L"zonerespawn"},
-				{494, L"zonerule"},
-				{495, L"zoneteleportposition"},
-				{496, L"zoneteleportswitch"},
-				{497, L"zonetriggereventcond"},
-				{498, L"zonetriggereventstage"},
-
-			});
-			auto it = NamesForIds->find(id);
-			if (it != NamesForIds->end()) {
-				return it->second;
+			if (id > 0 && id <= TableCount) {
+				return std::wstring(NamesForIds[static_cast<std::size_t>(id)]);
 			}
 			return L"";
 		}
-		static const __int16 GetTableId(std::wstring name) {
-			static const std::unordered_map<std::wstring, __int16>* IdsForNames = new std::unordered_map<std::wstring, __int16>({
-				{L"ability-list", 1},
-				{L"abnormalcamera", 2},
-				{L"abnormalmoveanim", 3},
-				{L"account-level", 4},
-				{L"account-post-charge", 5},
-				{L"achievement", 6},
-				{L"achievement-register", 7},
-				{L"acquire-route", 8},
-				{L"acquire-route-list", 9},
-				{L"alarm-message-time-table", 10},
-				{L"appearance-item", 11},
-				{L"arenamatchingrule", 12},
-				{L"arenaportal", 13},
-				{L"attachment", 14},
-				{L"attendance", 15},
-				{L"attraction-group", 16},
-				{L"attraction-reward", 17},
-				{L"attractionrewardsummary", 18},
-				{L"attraction-shortcut", 19},
-				{L"auto-combat-customized-skill-cast-condition", 20},
-				{L"auto-combat-customized-skill", 21},
-				{L"auto-combat-skill-cast-condition", 22},
-				{L"auto-combat-skill", 23},
-				{L"automodereturnteleport", 24},
-				{L"autotargetparameter", 25},
-				{L"badge-appearance", 26},
-				{L"badge-set-item", 27},
-				{L"badge-synthesis-cost", 28},
-				{L"badgesynthesisrecipe", 29},
-				{L"battle-field-grade", 30},
-				{L"battlemessage", 31},
-				{L"battle-royal-field", 32},
-				{L"battle-royal-field-effect-pouch", 33},
-				{L"battleroyalfieldeffectpouchmesh", 34},
-				{L"battle-royal-field-event", 35},
-				{L"battle-royal-field-item-spawn-position", 36},
-				{L"benefit-ability", 37},
-				{L"benefit-ability-set", 38},
-				{L"benefit-reward-set", 39},
-				{L"board-gacha", 40},
-				{L"board-gacha-reward", 41},
-				{L"boast", 42},
-				{L"boast-event", 43},
-				{L"boss-challenge", 44},
-				{L"boss-challenge-round", 45},
-				{L"bossnpc", 46},
-				{L"campfire", 47},
-				{L"card-collection-page", 48},
-				{L"cave2", 49},
-				{L"cave", 50},
-				{L"challengelist", 51},
-				{L"challengelistreward", 52},
-				{L"challenge-party", 53},
-				{L"character-membership", 54},
-				{L"chat-channel-option", 55},
-				{L"cinema-result", 56},
-				{L"cinematic", 57},
-				{L"classic-field-zone", 58},
-				{L"closet-collecting-grade", 59},
-				{L"closet-group", 60},
-				{L"collecting", 61},
-				{L"combat-power-compliment", 62},
-				{L"combat-power", 63},
-				{L"commonanim", 64},
-				{L"condition-event", 65},
-				{L"constellation", 66},
-				{L"constellation-star", 67},
-				{L"constellation-star-option", 68},
-				{L"content-quota", 69},
-				{L"contentrestriction", 70},
-				{L"contents-guide", 71},
-				{L"contentsjournal2noti", 72},
-				{L"contentsjournal", 73},
-				{L"contentsjournalrecommenditem", 74},
-				{L"contents-reset", 75},
-				{L"contents-schedule", 76},
-				{L"context-macro", 77},
-				{L"contextscript", 78},
-				{L"contributionreward", 79},
-				{L"cost-group", 80},
-				{L"craft2", 81},
-				{L"craft-case-recipe", 82},
-				{L"craft", 83},
-				{L"craft-group-recipe", 84},
-				{L"craft-introduction", 85},
-				{L"craft-recipe", 86},
-				{L"craft-recipe-step", 87},
-				{L"creatureappearance", 88},
-				{L"custom-dress-design-cost", 89},
-				{L"custom-dress-design-type-info", 90},
-				{L"customdressmotion", 91},
-				{L"customizingdesignerpreset", 92},
-				{L"customizingdetailicon", 93},
-				{L"customizingdetailslider", 94},
-				{L"customizingignoreparam", 95},
-				{L"customizingpreset", 96},
-				{L"customizingpreview", 97},
-				{L"customizinguimatchparam", 98},
-				{L"data-publisher-version", 99},
-				{L"default-rating-score-group", 100},
-				{L"dieanim", 101},
-				{L"difficulty-type", 102},
-				{L"difficulty-type-modify", 103},
-				{L"discovery-area", 104},
-				{L"district", 105},
-				{L"duel-bot-challenge", 106},
-				{L"duel-bot-challenge-strategic-tool", 107},
-				{L"duel-bot", 108},
-				{L"duel-bot-training-room", 109},
-				{L"duel-bot-training-room-reward", 110},
-				{L"duel-bot-training-room-version", 111},
-				{L"duel", 112},
-				{L"duel-grade", 113},
-				{L"duel-npc-challenge", 114},
-				{L"duel-npc-challenge-group", 115},
-				{L"duel-npc-challenge-strategic-skill", 116},
-				{L"duel-observer-skill-slot", 117},
-				{L"dungeon", 118},
-				{L"effect", 119},
-				{L"effect-group", 120},
-				{L"effect-list", 121},
-				{L"emoticon", 122},
-				{L"energy-point", 123},
-				{L"energy-point-reward", 124},
-				{L"env-entrance", 125},
-				{L"envresponse", 126},
-				{L"equip-gem-piece", 127},
-				{L"equip-item-group", 128},
-				{L"equip-item-guide", 129},
-				{L"equip-item-guide-item-list", 130},
-				{L"event-contents", 131},
-				{L"event-skill", 132},
-				{L"expand-inventory", 133},
-				{L"expand-random-store", 134},
-				{L"expand-relic-inventory", 135},
-				{L"expand-relic-page", 136},
-				{L"expand-skill-page", 137},
-				{L"extract-skill-train-by-item", 138},
-				{L"faction-battle-field-zone", 139},
-				{L"faction", 140},
-				{L"faction-level", 141},
-				{L"feedback-boss-npc", 142},
-				{L"feedback", 143},
-				{L"feedback-rank", 144},
-				{L"feedback-skill-score", 145},
-				{L"fieldbossspawn", 146},
-				{L"fielditem", 147},
-				{L"fielditemdrop", 148},
-				{L"field-item-move-anim", 149},
-				{L"field-zone", 150},
-				{L"filter", 151},
-				{L"fish", 152},
-				{L"fishgrade", 153},
-				{L"fishing-field", 154},
-				{L"fishing-field-group", 155},
-				{L"fishing-paste", 156},
-				{L"fishing-show", 157},
-				{L"flying-circus-game", 158},
-				{L"game-menu-control", 159},
-				{L"game-message", 160},
-				{L"gathersource", 161},
-				{L"glyph", 162},
-				{L"glyph-page", 163},
-				{L"glyph-reward", 164},
-				{L"glyph-slot", 165},
-				{L"gm-spawn-npc", 166},
-				{L"goldenticket", 167},
-				{L"goodsicon", 168},
-				{L"gradebenefits", 169},
-				{L"guide-movie", 170},
-				{L"guild-bank-item", 171},
-				{L"guild-battle-field-zone", 172},
-				{L"guildbenefit", 173},
-				{L"guild-combat", 174},
-				{L"guild-craft-recipe", 175},
-				{L"guildcustomizepreset", 176},
-				{L"guildcustomizeuimatchparam", 177},
-				{L"guild-discount", 178},
-				{L"guildlevel", 179},
-				{L"guild-member-grade-authority", 180},
-				{L"guilduniformcomponent", 181},
-				{L"guilduniformparamtypecategory", 182},
-				{L"guilduniformpreset", 183},
-				{L"guilduniformrecipe", 184},
-				{L"guilduniformregistrationquota", 185},
-				{L"guilduniformslider", 186},
-				{L"hyper-racing-game", 187},
-				{L"hyper-racing-game-reward", 188},
-				{L"icontexture", 189},
-				{L"indicator-idle", 190},
-				{L"indicator-image", 191},
-				{L"indicator-social", 192},
-				{L"ingame-shop-item", 193},
-				{L"ingame-shop-tab", 194},
-				{L"interdungeonlist", 195},
-				{L"item-brand", 196},
-				{L"item-brand-tooltip", 197},
-				{L"item-buy-price", 198},
-				{L"itemcategory", 199},
-				{L"item-combat", 200},
-				{L"item-combination", 201},
-				{L"item-combination-mileage", 202},
-				{L"item", 203},
-				{L"item-event", 204},
-				{L"itemexchange", 205},
-				{L"item-fusion", 206},
-				{L"itemgearscore", 207},
-				{L"item-graph", 208},
-				{L"item-graph-seed-group", 209},
-				{L"item-group", 210},
-				{L"itemgrowth", 211},
-				{L"item-improve", 212},
-				{L"item-improve-option", 213},
-				{L"item-improve-option-list", 214},
-				{L"item-improve-set-bonus", 215},
-				{L"item-improve-succession", 216},
-				{L"itempouchmesh2", 217},
-				{L"item-random-ability-section", 218},
-				{L"item-random-ability-slot", 219},
-				{L"item-random-option-group", 220},
-				{L"itemrewardskill3", 221},
-				{L"itemrewardskillacquireroute", 222},
-				{L"itemskill", 223},
-				{L"itemsound", 224},
-				{L"itemspirit", 225},
-				{L"item-stage-number", 226},
-				{L"itemtransformrecipe", 227},
-				{L"itemtransformrecipemileage", 228},
-				{L"item-transform-recipe-world-limit", 229},
-				{L"item-transform-retry-cost", 230},
-				{L"itemtransformupgradeitem", 231},
-				{L"item-usable-group", 232},
-				{L"itemusablerelation", 233},
-				{L"jackpot-boss-zone", 234},
-				{L"job-change", 235},
-				{L"job-change-item-exchange-group", 236},
-				{L"job-change-item-exchange-type", 237},
-				{L"job-change-quest", 238},
-				{L"job-change-quota", 239},
-				{L"job", 240},
-				{L"jobskillset", 241},
-				{L"jobspecialization", 242},
-				{L"job-style", 243},
-				{L"job-style-specialization", 244},
-				{L"jobstylestandidle", 245},
-				{L"jumpingcharacter2", 246},
-				{L"jumpingcharacter", 247},
-				{L"key-cap", 248},
-				{L"key-command", 249},
-				{L"level", 250},
-				{L"levelupreward", 251},
-				{L"linkmoveanim", 252},
-				{L"loadingimage", 253},
-				{L"lobby-pc", 254},
-				{L"map-area", 255},
-				{L"map-group-1", 256},
-				{L"map-group-1-guide", 257},
-				{L"map-group-2", 258},
-				{L"mapinfo", 259},
-				{L"mapoverlay", 260},
-				{L"mapunit", 261},
-				{L"market-category-2-group", 262},
-				{L"market-category-3-group", 263},
-				{L"market-register-amount-tax-rate", 264},
-				{L"market-sale-income-tax-rate", 265},
-				{L"market-targeted-sale-income-tax", 266},
-				{L"mastery-ability", 267},
-				{L"mastery-grade", 268},
-				{L"mastery-level", 269},
-				{L"mastery-stat-point", 270},
-				{L"mastery-stat-point-pick", 271},
-				{L"membership-benefit", 272},
-				{L"mentoring", 273},
-				{L"mileageplan", 274},
-				{L"moveanim", 275},
-				{L"moveanimtransit", 276},
-				{L"newbie-care", 277},
-				{L"npccombatmoveanim", 278},
-				{L"npc", 279},
-				{L"npcindicatormoveanim", 280},
-				{L"npcmoveanim", 281},
-				{L"npcresponse", 282},
-				{L"npc-sealed-dungeon-reward", 283},
-				{L"npctalkmessage", 284},
-				{L"override-contents-rule-config", 285},
-				{L"party-battle-field-zone", 286},
-				{L"partychatchannel", 287},
-				{L"partymatch", 288},
-				{L"passive-effect-move-anim", 289},
-				{L"pc-appearance", 290},
-				{L"pccafebenefits", 291},
-				{L"pc-cam-dist", 292},
-				{L"pc", 293},
-				{L"pc-hidden-character", 294},
-				{L"pcinitialsetting", 295},
-				{L"pc-race-sex-job", 296},
-				{L"pcskill3", 297},
-				{L"pc-voice", 298},
-				{L"pc-voice-set", 299},
-				{L"pet", 300},
-				{L"pet-food-recovery", 301},
-				{L"petition-faq-list", 302},
-				{L"phantomsword3", 303},
-				{L"posetransit", 304},
-				{L"public-raid", 305},
-				{L"public-raid-event", 306},
-				{L"questbonusreward", 307},
-				{L"questbonusrewardsetting", 308},
-				{L"quest", 309},
-				{L"questreward", 310},
-				{L"questrewardskill3", 311},
-				{L"quest-sealed-dungeon-reward", 312},
-				{L"questwarp", 313},
-				{L"race2-attributes-info", 314},
-				{L"race", 315},
-				{L"racoon-store", 316},
-				{L"racoon-store-item", 317},
-				{L"raid-dungeon", 318},
-				{L"randombox-preview", 319},
-				{L"random-distribution", 320},
-				{L"randomstore", 321},
-				{L"randomstoredrawreward", 322},
-				{L"random-store-item", 323},
-				{L"random-store-item-display", 324},
-				{L"ranking2-contents", 325},
-				{L"ranking2-effect-reward", 326},
-				{L"ranking2-reward", 327},
-				{L"ranking2-reward-group", 328},
-				{L"ranking2-season", 329},
-				{L"ranking2-season-group", 330},
-				{L"ranking2-season-schedule", 331},
-				{L"ranking2-tier", 332},
-				{L"rankingpvestage", 333},
-				{L"rankingreward", 334},
-				{L"rankingrewardgroup", 335},
-				{L"recommandjobstyle", 336},
-				{L"relic-enhance-cost", 337},
-				{L"relic-option", 338},
-				{L"relic-set-item", 339},
-				{L"relic-symbol", 340},
-				{L"relic-synthesis", 341},
-				{L"relic-system", 342},
-				{L"reward", 343},
-				{L"sealed-dungeon-gimmick", 344},
-				{L"sealed-dungeon-level", 345},
-				{L"sealed-dungeon-modify", 346},
-				{L"sealed-dungeon-reward", 347},
-				{L"season-ability-goal", 348},
-				{L"season-contents", 349},
-				{L"secret-treasure", 350},
-				{L"set-item", 351},
-				{L"simple-field", 352},
-				{L"skill3", 353},
-				{L"skillacquirecondition", 354},
-				{L"skill-arcane-info", 355},
-				{L"skillattributerule", 356},
-				{L"skillbookcatalogueitem", 357},
-				{L"skill-build-up", 358},
-				{L"skill-build-up-group", 359},
-				{L"skill-build-up-group-list", 360},
-				{L"skill-by-equipment", 361},
-				{L"skillcastcondition3", 362},
-				{L"skill-combo-2", 363},
-				{L"skillcontext", 364},
-				{L"skilldashattribute3", 365},
-				{L"skill", 366},
-				{L"skillgatherrange3", 367},
-				{L"skill-inheritance", 368},
-				{L"skill-message", 369},
-				{L"skill-modify-info", 370},
-				{L"skill-modify-info-group", 371},
-				{L"skillmodifylimit", 372},
-				{L"skillresultcontroll3", 373},
-				{L"skillshow3", 374},
-				{L"skillskin", 375},
-				{L"skillskineffect", 376},
-				{L"skillstyle", 377},
-				{L"skillsystematization", 378},
-				{L"skillsystematizationfiltergroup", 379},
-				{L"skillsystematizationgroup", 380},
-				{L"skilltargetfilter3", 381},
-				{L"skilltooltipattribute", 382},
-				{L"skilltooltip", 383},
-				{L"skill-train-by-item", 384},
-				{L"skill-train-by-item-list", 385},
-				{L"skill-train-category", 386},
-				{L"skill-train-combo-action", 387},
-				{L"skill-training-room", 388},
-				{L"skill-training-room-group", 389},
-				{L"skill-training-room-subject", 390},
-				{L"skill-training-sequence", 391},
-				{L"skill-train-simple-context-flow", 392},
-				{L"skill-trait", 393},
-				{L"skipquest", 394},
-				{L"skipteleport", 395},
-				{L"slatescroll", 396},
-				{L"slatescrollstone", 397},
-				{L"slatestone", 398},
-				{L"smart-drop-reward", 399},
-				{L"social", 400},
-				{L"soul-boost-event", 401},
-				{L"soul-boost-grade-reward", 402},
-				{L"soul-boost-mission", 403},
-				{L"soul-boost-mission-step", 404},
-				{L"soul-boost-mission-task", 405},
-				{L"soul-boost-season", 406},
-				{L"soulmaskset", 407},
-				{L"soul-npc-skill", 408},
-				{L"special-skill-gauge", 409},
-				{L"stance", 410},
-				{L"stancetransit", 411},
-				{L"standidle", 412},
-				{L"star-words", 413},
-				{L"statesocial", 414},
-				{L"static-chat-channel", 415},
-				{L"store2", 416},
-				{L"store-by-item", 417},
-				{L"store", 418},
-				{L"summoned-appearance", 419},
-				{L"summonedbeautyshop", 420},
-				{L"summoned", 421},
-				{L"summoneddesignerpreset", 422},
-				{L"summonedjobstylestandidle", 423},
-				{L"summonedlevel", 424},
-				{L"summonedmasterylevel", 425},
-				{L"summonedmoveanim", 426},
-				{L"summonedpreset", 427},
-				{L"summoned-sequence", 428},
-				{L"summonedstandidle", 429},
-				{L"survey", 430},
-				{L"surveyquestions", 431},
-				{L"talksocial", 432},
-				{L"teen-body-material", 433},
-				{L"teleport", 434},
-				{L"tencent-quest", 435},
-				{L"tendency-field", 436},
-				{L"terrain", 437},
-				{L"text", 438},
-				{L"time-limit-field-zone", 439},
-				{L"timezoneinfomation", 440},
-				{L"trainskillversion", 441},
-				{L"treasure-board-page", 442},
-				{L"treasure-board-reward", 443},
-				{L"treasure-board-season", 444},
-				{L"tutorialskillsequence", 445},
-				{L"ui-command", 446},
-				{L"ui-context-command", 447},
-				{L"unlocated-store", 448},
-				{L"unlocated-store-ui", 449},
-				{L"user-command", 450},
-				{L"user-reporting-system", 451},
-				{L"vehicle-appearance", 452},
-				{L"vehicle", 453},
-				{L"virtual-item", 454},
-				{L"wantedmission", 455},
-				{L"war-field", 456},
-				{L"wave-dungeon-reward-box", 457},
-				{L"wave-dungeon-reward", 458},
-				{L"wave-dungeon-strategy", 459},
-				{L"weapon-appearance-change-cost", 460},
-				{L"weapon-gem-effect", 461},
-				{L"weapongemslot", 462},
-				{L"weapon-tempered", 463},
-				{L"weeklytimetable", 464},
-				{L"world-account-card-collection", 465},
-				{L"world-account-card-cumulative", 466},
-				{L"world-account-card", 467},
-				{L"world-account-combination", 468},
-				{L"worldaccountexpedition", 469},
-				{L"world-account-museum", 470},
-				{L"world-achievement", 471},
-				{L"world-achievement-season", 472},
-				{L"worldbossreward", 473},
-				{L"worldbossspawn", 474},
-				{L"worldbossspawngroup", 475},
-				{L"world-group", 476},
-				{L"zonearea", 477},
-				{L"zonebasecamp", 478},
-				{L"zonecampfire", 479},
-				{L"zonecellattribute", 480},
-				{L"zonechannelchange", 481},
-				{L"zoneconvoy", 482},
-				{L"zone", 483},
-				{L"zoneenv2", 484},
-				{L"zoneenv2place", 485},
-				{L"zoneenv2spawn", 486},
-				{L"zoneenv2spawnrandomgroup", 487},
-				{L"zoneevent", 488},
-				{L"zoneex", 489},
-				{L"zonegathersource", 490},
-				{L"zonepathway", 491},
-				{L"zonepcspawn", 492},
-				{L"zonerespawn", 493},
-				{L"zonerule", 494},
-				{L"zoneteleportposition", 495},
-				{L"zoneteleportswitch", 496},
-				{L"zonetriggereventcond", 497},
-				{L"zonetriggereventstage", 498},
-
-			});
-			auto it = IdsForNames->find(name);
-			if (it != IdsForNames->end()) {
+		static int GetTableId(std::wstring_view tableName) {
+			const auto& map = GetTableNameToIdMap();
+			auto it = map.find(tableName);
+			if (it != map.end()) {
 				return it->second;
 			}
-			return -1;
+			return -1; // not found
 		}
 		TableNames() = delete;
 	};
