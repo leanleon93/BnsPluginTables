@@ -10,14 +10,6 @@
 #include "../BnsCustomProperties.h"
 
 namespace BnsTables::EU {
-	struct TableEntry {
-		std::wstring_view name;
-		int id;
-
-		constexpr bool operator<(const TableEntry& other) const {
-			return name < other.name;
-		}
-	};
 	constexpr __int16 TableCount = 498;
 	constexpr std::array<BnsTables::Shared::TableVersion, TableCount + 1> VersionsForIds = [] {
 		std::array<BnsTables::Shared::TableVersion, TableCount + 1> arr = {};
