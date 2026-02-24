@@ -27,7 +27,7 @@ __int64 end_time;
 __int32 world_achievement;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 472; }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return -1; }
 
 	};

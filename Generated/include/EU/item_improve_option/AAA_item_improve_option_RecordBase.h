@@ -29,16 +29,16 @@ __int32 ability_value;
 BnsTables::Shared::TableRef effect;
 int effect_tableId() const {return 119;};
 BnsTables::Shared::TableRef effect_description;
-int effect_description_tableId() const {return 438;};
+int effect_description_tableId() const {return 441;};
 BnsTables::Shared::TableRef skill_modify_info_group[10];
 __int32 skill_modify_info_group_Size() const {return 10;};
-int skill_modify_info_group_tableId() const {return 371;};
+int skill_modify_info_group_tableId() const {return 374;};
 BnsTables::Shared::TableRef additional_description;
-int additional_description_tableId() const {return 438;};
+int additional_description_tableId() const {return 441;};
 BnsTables::Shared::IconRef draw_option_icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 213; }
+		static __int16 TableId() { return 214; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,

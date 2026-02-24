@@ -23,15 +23,15 @@ signed char job_style;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef sp2_tooltip_name;
-int sp2_tooltip_name_tableId() const {return 438;};
+int sp2_tooltip_name_tableId() const {return 441;};
 wchar_t* introduce_job_style_icon;
 BnsTables::Shared::TableRef introduce_job_style_name;
-int introduce_job_style_name_tableId() const {return 438;};
+int introduce_job_style_name_tableId() const {return 441;};
 BnsTables::Shared::TableRef introduce_job_style_play_desc;
-int introduce_job_style_play_desc_tableId() const {return 438;};
+int introduce_job_style_play_desc_tableId() const {return 441;};
 BnsTables::Shared::TableRef introduce_job_style_specialization[5];
 __int32 introduce_job_style_specialization_Size() const {return 5;};
-int introduce_job_style_specialization_tableId() const {return 244;};
+int introduce_job_style_specialization_tableId() const {return 245;};
 BnsTables::Shared::TableRef additive_attachment;
 int additive_attachment_tableId() const {return 14;};
 wchar_t* combat_start_fx_show;
@@ -54,7 +54,7 @@ wchar_t* job_style_gauge_full_charge_particle_ref;
 float job_style_gauge_full_charge_particle_scale;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 243; }
+		static __int16 TableId() { return 244; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

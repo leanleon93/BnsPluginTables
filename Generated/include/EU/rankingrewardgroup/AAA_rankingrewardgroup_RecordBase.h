@@ -27,7 +27,7 @@ __int32 reward_group_bottom[20];
 __int32 reward_group_bottom_Size() const {return 20;};
 BnsTables::Shared::TableRef reward_data[20];
 __int32 reward_data_Size() const {return 20;};
-int reward_data_tableId() const {return 334;};
+int reward_data_tableId() const {return 335;};
 wchar_t* default_job_ranking_imageset_large;
 wchar_t* default_job_ranking_imageset;
 wchar_t* job_ranking_imageset_large[20];
@@ -44,7 +44,7 @@ wchar_t* ranking_buff_imageset[20];
 __int32 ranking_buff_imageset_Size() const {return 20;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 335; }
+		static __int16 TableId() { return 336; }
 		static __int32 SubType() { return -1; }
 
 	};

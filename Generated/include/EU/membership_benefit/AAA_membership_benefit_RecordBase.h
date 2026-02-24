@@ -25,14 +25,14 @@ signed char publisher;
 char Pad0[3];
 __int64 value;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 438;};
+int name2_tableId() const {return 441;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 438;};
+int description_tableId() const {return 441;};
 BnsTables::Shared::IconRef icon;
 wchar_t* icon_image_set;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 272; }
+		static __int16 TableId() { return 273; }
 		static __int32 SubType() { return -1; }
 		enum class benefit_type {
 			none = 0,

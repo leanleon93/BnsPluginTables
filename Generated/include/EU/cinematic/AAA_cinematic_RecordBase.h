@@ -26,7 +26,7 @@ wchar_t* cinema_resource_name;
 wchar_t* teen_cinema_name;
 wchar_t* teen_cinema_resource_name;
 BnsTables::Shared::TableRef costume;
-int costume_tableId() const {return 203;};
+int costume_tableId() const {return 204;};
 signed char skippable;
 bool point_camera;
 bool nameplate_visible;

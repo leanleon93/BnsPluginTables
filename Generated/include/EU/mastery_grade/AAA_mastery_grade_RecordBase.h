@@ -25,7 +25,7 @@ char Pad0[3];
 wchar_t* image_tag;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 268; }
+		static __int16 TableId() { return 269; }
 		static __int32 SubType() { return -1; }
 
 	};

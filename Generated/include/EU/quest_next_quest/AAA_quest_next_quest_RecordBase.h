@@ -24,7 +24,7 @@ int faction_tableId() const {return 140;};
 signed char job[16];
 __int32 job_Size() const {return 16;};
 BnsTables::Shared::TableRef quest;
-int quest_tableId() const {return 309;};
+int quest_tableId() const {return 310;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }

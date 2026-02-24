@@ -22,14 +22,14 @@ signed char mission_step_id;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 483;};
+int zone_tableId() const {return 486;};
 __int16 x;
 __int16 y;
 __int16 z;
 __int16 yaw;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 313; }
+		static __int16 TableId() { return 314; }
 		static __int32 SubType() { return -1; }
 
 	};

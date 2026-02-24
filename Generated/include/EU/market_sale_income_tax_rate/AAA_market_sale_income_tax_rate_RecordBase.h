@@ -26,7 +26,7 @@ __int64 interval;
 __int32 tax_rate;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 265; }
+		static __int16 TableId() { return 266; }
 		static __int32 SubType() { return -1; }
 
 	};

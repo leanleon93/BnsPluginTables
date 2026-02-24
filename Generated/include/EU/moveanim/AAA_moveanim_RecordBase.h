@@ -87,7 +87,7 @@ wchar_t* upper_rtol;
 wchar_t* lower_rtol;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 275; }
+		static __int16 TableId() { return 276; }
 		static __int32 SubType() { return -1; }
 		enum class weapon {
 			none = 0,

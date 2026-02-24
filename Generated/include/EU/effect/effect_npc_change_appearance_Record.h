@@ -9,11 +9,11 @@ namespace BnsTables::EU {
 	struct effect_npc_change_appearance_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 279;};
+int npc_tableId() const {return 280;};
 BnsTables::Shared::TableRef weapon;
-int weapon_tableId() const {return 203;};
+int weapon_tableId() const {return 204;};
 
 		static __int32 SubType() { return 988; }
 	};

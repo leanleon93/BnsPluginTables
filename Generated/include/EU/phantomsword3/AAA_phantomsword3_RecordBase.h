@@ -80,7 +80,7 @@ __int32 delay_respawn_time;
 wchar_t* delay_respawn_show;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 19); }
-		static __int16 TableId() { return 303; }
+		static __int16 TableId() { return 304; }
 		static __int32 SubType() { return -1; }
 		enum class fly_type {
 			none = 0,

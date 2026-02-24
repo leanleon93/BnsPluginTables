@@ -14,7 +14,7 @@ int cave_tableId() const {return 49;};
 BnsTables::Shared::TableRef dungeon;
 int dungeon_tableId() const {return 118;};
 BnsTables::Shared::TableRef raid_dungeon;
-int raid_dungeon_tableId() const {return 318;};
+int raid_dungeon_tableId() const {return 319;};
 BnsTables::Shared::TableRef boss_challenge;
 int boss_challenge_tableId() const {return 44;};
 BnsTables::Shared::TableRef duel_bot_challenge;
@@ -22,11 +22,11 @@ int duel_bot_challenge_tableId() const {return 106;};
 BnsTables::Shared::TableRef duel_bot_training_room;
 int duel_bot_training_room_tableId() const {return 109;};
 BnsTables::Shared::TableRef tendency_field;
-int tendency_field_tableId() const {return 436;};
+int tendency_field_tableId() const {return 439;};
 BnsTables::Shared::TableRef simple_field;
-int simple_field_tableId() const {return 352;};
+int simple_field_tableId() const {return 355;};
 BnsTables::Shared::TableRef time_limit_field;
-int time_limit_field_tableId() const {return 439;};
+int time_limit_field_tableId() const {return 442;};
 
 		static __int32 SubType() { return 3; }
 	};

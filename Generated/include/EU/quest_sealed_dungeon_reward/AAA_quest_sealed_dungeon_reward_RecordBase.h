@@ -24,12 +24,12 @@ signed char sealed_level;
 		wchar_t* alias;
 BnsTables::Shared::TableRef fixed_item[4];
 __int32 fixed_item_Size() const {return 4;};
-int fixed_item_tableId() const {return 203;};
+int fixed_item_tableId() const {return 204;};
 __int16 fixed_item_count[4];
 __int32 fixed_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 312; }
+		static __int16 TableId() { return 313; }
 		static __int32 SubType() { return -1; }
 
 	};

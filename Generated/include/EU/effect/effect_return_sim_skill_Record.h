@@ -9,11 +9,11 @@ namespace BnsTables::EU {
 	struct effect_return_sim_skill_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 BnsTables::Shared::TableRef skill;
-int skill_tableId() const {return 366;};
+int skill_tableId() const {return 369;};
 BnsTables::Shared::TableRef skill3;
-int skill3_tableId() const {return 353;};
+int skill3_tableId() const {return 356;};
 bool finish;
 
 		static __int32 SubType() { return 50; }

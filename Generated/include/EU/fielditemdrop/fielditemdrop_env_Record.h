@@ -14,7 +14,7 @@ signed char drop_case;
 signed char drop_place;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 477;};
+int area_tableId() const {return 480;};
 
 		static __int32 SubType() { return 1; }
 	};

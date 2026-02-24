@@ -23,7 +23,7 @@ signed char race;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 189;};
+int icon_texture_tableId() const {return 190;};
 __int16 icon_index;
 signed char face;
 signed char body;
@@ -34,7 +34,7 @@ signed char body_shape;
 signed char decal;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 422; }
+		static __int16 TableId() { return 425; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

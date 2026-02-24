@@ -82,13 +82,13 @@ __int32 count_10_ability_value_Size() const {return 8;};
 __int32 count_10_ability_base_value[8];
 __int32 count_10_ability_base_value_Size() const {return 8;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 438;};
+int name2_tableId() const {return 441;};
 BnsTables::Shared::TableRef set_item[15];
 __int32 set_item_Size() const {return 15;};
-int set_item_tableId() const {return 203;};
+int set_item_tableId() const {return 204;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 339; }
+		static __int16 TableId() { return 342; }
 		static __int32 SubType() { return -1; }
 		enum class count_1_ability {
 			none = 0,

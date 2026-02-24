@@ -30,8 +30,8 @@ __int32 ability_base_value_Size() const {return 7;};
 __int16 ability_percent_rate[7];
 __int32 ability_percent_rate_Size() const {return 7;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 466; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
+		static __int16 TableId() { return 469; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,

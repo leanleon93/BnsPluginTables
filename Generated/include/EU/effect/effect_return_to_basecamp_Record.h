@@ -9,9 +9,9 @@ namespace BnsTables::EU {
 	struct effect_return_to_basecamp_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[2];
+		char Pad_sub_0[1];
 BnsTables::Shared::TableRef basecamp;
-int basecamp_tableId() const {return 478;};
+int basecamp_tableId() const {return 481;};
 
 		static __int32 SubType() { return 49; }
 	};

@@ -23,14 +23,14 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef area;
-int area_tableId() const {return 477;};
+int area_tableId() const {return 480;};
 BnsTables::Shared::XYZ center;
 BnsTables::Shared::TableRef activated_faction[4];
 __int32 activated_faction_Size() const {return 4;};
 int activated_faction_tableId() const {return 140;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 46); }
-		static __int16 TableId() { return 493; }
+		static __int16 TableId() { return 496; }
 		static __int32 SubType() { return -1; }
 
 	};

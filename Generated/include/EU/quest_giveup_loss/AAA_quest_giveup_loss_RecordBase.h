@@ -29,7 +29,7 @@ signed char race[4];
 __int32 race_Size() const {return 4;};
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 203;};
+int item_tableId() const {return 204;};
 signed char item_count[4];
 __int32 item_count_Size() const {return 4;};
 

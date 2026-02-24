@@ -30,7 +30,7 @@ wchar_t* type2_sample_sound_name;
 wchar_t* type3_sample_sound_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 299; }
+		static __int16 TableId() { return 300; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,
