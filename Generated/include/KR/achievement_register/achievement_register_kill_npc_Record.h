@@ -11,9 +11,9 @@ namespace BnsTables::KR {
 	public:
 		BnsTables::Shared::TableRef npc[8];
 __int32 npc_Size() const {return 8;};
-int npc_tableId() const {return 280;};
+int npc_tableId() const {return 282;};
 BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 140;};
+int faction_tableId() const {return 141;};
 
 		static __int32 SubType() { return 2; }
 	};

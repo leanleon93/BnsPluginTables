@@ -11,9 +11,9 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef boast_from_recipe;
-int boast_from_recipe_tableId() const {return 228;};
+int boast_from_recipe_tableId() const {return 229;};
 BnsTables::Shared::TableRef boast_item;
-int boast_item_tableId() const {return 204;};
+int boast_item_tableId() const {return 205;};
 
 		static __int32 SubType() { return 0; }
 	};

@@ -22,14 +22,14 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 486;};
+int zone_tableId() const {return 489;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef public_raid;
-int public_raid_tableId() const {return 306;};
+int public_raid_tableId() const {return 308;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 158; }
+		static __int16 TableId() { return 159; }
 		static __int32 SubType() { return -1; }
 
 	};

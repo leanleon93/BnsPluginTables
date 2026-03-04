@@ -167,7 +167,7 @@ __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 427; }
+		static __int16 TableId() { return 430; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -24,16 +24,16 @@ BnsTables::Shared::TableRef head_skill_id;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef change_skill_id[15];
 __int32 change_skill_id_Size() const {return 15;};
-int change_skill_id_tableId() const {return 356;};
+int change_skill_id_tableId() const {return 358;};
 BnsTables::Shared::TableRef head_skill_acquire_route;
-int head_skill_acquire_route_tableId() const {return 223;};
+int head_skill_acquire_route_tableId() const {return 224;};
 BnsTables::Shared::TableRef change_skill_acquire_route[15];
 __int32 change_skill_acquire_route_Size() const {return 15;};
-int change_skill_acquire_route_tableId() const {return 223;};
+int change_skill_acquire_route_tableId() const {return 224;};
 signed char equip_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 222; }
+		static __int16 TableId() { return 223; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

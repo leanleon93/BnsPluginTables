@@ -9,10 +9,11 @@ namespace BnsTables::KR {
 	struct partychatchannel_main_faction_Record : partychatchannel_Record
 	{
 	public:
-		BnsTables::Shared::TableRef faction_1_party_match;
-int faction_1_party_match_tableId() const {return 289;};
+		char Pad_sub_0[3];
+BnsTables::Shared::TableRef faction_1_party_match;
+int faction_1_party_match_tableId() const {return 291;};
 BnsTables::Shared::TableRef faction_2_party_match;
-int faction_2_party_match_tableId() const {return 289;};
+int faction_2_party_match_tableId() const {return 291;};
 
 		static __int32 SubType() { return 1; }
 	};

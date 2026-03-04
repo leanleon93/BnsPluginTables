@@ -30,11 +30,11 @@ signed char charge_type;
 signed char expand_size;
 char Pad1[2];
 BnsTables::Shared::TableRef required_item;
-int required_item_tableId() const {return 204;};
+int required_item_tableId() const {return 205;};
 signed char required_item_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 133; }
+		static __int16 TableId() { return 134; }
 		static __int32 SubType() { return -1; }
 		enum class inventory_type {
 			inventory = 0,

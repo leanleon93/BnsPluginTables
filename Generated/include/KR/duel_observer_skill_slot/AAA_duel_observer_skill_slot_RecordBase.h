@@ -25,7 +25,7 @@ char Pad0[3];
 __int32 slot;
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 356;};
+int skill3_tableId() const {return 358;};
 wchar_t* ui_action_alias[40];
 __int32 ui_action_alias_Size() const {return 40;};
 signed char ui_view_type;
@@ -320,6 +320,7 @@ signed char condition_check_flag_op;
 			condition_event_9 = 244,
 			condition_event_10 = 245,
 			linked = 246,
+			EndlessnessTower = 247,
 		};
 
 		enum class condition_check_flag_op {

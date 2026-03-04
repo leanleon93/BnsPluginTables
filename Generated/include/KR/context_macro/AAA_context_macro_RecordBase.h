@@ -373,6 +373,7 @@ __int32 delay_msec_Size() const {return 10;};
 			condition_event_9 = 244,
 			condition_event_10 = 245,
 			linked = 246,
+			EndlessnessTower = 247,
 		};
 
 		enum class effect_attribute {

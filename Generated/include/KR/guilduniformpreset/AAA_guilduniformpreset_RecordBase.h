@@ -23,19 +23,19 @@ namespace BnsTables::KR {
 		signed char preset_type;
 char Pad0[3];
 BnsTables::Shared::TableRef preset;
-int preset_tableId() const {return 177;};
+int preset_tableId() const {return 178;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 441;};
+int name_tableId() const {return 444;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 190;};
+int icon_texture_tableId() const {return 191;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 441;};
+int desc_tableId() const {return 444;};
 __int32 order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 184; }
+		static __int16 TableId() { return 185; }
 		static __int32 SubType() { return -1; }
 		enum class preset_type {
 			none = 0,

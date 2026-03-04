@@ -24,16 +24,16 @@ namespace BnsTables::KR {
 signed char max_repeat;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 441;};
+int name2_tableId() const {return 444;};
 BnsTables::Shared::TableRef map_group_1[2];
 __int32 map_group_1_Size() const {return 2;};
-int map_group_1_tableId() const {return 257;};
+int map_group_1_tableId() const {return 258;};
 BnsTables::Shared::TableRef group2;
-int group2_tableId() const {return 441;};
+int group2_tableId() const {return 444;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 441;};
+int desc_tableId() const {return 444;};
 BnsTables::Shared::TableRef completed_desc;
-int completed_desc_tableId() const {return 441;};
+int completed_desc_tableId() const {return 444;};
 signed char category;
 bool completed_list;
 signed char grade;
@@ -47,7 +47,7 @@ signed char reset_by_acquire_time;
 signed char reset_day_of_week;
 signed char reset_day_of_month;
 BnsTables::Shared::TableRef main_faction;
-int main_faction_tableId() const {return 140;};
+int main_faction_tableId() const {return 141;};
 signed char production;
 signed char save_type;
 bool invoke_fx_msg;
@@ -69,14 +69,14 @@ char Pad3[3];
 __int32 reset_money;
 BnsTables::Shared::TableRef reset_item[4];
 __int32 reset_item_Size() const {return 4;};
-int reset_item_tableId() const {return 204;};
+int reset_item_tableId() const {return 205;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef acquire_talksocial;
-int acquire_talksocial_tableId() const {return 435;};
+int acquire_talksocial_tableId() const {return 438;};
 float acquire_talksocial_delay;
 BnsTables::Shared::TableRef complete_talksocial;
-int complete_talksocial_tableId() const {return 435;};
+int complete_talksocial_tableId() const {return 438;};
 float complete_talksocial_delay;
 bool check_vitality;
 char Pad4[1];
@@ -117,7 +117,7 @@ BnsTables::Shared::TableRef contents_reset;
 int contents_reset_tableId() const {return 75;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(12, 0); }
-		static __int16 TableId() { return 310; }
+		static __int16 TableId() { return 312; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			epic = 0,

@@ -22,12 +22,12 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill;
-int skill_tableId() const {return 356;};
+int skill_tableId() const {return 358;};
 signed char skill_result[8];
 __int32 skill_result_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 145; }
+		static __int16 TableId() { return 146; }
 		static __int32 SubType() { return -1; }
 		enum class skill_result {
 			none = 0,

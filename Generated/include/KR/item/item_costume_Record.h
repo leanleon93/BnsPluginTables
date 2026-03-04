@@ -13,17 +13,17 @@ namespace BnsTables::KR {
 char Pad_sub_0[3];
 __int32 closet_group_id;
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 435;};
+int talk_social_tableId() const {return 438;};
 BnsTables::Shared::TableRef pair_costume;
-int pair_costume_tableId() const {return 204;};
+int pair_costume_tableId() const {return 205;};
 BnsTables::Shared::TableRef pair_costume_brand;
-int pair_costume_brand_tableId() const {return 197;};
+int pair_costume_brand_tableId() const {return 198;};
 wchar_t* pair_costume_signal_show;
 wchar_t* pair_costume_signal_detach_show;
 signed char custom_dress_design_state;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef skill_skin;
-int skill_skin_tableId() const {return 378;};
+int skill_skin_tableId() const {return 381;};
 
 		static __int32 SubType() { return 1; }
 	};

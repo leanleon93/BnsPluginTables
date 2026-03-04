@@ -25,7 +25,7 @@ signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef item[8];
 __int32 item_Size() const {return 8;};
-int item_tableId() const {return 204;};
+int item_tableId() const {return 205;};
 __int16 item_amount[8];
 __int32 item_amount_Size() const {return 8;};
 signed char item_total_count;

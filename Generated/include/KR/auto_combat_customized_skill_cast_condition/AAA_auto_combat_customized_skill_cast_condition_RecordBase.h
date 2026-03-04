@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 441;};
+int name2_tableId() const {return 444;};
 signed char sort_id;
 signed char unique_group;
 signed char target_type;
@@ -507,6 +507,7 @@ signed char check_around_op;
 			condition_event_9 = 244,
 			condition_event_10 = 245,
 			linked = 246,
+			EndlessnessTower = 247,
 		};
 
 		enum class check_npc_grade2 {

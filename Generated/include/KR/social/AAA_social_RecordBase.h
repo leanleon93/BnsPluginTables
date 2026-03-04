@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 duration;
 BnsTables::Shared::TableRef balloon_text;
-int balloon_text_tableId() const {return 441;};
+int balloon_text_tableId() const {return 444;};
 bool voice_sync;
 char Pad0[3];
 wchar_t* show;
@@ -35,12 +35,12 @@ char Pad1[3];
 BnsTables::Shared::TableRef spawn_cinematic;
 int spawn_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef message;
-int message_tableId() const {return 161;};
+int message_tableId() const {return 162;};
 signed char message_target_type;
 signed char message_contents_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 25); }
-		static __int16 TableId() { return 403; }
+		static __int16 TableId() { return 406; }
 		static __int32 SubType() { return -1; }
 		enum class rotate {
 			keep = 0,
