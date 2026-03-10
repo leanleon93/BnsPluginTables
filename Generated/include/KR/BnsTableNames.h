@@ -384,7 +384,7 @@ namespace BnsTables::KR {
 		arr[369] = BnsTables::Shared::TableVersion(1, 0, true);
 		arr[370] = BnsTables::Shared::TableVersion(1, 13, true);
 		arr[371] = BnsTables::Shared::TableVersion(0, 3, true);
-		arr[372] = BnsTables::Shared::TableVersion(5, 1, true);
+		arr[372] = BnsTables::Shared::TableVersion(6, 0, true);
 		arr[373] = BnsTables::Shared::TableVersion(0, 17, true);
 		arr[374] = BnsTables::Shared::TableVersion(0, 4, true);
 		arr[375] = BnsTables::Shared::TableVersion(0, 1, true);

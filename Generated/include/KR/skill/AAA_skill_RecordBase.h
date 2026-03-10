@@ -37,7 +37,7 @@ int name2_tableId() const {return 444;};
 __int16 short_cut_key;
 __int16 short_cut_key_classic;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 372; }
 		static __int32 SubType() { return -1; }
 		enum class short_cut_key {

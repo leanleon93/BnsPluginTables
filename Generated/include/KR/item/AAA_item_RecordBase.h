@@ -1088,6 +1088,7 @@ __int16 tier;
 			class_2 = 4,
 			db = 5,
 			gadget = 6,
+			endless_1 = 7,
 		};
 
 		enum class pouch_appearance {

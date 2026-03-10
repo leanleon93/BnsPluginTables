@@ -866,6 +866,7 @@ signed char simple_context_fail_recycle_group_op;
 			class_2 = 4,
 			db = 5,
 			gadget = 6,
+			endless_1 = 7,
 		};
 
 		enum class lockon_skill_type {
