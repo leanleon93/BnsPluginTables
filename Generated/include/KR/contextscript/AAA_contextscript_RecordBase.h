@@ -26,9 +26,10 @@ signed char job_style[2];
 __int32 job_style_Size() const {return 2;};
 signed char race;
 bool context_simple_mode;
+signed char job_specialization;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 50); }
-		static __int16 TableId() { return 77; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
+		static __int16 TableId() { return 78; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,
@@ -82,6 +83,13 @@ bool context_simple_mode;
 			goyangi = 10,
 			gangrimche = 11,
 			aggwi = 12,
+		};
+
+		enum class job_specialization {
+			job_specialization_none = 0,
+			gyeyeor1 = 1,
+			gyeyeor2 = 2,
+			gyeyeor3 = 3,
 		};
 	};
 #pragma pack(pop)

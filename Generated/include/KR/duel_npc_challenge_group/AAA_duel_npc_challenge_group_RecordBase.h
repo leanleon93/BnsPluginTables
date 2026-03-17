@@ -22,20 +22,32 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 wchar_t* duel_npc_kismet_name;
+BnsTables::Shared::TableRef stage_reward_item[6];
+__int32 stage_reward_item_Size() const {return 6;};
+int stage_reward_item_tableId() const {return 205;};
+__int16 stage_reward_item_count[6];
+__int32 stage_reward_item_count_Size() const {return 6;};
+BnsTables::Shared::TableRef stage_bonus_reward_item[6];
+__int32 stage_bonus_reward_item_Size() const {return 6;};
+int stage_bonus_reward_item_tableId() const {return 205;};
+__int16 stage_bonus_reward_item_count[6];
+__int32 stage_bonus_reward_item_count_Size() const {return 6;};
 BnsTables::Shared::TableRef stage_init_reward_item[10];
 __int32 stage_init_reward_item_Size() const {return 10;};
-int stage_init_reward_item_tableId() const {return 202;};
+int stage_init_reward_item_tableId() const {return 205;};
 __int16 stage_init_reward_item_count[10];
 __int32 stage_init_reward_item_count_Size() const {return 10;};
+__int32 stage_reward_exp_min;
+__int32 stage_reward_money_min;
 BnsTables::Shared::TableRef feedback;
-int feedback_tableId() const {return 142;};
+int feedback_tableId() const {return 144;};
 wchar_t* npc_portrait_image;
 wchar_t* change_floor_ppv_kismet_name;
 wchar_t* combobox_floor_icon_imageset;
 __int32 fatigability_consume_amount;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 114; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
+		static __int16 TableId() { return 115; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef effect[20];
 __int32 effect_Size() const {return 20;};
-int effect_tableId() const {return 118;};
+int effect_tableId() const {return 119;};
 __int16 effect_weight[20];
 __int32 effect_weight_Size() const {return 20;};
 __int32 effect_total_weight;
@@ -31,7 +31,7 @@ signed char effect_total_count;
 bool draw_enable;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 120; }
+		static __int16 TableId() { return 121; }
 		static __int32 SubType() { return -1; }
 
 	};

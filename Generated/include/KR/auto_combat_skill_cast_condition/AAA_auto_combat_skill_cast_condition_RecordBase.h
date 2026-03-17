@@ -358,6 +358,7 @@ signed char check_around_op;
 			condition_event_9 = 244,
 			condition_event_10 = 245,
 			linked = 246,
+			EndlessnessTower = 247,
 		};
 
 		enum class check_caster_recycle_skill_op {

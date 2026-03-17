@@ -1016,9 +1016,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 435;};
+int name2_tableId() const {return 444;};
 BnsTables::Shared::TableRef name3;
-int name3_tableId() const {return 435;};
+int name3_tableId() const {return 444;};
 __int16 level;
 bool show_icon;
 bool show_left_time;
@@ -1037,7 +1037,7 @@ signed char stack_count;
 bool reattach_effect_after_changing_stack_count;
 char Pad1[1];
 BnsTables::Shared::TableRef transform_effect;
-int transform_effect_tableId() const {return 118;};
+int transform_effect_tableId() const {return 119;};
 signed char buff_type;
 signed char binding_skill_step_type;
 __int16 immune_breaker_attribute;
@@ -1083,22 +1083,22 @@ signed char event_effect_target[4];
 __int32 event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef event_effect[4];
 __int32 event_effect_Size() const {return 4;};
-int event_effect_tableId() const {return 118;};
+int event_effect_tableId() const {return 119;};
 signed char second_slot_event_effect_target[4];
 __int32 second_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef second_slot_event_effect[4];
 __int32 second_slot_event_effect_Size() const {return 4;};
-int second_slot_event_effect_tableId() const {return 118;};
+int second_slot_event_effect_tableId() const {return 119;};
 signed char third_slot_event_effect_target[4];
 __int32 third_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef third_slot_event_effect[4];
 __int32 third_slot_event_effect_Size() const {return 4;};
-int third_slot_event_effect_tableId() const {return 118;};
+int third_slot_event_effect_tableId() const {return 119;};
 signed char fourth_slot_event_effect_target[4];
 __int32 fourth_slot_event_effect_target_Size() const {return 4;};
 BnsTables::Shared::TableRef fourth_slot_event_effect[4];
 __int32 fourth_slot_event_effect_Size() const {return 4;};
-int fourth_slot_event_effect_tableId() const {return 118;};
+int fourth_slot_event_effect_tableId() const {return 119;};
 __int16 modify_ability[8];
 __int32 modify_ability_Size() const {return 8;};
 __int64 modify_ability_diff[8];
@@ -1147,20 +1147,20 @@ wchar_t* fire_show;
 bool animation_freeze;
 char Pad4[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 188;};
+int icon_texture_tableId() const {return 191;};
 __int16 icon_index;
 char Pad5[2];
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 435;};
+int description2_tableId() const {return 444;};
 BnsTables::Shared::TableRef description3;
-int description3_tableId() const {return 435;};
+int description3_tableId() const {return 444;};
 BnsTables::Shared::TableRef description4;
-int description4_tableId() const {return 435;};
+int description4_tableId() const {return 444;};
 BnsTables::Shared::TableRef description5;
-int description5_tableId() const {return 435;};
+int description5_tableId() const {return 444;};
 BnsTables::Shared::TableRef description_constellation;
-int description_constellation_tableId() const {return 435;};
+int description_constellation_tableId() const {return 444;};
 signed char description2_arg_type[4];
 __int32 description2_arg_type_Size() const {return 4;};
 wchar_t* description2_arg_value[4];
@@ -1168,9 +1168,9 @@ __int32 description2_arg_value_Size() const {return 4;};
 __int32 mount_attach_duration;
 __int32 mount_detach_duration;
 BnsTables::Shared::TableRef linker_abnormal;
-int linker_abnormal_tableId() const {return 250;};
+int linker_abnormal_tableId() const {return 254;};
 BnsTables::Shared::TableRef linkee_abnormal;
-int linkee_abnormal_tableId() const {return 250;};
+int linkee_abnormal_tableId() const {return 254;};
 __int32 link_attach_duration;
 __int32 link_detach_duration;
 bool catch_legs_physics;
@@ -1198,13 +1198,15 @@ __int32 transit_time;
 signed char duel_warp;
 char Pad9[3];
 BnsTables::Shared::TableRef attach_notify_message;
-int attach_notify_message_tableId() const {return 159;};
+int attach_notify_message_tableId() const {return 162;};
 BnsTables::Shared::TableRef description_item_random_option;
-int description_item_random_option_tableId() const {return 435;};
+int description_item_random_option_tableId() const {return 444;};
 bool block_reattach_when_encounter_sync_player;
+signed char fx_condition_channel;
+bool force_context_update;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(46, 0); }
-		static __int16 TableId() { return 118; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(47, 0); }
+		static __int16 TableId() { return 119; }
 		static __int32 SubType() { return -1; }
 		enum class buff_type {
 			instant = 0,
@@ -1664,6 +1666,7 @@ bool block_reattach_when_encounter_sync_player;
 			condition_event_9 = 244,
 			condition_event_10 = 245,
 			linked = 246,
+			EndlessnessTower = 247,
 		};
 
 		enum class function {
@@ -1967,7 +1970,7 @@ bool block_reattach_when_encounter_sync_player;
 			pvp_mode = 235,
 			break_state = 236,
 			break_gauge_block_state = 237,
-			public_reserve_5 = 238,
+			use_dormant_title = 238,
 			public_reserve_6 = 239,
 			public_reserve_7 = 240,
 			public_reserve_8 = 241,
@@ -1976,7 +1979,7 @@ bool block_reattach_when_encounter_sync_player;
 			pvp_safe_area = 244,
 			zone_move_state = 245,
 			pc_cafe_personal_customize = 246,
-			private_reserve_6 = 247,
+			fatigability_consume_toggle = 247,
 			private_reserve_7 = 248,
 			private_reserve_8 = 249,
 			slate_page = 250,
@@ -2001,221 +2004,223 @@ bool block_reattach_when_encounter_sync_player;
 			max_combat_power_version = 269,
 			max_combat_power = 270,
 			level_up_reward = 271,
-			max_hp = 272,
-			max_hp_equip = 273,
-			max_guard_gauge = 274,
-			max_guard_gauge_equip = 275,
-			max_sp = 276,
-			max_sp2 = 277,
-			speed = 278,
-			vehicle_speed = 279,
-			modify_cast_speed_percent = 280,
-			hp_regen = 281,
-			hp_regen_equip = 282,
-			hp_regen_combat = 283,
-			hp_regen_combat_equip = 284,
-			attack_hit_base_percent = 285,
-			attack_hit_value = 286,
-			attack_hit_value_equip = 287,
-			attack_pierce_base_percent = 288,
-			attack_parry_pierce_percent = 289,
-			attack_pierce_value = 290,
-			attack_pierce_value_equip = 291,
-			attack_critical_base_percent = 292,
-			attack_critical_damage_percent = 293,
-			attack_critical_value = 294,
-			attack_critical_value_equip = 295,
-			attack_critical_damage_value = 296,
-			attack_critical_damage_value_equip = 297,
-			defend_critical_base_percent = 298,
-			defend_critical_damage_percent = 299,
-			defend_critical_value = 300,
-			defend_critical_value_equip = 301,
-			defend_bounce_percent = 302,
-			defend_dodge_base_percent = 303,
-			defend_dodge_value = 304,
-			defend_dodge_value_equip = 305,
-			defend_parry_base_percent = 306,
-			defend_parry_value = 307,
-			defend_parry_value_equip = 308,
-			defend_parry_reduce_percent = 309,
-			defend_parry_reduce_diff = 310,
-			defend_perfect_parry_base_percent = 311,
-			defend_immune_base_percent = 312,
-			attack_power_creature_min = 313,
-			attack_power_creature_max = 314,
-			attack_power_equip_min = 315,
-			attack_power_equip_max = 316,
-			defend_power_creature_value = 317,
-			defend_power_equip_value = 318,
-			defend_resist_power_creature_value = 319,
-			defend_resist_power_equip_value = 320,
-			defend_physical_damage_reduce_percent = 321,
-			defend_force_damage_reduce_percent = 322,
-			attack_damage_modify_percent = 323,
-			attack_damage_modify_diff = 324,
-			defend_damage_modify_percent = 325,
-			defend_damage_modify_diff = 326,
-			defend_miss_base_percent = 327,
-			attack_stiff_duration_base_percent = 328,
-			attack_stiff_duration_value = 329,
-			defend_stiff_duration_base_percent = 330,
-			defend_stiff_duration_value = 331,
-			cast_duration_base_percent = 332,
-			cast_duration_value = 333,
-			attack_concentrate_value = 334,
-			attack_concentrate_value_equip = 335,
-			defend_perfect_parry_reduce_percent = 336,
-			defend_counter_reduce_percent = 337,
-			pve_boss_level_npc_attack_power_creature_min = 338,
-			pve_boss_level_npc_attack_power_creature_max = 339,
-			pve_boss_level_npc_attack_power_equip_min = 340,
-			pve_boss_level_npc_attack_power_equip_max = 341,
-			pve_boss_level_npc_defend_power_creature_value = 342,
-			pve_boss_level_npc_defend_power_equip_value = 343,
-			pvp_attack_power_creature_min = 344,
-			pvp_attack_power_creature_max = 345,
-			pvp_attack_power_equip_min = 346,
-			pvp_attack_power_equip_max = 347,
-			pvp_defend_power_creature_value = 348,
-			pvp_defend_power_equip_value = 349,
-			job_ability_1 = 350,
-			job_ability_2 = 351,
-			heal_power_base_percent = 352,
-			heal_power_value = 353,
-			heal_power_diff = 354,
-			aoe_defend_base_percent = 355,
-			aoe_defend_power_value = 356,
-			abnormal_attack_base_percent = 357,
-			abnormal_attack_power_value = 358,
-			abnormal_attack_power_value_equip = 359,
-			abnormal_defend_base_percent = 360,
-			abnormal_defend_power_value = 361,
-			hate_base_percent = 362,
-			hate_power_creature_value = 363,
-			hate_power_equip_value = 364,
-			additional_exp_diff_by_kill = 365,
-			additional_exp_percent_by_kill = 366,
-			additional_mastery_exp_diff_by_kill = 367,
-			additional_mastery_exp_percent_by_kill = 368,
-			additional_faction_score_max_percent = 369,
-			additional_sealed_dungeon_exp_diff_by_kill = 370,
-			additional_sealed_dungeon_exp_percent_by_kill = 371,
-			attack_attribute_value = 372,
-			attack_attribute_value_equip = 373,
-			attack_attribute_base_percent = 374,
-			defend_difficulty_type_damage_reduce_percent = 375,
-			race_type_1_attack_damage_modify_percent = 376,
-			race_type_2_attack_damage_modify_percent = 377,
-			race_type_3_attack_damage_modify_percent = 378,
-			race_type_4_attack_damage_modify_percent = 379,
-			race_type_5_attack_damage_modify_percent = 380,
-			race_type_6_attack_damage_modify_percent = 381,
-			race_type_7_attack_damage_modify_percent = 382,
-			race_type_1_defend_damage_modify_percent = 383,
-			race_type_2_defend_damage_modify_percent = 384,
-			race_type_3_defend_damage_modify_percent = 385,
-			race_type_4_defend_damage_modify_percent = 386,
-			race_type_5_defend_damage_modify_percent = 387,
-			race_type_6_defend_damage_modify_percent = 388,
-			race_type_7_defend_damage_modify_percent = 389,
-			attribute_type_1_attack_damage_modify_percent = 390,
-			attribute_type_2_attack_damage_modify_percent = 391,
-			attribute_type_3_attack_damage_modify_percent = 392,
-			attribute_type_4_attack_damage_modify_percent = 393,
-			attribute_type_5_attack_damage_modify_percent = 394,
-			attribute_type_6_attack_damage_modify_percent = 395,
-			attribute_type_7_attack_damage_modify_percent = 396,
-			attribute_type_8_attack_damage_modify_percent = 397,
-			attribute_type_9_attack_damage_modify_percent = 398,
-			attribute_type_10_attack_damage_modify_percent = 399,
-			attribute_type_11_attack_damage_modify_percent = 400,
-			attribute_type_12_attack_damage_modify_percent = 401,
-			attribute_type_1_defend_damage_modify_percent = 402,
-			attribute_type_2_defend_damage_modify_percent = 403,
-			attribute_type_3_defend_damage_modify_percent = 404,
-			attribute_type_4_defend_damage_modify_percent = 405,
-			attribute_type_5_defend_damage_modify_percent = 406,
-			attribute_type_6_defend_damage_modify_percent = 407,
-			attribute_type_7_defend_damage_modify_percent = 408,
-			attribute_type_8_defend_damage_modify_percent = 409,
-			attribute_type_9_defend_damage_modify_percent = 410,
-			attribute_type_10_defend_damage_modify_percent = 411,
-			attribute_type_11_defend_damage_modify_percent = 412,
-			attribute_type_12_defend_damage_modify_percent = 413,
-			defend_critical_damage_value = 414,
-			defend_critical_damage_value_equip = 415,
-			attack_abnormal_hit_base_percent = 416,
-			attack_abnormal_hit_value = 417,
-			attack_abnormal_hit_equip_value = 418,
-			defend_abnormal_resistance_base_percent = 419,
-			defend_abnormal_resistance_value = 420,
-			defend_abnormal_resistance_equip_value = 421,
-			invisible = 422,
-			block_move = 423,
-			block_skill = 424,
-			block_physical_skill = 425,
-			block_force_skill = 426,
-			immune_damage = 427,
-			immune_death = 428,
-			immune_debuff = 429,
-			exception_target = 430,
-			exception_detect = 431,
-			exception_hostile_target = 432,
-			immune_casting_delay = 433,
-			block_dodge = 434,
-			block_bounce = 435,
-			block_parry = 436,
-			block_perfect_parry = 437,
-			front_perfect_parry = 438,
-			back_perfect_parry = 439,
-			front_bounce = 440,
-			back_bounce = 441,
-			debug_invincible = 442,
-			debug_invisible = 443,
-			abnormality_reserve_7 = 444,
-			abnormality_reserve_8 = 445,
-			equip_hand = 446,
-			equip_hand_level = 447,
-			equip_hand_appearance_item = 448,
-			equip_hand_appearance_item_level = 449,
-			equip_hand_alt = 450,
-			equip_body = 451,
-			equip_body_guild_id = 452,
-			equip_body_custom1 = 453,
-			equip_body_custom2 = 454,
-			equip_body_custom3 = 455,
-			equip_body_custom4 = 456,
-			equip_body_custom5 = 457,
-			equip_body_custom6 = 458,
-			equip_body_custom7 = 459,
-			equip_body_custom8 = 460,
-			equip_ear = 461,
-			equip_eye = 462,
-			equip_eye_custom1 = 463,
-			equip_eye_custom2 = 464,
-			equip_eye_custom3 = 465,
-			equip_head = 466,
-			equip_head_custom1 = 467,
-			equip_head_custom2 = 468,
-			equip_head_custom3 = 469,
-			equip_body_attach = 470,
-			equip_body_attach_custom1 = 471,
-			equip_body_attach_custom2 = 472,
-			equip_body_attach_custom3 = 473,
-			equip_weapon_gem = 474,
-			equip_pet_1 = 475,
-			equip_pet_1_appearance_item = 476,
-			equip_pet_2 = 477,
-			equip_pet_2_appearance_item = 478,
-			equip_badge_appearance_item = 479,
-			equip_normal_state_appearance = 480,
-			equip_idle_state_appearance = 481,
-			equip_hypermove_appearance = 482,
-			equip_name_plate_appearance = 483,
-			equip_speech_bubble_appearance = 484,
-			equip_talk_social_item = 485,
-			equip_soul_gem = 486,
+			dormant_state = 272,
+			dormant_end_time = 273,
+			max_hp = 274,
+			max_hp_equip = 275,
+			max_guard_gauge = 276,
+			max_guard_gauge_equip = 277,
+			max_sp = 278,
+			max_sp2 = 279,
+			speed = 280,
+			vehicle_speed = 281,
+			modify_cast_speed_percent = 282,
+			hp_regen = 283,
+			hp_regen_equip = 284,
+			hp_regen_combat = 285,
+			hp_regen_combat_equip = 286,
+			attack_hit_base_percent = 287,
+			attack_hit_value = 288,
+			attack_hit_value_equip = 289,
+			attack_pierce_base_percent = 290,
+			attack_parry_pierce_percent = 291,
+			attack_pierce_value = 292,
+			attack_pierce_value_equip = 293,
+			attack_critical_base_percent = 294,
+			attack_critical_damage_percent = 295,
+			attack_critical_value = 296,
+			attack_critical_value_equip = 297,
+			attack_critical_damage_value = 298,
+			attack_critical_damage_value_equip = 299,
+			defend_critical_base_percent = 300,
+			defend_critical_damage_percent = 301,
+			defend_critical_value = 302,
+			defend_critical_value_equip = 303,
+			defend_bounce_percent = 304,
+			defend_dodge_base_percent = 305,
+			defend_dodge_value = 306,
+			defend_dodge_value_equip = 307,
+			defend_parry_base_percent = 308,
+			defend_parry_value = 309,
+			defend_parry_value_equip = 310,
+			defend_parry_reduce_percent = 311,
+			defend_parry_reduce_diff = 312,
+			defend_perfect_parry_base_percent = 313,
+			defend_immune_base_percent = 314,
+			attack_power_creature_min = 315,
+			attack_power_creature_max = 316,
+			attack_power_equip_min = 317,
+			attack_power_equip_max = 318,
+			defend_power_creature_value = 319,
+			defend_power_equip_value = 320,
+			defend_resist_power_creature_value = 321,
+			defend_resist_power_equip_value = 322,
+			defend_physical_damage_reduce_percent = 323,
+			defend_force_damage_reduce_percent = 324,
+			attack_damage_modify_percent = 325,
+			attack_damage_modify_diff = 326,
+			defend_damage_modify_percent = 327,
+			defend_damage_modify_diff = 328,
+			defend_miss_base_percent = 329,
+			attack_stiff_duration_base_percent = 330,
+			attack_stiff_duration_value = 331,
+			defend_stiff_duration_base_percent = 332,
+			defend_stiff_duration_value = 333,
+			cast_duration_base_percent = 334,
+			cast_duration_value = 335,
+			attack_concentrate_value = 336,
+			attack_concentrate_value_equip = 337,
+			defend_perfect_parry_reduce_percent = 338,
+			defend_counter_reduce_percent = 339,
+			pve_boss_level_npc_attack_power_creature_min = 340,
+			pve_boss_level_npc_attack_power_creature_max = 341,
+			pve_boss_level_npc_attack_power_equip_min = 342,
+			pve_boss_level_npc_attack_power_equip_max = 343,
+			pve_boss_level_npc_defend_power_creature_value = 344,
+			pve_boss_level_npc_defend_power_equip_value = 345,
+			pvp_attack_power_creature_min = 346,
+			pvp_attack_power_creature_max = 347,
+			pvp_attack_power_equip_min = 348,
+			pvp_attack_power_equip_max = 349,
+			pvp_defend_power_creature_value = 350,
+			pvp_defend_power_equip_value = 351,
+			job_ability_1 = 352,
+			job_ability_2 = 353,
+			heal_power_base_percent = 354,
+			heal_power_value = 355,
+			heal_power_diff = 356,
+			aoe_defend_base_percent = 357,
+			aoe_defend_power_value = 358,
+			abnormal_attack_base_percent = 359,
+			abnormal_attack_power_value = 360,
+			abnormal_attack_power_value_equip = 361,
+			abnormal_defend_base_percent = 362,
+			abnormal_defend_power_value = 363,
+			hate_base_percent = 364,
+			hate_power_creature_value = 365,
+			hate_power_equip_value = 366,
+			additional_exp_diff_by_kill = 367,
+			additional_exp_percent_by_kill = 368,
+			additional_mastery_exp_diff_by_kill = 369,
+			additional_mastery_exp_percent_by_kill = 370,
+			additional_faction_score_max_percent = 371,
+			additional_sealed_dungeon_exp_diff_by_kill = 372,
+			additional_sealed_dungeon_exp_percent_by_kill = 373,
+			attack_attribute_value = 374,
+			attack_attribute_value_equip = 375,
+			attack_attribute_base_percent = 376,
+			defend_difficulty_type_damage_reduce_percent = 377,
+			race_type_1_attack_damage_modify_percent = 378,
+			race_type_2_attack_damage_modify_percent = 379,
+			race_type_3_attack_damage_modify_percent = 380,
+			race_type_4_attack_damage_modify_percent = 381,
+			race_type_5_attack_damage_modify_percent = 382,
+			race_type_6_attack_damage_modify_percent = 383,
+			race_type_7_attack_damage_modify_percent = 384,
+			race_type_1_defend_damage_modify_percent = 385,
+			race_type_2_defend_damage_modify_percent = 386,
+			race_type_3_defend_damage_modify_percent = 387,
+			race_type_4_defend_damage_modify_percent = 388,
+			race_type_5_defend_damage_modify_percent = 389,
+			race_type_6_defend_damage_modify_percent = 390,
+			race_type_7_defend_damage_modify_percent = 391,
+			attribute_type_1_attack_damage_modify_percent = 392,
+			attribute_type_2_attack_damage_modify_percent = 393,
+			attribute_type_3_attack_damage_modify_percent = 394,
+			attribute_type_4_attack_damage_modify_percent = 395,
+			attribute_type_5_attack_damage_modify_percent = 396,
+			attribute_type_6_attack_damage_modify_percent = 397,
+			attribute_type_7_attack_damage_modify_percent = 398,
+			attribute_type_8_attack_damage_modify_percent = 399,
+			attribute_type_9_attack_damage_modify_percent = 400,
+			attribute_type_10_attack_damage_modify_percent = 401,
+			attribute_type_11_attack_damage_modify_percent = 402,
+			attribute_type_12_attack_damage_modify_percent = 403,
+			attribute_type_1_defend_damage_modify_percent = 404,
+			attribute_type_2_defend_damage_modify_percent = 405,
+			attribute_type_3_defend_damage_modify_percent = 406,
+			attribute_type_4_defend_damage_modify_percent = 407,
+			attribute_type_5_defend_damage_modify_percent = 408,
+			attribute_type_6_defend_damage_modify_percent = 409,
+			attribute_type_7_defend_damage_modify_percent = 410,
+			attribute_type_8_defend_damage_modify_percent = 411,
+			attribute_type_9_defend_damage_modify_percent = 412,
+			attribute_type_10_defend_damage_modify_percent = 413,
+			attribute_type_11_defend_damage_modify_percent = 414,
+			attribute_type_12_defend_damage_modify_percent = 415,
+			defend_critical_damage_value = 416,
+			defend_critical_damage_value_equip = 417,
+			attack_abnormal_hit_base_percent = 418,
+			attack_abnormal_hit_value = 419,
+			attack_abnormal_hit_equip_value = 420,
+			defend_abnormal_resistance_base_percent = 421,
+			defend_abnormal_resistance_value = 422,
+			defend_abnormal_resistance_equip_value = 423,
+			invisible = 424,
+			block_move = 425,
+			block_skill = 426,
+			block_physical_skill = 427,
+			block_force_skill = 428,
+			immune_damage = 429,
+			immune_death = 430,
+			immune_debuff = 431,
+			exception_target = 432,
+			exception_detect = 433,
+			exception_hostile_target = 434,
+			immune_casting_delay = 435,
+			block_dodge = 436,
+			block_bounce = 437,
+			block_parry = 438,
+			block_perfect_parry = 439,
+			front_perfect_parry = 440,
+			back_perfect_parry = 441,
+			front_bounce = 442,
+			back_bounce = 443,
+			debug_invincible = 444,
+			debug_invisible = 445,
+			abnormality_reserve_7 = 446,
+			abnormality_reserve_8 = 447,
+			equip_hand = 448,
+			equip_hand_level = 449,
+			equip_hand_appearance_item = 450,
+			equip_hand_appearance_item_level = 451,
+			equip_hand_alt = 452,
+			equip_body = 453,
+			equip_body_guild_id = 454,
+			equip_body_custom1 = 455,
+			equip_body_custom2 = 456,
+			equip_body_custom3 = 457,
+			equip_body_custom4 = 458,
+			equip_body_custom5 = 459,
+			equip_body_custom6 = 460,
+			equip_body_custom7 = 461,
+			equip_body_custom8 = 462,
+			equip_ear = 463,
+			equip_eye = 464,
+			equip_eye_custom1 = 465,
+			equip_eye_custom2 = 466,
+			equip_eye_custom3 = 467,
+			equip_head = 468,
+			equip_head_custom1 = 469,
+			equip_head_custom2 = 470,
+			equip_head_custom3 = 471,
+			equip_body_attach = 472,
+			equip_body_attach_custom1 = 473,
+			equip_body_attach_custom2 = 474,
+			equip_body_attach_custom3 = 475,
+			equip_weapon_gem = 476,
+			equip_pet_1 = 477,
+			equip_pet_1_appearance_item = 478,
+			equip_pet_2 = 479,
+			equip_pet_2_appearance_item = 480,
+			equip_badge_appearance_item = 481,
+			equip_normal_state_appearance = 482,
+			equip_idle_state_appearance = 483,
+			equip_hypermove_appearance = 484,
+			equip_name_plate_appearance = 485,
+			equip_speech_bubble_appearance = 486,
+			equip_talk_social_item = 487,
+			equip_soul_gem = 488,
 		};
 
 		enum class passive_moveanim_idle {
@@ -2393,6 +2398,22 @@ bool block_reattach_when_encounter_sync_player;
 			battle_zone = 2,
 		};
 
+		enum class fx_condition_channel {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
+			value_4 = 4,
+			value_5 = 5,
+			value_6 = 6,
+			value_7 = 7,
+			value_8 = 8,
+			value_9 = 9,
+			value_10 = 10,
+			value_11 = 11,
+			value_12 = 12,
+		};
+
 		enum class stance {
 			stance_none = 0,
 			npcgibonjase = 1,
@@ -2461,6 +2482,7 @@ bool block_reattach_when_encounter_sync_player;
 			catch_friend = 6,
 			inhalation_catch = 7,
 			range_catch = 8,
+			fixate_catch = 9,
 		};
 
 		enum class link_stage {
@@ -2511,6 +2533,7 @@ bool block_reattach_when_encounter_sync_player;
 			class_2 = 4,
 			db = 5,
 			gadget = 6,
+			endless_1 = 7,
 		};
 	};
 #pragma pack(pop)

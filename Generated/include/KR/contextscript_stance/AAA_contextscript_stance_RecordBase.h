@@ -94,6 +94,7 @@ __int16 abnormal_flag;
 			catch_friend = 6,
 			inhalation_catch = 7,
 			range_catch = 8,
+			fixate_catch = 9,
 		};
 
 		enum class abnormal_flag {
@@ -344,6 +345,7 @@ __int16 abnormal_flag;
 			condition_event_9 = 244,
 			condition_event_10 = 245,
 			linked = 246,
+			EndlessnessTower = 247,
 		};
 	};
 #pragma pack(pop)

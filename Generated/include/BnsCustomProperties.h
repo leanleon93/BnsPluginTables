@@ -44,7 +44,7 @@ const struct XYZ {__int32 X; __int32 Y; __int32 Z; };
 const struct RGB {unsigned char R; unsigned char G; unsigned char B; };
 const struct TableRef { __int64 Key; };
 const struct UnkFlag { char Unk[20]; };
-const struct TableVersion { union Version { struct { __int16 MajorVersion; __int16 MinorVersion; }; unsigned __int32 VersionKey; }; Version Version; TableVersion() = default; TableVersion(__int16 major, __int16 minor) : Version{major, minor} {} };
+const struct TableVersion { union Version { struct { __int16 MajorVersion; __int16 MinorVersion; }; unsigned __int32 VersionKey; }; Version Version; TableVersion() = default; TableVersion(__int16 major, __int16 minor) : Version{major, minor} {} constexpr TableVersion(__int16 major, __int16 minor, bool) : Version{ major, minor } {} };
 const struct DataView {
 		const char* Data;
 		long long Length;

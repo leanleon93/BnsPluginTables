@@ -29,7 +29,7 @@ namespace BnsTables::KR {
 __int32 index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 121; }
+		static __int16 TableId() { return 122; }
 		static __int32 SubType() { return -1; }
 
 	};
