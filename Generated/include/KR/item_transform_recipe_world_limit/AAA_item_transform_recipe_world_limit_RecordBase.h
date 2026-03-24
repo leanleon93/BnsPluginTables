@@ -30,10 +30,10 @@ __int32 limit_count;
 __int64 start_time;
 __int64 end_time;
 BnsTables::Shared::TableRef item_transform_recipe;
-int item_transform_recipe_tableId() const {return 229;};
+int item_transform_recipe_tableId() const {return 230;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 231; }
+		static __int16 TableId() { return 232; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

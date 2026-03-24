@@ -29,10 +29,10 @@ __int32 skill_tree_id[4];
 __int32 skill_tree_id_Size() const {return 4;};
 BnsTables::Shared::TableRef context_script[4];
 __int32 context_script_Size() const {return 4;};
-int context_script_tableId() const {return 78;};
+int context_script_tableId() const {return 79;};
 BnsTables::Shared::TableRef tooltip_text[4];
 __int32 tooltip_text_Size() const {return 4;};
-int tooltip_text_tableId() const {return 444;};
+int tooltip_text_tableId() const {return 445;};
 __int32 skill_attack_power_min_param1_slot[4];
 __int32 skill_attack_power_min_param1_slot_Size() const {return 4;};
 __int32 skill_attack_power_max_param1_slot[4];
@@ -51,7 +51,7 @@ __int32 skill_attack_power_max_param4_slot[4];
 __int32 skill_attack_power_max_param4_slot_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 10); }
-		static __int16 TableId() { return 366; }
+		static __int16 TableId() { return 367; }
 		static __int32 SubType() { return -1; }
 
 	};

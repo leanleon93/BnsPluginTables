@@ -11,7 +11,7 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[2];
 BnsTables::Shared::TableRef loop_restricted_effect;
-int loop_restricted_effect_tableId() const {return 119;};
+int loop_restricted_effect_tableId() const {return 120;};
 
 		static __int32 SubType() { return 15; }
 	};

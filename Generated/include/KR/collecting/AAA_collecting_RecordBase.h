@@ -26,10 +26,10 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 444;};
+int name_tableId() const {return 445;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 61; }
+		static __int16 TableId() { return 62; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,

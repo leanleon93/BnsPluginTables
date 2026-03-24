@@ -30,7 +30,7 @@ wchar_t* compliment_default_desc;
 wchar_t* compliment_additional_desc;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 62; }
+		static __int16 TableId() { return 63; }
 		static __int32 SubType() { return -1; }
 
 	};

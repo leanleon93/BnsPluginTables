@@ -24,7 +24,7 @@ signed char level;
 		__int32 game_grade_key;
 __int64 value;
 BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 119;};
+int effect_tableId() const {return 120;};
 wchar_t* string_value;
 bool enable_in_arena_duel;
 char Pad0[3];
@@ -35,7 +35,7 @@ wchar_t* icon_image_set;
 wchar_t* name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 1); }
-		static __int16 TableId() { return 171; }
+		static __int16 TableId() { return 172; }
 		static __int32 SubType() { return -1; }
 		enum class benefit_type {
 			none = 0,

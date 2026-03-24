@@ -21,11 +21,11 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 444;};
+int name_tableId() const {return 445;};
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 205;};
+int cost_item_tableId() const {return 206;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 

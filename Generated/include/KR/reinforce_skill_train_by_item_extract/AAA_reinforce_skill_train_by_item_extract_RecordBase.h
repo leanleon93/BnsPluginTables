@@ -24,33 +24,33 @@ signed char level;
 		wchar_t* alias;
 BnsTables::Shared::TableRef cost_main_item[5];
 __int32 cost_main_item_Size() const {return 5;};
-int cost_main_item_tableId() const {return 205;};
+int cost_main_item_tableId() const {return 206;};
 __int16 cost_main_item_count[5];
 __int32 cost_main_item_count_Size() const {return 5;};
 char Pad0[2];
 BnsTables::Shared::TableRef cost_sub_item_1[8];
 __int32 cost_sub_item_1_Size() const {return 8;};
-int cost_sub_item_1_tableId() const {return 205;};
+int cost_sub_item_1_tableId() const {return 206;};
 __int16 cost_sub_item_count_1[8];
 __int32 cost_sub_item_count_1_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_2[8];
 __int32 cost_sub_item_2_Size() const {return 8;};
-int cost_sub_item_2_tableId() const {return 205;};
+int cost_sub_item_2_tableId() const {return 206;};
 __int16 cost_sub_item_count_2[8];
 __int32 cost_sub_item_count_2_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_3[8];
 __int32 cost_sub_item_3_Size() const {return 8;};
-int cost_sub_item_3_tableId() const {return 205;};
+int cost_sub_item_3_tableId() const {return 206;};
 __int16 cost_sub_item_count_3[8];
 __int32 cost_sub_item_count_3_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_4[8];
 __int32 cost_sub_item_4_Size() const {return 8;};
-int cost_sub_item_4_tableId() const {return 205;};
+int cost_sub_item_4_tableId() const {return 206;};
 __int16 cost_sub_item_count_4[8];
 __int32 cost_sub_item_count_4_Size() const {return 8;};
 BnsTables::Shared::TableRef cost_sub_item_5[8];
 __int32 cost_sub_item_5_Size() const {return 8;};
-int cost_sub_item_5_tableId() const {return 205;};
+int cost_sub_item_5_tableId() const {return 206;};
 __int16 cost_sub_item_count_5[8];
 __int32 cost_sub_item_count_5_Size() const {return 8;};
 __int32 cost_money[5];
@@ -63,7 +63,7 @@ char Pad1[1];
 __int16 reinforce_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 340; }
+		static __int16 TableId() { return 341; }
 		static __int32 SubType() { return -1; }
 
 	};

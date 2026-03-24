@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef party_battle_field_zone;
-int party_battle_field_zone_tableId() const {return 289;};
+int party_battle_field_zone_tableId() const {return 290;};
 
 		static __int32 SubType() { return 2; }
 	};

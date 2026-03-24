@@ -20,7 +20,7 @@ namespace BnsTables::KR {
 		};
 		char nokeypad[2];
 		BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 141;};
+int faction_tableId() const {return 142;};
 signed char job[16];
 __int32 job_Size() const {return 16;};
 signed char sex[4];
@@ -29,7 +29,7 @@ signed char race[4];
 __int32 race_Size() const {return 4;};
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 205;};
+int item_tableId() const {return 206;};
 signed char item_count[4];
 __int32 item_count_Size() const {return 4;};
 

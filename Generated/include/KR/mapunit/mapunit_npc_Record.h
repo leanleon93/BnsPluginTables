@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 282;};
+int npc_tableId() const {return 283;};
 bool ignore_object_pos;
 bool in_sight_only;
 bool many_counts;

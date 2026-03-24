@@ -24,22 +24,22 @@ __int32 param_value;
 		signed char param_type_category;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 444;};
+int name_tableId() const {return 445;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 191;};
+int icon_texture_tableId() const {return 192;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 444;};
+int desc_tableId() const {return 445;};
 __int32 order;
 signed char required_guild_level;
 bool usable;
 char Pad2[2];
 BnsTables::Shared::TableRef recipe_id;
-int recipe_id_tableId() const {return 186;};
+int recipe_id_tableId() const {return 187;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 183; }
+		static __int16 TableId() { return 184; }
 		static __int32 SubType() { return -1; }
 		enum class param_type_category {
 			none = 0,

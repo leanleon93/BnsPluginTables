@@ -22,17 +22,17 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 444;};
+int name_tableId() const {return 445;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 444;};
+int description_tableId() const {return 445;};
 BnsTables::Shared::TableRef constellation;
-int constellation_tableId() const {return 66;};
+int constellation_tableId() const {return 67;};
 signed char star_type;
 signed char order;
 signed char required_pc_level;
 signed char required_pc_mastery_level;
 BnsTables::Shared::TableRef required_quest;
-int required_quest_tableId() const {return 312;};
+int required_quest_tableId() const {return 313;};
 __int16 required_achievement_id;
 __int16 required_achievement_step;
 __int16 activate_probability;
@@ -40,7 +40,7 @@ char Pad0[2];
 __int32 activate_cost_money;
 BnsTables::Shared::TableRef activate_cost_item[6];
 __int32 activate_cost_item_Size() const {return 6;};
-int activate_cost_item_tableId() const {return 205;};
+int activate_cost_item_tableId() const {return 206;};
 __int16 activate_cost_item_count[6];
 __int32 activate_cost_item_count_Size() const {return 6;};
 bool draw_enable;
@@ -48,20 +48,20 @@ char Pad1[3];
 __int32 draw_option_cost_money;
 BnsTables::Shared::TableRef draw_option_cost_item[6];
 __int32 draw_option_cost_item_Size() const {return 6;};
-int draw_option_cost_item_tableId() const {return 205;};
+int draw_option_cost_item_tableId() const {return 206;};
 __int16 draw_option_cost_item_count[6];
 __int32 draw_option_cost_item_count_Size() const {return 6;};
 signed char option_select_count;
 char Pad2[3];
 BnsTables::Shared::TableRef option[50];
 __int32 option_Size() const {return 50;};
-int option_tableId() const {return 68;};
+int option_tableId() const {return 69;};
 __int16 option_weight[50];
 __int32 option_weight_Size() const {return 50;};
 __int32 option_weight_total;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
-		static __int16 TableId() { return 67; }
+		static __int16 TableId() { return 68; }
 		static __int32 SubType() { return -1; }
 
 	};

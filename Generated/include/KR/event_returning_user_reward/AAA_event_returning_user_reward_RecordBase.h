@@ -25,16 +25,16 @@ signed char state;
 wchar_t* title_fontset;
 wchar_t* title_background_image;
 BnsTables::Shared::TableRef event_returning_user_title;
-int event_returning_user_title_tableId() const {return 444;};
+int event_returning_user_title_tableId() const {return 445;};
 BnsTables::Shared::TableRef event_returning_user_popup_title;
-int event_returning_user_popup_title_tableId() const {return 444;};
+int event_returning_user_popup_title_tableId() const {return 445;};
 BnsTables::Shared::TableRef event_returning_user_popup_desc;
-int event_returning_user_popup_desc_tableId() const {return 444;};
+int event_returning_user_popup_desc_tableId() const {return 445;};
 __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 132; }
+		static __int16 TableId() { return 133; }
 		static __int32 SubType() { return -1; }
 		enum class state {
 			none = 0,

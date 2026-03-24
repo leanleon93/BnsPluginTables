@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 444;};
+int name2_tableId() const {return 445;};
 BnsTables::Shared::TableRef talk_to_self_quests[64];
 __int32 talk_to_self_quests_Size() const {return 64;};
-int talk_to_self_quests_tableId() const {return 312;};
+int talk_to_self_quests_tableId() const {return 313;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 105; }
+		static __int16 TableId() { return 106; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -22,12 +22,12 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 282;};
+int npc_tableId() const {return 283;};
 BnsTables::Shared::TableRef spawn_alarm_message;
-int spawn_alarm_message_tableId() const {return 162;};
+int spawn_alarm_message_tableId() const {return 163;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 147; }
+		static __int16 TableId() { return 148; }
 		static __int32 SubType() { return -1; }
 
 	};

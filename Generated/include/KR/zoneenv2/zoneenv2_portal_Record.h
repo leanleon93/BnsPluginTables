@@ -13,25 +13,25 @@ namespace BnsTables::KR {
 signed char portal_type;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef transit_zone;
-int transit_zone_tableId() const {return 489;};
+int transit_zone_tableId() const {return 490;};
 BnsTables::Shared::TableRef transit_dungeon;
-int transit_dungeon_tableId() const {return 118;};
+int transit_dungeon_tableId() const {return 119;};
 bool transit_reentrance_pcspawn;
 char Pad_sub_2[1];
 __int16 transit_pc_spawn;
 BnsTables::Shared::TableRef transit_pc_spawn_in_arena;
-int transit_pc_spawn_in_arena_tableId() const {return 498;};
+int transit_pc_spawn_in_arena_tableId() const {return 499;};
 BnsTables::Shared::TableRef transit_leave_cinematic;
 int transit_leave_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef transit_enter_cinematic;
 int transit_enter_cinematic_tableId() const {return 57;};
 BnsTables::Shared::TableRef effect[8];
 __int32 effect_Size() const {return 8;};
-int effect_tableId() const {return 119;};
+int effect_tableId() const {return 120;};
 BnsTables::Shared::TableRef transit_leave_social;
-int transit_leave_social_tableId() const {return 406;};
+int transit_leave_social_tableId() const {return 407;};
 BnsTables::Shared::TableRef transit_enter_social;
-int transit_enter_social_tableId() const {return 406;};
+int transit_enter_social_tableId() const {return 407;};
 signed char required_level;
 
 		static __int32 SubType() { return 7; }

@@ -26,12 +26,12 @@ signed char recommend_level;
 char Pad0[2];
 BnsTables::Shared::TableRef combo_skill[4];
 __int32 combo_skill_Size() const {return 4;};
-int combo_skill_tableId() const {return 358;};
+int combo_skill_tableId() const {return 359;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 444;};
+int description_tableId() const {return 445;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 369; }
+		static __int16 TableId() { return 370; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,
