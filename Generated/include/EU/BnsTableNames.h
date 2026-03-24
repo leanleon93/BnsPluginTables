@@ -18,7 +18,7 @@ namespace BnsTables::EU {
 		arr[3] = BnsTables::Shared::TableVersion(0, 40, true);
 		arr[4] = BnsTables::Shared::TableVersion(2, 0, true);
 		arr[5] = BnsTables::Shared::TableVersion(0, 1, true);
-		arr[6] = BnsTables::Shared::TableVersion(3, 3, true);
+		arr[6] = BnsTables::Shared::TableVersion(3, 4, true);
 		arr[7] = BnsTables::Shared::TableVersion(5, 3, true);
 		arr[8] = BnsTables::Shared::TableVersion(0, 1, true);
 		arr[9] = BnsTables::Shared::TableVersion(0, 2, true);
