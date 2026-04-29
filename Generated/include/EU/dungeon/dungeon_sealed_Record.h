@@ -12,13 +12,13 @@ namespace BnsTables::EU {
 		signed char max_sealed_level;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef modify_data;
-int modify_data_tableId() const {return 349;};
+int modify_data_tableId() const {return 352;};
 BnsTables::Shared::TableRef bind_quota;
-int bind_quota_tableId() const {return 69;};
+int bind_quota_tableId() const {return 70;};
 __int16 theme_version;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef theme_arena_entrance_zone;
-int theme_arena_entrance_zone_tableId() const {return 486;};
+int theme_arena_entrance_zone_tableId() const {return 490;};
 __int64 gimmick_week_start_date_time;
 signed char ui_scroll_slot_index;
 

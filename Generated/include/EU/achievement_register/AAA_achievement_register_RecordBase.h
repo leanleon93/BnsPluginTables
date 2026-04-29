@@ -107,16 +107,16 @@ __int16 version;
 char Pad0[2];
 __int32 max_value;
 bool for_newbie_care;
+bool for_newbie_journal;
 bool persistant;
 bool increment_from_client;
-char Pad1[1];
 BnsTables::Shared::TableRef achievement[8];
 __int32 achievement_Size() const {return 8;};
 int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId() const {return 441;};
+int register_name_tableId() const {return 445;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 7; }
 		static __int32 SubType() { return -1; }
 		enum class job {

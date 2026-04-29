@@ -22,9 +22,9 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* name;
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 437;};
+int teleport_tableId() const {return 441;};
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 280;};
+int npc_tableId() const {return 283;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
 		static __int16 TableId() { return 24; }

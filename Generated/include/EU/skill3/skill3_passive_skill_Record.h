@@ -12,7 +12,7 @@ namespace BnsTables::EU {
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef passive_effect[8];
 __int32 passive_effect_Size() const {return 8;};
-int passive_effect_tableId() const {return 119;};
+int passive_effect_tableId() const {return 120;};
 signed char summoned_job;
 bool summoned_use_only;
 

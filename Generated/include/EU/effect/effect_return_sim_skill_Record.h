@@ -11,9 +11,9 @@ namespace BnsTables::EU {
 	public:
 		char Pad_sub_0[1];
 BnsTables::Shared::TableRef skill;
-int skill_tableId() const {return 369;};
+int skill_tableId() const {return 373;};
 BnsTables::Shared::TableRef skill3;
-int skill3_tableId() const {return 356;};
+int skill3_tableId() const {return 359;};
 bool finish;
 
 		static __int32 SubType() { return 50; }

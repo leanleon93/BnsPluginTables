@@ -22,16 +22,16 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 441;};
+int name_tableId() const {return 445;};
 BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 140;};
+int faction_tableId() const {return 142;};
 __int16 level;
 char Pad0[2];
 BnsTables::Shared::TableRef party_chat_channel;
-int party_chat_channel_tableId() const {return 288;};
+int party_chat_channel_tableId() const {return 291;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 289; }
+		static __int16 TableId() { return 292; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -21,13 +21,13 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef scroll;
-int scroll_tableId() const {return 399;};
+int scroll_tableId() const {return 403;};
 BnsTables::Shared::TableRef stone;
-int stone_tableId() const {return 401;};
+int stone_tableId() const {return 405;};
 bool tooltip;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 400; }
+		static __int16 TableId() { return 404; }
 		static __int32 SubType() { return -1; }
 
 	};

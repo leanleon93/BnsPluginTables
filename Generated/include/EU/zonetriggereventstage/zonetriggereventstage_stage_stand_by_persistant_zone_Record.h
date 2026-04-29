@@ -18,16 +18,16 @@ __int32 total_duration_minute_Size() const {return 7;};
 signed char persistant_zone_subtype;
 char Pad_sub_0[1];
 BnsTables::Shared::TableRef event_channel_text;
-int event_channel_text_tableId() const {return 441;};
+int event_channel_text_tableId() const {return 445;};
 BnsTables::Shared::TableRef event_notify_diff_zone[6];
 __int32 event_notify_diff_zone_Size() const {return 6;};
-int event_notify_diff_zone_tableId() const {return 486;};
+int event_notify_diff_zone_tableId() const {return 490;};
 BnsTables::Shared::TableRef event_notify_diff_zone_msg;
-int event_notify_diff_zone_msg_tableId() const {return 161;};
+int event_notify_diff_zone_msg_tableId() const {return 163;};
 BnsTables::Shared::TableRef event_notify_diff_channel_msg;
-int event_notify_diff_channel_msg_tableId() const {return 161;};
+int event_notify_diff_channel_msg_tableId() const {return 163;};
 BnsTables::Shared::TableRef event_notify_msg;
-int event_notify_msg_tableId() const {return 161;};
+int event_notify_msg_tableId() const {return 163;};
 
 		static __int32 SubType() { return 2; }
 	};

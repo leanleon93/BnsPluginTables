@@ -22,17 +22,17 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill3;
-int skill3_tableId() const {return 356;};
+int skill3_tableId() const {return 359;};
 __int16 reinforce_score[10];
 __int32 reinforce_score_Size() const {return 10;};
 signed char reinforce_score_total_count;
 char Pad0[3];
 BnsTables::Shared::TableRef apply_skill_modify_per_reinforce_score[10];
 __int32 apply_skill_modify_per_reinforce_score_Size() const {return 10;};
-int apply_skill_modify_per_reinforce_score_tableId() const {return 373;};
+int apply_skill_modify_per_reinforce_score_tableId() const {return 377;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 339; }
+		static __int16 TableId() { return 342; }
 		static __int32 SubType() { return -1; }
 
 	};

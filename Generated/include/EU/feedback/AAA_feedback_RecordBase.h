@@ -26,20 +26,21 @@ signed char boss_npc_kill_count;
 char Pad0[3];
 BnsTables::Shared::TableRef boss_npc[8];
 __int32 boss_npc_Size() const {return 8;};
-int boss_npc_tableId() const {return 142;};
+int boss_npc_tableId() const {return 144;};
 bool use_progress_info_ui;
 bool use_simple_result_ui;
 bool use_combat_signal_ui;
 char Pad1[1];
 BnsTables::Shared::TableRef attack_damage_rank;
-int attack_damage_rank_tableId() const {return 144;};
+int attack_damage_rank_tableId() const {return 146;};
 BnsTables::Shared::TableRef received_damage_rank;
-int received_damage_rank_tableId() const {return 144;};
+int received_damage_rank_tableId() const {return 146;};
 BnsTables::Shared::TableRef attack_response_rank;
-int attack_response_rank_tableId() const {return 144;};
+int attack_response_rank_tableId() const {return 146;};
+bool use_ui_panel_for_duelnpcchallenge;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 143; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 2); }
+		static __int16 TableId() { return 145; }
 		static __int32 SubType() { return -1; }
 
 	};

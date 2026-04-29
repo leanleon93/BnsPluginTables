@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef unlocated_store;
-int unlocated_store_tableId() const {return 451;};
+int unlocated_store_tableId() const {return 455;};
 
 		static __int32 SubType() { return 3; }
 	};

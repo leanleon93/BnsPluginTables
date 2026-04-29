@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef emoticon;
-int emoticon_tableId() const {return 122;};
+int emoticon_tableId() const {return 123;};
 
 		static __int32 SubType() { return 3; }
 	};

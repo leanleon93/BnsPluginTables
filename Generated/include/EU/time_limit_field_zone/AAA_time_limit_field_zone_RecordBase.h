@@ -22,39 +22,40 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef time_limit_quota;
-int time_limit_quota_tableId() const {return 69;};
+int time_limit_quota_tableId() const {return 70;};
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 signed char required_level;
 signed char required_mastery_level;
 char Pad0[2];
 BnsTables::Shared::TableRef required_cost;
-int required_cost_tableId() const {return 80;};
+int required_cost_tableId() const {return 81;};
 BnsTables::Shared::TableRef time_limit_field_zone_name2;
-int time_limit_field_zone_name2_tableId() const {return 441;};
+int time_limit_field_zone_name2_tableId() const {return 445;};
 BnsTables::Shared::TableRef time_limit_field_zone_desc;
-int time_limit_field_zone_desc_tableId() const {return 441;};
+int time_limit_field_zone_desc_tableId() const {return 445;};
 BnsTables::Shared::TableRef time_limit_field_zone_desc2;
-int time_limit_field_zone_desc2_tableId() const {return 441;};
+int time_limit_field_zone_desc2_tableId() const {return 445;};
 signed char ui_text_grade;
 char Pad1[3];
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 BnsTables::Shared::TableRef field_bonus_effect_desc1;
-int field_bonus_effect_desc1_tableId() const {return 441;};
+int field_bonus_effect_desc1_tableId() const {return 445;};
 BnsTables::Shared::TableRef field_bonus_effect_desc2;
-int field_bonus_effect_desc2_tableId() const {return 441;};
+int field_bonus_effect_desc2_tableId() const {return 445;};
 BnsTables::Shared::TableRef field_bonus_effect_desc3;
-int field_bonus_effect_desc3_tableId() const {return 441;};
+int field_bonus_effect_desc3_tableId() const {return 445;};
 BnsTables::Shared::TableRef recommend_alias;
-int recommend_alias_tableId() const {return 74;};
+int recommend_alias_tableId() const {return 75;};
 __int16 recommend_attack_power;
 signed char entrance_type;
 char Pad2[1];
 __int32 parent_time_limit_field_zone;
+wchar_t* item_pouch_addtional_mark_particle;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
-		static __int16 TableId() { return 442; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 6); }
+		static __int16 TableId() { return 446; }
 		static __int32 SubType() { return -1; }
 		enum class entrance_type {
 			default_val = 0,

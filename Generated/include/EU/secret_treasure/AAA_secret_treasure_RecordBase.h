@@ -21,12 +21,12 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef item;
-int item_tableId() const {return 204;};
+int item_tableId() const {return 206;};
 __int32 usable_duration;
 bool do_not_use;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 353; }
+		static __int16 TableId() { return 356; }
 		static __int32 SubType() { return -1; }
 
 	};

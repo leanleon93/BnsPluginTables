@@ -23,13 +23,13 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef fire_filter_target[8];
 __int32 fire_filter_target_Size() const {return 8;};
-int fire_filter_target_tableId() const {return 151;};
+int fire_filter_target_tableId() const {return 153;};
 BnsTables::Shared::TableRef exec_filter_target[8];
 __int32 exec_filter_target_Size() const {return 8;};
-int exec_filter_target_tableId() const {return 151;};
+int exec_filter_target_tableId() const {return 153;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 384; }
+		static __int16 TableId() { return 388; }
 		static __int32 SubType() { return -1; }
 
 	};

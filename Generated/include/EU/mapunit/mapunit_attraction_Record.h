@@ -13,7 +13,7 @@ namespace BnsTables::EU {
 float attraction_position_x;
 float attraction_position_y;
 BnsTables::Shared::TableRef party_chat_channel;
-int party_chat_channel_tableId() const {return 288;};
+int party_chat_channel_tableId() const {return 291;};
 
 		static __int32 SubType() { return 7; }
 	};

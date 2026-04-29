@@ -29,15 +29,15 @@ wchar_t* name_pt;
 wchar_t* name_th;
 wchar_t* name_vn;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 441;};
+int name_text_tableId() const {return 445;};
 BnsTables::Shared::TableRef event;
-int event_tableId() const {return 404;};
+int event_tableId() const {return 408;};
 BnsTables::Shared::TableRef mission_step;
-int mission_step_tableId() const {return 407;};
+int mission_step_tableId() const {return 411;};
 signed char task_number;
 char Pad0[3];
 BnsTables::Shared::TableRef mission;
-int mission_tableId() const {return 406;};
+int mission_tableId() const {return 410;};
 signed char proceedable_type;
 signed char actor_type;
 char Pad1[2];
@@ -56,10 +56,10 @@ wchar_t* description_pt;
 wchar_t* description_th;
 wchar_t* description_vn;
 BnsTables::Shared::TableRef description_text;
-int description_text_tableId() const {return 441;};
+int description_text_tableId() const {return 445;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 408; }
+		static __int16 TableId() { return 412; }
 		static __int32 SubType() { return -1; }
 		enum class proceedable_type {
 			none = 0,

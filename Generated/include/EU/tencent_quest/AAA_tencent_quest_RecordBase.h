@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		bool check_vitality;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 438; }
+		static __int16 TableId() { return 442; }
 		static __int32 SubType() { return -1; }
 
 	};

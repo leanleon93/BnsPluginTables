@@ -23,11 +23,11 @@ namespace BnsTables::EU {
 		__int32 reputation;
 BnsTables::Shared::TableRef grade_name[2];
 __int32 grade_name_Size() const {return 2;};
-int grade_name_tableId() const {return 441;};
+int grade_name_tableId() const {return 445;};
 __int32 max_faction_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 141; }
+		static __int16 TableId() { return 143; }
 		static __int32 SubType() { return -1; }
 
 	};

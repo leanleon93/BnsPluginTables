@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		bool season_enable;
 char Pad0[3];
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 486;};
+int zone_tableId() const {return 490;};
 wchar_t* alias;
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
@@ -32,12 +32,12 @@ signed char required_mastery_level;
 char Pad1[2];
 BnsTables::Shared::TableRef required_preceding_quest[3];
 __int32 required_preceding_quest_Size() const {return 3;};
-int required_preceding_quest_tableId() const {return 310;};
+int required_preceding_quest_tableId() const {return 313;};
 signed char required_preceding_quest_check;
 char Pad2[1];
 __int16 recommend_attack_power;
 BnsTables::Shared::TableRef standard_gear_weapon;
-int standard_gear_weapon_tableId() const {return 204;};
+int standard_gear_weapon_tableId() const {return 206;};
 float center_x;
 float center_y;
 float center_z;
@@ -56,7 +56,7 @@ __int16 usable_floor;
 char Pad4[2];
 BnsTables::Shared::TableRef duel_npc_challenge_group[100];
 __int32 duel_npc_challenge_group_Size() const {return 100;};
-int duel_npc_challenge_group_tableId() const {return 115;};
+int duel_npc_challenge_group_tableId() const {return 116;};
 __int32 card_select_delay_duration;
 __int32 change_floor_delay_duration;
 wchar_t* change_floor_kismet_name[10];
@@ -70,11 +70,11 @@ signed char active_strategic_skill_count;
 signed char passive_strategic_skill_count;
 char Pad5[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 441;};
+int name2_tableId() const {return 445;};
 BnsTables::Shared::TableRef dungeon_name2;
-int dungeon_name2_tableId() const {return 441;};
+int dungeon_name2_tableId() const {return 445;};
 BnsTables::Shared::TableRef dungeon_desc;
-int dungeon_desc_tableId() const {return 441;};
+int dungeon_desc_tableId() const {return 445;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
@@ -86,18 +86,18 @@ signed char recommand_mastery_level_max;
 char Pad6[3];
 BnsTables::Shared::TableRef display_quests[12];
 __int32 display_quests_Size() const {return 12;};
-int display_quests_tableId() const {return 310;};
+int display_quests_tableId() const {return 313;};
 BnsTables::Shared::TableRef tactic;
-int tactic_tableId() const {return 441;};
+int tactic_tableId() const {return 445;};
 BnsTables::Shared::TableRef recommend_alias;
-int recommend_alias_tableId() const {return 74;};
+int recommend_alias_tableId() const {return 75;};
 BnsTables::Shared::TableRef entrance_quota;
-int entrance_quota_tableId() const {return 69;};
+int entrance_quota_tableId() const {return 70;};
 BnsTables::Shared::TableRef contents_reset;
-int contents_reset_tableId() const {return 75;};
+int contents_reset_tableId() const {return 76;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 114; }
+		static __int16 TableId() { return 115; }
 		static __int32 SubType() { return -1; }
 		enum class required_preceding_quest_check {
 			and_val = 0,

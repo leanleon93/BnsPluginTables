@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 441;};
+int name_tableId() const {return 445;};
 signed char glyph_type;
 signed char color;
 signed char grade;
@@ -31,15 +31,15 @@ BnsTables::Shared::IconRef icon;
 bool is_representative;
 char Pad1[3];
 BnsTables::Shared::TableRef condition_event;
-int condition_event_tableId() const {return 65;};
+int condition_event_tableId() const {return 66;};
 signed char condition_event_type;
 char Pad2[3];
 BnsTables::Shared::TableRef condition_event_min;
-int condition_event_min_tableId() const {return 65;};
+int condition_event_min_tableId() const {return 66;};
 BnsTables::Shared::TableRef condition_event_max;
-int condition_event_max_tableId() const {return 65;};
+int condition_event_max_tableId() const {return 66;};
 BnsTables::Shared::TableRef flavor_text;
-int flavor_text_tableId() const {return 441;};
+int flavor_text_tableId() const {return 445;};
 signed char reward_tier;
 signed char ability[5];
 __int32 ability_Size() const {return 5;};
@@ -49,11 +49,11 @@ __int32 ability_value_Size() const {return 5;};
 __int16 ability_id;
 char Pad4[2];
 BnsTables::Shared::TableRef dungeon_condition;
-int dungeon_condition_tableId() const {return 151;};
+int dungeon_condition_tableId() const {return 153;};
 __int16 group_id;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 163; }
+		static __int16 TableId() { return 165; }
 		static __int32 SubType() { return -1; }
 		enum class glyph_type {
 			none = 0,

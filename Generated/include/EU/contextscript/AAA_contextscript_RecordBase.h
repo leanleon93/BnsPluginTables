@@ -29,7 +29,7 @@ bool context_simple_mode;
 signed char job_specialization;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 78; }
+		static __int16 TableId() { return 79; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

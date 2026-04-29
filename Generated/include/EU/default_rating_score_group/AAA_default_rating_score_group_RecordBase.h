@@ -28,7 +28,7 @@ __int32 default_rating_score;
 bool is_placement_test;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 100; }
+		static __int16 TableId() { return 101; }
 		static __int32 SubType() { return -1; }
 		enum class season_contents_type {
 			invalid = 0,

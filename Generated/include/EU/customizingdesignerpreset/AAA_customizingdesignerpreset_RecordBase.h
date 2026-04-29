@@ -23,16 +23,16 @@ signed char sex;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 190;};
+int icon_texture_tableId() const {return 192;};
 __int16 icon_index;
 signed char param8[96];
 __int32 param8_Size() const {return 96;};
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 441;};
+int desc_tableId() const {return 445;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 92; }
+		static __int16 TableId() { return 93; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

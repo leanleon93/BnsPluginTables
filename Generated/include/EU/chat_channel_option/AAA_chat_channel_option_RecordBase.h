@@ -102,6 +102,7 @@ bool modifiable;
 			mentoring = 70,
 			skill = 71,
 			collecting_change_ability = 72,
+			combat_power = 73,
 		};
 
 		enum class group {

@@ -25,7 +25,7 @@ signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef item[8];
 __int32 item_Size() const {return 8;};
-int item_tableId() const {return 204;};
+int item_tableId() const {return 206;};
 __int16 item_amount[8];
 __int32 item_amount_Size() const {return 8;};
 signed char item_total_count;
@@ -33,7 +33,7 @@ char Pad1[3];
 __int64 money;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 80; }
+		static __int16 TableId() { return 81; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

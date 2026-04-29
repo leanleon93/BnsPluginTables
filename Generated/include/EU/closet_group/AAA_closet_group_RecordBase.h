@@ -24,12 +24,15 @@ namespace BnsTables::EU {
 char Pad0[1];
 __int16 sort_no;
 BnsTables::Shared::TableRef charge_of_item_for_instant_payment;
-int charge_of_item_for_instant_payment_tableId() const {return 204;};
+int charge_of_item_for_instant_payment_tableId() const {return 206;};
 BnsTables::Shared::TableRef item_to_be_paid;
-int item_to_be_paid_tableId() const {return 204;};
+int item_to_be_paid_tableId() const {return 206;};
 bool use_pc_cafe;
+signed char closet_point_type;
+char Pad1[2];
+__int32 closet_point;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 60; }
 		static __int32 SubType() { return -1; }
 		enum class category {
@@ -55,6 +58,12 @@ bool use_pc_cafe;
 			yongyuenshop = 19,
 			fashionista = 20,
 			unusable = 21,
+		};
+
+		enum class closet_point_type {
+			none = 0,
+			normal = 1,
+			premium = 2,
 		};
 	};
 #pragma pack(pop)

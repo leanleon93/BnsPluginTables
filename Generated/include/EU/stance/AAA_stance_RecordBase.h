@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 441;};
+int name2_tableId() const {return 445;};
 bool initialize;
 char Pad0[1];
 __int16 default_sp;
@@ -29,7 +29,7 @@ __int16 max_sp;
 char Pad1[2];
 BnsTables::Shared::TableRef effect[4];
 __int32 effect_Size() const {return 4;};
-int effect_tableId() const {return 119;};
+int effect_tableId() const {return 120;};
 bool impossible_equip;
 bool hide_weapon;
 bool clone_weapon_appearance_to_left;
@@ -103,7 +103,7 @@ wchar_t* summoned_flyingship_attachment_mesh_animset;
 signed char summoned_preset_body_shape_part_value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 295); }
-		static __int16 TableId() { return 413; }
+		static __int16 TableId() { return 417; }
 		static __int32 SubType() { return -1; }
 		enum class stance_type {
 			stance_none = 0,

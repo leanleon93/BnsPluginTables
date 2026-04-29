@@ -28,17 +28,17 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef quest;
-int quest_tableId() const {return 310;};
+int quest_tableId() const {return 313;};
 BnsTables::Shared::TableRef reward;
-int reward_tableId() const {return 308;};
+int reward_tableId() const {return 311;};
 BnsTables::Shared::TableRef basic_quota;
-int basic_quota_tableId() const {return 69;};
+int basic_quota_tableId() const {return 70;};
 BnsTables::Shared::TableRef contents_reset[10];
 __int32 contents_reset_Size() const {return 10;};
-int contents_reset_tableId() const {return 75;};
+int contents_reset_tableId() const {return 76;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 309; }
+		static __int16 TableId() { return 312; }
 		static __int32 SubType() { return -1; }
 		enum class difficulty_type {
 			none = 0,

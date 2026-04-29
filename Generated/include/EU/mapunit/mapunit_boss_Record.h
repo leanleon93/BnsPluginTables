@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 280;};
+int npc_tableId() const {return 283;};
 wchar_t* combat_imageset;
 wchar_t* combat_over_imageset;
 wchar_t* combat_pressed_imageset;

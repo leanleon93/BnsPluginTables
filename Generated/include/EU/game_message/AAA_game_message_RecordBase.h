@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 signed char category;
 char Pad0[3];
 BnsTables::Shared::TableRef text;
-int text_tableId() const {return 441;};
+int text_tableId() const {return 445;};
 bool chatting;
 char Pad1[3];
 wchar_t* chatting_fontset;
@@ -32,11 +32,11 @@ bool headline2;
 char Pad2[3];
 wchar_t* headline2_fontset;
 BnsTables::Shared::TableRef headline_text;
-int headline_text_tableId() const {return 441;};
+int headline_text_tableId() const {return 445;};
 wchar_t* headline_fontset;
 wchar_t* headline_particle;
 BnsTables::Shared::TableRef boss_headline_text;
-int boss_headline_text_tableId() const {return 441;};
+int boss_headline_text_tableId() const {return 445;};
 wchar_t* boss_headline_fontset;
 signed char sound_track;
 bool stop_previous_track_sound;
@@ -50,11 +50,11 @@ signed char sound2_type;
 signed char guild_battle_type;
 char Pad5[2];
 BnsTables::Shared::TableRef guild_battle_text;
-int guild_battle_text_tableId() const {return 441;};
+int guild_battle_text_tableId() const {return 445;};
 signed char ghost_mode_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 161; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 2); }
+		static __int16 TableId() { return 163; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,
@@ -130,6 +130,7 @@ signed char ghost_mode_type;
 			mentoring = 70,
 			skill = 71,
 			collecting_change_ability = 72,
+			combat_power = 73,
 		};
 
 		enum class sound_track {

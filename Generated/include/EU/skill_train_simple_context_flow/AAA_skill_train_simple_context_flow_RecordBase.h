@@ -27,15 +27,15 @@ signed char key_index;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef equip_item_rune_1;
-int equip_item_rune_1_tableId() const {return 204;};
+int equip_item_rune_1_tableId() const {return 206;};
 BnsTables::Shared::TableRef equip_item_rune_2;
-int equip_item_rune_2_tableId() const {return 204;};
+int equip_item_rune_2_tableId() const {return 206;};
 BnsTables::Shared::TableRef equip_item_bracelet;
-int equip_item_bracelet_tableId() const {return 204;};
+int equip_item_bracelet_tableId() const {return 206;};
 BnsTables::Shared::TableRef key_text;
-int key_text_tableId() const {return 441;};
+int key_text_tableId() const {return 445;};
 BnsTables::Shared::TableRef function_name;
-int function_name_tableId() const {return 441;};
+int function_name_tableId() const {return 445;};
 __int32 skill_id[30];
 __int32 skill_id_Size() const {return 30;};
 signed char variation_id[30];
@@ -43,16 +43,16 @@ __int32 variation_id_Size() const {return 30;};
 char Pad0[2];
 BnsTables::Shared::TableRef condition_icon_normal_text[30];
 __int32 condition_icon_normal_text_Size() const {return 30;};
-int condition_icon_normal_text_tableId() const {return 441;};
+int condition_icon_normal_text_tableId() const {return 445;};
 BnsTables::Shared::TableRef condition_icon_over_text[30];
 __int32 condition_icon_over_text_Size() const {return 30;};
-int condition_icon_over_text_tableId() const {return 441;};
+int condition_icon_over_text_tableId() const {return 445;};
 BnsTables::Shared::TableRef condition_tooltip_text[30];
 __int32 condition_tooltip_text_Size() const {return 30;};
-int condition_tooltip_text_tableId() const {return 441;};
+int condition_tooltip_text_tableId() const {return 445;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 395; }
+		static __int16 TableId() { return 399; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

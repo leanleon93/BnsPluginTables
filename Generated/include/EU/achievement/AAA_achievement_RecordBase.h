@@ -39,7 +39,7 @@ bool progress_show;
 char Pad2[3];
 BnsTables::Shared::TableRef step_complete_reward_item[5];
 __int32 step_complete_reward_item_Size() const {return 5;};
-int step_complete_reward_item_tableId() const {return 204;};
+int step_complete_reward_item_tableId() const {return 206;};
 __int16 step_complete_reward_item_count[5];
 __int32 step_complete_reward_item_count_Size() const {return 5;};
 char Pad3[2];
@@ -51,7 +51,7 @@ signed char step_complete_reward_type;
 char Pad5[3];
 BnsTables::Shared::TableRef step_complete_reward_final_item[5];
 __int32 step_complete_reward_final_item_Size() const {return 5;};
-int step_complete_reward_final_item_tableId() const {return 204;};
+int step_complete_reward_final_item_tableId() const {return 206;};
 __int16 step_complete_reward_final_item_count[5];
 __int32 step_complete_reward_final_item_count_Size() const {return 5;};
 __int16 current_step_score;
@@ -59,7 +59,7 @@ signed char ability;
 char Pad6[1];
 __int16 ability_value;
 BnsTables::Shared::TableRef completed_effect;
-int completed_effect_tableId() const {return 119;};
+int completed_effect_tableId() const {return 120;};
 signed char completed_effect_category;
 char Pad7[1];
 __int16 completed_effect_order;
@@ -71,24 +71,24 @@ signed char category_1;
 signed char category_2;
 char Pad8[2];
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 257;};
+int map_group_1_tableId() const {return 259;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 441;};
+int name2_tableId() const {return 445;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 441;};
+int description2_tableId() const {return 445;};
 BnsTables::Shared::TableRef title_name;
-int title_name_tableId() const {return 441;};
+int title_name_tableId() const {return 445;};
 BnsTables::Shared::TableRef title_image_text;
-int title_image_text_tableId() const {return 441;};
+int title_image_text_tableId() const {return 445;};
 BnsTables::Shared::TableRef title_thumbnail_icon_text;
-int title_thumbnail_icon_text_tableId() const {return 441;};
+int title_thumbnail_icon_text_tableId() const {return 445;};
 __int16 sort_no;
 char Pad9[2];
 BnsTables::Shared::TableRef completed_game_message;
-int completed_game_message_tableId() const {return 161;};
+int completed_game_message_tableId() const {return 163;};
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 435;};
+int talk_social_tableId() const {return 439;};
 BnsTables::Shared::IconRef title_chat_ui_icon;
 wchar_t* title_thumbnail_frame_fx;
 signed char title_grade;
@@ -97,7 +97,7 @@ char Pad10[2];
 __int64 start_time;
 __int64 end_time;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 4); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 5); }
 		static __int16 TableId() { return 6; }
 		static __int32 SubType() { return -1; }
 		enum class job {
@@ -175,6 +175,7 @@ __int64 end_time;
 			combat = 3,
 			economy = 4,
 			community = 5,
+			event = 6,
 		};
 
 		enum class category_2 {
@@ -197,6 +198,7 @@ __int64 end_time;
 			social_action = 16,
 			picture = 17,
 			event = 18,
+			period_event = 19,
 		};
 	};
 #pragma pack(pop)

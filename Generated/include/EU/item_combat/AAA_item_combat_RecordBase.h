@@ -25,23 +25,23 @@ signed char job_style;
 char Pad0[3];
 BnsTables::Shared::TableRef item_skill[16];
 __int32 item_skill_Size() const {return 16;};
-int item_skill_tableId() const {return 224;};
+int item_skill_tableId() const {return 226;};
 BnsTables::Shared::TableRef item_skill_second[32];
 __int32 item_skill_second_Size() const {return 32;};
-int item_skill_second_tableId() const {return 224;};
+int item_skill_second_tableId() const {return 226;};
 BnsTables::Shared::TableRef item_skill_third[32];
 __int32 item_skill_third_Size() const {return 32;};
-int item_skill_third_tableId() const {return 224;};
+int item_skill_third_tableId() const {return 226;};
 __int32 skill_build_up_parent_skill3_id[3];
 __int32 skill_build_up_parent_skill3_id_Size() const {return 3;};
 signed char skill_build_up_level[3];
 __int32 skill_build_up_level_Size() const {return 3;};
 char Pad1[1];
 BnsTables::Shared::TableRef skill_modify_info_group;
-int skill_modify_info_group_tableId() const {return 374;};
+int skill_modify_info_group_tableId() const {return 378;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 201; }
+		static __int16 TableId() { return 203; }
 		static __int32 SubType() { return -1; }
 		enum class job_style {
 			base_1 = 0,
