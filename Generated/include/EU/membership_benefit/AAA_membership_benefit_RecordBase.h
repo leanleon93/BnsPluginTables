@@ -25,14 +25,14 @@ signed char publisher;
 char Pad0[3];
 __int64 value;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 434;};
+int name2_tableId() const {return 444;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 434;};
+int description_tableId() const {return 444;};
 BnsTables::Shared::IconRef icon;
 wchar_t* icon_image_set;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
-		static __int16 TableId() { return 269; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
+		static __int16 TableId() { return 274; }
 		static __int32 SubType() { return -1; }
 		enum class benefit_type {
 			none = 0,
@@ -53,6 +53,7 @@ wchar_t* icon_image_set;
 			skip_purchase_required_quest = 15,
 			discount_money_post_send_tax = 16,
 			discount_market_purchase_tax = 17,
+			skip_market_trade_min_level = 18,
 		};
 
 		enum class publisher {

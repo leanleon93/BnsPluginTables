@@ -25,7 +25,7 @@ __int32 berserk_sequence_invoke_time[3];
 __int32 berserk_sequence_invoke_time_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 102; }
+		static __int16 TableId() { return 103; }
 		static __int32 SubType() { return -1; }
 
 	};

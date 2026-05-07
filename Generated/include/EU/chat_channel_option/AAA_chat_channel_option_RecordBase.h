@@ -101,6 +101,7 @@ bool modifiable;
 			combat_party_target_defend = 69,
 			mentoring = 70,
 			skill = 71,
+			collecting_change_ability = 72,
 		};
 
 		enum class group {

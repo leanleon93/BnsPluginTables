@@ -18,6 +18,7 @@ namespace BnsTables::EU {
 signed char job;
 __int16 level;
 signed char contents_type;
+signed char sub_level_percentage;
 
             };
 			unsigned __int64 key;
@@ -32,16 +33,16 @@ char Pad1[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
 __int32 skill_Size() const {return 40;};
-int skill_tableId() const {return 362;};
+int skill_tableId() const {return 372;};
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 349;};
+int skill3_tableId() const {return 358;};
 BnsTables::Shared::TableRef pc_skill3[2];
 __int32 pc_skill3_Size() const {return 2;};
-int pc_skill3_tableId() const {return 294;};
+int pc_skill3_tableId() const {return 300;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
 __int32 pc_job_style_skill3_Size() const {return 10;};
-int pc_job_style_skill3_tableId() const {return 294;};
+int pc_job_style_skill3_tableId() const {return 300;};
 signed char skill_build_up_level_max;
 char Pad2[1];
 __int16 skill_build_up_point;
@@ -49,7 +50,7 @@ __int64 max_hp;
 __int16 speed;
 __int16 modify_cast_speed_percent;
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_value;
@@ -147,8 +148,8 @@ __int32 defend_abnormal_resistance_equip_value;
 __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 290; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
+		static __int16 TableId() { return 296; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -27,7 +27,7 @@ bool is_duelbot_summoned;
 __int16 modify_cast_speed_percent;
 char Pad0[2];
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_value;
@@ -114,7 +114,7 @@ __int32 attack_attribute_modify;
 __int16 defend_critical_damage_value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 421; }
+		static __int16 TableId() { return 431; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

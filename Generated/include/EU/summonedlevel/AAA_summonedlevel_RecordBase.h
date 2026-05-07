@@ -19,6 +19,7 @@ signed char job;
 __int16 level;
 signed char contents_type;
 bool is_duelbot_summoned;
+signed char sub_level_percentage;
 
             };
 			unsigned __int64 key;
@@ -28,7 +29,7 @@ bool is_duelbot_summoned;
 __int16 modify_cast_speed_percent;
 char Pad0[2];
 __int64 hp_regen;
-__int32 hp_regen_combat;
+__int64 hp_regen_combat;
 __int16 attack_hit_base_percent;
 __int16 attack_hit_value;
 __int16 attack_pierce_base_percent;
@@ -165,8 +166,8 @@ char Pad8[2];
 __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 420; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
+		static __int16 TableId() { return 430; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

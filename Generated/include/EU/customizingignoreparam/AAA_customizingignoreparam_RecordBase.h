@@ -24,7 +24,7 @@ signed char param_index;
 		__declspec(align(8)) Key key;
 		
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 94; }
+		static __int16 TableId() { return 95; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

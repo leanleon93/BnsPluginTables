@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int16 sort_order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 198; }
+		static __int16 TableId() { return 201; }
 		static __int32 SubType() { return -1; }
 		enum class game_category_3 {
 			none = 0,
@@ -228,6 +228,9 @@ namespace BnsTables::EU {
 			relic_1 = 199,
 			star_stone = 200,
 			skill_train_by_item_extract = 201,
+			transform_coupon = 202,
+			worldaccountcard_coupon = 203,
+			glyph_coupon = 204,
 		};
 	};
 #pragma pack(pop)

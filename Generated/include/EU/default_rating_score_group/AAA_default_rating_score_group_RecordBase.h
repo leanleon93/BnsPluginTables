@@ -28,7 +28,7 @@ __int32 default_rating_score;
 bool is_placement_test;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 99; }
+		static __int16 TableId() { return 100; }
 		static __int32 SubType() { return -1; }
 		enum class season_contents_type {
 			invalid = 0,
@@ -63,6 +63,16 @@ bool is_placement_test;
 			tier_total = 29,
 			hyper_racing_game = 30,
 			duel_npc_challenge = 31,
+			heroic_dungeon_1 = 32,
+			heroic_dungeon_2 = 33,
+			heroic_dungeon_3 = 34,
+			heroic_dungeon_4 = 35,
+			heroic_dungeon_5 = 36,
+			heroic_dungeon_6 = 37,
+			heroic_dungeon_7 = 38,
+			heroic_dungeon_8 = 39,
+			heroic_dungeon_9 = 40,
+			heroic_dungeon_10 = 41,
 		};
 	};
 #pragma pack(pop)
