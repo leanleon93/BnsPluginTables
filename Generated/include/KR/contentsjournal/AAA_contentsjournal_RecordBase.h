@@ -24,34 +24,34 @@ namespace BnsTables::KR {
 BnsTables::Shared::TableRef cave;
 int cave_tableId() const {return 49;};
 BnsTables::Shared::TableRef dungeon;
-int dungeon_tableId() const {return 119;};
+int dungeon_tableId() const {return 120;};
 BnsTables::Shared::TableRef dungeon_solo;
-int dungeon_solo_tableId() const {return 119;};
+int dungeon_solo_tableId() const {return 120;};
 BnsTables::Shared::TableRef raid_dungeon;
-int raid_dungeon_tableId() const {return 322;};
+int raid_dungeon_tableId() const {return 323;};
 BnsTables::Shared::TableRef sealed_dungeon_modify;
-int sealed_dungeon_modify_tableId() const {return 352;};
+int sealed_dungeon_modify_tableId() const {return 353;};
 BnsTables::Shared::TableRef boss_challenge;
 int boss_challenge_tableId() const {return 44;};
 BnsTables::Shared::TableRef duel_bot_challenge;
-int duel_bot_challenge_tableId() const {return 107;};
+int duel_bot_challenge_tableId() const {return 108;};
 BnsTables::Shared::TableRef duel_bot_training_room;
-int duel_bot_training_room_tableId() const {return 110;};
+int duel_bot_training_room_tableId() const {return 111;};
 BnsTables::Shared::TableRef tendency_field;
-int tendency_field_tableId() const {return 443;};
+int tendency_field_tableId() const {return 445;};
 BnsTables::Shared::TableRef simple_field;
-int simple_field_tableId() const {return 358;};
+int simple_field_tableId() const {return 359;};
 BnsTables::Shared::TableRef classic_field_zone;
 int classic_field_zone_tableId() const {return 58;};
 BnsTables::Shared::TableRef time_limit_field_zone;
-int time_limit_field_zone_tableId() const {return 446;};
+int time_limit_field_zone_tableId() const {return 448;};
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 441;};
+int teleport_tableId() const {return 443;};
 signed char sort_no;
 bool event;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 10); }
-		static __int16 TableId() { return 74; }
+		static __int16 TableId() { return 75; }
 		static __int32 SubType() { return -1; }
 
 	};

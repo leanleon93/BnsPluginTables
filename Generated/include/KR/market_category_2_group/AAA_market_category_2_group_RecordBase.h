@@ -30,10 +30,10 @@ namespace BnsTables::KR {
 bool visible;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 445;};
+int name2_tableId() const {return 447;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 265; }
+		static __int16 TableId() { return 266; }
 		static __int32 SubType() { return -1; }
 		enum class market_category_2 {
 			none = 0,

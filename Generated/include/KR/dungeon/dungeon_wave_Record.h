@@ -16,7 +16,7 @@ int entrance_quota_tableId() const {return 70;};
 __int16 reward_box_data_id;
 __int16 reward_data_id;
 BnsTables::Shared::TableRef contents_reset;
-int contents_reset_tableId() const {return 76;};
+int contents_reset_tableId() const {return 77;};
 
 		static __int32 SubType() { return 3; }
 	};

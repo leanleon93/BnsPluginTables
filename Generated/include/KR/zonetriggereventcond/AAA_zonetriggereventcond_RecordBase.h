@@ -37,10 +37,10 @@ namespace BnsTables::KR {
 signed char cond_contents_type;
 char Pad0[3];
 BnsTables::Shared::TableRef cond_event_message;
-int cond_event_message_tableId() const {return 163;};
+int cond_event_message_tableId() const {return 164;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 504; }
+		static __int16 TableId() { return 506; }
 		static __int32 SubType() { return -1; }
 		enum class cond_contents_type {
 			none = 0,

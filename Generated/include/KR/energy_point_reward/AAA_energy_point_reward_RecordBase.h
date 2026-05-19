@@ -29,16 +29,16 @@ __int32 money_min;
 __int32 money_max;
 BnsTables::Shared::TableRef item[8];
 __int32 item_Size() const {return 8;};
-int item_tableId() const {return 206;};
+int item_tableId() const {return 207;};
 __int16 item_count[8];
 __int32 item_count_Size() const {return 8;};
 __int32 item_total_weight;
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 445;};
+int name_tableId() const {return 447;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 125; }
+		static __int16 TableId() { return 126; }
 		static __int32 SubType() { return -1; }
 		enum class reward_type {
 			none = 0,

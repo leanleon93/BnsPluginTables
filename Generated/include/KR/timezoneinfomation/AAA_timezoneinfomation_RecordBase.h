@@ -23,11 +23,11 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int32 bias_minute;
 BnsTables::Shared::TableRef display_name;
-int display_name_tableId() const {return 445;};
+int display_name_tableId() const {return 447;};
 signed char sort_no;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 447; }
+		static __int16 TableId() { return 449; }
 		static __int32 SubType() { return -1; }
 
 	};

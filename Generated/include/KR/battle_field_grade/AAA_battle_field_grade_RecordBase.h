@@ -25,15 +25,15 @@ signed char grade;
 __int16 point_bonus_percent;
 char Pad0[2];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 445;};
+int name2_tableId() const {return 447;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef medium_icon;
 BnsTables::Shared::IconRef small_icon;
 BnsTables::Shared::IconRef extrasmall_icon;
 BnsTables::Shared::TableRef grade_level_up_message;
-int grade_level_up_message_tableId() const {return 163;};
+int grade_level_up_message_tableId() const {return 164;};
 BnsTables::Shared::TableRef grade_level_down_message;
-int grade_level_down_message_tableId() const {return 163;};
+int grade_level_down_message_tableId() const {return 164;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 30; }

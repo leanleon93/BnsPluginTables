@@ -26,11 +26,11 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef subject_name;
-int subject_name_tableId() const {return 445;};
+int subject_name_tableId() const {return 447;};
 BnsTables::Shared::TableRef group_data_id;
-int group_data_id_tableId() const {return 396;};
+int group_data_id_tableId() const {return 398;};
 BnsTables::Shared::TableRef system_msg;
-int system_msg_tableId() const {return 163;};
+int system_msg_tableId() const {return 164;};
 wchar_t* start_kismet_name[2];
 __int32 start_kismet_name_Size() const {return 2;};
 wchar_t* end_kismet_name[2];
@@ -38,7 +38,7 @@ __int32 end_kismet_name_Size() const {return 2;};
 __int16 sort_number;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
-		static __int16 TableId() { return 397; }
+		static __int16 TableId() { return 399; }
 		static __int32 SubType() { return -1; }
 		enum class base_job_style {
 			base_1 = 0,

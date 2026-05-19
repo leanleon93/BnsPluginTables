@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 445;};
+int name_tableId() const {return 447;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 445;};
+int description_tableId() const {return 447;};
 signed char star_count;
 char Pad0[3];
 wchar_t* widget_name;

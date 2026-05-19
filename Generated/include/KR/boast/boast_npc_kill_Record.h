@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 283;};
+int npc_tableId() const {return 284;};
 
 		static __int32 SubType() { return 0; }
 	};
