@@ -69,7 +69,7 @@ BnsTables::Shared::TableRef reward_item_random_distribution[5];
 __int32 reward_item_random_distribution_Size() const {return 5;};
 int reward_item_random_distribution_tableId() const {return 324;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 83; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {

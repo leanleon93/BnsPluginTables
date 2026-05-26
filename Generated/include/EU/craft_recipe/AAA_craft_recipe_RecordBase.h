@@ -64,7 +64,7 @@ int step_tableId() const {return 88;};
 signed char recipe_type;
 signed char use_state;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 12); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
 		static __int16 TableId() { return 87; }
 		static __int32 SubType() { return -1; }
 		enum class category {
