@@ -427,7 +427,7 @@ namespace BnsTables::KR {
 		arr[412] = BnsTables::Shared::TableVersion(6, 0, true);
 		arr[413] = BnsTables::Shared::TableVersion(8, 1, true);
 		arr[414] = BnsTables::Shared::TableVersion(8, 0, true);
-		arr[415] = BnsTables::Shared::TableVersion(6, 1, true);
+		arr[415] = BnsTables::Shared::TableVersion(6, 2, true);
 		arr[416] = BnsTables::Shared::TableVersion(0, 7, true);
 		arr[417] = BnsTables::Shared::TableVersion(0, 4, true);
 		arr[418] = BnsTables::Shared::TableVersion(0, 1, true);
