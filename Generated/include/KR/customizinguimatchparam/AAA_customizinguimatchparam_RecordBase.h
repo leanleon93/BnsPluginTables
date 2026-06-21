@@ -23,11 +23,11 @@ signed char sex;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef sub_name;
-int sub_name_tableId() const {return 444;};
+int sub_name_tableId() const {return 448;};
 signed char param_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 98; }
+		static __int16 TableId() { return 100; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

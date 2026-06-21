@@ -25,7 +25,7 @@ __int32 exp;
 __int32 money;
 BnsTables::Shared::TableRef item[4];
 __int32 item_Size() const {return 4;};
-int item_tableId() const {return 205;};
+int item_tableId() const {return 207;};
 __int32 item_count[4];
 __int32 item_count_Size() const {return 4;};
 __int16 tax_reward_rate;
@@ -41,10 +41,10 @@ char Pad1[3];
 __int32 guild_bank_item_count[5];
 __int32 guild_bank_item_count_Size() const {return 5;};
 BnsTables::Shared::TableRef guild_ranking_reward_effect;
-int guild_ranking_reward_effect_tableId() const {return 119;};
+int guild_ranking_reward_effect_tableId() const {return 121;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 330; }
+		static __int16 TableId() { return 333; }
 		static __int32 SubType() { return -1; }
 		enum class guild_bank_item {
 			none = 0,

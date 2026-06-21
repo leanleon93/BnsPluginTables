@@ -32,7 +32,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 489;};
+int zone_tableId() const {return 493;};
 signed char max_pc_count;
 signed char max_party_count;
 signed char round_id;
@@ -41,27 +41,30 @@ signed char required_mastery_level;
 char Pad0[3];
 BnsTables::Shared::TableRef required_preceding_quest[3];
 __int32 required_preceding_quest_Size() const {return 3;};
-int required_preceding_quest_tableId() const {return 312;};
+int required_preceding_quest_tableId() const {return 315;};
 signed char required_preceding_quest_check;
 char Pad1[3];
 BnsTables::Shared::TableRef required_available_weekly_time;
-int required_available_weekly_time_tableId() const {return 470;};
+int required_available_weekly_time_tableId() const {return 474;};
 BnsTables::Shared::TableRef start_weekly_time;
-int start_weekly_time_tableId() const {return 470;};
+int start_weekly_time_tableId() const {return 474;};
 __int16 stand_by_duration_second;
 char Pad2[2];
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef arena_entrance_zone;
-int arena_entrance_zone_tableId() const {return 489;};
+int arena_entrance_zone_tableId() const {return 493;};
 BnsTables::Shared::TableRef enter_pc_spawn;
-int enter_pc_spawn_tableId() const {return 498;};
+int enter_pc_spawn_tableId() const {return 502;};
 BnsTables::Shared::TableRef publicraid_name2;
-int publicraid_name2_tableId() const {return 444;};
+int publicraid_name2_tableId() const {return 448;};
 BnsTables::Shared::TableRef publicraid_desc;
-int publicraid_desc_tableId() const {return 444;};
+int publicraid_desc_tableId() const {return 448;};
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
+BnsTables::Shared::TableRef target_reward_npc[8];
+__int32 target_reward_npc_Size() const {return 8;};
+int target_reward_npc_tableId() const {return 285;};
 wchar_t* publicraid_icon;
 wchar_t* publicraid_image;
 bool enable_reset_combat_mode;
@@ -71,7 +74,7 @@ wchar_t* public_raid_kismet_name[30];
 __int32 public_raid_kismet_name_Size() const {return 30;};
 BnsTables::Shared::TableRef public_raid_npc_for_kismet[30];
 __int32 public_raid_npc_for_kismet_Size() const {return 30;};
-int public_raid_npc_for_kismet_tableId() const {return 282;};
+int public_raid_npc_for_kismet_tableId() const {return 285;};
 bool enable_custom_pouch_drop_position;
 char Pad4[3];
 float pouch_pos_x;
@@ -82,13 +85,13 @@ char Pad5[2];
 wchar_t* exit_env_name;
 BnsTables::Shared::TableRef boss_npc_alias[8];
 __int32 boss_npc_alias_Size() const {return 8;};
-int boss_npc_alias_tableId() const {return 282;};
+int boss_npc_alias_tableId() const {return 285;};
 BnsTables::Shared::TableRef boss_npc_section[8];
 __int32 boss_npc_section_Size() const {return 8;};
-int boss_npc_section_tableId() const {return 444;};
+int boss_npc_section_tableId() const {return 448;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 4); }
-		static __int16 TableId() { return 308; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 5); }
+		static __int16 TableId() { return 311; }
 		static __int32 SubType() { return -1; }
 		enum class required_preceding_quest_check {
 			and_val = 0,

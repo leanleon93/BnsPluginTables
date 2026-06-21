@@ -88,9 +88,11 @@ __int32 bonus_reward_difficulty_type_Size() const {return 3;};
 char Pad1[1];
 BnsTables::Shared::TableRef bonus_reward_quota[3];
 __int32 bonus_reward_quota_Size() const {return 3;};
-int bonus_reward_quota_tableId() const {return 69;};
+int bonus_reward_quota_tableId() const {return 70;};
+__int32 money;
+__int32 exp;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
 		static __int16 TableId() { return 18; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {

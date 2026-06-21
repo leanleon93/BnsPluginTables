@@ -33,7 +33,7 @@ __int16 delay_msec[10];
 __int32 delay_msec_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 77; }
+		static __int16 TableId() { return 79; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,
@@ -767,6 +767,10 @@ __int32 delay_msec_Size() const {return 10;};
 			joypad_dash_backward = 192,
 			classic_control_mode_lock_on = 193,
 			toggle_voice_chat_mute = 194,
+			skill_macro_1 = 195,
+			skill_macro_2 = 196,
+			skill_macro_3 = 197,
+			toggle_skill_macro = 198,
 		};
 
 		enum class key_status {

@@ -253,6 +253,10 @@ __int16 immune_breaker_attribute;
 			joypad_dash_backward = 192,
 			classic_control_mode_lock_on = 193,
 			toggle_voice_chat_mute = 194,
+			skill_macro_1 = 195,
+			skill_macro_2 = 196,
+			skill_macro_3 = 197,
+			toggle_skill_macro = 198,
 		};
 
 		enum class immune_breaker_attribute {

@@ -28,7 +28,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 68; }
+		static __int16 TableId() { return 69; }
 		static __int32 SubType() { return -1; }
 		enum class modify_ability {
 			none = 0,

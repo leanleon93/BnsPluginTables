@@ -22,16 +22,22 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 signed char job;
+signed char specialization;
 signed char recommend_level;
-char Pad0[2];
-BnsTables::Shared::TableRef combo_skill[4];
-__int32 combo_skill_Size() const {return 4;};
-int combo_skill_tableId() const {return 358;};
+char Pad0[1];
+BnsTables::Shared::TableRef combo_skill[8];
+__int32 combo_skill_Size() const {return 8;};
+int combo_skill_tableId() const {return 361;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 444;};
+int description_tableId() const {return 448;};
+BnsTables::Shared::TableRef description2;
+int description2_tableId() const {return 448;};
+signed char skill_macro_start_index;
+signed char skill_macro_end_index;
+signed char skill_macro_preset_slot;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 369; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
+		static __int16 TableId() { return 372; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,
@@ -56,6 +62,20 @@ int description_tableId() const {return 444;};
 			sohwansu_striker = 19,
 			sohwansu_defender = 20,
 			sohwansu_controller = 21,
+		};
+
+		enum class specialization {
+			job_specialization_none = 0,
+			gyeyeor1 = 1,
+			gyeyeor2 = 2,
+			gyeyeor3 = 3,
+		};
+
+		enum class skill_macro_preset_slot {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
 		};
 	};
 #pragma pack(pop)

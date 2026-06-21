@@ -22,16 +22,16 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef buff_effect;
-int buff_effect_tableId() const {return 119;};
+int buff_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef party_effect;
-int party_effect_tableId() const {return 119;};
+int party_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef zone_effect;
-int zone_effect_tableId() const {return 119;};
+int zone_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef fx_effect;
-int fx_effect_tableId() const {return 119;};
+int fx_effect_tableId() const {return 121;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 329; }
+		static __int16 TableId() { return 332; }
 		static __int32 SubType() { return -1; }
 
 	};
