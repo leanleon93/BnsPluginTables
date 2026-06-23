@@ -36,7 +36,7 @@ BnsTables::Shared::TableRef cost_item;
 int cost_item_tableId() const {return 207;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 322; }
+		static __int16 TableId() { return 323; }
 		static __int32 SubType() { return -1; }
 		enum class item_grade {
 			none = 0,

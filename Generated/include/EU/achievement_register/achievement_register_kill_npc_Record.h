@@ -11,9 +11,9 @@ namespace BnsTables::EU {
 	public:
 		BnsTables::Shared::TableRef npc[8];
 __int32 npc_Size() const {return 8;};
-int npc_tableId() const {return 283;};
+int npc_tableId() const {return 284;};
 BnsTables::Shared::TableRef faction;
-int faction_tableId() const {return 142;};
+int faction_tableId() const {return 143;};
 
 		static __int32 SubType() { return 2; }
 	};

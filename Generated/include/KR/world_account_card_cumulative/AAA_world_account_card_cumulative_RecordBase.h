@@ -31,7 +31,7 @@ __int16 ability_percent_rate[7];
 __int32 ability_percent_rate_Size() const {return 7;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 3); }
-		static __int16 TableId() { return 475; }
+		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,

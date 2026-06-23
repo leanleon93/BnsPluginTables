@@ -21,17 +21,17 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 445;};
+int name_tableId() const {return 447;};
 BnsTables::Shared::TableRef short_name;
-int short_name_tableId() const {return 445;};
+int short_name_tableId() const {return 447;};
 BnsTables::Shared::TableRef image;
-int image_tableId() const {return 445;};
+int image_tableId() const {return 447;};
 BnsTables::Shared::IconRef icon;
 wchar_t* scroll_imageset;
 float scroll_imageset_scale;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
-		static __int16 TableId() { return 251; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 14); }
+		static __int16 TableId() { return 252; }
 		static __int32 SubType() { return -1; }
 		enum class key_code {
 			none = 0,
@@ -130,41 +130,43 @@ float scroll_imageset_scale;
 			mouse_left_button = 93,
 			mouse_middle_button = 94,
 			mouse_right_button = 95,
-			joybtn_a = 96,
-			joybtn_b = 97,
-			joybtn_x = 98,
-			joybtn_y = 99,
-			joybtn_dpad_up = 100,
-			joybtn_dpad_down = 101,
-			joybtn_dpad_left = 102,
-			joybtn_dpad_right = 103,
-			joybtn_leftstick_up = 104,
-			joybtn_leftstick_down = 105,
-			joybtn_leftstick_left = 106,
-			joybtn_leftstick_right = 107,
-			joybtn_rightstick_up = 108,
-			joybtn_rightstick_down = 109,
-			joybtn_rightstick_left = 110,
-			joybtn_rightstick_right = 111,
-			joybtn_leftshoulder = 112,
-			joybtn_rightshoulder = 113,
-			joybtn_start = 114,
-			joybtn_back = 115,
-			joybtn_leftthumbstick = 116,
-			joybtn_rightthumbstick = 117,
-			joybtn_lefttrigger = 118,
-			joybtn_righttrigger = 119,
-			joybtn_function1 = 120,
-			joybtn_function2 = 121,
-			escape = 122,
-			enter = 123,
-			shift_joypad_replaceable = 124,
-			shift_dash_forward_joypad_replaceable = 125,
-			control_joypad_replaceable = 126,
-			alt_joypad_replaceable = 127,
-			mouse_left_button_joypad_replaceable = 128,
-			mouse_right_button_joypad_replaceable = 129,
-			escape_joypad_replaceable = 130,
+			mouse_x_button_1 = 96,
+			mouse_x_button_2 = 97,
+			joybtn_a = 98,
+			joybtn_b = 99,
+			joybtn_x = 100,
+			joybtn_y = 101,
+			joybtn_dpad_up = 102,
+			joybtn_dpad_down = 103,
+			joybtn_dpad_left = 104,
+			joybtn_dpad_right = 105,
+			joybtn_leftstick_up = 106,
+			joybtn_leftstick_down = 107,
+			joybtn_leftstick_left = 108,
+			joybtn_leftstick_right = 109,
+			joybtn_rightstick_up = 110,
+			joybtn_rightstick_down = 111,
+			joybtn_rightstick_left = 112,
+			joybtn_rightstick_right = 113,
+			joybtn_leftshoulder = 114,
+			joybtn_rightshoulder = 115,
+			joybtn_start = 116,
+			joybtn_back = 117,
+			joybtn_leftthumbstick = 118,
+			joybtn_rightthumbstick = 119,
+			joybtn_lefttrigger = 120,
+			joybtn_righttrigger = 121,
+			joybtn_function1 = 122,
+			joybtn_function2 = 123,
+			escape = 124,
+			enter = 125,
+			shift_joypad_replaceable = 126,
+			shift_dash_forward_joypad_replaceable = 127,
+			control_joypad_replaceable = 128,
+			alt_joypad_replaceable = 129,
+			mouse_left_button_joypad_replaceable = 130,
+			mouse_right_button_joypad_replaceable = 131,
+			escape_joypad_replaceable = 132,
 		};
 	};
 #pragma pack(pop)

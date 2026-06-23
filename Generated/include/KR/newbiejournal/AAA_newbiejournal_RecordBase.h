@@ -24,25 +24,25 @@ namespace BnsTables::KR {
 BnsTables::Shared::TableRef achievement_register;
 int achievement_register_tableId() const {return 7;};
 BnsTables::Shared::TableRef start_epic_quest;
-int start_epic_quest_tableId() const {return 314;};
+int start_epic_quest_tableId() const {return 315;};
 BnsTables::Shared::TableRef end_epic_quest;
-int end_epic_quest_tableId() const {return 314;};
+int end_epic_quest_tableId() const {return 315;};
 BnsTables::Shared::ExplicitTableRef attraction;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 492;};
+int zone_tableId() const {return 493;};
 __int16 x;
 __int16 y;
 __int16 z;
 __int16 yaw;
 BnsTables::Shared::TableRef preceding_quest;
-int preceding_quest_tableId() const {return 314;};
+int preceding_quest_tableId() const {return 315;};
 wchar_t* symbol_imageset;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 447;};
+int description_tableId() const {return 448;};
 BnsTables::Shared::TableRef guide_title;
-int guide_title_tableId() const {return 447;};
+int guide_title_tableId() const {return 448;};
 BnsTables::Shared::TableRef guide_description;
-int guide_description_tableId() const {return 447;};
+int guide_description_tableId() const {return 448;};
 bool join_faction;
 char Pad0[3];
 BnsTables::Shared::TableRef faction_reward[2];
@@ -52,7 +52,7 @@ __int16 faction_reward_count[2];
 __int32 faction_reward_count_Size() const {return 2;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 282; }
+		static __int16 TableId() { return 283; }
 		static __int32 SubType() { return -1; }
 
 	};

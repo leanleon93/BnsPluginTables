@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef upgrade_grocery;
-int upgrade_grocery_tableId() const {return 235;};
+int upgrade_grocery_tableId() const {return 236;};
 signed char required_inven_capacity;
 char Pad1[3];
 __int32 money_cost;
@@ -33,7 +33,7 @@ signed char main_ingredient_condition_type;
 signed char main_ingredient_min_level;
 __int16 main_ingredient_stack_count;
 BnsTables::Shared::TableRef main_ingredient_title_name;
-int main_ingredient_title_name_tableId() const {return 447;};
+int main_ingredient_title_name_tableId() const {return 448;};
 BnsTables::Shared::TableRef main_ingredient_title_item;
 int main_ingredient_title_item_tableId() const {return 207;};
 bool keep_main_ingredient_weapon_gem_slot;
@@ -50,7 +50,7 @@ __int16 sub_ingredient_stack_count[7];
 __int32 sub_ingredient_stack_count_Size() const {return 7;};
 BnsTables::Shared::TableRef sub_ingredient_title_name[7];
 __int32 sub_ingredient_title_name_Size() const {return 7;};
-int sub_ingredient_title_name_tableId() const {return 447;};
+int sub_ingredient_title_name_tableId() const {return 448;};
 BnsTables::Shared::TableRef sub_ingredient_title_item[7];
 __int32 sub_ingredient_title_item_Size() const {return 7;};
 int sub_ingredient_title_item_tableId() const {return 207;};
@@ -97,12 +97,12 @@ __int32 random_item_select_prop_weight_Size() const {return 10;};
 bool random_failure_mileage_save;
 char Pad6[1];
 BnsTables::Shared::TableRef random_failure_mileage_distribution_type;
-int random_failure_mileage_distribution_type_tableId() const {return 325;};
+int random_failure_mileage_distribution_type_tableId() const {return 326;};
 BnsTables::Shared::TableRef random_failure_mileage_influence_recipe[2];
 __int32 random_failure_mileage_influence_recipe_Size() const {return 2;};
-int random_failure_mileage_influence_recipe_tableId() const {return 231;};
+int random_failure_mileage_influence_recipe_tableId() const {return 232;};
 BnsTables::Shared::TableRef random_retry_cost;
-int random_retry_cost_tableId() const {return 234;};
+int random_retry_cost_tableId() const {return 235;};
 signed char main_ingredient_weapon_gem_type;
 char Pad7[1];
 __int16 main_ingredient_weapon_gem_level;
@@ -118,9 +118,9 @@ __int16 weapon_gem_transform_fail_probability;
 BnsTables::Shared::TableRef title_item;
 int title_item_tableId() const {return 207;};
 BnsTables::Shared::TableRef title_name;
-int title_name_tableId() const {return 447;};
+int title_name_tableId() const {return 448;};
 BnsTables::Shared::TableRef title_reward;
-int title_reward_tableId() const {return 324;};
+int title_reward_tableId() const {return 325;};
 signed char upper_category;
 signed char category;
 bool use_random;
@@ -128,7 +128,7 @@ char Pad9[1];
 BnsTables::Shared::TableRef fail_effect;
 int fail_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef quest;
-int quest_tableId() const {return 314;};
+int quest_tableId() const {return 315;};
 bool bm_ingredient_recipe;
 signed char warning;
 signed char event_index;
@@ -141,7 +141,7 @@ BnsTables::Shared::TableRef coupon_item;
 int coupon_item_tableId() const {return 207;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 231; }
+		static __int16 TableId() { return 232; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

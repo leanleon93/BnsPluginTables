@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 284;};
+int npc_tableId() const {return 285;};
 BnsTables::Shared::TableRef skill_score[8];
 __int32 skill_score_Size() const {return 8;};
 int skill_score_tableId() const {return 148;};

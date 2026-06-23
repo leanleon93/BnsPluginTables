@@ -24,16 +24,16 @@ namespace BnsTables::EU {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 445;};
+int name_tableId() const {return 447;};
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 206;};
+int cost_item_tableId() const {return 207;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 166; }
+		static __int16 TableId() { return 167; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

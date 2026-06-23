@@ -31,7 +31,7 @@ int item_price_item_tableId() const {return 207;};
 __int16 item_price_item_amount;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 328; }
+		static __int16 TableId() { return 329; }
 		static __int32 SubType() { return -1; }
 
 	};

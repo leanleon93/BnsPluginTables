@@ -30,10 +30,11 @@ wchar_t* despawn_showdata;
 BnsTables::Shared::IconRef icon;
 wchar_t* owner_particle;
 wchar_t* mark_particle;
+wchar_t* light_pillar_particle;
 wchar_t* dropped_pouch_anim_set;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 221; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
+		static __int16 TableId() { return 222; }
 		static __int32 SubType() { return -1; }
 		enum class pouch_appearance {
 			none = 0,

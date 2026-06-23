@@ -27,7 +27,7 @@ char Pad0[2];
 __int32 total_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 325; }
+		static __int16 TableId() { return 326; }
 		static __int32 SubType() { return -1; }
 
 	};

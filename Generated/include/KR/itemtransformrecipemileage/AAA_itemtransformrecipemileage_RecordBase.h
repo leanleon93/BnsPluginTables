@@ -35,10 +35,10 @@ signed char success_reward_item_count;
 signed char reward_max;
 char Pad2[2];
 BnsTables::Shared::TableRef item_transform_recipe;
-int item_transform_recipe_tableId() const {return 231;};
+int item_transform_recipe_tableId() const {return 232;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 232; }
+		static __int16 TableId() { return 233; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

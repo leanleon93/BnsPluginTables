@@ -26,27 +26,27 @@ int dungeon_tableId() const {return 120;};
 signed char required_mastery_level;
 char Pad0[3];
 BnsTables::Shared::TableRef required_quest;
-int required_quest_tableId() const {return 314;};
+int required_quest_tableId() const {return 315;};
 __int16 required_achievement_id;
 __int16 required_achievement_step;
 BnsTables::Shared::TableRef condition_event;
 int condition_event_tableId() const {return 66;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 BnsTables::Shared::IconRef image;
 BnsTables::Shared::TableRef ability_text;
-int ability_text_tableId() const {return 447;};
+int ability_text_tableId() const {return 448;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 447;};
+int desc_tableId() const {return 448;};
 BnsTables::Shared::TableRef ingame_icon_texture;
 int ingame_icon_texture_tableId() const {return 193;};
 __int16 ingame_icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef ingame_icon_tooltip;
-int ingame_icon_tooltip_tableId() const {return 447;};
+int ingame_icon_tooltip_tableId() const {return 448;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 468; }
+		static __int16 TableId() { return 469; }
 		static __int32 SubType() { return -1; }
 
 	};

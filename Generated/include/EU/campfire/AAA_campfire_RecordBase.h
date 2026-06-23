@@ -29,9 +29,9 @@ wchar_t* animset_name;
 wchar_t* anim_show;
 wchar_t* despawn_show;
 BnsTables::Shared::TableRef party_match;
-int party_match_tableId() const {return 292;};
+int party_match_tableId() const {return 293;};
 BnsTables::Shared::TableRef map_tooltip;
-int map_tooltip_tableId() const {return 445;};
+int map_tooltip_tableId() const {return 447;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 47; }

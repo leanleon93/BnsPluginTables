@@ -25,7 +25,7 @@ signed char pc_job;
 signed char joypad_category;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 wchar_t* default_keycap;
 bool modifier_enabled;
 signed char sort_no;
@@ -38,7 +38,7 @@ bool joypad_overlapped_binding_enabled;
 signed char contents_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
-		static __int16 TableId() { return 253; }
+		static __int16 TableId() { return 254; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,

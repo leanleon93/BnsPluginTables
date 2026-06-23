@@ -22,15 +22,15 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		__int16 acquire_quest[4];
 __int32 acquire_quest_Size() const {return 4;};
-__int16 complete_quest[16];
-__int32 complete_quest_Size() const {return 16;};
+__int16 complete_quest[32];
+__int32 complete_quest_Size() const {return 32;};
 __int16 reset_quest[4];
 __int32 reset_quest_Size() const {return 4;};
 __int16 reset_quest_free[16];
 __int32 reset_quest_free_Size() const {return 16;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 242; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
+		static __int16 TableId() { return 243; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

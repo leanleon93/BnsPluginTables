@@ -22,13 +22,13 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 447;};
+int collection_name_tableId() const {return 448;};
 __int16 collection_season;
 signed char collection_grade;
 char Pad0[1];
 BnsTables::Shared::TableRef collection_card[8];
 __int32 collection_card_Size() const {return 8;};
-int collection_card_tableId() const {return 476;};
+int collection_card_tableId() const {return 477;};
 __int16 collection_card_count[8];
 __int32 collection_card_count_Size() const {return 8;};
 __int16 collection_card_point[8];
@@ -62,7 +62,7 @@ wchar_t* main_image;
 signed char collection_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 3); }
-		static __int16 TableId() { return 474; }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,

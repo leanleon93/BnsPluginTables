@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef skill_train_by_item;
-int skill_train_by_item_tableId() const {return 393;};
+int skill_train_by_item_tableId() const {return 394;};
 BnsTables::Shared::TableRef skill_train_by_item_extract_cost_group[8];
 __int32 skill_train_by_item_extract_cost_group_Size() const {return 8;};
 int skill_train_by_item_extract_cost_group_tableId() const {return 82;};

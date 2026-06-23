@@ -33,12 +33,12 @@ signed char variation_4_level;
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 445;};
+int name2_tableId() const {return 447;};
 __int16 short_cut_key;
 __int16 short_cut_key_classic;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 373; }
+		static __int16 TableId() { return 374; }
 		static __int32 SubType() { return -1; }
 		enum class short_cut_key {
 			none = 0,
@@ -236,6 +236,10 @@ __int16 short_cut_key_classic;
 			joypad_dash_backward = 192,
 			classic_control_mode_lock_on = 193,
 			toggle_voice_chat_mute = 194,
+			skill_macro_1 = 195,
+			skill_macro_2 = 196,
+			skill_macro_3 = 197,
+			toggle_skill_macro = 198,
 		};
 	};
 #pragma pack(pop)

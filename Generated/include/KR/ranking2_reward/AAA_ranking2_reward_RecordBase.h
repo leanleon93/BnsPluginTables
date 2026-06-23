@@ -44,7 +44,7 @@ BnsTables::Shared::TableRef guild_ranking_reward_effect;
 int guild_ranking_reward_effect_tableId() const {return 121;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 332; }
+		static __int16 TableId() { return 333; }
 		static __int32 SubType() { return -1; }
 		enum class guild_bank_item {
 			none = 0,

@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 284;};
+int npc_tableId() const {return 285;};
 BnsTables::Shared::TableRef spawn_alarm_message;
 int spawn_alarm_message_tableId() const {return 164;};
 

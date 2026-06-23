@@ -29,12 +29,12 @@ signed char min_level;
 signed char max_level;
 char Pad0[1];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 445;};
+int title_tableId() const {return 447;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 445;};
+int description_tableId() const {return 447;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 72; }
+		static __int16 TableId() { return 73; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,

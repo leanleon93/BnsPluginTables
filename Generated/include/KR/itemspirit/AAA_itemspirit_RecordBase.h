@@ -31,7 +31,7 @@ signed char success_probability;
 char Pad0[2];
 __int32 money_cost;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId() const {return 325;};
+int distribution_type_tableId() const {return 326;};
 BnsTables::Shared::TableRef fixed_ingredient[8];
 __int32 fixed_ingredient_Size() const {return 8;};
 int fixed_ingredient_tableId() const {return 207;};
@@ -57,7 +57,7 @@ char Pad2[2];
 __int32 select_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
-		static __int16 TableId() { return 229; }
+		static __int16 TableId() { return 230; }
 		static __int32 SubType() { return -1; }
 		enum class applicable_part {
 			none = 0,

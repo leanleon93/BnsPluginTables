@@ -31,13 +31,13 @@ __int32 craft_duration;
 signed char use_state;
 char Pad2[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 447;};
+int desc_tableId() const {return 448;};
 BnsTables::Shared::TableRef requirement_name;
-int requirement_name_tableId() const {return 447;};
+int requirement_name_tableId() const {return 448;};
 BnsTables::Shared::TableRef location_desc;
-int location_desc_tableId() const {return 447;};
+int location_desc_tableId() const {return 448;};
 __int16 required_craft_exp;
 char Pad3[2];
 __int32 required_achievement_id;
@@ -67,7 +67,7 @@ __int32 reward_item_reference[5];
 __int32 reward_item_reference_Size() const {return 5;};
 BnsTables::Shared::TableRef reward_item_random_distribution[5];
 __int32 reward_item_random_distribution_Size() const {return 5;};
-int reward_item_random_distribution_tableId() const {return 325;};
+int reward_item_random_distribution_tableId() const {return 326;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
 		static __int16 TableId() { return 84; }

@@ -26,7 +26,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 445;};
+int name_tableId() const {return 447;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
 		static __int16 TableId() { return 62; }

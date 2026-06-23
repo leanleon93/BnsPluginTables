@@ -63,7 +63,7 @@ char Pad1[1];
 __int16 reinforce_score;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 342; }
+		static __int16 TableId() { return 343; }
 		static __int32 SubType() { return -1; }
 
 	};

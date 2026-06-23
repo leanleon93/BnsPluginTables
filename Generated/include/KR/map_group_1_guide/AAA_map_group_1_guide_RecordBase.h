@@ -21,13 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 260;};
+int map_group_1_tableId() const {return 261;};
 BnsTables::Shared::TableRef expedition_desc;
-int expedition_desc_tableId() const {return 447;};
+int expedition_desc_tableId() const {return 448;};
 wchar_t* expedition_image;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 261; }
+		static __int16 TableId() { return 262; }
 		static __int32 SubType() { return -1; }
 
 	};

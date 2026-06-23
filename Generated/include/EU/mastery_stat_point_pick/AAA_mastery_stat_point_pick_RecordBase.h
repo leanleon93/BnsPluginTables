@@ -25,12 +25,12 @@ signed char stat_point_job;
 		__int16 required_stat_point;
 char Pad0[2];
 BnsTables::Shared::TableRef effect;
-int effect_tableId() const {return 120;};
+int effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 445;};
+int description_tableId() const {return 447;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
-		static __int16 TableId() { return 274; }
+		static __int16 TableId() { return 275; }
 		static __int32 SubType() { return -1; }
 		enum class stat_point_pick_attribute {
 			slot1 = 0,

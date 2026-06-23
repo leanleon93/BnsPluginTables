@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 bool use_at_dead;
 bool use_at_exhaustion;
 bool use_at_restoration;
@@ -61,7 +61,7 @@ __int32 summoned_show_Size() const {return 3;};
 bool can_ride_vehicle;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 441; }
+		static __int16 TableId() { return 442; }
 		static __int32 SubType() { return -1; }
 		enum class use_job {
 			job_none = 0,

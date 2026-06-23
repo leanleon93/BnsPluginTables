@@ -24,16 +24,16 @@ namespace BnsTables::KR {
 signed char max_repeat;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 447;};
+int name2_tableId() const {return 448;};
 BnsTables::Shared::TableRef map_group_1[2];
 __int32 map_group_1_Size() const {return 2;};
-int map_group_1_tableId() const {return 260;};
+int map_group_1_tableId() const {return 261;};
 BnsTables::Shared::TableRef group2;
-int group2_tableId() const {return 447;};
+int group2_tableId() const {return 448;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 447;};
+int desc_tableId() const {return 448;};
 BnsTables::Shared::TableRef completed_desc;
-int completed_desc_tableId() const {return 447;};
+int completed_desc_tableId() const {return 448;};
 signed char category;
 bool completed_list;
 signed char grade;
@@ -73,10 +73,10 @@ int reset_item_tableId() const {return 207;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef acquire_talksocial;
-int acquire_talksocial_tableId() const {return 441;};
+int acquire_talksocial_tableId() const {return 442;};
 float acquire_talksocial_delay;
 BnsTables::Shared::TableRef complete_talksocial;
-int complete_talksocial_tableId() const {return 441;};
+int complete_talksocial_tableId() const {return 442;};
 float complete_talksocial_delay;
 bool check_vitality;
 char Pad4[1];
@@ -116,8 +116,8 @@ char Pad7[3];
 BnsTables::Shared::TableRef contents_reset;
 int contents_reset_tableId() const {return 77;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(13, 1); }
-		static __int16 TableId() { return 314; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(14, 0); }
+		static __int16 TableId() { return 315; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			epic = 0,
@@ -241,7 +241,8 @@ int contents_reset_tableId() const {return 77;};
 			party_battle = 7,
 			special = 8,
 			side_episode = 9,
-			hidden = 10,
+			side_episode_collabo = 10,
+			hidden = 11,
 		};
 	};
 #pragma pack(pop)
