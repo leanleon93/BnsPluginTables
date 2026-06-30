@@ -28,8 +28,10 @@ int base_quota_tableId() const {return 70;};
 BnsTables::Shared::TableRef target_quota;
 int target_quota_tableId() const {return 70;};
 __int16 ratio;
+char Pad1[2];
+__int32 min_transform_unit;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 71; }
 		static __int32 SubType() { return -1; }
 

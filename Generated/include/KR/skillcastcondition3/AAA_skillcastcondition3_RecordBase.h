@@ -117,14 +117,14 @@ signed char fail_caster_move_state[9];
 __int32 fail_caster_move_state_Size() const {return 9;};
 signed char move_type;
 char Pad12[2];
-__int32 prev_combo_id[4];
-__int32 prev_combo_id_Size() const {return 4;};
-signed char prev_combo_event_type[4];
-__int32 prev_combo_event_type_Size() const {return 4;};
-signed char prev_combo_check_point[4];
-__int32 prev_combo_check_point_Size() const {return 4;};
-__int16 prev_combo_result[4];
-__int32 prev_combo_result_Size() const {return 4;};
+__int32 prev_combo_id[6];
+__int32 prev_combo_id_Size() const {return 6;};
+signed char prev_combo_event_type[6];
+__int32 prev_combo_event_type_Size() const {return 6;};
+signed char prev_combo_check_point[6];
+__int32 prev_combo_check_point_Size() const {return 6;};
+__int16 prev_combo_result[6];
+__int32 prev_combo_result_Size() const {return 6;};
 signed char prev_combo_1_result[8];
 __int32 prev_combo_1_result_Size() const {return 8;};
 signed char prev_combo_2_result[8];
@@ -133,6 +133,10 @@ signed char prev_combo_3_result[8];
 __int32 prev_combo_3_result_Size() const {return 8;};
 signed char prev_combo_4_result[8];
 __int32 prev_combo_4_result_Size() const {return 8;};
+signed char prev_combo_5_result[8];
+__int32 prev_combo_5_result_Size() const {return 8;};
+signed char prev_combo_6_result[8];
+__int32 prev_combo_6_result_Size() const {return 8;};
 signed char last_event_type[2];
 __int32 last_event_type_Size() const {return 2;};
 __int16 last_event_result[2];
@@ -205,7 +209,7 @@ signed char simple_context_fail_recycle_group_id[4];
 __int32 simple_context_fail_recycle_group_id_Size() const {return 4;};
 signed char simple_context_fail_recycle_group_op;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
 		static __int16 TableId() { return 370; }
 		static __int32 SubType() { return -1; }
 		enum class stance {
