@@ -542,7 +542,7 @@ char Pad35[1];
 __int16 tier;
 bool show_item_pouch_light_pillar;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(68, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(69, 0); }
 		static __int16 TableId() { return 207; }
 		static __int32 SubType() { return -1; }
 		enum class game_category_1 {

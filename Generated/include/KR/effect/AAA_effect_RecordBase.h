@@ -1145,7 +1145,8 @@ wchar_t* immuned_show;
 wchar_t* caster_show;
 wchar_t* fire_show;
 bool animation_freeze;
-char Pad4[3];
+signed char icon_texture_fx;
+char Pad4[2];
 BnsTables::Shared::TableRef icon_texture;
 int icon_texture_tableId() const {return 193;};
 __int16 icon_index;
@@ -1205,7 +1206,7 @@ bool block_reattach_when_encounter_sync_player;
 signed char fx_condition_channel;
 bool force_context_update;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(47, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(47, 1); }
 		static __int16 TableId() { return 121; }
 		static __int32 SubType() { return -1; }
 		enum class buff_type {
@@ -2375,6 +2376,13 @@ bool force_context_update;
 			buff_item_19 = 20,
 			buff_item_20 = 21,
 			etc = 22,
+		};
+
+		enum class icon_texture_fx {
+			none = 0,
+			value_1 = 1,
+			value_2 = 2,
+			value_3 = 3,
 		};
 
 		enum class description2_arg_type {

@@ -189,6 +189,7 @@ BnsTables::Shared::TableRef reinforce_skill_train_by_item_extract_next_item;
 int reinforce_skill_train_by_item_extract_next_item_tableId() const {return 207;};
 BnsTables::Shared::TableRef reinforce_skill_train_by_item_extract_prev_item;
 int reinforce_skill_train_by_item_extract_prev_item_tableId() const {return 207;};
+bool usable_only_fatigability_zero;
 
 		static __int32 SubType() { return 2; }
 	};
