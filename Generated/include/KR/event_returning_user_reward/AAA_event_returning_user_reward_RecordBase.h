@@ -30,10 +30,14 @@ BnsTables::Shared::TableRef event_returning_user_popup_title;
 int event_returning_user_popup_title_tableId() const {return 448;};
 BnsTables::Shared::TableRef event_returning_user_popup_desc;
 int event_returning_user_popup_desc_tableId() const {return 448;};
+bool event_returning_user_boutique_free_use;
+bool event_returning_user_title_use;
+bool event_returning_user_exp_tooltip_use;
+char Pad0[1];
 __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
 		static __int16 TableId() { return 134; }
 		static __int32 SubType() { return -1; }
 		enum class state {
