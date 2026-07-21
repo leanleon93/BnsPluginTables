@@ -22,10 +22,10 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 447;};
+int name2_tableId() const {return 448;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 259; }
+		static __int16 TableId() { return 260; }
 		static __int32 SubType() { return -1; }
 
 	};

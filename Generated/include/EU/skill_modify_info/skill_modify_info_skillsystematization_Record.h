@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef systematization;
-int systematization_tableId() const {return 387;};
+int systematization_tableId() const {return 388;};
 
 		static __int32 SubType() { return 2; }
 	};

@@ -31,7 +31,7 @@ BnsTables::Shared::TableRef fx_effect;
 int fx_effect_tableId() const {return 121;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 331; }
+		static __int16 TableId() { return 332; }
 		static __int32 SubType() { return -1; }
 
 	};

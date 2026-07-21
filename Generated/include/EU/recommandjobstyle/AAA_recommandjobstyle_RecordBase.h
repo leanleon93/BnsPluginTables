@@ -28,7 +28,7 @@ bool style_recommand_2;
 bool style_recommand_3;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 341; }
+		static __int16 TableId() { return 342; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

@@ -227,10 +227,10 @@ bool faction_battle_field;
 char Pad14[3];
 wchar_t* arena_minimap;
 bool is_single;
-char Pad15[1];
-__int16 recommend_attack_power_easy;
-__int16 recommend_attack_power_normal;
-__int16 recommend_attack_power_hard;
+char Pad15[3];
+__int32 recommend_attack_power_easy;
+__int32 recommend_attack_power_normal;
+__int32 recommend_attack_power_hard;
 BnsTables::Shared::TableRef standard_gear_weapon_easy;
 int standard_gear_weapon_easy_tableId() const {return 207;};
 BnsTables::Shared::TableRef standard_gear_weapon_normal;
@@ -278,8 +278,9 @@ __int16 dungeon_challenge_reward_interval_count;
 char Pad18[2];
 BnsTables::Shared::TableRef dungeon_challenge_reward_npc;
 int dungeon_challenge_reward_npc_tableId() const {return 285;};
+__int32 dungeon_recommended_combat_power;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 3); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(12, 0); }
 		static __int16 TableId() { return 120; }
 		static __int32 SubType() { return -1; }
 		enum class dungeon_type {

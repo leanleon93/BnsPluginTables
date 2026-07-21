@@ -16,7 +16,7 @@ char Pad_sub_0[1];
 BnsTables::Shared::TableRef feed_item;
 int feed_item_tableId() const {return 207;};
 BnsTables::Shared::TableRef feed_recipe;
-int feed_recipe_tableId() const {return 231;};
+int feed_recipe_tableId() const {return 232;};
 BnsTables::Shared::TableRef start_item;
 int start_item_tableId() const {return 207;};
 signed char start_orientation;

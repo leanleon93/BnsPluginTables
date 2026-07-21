@@ -27,7 +27,7 @@ __int32 count;
 BnsTables::Shared::TableRef material_group;
 int material_group_tableId() const {return 214;};
 BnsTables::Shared::TableRef material_group_name;
-int material_group_name_tableId() const {return 447;};
+int material_group_name_tableId() const {return 448;};
 __int16 great_success_probability;
 char Pad1[2];
 BnsTables::Shared::TableRef great_success_item_group;
@@ -47,7 +47,7 @@ int big_fail_item_group_tableId() const {return 214;};
 BnsTables::Shared::TableRef item_combination_cost_group;
 int item_combination_cost_group_tableId() const {return 82;};
 BnsTables::Shared::TableRef reward_group_name;
-int reward_group_name_tableId() const {return 447;};
+int reward_group_name_tableId() const {return 448;};
 __int32 mileage_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }

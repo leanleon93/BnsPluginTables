@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef npc_skill;
-int npc_skill_tableId() const {return 360;};
+int npc_skill_tableId() const {return 361;};
 __int32 skill_id[8];
 __int32 skill_id_Size() const {return 8;};
 

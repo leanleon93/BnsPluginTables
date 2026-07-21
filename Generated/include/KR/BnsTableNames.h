@@ -132,7 +132,7 @@ namespace BnsTables::KR {
 		arr[117] = BnsTables::Shared::TableVersion(2, 2, true);
 		arr[118] = BnsTables::Shared::TableVersion(2, 0, true);
 		arr[119] = BnsTables::Shared::TableVersion(0, 12, true);
-		arr[120] = BnsTables::Shared::TableVersion(10, 3, true);
+		arr[120] = BnsTables::Shared::TableVersion(12, 0, true);
 		arr[121] = BnsTables::Shared::TableVersion(47, 1, true);
 		arr[122] = BnsTables::Shared::TableVersion(0, 7, true);
 		arr[123] = BnsTables::Shared::TableVersion(1, 1, true);
@@ -195,7 +195,7 @@ namespace BnsTables::KR {
 		arr[180] = BnsTables::Shared::TableVersion(0, 2, true);
 		arr[181] = BnsTables::Shared::TableVersion(0, 1, true);
 		arr[182] = BnsTables::Shared::TableVersion(2, 0, true);
-		arr[183] = BnsTables::Shared::TableVersion(1, 11, true);
+		arr[183] = BnsTables::Shared::TableVersion(2, 0, true);
 		arr[184] = BnsTables::Shared::TableVersion(0, 11, true);
 		arr[185] = BnsTables::Shared::TableVersion(0, 8, true);
 		arr[186] = BnsTables::Shared::TableVersion(0, 4, true);
@@ -219,7 +219,7 @@ namespace BnsTables::KR {
 		arr[204] = BnsTables::Shared::TableVersion(4, 0, true);
 		arr[205] = BnsTables::Shared::TableVersion(3, 0, true);
 		arr[206] = BnsTables::Shared::TableVersion(1, 0, true);
-		arr[207] = BnsTables::Shared::TableVersion(69, 0, true);
+		arr[207] = BnsTables::Shared::TableVersion(69, 1, true);
 		arr[208] = BnsTables::Shared::TableVersion(2, 1, true);
 		arr[209] = BnsTables::Shared::TableVersion(1, 6, true);
 		arr[210] = BnsTables::Shared::TableVersion(0, 3, true);
@@ -366,7 +366,7 @@ namespace BnsTables::KR {
 		arr[351] = BnsTables::Shared::TableVersion(10, 0, true);
 		arr[352] = BnsTables::Shared::TableVersion(1, 1, true);
 		arr[353] = BnsTables::Shared::TableVersion(1, 1, true);
-		arr[354] = BnsTables::Shared::TableVersion(7, 0, true);
+		arr[354] = BnsTables::Shared::TableVersion(7, 1, true);
 		arr[355] = BnsTables::Shared::TableVersion(1, 2, true);
 		arr[356] = BnsTables::Shared::TableVersion(0, 6, true);
 		arr[357] = BnsTables::Shared::TableVersion(0, 13, true);

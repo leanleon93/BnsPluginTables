@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		char Pad_sub_0[1];
 BnsTables::Shared::TableRef basecamp;
-int basecamp_tableId() const {return 487;};
+int basecamp_tableId() const {return 488;};
 
 		static __int32 SubType() { return 49; }
 	};

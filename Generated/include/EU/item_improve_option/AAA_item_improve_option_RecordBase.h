@@ -29,12 +29,12 @@ __int32 ability_value;
 BnsTables::Shared::TableRef effect;
 int effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef effect_description;
-int effect_description_tableId() const {return 447;};
+int effect_description_tableId() const {return 448;};
 BnsTables::Shared::TableRef skill_modify_info_group[10];
 __int32 skill_modify_info_group_Size() const {return 10;};
-int skill_modify_info_group_tableId() const {return 380;};
+int skill_modify_info_group_tableId() const {return 381;};
 BnsTables::Shared::TableRef additional_description;
-int additional_description_tableId() const {return 447;};
+int additional_description_tableId() const {return 448;};
 BnsTables::Shared::IconRef draw_option_icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }

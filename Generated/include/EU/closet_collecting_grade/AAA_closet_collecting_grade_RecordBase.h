@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		__int32 score;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 59; }

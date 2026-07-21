@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 447;};
+int name2_tableId() const {return 448;};
 bool initialize;
 char Pad0[1];
 __int16 default_sp;
@@ -103,7 +103,7 @@ wchar_t* summoned_flyingship_attachment_mesh_animset;
 signed char summoned_preset_body_shape_part_value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 295); }
-		static __int16 TableId() { return 419; }
+		static __int16 TableId() { return 420; }
 		static __int32 SubType() { return -1; }
 		enum class stance_type {
 			stance_none = 0,

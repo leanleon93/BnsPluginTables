@@ -25,13 +25,13 @@ char Pad0[3];
 BnsTables::Shared::TableRef preset;
 int preset_tableId() const {return 180;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 BnsTables::Shared::TableRef icon_texture;
 int icon_texture_tableId() const {return 193;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 447;};
+int desc_tableId() const {return 448;};
 __int32 order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }

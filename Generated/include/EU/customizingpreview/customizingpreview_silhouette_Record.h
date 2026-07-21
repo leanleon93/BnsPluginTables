@@ -18,7 +18,7 @@ int icon_texture_tableId() const {return 193;};
 __int16 icon_index;
 char Pad_sub_1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 447;};
+int desc_tableId() const {return 448;};
 
 		static __int32 SubType() { return 4; }
 	};

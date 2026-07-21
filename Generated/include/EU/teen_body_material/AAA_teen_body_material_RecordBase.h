@@ -25,7 +25,7 @@ wchar_t* teen_body_material_name;
 wchar_t* body_mesh_name;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 442; }
+		static __int16 TableId() { return 443; }
 		static __int32 SubType() { return -1; }
 
 	};

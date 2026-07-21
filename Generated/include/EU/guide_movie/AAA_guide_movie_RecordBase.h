@@ -31,7 +31,7 @@ namespace BnsTables::EU {
 signed char guide_type;
 char Pad0[2];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 447;};
+int title_tableId() const {return 448;};
 signed char activation_level;
 signed char activation_mastery_level;
 bool use_notice_hud;
@@ -43,13 +43,13 @@ wchar_t* help_imageset[10];
 __int32 help_imageset_Size() const {return 10;};
 BnsTables::Shared::TableRef help_title[10];
 __int32 help_title_Size() const {return 10;};
-int help_title_tableId() const {return 447;};
+int help_title_tableId() const {return 448;};
 BnsTables::Shared::TableRef help_sub_title[10];
 __int32 help_sub_title_Size() const {return 10;};
-int help_sub_title_tableId() const {return 447;};
+int help_sub_title_tableId() const {return 448;};
 BnsTables::Shared::TableRef help_desc[10];
 __int32 help_desc_Size() const {return 10;};
-int help_desc_tableId() const {return 447;};
+int help_desc_tableId() const {return 448;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 174; }

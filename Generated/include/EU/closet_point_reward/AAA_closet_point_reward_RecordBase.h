@@ -25,16 +25,16 @@ signed char point_type;
 signed char grade;
 char Pad0[2];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 447;};
+int title_tableId() const {return 448;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 447;};
+int desc_tableId() const {return 448;};
 signed char reward_type;
 char Pad1[3];
 __int32 reward_point;
 BnsTables::Shared::IconRef reward_icon;
 wchar_t* reward_show;
 BnsTables::Shared::TableRef reward_talk_social;
-int reward_talk_social_tableId() const {return 441;};
+int reward_talk_social_tableId() const {return 442;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 61; }

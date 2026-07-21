@@ -21,7 +21,10 @@ signed char guild_type;
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		__int32 money;
+		wchar_t* alias;
+signed char publisher;
+char Pad0[3];
+__int32 money;
 BnsTables::Shared::TableRef required_item[5];
 __int32 required_item_Size() const {return 5;};
 int required_item_tableId() const {return 207;};
@@ -65,10 +68,19 @@ signed char guildcraft_big_rentable_count;
 BnsTables::Shared::TableRef levelup_text;
 int levelup_text_tableId() const {return 448;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 11); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 183; }
 		static __int32 SubType() { return -1; }
-
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
 	};
 #pragma pack(pop)
 #pragma pack(push, 1)

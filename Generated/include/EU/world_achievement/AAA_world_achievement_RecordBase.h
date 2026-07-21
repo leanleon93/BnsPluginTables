@@ -30,12 +30,12 @@ __int32 reward_item_count[4];
 __int32 reward_item_count_Size() const {return 4;};
 __int32 accumulate_game_cash;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 wchar_t* grade_image;
 bool is_max_grade;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 480; }
+		static __int16 TableId() { return 481; }
 		static __int32 SubType() { return -1; }
 
 	};

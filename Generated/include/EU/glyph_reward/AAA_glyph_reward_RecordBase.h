@@ -24,10 +24,10 @@ namespace BnsTables::EU {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 447;};
+int name_tableId() const {return 448;};
 BnsTables::Shared::IconRef shuffle_reward_icon;
 BnsTables::Shared::TableRef shuffle_reward_tooltip;
-int shuffle_reward_tooltip_tableId() const {return 447;};
+int shuffle_reward_tooltip_tableId() const {return 448;};
 signed char upgrade_reward_preview;
 bool upgrade_reward_warning_message;
 signed char reward_type;

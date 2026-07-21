@@ -97,7 +97,7 @@ bool is_use_field_item;
 bool hide_hair;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 416; }
+		static __int16 TableId() { return 417; }
 		static __int32 SubType() { return -1; }
 		enum class soulmask_type {
 			normal = 0,

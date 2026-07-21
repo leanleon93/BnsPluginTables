@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef boast_from_env;
-int boast_from_env_tableId() const {return 493;};
+int boast_from_env_tableId() const {return 494;};
 BnsTables::Shared::TableRef boast_item;
 int boast_item_tableId() const {return 207;};
 

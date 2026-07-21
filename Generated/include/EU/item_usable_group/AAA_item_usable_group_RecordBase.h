@@ -24,10 +24,10 @@ namespace BnsTables::EU {
 bool default_item_usable;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 447;};
+int name2_tableId() const {return 448;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 236; }
+		static __int16 TableId() { return 237; }
 		static __int32 SubType() { return -1; }
 
 	};

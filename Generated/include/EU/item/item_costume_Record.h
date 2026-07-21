@@ -9,11 +9,12 @@ namespace BnsTables::EU {
 	struct item_costume_Record : item_Record
 	{
 	public:
-		bool guild_used;
-char Pad_sub_0[3];
+		char Pad_sub_0[3];
+bool guild_used;
+char Pad_sub_1[3];
 __int32 closet_group_id;
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 441;};
+int talk_social_tableId() const {return 442;};
 BnsTables::Shared::TableRef pair_costume;
 int pair_costume_tableId() const {return 207;};
 BnsTables::Shared::TableRef pair_costume_brand;
@@ -21,9 +22,9 @@ int pair_costume_brand_tableId() const {return 200;};
 wchar_t* pair_costume_signal_show;
 wchar_t* pair_costume_signal_detach_show;
 signed char custom_dress_design_state;
-char Pad_sub_1[3];
+char Pad_sub_2[3];
 BnsTables::Shared::TableRef skill_skin;
-int skill_skin_tableId() const {return 384;};
+int skill_skin_tableId() const {return 385;};
 
 		static __int32 SubType() { return 1; }
 	};
