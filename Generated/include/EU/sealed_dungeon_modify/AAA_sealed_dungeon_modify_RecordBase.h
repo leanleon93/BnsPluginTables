@@ -98,13 +98,12 @@ BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 wchar_t* scroll_boss_imageset;
 wchar_t* scroll_boss_back_imageset;
-__int16 recommend_attack_power_sealed_dungeon;
-char Pad4[2];
+__int32 recommend_attack_power_sealed_dungeon;
 BnsTables::Shared::TableRef recommend_alias_sealed_dungeon;
 int recommend_alias_sealed_dungeon_tableId() const {return 74;};
 bool hide_skill_decal;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 4); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 5); }
 		static __int16 TableId() { return 351; }
 		static __int32 SubType() { return -1; }
 

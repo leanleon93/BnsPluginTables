@@ -39,7 +39,7 @@ __int32 skill_train_by_item_power[9];
 __int32 skill_train_by_item_power_Size() const {return 9;};
 __int32 skill_arcane_weight;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 7); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 8); }
 		static __int16 TableId() { return 64; }
 		static __int32 SubType() { return -1; }
 		enum class ability {

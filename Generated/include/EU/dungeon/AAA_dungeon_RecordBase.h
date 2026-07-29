@@ -226,10 +226,9 @@ int dungeon_desc_tableId() const {return 444;};
 bool faction_battle_field;
 char Pad14[3];
 wchar_t* arena_minimap;
-__int16 recommend_attack_power_easy;
-__int16 recommend_attack_power_normal;
-__int16 recommend_attack_power_hard;
-char Pad15[2];
+__int32 recommend_attack_power_easy;
+__int32 recommend_attack_power_normal;
+__int32 recommend_attack_power_hard;
 BnsTables::Shared::TableRef standard_gear_weapon_easy;
 int standard_gear_weapon_easy_tableId() const {return 205;};
 BnsTables::Shared::TableRef standard_gear_weapon_normal;
@@ -238,7 +237,7 @@ BnsTables::Shared::TableRef standard_gear_weapon_hard;
 int standard_gear_weapon_hard_tableId() const {return 205;};
 bool use_difficulty_normal;
 bool use_difficulty_hard;
-char Pad16[2];
+char Pad15[2];
 BnsTables::Shared::TableRef reward_summary;
 int reward_summary_tableId() const {return 18;};
 signed char recommand_level_min;
@@ -261,7 +260,7 @@ int recommend_alias_hard_tableId() const {return 74;};
 BnsTables::Shared::TableRef recommend_alias_easy;
 int recommend_alias_easy_tableId() const {return 74;};
 bool boss_ui_extend_distance;
-char Pad17[3];
+char Pad16[3];
 BnsTables::Shared::TableRef boss_npc_alias[8];
 __int32 boss_npc_alias_Size() const {return 8;};
 int boss_npc_alias_tableId() const {return 282;};
@@ -271,11 +270,11 @@ int boss_npc_section_tableId() const {return 444;};
 __int32 dungeon_challenge_reward_min_combat_power;
 __int32 dungeon_challenge_reward_recommend_combat_power;
 __int16 dungeon_challenge_reward_interval_count;
-char Pad18[2];
+char Pad17[2];
 BnsTables::Shared::TableRef dungeon_challenge_reward_npc;
 int dungeon_challenge_reward_npc_tableId() const {return 282;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 2); }
 		static __int16 TableId() { return 118; }
 		static __int32 SubType() { return -1; }
 		enum class dungeon_type {

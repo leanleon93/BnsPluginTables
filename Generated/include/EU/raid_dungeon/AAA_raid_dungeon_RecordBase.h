@@ -84,8 +84,7 @@ signed char recommand_level_min;
 signed char recommand_level_max;
 signed char recommand_mastery_level_min;
 signed char recommand_mastery_level_max;
-__int16 recommend_attack_power;
-char Pad8[2];
+__int32 recommend_attack_power;
 BnsTables::Shared::TableRef standard_gear_weapon;
 int standard_gear_weapon_tableId() const {return 205;};
 BnsTables::Shared::TableRef display_quests[12];
@@ -104,7 +103,7 @@ BnsTables::Shared::TableRef boss_npc_section[8];
 __int32 boss_npc_section_Size() const {return 8;};
 int boss_npc_section_tableId() const {return 444;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 12); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 13); }
 		static __int16 TableId() { return 321; }
 		static __int32 SubType() { return -1; }
 		enum class dungeon_type {
