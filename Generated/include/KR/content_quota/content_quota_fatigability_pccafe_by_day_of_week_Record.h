@@ -6,11 +6,11 @@
 
 namespace BnsTables::KR {
 #pragma pack(push, 1)
-	struct content_quota_dungeon_enter_ticket_Record : content_quota_Record
+	struct content_quota_fatigability_pccafe_by_day_of_week_Record : content_quota_Record
 	{
 	public:
 		
-		static __int32 SubType() { return 718; }
+		static __int32 SubType() { return 717; }
 	};
 #pragma pack(pop)
 }
