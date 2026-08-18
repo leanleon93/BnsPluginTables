@@ -27,7 +27,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 16); }
-		static __int16 TableId() { return 212; }
+		static __int16 TableId() { return 213; }
 		static __int32 SubType() { return -1; }
 		enum class seed_item_sub_group {
 			sub_group_1 = 0,
@@ -91,6 +91,14 @@ namespace BnsTables::EU {
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 
 		enum class growth_category {

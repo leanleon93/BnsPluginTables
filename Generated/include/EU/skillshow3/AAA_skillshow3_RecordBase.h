@@ -134,9 +134,10 @@ wchar_t* trigger_bounce_show;
 wchar_t* trigger_counter_show;
 wchar_t* trigger_critical_show;
 wchar_t* skill_skin_desc;
+bool no_hit_show_to_ally;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 10); }
-		static __int16 TableId() { return 384; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 11); }
+		static __int16 TableId() { return 388; }
 		static __int32 SubType() { return -1; }
 		enum class chain_type {
 			none_chain = 0,

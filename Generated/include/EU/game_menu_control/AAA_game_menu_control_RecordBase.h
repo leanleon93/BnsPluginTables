@@ -20,23 +20,25 @@ namespace BnsTables::EU {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		signed char required_level;
+		wchar_t* alias;
+signed char publisher;
+signed char required_level;
 signed char required_master_level;
-char Pad0[2];
+char Pad0[1];
 BnsTables::Shared::TableRef required_acquired_and_complete_quest;
-int required_acquired_and_complete_quest_tableId() const {return 315;};
+int required_acquired_and_complete_quest_tableId() const {return 318;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 315;};
+int required_complete_quest_tableId() const {return 318;};
 signed char restrict_gameoption_display_type;
 signed char restrict_content_type;
 char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
-int notifycenter_message_tableId() const {return 448;};
+int notifycenter_message_tableId() const {return 454;};
 BnsTables::Shared::TableRef unavailability_confirm_text;
-int unavailability_confirm_text_tableId() const {return 448;};
+int unavailability_confirm_text_tableId() const {return 454;};
 bool use_record;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 162; }
 		static __int32 SubType() { return -1; }
 		enum class menu_type {
@@ -166,6 +168,17 @@ bool use_record;
 			renewal_worldachivement = 123,
 			renewal_racoon_store = 124,
 			renewal_notification_center = 125,
+		};
+
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
 		};
 
 		enum class restrict_gameoption_display_type {

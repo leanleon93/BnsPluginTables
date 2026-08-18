@@ -28,10 +28,10 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef text;
-int text_tableId() const {return 448;};
+int text_tableId() const {return 454;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 41); }
-		static __int16 TableId() { return 460; }
+		static __int16 TableId() { return 468; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,

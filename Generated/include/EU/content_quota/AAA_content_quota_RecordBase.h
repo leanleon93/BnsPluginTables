@@ -725,8 +725,9 @@ namespace BnsTables::EU {
 		content_quota_record_sub_market_targeted_sale = 714,
 		content_quota_record_sub_fatigability = 715,
 		content_quota_record_sub_fatigability_pccafe = 716,
-		content_quota_record_sub_dungeon_enter_ticket = 717,
-		content_quota_record_sub_count = 718,
+		content_quota_record_sub_fatigability_pccafe_by_day_of_week = 717,
+		content_quota_record_sub_dungeon_enter_ticket = 718,
+		content_quota_record_sub_count = 719,
     };
 #pragma pack(push, 1)
 	struct content_quota_Record : BnsTables::Shared::DrEl
@@ -760,8 +761,10 @@ char Pad3[3];
 BnsTables::Shared::TableRef consume_order[4];
 __int32 consume_order_Size() const {return 4;};
 int consume_order_tableId() const {return 70;};
+__int64 charge_amount_per_interval_by_day_of_week[7];
+__int32 charge_amount_per_interval_by_day_of_week_Size() const {return 7;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(12, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(14, 0); }
 		static __int16 TableId() { return 70; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
@@ -785,6 +788,7 @@ int consume_order_tableId() const {return 70;};
 			hourly = 1,
 			daily = 2,
 			weekly = 3,
+			daily_by_day_of_week = 4,
 		};
 
 		enum class charge_day_of_week {

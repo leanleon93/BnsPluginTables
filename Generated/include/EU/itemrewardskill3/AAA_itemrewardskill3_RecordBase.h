@@ -24,16 +24,16 @@ BnsTables::Shared::TableRef head_skill_id;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef change_skill_id[15];
 __int32 change_skill_id_Size() const {return 15;};
-int change_skill_id_tableId() const {return 361;};
+int change_skill_id_tableId() const {return 364;};
 BnsTables::Shared::TableRef head_skill_acquire_route;
-int head_skill_acquire_route_tableId() const {return 227;};
+int head_skill_acquire_route_tableId() const {return 228;};
 BnsTables::Shared::TableRef change_skill_acquire_route[15];
 __int32 change_skill_acquire_route_Size() const {return 15;};
-int change_skill_acquire_route_tableId() const {return 227;};
+int change_skill_acquire_route_tableId() const {return 228;};
 signed char equip_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 226; }
+		static __int16 TableId() { return 227; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,
@@ -106,6 +106,14 @@ signed char equip_type;
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 	};
 #pragma pack(pop)

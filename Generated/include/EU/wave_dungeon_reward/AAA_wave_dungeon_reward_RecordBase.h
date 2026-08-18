@@ -24,18 +24,34 @@ signed char wave;
 		__declspec(align(8)) Key key;
 		__int32 reward_exp;
 __int32 reward_money;
-BnsTables::Shared::TableRef reward_item;
-int reward_item_tableId() const {return 207;};
-__int16 reward_item_count;
+__int32 reward_item_prob[5];
+__int32 reward_item_prob_Size() const {return 5;};
+signed char reward_item_total_count;
+char Pad0[3];
+BnsTables::Shared::TableRef reward_item[5];
+__int32 reward_item_Size() const {return 5;};
+int reward_item_tableId() const {return 208;};
+__int16 reward_item_count[5];
+__int32 reward_item_count_Size() const {return 5;};
+signed char reward_result_type;
+char Pad1[1];
+__int32 kill_score_min;
+__int32 kill_score_max;
+__int32 fatigability_cost;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 468; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
+		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return -1; }
 		enum class difficulty_type {
 			none = 0,
 			easy = 1,
 			normal = 2,
 			hard = 3,
+		};
+
+		enum class reward_result_type {
+			wave = 0,
+			killscore = 1,
 		};
 	};
 #pragma pack(pop)

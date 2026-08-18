@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int32 duration;
 BnsTables::Shared::TableRef balloon_text;
-int balloon_text_tableId() const {return 448;};
+int balloon_text_tableId() const {return 454;};
 bool voice_sync;
 char Pad0[3];
 wchar_t* show;
@@ -40,7 +40,7 @@ signed char message_target_type;
 signed char message_contents_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 25); }
-		static __int16 TableId() { return 410; }
+		static __int16 TableId() { return 416; }
 		static __int32 SubType() { return -1; }
 		enum class rotate {
 			keep = 0,

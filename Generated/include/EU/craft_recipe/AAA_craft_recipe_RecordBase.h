@@ -22,26 +22,26 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 448;};
+int name_tableId() const {return 454;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 448;};
+int desc_tableId() const {return 454;};
 BnsTables::Shared::TableRef requirement_name;
-int requirement_name_tableId() const {return 448;};
+int requirement_name_tableId() const {return 454;};
 BnsTables::Shared::TableRef location_desc;
-int location_desc_tableId() const {return 448;};
+int location_desc_tableId() const {return 454;};
 signed char category;
 char Pad0[3];
 __int32 inner_category;
 __int32 money_cost;
 BnsTables::Shared::TableRef material[5];
 __int32 material_Size() const {return 5;};
-int material_tableId() const {return 207;};
+int material_tableId() const {return 208;};
 __int16 material_amount[5];
 __int32 material_amount_Size() const {return 5;};
 char Pad1[2];
 BnsTables::Shared::TableRef brand_material[5];
 __int32 brand_material_Size() const {return 5;};
-int brand_material_tableId() const {return 200;};
+int brand_material_tableId() const {return 201;};
 signed char brand_material_condition_type[5];
 __int32 brand_material_condition_type_Size() const {return 5;};
 char Pad2[1];
@@ -50,7 +50,7 @@ __int32 brand_material_amount_Size() const {return 5;};
 __int16 limit_production_exp;
 char Pad3[2];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId() const {return 315;};
+int complete_quest_tableId() const {return 318;};
 __int16 reward_production_exp;
 __int16 reward_production_exp_bonus;
 __int16 half_production_exp_step;
@@ -64,7 +64,7 @@ int step_tableId() const {return 89;};
 signed char recipe_type;
 signed char use_state;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 13); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 14); }
 		static __int16 TableId() { return 88; }
 		static __int32 SubType() { return -1; }
 		enum class category {
@@ -83,6 +83,7 @@ signed char use_state;
 			gathering_type_5 = 12,
 			gathering_type_6 = 13,
 			gathering_type_7 = 14,
+			production_type_all = 15,
 		};
 
 		enum class brand_material_condition_type {

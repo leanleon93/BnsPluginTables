@@ -24,35 +24,39 @@ namespace BnsTables::EU {
 BnsTables::Shared::TableRef achievement_register;
 int achievement_register_tableId() const {return 7;};
 BnsTables::Shared::TableRef start_epic_quest;
-int start_epic_quest_tableId() const {return 315;};
+int start_epic_quest_tableId() const {return 318;};
 BnsTables::Shared::TableRef end_epic_quest;
-int end_epic_quest_tableId() const {return 315;};
+int end_epic_quest_tableId() const {return 318;};
 BnsTables::Shared::ExplicitTableRef attraction;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 493;};
+int zone_tableId() const {return 501;};
 __int16 x;
 __int16 y;
 __int16 z;
 __int16 yaw;
 BnsTables::Shared::TableRef preceding_quest;
-int preceding_quest_tableId() const {return 315;};
+int preceding_quest_tableId() const {return 318;};
 wchar_t* symbol_imageset;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 448;};
+int description_tableId() const {return 454;};
 BnsTables::Shared::TableRef guide_title;
-int guide_title_tableId() const {return 448;};
+int guide_title_tableId() const {return 454;};
 BnsTables::Shared::TableRef guide_description;
-int guide_description_tableId() const {return 448;};
+int guide_description_tableId() const {return 454;};
 bool join_faction;
 char Pad0[3];
 BnsTables::Shared::TableRef faction_reward[2];
 __int32 faction_reward_Size() const {return 2;};
-int faction_reward_tableId() const {return 207;};
+int faction_reward_tableId() const {return 208;};
 __int16 faction_reward_count[2];
 __int32 faction_reward_count_Size() const {return 2;};
+BnsTables::Shared::TableRef sub_quest[20];
+__int32 sub_quest_Size() const {return 20;};
+int sub_quest_tableId() const {return 318;};
+bool teleport_acquire_sub_quest;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 1); }
-		static __int16 TableId() { return 283; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
+		static __int16 TableId() { return 284; }
 		static __int32 SubType() { return -1; }
 
 	};

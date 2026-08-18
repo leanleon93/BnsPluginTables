@@ -23,12 +23,13 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 wchar_t* skill_icon_symbol_imageset;
 wchar_t* small_skill_icon_symbol_imageset;
+wchar_t* hud_skill_icon_symbol_imageset;
 wchar_t* skill_tooltip_symbol_imageset;
 BnsTables::Shared::TableRef skill_tooltip_symbol_text;
-int skill_tooltip_symbol_text_tableId() const {return 448;};
+int skill_tooltip_symbol_text_tableId() const {return 454;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 387; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
+		static __int16 TableId() { return 391; }
 		static __int32 SubType() { return -1; }
 
 	};

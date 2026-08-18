@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef time_limit_field_zone;
-int time_limit_field_zone_tableId() const {return 449;};
+int time_limit_field_zone_tableId() const {return 455;};
 
 		static __int32 SubType() { return 1; }
 	};

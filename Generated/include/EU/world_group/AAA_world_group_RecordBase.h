@@ -21,20 +21,37 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
+signed char publisher;
+char Pad0[1];
 __int16 world[10];
 __int32 world_Size() const {return 10;};
+char Pad1[2];
 BnsTables::Shared::TableRef lobby_desc;
-int lobby_desc_tableId() const {return 448;};
+int lobby_desc_tableId() const {return 454;};
 signed char platform_type;
 signed char contents_type;
-char Pad0[2];
+signed char contents_type_ui_order;
+char Pad2[1];
 wchar_t* data_publisher_type;
 signed char deny_creation_job[5];
 __int32 deny_creation_job_Size() const {return 5;};
+char Pad3[3];
+__int64 service_period_end_time;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 486; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
+		static __int16 TableId() { return 494; }
 		static __int32 SubType() { return -1; }
+		enum class publisher {
+			NONE = 0,
+			NCK = 1,
+			NCA = 2,
+			NCJ = 3,
+			NCT = 4,
+			INV = 5,
+			TX = 6,
+			NCK_NEO_GOLD = 7,
+		};
+
 		enum class platform_type {
 			normal = 0,
 			steam = 1,
@@ -43,6 +60,7 @@ __int32 deny_creation_job_Size() const {return 5;};
 		enum class contents_type {
 			normal = 0,
 			gold_specialized = 1,
+			boost = 2,
 		};
 
 		enum class deny_creation_job {

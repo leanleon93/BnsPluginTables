@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef item;
-int item_tableId() const {return 207;};
+int item_tableId() const {return 208;};
 signed char item_improve_level;
 signed char item_stage_number;
 char Pad0[2];

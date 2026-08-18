@@ -27,31 +27,31 @@ signed char item_equip_job;
 char Pad0[2];
 __int32 item_score;
 BnsTables::Shared::TableRef representative_item;
-int representative_item_tableId() const {return 207;};
+int representative_item_tableId() const {return 208;};
 BnsTables::Shared::TableRef next_item_guide_list[3];
 __int32 next_item_guide_list_Size() const {return 3;};
 int next_item_guide_list_tableId() const {return 131;};
 BnsTables::Shared::TableRef improve_main_feed_list[15];
 __int32 improve_main_feed_list_Size() const {return 15;};
-int improve_main_feed_list_tableId() const {return 207;};
+int improve_main_feed_list_tableId() const {return 208;};
 BnsTables::Shared::TableRef improve_sub_feed_list[15];
 __int32 improve_sub_feed_list_Size() const {return 15;};
-int improve_sub_feed_list_tableId() const {return 207;};
+int improve_sub_feed_list_tableId() const {return 208;};
 BnsTables::Shared::TableRef transform_main_feed_list[15];
 __int32 transform_main_feed_list_Size() const {return 15;};
-int transform_main_feed_list_tableId() const {return 207;};
+int transform_main_feed_list_tableId() const {return 208;};
 BnsTables::Shared::TableRef transform_sub_feed_list[15];
 __int32 transform_sub_feed_list_Size() const {return 15;};
-int transform_sub_feed_list_tableId() const {return 207;};
+int transform_sub_feed_list_tableId() const {return 208;};
 BnsTables::Shared::TableRef growth_main_feed_list[15];
 __int32 growth_main_feed_list_Size() const {return 15;};
-int growth_main_feed_list_tableId() const {return 207;};
+int growth_main_feed_list_tableId() const {return 208;};
 BnsTables::Shared::TableRef growth_sub_feed_list[15];
 __int32 growth_sub_feed_list_Size() const {return 15;};
-int growth_sub_feed_list_tableId() const {return 207;};
+int growth_sub_feed_list_tableId() const {return 208;};
 BnsTables::Shared::TableRef improve_set_list[4];
 __int32 improve_set_list_Size() const {return 4;};
-int improve_set_list_tableId() const {return 219;};
+int improve_set_list_tableId() const {return 220;};
 signed char improve_option_acquire_level_list[5];
 __int32 improve_option_acquire_level_list_Size() const {return 5;};
 
@@ -104,6 +104,14 @@ __int32 improve_option_acquire_level_list_Size() const {return 5;};
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 
 		enum class item_equip_job {

@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef item_brand;
-int item_brand_tableId() const {return 200;};
+int item_brand_tableId() const {return 201;};
 signed char item_grade;
 signed char equip_type;
 signed char result;

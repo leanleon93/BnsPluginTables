@@ -22,14 +22,14 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef group_item;
-int group_item_tableId() const {return 207;};
+int group_item_tableId() const {return 208;};
 signed char craft_union_type;
 signed char craft_union_sub_type;
 __int16 display_index;
 __int16 required_craft_exp;
 char Pad0[2];
 BnsTables::Shared::TableRef required_completion_quest;
-int required_completion_quest_tableId() const {return 315;};
+int required_completion_quest_tableId() const {return 318;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
 		static __int16 TableId() { return 86; }
@@ -50,6 +50,7 @@ int required_completion_quest_tableId() const {return 315;};
 			gathering_type_5 = 12,
 			gathering_type_6 = 13,
 			gathering_type_7 = 14,
+			production_type_all = 15,
 		};
 
 		enum class craft_union_sub_type {

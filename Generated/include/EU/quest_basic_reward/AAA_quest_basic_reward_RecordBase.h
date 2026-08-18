@@ -47,6 +47,7 @@ __int16 faction_reputation;
 			gathering_type_5 = 12,
 			gathering_type_6 = 13,
 			gathering_type_7 = 14,
+			production_type_all = 15,
 		};
 	};
 #pragma pack(pop)

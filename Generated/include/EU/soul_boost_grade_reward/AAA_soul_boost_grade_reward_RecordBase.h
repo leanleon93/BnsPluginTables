@@ -23,13 +23,14 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef item[8];
 __int32 item_Size() const {return 8;};
-int item_tableId() const {return 207;};
+int item_tableId() const {return 208;};
 __int16 item_count[8];
 __int32 item_count_Size() const {return 8;};
 __int32 contribution;
+__int64 exp;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 412; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
+		static __int16 TableId() { return 418; }
 		static __int32 SubType() { return -1; }
 
 	};

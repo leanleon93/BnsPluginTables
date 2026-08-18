@@ -25,12 +25,12 @@ signed char publisher;
 char Pad0[3];
 __int32 money;
 BnsTables::Shared::TableRef required_itembrand;
-int required_itembrand_tableId() const {return 200;};
+int required_itembrand_tableId() const {return 201;};
 signed char required_itembrand_condition_type;
 char Pad1[3];
 BnsTables::Shared::TableRef required_item[4];
 __int32 required_item_Size() const {return 4;};
-int required_item_tableId() const {return 207;};
+int required_item_tableId() const {return 208;};
 __int16 required_item_count[4];
 __int32 required_item_count_Size() const {return 4;};
 __int32 required_faction_score;
@@ -52,15 +52,21 @@ __int16 check_closet_collecting_grade;
 BnsTables::Shared::TableRef check_content_quota;
 int check_content_quota_tableId() const {return 70;};
 __int32 check_soul_boost_season_bm;
+signed char check_newbie_returnee_type;
 signed char required_level;
 signed char required_mastery_level;
+char Pad3[1];
 __int16 required_account_level;
+char Pad4[2];
 __int64 start_time;
 __int64 end_time;
 signed char item_slot_display_type;
+char Pad5[1];
+__int16 world_group[10];
+__int32 world_group_Size() const {return 10;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 202; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
+		static __int16 TableId() { return 203; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,
@@ -146,6 +152,16 @@ signed char item_slot_display_type;
 			instrument = 69,
 			armlet_1 = 70,
 			armlet_2 = 71,
+		};
+
+		enum class check_newbie_returnee_type {
+			none = 0,
+			normal = 1,
+			newbie = 2,
+			returnee = 3,
+			newbie_returnee = 4,
+			normal_newbie = 5,
+			normal_returnee = 6,
 		};
 
 		enum class item_slot_display_type {

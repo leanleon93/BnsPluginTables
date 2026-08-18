@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		__int16 sort_order;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 203; }
+		static __int16 TableId() { return 204; }
 		static __int32 SubType() { return -1; }
 		enum class game_category_3 {
 			none = 0,
@@ -231,6 +231,14 @@ namespace BnsTables::EU {
 			transform_coupon = 202,
 			worldaccountcard_coupon = 203,
 			glyph_coupon = 204,
+			equip_gem_1_appearance = 205,
+			equip_gem_2_appearance = 206,
+			equip_gem_3_appearance = 207,
+			equip_gem_4_appearance = 208,
+			equip_gem_5_appearance = 209,
+			equip_gem_6_appearance = 210,
+			equip_gem_7_appearance = 211,
+			equip_gem_8_appearance = 212,
 		};
 	};
 #pragma pack(pop)

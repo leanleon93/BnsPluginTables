@@ -20,7 +20,7 @@ namespace BnsTables::EU {
 		};
 		char nokeypad[2];
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 448;};
+int name2_tableId() const {return 454;};
 signed char level;
 signed char mastery_level;
 signed char mastery_level_open_state;
@@ -29,10 +29,10 @@ bool ignore_low_level_check;
 char Pad0[3];
 BnsTables::Shared::TableRef preceding_quest[16];
 __int32 preceding_quest_Size() const {return 16;};
-int preceding_quest_tableId() const {return 315;};
+int preceding_quest_tableId() const {return 318;};
 BnsTables::Shared::TableRef preceding_quest_retired[16];
 __int32 preceding_quest_retired_Size() const {return 16;};
-int preceding_quest_retired_tableId() const {return 315;};
+int preceding_quest_retired_tableId() const {return 318;};
 signed char preceding_quest_mission_step[16];
 __int32 preceding_quest_mission_step_Size() const {return 16;};
 signed char preceding_quest_count[16];
@@ -57,9 +57,11 @@ signed char valid_dayofweek_end_hour[7];
 __int32 valid_dayofweek_end_hour_Size() const {return 7;};
 BnsTables::Shared::TableRef reward[3];
 __int32 reward_Size() const {return 3;};
-int reward_tableId() const {return 316;};
+int reward_tableId() const {return 319;};
 BnsTables::Shared::TableRef talk_to_self_guide_msg;
 int talk_to_self_guide_msg_tableId() const {return 164;};
+__int32 combat_power_min;
+__int32 combat_power_max;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }
@@ -116,6 +118,7 @@ int talk_to_self_guide_msg_tableId() const {return 164;};
 			gathering_type_5 = 12,
 			gathering_type_6 = 13,
 			gathering_type_7 = 14,
+			production_type_all = 15,
 		};
 
 		enum class valid_dayofweek_end_day {

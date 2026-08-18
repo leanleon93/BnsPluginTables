@@ -10,13 +10,13 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef tip;
-int tip_tableId() const {return 448;};
+int tip_tableId() const {return 454;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 448;};
+int name2_tableId() const {return 454;};
 BnsTables::Shared::TableRef candidate_name;
-int candidate_name_tableId() const {return 448;};
+int candidate_name_tableId() const {return 454;};
 BnsTables::Shared::TableRef single_name;
-int single_name_tableId() const {return 448;};
+int single_name_tableId() const {return 454;};
 
 		static __int32 SubType() { return 0; }
 	};

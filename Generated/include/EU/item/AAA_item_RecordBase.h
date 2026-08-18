@@ -33,9 +33,9 @@ signed char level;
 		wchar_t* alias;
 BnsTables::Shared::TableRef item_combat[10];
 __int32 item_combat_Size() const {return 10;};
-int item_combat_tableId() const {return 204;};
+int item_combat_tableId() const {return 205;};
 BnsTables::Shared::TableRef brand;
-int brand_tableId() const {return 200;};
+int brand_tableId() const {return 201;};
 __int32 price;
 __int32 price_neo_gold;
 __int32 base_fee;
@@ -53,10 +53,10 @@ bool consume_durability;
 bool auctionable;
 bool seal_renewal_auctionable;
 bool party_auction_exclusion;
+bool market_search_exposable;
 bool acquire_used;
 bool equip_used;
 bool account_used;
-char Pad0[1];
 BnsTables::Shared::TableRef filter_equip[4];
 __int32 filter_equip_Size() const {return 4;};
 int filter_equip_tableId() const {return 154;};
@@ -80,75 +80,75 @@ signed char item_grade;
 signed char legend_grade_background_particle_type;
 __int16 init_durability;
 __int16 max_durability;
-char Pad1[2];
+char Pad0[2];
 __int32 repair_money_cost;
 signed char use_global_recycle_group;
-char Pad2[3];
+char Pad1[3];
 __int32 use_global_recycle_group_duration;
 signed char use_recycle_group;
 signed char use_recycle_group_id;
-char Pad3[2];
+char Pad2[2];
 __int32 use_recycle_group_duration;
 bool decompose_reward_by_consume_index;
-char Pad4[3];
+char Pad3[3];
 BnsTables::Shared::TableRef decompose_reward[7];
 __int32 decompose_reward_Size() const {return 7;};
-int decompose_reward_tableId() const {return 351;};
+int decompose_reward_tableId() const {return 354;};
 signed char decompose_reward_total_count;
-char Pad5[3];
+char Pad4[3];
 BnsTables::Shared::TableRef decompose_event_reward;
-int decompose_event_reward_tableId() const {return 351;};
+int decompose_event_reward_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_blade_master;
-int decompose_job_reward_blade_master_tableId() const {return 351;};
+int decompose_job_reward_blade_master_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_kung_fu_fighter;
-int decompose_job_reward_kung_fu_fighter_tableId() const {return 351;};
+int decompose_job_reward_kung_fu_fighter_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_force_master;
-int decompose_job_reward_force_master_tableId() const {return 351;};
+int decompose_job_reward_force_master_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_destroyer;
-int decompose_job_reward_destroyer_tableId() const {return 351;};
+int decompose_job_reward_destroyer_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_summoner;
-int decompose_job_reward_summoner_tableId() const {return 351;};
+int decompose_job_reward_summoner_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_assassin;
-int decompose_job_reward_assassin_tableId() const {return 351;};
+int decompose_job_reward_assassin_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_sword_master;
-int decompose_job_reward_sword_master_tableId() const {return 351;};
+int decompose_job_reward_sword_master_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_warlock;
-int decompose_job_reward_warlock_tableId() const {return 351;};
+int decompose_job_reward_warlock_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_soul_fighter;
-int decompose_job_reward_soul_fighter_tableId() const {return 351;};
+int decompose_job_reward_soul_fighter_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_shooter;
-int decompose_job_reward_shooter_tableId() const {return 351;};
+int decompose_job_reward_shooter_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_warrior;
-int decompose_job_reward_warrior_tableId() const {return 351;};
+int decompose_job_reward_warrior_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_archer;
-int decompose_job_reward_archer_tableId() const {return 351;};
+int decompose_job_reward_archer_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_spear_master;
-int decompose_job_reward_spear_master_tableId() const {return 351;};
+int decompose_job_reward_spear_master_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_thunderer;
-int decompose_job_reward_thunderer_tableId() const {return 351;};
+int decompose_job_reward_thunderer_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_dual_blader;
-int decompose_job_reward_dual_blader_tableId() const {return 351;};
+int decompose_job_reward_dual_blader_tableId() const {return 354;};
 BnsTables::Shared::TableRef decompose_job_reward_bard;
-int decompose_job_reward_bard_tableId() const {return 351;};
+int decompose_job_reward_bard_tableId() const {return 354;};
 signed char decompose_max;
-char Pad6[3];
+char Pad5[3];
 __int32 decompose_money_cost;
 BnsTables::Shared::TableRef decompose_by_item2[7];
 __int32 decompose_by_item2_Size() const {return 7;};
-int decompose_by_item2_tableId() const {return 207;};
+int decompose_by_item2_tableId() const {return 208;};
 __int16 decompose_by_item2_stack_count[7];
 __int32 decompose_by_item2_stack_count_Size() const {return 7;};
 signed char decompose_by_item2_total_count;
-char Pad7[1];
+char Pad6[1];
 BnsTables::Shared::TableRef job_decompose_by_item2[7];
 __int32 job_decompose_by_item2_Size() const {return 7;};
-int job_decompose_by_item2_tableId() const {return 207;};
+int job_decompose_by_item2_tableId() const {return 208;};
 __int16 job_decompose_by_item2_stack_count[7];
 __int32 job_decompose_by_item2_stack_count_Size() const {return 7;};
 signed char job_decompose_by_item2_total_count;
-char Pad8[1];
+char Pad7[1];
 BnsTables::Shared::TableRef set_item;
-int set_item_tableId() const {return 359;};
+int set_item_tableId() const {return 362;};
 BnsTables::Shared::TableRef faction;
 int faction_tableId() const {return 143;};
 BnsTables::Shared::TableRef equip_faction;
@@ -158,22 +158,22 @@ bool new_product;
 bool hot_product;
 __int16 pouch_appearance_priority;
 signed char pouch_appearance;
-char Pad9[1];
+char Pad8[1];
 BnsTables::Shared::TableRef seal_consume_item[2];
 __int32 seal_consume_item_Size() const {return 2;};
-int seal_consume_item_tableId() const {return 207;};
+int seal_consume_item_tableId() const {return 208;};
 __int16 seal_consume_item_count[2];
 __int32 seal_consume_item_count_Size() const {return 2;};
 BnsTables::Shared::TableRef seal_acquire_item;
-int seal_acquire_item_tableId() const {return 207;};
+int seal_acquire_item_tableId() const {return 208;};
 bool seal_keep_level;
 signed char seal_enable_count;
 signed char forwarding_types[64];
 __int32 forwarding_types_Size() const {return 64;};
-char Pad10[2];
+char Pad9[2];
 BnsTables::Shared::TableRef quests[64];
 __int32 quests_Size() const {return 64;};
-int quests_tableId() const {return 315;};
+int quests_tableId() const {return 318;};
 signed char missions[64];
 __int32 missions_Size() const {return 64;};
 signed char cases[64];
@@ -199,7 +199,7 @@ __int16 attack_critical_damage_value;
 __int16 attack_critical_damage_value_equip;
 __int16 defend_critical_base_percent;
 __int16 defend_critical_damage_percent;
-char Pad11[2];
+char Pad10[2];
 __int32 defend_critical_value;
 __int32 defend_critical_value_equip;
 __int16 defend_dodge_base_percent;
@@ -235,11 +235,11 @@ __int16 defend_counter_reduce_percent;
 __int16 attack_attribute_value;
 __int16 attack_attribute_value_equip;
 __int16 attack_attribute_base_percent;
-char Pad12[2];
+char Pad11[2];
 __int32 pve_boss_level_npc_attack_power_equip_min;
 __int32 pve_boss_level_npc_attack_power_equip_max;
 __int16 pve_boss_level_npc_defend_power_equip_value;
-char Pad13[2];
+char Pad12[2];
 __int32 pvp_attack_power_equip_min;
 __int32 pvp_attack_power_equip_max;
 __int16 pvp_defend_power_equip_value;
@@ -247,7 +247,7 @@ __int16 r_attack_stiff_duration_equip_value;
 __int16 r_defend_stiff_duration_equip_value;
 __int16 r_aoe_defend_power_value_equip;
 __int16 r_heal_power_equip_value;
-char Pad14[2];
+char Pad13[2];
 __int32 r_defend_strength_equip_value;
 __int32 r_attack_precise_equip_value;
 __int16 r_attack_aoe_pierce_value_equip;
@@ -298,7 +298,7 @@ __int32 job_ability_1;
 __int16 job_ability_2;
 __int16 heal_power_base_percent;
 __int16 heal_power_value;
-char Pad15[2];
+char Pad14[2];
 __int32 heal_power_diff;
 __int16 aoe_defend_base_percent;
 __int16 aoe_defend_power_value;
@@ -343,7 +343,7 @@ __int16 potential_defend_damage_modify_diff;
 __int16 potential_attack_concentrate_value;
 __int16 potential_defend_perfect_parry_reduce_percent;
 __int16 potential_defend_counter_reduce_percent;
-char Pad16[2];
+char Pad15[2];
 __int32 potential_max_hp;
 __int32 potential_hp_regen;
 __int32 potential_hp_regen_combat;
@@ -359,21 +359,21 @@ __int16 potential_abnormal_attack_power_value_equip;
 __int16 potential_abnormal_defend_power_value;
 __int16 potential_heal_power_value;
 __int16 potential_attack_critical_damage_value_equip;
-char Pad17[2];
+char Pad16[2];
 wchar_t* item_sound_move;
 wchar_t* item_sound_dragstart;
 wchar_t* item_sound_itemdrop;
 signed char main_ability[2];
 __int32 main_ability_Size() const {return 2;};
 bool pccafe_ncsoft_korea_only;
-char Pad18[1];
+char Pad17[1];
 __int32 growth_id;
 signed char growth_level_max;
 signed char growth_step;
 signed char growth_efficient_level;
-char Pad19[1];
+char Pad18[1];
 __int16 growth_exp_scale;
-char Pad20[2];
+char Pad19[2];
 __int32 random_option_group_id;
 __int32 has_random_option_group_data_flag;
 __int32 growth_recipe_exp_min;
@@ -383,79 +383,79 @@ __int32 growth_recipe_exp_Size() const {return 4;};
 __int32 growth_recipe_cost;
 BnsTables::Shared::TableRef growth_recipe_material[6];
 __int32 growth_recipe_material_Size() const {return 6;};
-int growth_recipe_material_tableId() const {return 207;};
+int growth_recipe_material_tableId() const {return 208;};
 __int16 growth_recipe_material_count[6];
 __int32 growth_recipe_material_count_Size() const {return 6;};
 signed char growth_fail_probability;
-char Pad21[3];
+char Pad20[3];
 __int32 awakening_recipe_cost;
 BnsTables::Shared::TableRef awakening_recipe_material[6];
 __int32 awakening_recipe_material_Size() const {return 6;};
-int awakening_recipe_material_tableId() const {return 207;};
+int awakening_recipe_material_tableId() const {return 208;};
 __int16 awakening_recipe_material_count[6];
 __int32 awakening_recipe_material_count_Size() const {return 6;};
 bool dispose_awakening_feed_item;
 bool dispose_awakening_material;
-char Pad22[2];
+char Pad21[2];
 BnsTables::Shared::TableRef required_feed_item_brand_for_growth;
-int required_feed_item_brand_for_growth_tableId() const {return 200;};
+int required_feed_item_brand_for_growth_tableId() const {return 201;};
 BnsTables::Shared::TableRef required_feed_item_for_growth;
-int required_feed_item_for_growth_tableId() const {return 207;};
+int required_feed_item_for_growth_tableId() const {return 208;};
 signed char required_seed_item_growth_course;
 signed char required_seed_item_condition_type;
 signed char required_seed_item_equip_level_min;
 signed char required_seed_item_equip_level_max;
 BnsTables::Shared::TableRef required_feed_item_brand_for_awakening;
-int required_feed_item_brand_for_awakening_tableId() const {return 200;};
+int required_feed_item_brand_for_awakening_tableId() const {return 201;};
 signed char required_feed_item_condition_type;
 signed char required_feed_item_level_min;
-char Pad23[2];
+char Pad22[2];
 BnsTables::Shared::TableRef awakening_target_item[5];
 __int32 awakening_target_item_Size() const {return 5;};
-int awakening_target_item_tableId() const {return 207;};
+int awakening_target_item_tableId() const {return 208;};
 __int16 required_awakening_bm_item_count;
 signed char awakening_probability;
-char Pad24[1];
+char Pad23[1];
 BnsTables::Shared::TableRef awakening_fail_effect;
 int awakening_fail_effect_tableId() const {return 121;};
 bool lock_enable;
 signed char time_limit_type;
-char Pad25[2];
+char Pad24[2];
 __int32 usable_duration;
 __int64 fixed_expiration_time;
 signed char delete_expiration_type;
-char Pad26[3];
+char Pad25[3];
 BnsTables::Shared::TableRef event_info;
-int event_info_tableId() const {return 208;};
+int event_info_tableId() const {return 209;};
 bool show_reward_preview;
-char Pad27[3];
+char Pad26[3];
 BnsTables::Shared::TableRef account_post_charge;
 int account_post_charge_tableId() const {return 5;};
 signed char fusion_category_1;
-char Pad28[1];
+char Pad27[1];
 __int16 fusion_category_2;
 __int32 fusion_score;
 signed char boast_event_type;
-char Pad29[3];
+char Pad28[3];
 __int32 improve_id;
 signed char improve_level;
-char Pad30[3];
+char Pad29[3];
 BnsTables::Shared::TableRef improve_next_item;
-int improve_next_item_tableId() const {return 207;};
+int improve_next_item_tableId() const {return 208;};
 BnsTables::Shared::TableRef improve_prev_item;
-int improve_prev_item_tableId() const {return 207;};
+int improve_prev_item_tableId() const {return 208;};
 BnsTables::Shared::TableRef job_change_item_exchange_group;
-int job_change_item_exchange_group_tableId() const {return 241;};
+int job_change_item_exchange_group_tableId() const {return 242;};
 __int32 item_generation;
 BnsTables::Shared::TableRef manipulate_zone_env2_list[10];
 __int32 manipulate_zone_env2_list_Size() const {return 10;};
-int manipulate_zone_env2_list_tableId() const {return 494;};
+int manipulate_zone_env2_list_tableId() const {return 502;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 448;};
+int name2_tableId() const {return 454;};
 BnsTables::Shared::TableRef nickname;
-int nickname_tableId() const {return 448;};
+int nickname_tableId() const {return 454;};
 signed char stage_number;
-char Pad31[3];
+char Pad30[3];
 BnsTables::Shared::IconRef tag_icon;
 BnsTables::Shared::IconRef tag_icon_grade;
 BnsTables::Shared::IconRef icon;
@@ -496,54 +496,54 @@ bool hide_beard;
 bool hide_name;
 bool guild_item;
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 448;};
+int description2_tableId() const {return 454;};
 BnsTables::Shared::TableRef description4_title;
-int description4_title_tableId() const {return 448;};
+int description4_title_tableId() const {return 454;};
 BnsTables::Shared::TableRef description5_title;
-int description5_title_tableId() const {return 448;};
+int description5_title_tableId() const {return 454;};
 BnsTables::Shared::TableRef description6_title;
-int description6_title_tableId() const {return 448;};
+int description6_title_tableId() const {return 454;};
 BnsTables::Shared::TableRef description4;
-int description4_tableId() const {return 448;};
+int description4_tableId() const {return 454;};
 BnsTables::Shared::TableRef description5;
-int description5_tableId() const {return 448;};
+int description5_tableId() const {return 454;};
 BnsTables::Shared::TableRef description6;
-int description6_tableId() const {return 448;};
+int description6_tableId() const {return 454;};
 BnsTables::Shared::TableRef description7;
-int description7_tableId() const {return 448;};
+int description7_tableId() const {return 454;};
 BnsTables::Shared::TableRef main_info;
-int main_info_tableId() const {return 448;};
+int main_info_tableId() const {return 454;};
 BnsTables::Shared::TableRef sub_info;
-int sub_info_tableId() const {return 448;};
+int sub_info_tableId() const {return 454;};
 BnsTables::Shared::TableRef identify_main_info;
-int identify_main_info_tableId() const {return 448;};
+int identify_main_info_tableId() const {return 454;};
 BnsTables::Shared::TableRef identify_sub_info;
-int identify_sub_info_tableId() const {return 448;};
+int identify_sub_info_tableId() const {return 454;};
 BnsTables::Shared::TableRef identify_description;
-int identify_description_tableId() const {return 448;};
+int identify_description_tableId() const {return 454;};
 BnsTables::Shared::TableRef legend_transform_title_name;
-int legend_transform_title_name_tableId() const {return 448;};
+int legend_transform_title_name_tableId() const {return 454;};
 signed char ui_icon_state;
-char Pad32[3];
+char Pad31[3];
 BnsTables::Shared::TableRef message[9];
 __int32 message_Size() const {return 9;};
-int message_tableId() const {return 290;};
+int message_tableId() const {return 291;};
 bool invoke_fx_msg;
-char Pad33[3];
+char Pad32[3];
 wchar_t* tooltip_info;
 __int32 item_score;
 signed char item_style;
-char Pad34[1];
+char Pad33[1];
 __int16 release_contents_group;
 BnsTables::Shared::TableRef randomoption_reset_cost_group;
 int randomoption_reset_cost_group_tableId() const {return 82;};
 bool recommend_in_item_growth;
-char Pad35[1];
+char Pad34[1];
 __int16 tier;
 bool show_item_pouch_light_pillar;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(68, 2); }
-		static __int16 TableId() { return 207; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(71, 1); }
+		static __int16 TableId() { return 208; }
 		static __int32 SubType() { return -1; }
 		enum class game_category_1 {
 			none = 0,
@@ -794,6 +794,14 @@ bool show_item_pouch_light_pillar;
 			transform_coupon = 202,
 			worldaccountcard_coupon = 203,
 			glyph_coupon = 204,
+			equip_gem_1_appearance = 205,
+			equip_gem_2_appearance = 206,
+			equip_gem_3_appearance = 207,
+			equip_gem_4_appearance = 208,
+			equip_gem_5_appearance = 209,
+			equip_gem_6_appearance = 210,
+			equip_gem_7_appearance = 211,
+			equip_gem_8_appearance = 212,
 		};
 
 		enum class market_category_2 {
@@ -973,6 +981,14 @@ bool show_item_pouch_light_pillar;
 			skill_train_by_item_extract_waist = 145,
 			skill_train_by_item_extract_gloves = 146,
 			costume_box = 147,
+			equip_gem_1_appearance = 148,
+			equip_gem_2_appearance = 149,
+			equip_gem_3_appearance = 150,
+			equip_gem_4_appearance = 151,
+			equip_gem_5_appearance = 152,
+			equip_gem_6_appearance = 153,
+			equip_gem_7_appearance = 154,
+			equip_gem_8_appearance = 155,
 		};
 
 		enum class equip_job_check {
@@ -1071,6 +1087,14 @@ bool show_item_pouch_light_pillar;
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 
 		enum class legend_grade_background_particle_type {
@@ -1992,6 +2016,7 @@ bool show_item_pouch_light_pillar;
 			talk_social = 21,
 			armlet_1 = 22,
 			armlet_2 = 23,
+			equip_gem_appearance = 24,
 		};
 
 		enum class enchant_type {

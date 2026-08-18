@@ -22,12 +22,12 @@ signed char server_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef parent_skill;
-int parent_skill_tableId() const {return 361;};
+int parent_skill_tableId() const {return 364;};
 BnsTables::Shared::TableRef base_skill;
-int base_skill_tableId() const {return 361;};
+int base_skill_tableId() const {return 364;};
 BnsTables::Shared::TableRef change_skill[4];
 __int32 change_skill_Size() const {return 4;};
-int change_skill_tableId() const {return 361;};
+int change_skill_tableId() const {return 364;};
 signed char row;
 signed char column;
 signed char job;
@@ -35,19 +35,20 @@ signed char equip_type;
 signed char tier;
 char Pad0[3];
 BnsTables::Shared::TableRef base_skill_acquire_route;
-int base_skill_acquire_route_tableId() const {return 227;};
+int base_skill_acquire_route_tableId() const {return 228;};
 BnsTables::Shared::TableRef change_skill_acquire_route[4];
 __int32 change_skill_acquire_route_Size() const {return 4;};
-int change_skill_acquire_route_tableId() const {return 227;};
+int change_skill_acquire_route_tableId() const {return 228;};
 signed char job_specialization[3];
 __int32 job_specialization_Size() const {return 3;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 365; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
+		static __int16 TableId() { return 368; }
 		static __int32 SubType() { return -1; }
 		enum class server_type {
-			nck = 0,
-			nck_neo_gold = 1,
+			common = 0,
+			nck = 1,
+			nck_neo_gold = 2,
 		};
 
 		enum class job {
@@ -121,6 +122,14 @@ __int32 job_specialization_Size() const {return 3;};
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 
 		enum class job_specialization {

@@ -23,20 +23,25 @@ __int32 view_skill_id;
 		};
 		__declspec(align(8)) Key key;
 		__int32 tree_id;
+bool default_skill_train_by_item;
 __int16 pc_level;
 __int16 pc_mastery_level;
-char Pad0[2];
+char Pad0[1];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId() const {return 315;};
+int complete_quest_tableId() const {return 318;};
 BnsTables::Shared::TableRef jumping_pc_complete_quest;
-int jumping_pc_complete_quest_tableId() const {return 315;};
+int jumping_pc_complete_quest_tableId() const {return 318;};
 __int32 consumed_tp;
 signed char sort_id;
 bool ui_invisible;
 bool context_lock_disable;
+bool main_skill_by_key_command;
+BnsTables::Shared::TableRef relation_skill_group[3];
+__int32 relation_skill_group_Size() const {return 3;};
+int relation_skill_group_tableId() const {return 401;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 396; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
+		static __int16 TableId() { return 400; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

@@ -28,7 +28,7 @@ signed char race;
 bool context_simple_mode;
 signed char job_specialization;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 80; }
 		static __int32 SubType() { return -1; }
 		enum class job {
