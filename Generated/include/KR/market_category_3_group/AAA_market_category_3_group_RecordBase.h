@@ -28,10 +28,10 @@ __int32 market_category_3_Size() const {return 10;};
 signed char addtional_filtering_type;
 char Pad1[1];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 448;};
+int name2_tableId() const {return 454;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 268; }
+		static __int16 TableId() { return 269; }
 		static __int32 SubType() { return -1; }
 		enum class market_category_3 {
 			none = 0,
@@ -182,6 +182,14 @@ int name2_tableId() const {return 448;};
 			skill_train_by_item_extract_waist = 145,
 			skill_train_by_item_extract_gloves = 146,
 			costume_box = 147,
+			equip_gem_1_appearance = 148,
+			equip_gem_2_appearance = 149,
+			equip_gem_3_appearance = 150,
+			equip_gem_4_appearance = 151,
+			equip_gem_5_appearance = 152,
+			equip_gem_6_appearance = 153,
+			equip_gem_7_appearance = 154,
+			equip_gem_8_appearance = 155,
 		};
 
 		enum class addtional_filtering_type {

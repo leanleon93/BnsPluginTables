@@ -24,14 +24,14 @@ namespace BnsTables::KR {
 bool retired;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 448;};
+int name2_tableId() const {return 454;};
 BnsTables::Shared::TableRef teleport_position;
-int teleport_position_tableId() const {return 505;};
+int teleport_position_tableId() const {return 513;};
 __int16 distance_from_start_teleport;
 char Pad1[2];
 __int32 price_percent;
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 448;};
+int description2_tableId() const {return 454;};
 BnsTables::Shared::TableRef activated_faction;
 int activated_faction_tableId() const {return 143;};
 bool joined_faction;
@@ -39,17 +39,19 @@ signed char required_pc_level;
 signed char required_pc_mastery_level;
 signed char required_faction_level;
 BnsTables::Shared::TableRef ui_preceding_quest;
-int ui_preceding_quest_tableId() const {return 315;};
+int ui_preceding_quest_tableId() const {return 318;};
 BnsTables::Shared::TableRef required_quest;
-int required_quest_tableId() const {return 315;};
+int required_quest_tableId() const {return 318;};
 bool capital;
 signed char teleport_cost_type;
 char Pad2[2];
 BnsTables::Shared::TableRef party_chat_channel;
-int party_chat_channel_tableId() const {return 293;};
+int party_chat_channel_tableId() const {return 294;};
+BnsTables::Shared::TableRef portal_env;
+int portal_env_tableId() const {return 502;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 444; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static __int16 TableId() { return 450; }
 		static __int32 SubType() { return -1; }
 		enum class teleport_cost_type {
 			teleport = 0,

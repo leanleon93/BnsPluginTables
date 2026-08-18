@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef env2spawn;
-int env2spawn_tableId() const {return 496;};
+int env2spawn_tableId() const {return 504;};
 
 		static __int32 SubType() { return 26; }
 	};

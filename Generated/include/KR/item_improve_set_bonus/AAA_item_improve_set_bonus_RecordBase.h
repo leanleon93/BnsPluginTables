@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 448;};
+int name_tableId() const {return 454;};
 BnsTables::Shared::ExplicitTableRef target_item[40];
 __int32 target_item_Size() const {return 40;};
 signed char target_item_condition_type[40];
@@ -41,7 +41,7 @@ __int32 total_improve_level_effect_Size() const {return 30;};
 int total_improve_level_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef total_improve_level_effect_description[30];
 __int32 total_improve_level_effect_description_Size() const {return 30;};
-int total_improve_level_effect_description_tableId() const {return 448;};
+int total_improve_level_effect_description_tableId() const {return 454;};
 signed char total_improve_level_ability[30];
 __int32 total_improve_level_ability_Size() const {return 30;};
 char Pad2[2];
@@ -59,7 +59,7 @@ __int32 min_improve_level_effect_Size() const {return 30;};
 int min_improve_level_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef min_improve_level_effect_description[30];
 __int32 min_improve_level_effect_description_Size() const {return 30;};
-int min_improve_level_effect_description_tableId() const {return 448;};
+int min_improve_level_effect_description_tableId() const {return 454;};
 signed char min_improve_level_ability[30];
 __int32 min_improve_level_ability_Size() const {return 30;};
 char Pad3[2];
@@ -72,7 +72,7 @@ __int32 min_improve_level_condition_event_Size() const {return 30;};
 int min_improve_level_condition_event_tableId() const {return 66;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
-		static __int16 TableId() { return 219; }
+		static __int16 TableId() { return 220; }
 		static __int32 SubType() { return -1; }
 		enum class target_item_condition_type {
 			none = 0,
@@ -218,6 +218,14 @@ int min_improve_level_condition_event_tableId() const {return 66;};
 			armlet_2 = 65,
 			preset_armlet_1 = 66,
 			preset_armlet_2 = 67,
+			equip_gem_1_appearance = 68,
+			equip_gem_2_appearance = 69,
+			equip_gem_3_appearance = 70,
+			equip_gem_4_appearance = 71,
+			equip_gem_5_appearance = 72,
+			equip_gem_6_appearance = 73,
+			equip_gem_7_appearance = 74,
+			equip_gem_8_appearance = 75,
 		};
 
 		enum class min_improve_level_ability {

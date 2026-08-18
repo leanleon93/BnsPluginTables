@@ -104,11 +104,12 @@ __int32 defend_perfect_parry_reduce_modify;
 __int32 attack_counter_damage_modify;
 __int32 defend_counter_reduce_modify;
 __int16 heal_power_base_percent;
+char Pad6[2];
+__int32 heal_power_value;
 __int16 aoe_defend_base_percent;
 __int16 aoe_defend_power_value;
 __int16 hate_base_percent;
 __int16 hate_power_creature_value;
-char Pad6[2];
 __int32 abnormal_attack_power_modify;
 __int32 abnormal_defend_power_modify;
 __int32 hate_power_modify;
@@ -166,8 +167,8 @@ char Pad8[2];
 __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 434; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
+		static __int16 TableId() { return 440; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

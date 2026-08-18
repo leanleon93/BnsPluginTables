@@ -114,7 +114,7 @@ BnsTables::Shared::TableRef achievement[8];
 __int32 achievement_Size() const {return 8;};
 int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId() const {return 448;};
+int register_name_tableId() const {return 454;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 7; }
@@ -222,6 +222,14 @@ int register_name_tableId() const {return 448;};
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 
 		enum class reset_type {

@@ -21,13 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 448;};
+int name_tableId() const {return 454;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 193;};
+int icon_texture_tableId() const {return 194;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef none_selected_icon_texture;
-int none_selected_icon_texture_tableId() const {return 193;};
+int none_selected_icon_texture_tableId() const {return 194;};
 __int16 none_selected_icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef join_msg;
@@ -58,6 +58,7 @@ __int32 need_exp_for_level_Size() const {return 100;};
 			gathering_type_5 = 12,
 			gathering_type_6 = 13,
 			gathering_type_7 = 14,
+			production_type_all = 15,
 		};
 	};
 #pragma pack(pop)

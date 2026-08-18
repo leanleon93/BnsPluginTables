@@ -30,7 +30,7 @@ __int32 race_Size() const {return 4;};
 __int32 money;
 BnsTables::Shared::TableRef item[2];
 __int32 item_Size() const {return 2;};
-int item_tableId() const {return 207;};
+int item_tableId() const {return 208;};
 signed char item_count[2];
 __int32 item_count_Size() const {return 2;};
 

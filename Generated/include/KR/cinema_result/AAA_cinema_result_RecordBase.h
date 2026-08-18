@@ -28,7 +28,7 @@ int result_cinematic_tableId() const {return 57;};
 wchar_t* panel_name;
 wchar_t* level_seq_event_name;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
 		static __int16 TableId() { return 56; }
 		static __int32 SubType() { return -1; }
 		enum class race {
@@ -58,6 +58,7 @@ wchar_t* level_seq_event_name;
 			none = 0,
 			nahando = 1,
 			hyper_move_contest = 2,
+			yg_wave = 3,
 		};
 	};
 #pragma pack(pop)

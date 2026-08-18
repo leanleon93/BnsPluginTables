@@ -1,0 +1,106 @@
+/*
+ Generated Code! Do not manually edit this code. Modify the generator instead.
+*/
+#pragma once
+#include "../../DrEl.h"
+#include "../../BnsCustomProperties.h"
+
+namespace BnsTables::KR {
+
+#pragma pack(push, 1)
+	struct gem_appearance_set_Record : BnsTables::Shared::DrEl
+	{
+	public:
+		union Key
+		{
+            struct {
+                __int64 autoId;
+
+            };
+			unsigned __int64 key;
+		};
+		__declspec(align(8)) Key key;
+		wchar_t* alias;
+BnsTables::Shared::TableRef set_name;
+int set_name_tableId() const {return 454;};
+wchar_t* background_widget_ref;
+BnsTables::Shared::TableRef slot_item[8];
+__int32 slot_item_Size() const {return 8;};
+int slot_item_tableId() const {return 208;};
+signed char slot_equip_type[8];
+__int32 slot_equip_type_Size() const {return 8;};
+BnsTables::Shared::TableRef slot_name[8];
+__int32 slot_name_Size() const {return 8;};
+int slot_name_tableId() const {return 454;};
+BnsTables::Shared::IconRef slot_tag_icon[8];
+__int32 slot_tag_icon_Size() const {return 8;};
+
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
+		static __int16 TableId() { return 166; }
+		static __int32 SubType() { return -1; }
+		enum class slot_equip_type {
+			none = 0,
+			weapon = 1,
+			costume = 2,
+			earring = 3,
+			eyeglass = 4,
+			hat = 5,
+			ring = 6,
+			necklace = 7,
+			gem_1 = 8,
+			gem_2 = 9,
+			gem_3 = 10,
+			gem_4 = 11,
+			gem_5 = 12,
+			gem_6 = 13,
+			gem_7 = 14,
+			gem_8 = 15,
+			attach = 16,
+			belt = 17,
+			bracelet = 18,
+			soul = 19,
+			soul_2 = 20,
+			gloves = 21,
+			pet_1 = 22,
+			pet_2 = 23,
+			rune_1 = 24,
+			rune_2 = 25,
+			nova = 26,
+			badge_1_premium = 27,
+			badge_2_premium = 28,
+			badge_3_premium = 29,
+			badge_1_normal = 30,
+			badge_2_normal = 31,
+			badge_3_normal = 32,
+			badge_appearance = 33,
+			vehicle = 34,
+			normal_state_appearance = 35,
+			idle_state_appearance = 36,
+			chatting_symbol = 37,
+			portrait_appearance = 38,
+			hypermove_appearance = 39,
+			name_plate_appearance = 40,
+			speech_bubble_appearance = 41,
+			talk_social = 42,
+			armlet_1 = 43,
+			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
+		};
+	};
+#pragma pack(pop)
+#pragma pack(push, 1)
+	struct __declspec(align(4)) gem_appearance_set_RecordPtr // : DrRecordPtr
+	{
+		gem_appearance_set_Record* _record;
+		int _cacheChunkIndex;
+		bool _makeCopy;
+	};
+#pragma pack(pop)
+}

@@ -9,11 +9,10 @@ namespace BnsTables::KR {
 	struct effect_npc_change_appearance_Record : effect_Record
 	{
 	public:
-		char Pad_sub_0[1];
-BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 285;};
+		BnsTables::Shared::TableRef npc;
+int npc_tableId() const {return 286;};
 BnsTables::Shared::TableRef weapon;
-int weapon_tableId() const {return 207;};
+int weapon_tableId() const {return 208;};
 
 		static __int32 SubType() { return 988; }
 	};

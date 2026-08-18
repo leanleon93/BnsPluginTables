@@ -29,9 +29,11 @@ wchar_t* condition_alias[10];
 __int32 condition_alias_Size() const {return 10;};
 __int64 condition[10];
 __int32 condition_Size() const {return 10;};
+BnsTables::Shared::TableRef highlight_id;
+int highlight_id_tableId() const {return 464;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 413; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
+		static __int16 TableId() { return 419; }
 		static __int32 SubType() { return -1; }
 		enum class mission_type {
 			none = 0,
@@ -72,6 +74,39 @@ __int32 condition_Size() const {return 10;};
 			world_account_combination = 35,
 			world_account_card_collection_equip = 36,
 			attach_equip_gem_piece = 37,
+			passing_ability_to_item = 38,
+			reset_item_option = 39,
+			improve_item_succession = 40,
+			star_stone_combination = 41,
+			star_stone_action = 42,
+			complete_expedition = 43,
+			activate_museum_collection = 44,
+			achieve_combat_power = 45,
+			clear_duel_npc_challenge = 46,
+			try_transform_item = 47,
+			expand_inventory = 48,
+			put_item_into_closet = 49,
+			achieve_achievement = 50,
+			achieve_battle_exp = 51,
+			use_fatigability = 52,
+			achieve_skill_arcane_point = 53,
+			apply_skill_train = 54,
+			do_client_action = 55,
+			resist_success = 56,
+			immune_break_success = 57,
+			join_craft_union = 58,
+			complete_craft_order = 59,
+			change_channel = 60,
+			install_achievement_title = 61,
+			sell_item_to_npc = 62,
+			rebuy_item_from_npc = 63,
+			use_escape = 64,
+			acquire_quest = 65,
+			acquire_item = 66,
+			attach_skill_train = 67,
+			detach_skill_train = 68,
+			try_craft_order = 69,
+			select_skill_train = 70,
 		};
 
 		enum class entity_type {
@@ -99,6 +134,16 @@ __int32 condition_Size() const {return 10;};
 			value = 21,
 			world_account_combination = 22,
 			world_account_card_collection = 23,
+			equip_option_type = 24,
+			star_stone_combination = 25,
+			star_stone_action_type = 26,
+			map_group = 27,
+			expedition_type = 28,
+			world_account_museum = 29,
+			closet_group = 30,
+			achievement_id = 31,
+			achievement_step = 32,
+			client_action_type = 33,
 		};
 	};
 #pragma pack(pop)

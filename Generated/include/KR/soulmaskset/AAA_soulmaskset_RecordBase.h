@@ -75,7 +75,7 @@ BnsTables::Shared::TableRef transform_appearance;
 int transform_appearance_tableId() const {return 90;};
 wchar_t* transform_animset;
 BnsTables::Shared::TableRef transform_equip_hand_appearance;
-int transform_equip_hand_appearance_tableId() const {return 207;};
+int transform_equip_hand_appearance_tableId() const {return 208;};
 signed char transform_job;
 signed char transform_weapon_type;
 signed char transform_stance;
@@ -97,7 +97,7 @@ bool is_use_field_item;
 bool hide_hair;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 417; }
+		static __int16 TableId() { return 423; }
 		static __int32 SubType() { return -1; }
 		enum class soulmask_type {
 			normal = 0,

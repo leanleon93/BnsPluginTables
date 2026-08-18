@@ -64,6 +64,7 @@ signed char special_ui_effect;
 			event = 3,
 			immune_break = 4,
 			combo_highlight = 5,
+			activated = 6,
 		};
 	};
 #pragma pack(pop)

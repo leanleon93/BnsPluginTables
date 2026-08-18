@@ -33,16 +33,16 @@ char Pad1[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
 __int32 skill_Size() const {return 40;};
-int skill_tableId() const {return 375;};
+int skill_tableId() const {return 379;};
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 361;};
+int skill3_tableId() const {return 364;};
 BnsTables::Shared::TableRef pc_skill3[2];
 __int32 pc_skill3_Size() const {return 2;};
-int pc_skill3_tableId() const {return 303;};
+int pc_skill3_tableId() const {return 305;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
 __int32 pc_job_style_skill3_Size() const {return 10;};
-int pc_job_style_skill3_tableId() const {return 303;};
+int pc_job_style_skill3_tableId() const {return 305;};
 signed char skill_build_up_level_max;
 char Pad2[1];
 __int16 skill_build_up_point;
@@ -101,11 +101,12 @@ char Pad7[2];
 __int32 job_ability_1;
 __int32 job_ability_2;
 __int16 heal_power_base_percent;
+char Pad8[2];
+__int32 heal_power_value;
 __int16 aoe_defend_base_percent;
 __int16 aoe_defend_power_value;
 __int16 hate_base_percent;
 __int16 hate_power_creature_value;
-char Pad8[2];
 __int32 abnormal_attack_power_value;
 __int16 abnormal_attack_base_percent;
 __int16 abnormal_defend_power_value;
@@ -148,8 +149,8 @@ __int32 defend_abnormal_resistance_equip_value;
 __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 299; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
+		static __int16 TableId() { return 301; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

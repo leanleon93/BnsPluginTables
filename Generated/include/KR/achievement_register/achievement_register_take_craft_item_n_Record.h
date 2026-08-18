@@ -11,10 +11,10 @@ namespace BnsTables::KR {
 	public:
 		BnsTables::Shared::TableRef item[8];
 __int32 item_Size() const {return 8;};
-int item_tableId() const {return 207;};
+int item_tableId() const {return 208;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 448;};
+int slot_name_tableId() const {return 454;};
 
 		static __int32 SubType() { return 52; }
 	};

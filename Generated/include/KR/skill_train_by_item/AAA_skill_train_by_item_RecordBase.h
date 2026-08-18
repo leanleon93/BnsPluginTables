@@ -24,32 +24,33 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef main_origin_skill;
-int main_origin_skill_tableId() const {return 361;};
+int main_origin_skill_tableId() const {return 364;};
 BnsTables::Shared::TableRef main_change_skill;
-int main_change_skill_tableId() const {return 361;};
+int main_change_skill_tableId() const {return 364;};
 BnsTables::Shared::TableRef sub_origin_skill[5];
 __int32 sub_origin_skill_Size() const {return 5;};
-int sub_origin_skill_tableId() const {return 361;};
+int sub_origin_skill_tableId() const {return 364;};
 BnsTables::Shared::TableRef sub_change_skill[5];
 __int32 sub_change_skill_Size() const {return 5;};
-int sub_change_skill_tableId() const {return 361;};
+int sub_change_skill_tableId() const {return 364;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 448;};
+int description_tableId() const {return 454;};
 signed char item_equip_type;
 signed char job;
 char Pad1[2];
 BnsTables::Shared::TableRef extract_skill_train_by_item;
 int extract_skill_train_by_item_tableId() const {return 141;};
+bool is_default_skill_train_by_item;
 signed char ability[5];
 __int32 ability_Size() const {return 5;};
-char Pad2[3];
+char Pad2[2];
 __int32 ability_value[5];
 __int32 ability_value_Size() const {return 5;};
 __int16 character_info_preview_priority;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
-		static __int16 TableId() { return 394; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
+		static __int16 TableId() { return 398; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,
@@ -108,6 +109,14 @@ __int16 character_info_preview_priority;
 			talk_social = 42,
 			armlet_1 = 43,
 			armlet_2 = 44,
+			equip_gem_1_appearance = 45,
+			equip_gem_2_appearance = 46,
+			equip_gem_3_appearance = 47,
+			equip_gem_4_appearance = 48,
+			equip_gem_5_appearance = 49,
+			equip_gem_6_appearance = 50,
+			equip_gem_7_appearance = 51,
+			equip_gem_8_appearance = 52,
 		};
 
 		enum class job {

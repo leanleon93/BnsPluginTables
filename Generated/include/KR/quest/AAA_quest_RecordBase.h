@@ -24,16 +24,16 @@ namespace BnsTables::KR {
 signed char max_repeat;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 448;};
+int name2_tableId() const {return 454;};
 BnsTables::Shared::TableRef map_group_1[2];
 __int32 map_group_1_Size() const {return 2;};
-int map_group_1_tableId() const {return 261;};
+int map_group_1_tableId() const {return 262;};
 BnsTables::Shared::TableRef group2;
-int group2_tableId() const {return 448;};
+int group2_tableId() const {return 454;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 448;};
+int desc_tableId() const {return 454;};
 BnsTables::Shared::TableRef completed_desc;
-int completed_desc_tableId() const {return 448;};
+int completed_desc_tableId() const {return 454;};
 signed char category;
 bool completed_list;
 signed char grade;
@@ -69,14 +69,14 @@ char Pad3[3];
 __int32 reset_money;
 BnsTables::Shared::TableRef reset_item[4];
 __int32 reset_item_Size() const {return 4;};
-int reset_item_tableId() const {return 207;};
+int reset_item_tableId() const {return 208;};
 signed char reset_item_count[4];
 __int32 reset_item_count_Size() const {return 4;};
 BnsTables::Shared::TableRef acquire_talksocial;
-int acquire_talksocial_tableId() const {return 442;};
+int acquire_talksocial_tableId() const {return 448;};
 float acquire_talksocial_delay;
 BnsTables::Shared::TableRef complete_talksocial;
-int complete_talksocial_tableId() const {return 442;};
+int complete_talksocial_tableId() const {return 448;};
 float complete_talksocial_delay;
 bool check_vitality;
 char Pad4[1];
@@ -116,8 +116,8 @@ char Pad7[3];
 BnsTables::Shared::TableRef contents_reset;
 int contents_reset_tableId() const {return 77;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(14, 0); }
-		static __int16 TableId() { return 315; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(15, 0); }
+		static __int16 TableId() { return 318; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			epic = 0,
@@ -216,6 +216,7 @@ int contents_reset_tableId() const {return 77;};
 			gathering_type_5 = 12,
 			gathering_type_6 = 13,
 			gathering_type_7 = 14,
+			production_type_all = 15,
 		};
 
 		enum class save_type {
