@@ -39,19 +39,21 @@ char Pad1[1];
 BnsTables::Shared::TableRef message;
 int message_tableId() const {return 164;};
 wchar_t* movie_url;
-wchar_t* help_imageset[10];
-__int32 help_imageset_Size() const {return 10;};
-BnsTables::Shared::TableRef help_title[10];
-__int32 help_title_Size() const {return 10;};
+wchar_t* help_imageset[20];
+__int32 help_imageset_Size() const {return 20;};
+BnsTables::Shared::TableRef help_title[20];
+__int32 help_title_Size() const {return 20;};
 int help_title_tableId() const {return 454;};
-BnsTables::Shared::TableRef help_sub_title[10];
-__int32 help_sub_title_Size() const {return 10;};
+BnsTables::Shared::TableRef help_sub_title[20];
+__int32 help_sub_title_Size() const {return 20;};
 int help_sub_title_tableId() const {return 454;};
-BnsTables::Shared::TableRef help_desc[10];
-__int32 help_desc_Size() const {return 10;};
+BnsTables::Shared::TableRef help_desc[20];
+__int32 help_desc_Size() const {return 20;};
 int help_desc_tableId() const {return 454;};
+wchar_t* jpg_image_name[20];
+__int32 jpg_image_name_Size() const {return 20;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
 		static __int16 TableId() { return 175; }
 		static __int32 SubType() { return -1; }
 		enum class category {
@@ -71,6 +73,7 @@ int help_desc_tableId() const {return 454;};
 		enum class guide_type {
 			movie = 0,
 			imageset = 1,
+			jpg = 2,
 		};
 	};
 #pragma pack(pop)

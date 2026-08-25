@@ -52,6 +52,7 @@ BnsTables::Shared::TableRef mission_task_reward_item;
 int mission_task_reward_item_tableId() const {return 418;};
 BnsTables::Shared::TableRef prerequisite_mission;
 int prerequisite_mission_tableId() const {return 421;};
+__int32 highlight_priority;
 wchar_t* description;
 wchar_t* description_en;
 wchar_t* description_fr;
@@ -62,7 +63,7 @@ wchar_t* description_vn;
 BnsTables::Shared::TableRef description_text;
 int description_text_tableId() const {return 454;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 1); }
 		static __int16 TableId() { return 421; }
 		static __int32 SubType() { return -1; }
 		enum class proceedable_type {
