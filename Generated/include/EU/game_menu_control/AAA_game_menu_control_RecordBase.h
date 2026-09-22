@@ -26,16 +26,16 @@ signed char required_level;
 signed char required_master_level;
 char Pad0[1];
 BnsTables::Shared::TableRef required_acquired_and_complete_quest;
-int required_acquired_and_complete_quest_tableId() const {return 318;};
+int required_acquired_and_complete_quest_tableId() const {return 320;};
 BnsTables::Shared::TableRef required_complete_quest;
-int required_complete_quest_tableId() const {return 318;};
+int required_complete_quest_tableId() const {return 320;};
 signed char restrict_gameoption_display_type;
 signed char restrict_content_type;
 char Pad1[2];
 BnsTables::Shared::TableRef notifycenter_message;
-int notifycenter_message_tableId() const {return 454;};
+int notifycenter_message_tableId() const {return 456;};
 BnsTables::Shared::TableRef unavailability_confirm_text;
-int unavailability_confirm_text_tableId() const {return 454;};
+int unavailability_confirm_text_tableId() const {return 456;};
 bool use_record;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }

@@ -26,7 +26,7 @@ __int32 editable_Size() const {return 5;};
 bool initial_value[5];
 __int32 initial_value_Size() const {return 5;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 11); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 185; }
 		static __int32 SubType() { return -1; }
 		enum class authority {
@@ -49,6 +49,8 @@ __int32 initial_value_Size() const {return 5;};
 			guild_pr = 16,
 			accept_guildmember = 17,
 			purchase_guild_benefit = 18,
+			enter_guild_azit = 19,
+			enter_guild_hunting_field = 20,
 		};
 	};
 #pragma pack(pop)

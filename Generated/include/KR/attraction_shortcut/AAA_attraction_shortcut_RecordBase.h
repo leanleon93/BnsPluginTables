@@ -12,7 +12,8 @@ namespace BnsTables::KR {
 		attraction_shortcut_record_sub_time_limit_field = 1,
 		attraction_shortcut_record_sub_raid = 2,
 		attraction_shortcut_record_sub_duel_npc_challenge = 3,
-		attraction_shortcut_record_sub_count = 4,
+		attraction_shortcut_record_sub_guild_zone = 4,
+		attraction_shortcut_record_sub_count = 5,
     };
 #pragma pack(push, 1)
 	struct attraction_shortcut_Record : BnsTables::Shared::DrEl
@@ -29,7 +30,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 19; }
 		static __int32 SubType() { return -1; }
 

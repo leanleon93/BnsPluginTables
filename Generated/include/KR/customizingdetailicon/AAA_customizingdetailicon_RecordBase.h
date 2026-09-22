@@ -27,11 +27,11 @@ __int16 order;
 		signed char param_value;
 char Pad0[3];
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 194;};
+int icon_texture_tableId() const {return 195;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 454;};
+int desc_tableId() const {return 456;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 95; }

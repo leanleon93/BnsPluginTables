@@ -25,13 +25,13 @@ char Pad0[3];
 __int32 cost_money;
 BnsTables::Shared::TableRef cost_item[4];
 __int32 cost_item_Size() const {return 4;};
-int cost_item_tableId() const {return 208;};
+int cost_item_tableId() const {return 209;};
 __int16 cost_item_count[4];
 __int32 cost_item_count_Size() const {return 4;};
 signed char required_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 408; }
+		static __int16 TableId() { return 410; }
 		static __int32 SubType() { return -1; }
 
 	};

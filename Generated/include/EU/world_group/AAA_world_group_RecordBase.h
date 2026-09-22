@@ -27,7 +27,7 @@ __int16 world[10];
 __int32 world_Size() const {return 10;};
 char Pad1[2];
 BnsTables::Shared::TableRef lobby_desc;
-int lobby_desc_tableId() const {return 454;};
+int lobby_desc_tableId() const {return 456;};
 signed char platform_type;
 signed char contents_type;
 signed char contents_type_ui_order;
@@ -39,7 +39,7 @@ char Pad3[3];
 __int64 service_period_end_time;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 494; }
+		static __int16 TableId() { return 496; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

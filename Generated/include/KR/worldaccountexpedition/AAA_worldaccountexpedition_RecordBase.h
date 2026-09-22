@@ -40,22 +40,22 @@ __int32 ability_base_value_Size() const {return 5;};
 bool boss;
 char Pad2[3];
 BnsTables::Shared::TableRef map_group_1;
-int map_group_1_tableId() const {return 262;};
+int map_group_1_tableId() const {return 264;};
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 454;};
+int name_tableId() const {return 456;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 454;};
+int description_tableId() const {return 456;};
 BnsTables::Shared::TableRef story;
-int story_tableId() const {return 454;};
+int story_tableId() const {return 456;};
 wchar_t* boss_image;
 BnsTables::Shared::IconRef target_icon[5];
 __int32 target_icon_Size() const {return 5;};
 BnsTables::Shared::TableRef target_desc[5];
 __int32 target_desc_Size() const {return 5;};
-int target_desc_tableId() const {return 454;};
+int target_desc_tableId() const {return 456;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 4); }
-		static __int16 TableId() { return 487; }
+		static __int16 TableId() { return 489; }
 		static __int32 SubType() { return -1; }
 		enum class expedition_type {
 			none = 0,

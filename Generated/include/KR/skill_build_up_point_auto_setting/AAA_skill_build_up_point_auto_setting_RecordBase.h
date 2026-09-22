@@ -23,10 +23,10 @@ namespace BnsTables::KR {
 		signed char job;
 char Pad0[3];
 BnsTables::Shared::TableRef auto_setting_skill;
-int auto_setting_skill_tableId() const {return 364;};
+int auto_setting_skill_tableId() const {return 366;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 372; }
+		static __int16 TableId() { return 374; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

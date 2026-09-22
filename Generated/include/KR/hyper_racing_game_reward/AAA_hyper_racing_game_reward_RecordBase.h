@@ -25,12 +25,12 @@ __int32 reward_exp;
 __int32 reward_money;
 BnsTables::Shared::TableRef reward_item[4];
 __int32 reward_item_Size() const {return 4;};
-int reward_item_tableId() const {return 208;};
+int reward_item_tableId() const {return 209;};
 __int16 reward_item_count[4];
 __int32 reward_item_count_Size() const {return 4;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 193; }
+		static __int16 TableId() { return 194; }
 		static __int32 SubType() { return -1; }
 
 	};

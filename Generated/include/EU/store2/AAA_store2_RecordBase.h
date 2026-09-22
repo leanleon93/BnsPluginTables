@@ -24,22 +24,22 @@ namespace BnsTables::EU {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 454;};
+int name2_tableId() const {return 456;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef none_selected_icon;
 BnsTables::Shared::TableRef faction;
 int faction_tableId() const {return 143;};
 BnsTables::Shared::TableRef item[127];
 __int32 item_Size() const {return 127;};
-int item_tableId() const {return 208;};
+int item_tableId() const {return 209;};
 BnsTables::Shared::TableRef buy_price[127];
 __int32 buy_price_Size() const {return 127;};
-int buy_price_tableId() const {return 203;};
+int buy_price_tableId() const {return 204;};
 __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 432; }
+		static __int16 TableId() { return 434; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

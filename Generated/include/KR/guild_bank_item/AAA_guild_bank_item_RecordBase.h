@@ -21,7 +21,7 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef bank_item;
-int bank_item_tableId() const {return 208;};
+int bank_item_tableId() const {return 209;};
 __int16 bank_item_round_lot;
 char Pad0[2];
 __int64 bank_item_max_count;

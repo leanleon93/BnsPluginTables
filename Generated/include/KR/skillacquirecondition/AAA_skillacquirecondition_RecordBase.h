@@ -26,15 +26,15 @@ signed char variation_level;
 signed char pc_job;
 char Pad0[2];
 BnsTables::Shared::TableRef training_name;
-int training_name_tableId() const {return 454;};
+int training_name_tableId() const {return 456;};
 BnsTables::Shared::IconRef training_icon;
 BnsTables::Shared::TableRef main_info;
-int main_info_tableId() const {return 454;};
+int main_info_tableId() const {return 456;};
 BnsTables::Shared::TableRef sub_info;
-int sub_info_tableId() const {return 454;};
+int sub_info_tableId() const {return 456;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 365; }
+		static __int16 TableId() { return 367; }
 		static __int32 SubType() { return -1; }
 		enum class pc_job {
 			job_none = 0,

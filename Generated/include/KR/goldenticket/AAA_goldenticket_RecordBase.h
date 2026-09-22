@@ -22,11 +22,11 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 454;};
+int name_tableId() const {return 456;};
 signed char ticket_type;
 char Pad0[3];
 BnsTables::Shared::TableRef ticket_item;
-int ticket_item_tableId() const {return 208;};
+int ticket_item_tableId() const {return 209;};
 __int16 ticket_item_count;
 bool ticket_enable;
 

@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 194;};
+int icon_texture_tableId() const {return 195;};
 __int16 icon_index;
 __int16 light_index;
 
