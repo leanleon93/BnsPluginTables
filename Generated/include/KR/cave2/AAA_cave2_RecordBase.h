@@ -132,8 +132,9 @@ BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 76;};
 BnsTables::Shared::TableRef feedback;
 int feedback_tableId() const {return 146;};
+bool enable_reenter;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
 		static __int16 TableId() { return 49; }
 		static __int32 SubType() { return -1; }
 

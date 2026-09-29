@@ -61,7 +61,7 @@ namespace BnsTables::EU {
 		arr[46] = BnsTables::Shared::TableVersion(3, 0, true);
 		arr[47] = BnsTables::Shared::TableVersion(0, 8, true);
 		arr[48] = BnsTables::Shared::TableVersion(1, 0, true);
-		arr[49] = BnsTables::Shared::TableVersion(3, 1, true);
+		arr[49] = BnsTables::Shared::TableVersion(4, 0, true);
 		arr[50] = BnsTables::Shared::TableVersion(0, 4, true);
 		arr[51] = BnsTables::Shared::TableVersion(1, 0, true);
 		arr[52] = BnsTables::Shared::TableVersion(1, 1, true);
@@ -132,7 +132,7 @@ namespace BnsTables::EU {
 		arr[117] = BnsTables::Shared::TableVersion(2, 2, true);
 		arr[118] = BnsTables::Shared::TableVersion(2, 0, true);
 		arr[119] = BnsTables::Shared::TableVersion(0, 12, true);
-		arr[120] = BnsTables::Shared::TableVersion(14, 1, true);
+		arr[120] = BnsTables::Shared::TableVersion(15, 0, true);
 		arr[121] = BnsTables::Shared::TableVersion(47, 1, true);
 		arr[122] = BnsTables::Shared::TableVersion(0, 7, true);
 		arr[123] = BnsTables::Shared::TableVersion(1, 1, true);
