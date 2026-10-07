@@ -26,12 +26,12 @@ int dungeon_tableId() const {return 120;};
 BnsTables::Shared::TableRef achievement_register;
 int achievement_register_tableId() const {return 7;};
 BnsTables::Shared::TableRef reward_default;
-int reward_default_tableId() const {return 356;};
+int reward_default_tableId() const {return 357;};
 BnsTables::Shared::TableRef reward_difficulty_type[3];
 __int32 reward_difficulty_type_Size() const {return 3;};
-int reward_difficulty_type_tableId() const {return 356;};
+int reward_difficulty_type_tableId() const {return 357;};
 BnsTables::Shared::TableRef attraction_quest;
-int attraction_quest_tableId() const {return 320;};
+int attraction_quest_tableId() const {return 321;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 285; }

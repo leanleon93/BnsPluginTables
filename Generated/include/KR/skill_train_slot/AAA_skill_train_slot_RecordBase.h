@@ -31,7 +31,7 @@ __int32 cost_item_count_Size() const {return 4;};
 signed char required_level;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 410; }
+		static __int16 TableId() { return 411; }
 		static __int32 SubType() { return -1; }
 
 	};

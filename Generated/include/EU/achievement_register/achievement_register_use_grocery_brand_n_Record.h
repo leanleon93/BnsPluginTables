@@ -14,7 +14,7 @@ __int32 item_brand_Size() const {return 8;};
 int item_brand_tableId() const {return 202;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 456;};
+int slot_name_tableId() const {return 457;};
 
 		static __int32 SubType() { return 8; }
 	};

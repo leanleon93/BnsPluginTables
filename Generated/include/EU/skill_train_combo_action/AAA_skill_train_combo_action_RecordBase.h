@@ -26,13 +26,13 @@ signed char function_index;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef stance_name;
-int stance_name_tableId() const {return 456;};
+int stance_name_tableId() const {return 457;};
 BnsTables::Shared::TableRef buff_name;
-int buff_name_tableId() const {return 456;};
+int buff_name_tableId() const {return 457;};
 BnsTables::Shared::TableRef function_name;
-int function_name_tableId() const {return 456;};
+int function_name_tableId() const {return 457;};
 BnsTables::Shared::TableRef function_desc;
-int function_desc_tableId() const {return 456;};
+int function_desc_tableId() const {return 457;};
 signed char combo_skill[10];
 __int32 combo_skill_Size() const {return 10;};
 char Pad0[2];
@@ -43,16 +43,16 @@ __int32 variation_id_Size() const {return 10;};
 char Pad1[2];
 BnsTables::Shared::TableRef condition_icon_normal_text[10];
 __int32 condition_icon_normal_text_Size() const {return 10;};
-int condition_icon_normal_text_tableId() const {return 456;};
+int condition_icon_normal_text_tableId() const {return 457;};
 BnsTables::Shared::TableRef condition_icon_over_text[10];
 __int32 condition_icon_over_text_Size() const {return 10;};
-int condition_icon_over_text_tableId() const {return 456;};
+int condition_icon_over_text_tableId() const {return 457;};
 BnsTables::Shared::TableRef condition_tooltip_text[10];
 __int32 condition_tooltip_text_Size() const {return 10;};
-int condition_tooltip_text_tableId() const {return 456;};
+int condition_tooltip_text_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 404; }
+		static __int16 TableId() { return 405; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

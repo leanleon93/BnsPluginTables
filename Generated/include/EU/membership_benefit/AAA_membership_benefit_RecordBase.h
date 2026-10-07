@@ -25,9 +25,9 @@ signed char publisher;
 char Pad0[3];
 __int64 value;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 456;};
+int description_tableId() const {return 457;};
 BnsTables::Shared::IconRef icon;
 wchar_t* icon_image_set;
 

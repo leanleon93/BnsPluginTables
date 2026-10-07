@@ -24,17 +24,17 @@ namespace BnsTables::EU {
 BnsTables::Shared::TableRef npc;
 int npc_tableId() const {return 288;};
 BnsTables::Shared::TableRef reward;
-int reward_tableId() const {return 493;};
+int reward_tableId() const {return 494;};
 BnsTables::Shared::TableRef teleport;
-int teleport_tableId() const {return 452;};
+int teleport_tableId() const {return 453;};
 signed char recommand_level;
 char Pad0[3];
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 456;};
+int description_tableId() const {return 457;};
 wchar_t* symbol_imageset;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 4); }
-		static __int16 TableId() { return 494; }
+		static __int16 TableId() { return 495; }
 		static __int32 SubType() { return -1; }
 
 	};

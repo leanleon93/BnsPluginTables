@@ -28,7 +28,7 @@ __int32 market_category_3_Size() const {return 10;};
 signed char addtional_filtering_type;
 char Pad1[1];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
 		static __int16 TableId() { return 271; }

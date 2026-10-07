@@ -30,10 +30,10 @@ __int32 condition_alias_Size() const {return 10;};
 __int64 condition[10];
 __int32 condition_Size() const {return 10;};
 BnsTables::Shared::TableRef highlight_id;
-int highlight_id_tableId() const {return 466;};
+int highlight_id_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 421; }
+		static __int16 TableId() { return 422; }
 		static __int32 SubType() { return -1; }
 		enum class mission_type {
 			none = 0,

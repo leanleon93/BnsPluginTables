@@ -24,7 +24,7 @@ __int16 level;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef quest[2];
 __int32 quest_Size() const {return 2;};
-int quest_tableId() const {return 320;};
+int quest_tableId() const {return 321;};
 signed char quest_mission_step[2];
 __int32 quest_mission_step_Size() const {return 2;};
 bool is_jumping_quest;

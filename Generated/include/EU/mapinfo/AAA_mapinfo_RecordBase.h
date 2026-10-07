@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 __int16 group_id;
 __int16 floor;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 BnsTables::Shared::TableRef parent_mapinfo;
 int parent_mapinfo_tableId() const {return 267;};
 float scale;
@@ -53,7 +53,7 @@ char Pad2[3];
 float pos_in_parent_x;
 float pos_in_parent_y;
 BnsTables::Shared::TableRef terrain;
-int terrain_tableId() const {return 455;};
+int terrain_tableId() const {return 456;};
 float zoom;
 __int16 sort_no;
 bool show_navigaion_list;

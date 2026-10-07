@@ -22,7 +22,7 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef set_name;
-int set_name_tableId() const {return 456;};
+int set_name_tableId() const {return 457;};
 wchar_t* background_widget_ref;
 BnsTables::Shared::TableRef slot_item[8];
 __int32 slot_item_Size() const {return 8;};
@@ -31,7 +31,7 @@ signed char slot_equip_type[8];
 __int32 slot_equip_type_Size() const {return 8;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 456;};
+int slot_name_tableId() const {return 457;};
 BnsTables::Shared::IconRef slot_tag_icon[8];
 __int32 slot_tag_icon_Size() const {return 8;};
 

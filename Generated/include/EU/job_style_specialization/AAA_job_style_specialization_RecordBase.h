@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 wchar_t* specialization_tag_imageset;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 456;};
+int description_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
 		static __int16 TableId() { return 252; }

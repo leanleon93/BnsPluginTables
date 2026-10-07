@@ -24,10 +24,10 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 456;};
+int name_tableId() const {return 457;};
 BnsTables::Shared::IconRef shuffle_reward_icon;
 BnsTables::Shared::TableRef shuffle_reward_tooltip;
-int shuffle_reward_tooltip_tableId() const {return 456;};
+int shuffle_reward_tooltip_tableId() const {return 457;};
 signed char upgrade_reward_preview;
 bool upgrade_reward_warning_message;
 signed char reward_type;

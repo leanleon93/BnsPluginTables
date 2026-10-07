@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 403; }
+		static __int16 TableId() { return 404; }
 		static __int32 SubType() { return -1; }
 
 	};

@@ -32,7 +32,7 @@ __int16 reward_item_count[5];
 __int32 reward_item_count_Size() const {return 5;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 360; }
+		static __int16 TableId() { return 361; }
 		static __int32 SubType() { return -1; }
 
 	};

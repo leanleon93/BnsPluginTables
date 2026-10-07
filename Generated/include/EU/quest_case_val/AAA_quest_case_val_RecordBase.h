@@ -35,14 +35,14 @@ int gadget_tableId() const {return 150;};
 BnsTables::Shared::ExplicitTableRef unload_map_navigation_object;
 BnsTables::Shared::TableRef valid_zone[2];
 __int32 valid_zone_Size() const {return 2;};
-int valid_zone_tableId() const {return 503;};
+int valid_zone_tableId() const {return 504;};
 signed char completion_count;
 signed char completion_count_op;
 __int16 indicator;
 bool show_in_tooltip;
 char Pad1[3];
 BnsTables::Shared::TableRef case_talksocial;
-int case_talksocial_tableId() const {return 450;};
+int case_talksocial_tableId() const {return 451;};
 float case_talksocial_delay;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }

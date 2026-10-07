@@ -32,7 +32,7 @@ BnsTables::Shared::TableRef secondary_cash;
 int secondary_cash_tableId() const {return 209;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 414; }
+		static __int16 TableId() { return 415; }
 		static __int32 SubType() { return -1; }
 
 	};

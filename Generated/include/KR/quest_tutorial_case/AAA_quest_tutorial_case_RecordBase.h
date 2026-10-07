@@ -30,7 +30,7 @@ signed char progress_mission;
 char Pad1[3];
 BnsTables::Shared::TableRef valid_zone[2];
 __int32 valid_zone_Size() const {return 2;};
-int valid_zone_tableId() const {return 503;};
+int valid_zone_tableId() const {return 504;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }

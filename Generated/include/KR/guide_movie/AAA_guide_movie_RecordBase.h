@@ -31,7 +31,7 @@ namespace BnsTables::KR {
 signed char guide_type;
 char Pad0[2];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 456;};
+int title_tableId() const {return 457;};
 signed char activation_level;
 signed char activation_mastery_level;
 bool use_notice_hud;
@@ -43,13 +43,13 @@ wchar_t* help_imageset[20];
 __int32 help_imageset_Size() const {return 20;};
 BnsTables::Shared::TableRef help_title[20];
 __int32 help_title_Size() const {return 20;};
-int help_title_tableId() const {return 456;};
+int help_title_tableId() const {return 457;};
 BnsTables::Shared::TableRef help_sub_title[20];
 __int32 help_sub_title_Size() const {return 20;};
-int help_sub_title_tableId() const {return 456;};
+int help_sub_title_tableId() const {return 457;};
 BnsTables::Shared::TableRef help_desc[20];
 __int32 help_desc_Size() const {return 20;};
-int help_desc_tableId() const {return 456;};
+int help_desc_tableId() const {return 457;};
 wchar_t* jpg_image_name[20];
 __int32 jpg_image_name_Size() const {return 20;};
 

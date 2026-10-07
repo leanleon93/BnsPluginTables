@@ -13,14 +13,14 @@ namespace BnsTables::EU {
 BnsTables::Shared::TableRef boss_npc;
 int boss_npc_tableId() const {return 288;};
 BnsTables::Shared::TableRef boss_desc;
-int boss_desc_tableId() const {return 456;};
+int boss_desc_tableId() const {return 457;};
 BnsTables::Shared::TableRef boss_combat_desc;
-int boss_combat_desc_tableId() const {return 456;};
+int boss_combat_desc_tableId() const {return 457;};
 BnsTables::Shared::TableRef boss_combat_tips_desc;
-int boss_combat_tips_desc_tableId() const {return 456;};
+int boss_combat_tips_desc_tableId() const {return 457;};
 wchar_t* boss_image;
 BnsTables::Shared::TableRef dungeon_name;
-int dungeon_name_tableId() const {return 456;};
+int dungeon_name_tableId() const {return 457;};
 signed char dungeon_group;
 
 		static __int32 SubType() { return 1; }

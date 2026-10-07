@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef fishing_point_env;
-int fishing_point_env_tableId() const {return 504;};
+int fishing_point_env_tableId() const {return 505;};
 
 		static __int32 SubType() { return 12; }
 	};

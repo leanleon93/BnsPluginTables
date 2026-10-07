@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 signed char dungeon_type;
 char Pad0[3];
 BnsTables::Shared::TableRef group;
@@ -43,12 +43,12 @@ signed char required_mastery_level;
 char Pad2[2];
 BnsTables::Shared::TableRef required_preceding_quest[3];
 __int32 required_preceding_quest_Size() const {return 3;};
-int required_preceding_quest_tableId() const {return 320;};
+int required_preceding_quest_tableId() const {return 321;};
 signed char required_preceding_quest_check;
 char Pad3[3];
 BnsTables::Shared::TableRef attraction_quest[10];
 __int32 attraction_quest_Size() const {return 10;};
-int attraction_quest_tableId() const {return 320;};
+int attraction_quest_tableId() const {return 321;};
 bool enable_heart_count;
 signed char max_instant_heart_count;
 char Pad4[2];
@@ -59,7 +59,7 @@ signed char step_count;
 char Pad5[3];
 BnsTables::Shared::TableRef zone[9];
 __int32 zone_Size() const {return 9;};
-int zone_tableId() const {return 503;};
+int zone_tableId() const {return 504;};
 BnsTables::Shared::TableRef boss_npc[9];
 __int32 boss_npc_Size() const {return 9;};
 int boss_npc_tableId() const {return 288;};
@@ -67,15 +67,15 @@ signed char zone_index[9];
 __int32 zone_index_Size() const {return 9;};
 char Pad6[3];
 BnsTables::Shared::TableRef dungeon_tap_name2;
-int dungeon_tap_name2_tableId() const {return 456;};
+int dungeon_tap_name2_tableId() const {return 457;};
 BnsTables::Shared::TableRef step_name2[9];
 __int32 step_name2_Size() const {return 9;};
-int step_name2_tableId() const {return 456;};
+int step_name2_tableId() const {return 457;};
 wchar_t* step_image[9];
 __int32 step_image_Size() const {return 9;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef raid_dungeon_desc;
-int raid_dungeon_desc_tableId() const {return 456;};
+int raid_dungeon_desc_tableId() const {return 457;};
 signed char ui_text_grade;
 char Pad7[3];
 BnsTables::Shared::TableRef reward_summary;
@@ -90,9 +90,9 @@ int standard_gear_weapon_tableId() const {return 209;};
 __int32 recommended_combat_power;
 BnsTables::Shared::TableRef display_quests[12];
 __int32 display_quests_Size() const {return 12;};
-int display_quests_tableId() const {return 320;};
+int display_quests_tableId() const {return 321;};
 BnsTables::Shared::TableRef tactic;
-int tactic_tableId() const {return 456;};
+int tactic_tableId() const {return 457;};
 BnsTables::Shared::TableRef recommend_alias;
 int recommend_alias_tableId() const {return 76;};
 BnsTables::Shared::TableRef contents_reset;
@@ -102,13 +102,13 @@ __int32 boss_npc_alias_Size() const {return 8;};
 int boss_npc_alias_tableId() const {return 288;};
 BnsTables::Shared::TableRef boss_npc_section[8];
 __int32 boss_npc_section_Size() const {return 8;};
-int boss_npc_section_tableId() const {return 456;};
+int boss_npc_section_tableId() const {return 457;};
 BnsTables::Shared::TableRef target_reward_npc[8];
 __int32 target_reward_npc_Size() const {return 8;};
 int target_reward_npc_tableId() const {return 288;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
-		static __int16 TableId() { return 329; }
+		static __int16 TableId() { return 330; }
 		static __int32 SubType() { return -1; }
 		enum class dungeon_type {
 			unbind = 0,

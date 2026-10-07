@@ -26,10 +26,10 @@ BnsTables::Shared::XYZ position;
 __int16 activate_radius;
 char Pad0[2];
 BnsTables::Shared::TableRef activate_teleport;
-int activate_teleport_tableId() const {return 452;};
+int activate_teleport_tableId() const {return 453;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 516; }
+		static __int16 TableId() { return 517; }
 		static __int32 SubType() { return -1; }
 
 	};

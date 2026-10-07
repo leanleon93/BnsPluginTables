@@ -40,7 +40,7 @@ __int32 kill_score_max;
 __int32 fatigability_cost;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 478; }
+		static __int16 TableId() { return 479; }
 		static __int32 SubType() { return -1; }
 		enum class difficulty_type {
 			none = 0,

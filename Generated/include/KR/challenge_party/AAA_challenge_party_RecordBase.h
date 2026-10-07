@@ -22,9 +22,9 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef zone;
-int zone_tableId() const {return 503;};
+int zone_tableId() const {return 504;};
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 wchar_t* arena_minimap;
 BnsTables::Shared::TableRef required_item[2];
 __int32 required_item_Size() const {return 2;};

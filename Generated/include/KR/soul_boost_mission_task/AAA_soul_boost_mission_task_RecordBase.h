@@ -29,15 +29,15 @@ wchar_t* name_pt;
 wchar_t* name_th;
 wchar_t* name_vn;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 456;};
+int name_text_tableId() const {return 457;};
 BnsTables::Shared::TableRef event;
-int event_tableId() const {return 419;};
+int event_tableId() const {return 420;};
 BnsTables::Shared::TableRef mission_step;
-int mission_step_tableId() const {return 422;};
+int mission_step_tableId() const {return 423;};
 signed char task_number;
 char Pad0[3];
 BnsTables::Shared::TableRef mission;
-int mission_tableId() const {return 421;};
+int mission_tableId() const {return 422;};
 signed char proceedable_type;
 signed char actor_type;
 char Pad1[2];
@@ -49,9 +49,9 @@ __int32 mission_point;
 signed char mission_level;
 char Pad3[3];
 BnsTables::Shared::TableRef mission_task_reward_item;
-int mission_task_reward_item_tableId() const {return 420;};
+int mission_task_reward_item_tableId() const {return 421;};
 BnsTables::Shared::TableRef prerequisite_mission;
-int prerequisite_mission_tableId() const {return 423;};
+int prerequisite_mission_tableId() const {return 424;};
 __int32 highlight_priority;
 wchar_t* description;
 wchar_t* description_en;
@@ -61,10 +61,10 @@ wchar_t* description_pt;
 wchar_t* description_th;
 wchar_t* description_vn;
 BnsTables::Shared::TableRef description_text;
-int description_text_tableId() const {return 456;};
+int description_text_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 1); }
-		static __int16 TableId() { return 423; }
+		static __int16 TableId() { return 424; }
 		static __int32 SubType() { return -1; }
 		enum class proceedable_type {
 			none = 0,

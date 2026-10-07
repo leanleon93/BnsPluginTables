@@ -24,7 +24,7 @@ BnsTables::Shared::TableRef head_skill_id;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef change_skill_id[15];
 __int32 change_skill_id_Size() const {return 15;};
-int change_skill_id_tableId() const {return 366;};
+int change_skill_id_tableId() const {return 367;};
 BnsTables::Shared::TableRef head_skill_acquire_route;
 int head_skill_acquire_route_tableId() const {return 230;};
 BnsTables::Shared::TableRef change_skill_acquire_route[15];

@@ -27,17 +27,17 @@ signed char recommend_level;
 char Pad0[1];
 BnsTables::Shared::TableRef combo_skill[8];
 __int32 combo_skill_Size() const {return 8;};
-int combo_skill_tableId() const {return 366;};
+int combo_skill_tableId() const {return 367;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 456;};
+int description_tableId() const {return 457;};
 BnsTables::Shared::TableRef description2;
-int description2_tableId() const {return 456;};
+int description2_tableId() const {return 457;};
 signed char skill_macro_start_index;
 signed char skill_macro_end_index;
 signed char skill_macro_preset_slot;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
-		static __int16 TableId() { return 378; }
+		static __int16 TableId() { return 379; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

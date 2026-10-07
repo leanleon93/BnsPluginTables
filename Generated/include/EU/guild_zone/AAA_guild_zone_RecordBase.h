@@ -29,7 +29,7 @@ namespace BnsTables::EU {
 BnsTables::Shared::TableRef group;
 int group_tableId() const {return 16;};
 BnsTables::Shared::TableRef main_zone;
-int main_zone_tableId() const {return 503;};
+int main_zone_tableId() const {return 504;};
 signed char required_level;
 signed char required_mastery_level;
 signed char required_guild_level;

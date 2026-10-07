@@ -21,11 +21,11 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 456;};
+int name_tableId() const {return 457;};
 BnsTables::Shared::TableRef short_name;
-int short_name_tableId() const {return 456;};
+int short_name_tableId() const {return 457;};
 BnsTables::Shared::TableRef image;
-int image_tableId() const {return 456;};
+int image_tableId() const {return 457;};
 BnsTables::Shared::IconRef icon;
 wchar_t* scroll_imageset;
 float scroll_imageset_scale;

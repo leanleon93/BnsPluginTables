@@ -31,7 +31,7 @@ wchar_t* despawn_show;
 BnsTables::Shared::TableRef party_match;
 int party_match_tableId() const {return 297;};
 BnsTables::Shared::TableRef map_tooltip;
-int map_tooltip_tableId() const {return 456;};
+int map_tooltip_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 8); }
 		static __int16 TableId() { return 47; }

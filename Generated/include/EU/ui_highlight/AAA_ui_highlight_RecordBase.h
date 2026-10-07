@@ -23,10 +23,10 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef step[16];
 __int32 step_Size() const {return 16;};
-int step_tableId() const {return 467;};
+int step_tableId() const {return 468;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 466; }
+		static __int16 TableId() { return 467; }
 		static __int32 SubType() { return -1; }
 
 	};

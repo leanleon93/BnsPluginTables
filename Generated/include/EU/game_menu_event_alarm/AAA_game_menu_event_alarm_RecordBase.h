@@ -25,11 +25,11 @@ char Pad0[3];
 wchar_t* event_alarm_image_normal;
 wchar_t* event_alarm_image_active;
 BnsTables::Shared::TableRef event_alarm_title;
-int event_alarm_title_tableId() const {return 456;};
+int event_alarm_title_tableId() const {return 457;};
 BnsTables::Shared::TableRef event_alarm_desc;
-int event_alarm_desc_tableId() const {return 456;};
+int event_alarm_desc_tableId() const {return 457;};
 BnsTables::Shared::TableRef link_unlocated_store;
-int link_unlocated_store_tableId() const {return 468;};
+int link_unlocated_store_tableId() const {return 469;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 163; }

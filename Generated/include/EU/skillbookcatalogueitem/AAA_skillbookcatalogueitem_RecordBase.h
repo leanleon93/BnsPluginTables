@@ -22,12 +22,12 @@ signed char server_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef parent_skill;
-int parent_skill_tableId() const {return 366;};
+int parent_skill_tableId() const {return 367;};
 BnsTables::Shared::TableRef base_skill;
-int base_skill_tableId() const {return 366;};
+int base_skill_tableId() const {return 367;};
 BnsTables::Shared::TableRef change_skill[4];
 __int32 change_skill_Size() const {return 4;};
-int change_skill_tableId() const {return 366;};
+int change_skill_tableId() const {return 367;};
 signed char row;
 signed char column;
 signed char job;
@@ -43,7 +43,7 @@ signed char job_specialization[3];
 __int32 job_specialization_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 370; }
+		static __int16 TableId() { return 371; }
 		static __int32 SubType() { return -1; }
 		enum class server_type {
 			common = 0,

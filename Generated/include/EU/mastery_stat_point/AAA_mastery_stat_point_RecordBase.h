@@ -28,7 +28,7 @@ BnsTables::Shared::TableRef event_effect[4];
 __int32 event_effect_Size() const {return 4;};
 int event_effect_tableId() const {return 121;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 456;};
+int description_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 278; }

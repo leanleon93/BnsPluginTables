@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::IconRef none_selected_icon;
 BnsTables::Shared::TableRef faction;
@@ -39,7 +39,7 @@ __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 434; }
+		static __int16 TableId() { return 435; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

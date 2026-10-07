@@ -24,7 +24,7 @@ namespace BnsTables::EU {
 BnsTables::Shared::TextRef text;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 456; }
+		static __int16 TableId() { return 457; }
 		static __int32 SubType() { return -1; }
 
 	};

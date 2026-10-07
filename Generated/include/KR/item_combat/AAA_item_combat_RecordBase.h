@@ -38,7 +38,7 @@ signed char skill_build_up_level[3];
 __int32 skill_build_up_level_Size() const {return 3;};
 char Pad1[1];
 BnsTables::Shared::TableRef skill_modify_info_group;
-int skill_modify_info_group_tableId() const {return 387;};
+int skill_modify_info_group_tableId() const {return 388;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
 		static __int16 TableId() { return 206; }

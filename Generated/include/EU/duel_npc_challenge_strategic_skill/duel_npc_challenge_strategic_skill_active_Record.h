@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef strategic_skill;
-int strategic_skill_tableId() const {return 366;};
+int strategic_skill_tableId() const {return 367;};
 bool unlimited;
 signed char bullet_count;
 

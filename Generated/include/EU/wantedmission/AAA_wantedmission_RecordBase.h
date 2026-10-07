@@ -30,7 +30,7 @@ __int16 reward_item_count[5];
 __int32 reward_item_count_Size() const {return 5;};
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 456;};
+int desc_tableId() const {return 457;};
 float mesh_ui_npc_pos_x;
 float mesh_ui_npc_pos_y;
 float mesh_ui_npc_pos_z;
@@ -42,7 +42,7 @@ BnsTables::Shared::TableRef npc_weapon_id;
 int npc_weapon_id_tableId() const {return 209;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 4); }
-		static __int16 TableId() { return 475; }
+		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return -1; }
 
 	};

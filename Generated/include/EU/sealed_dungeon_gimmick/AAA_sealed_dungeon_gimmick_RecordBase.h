@@ -22,15 +22,15 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef icon_name;
-int icon_name_tableId() const {return 456;};
+int icon_name_tableId() const {return 457;};
 BnsTables::Shared::TableRef icon_tooltip;
-int icon_tooltip_tableId() const {return 456;};
+int icon_tooltip_tableId() const {return 457;};
 BnsTables::Shared::TableRef icon_texture;
 int icon_texture_tableId() const {return 195;};
 __int16 icon_index;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 357; }
+		static __int16 TableId() { return 358; }
 		static __int32 SubType() { return -1; }
 
 	};

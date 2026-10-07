@@ -25,14 +25,14 @@ wchar_t* widget_tag;
 signed char action;
 char Pad0[3];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 456;};
+int desc_tableId() const {return 457;};
 wchar_t* widget_bp_path;
 wchar_t* animation_name;
 float offset_position_x;
 float offset_position_y;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
-		static __int16 TableId() { return 467; }
+		static __int16 TableId() { return 468; }
 		static __int32 SubType() { return -1; }
 		enum class action {
 			none = 0,

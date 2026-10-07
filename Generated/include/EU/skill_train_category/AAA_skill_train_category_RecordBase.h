@@ -28,9 +28,9 @@ __int16 pc_level;
 __int16 pc_mastery_level;
 char Pad0[1];
 BnsTables::Shared::TableRef complete_quest;
-int complete_quest_tableId() const {return 320;};
+int complete_quest_tableId() const {return 321;};
 BnsTables::Shared::TableRef jumping_pc_complete_quest;
-int jumping_pc_complete_quest_tableId() const {return 320;};
+int jumping_pc_complete_quest_tableId() const {return 321;};
 __int32 consumed_tp;
 signed char sort_id;
 bool ui_invisible;
@@ -38,10 +38,10 @@ bool context_lock_disable;
 bool main_skill_by_key_command;
 BnsTables::Shared::TableRef relation_skill_group[3];
 __int32 relation_skill_group_Size() const {return 3;};
-int relation_skill_group_tableId() const {return 403;};
+int relation_skill_group_tableId() const {return 404;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 402; }
+		static __int16 TableId() { return 403; }
 		static __int32 SubType() { return -1; }
 		enum class job {
 			job_none = 0,

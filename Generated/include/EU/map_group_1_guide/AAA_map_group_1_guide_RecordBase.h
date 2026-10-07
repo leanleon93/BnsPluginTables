@@ -23,7 +23,7 @@ namespace BnsTables::EU {
 		BnsTables::Shared::TableRef map_group_1;
 int map_group_1_tableId() const {return 264;};
 BnsTables::Shared::TableRef expedition_desc;
-int expedition_desc_tableId() const {return 456;};
+int expedition_desc_tableId() const {return 457;};
 wchar_t* expedition_image;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }

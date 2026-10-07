@@ -23,7 +23,7 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 456;};
+int name2_tableId() const {return 457;};
 bool talkable;
 char Pad0[3];
 wchar_t* talk_mesh;
@@ -33,7 +33,7 @@ __int32 message_Size() const {return 9;};
 int message_tableId() const {return 293;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 474; }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return -1; }
 
 	};

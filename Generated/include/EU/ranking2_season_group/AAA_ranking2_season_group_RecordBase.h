@@ -22,28 +22,28 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef contents;
-int contents_tableId() const {return 336;};
+int contents_tableId() const {return 337;};
 BnsTables::Shared::TableRef season[10];
 __int32 season_Size() const {return 10;};
-int season_tableId() const {return 340;};
+int season_tableId() const {return 341;};
 BnsTables::Shared::TableRef main_season;
-int main_season_tableId() const {return 340;};
+int main_season_tableId() const {return 341;};
 signed char contents_score_type;
 char Pad0[3];
 BnsTables::Shared::TableRef dungeon;
 int dungeon_tableId() const {return 120;};
 BnsTables::Shared::TableRef tier_contents_seasons[15];
 __int32 tier_contents_seasons_Size() const {return 15;};
-int tier_contents_seasons_tableId() const {return 341;};
+int tier_contents_seasons_tableId() const {return 342;};
 BnsTables::Shared::TableRef tier;
-int tier_tableId() const {return 343;};
+int tier_tableId() const {return 344;};
 __int64 min_accumulate_reward;
 __int16 min_accumulate_reward_range;
 __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
-		static __int16 TableId() { return 341; }
+		static __int16 TableId() { return 342; }
 		static __int32 SubType() { return -1; }
 		enum class contents_score_type {
 			invalid = 0,

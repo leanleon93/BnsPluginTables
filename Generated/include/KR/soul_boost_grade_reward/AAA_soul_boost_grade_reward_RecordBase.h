@@ -30,7 +30,7 @@ __int32 contribution;
 __int64 exp;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
-		static __int16 TableId() { return 420; }
+		static __int16 TableId() { return 421; }
 		static __int32 SubType() { return -1; }
 
 	};

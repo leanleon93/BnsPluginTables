@@ -26,9 +26,9 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef title;
-int title_tableId() const {return 456;};
+int title_tableId() const {return 457;};
 BnsTables::Shared::TableRef mouseover_tooltip;
-int mouseover_tooltip_tableId() const {return 456;};
+int mouseover_tooltip_tableId() const {return 457;};
 wchar_t* button_widget_bp;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }

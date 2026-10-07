@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 char Pad0[3];
 wchar_t* icon;
 BnsTables::Shared::TableRef name_text;
-int name_text_tableId() const {return 456;};
+int name_text_tableId() const {return 457;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 3); }
 		static __int16 TableId() { return 245; }

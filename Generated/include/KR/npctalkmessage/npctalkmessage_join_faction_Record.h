@@ -12,7 +12,7 @@ namespace BnsTables::KR {
 		signed char population_statistics;
 char Pad_sub_0[3];
 BnsTables::Shared::TableRef end_talk_social_ok;
-int end_talk_social_ok_tableId() const {return 418;};
+int end_talk_social_ok_tableId() const {return 419;};
 BnsTables::Shared::TableRef fail_population_message;
 int fail_population_message_tableId() const {return 293;};
 

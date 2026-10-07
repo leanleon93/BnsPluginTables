@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef systematization;
-int systematization_tableId() const {return 394;};
+int systematization_tableId() const {return 395;};
 
 		static __int32 SubType() { return 2; }
 	};
