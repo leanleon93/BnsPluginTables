@@ -27,7 +27,7 @@ char Pad0[3];
 __int32 money;
 BnsTables::Shared::TableRef required_item[5];
 __int32 required_item_Size() const {return 5;};
-int required_item_tableId() const {return 209;};
+int required_item_tableId() const {return 212;};
 __int32 required_item_count[5];
 __int32 required_item_count_Size() const {return 5;};
 __int32 required_guild_point;
@@ -36,40 +36,40 @@ __int32 min_member_count;
 __int32 max_member_count;
 __int32 min_enable_member_count;
 BnsTables::Shared::TableRef guild_discount;
-int guild_discount_tableId() const {return 183;};
+int guild_discount_tableId() const {return 186;};
 wchar_t* level_skill_imageset[10];
 __int32 level_skill_imageset_Size() const {return 10;};
 BnsTables::Shared::TableRef level_skill_name[10];
 __int32 level_skill_name_Size() const {return 10;};
-int level_skill_name_tableId() const {return 457;};
+int level_skill_name_tableId() const {return 466;};
 BnsTables::Shared::TableRef level_skill_description[10];
 __int32 level_skill_description_Size() const {return 10;};
-int level_skill_description_tableId() const {return 457;};
+int level_skill_description_tableId() const {return 466;};
 wchar_t* display_basic_skill_imageset[10];
 __int32 display_basic_skill_imageset_Size() const {return 10;};
 BnsTables::Shared::TableRef display_basic_skill_name[10];
 __int32 display_basic_skill_name_Size() const {return 10;};
-int display_basic_skill_name_tableId() const {return 457;};
+int display_basic_skill_name_tableId() const {return 466;};
 BnsTables::Shared::TableRef display_basic_skill_description[10];
 __int32 display_basic_skill_description_Size() const {return 10;};
-int display_basic_skill_description_tableId() const {return 457;};
+int display_basic_skill_description_tableId() const {return 466;};
 wchar_t* display_add_skill_imageset[10];
 __int32 display_add_skill_imageset_Size() const {return 10;};
 BnsTables::Shared::TableRef display_add_skill_name[10];
 __int32 display_add_skill_name_Size() const {return 10;};
-int display_add_skill_name_tableId() const {return 457;};
+int display_add_skill_name_tableId() const {return 466;};
 BnsTables::Shared::TableRef display_add_skill_description[10];
 __int32 display_add_skill_description_Size() const {return 10;};
-int display_add_skill_description_tableId() const {return 457;};
+int display_add_skill_description_tableId() const {return 466;};
 signed char guildcraft_small_usable_count;
 signed char guildcraft_small_rentable_count;
 signed char guildcraft_big_usable_count;
 signed char guildcraft_big_rentable_count;
 BnsTables::Shared::TableRef levelup_text;
-int levelup_text_tableId() const {return 457;};
+int levelup_text_tableId() const {return 466;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 184; }
+		static __int16 TableId() { return 187; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

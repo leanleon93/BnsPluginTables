@@ -11,7 +11,7 @@ namespace BnsTables::EU {
 	public:
 		BnsTables::Shared::TableRef msg_set[7];
 __int32 msg_set_Size() const {return 7;};
-int msg_set_tableId() const {return 316;};
+int msg_set_tableId() const {return 325;};
 
 		static __int32 SubType() { return 22; }
 	};

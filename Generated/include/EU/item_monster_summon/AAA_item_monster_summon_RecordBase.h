@@ -23,12 +23,12 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef npc_alias[20];
 __int32 npc_alias_Size() const {return 20;};
-int npc_alias_tableId() const {return 288;};
+int npc_alias_tableId() const {return 291;};
 __int32 prob[20];
 __int32 prob_Size() const {return 20;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 223; }
+		static __int16 TableId() { return 226; }
 		static __int32 SubType() { return -1; }
 
 	};

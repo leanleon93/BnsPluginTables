@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef guild_zone;
-int guild_zone_tableId() const {return 192;};
+int guild_zone_tableId() const {return 195;};
 
 		static __int32 SubType() { return 4; }
 	};

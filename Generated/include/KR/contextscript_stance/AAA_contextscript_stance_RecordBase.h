@@ -346,6 +346,8 @@ __int16 abnormal_flag;
 			condition_event_10 = 245,
 			linked = 246,
 			EndlessnessTower = 247,
+			needle = 248,
+			needleFullStack = 249,
 		};
 	};
 #pragma pack(pop)

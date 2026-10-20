@@ -24,11 +24,11 @@ namespace BnsTables::EU {
 __int32 param_type_Size() const {return 28;};
 __int32 master_param_type;
 BnsTables::Shared::TableRef category_name;
-int category_name_tableId() const {return 457;};
+int category_name_tableId() const {return 466;};
 signed char payment_type;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 187; }
+		static __int16 TableId() { return 190; }
 		static __int32 SubType() { return -1; }
 		enum class param_type_category {
 			none = 0,

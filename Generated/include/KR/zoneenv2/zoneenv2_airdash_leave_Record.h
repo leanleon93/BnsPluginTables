@@ -13,13 +13,13 @@ namespace BnsTables::KR {
 signed char airdash_level;
 char Pad_sub_1[3];
 BnsTables::Shared::TableRef transit_zone;
-int transit_zone_tableId() const {return 504;};
+int transit_zone_tableId() const {return 513;};
 __int16 transit_pc_spawn;
 char Pad_sub_2[2];
 BnsTables::Shared::TableRef transit_leave_social;
-int transit_leave_social_tableId() const {return 419;};
+int transit_leave_social_tableId() const {return 428;};
 BnsTables::Shared::TableRef transit_enter_social;
-int transit_enter_social_tableId() const {return 419;};
+int transit_enter_social_tableId() const {return 428;};
 
 		static __int32 SubType() { return 12; }
 	};

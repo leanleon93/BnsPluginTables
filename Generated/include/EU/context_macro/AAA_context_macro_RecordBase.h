@@ -374,6 +374,8 @@ __int32 delay_msec_Size() const {return 10;};
 			condition_event_10 = 245,
 			linked = 246,
 			EndlessnessTower = 247,
+			needle = 248,
+			needleFullStack = 249,
 		};
 
 		enum class effect_attribute {
@@ -569,6 +571,8 @@ __int32 delay_msec_Size() const {return 10;};
 			pirdeuboseu_1 = 189,
 			pirdeuboseu_2 = 190,
 			pirdeuboseu_3 = 191,
+			bongswae = 192,
+			bongchim = 193,
 		};
 
 		enum class key_command {
@@ -771,6 +775,7 @@ __int32 delay_msec_Size() const {return 10;};
 			skill_macro_2 = 196,
 			skill_macro_3 = 197,
 			toggle_skill_macro = 198,
+			toggle_pet_stone = 199,
 		};
 
 		enum class key_status {

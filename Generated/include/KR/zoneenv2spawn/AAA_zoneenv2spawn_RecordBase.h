@@ -23,18 +23,18 @@ __int16 id;
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef env2;
-int env2_tableId() const {return 505;};
+int env2_tableId() const {return 514;};
 BnsTables::Shared::TableRef env2place;
-int env2place_tableId() const {return 506;};
+int env2place_tableId() const {return 515;};
 BnsTables::Shared::TableRef random_group;
-int random_group_tableId() const {return 508;};
+int random_group_tableId() const {return 517;};
 BnsTables::Shared::TableRef required_env;
-int required_env_tableId() const {return 507;};
+int required_env_tableId() const {return 516;};
 signed char mapunit_map_depth;
 signed char mapunit_arena_dungeon_map_depth;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 507; }
+		static __int16 TableId() { return 516; }
 		static __int32 SubType() { return -1; }
 		enum class mapunit_map_depth {
 			value_1 = 0,
@@ -42,6 +42,9 @@ signed char mapunit_arena_dungeon_map_depth;
 			value_3 = 2,
 			value_4 = 3,
 			value_5 = 4,
+			value_6 = 5,
+			value_7 = 6,
+			value_8 = 7,
 		};
 	};
 #pragma pack(pop)

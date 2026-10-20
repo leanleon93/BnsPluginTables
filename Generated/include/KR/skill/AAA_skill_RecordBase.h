@@ -33,12 +33,12 @@ signed char variation_4_level;
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 __int16 short_cut_key;
 __int16 short_cut_key_classic;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 382; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static __int16 TableId() { return 391; }
 		static __int32 SubType() { return -1; }
 		enum class short_cut_key {
 			none = 0,
@@ -240,6 +240,7 @@ __int16 short_cut_key_classic;
 			skill_macro_2 = 196,
 			skill_macro_3 = 197,
 			toggle_skill_macro = 198,
+			toggle_pet_stone = 199,
 		};
 	};
 #pragma pack(pop)

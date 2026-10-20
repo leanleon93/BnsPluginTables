@@ -22,21 +22,21 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef set_name;
-int set_name_tableId() const {return 457;};
+int set_name_tableId() const {return 466;};
 wchar_t* background_widget_ref;
 BnsTables::Shared::TableRef slot_item[8];
 __int32 slot_item_Size() const {return 8;};
-int slot_item_tableId() const {return 209;};
+int slot_item_tableId() const {return 212;};
 signed char slot_equip_type[8];
 __int32 slot_equip_type_Size() const {return 8;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 457;};
+int slot_name_tableId() const {return 466;};
 BnsTables::Shared::IconRef slot_tag_icon[8];
 __int32 slot_tag_icon_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 166; }
+		static __int16 TableId() { return 169; }
 		static __int32 SubType() { return -1; }
 		enum class slot_equip_type {
 			none = 0,

@@ -257,6 +257,7 @@ __int16 immune_breaker_attribute;
 			skill_macro_2 = 196,
 			skill_macro_3 = 197,
 			toggle_skill_macro = 198,
+			toggle_pet_stone = 199,
 		};
 
 		enum class immune_breaker_attribute {
@@ -452,6 +453,8 @@ __int16 immune_breaker_attribute;
 			pirdeuboseu_1 = 189,
 			pirdeuboseu_2 = 190,
 			pirdeuboseu_3 = 191,
+			bongswae = 192,
+			bongchim = 193,
 		};
 	};
 #pragma pack(pop)

@@ -10,9 +10,9 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef npc;
-int npc_tableId() const {return 288;};
+int npc_tableId() const {return 291;};
 BnsTables::Shared::TableRef weapon;
-int weapon_tableId() const {return 209;};
+int weapon_tableId() const {return 212;};
 
 		static __int32 SubType() { return 988; }
 	};

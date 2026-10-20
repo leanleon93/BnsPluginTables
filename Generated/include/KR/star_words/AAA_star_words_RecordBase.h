@@ -23,14 +23,14 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 BnsTables::Shared::TableRef star_stone_slot[8];
 __int32 star_stone_slot_Size() const {return 8;};
-int star_stone_slot_tableId() const {return 209;};
+int star_stone_slot_tableId() const {return 212;};
 __int32 star_stone_slot_total_count;
 BnsTables::Shared::TableRef name2[10];
 __int32 name2_Size() const {return 10;};
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 BnsTables::Shared::TableRef star_words_desc[10];
 __int32 star_words_desc_Size() const {return 10;};
-int star_words_desc_tableId() const {return 457;};
+int star_words_desc_tableId() const {return 466;};
 BnsTables::Shared::TableRef star_words_condition_event[60];
 __int32 star_words_condition_event_Size() const {return 60;};
 int star_words_condition_event_tableId() const {return 66;};
@@ -40,10 +40,10 @@ __int32 star_words_condition_event_weight_total;
 wchar_t* star_words_condition_event_desc[20];
 __int32 star_words_condition_event_desc_Size() const {return 20;};
 BnsTables::Shared::TableRef return_draw_cost_group;
-int return_draw_cost_group_tableId() const {return 82;};
+int return_draw_cost_group_tableId() const {return 83;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 4); }
-		static __int16 TableId() { return 432; }
+		static __int16 TableId() { return 441; }
 		static __int32 SubType() { return -1; }
 
 	};

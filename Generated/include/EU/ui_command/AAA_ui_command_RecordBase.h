@@ -14,18 +14,18 @@ namespace BnsTables::EU {
 		union Key
 		{
             struct {
-                signed char command;
+                __int16 command;
 
             };
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 wchar_t* icon;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 62); }
-		static __int16 TableId() { return 465; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 64); }
+		static __int16 TableId() { return 474; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,
@@ -155,6 +155,9 @@ wchar_t* icon;
 			achievement_search = 124,
 			register_to_related_ui = 125,
 			show_decompose_probability = 126,
+			use_pet_stone = 127,
+			apply_pet_stone_appearance = 128,
+			release_pet_stone = 129,
 		};
 	};
 #pragma pack(pop)

@@ -18,6 +18,7 @@ char Pad_sub_2[2];
 __int64 effect_attribute_value;
 __int64 effect_attribute_value_2;
 __int64 effect_attribute_value_3;
+__int64 effect_attribute_value_4;
 signed char hp_percent;
 
 		static __int32 SubType() { return 0; }

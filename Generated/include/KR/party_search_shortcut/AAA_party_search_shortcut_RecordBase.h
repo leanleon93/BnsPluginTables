@@ -26,18 +26,20 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef title;
-int title_tableId() const {return 457;};
+int title_tableId() const {return 466;};
 BnsTables::Shared::TableRef mouseover_tooltip;
-int mouseover_tooltip_tableId() const {return 457;};
+int mouseover_tooltip_tableId() const {return 466;};
 wchar_t* button_widget_bp;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 298; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static __int16 TableId() { return 301; }
 		static __int32 SubType() { return -1; }
 		enum class custom_type {
 			battle_field = 0,
-			time_limit_field_square = 1,
-			yg_wave_dungeon = 2,
+			duel = 1,
+			pvp = 2,
+			time_limit_field_square = 3,
+			yg_wave_dungeon = 4,
 		};
 	};
 #pragma pack(pop)

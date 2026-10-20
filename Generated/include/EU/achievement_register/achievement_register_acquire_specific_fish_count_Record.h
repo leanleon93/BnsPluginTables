@@ -10,7 +10,7 @@ namespace BnsTables::EU {
 	{
 	public:
 		BnsTables::Shared::TableRef fish;
-int fish_tableId() const {return 155;};
+int fish_tableId() const {return 158;};
 
 		static __int32 SubType() { return 68; }
 	};

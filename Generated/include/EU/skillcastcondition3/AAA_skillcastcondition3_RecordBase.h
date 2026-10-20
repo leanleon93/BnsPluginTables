@@ -59,12 +59,12 @@ signed char fail_caster_effect_attribute_op;
 char Pad3[1];
 BnsTables::Shared::TableRef success_caster_filter[2];
 __int32 success_caster_filter_Size() const {return 2;};
-int success_caster_filter_tableId() const {return 154;};
+int success_caster_filter_tableId() const {return 157;};
 signed char success_caster_filter_op;
 char Pad4[3];
 BnsTables::Shared::TableRef fail_caster_filter[2];
 __int32 fail_caster_filter_Size() const {return 2;};
-int fail_caster_filter_tableId() const {return 154;};
+int fail_caster_filter_tableId() const {return 157;};
 signed char fail_caster_filter_op;
 signed char success_target_dead_state;
 __int16 success_target_flag[4];
@@ -85,12 +85,12 @@ signed char fail_target_effect_attribute_op;
 char Pad8[3];
 BnsTables::Shared::TableRef success_target_filter[2];
 __int32 success_target_filter_Size() const {return 2;};
-int success_target_filter_tableId() const {return 154;};
+int success_target_filter_tableId() const {return 157;};
 signed char success_target_filter_op;
 char Pad9[3];
 BnsTables::Shared::TableRef fail_target_filter[2];
 __int32 fail_target_filter_Size() const {return 2;};
-int fail_target_filter_tableId() const {return 154;};
+int fail_target_filter_tableId() const {return 157;};
 signed char fail_target_filter_op;
 bool fail_target_mount_linker;
 bool fail_target_mount_linked;
@@ -100,7 +100,7 @@ bool fail_target_catch_linker;
 bool fail_target_catch_linked;
 char Pad10[1];
 BnsTables::Shared::TableRef gather_range;
-int gather_range_tableId() const {return 383;};
+int gather_range_tableId() const {return 392;};
 __int16 check_style_score;
 __int16 check_hp_value;
 signed char check_hp_type;
@@ -157,7 +157,7 @@ __int32 fail_recycle_group_id_Size() const {return 4;};
 signed char fail_recycle_group_op;
 BnsTables::Shared::TableRef soul_mask[2];
 __int32 soul_mask_Size() const {return 2;};
-int soul_mask_tableId() const {return 426;};
+int soul_mask_tableId() const {return 435;};
 bool fail_soulmask_except_normal;
 bool is_special_skill;
 signed char lockon_skill_type;
@@ -210,7 +210,7 @@ __int32 simple_context_fail_recycle_group_id_Size() const {return 4;};
 signed char simple_context_fail_recycle_group_op;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 377; }
+		static __int16 TableId() { return 386; }
 		static __int32 SubType() { return -1; }
 		enum class stance {
 			stance_none = 0,
@@ -587,6 +587,8 @@ signed char simple_context_fail_recycle_group_op;
 			condition_event_10 = 245,
 			linked = 246,
 			EndlessnessTower = 247,
+			needle = 248,
+			needleFullStack = 249,
 		};
 
 		enum class fail_caster_op {
@@ -787,6 +789,8 @@ signed char simple_context_fail_recycle_group_op;
 			pirdeuboseu_1 = 189,
 			pirdeuboseu_2 = 190,
 			pirdeuboseu_3 = 191,
+			bongswae = 192,
+			bongchim = 193,
 		};
 
 		enum class success_target_dead_state {

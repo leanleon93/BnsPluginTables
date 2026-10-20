@@ -21,13 +21,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef scroll;
-int scroll_tableId() const {return 415;};
+int scroll_tableId() const {return 424;};
 BnsTables::Shared::TableRef stone;
-int stone_tableId() const {return 417;};
+int stone_tableId() const {return 426;};
 bool tooltip;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 416; }
+		static __int16 TableId() { return 425; }
 		static __int32 SubType() { return -1; }
 
 	};

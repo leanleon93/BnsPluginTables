@@ -14,6 +14,7 @@ __int32 dispel_attribute_Size() const {return 4;};
 __int64 dispel_attribute_value;
 __int64 dispel_attribute_value_2;
 __int64 dispel_attribute_value_3;
+__int64 dispel_attribute_value_4;
 
 		static __int32 SubType() { return 943; }
 	};

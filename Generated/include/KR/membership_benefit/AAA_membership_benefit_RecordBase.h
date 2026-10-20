@@ -25,14 +25,14 @@ signed char publisher;
 char Pad0[3];
 __int64 value;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 457;};
+int description_tableId() const {return 466;};
 BnsTables::Shared::IconRef icon;
 wchar_t* icon_image_set;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 280; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
+		static __int16 TableId() { return 283; }
 		static __int32 SubType() { return -1; }
 		enum class benefit_type {
 			none = 0,
@@ -54,6 +54,13 @@ wchar_t* icon_image_set;
 			discount_money_post_send_tax = 16,
 			discount_market_purchase_tax = 17,
 			skip_market_trade_min_level = 18,
+			shop_depository = 19,
+			auto_looting = 20,
+			potion_cooldown_reduce = 21,
+			repair_tool_cooldown_reduce = 22,
+			resurrection_scroll_cooldown_reduce = 23,
+			breath_focus_cooldown_reduce = 24,
+			teleport_cooldown_reduce = 25,
 		};
 
 		enum class publisher {

@@ -31,30 +31,30 @@ namespace BnsTables::KR {
 signed char guide_type;
 char Pad0[2];
 BnsTables::Shared::TableRef title;
-int title_tableId() const {return 457;};
+int title_tableId() const {return 466;};
 signed char activation_level;
 signed char activation_mastery_level;
 bool use_notice_hud;
 char Pad1[1];
 BnsTables::Shared::TableRef message;
-int message_tableId() const {return 164;};
+int message_tableId() const {return 167;};
 wchar_t* movie_url;
 wchar_t* help_imageset[20];
 __int32 help_imageset_Size() const {return 20;};
 BnsTables::Shared::TableRef help_title[20];
 __int32 help_title_Size() const {return 20;};
-int help_title_tableId() const {return 457;};
+int help_title_tableId() const {return 466;};
 BnsTables::Shared::TableRef help_sub_title[20];
 __int32 help_sub_title_Size() const {return 20;};
-int help_sub_title_tableId() const {return 457;};
+int help_sub_title_tableId() const {return 466;};
 BnsTables::Shared::TableRef help_desc[20];
 __int32 help_desc_Size() const {return 20;};
-int help_desc_tableId() const {return 457;};
+int help_desc_tableId() const {return 466;};
 wchar_t* jpg_image_name[20];
 __int32 jpg_image_name_Size() const {return 20;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
-		static __int16 TableId() { return 175; }
+		static __int16 TableId() { return 178; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,

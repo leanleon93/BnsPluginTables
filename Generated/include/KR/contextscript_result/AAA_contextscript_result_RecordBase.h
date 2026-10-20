@@ -43,6 +43,8 @@ signed char stance_ui_effect;
 signed char context_ui_effect;
 signed char skillbar_ui_effect;
 signed char special_ui_effect;
+BnsTables::Shared::TableRef ui_effect_data;
+int ui_effect_data_tableId() const {return 81;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 0); }
 		static __int16 TableId() { return 0; }

@@ -20,14 +20,14 @@ namespace BnsTables::KR {
 			unsigned __int64 key;
 		};
 		__declspec(align(8)) Key key;
-		signed char command[30];
+		__int16 command[30];
 __int32 command_Size() const {return 30;};
-signed char default_command[15];
+__int16 default_command[15];
 __int32 default_command_Size() const {return 15;};
 signed char main_command_count;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 46); }
-		static __int16 TableId() { return 466; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 48); }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return -1; }
 		enum class target {
 			none = 0,
@@ -128,6 +128,12 @@ signed char main_command_count;
 			disassemble_relics = 95,
 			achievement_inspector = 96,
 			inventory_randomoption_reset = 97,
+			pet_stone_ability_equip = 98,
+			pet_stone_appearance_equip = 99,
+			pet_stone_storage = 100,
+			pet_stone_compose_registered = 101,
+			pet_stone_collect_require = 102,
+			pet_stone_collect_registered = 103,
 		};
 
 		enum class command {
@@ -258,6 +264,9 @@ signed char main_command_count;
 			achievement_search = 124,
 			register_to_related_ui = 125,
 			show_decompose_probability = 126,
+			use_pet_stone = 127,
+			apply_pet_stone_appearance = 128,
+			release_pet_stone = 129,
 		};
 	};
 #pragma pack(pop)

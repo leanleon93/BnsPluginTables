@@ -30,12 +30,12 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 BnsTables::Shared::TableRef fielditem[3];
 __int32 fielditem_Size() const {return 3;};
-int fielditem_tableId() const {return 150;};
+int fielditem_tableId() const {return 153;};
 signed char prob[3];
 __int32 prob_Size() const {return 3;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
-		static __int16 TableId() { return 151; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static __int16 TableId() { return 154; }
 		static __int32 SubType() { return -1; }
 		enum class drop_case {
 			none = 0,
@@ -238,6 +238,8 @@ __int32 prob_Size() const {return 3;};
 			pirdeuboseu_1 = 189,
 			pirdeuboseu_2 = 190,
 			pirdeuboseu_3 = 191,
+			bongswae = 192,
+			bongchim = 193,
 		};
 
 		enum class drop_place {

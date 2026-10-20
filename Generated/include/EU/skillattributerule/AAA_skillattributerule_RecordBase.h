@@ -30,7 +30,7 @@ signed char auto_skill_result[8];
 __int32 auto_skill_result_Size() const {return 8;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
-		static __int16 TableId() { return 370; }
+		static __int16 TableId() { return 379; }
 		static __int32 SubType() { return -1; }
 		enum class attribute {
 			none = 0,
@@ -89,6 +89,7 @@ __int32 auto_skill_result_Size() const {return 8;};
 			wichibaggugi = 53,
 			eunsa = 54,
 			dobar = 55,
+			bongswae = 56,
 		};
 
 		enum class target_flag {
@@ -340,6 +341,8 @@ __int32 auto_skill_result_Size() const {return 8;};
 			condition_event_10 = 245,
 			linked = 246,
 			EndlessnessTower = 247,
+			needle = 248,
+			needleFullStack = 249,
 		};
 
 		enum class dir {

@@ -359,6 +359,8 @@ signed char check_around_op;
 			condition_event_10 = 245,
 			linked = 246,
 			EndlessnessTower = 247,
+			needle = 248,
+			needleFullStack = 249,
 		};
 
 		enum class check_caster_recycle_skill_op {
@@ -559,6 +561,8 @@ signed char check_around_op;
 			pirdeuboseu_1 = 189,
 			pirdeuboseu_2 = 190,
 			pirdeuboseu_3 = 191,
+			bongswae = 192,
+			bongchim = 193,
 		};
 
 		enum class check_target_npc_grade2 {

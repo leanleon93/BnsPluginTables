@@ -13,11 +13,11 @@ namespace BnsTables::KR {
 signed char link_stage;
 char Pad_sub_0[2];
 BnsTables::Shared::TableRef catch_caster_effect;
-int catch_caster_effect_tableId() const {return 121;};
+int catch_caster_effect_tableId() const {return 124;};
 BnsTables::Shared::TableRef catch_target_effect;
-int catch_target_effect_tableId() const {return 121;};
+int catch_target_effect_tableId() const {return 124;};
 BnsTables::Shared::TableRef detach_effect;
-int detach_effect_tableId() const {return 121;};
+int detach_effect_tableId() const {return 124;};
 signed char detach_angle_by_dispeled;
 char Pad_sub_1[1];
 __int16 detach_margin_by_dispeled;

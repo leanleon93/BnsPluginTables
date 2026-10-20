@@ -25,10 +25,10 @@ signed char production;
 char Pad0[3];
 BnsTables::Shared::TableRef msg[7];
 __int32 msg_Size() const {return 7;};
-int msg_tableId() const {return 293;};
+int msg_tableId() const {return 296;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 1); }
-		static __int16 TableId() { return 316; }
+		static __int16 TableId() { return 325; }
 		static __int32 SubType() { return -1; }
 		enum class production {
 			none = 0,

@@ -11,9 +11,9 @@ namespace BnsTables::KR {
 	public:
 		char Pad_sub_0[3];
 BnsTables::Shared::TableRef boast_from_random_store;
-int boast_from_random_store_tableId() const {return 333;};
+int boast_from_random_store_tableId() const {return 342;};
 BnsTables::Shared::TableRef boast_item;
-int boast_item_tableId() const {return 209;};
+int boast_item_tableId() const {return 212;};
 
 		static __int32 SubType() { return 2; }
 	};

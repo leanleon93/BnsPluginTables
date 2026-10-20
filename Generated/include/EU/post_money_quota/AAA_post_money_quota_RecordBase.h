@@ -25,7 +25,7 @@ __int32 max_combat_power;
 __int64 gold_limit;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 315; }
+		static __int16 TableId() { return 324; }
 		static __int32 SubType() { return -1; }
 
 	};

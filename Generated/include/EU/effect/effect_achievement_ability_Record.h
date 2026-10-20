@@ -11,14 +11,14 @@ namespace BnsTables::EU {
 	public:
 		__int32 attack_power_creature_min;
 __int32 attack_power_creature_max;
-__int16 attack_hit_value;
-__int16 attack_pierce_value;
+__int32 attack_hit_value;
+__int32 attack_pierce_value;
 __int16 attack_damage_modify_diff;
 char Pad_sub_0[2];
 __int32 max_hp;
-__int16 defend_power_creature_value;
-__int16 defend_dodge_value;
-__int16 defend_parry_value;
+__int32 defend_power_creature_value;
+__int32 defend_dodge_value;
+__int32 defend_parry_value;
 __int16 defend_damage_modify_diff;
 
 		static __int32 SubType() { return 965; }

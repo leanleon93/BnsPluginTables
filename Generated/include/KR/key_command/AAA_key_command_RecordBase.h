@@ -25,7 +25,7 @@ signed char pc_job;
 signed char joypad_category;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 457;};
+int name_tableId() const {return 466;};
 wchar_t* default_keycap;
 bool modifier_enabled;
 signed char sort_no;
@@ -37,8 +37,8 @@ bool joypad_customize_enabled;
 bool joypad_overlapped_binding_enabled;
 signed char contents_type;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 5); }
-		static __int16 TableId() { return 257; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 6); }
+		static __int16 TableId() { return 260; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,
@@ -240,6 +240,7 @@ signed char contents_type;
 			skill_macro_2 = 196,
 			skill_macro_3 = 197,
 			toggle_skill_macro = 198,
+			toggle_pet_stone = 199,
 		};
 
 		enum class pc_job {

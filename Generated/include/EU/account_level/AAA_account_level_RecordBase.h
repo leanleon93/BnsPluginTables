@@ -21,7 +21,7 @@ namespace BnsTables::EU {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name;
-int name_tableId() const {return 457;};
+int name_tableId() const {return 466;};
 __int64 exp;
 signed char ability[8];
 __int32 ability_Size() const {return 8;};
@@ -38,7 +38,7 @@ signed char badge_slot_quota_category3_normal;
 signed char badge_page;
 signed char badge_inventory_size;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
 		static __int16 TableId() { return 4; }
 		static __int32 SubType() { return -1; }
 		enum class ability {

@@ -24,23 +24,23 @@ namespace BnsTables::EU {
 signed char publisher;
 char Pad0[3];
 BnsTables::Shared::TableRef main_origin_skill;
-int main_origin_skill_tableId() const {return 367;};
+int main_origin_skill_tableId() const {return 376;};
 BnsTables::Shared::TableRef main_change_skill;
-int main_change_skill_tableId() const {return 367;};
+int main_change_skill_tableId() const {return 376;};
 BnsTables::Shared::TableRef sub_origin_skill[5];
 __int32 sub_origin_skill_Size() const {return 5;};
-int sub_origin_skill_tableId() const {return 367;};
+int sub_origin_skill_tableId() const {return 376;};
 BnsTables::Shared::TableRef sub_change_skill[5];
 __int32 sub_change_skill_Size() const {return 5;};
-int sub_change_skill_tableId() const {return 367;};
+int sub_change_skill_tableId() const {return 376;};
 BnsTables::Shared::IconRef icon;
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 457;};
+int description_tableId() const {return 466;};
 signed char item_equip_type;
 signed char job;
 char Pad1[2];
 BnsTables::Shared::TableRef extract_skill_train_by_item;
-int extract_skill_train_by_item_tableId() const {return 141;};
+int extract_skill_train_by_item_tableId() const {return 144;};
 bool is_default_skill_train_by_item;
 signed char ability[5];
 __int32 ability_Size() const {return 5;};
@@ -50,7 +50,7 @@ __int32 ability_value_Size() const {return 5;};
 __int16 character_info_preview_priority;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
-		static __int16 TableId() { return 401; }
+		static __int16 TableId() { return 410; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

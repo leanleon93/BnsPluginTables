@@ -34,7 +34,7 @@ __int16 radius;
 bool trace_master_skill_target;
 char Pad2[3];
 BnsTables::Shared::TableRef summoned_sequence;
-int summoned_sequence_tableId() const {return 447;};
+int summoned_sequence_tableId() const {return 456;};
 __int32 seq_skill[30];
 __int32 seq_skill_Size() const {return 30;};
 __int32 spawn_skill_id;
@@ -52,14 +52,14 @@ __int16 speed;
 bool use_customized_appearance;
 char Pad4[3];
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId() const {return 90;};
+int appearance_tableId() const {return 91;};
 wchar_t* animset;
 BnsTables::Shared::TableRef spawn_social;
-int spawn_social_tableId() const {return 419;};
+int spawn_social_tableId() const {return 428;};
 BnsTables::Shared::TableRef respawn_in_social;
-int respawn_in_social_tableId() const {return 419;};
+int respawn_in_social_tableId() const {return 428;};
 BnsTables::Shared::TableRef respawn_out_social;
-int respawn_out_social_tableId() const {return 419;};
+int respawn_out_social_tableId() const {return 428;};
 wchar_t* spawn_show;
 wchar_t* despawn_show;
 wchar_t* combat_side_player_continuance_show;
@@ -77,19 +77,19 @@ float mapunit_outsight_width;
 float mapunit_outsight_height;
 wchar_t* mapunit_outsight_imageset;
 BnsTables::Shared::TableRef fixed_name;
-int fixed_name_tableId() const {return 457;};
+int fixed_name_tableId() const {return 466;};
 BnsTables::Shared::TableRef nameplate_title_state_normal;
-int nameplate_title_state_normal_tableId() const {return 457;};
+int nameplate_title_state_normal_tableId() const {return 466;};
 BnsTables::Shared::TableRef nameplate_title_state_duel_other_team;
-int nameplate_title_state_duel_other_team_tableId() const {return 457;};
+int nameplate_title_state_duel_other_team_tableId() const {return 466;};
 BnsTables::Shared::TableRef nameplate_name_state_anonymity;
-int nameplate_name_state_anonymity_tableId() const {return 457;};
+int nameplate_name_state_anonymity_tableId() const {return 466;};
 BnsTables::Shared::TableRef nameplate_name_state_duel_other_team;
-int nameplate_name_state_duel_other_team_tableId() const {return 457;};
+int nameplate_name_state_duel_other_team_tableId() const {return 466;};
 float term_sequence_range_sim_check;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
-		static __int16 TableId() { return 440; }
+		static __int16 TableId() { return 449; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,
@@ -213,6 +213,7 @@ float term_sequence_range_sim_check;
 			wichibaggugi = 53,
 			eunsa = 54,
 			dobar = 55,
+			bongswae = 56,
 		};
 
 		enum class immune_effect_attribute {
@@ -408,6 +409,8 @@ float term_sequence_range_sim_check;
 			pirdeuboseu_1 = 189,
 			pirdeuboseu_2 = 190,
 			pirdeuboseu_3 = 191,
+			bongswae = 192,
+			bongchim = 193,
 		};
 
 		enum class stance {

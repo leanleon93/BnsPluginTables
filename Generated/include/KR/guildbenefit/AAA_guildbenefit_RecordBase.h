@@ -26,11 +26,11 @@ __int32 duration;
 char Pad0[3];
 wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 457;};
+int desc_tableId() const {return 466;};
 BnsTables::Shared::TableRef icon_texture;
-int icon_texture_tableId() const {return 195;};
+int icon_texture_tableId() const {return 198;};
 __int16 icon_index;
 __int16 order;
 __int16 guild_level;
@@ -38,13 +38,13 @@ char Pad1[2];
 __int32 money;
 BnsTables::Shared::TableRef item[5];
 __int32 item_Size() const {return 5;};
-int item_tableId() const {return 209;};
+int item_tableId() const {return 212;};
 __int32 item_count[5];
 __int32 item_count_Size() const {return 5;};
 __int32 guild_point;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 178; }
+		static __int16 TableId() { return 181; }
 		static __int32 SubType() { return -1; }
 		enum class benefit_type {
 			none = 0,

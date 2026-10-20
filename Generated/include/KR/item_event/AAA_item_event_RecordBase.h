@@ -23,10 +23,10 @@ namespace BnsTables::KR {
 		wchar_t* alias;
 __int64 event_expiration_time;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
-		static __int16 TableId() { return 210; }
+		static __int16 TableId() { return 213; }
 		static __int32 SubType() { return -1; }
 
 	};

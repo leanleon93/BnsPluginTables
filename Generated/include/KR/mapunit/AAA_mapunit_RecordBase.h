@@ -54,7 +54,7 @@ bool click;
 bool front;
 bool show_tooltip;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 457;};
+int name2_tableId() const {return 466;};
 __int16 opacity;
 __int16 size_x;
 __int16 size_y;
@@ -74,8 +74,8 @@ char Pad3[3];
 __int32 detach_zone_id[5];
 __int32 detach_zone_id_Size() const {return 5;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 83); }
-		static __int16 TableId() { return 269; }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 84); }
+		static __int16 TableId() { return 272; }
 		static __int32 SubType() { return -1; }
 		enum class category {
 			none = 0,
@@ -129,6 +129,9 @@ __int32 detach_zone_id_Size() const {return 5;};
 			value_3 = 2,
 			value_4 = 3,
 			value_5 = 4,
+			value_6 = 5,
+			value_7 = 6,
+			value_8 = 7,
 		};
 	};
 #pragma pack(pop)
