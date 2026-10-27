@@ -21,7 +21,8 @@ namespace BnsTables::EU {
 		boast_event_record_sub_treasureboard_season_reward = 10,
 		boast_event_record_sub_treasureboard_reward = 11,
 		boast_event_record_sub_improve_item = 12,
-		boast_event_record_sub_count = 13,
+		boast_event_record_sub_succession_item = 13,
+		boast_event_record_sub_count = 14,
     };
 #pragma pack(push, 1)
 	struct boast_event_Record : BnsTables::Shared::DrEl
@@ -39,7 +40,7 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 signed char broadcast;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 43; }
 		static __int32 SubType() { return -1; }
 		enum class broadcast {

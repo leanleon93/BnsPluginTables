@@ -39,11 +39,13 @@ signed char apply_skill_modify_per_arcane_score_total_count;
 char Pad1[3];
 __int32 per_arcane_score_section[6];
 __int32 per_arcane_score_section_Size() const {return 6;};
+__int16 per_arcane_score_damage_rate_pvp;
+char Pad2[2];
 BnsTables::Shared::TableRef effect_tooltip_description[6];
 __int32 effect_tooltip_description_Size() const {return 6;};
 int effect_tooltip_description_tableId() const {return 466;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 1); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 3); }
 		static __int16 TableId() { return 378; }
 		static __int32 SubType() { return -1; }
 

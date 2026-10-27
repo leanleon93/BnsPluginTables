@@ -31,8 +31,9 @@ __int32 item_amount_Size() const {return 8;};
 signed char item_total_count;
 char Pad1[3];
 __int64 money;
+bool enable;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
 		static __int16 TableId() { return 83; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
