@@ -729,7 +729,37 @@ namespace BnsTables::KR {
 		content_quota_record_sub_dungeon_enter_ticket = 718,
 		content_quota_record_sub_dungeon_challenge_reward = 719,
 		content_quota_record_sub_post_money = 720,
-		content_quota_record_sub_count = 721,
+		content_quota_record_sub_item_transform_1 = 721,
+		content_quota_record_sub_item_transform_2 = 722,
+		content_quota_record_sub_item_transform_3 = 723,
+		content_quota_record_sub_item_transform_4 = 724,
+		content_quota_record_sub_item_transform_5 = 725,
+		content_quota_record_sub_item_transform_6 = 726,
+		content_quota_record_sub_item_transform_7 = 727,
+		content_quota_record_sub_item_transform_8 = 728,
+		content_quota_record_sub_item_transform_9 = 729,
+		content_quota_record_sub_item_transform_10 = 730,
+		content_quota_record_sub_item_transform_11 = 731,
+		content_quota_record_sub_item_transform_12 = 732,
+		content_quota_record_sub_item_transform_13 = 733,
+		content_quota_record_sub_item_transform_14 = 734,
+		content_quota_record_sub_item_transform_15 = 735,
+		content_quota_record_sub_item_transform_16 = 736,
+		content_quota_record_sub_item_transform_17 = 737,
+		content_quota_record_sub_item_transform_18 = 738,
+		content_quota_record_sub_item_transform_19 = 739,
+		content_quota_record_sub_item_transform_20 = 740,
+		content_quota_record_sub_item_transform_21 = 741,
+		content_quota_record_sub_item_transform_22 = 742,
+		content_quota_record_sub_item_transform_23 = 743,
+		content_quota_record_sub_item_transform_24 = 744,
+		content_quota_record_sub_item_transform_25 = 745,
+		content_quota_record_sub_item_transform_26 = 746,
+		content_quota_record_sub_item_transform_27 = 747,
+		content_quota_record_sub_item_transform_28 = 748,
+		content_quota_record_sub_item_transform_29 = 749,
+		content_quota_record_sub_item_transform_30 = 750,
+		content_quota_record_sub_count = 751,
     };
 #pragma pack(push, 1)
 	struct content_quota_Record : BnsTables::Shared::DrEl
@@ -766,7 +796,7 @@ int consume_order_tableId() const {return 70;};
 __int64 charge_amount_per_interval_by_day_of_week[7];
 __int32 charge_amount_per_interval_by_day_of_week_Size() const {return 7;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(16, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(17, 0); }
 		static __int16 TableId() { return 70; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
