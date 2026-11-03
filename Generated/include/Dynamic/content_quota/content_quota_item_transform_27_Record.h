@@ -2,13 +2,13 @@
  Generated Code! Do not manually edit this code. Modify the generator instead.
 */
 #pragma once
-
+#include "../../EU/content_quota/content_quota_item_transform_27_Record.h"
 #include "../../KR/content_quota/content_quota_item_transform_27_Record.h"
 
 namespace BnsTables::Dynamic {
 	#ifdef BNSKR
 		using content_quota_item_transform_27_Record = BnsTables::KR::content_quota_item_transform_27_Record;
 	#else
-		struct content_quota_item_transform_27_Record {};
+		using content_quota_item_transform_27_Record = BnsTables::EU::content_quota_item_transform_27_Record;
 	#endif
 }

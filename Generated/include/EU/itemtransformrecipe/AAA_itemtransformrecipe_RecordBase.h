@@ -141,8 +141,10 @@ BnsTables::Shared::TableRef coupon_item;
 int coupon_item_tableId() const {return 212;};
 __int16 world_group[10];
 __int32 world_group_Size() const {return 10;};
+BnsTables::Shared::TableRef transform_content_quota;
+int transform_content_quota_tableId() const {return 70;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(8, 0); }
 		static __int16 TableId() { return 238; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
