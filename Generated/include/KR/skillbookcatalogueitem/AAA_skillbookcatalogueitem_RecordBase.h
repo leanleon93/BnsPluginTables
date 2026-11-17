@@ -22,12 +22,12 @@ signed char server_type;
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef parent_skill;
-int parent_skill_tableId() const {return 376;};
+int parent_skill_tableId() const {return 377;};
 BnsTables::Shared::TableRef base_skill;
-int base_skill_tableId() const {return 376;};
+int base_skill_tableId() const {return 377;};
 BnsTables::Shared::TableRef change_skill[4];
 __int32 change_skill_Size() const {return 4;};
-int change_skill_tableId() const {return 376;};
+int change_skill_tableId() const {return 377;};
 signed char row;
 signed char column;
 signed char job;
@@ -43,7 +43,7 @@ signed char job_specialization[3];
 __int32 job_specialization_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
-		static __int16 TableId() { return 380; }
+		static __int16 TableId() { return 381; }
 		static __int32 SubType() { return -1; }
 		enum class server_type {
 			common = 0,
@@ -130,6 +130,7 @@ __int32 job_specialization_Size() const {return 3;};
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 
 		enum class job_specialization {

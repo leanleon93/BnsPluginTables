@@ -115,7 +115,7 @@ __int32 attack_attribute_modify;
 __int32 defend_critical_damage_value;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 453; }
+		static __int16 TableId() { return 454; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

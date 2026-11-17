@@ -27,7 +27,7 @@ __int32 begine_time2[10];
 __int32 begine_time2_Size() const {return 10;};
 BnsTables::Shared::TableRef balloon_text2[10];
 __int32 balloon_text2_Size() const {return 10;};
-int balloon_text2_tableId() const {return 466;};
+int balloon_text2_tableId() const {return 467;};
 __int32 balloon_text2_duration[10];
 __int32 balloon_text2_duration_Size() const {return 10;};
 bool voice_sync[10];

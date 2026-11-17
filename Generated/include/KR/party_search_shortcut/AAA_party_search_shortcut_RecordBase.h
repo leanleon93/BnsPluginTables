@@ -26,13 +26,13 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef title;
-int title_tableId() const {return 466;};
+int title_tableId() const {return 467;};
 BnsTables::Shared::TableRef mouseover_tooltip;
-int mouseover_tooltip_tableId() const {return 466;};
+int mouseover_tooltip_tableId() const {return 467;};
 wchar_t* button_widget_bp;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 301; }
+		static __int16 TableId() { return 302; }
 		static __int32 SubType() { return -1; }
 		enum class custom_type {
 			battle_field = 0,

@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef set_name;
-int set_name_tableId() const {return 466;};
+int set_name_tableId() const {return 467;};
 wchar_t* background_widget_ref;
 BnsTables::Shared::TableRef slot_item[8];
 __int32 slot_item_Size() const {return 8;};
@@ -31,7 +31,7 @@ signed char slot_equip_type[8];
 __int32 slot_equip_type_Size() const {return 8;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 466;};
+int slot_name_tableId() const {return 467;};
 BnsTables::Shared::IconRef slot_tag_icon[8];
 __int32 slot_tag_icon_Size() const {return 8;};
 
@@ -92,6 +92,7 @@ __int32 slot_tag_icon_Size() const {return 8;};
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 	};
 #pragma pack(pop)

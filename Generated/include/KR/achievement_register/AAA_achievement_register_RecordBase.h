@@ -114,7 +114,7 @@ BnsTables::Shared::TableRef achievement[8];
 __int32 achievement_Size() const {return 8;};
 int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
-int register_name_tableId() const {return 466;};
+int register_name_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
 		static __int16 TableId() { return 7; }
@@ -230,6 +230,7 @@ int register_name_tableId() const {return 466;};
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 
 		enum class reset_type {

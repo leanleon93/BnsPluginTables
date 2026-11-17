@@ -18,7 +18,7 @@ __int32 weapon_gem_Size() const {return 8;};
 int weapon_gem_tableId() const {return 212;};
 BnsTables::Shared::TableRef slot_name[8];
 __int32 slot_name_Size() const {return 8;};
-int slot_name_tableId() const {return 466;};
+int slot_name_tableId() const {return 467;};
 
 		static __int32 SubType() { return 38; }
 	};

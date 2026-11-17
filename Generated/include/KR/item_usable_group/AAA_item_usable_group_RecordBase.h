@@ -24,7 +24,7 @@ namespace BnsTables::KR {
 bool default_item_usable;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 2); }
 		static __int16 TableId() { return 243; }

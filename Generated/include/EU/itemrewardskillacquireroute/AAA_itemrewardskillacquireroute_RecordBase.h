@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef main_description;
-int main_description_tableId() const {return 466;};
+int main_description_tableId() const {return 467;};
 BnsTables::Shared::ExplicitTableRef tooltip_description[50];
 __int32 tooltip_description_Size() const {return 50;};
 

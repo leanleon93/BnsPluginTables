@@ -54,7 +54,7 @@ bool click;
 bool front;
 bool show_tooltip;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 __int16 opacity;
 __int16 size_x;
 __int16 size_y;

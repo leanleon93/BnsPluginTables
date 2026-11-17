@@ -27,7 +27,7 @@ char Pad0[2];
 BnsTables::Shared::TableRef effect;
 int effect_tableId() const {return 124;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 466;};
+int description_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 5); }
 		static __int16 TableId() { return 282; }

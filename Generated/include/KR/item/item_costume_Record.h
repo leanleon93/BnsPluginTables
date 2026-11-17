@@ -14,7 +14,7 @@ bool guild_used;
 char Pad_sub_1[3];
 __int32 closet_group_id;
 BnsTables::Shared::TableRef talk_social;
-int talk_social_tableId() const {return 460;};
+int talk_social_tableId() const {return 461;};
 BnsTables::Shared::TableRef pair_costume;
 int pair_costume_tableId() const {return 212;};
 BnsTables::Shared::TableRef pair_costume_brand;
@@ -24,7 +24,7 @@ wchar_t* pair_costume_signal_detach_show;
 signed char custom_dress_design_state;
 char Pad_sub_2[3];
 BnsTables::Shared::TableRef skill_skin;
-int skill_skin_tableId() const {return 401;};
+int skill_skin_tableId() const {return 402;};
 
 		static __int32 SubType() { return 1; }
 	};

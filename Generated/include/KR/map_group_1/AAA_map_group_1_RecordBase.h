@@ -22,17 +22,17 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 BnsTables::Shared::TableRef map_group_1_guide;
 BnsTables::Shared::TableRef talk_to_self_quests[127];
 __int32 talk_to_self_quests_Size() const {return 127;};
-int talk_to_self_quests_tableId() const {return 330;};
+int talk_to_self_quests_tableId() const {return 331;};
 BnsTables::Shared::TableRef talk_to_self_quests2[127];
 __int32 talk_to_self_quests2_Size() const {return 127;};
-int talk_to_self_quests2_tableId() const {return 330;};
+int talk_to_self_quests2_tableId() const {return 331;};
 BnsTables::Shared::TableRef talk_to_self_quests3[127];
 __int32 talk_to_self_quests3_Size() const {return 127;};
-int talk_to_self_quests3_tableId() const {return 330;};
+int talk_to_self_quests3_tableId() const {return 331;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 9); }
 		static __int16 TableId() { return 267; }

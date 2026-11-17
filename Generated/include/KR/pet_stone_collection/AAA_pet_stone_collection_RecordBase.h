@@ -22,10 +22,10 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef collection_name;
-int collection_name_tableId() const {return 466;};
+int collection_name_tableId() const {return 467;};
 BnsTables::Shared::TableRef collection_stone[8];
 __int32 collection_stone_Size() const {return 8;};
-int collection_stone_tableId() const {return 318;};
+int collection_stone_tableId() const {return 319;};
 __int16 collection_stone_count[8];
 __int32 collection_stone_count_Size() const {return 8;};
 __int16 collection_season;
@@ -41,7 +41,7 @@ __int16 ability_percent_rate[3];
 __int32 ability_percent_rate_Size() const {return 3;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 1); }
-		static __int16 TableId() { return 316; }
+		static __int16 TableId() { return 317; }
 		static __int32 SubType() { return -1; }
 		enum class collection_category {
 			none = 0,

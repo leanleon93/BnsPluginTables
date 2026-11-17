@@ -23,33 +23,33 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 __int32 count;
 BnsTables::Shared::TableRef material_group;
-int material_group_tableId() const {return 319;};
+int material_group_tableId() const {return 320;};
 BnsTables::Shared::TableRef material_group_name;
-int material_group_name_tableId() const {return 466;};
+int material_group_name_tableId() const {return 467;};
 __int16 great_success_probability;
 char Pad0[2];
 BnsTables::Shared::TableRef great_success_item_group;
-int great_success_item_group_tableId() const {return 319;};
+int great_success_item_group_tableId() const {return 320;};
 __int16 success_probability;
 char Pad1[2];
 BnsTables::Shared::TableRef success_item_group;
-int success_item_group_tableId() const {return 319;};
+int success_item_group_tableId() const {return 320;};
 __int16 fail_probability;
 char Pad2[2];
 BnsTables::Shared::TableRef fail_item_group;
-int fail_item_group_tableId() const {return 319;};
+int fail_item_group_tableId() const {return 320;};
 __int16 big_fail_probability;
 char Pad3[2];
 BnsTables::Shared::TableRef big_fail_item_group;
-int big_fail_item_group_tableId() const {return 319;};
+int big_fail_item_group_tableId() const {return 320;};
 BnsTables::Shared::TableRef pet_stone_combination_cost_group;
 int pet_stone_combination_cost_group_tableId() const {return 83;};
 BnsTables::Shared::TableRef reward_group_name;
-int reward_group_name_tableId() const {return 466;};
+int reward_group_name_tableId() const {return 467;};
 __int32 mileage_weight;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 0); }
-		static __int16 TableId() { return 317; }
+		static __int16 TableId() { return 318; }
 		static __int32 SubType() { return -1; }
 
 	};

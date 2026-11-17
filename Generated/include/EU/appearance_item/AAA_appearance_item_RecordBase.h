@@ -36,8 +36,9 @@ wchar_t* normal_begin_show;
 wchar_t* normal_end_show;
 wchar_t* nameplate_widget;
 wchar_t* balloon_widget;
+wchar_t* damage_floater_widget;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 6); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 7); }
 		static __int16 TableId() { return 11; }
 		static __int32 SubType() { return -1; }
 		enum class appearance_type {

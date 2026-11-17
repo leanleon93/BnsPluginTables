@@ -25,13 +25,13 @@ signed char publisher;
 char Pad0[3];
 __int64 value;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 466;};
+int description_tableId() const {return 467;};
 BnsTables::Shared::IconRef icon;
 wchar_t* icon_image_set;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
 		static __int16 TableId() { return 283; }
 		static __int32 SubType() { return -1; }
 		enum class benefit_type {
@@ -61,6 +61,9 @@ wchar_t* icon_image_set;
 			resurrection_scroll_cooldown_reduce = 23,
 			breath_focus_cooldown_reduce = 24,
 			teleport_cooldown_reduce = 25,
+			weapon_auto_repair = 26,
+			channel_change_cooldown_reduce = 27,
+			dungeon_challenge_reward_extend = 28,
 		};
 
 		enum class publisher {

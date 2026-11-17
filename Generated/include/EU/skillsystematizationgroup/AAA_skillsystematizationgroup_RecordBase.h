@@ -23,14 +23,14 @@ namespace BnsTables::EU {
 		wchar_t* alias;
 wchar_t* name;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 466;};
+int description_tableId() const {return 467;};
 signed char sort_no;
 bool use_bookmark;
 char Pad0[2];
 BnsTables::Shared::TableRef bookmark_description;
-int bookmark_description_tableId() const {return 466;};
+int bookmark_description_tableId() const {return 467;};
 wchar_t* category_icon_text[2];
 __int32 category_icon_text_Size() const {return 2;};
 wchar_t* train_icon_text[2];
@@ -40,10 +40,10 @@ int icon_texture_tableId() const {return 198;};
 __int16 icon_index;
 char Pad1[2];
 BnsTables::Shared::TableRef tooltip_description;
-int tooltip_description_tableId() const {return 466;};
+int tooltip_description_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 406; }
+		static __int16 TableId() { return 407; }
 		static __int32 SubType() { return -1; }
 
 	};

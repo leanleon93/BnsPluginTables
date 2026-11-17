@@ -27,7 +27,7 @@ __int32 default_command_Size() const {return 15;};
 signed char main_command_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 48); }
-		static __int16 TableId() { return 475; }
+		static __int16 TableId() { return 476; }
 		static __int32 SubType() { return -1; }
 		enum class target {
 			none = 0,

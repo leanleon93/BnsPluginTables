@@ -112,6 +112,7 @@ __int32 improve_option_acquire_level_list_Size() const {return 5;};
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 
 		enum class item_equip_job {

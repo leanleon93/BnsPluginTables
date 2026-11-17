@@ -99,6 +99,7 @@ namespace BnsTables::EU {
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 
 		enum class growth_category {

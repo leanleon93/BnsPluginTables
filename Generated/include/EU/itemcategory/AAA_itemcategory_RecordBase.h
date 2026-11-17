@@ -239,6 +239,7 @@ namespace BnsTables::EU {
 			equip_gem_6_appearance = 210,
 			equip_gem_7_appearance = 211,
 			equip_gem_8_appearance = 212,
+			damage_floater_appearance = 213,
 		};
 	};
 #pragma pack(pop)

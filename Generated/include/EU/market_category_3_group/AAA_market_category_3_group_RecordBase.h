@@ -28,7 +28,7 @@ __int32 market_category_3_Size() const {return 10;};
 signed char addtional_filtering_type;
 char Pad1[1];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 2); }
 		static __int16 TableId() { return 274; }
@@ -190,6 +190,7 @@ int name2_tableId() const {return 466;};
 			equip_gem_6_appearance = 153,
 			equip_gem_7_appearance = 154,
 			equip_gem_8_appearance = 155,
+			damage_floater_appearance = 156,
 		};
 
 		enum class addtional_filtering_type {

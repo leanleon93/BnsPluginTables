@@ -30,7 +30,7 @@ namespace BnsTables::KR {
 bool visible;
 char Pad0[3];
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
 		static __int16 TableId() { return 273; }

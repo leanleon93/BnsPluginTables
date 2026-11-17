@@ -32,7 +32,7 @@ __int32 jump_run_height;
 __int32 jump_sprint_height;
 __int32 riding_action_duration;
 BnsTables::Shared::TableRef appearance;
-int appearance_tableId() const {return 482;};
+int appearance_tableId() const {return 483;};
 BnsTables::Shared::TableRef context_script;
 int context_script_tableId() const {return 80;};
 signed char disable_move_type[8];
@@ -43,7 +43,7 @@ BnsTables::Shared::TableRef item;
 int item_tableId() const {return 212;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 0); }
-		static __int16 TableId() { return 483; }
+		static __int16 TableId() { return 484; }
 		static __int32 SubType() { return -1; }
 		enum class disable_move_type {
 			hyper = 0,

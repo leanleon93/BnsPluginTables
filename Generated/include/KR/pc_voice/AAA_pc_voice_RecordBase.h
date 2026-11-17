@@ -28,12 +28,12 @@ signed char default_race[4];
 __int32 default_race_Size() const {return 4;};
 char Pad0[3];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 466;};
+int name_tableId() const {return 467;};
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 466;};
+int desc_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 3); }
-		static __int16 TableId() { return 311; }
+		static __int16 TableId() { return 312; }
 		static __int32 SubType() { return -1; }
 		enum class sex {
 			sex_none = 0,

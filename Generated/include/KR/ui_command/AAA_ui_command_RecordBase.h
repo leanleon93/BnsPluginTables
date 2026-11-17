@@ -21,11 +21,11 @@ namespace BnsTables::KR {
 		};
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 wchar_t* icon;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 64); }
-		static __int16 TableId() { return 474; }
+		static __int16 TableId() { return 475; }
 		static __int32 SubType() { return -1; }
 		enum class command {
 			none = 0,

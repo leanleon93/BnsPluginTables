@@ -759,7 +759,8 @@ namespace BnsTables::KR {
 		content_quota_record_sub_item_transform_28 = 748,
 		content_quota_record_sub_item_transform_29 = 749,
 		content_quota_record_sub_item_transform_30 = 750,
-		content_quota_record_sub_count = 751,
+		content_quota_record_sub_dungeon_challenge_reward_membership = 751,
+		content_quota_record_sub_count = 752,
     };
 #pragma pack(push, 1)
 	struct content_quota_Record : BnsTables::Shared::DrEl
@@ -796,7 +797,7 @@ int consume_order_tableId() const {return 70;};
 __int64 charge_amount_per_interval_by_day_of_week[7];
 __int32 charge_amount_per_interval_by_day_of_week_Size() const {return 7;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(17, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(18, 0); }
 		static __int16 TableId() { return 70; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {

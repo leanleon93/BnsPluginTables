@@ -27,10 +27,10 @@ int star_stone_slot_tableId() const {return 212;};
 __int32 star_stone_slot_total_count;
 BnsTables::Shared::TableRef name2[10];
 __int32 name2_Size() const {return 10;};
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 BnsTables::Shared::TableRef star_words_desc[10];
 __int32 star_words_desc_Size() const {return 10;};
-int star_words_desc_tableId() const {return 466;};
+int star_words_desc_tableId() const {return 467;};
 BnsTables::Shared::TableRef star_words_condition_event[60];
 __int32 star_words_condition_event_Size() const {return 60;};
 int star_words_condition_event_tableId() const {return 66;};
@@ -43,7 +43,7 @@ BnsTables::Shared::TableRef return_draw_cost_group;
 int return_draw_cost_group_tableId() const {return 83;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(4, 4); }
-		static __int16 TableId() { return 441; }
+		static __int16 TableId() { return 442; }
 		static __int32 SubType() { return -1; }
 
 	};

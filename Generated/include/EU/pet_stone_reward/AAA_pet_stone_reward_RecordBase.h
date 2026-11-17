@@ -26,7 +26,7 @@ signed char pick_type;
 char Pad0[2];
 BnsTables::Shared::TableRef reward_stone[120];
 __int32 reward_stone_Size() const {return 120;};
-int reward_stone_tableId() const {return 318;};
+int reward_stone_tableId() const {return 319;};
 __int32 reward_stone_prob_weight[120];
 __int32 reward_stone_prob_weight_Size() const {return 120;};
 __int32 reward_stone_prob_weight_total;
@@ -34,14 +34,14 @@ signed char reward_stone_total_count;
 char Pad1[3];
 BnsTables::Shared::TableRef reward_group_id[10];
 __int32 reward_group_id_Size() const {return 10;};
-int reward_group_id_tableId() const {return 319;};
+int reward_group_id_tableId() const {return 320;};
 __int32 reward_group_prob_weight[10];
 __int32 reward_group_prob_weight_Size() const {return 10;};
 __int32 reward_group_prob_weight_total;
 signed char reward_group_total_count;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
-		static __int16 TableId() { return 321; }
+		static __int16 TableId() { return 322; }
 		static __int32 SubType() { return -1; }
 		enum class publisher {
 			NONE = 0,

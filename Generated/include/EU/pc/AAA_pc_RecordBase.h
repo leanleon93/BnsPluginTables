@@ -33,16 +33,16 @@ char Pad1[1];
 __int16 radius;
 BnsTables::Shared::TableRef skill[40];
 __int32 skill_Size() const {return 40;};
-int skill_tableId() const {return 391;};
+int skill_tableId() const {return 392;};
 BnsTables::Shared::TableRef skill3[40];
 __int32 skill3_Size() const {return 40;};
-int skill3_tableId() const {return 376;};
+int skill3_tableId() const {return 377;};
 BnsTables::Shared::TableRef pc_skill3[2];
 __int32 pc_skill3_Size() const {return 2;};
-int pc_skill3_tableId() const {return 310;};
+int pc_skill3_tableId() const {return 311;};
 BnsTables::Shared::TableRef pc_job_style_skill3[10];
 __int32 pc_job_style_skill3_Size() const {return 10;};
-int pc_job_style_skill3_tableId() const {return 310;};
+int pc_job_style_skill3_tableId() const {return 311;};
 signed char skill_build_up_level_max;
 char Pad2[1];
 __int16 skill_build_up_point;
@@ -154,7 +154,7 @@ __int32 attack_abnormal_hit_modify;
 __int32 defend_abnormal_resistance_modify;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
-		static __int16 TableId() { return 306; }
+		static __int16 TableId() { return 307; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -25,7 +25,7 @@ signed char pc_job;
 signed char joypad_category;
 char Pad0[2];
 BnsTables::Shared::TableRef name;
-int name_tableId() const {return 466;};
+int name_tableId() const {return 467;};
 wchar_t* default_keycap;
 bool modifier_enabled;
 signed char sort_no;

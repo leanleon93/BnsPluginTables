@@ -31,7 +31,7 @@ signed char success_probability;
 char Pad0[2];
 __int32 money_cost;
 BnsTables::Shared::TableRef distribution_type;
-int distribution_type_tableId() const {return 341;};
+int distribution_type_tableId() const {return 342;};
 BnsTables::Shared::TableRef fixed_ingredient[8];
 __int32 fixed_ingredient_Size() const {return 8;};
 int fixed_ingredient_tableId() const {return 212;};
@@ -113,6 +113,7 @@ __int32 select_count;
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 
 		enum class attach_ability {

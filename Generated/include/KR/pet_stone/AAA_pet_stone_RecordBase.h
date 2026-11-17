@@ -22,18 +22,18 @@ namespace BnsTables::KR {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef name2;
-int name2_tableId() const {return 466;};
+int name2_tableId() const {return 467;};
 BnsTables::Shared::TableRef description_title;
-int description_title_tableId() const {return 466;};
+int description_title_tableId() const {return 467;};
 BnsTables::Shared::TableRef description;
-int description_tableId() const {return 466;};
+int description_tableId() const {return 467;};
 signed char grade;
 char Pad0[3];
 BnsTables::Shared::IconRef icon;
 __int16 sort_no;
 char Pad1[2];
 BnsTables::Shared::TableRef appearance_pet;
-int appearance_pet_tableId() const {return 313;};
+int appearance_pet_tableId() const {return 314;};
 signed char ability[3];
 __int32 ability_Size() const {return 3;};
 char Pad2[1];
@@ -50,7 +50,7 @@ bool can_not_used;
 bool not_counted;
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 1); }
-		static __int16 TableId() { return 318; }
+		static __int16 TableId() { return 319; }
 		static __int32 SubType() { return -1; }
 		enum class ability {
 			none = 0,

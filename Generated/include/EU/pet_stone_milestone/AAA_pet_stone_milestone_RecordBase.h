@@ -27,7 +27,7 @@ BnsTables::Shared::TableRef membership_benefit;
 int membership_benefit_tableId() const {return 283;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 2); }
-		static __int16 TableId() { return 320; }
+		static __int16 TableId() { return 321; }
 		static __int32 SubType() { return -1; }
 
 	};

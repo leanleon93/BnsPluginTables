@@ -10,7 +10,7 @@ namespace BnsTables::KR {
 	{
 	public:
 		BnsTables::Shared::TableRef time_limit_field_zone;
-int time_limit_field_zone_tableId() const {return 467;};
+int time_limit_field_zone_tableId() const {return 468;};
 
 		static __int32 SubType() { return 1; }
 	};

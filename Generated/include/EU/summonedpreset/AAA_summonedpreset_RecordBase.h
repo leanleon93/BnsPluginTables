@@ -29,12 +29,12 @@ int icon_texture_tableId() const {return 198;};
 __int16 icon_index;
 char Pad0[2];
 BnsTables::Shared::TableRef desc;
-int desc_tableId() const {return 466;};
+int desc_tableId() const {return 467;};
 signed char param8[96];
 __int32 param8_Size() const {return 96;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(0, 4); }
-		static __int16 TableId() { return 455; }
+		static __int16 TableId() { return 456; }
 		static __int32 SubType() { return -1; }
 		enum class race {
 			race_none = 0,

@@ -30,10 +30,10 @@ __int32 required_build_up_point_level_Size() const {return 40;};
 char Pad1[2];
 BnsTables::Shared::TableRef skill_modify_info[40];
 __int32 skill_modify_info_Size() const {return 40;};
-int skill_modify_info_tableId() const {return 396;};
+int skill_modify_info_tableId() const {return 397;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(3, 0); }
-		static __int16 TableId() { return 381; }
+		static __int16 TableId() { return 382; }
 		static __int32 SubType() { return -1; }
 
 	};

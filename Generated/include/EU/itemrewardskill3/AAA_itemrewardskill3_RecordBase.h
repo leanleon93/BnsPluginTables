@@ -24,7 +24,7 @@ BnsTables::Shared::TableRef head_skill_id;
 		__declspec(align(8)) Key key;
 		BnsTables::Shared::TableRef change_skill_id[15];
 __int32 change_skill_id_Size() const {return 15;};
-int change_skill_id_tableId() const {return 376;};
+int change_skill_id_tableId() const {return 377;};
 BnsTables::Shared::TableRef head_skill_acquire_route;
 int head_skill_acquire_route_tableId() const {return 233;};
 BnsTables::Shared::TableRef change_skill_acquire_route[15];
@@ -114,6 +114,7 @@ signed char equip_type;
 			equip_gem_6_appearance = 50,
 			equip_gem_7_appearance = 51,
 			equip_gem_8_appearance = 52,
+			damage_floater_appearance = 53,
 		};
 	};
 #pragma pack(pop)

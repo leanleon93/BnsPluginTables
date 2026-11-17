@@ -22,7 +22,7 @@ namespace BnsTables::EU {
 		__declspec(align(8)) Key key;
 		wchar_t* alias;
 BnsTables::Shared::TableRef skill3;
-int skill3_tableId() const {return 376;};
+int skill3_tableId() const {return 377;};
 __int16 arcane_score;
 __int16 default_arcane_score;
 __int32 reference_value_arcane_score[6];
@@ -31,10 +31,10 @@ signed char reference_value_arcane_score_total_count;
 char Pad0[3];
 BnsTables::Shared::TableRef apply_skill_modifys[6];
 __int32 apply_skill_modifys_Size() const {return 6;};
-int apply_skill_modifys_tableId() const {return 396;};
+int apply_skill_modifys_tableId() const {return 397;};
 BnsTables::Shared::TableRef apply_skill_modify_per_arcane_score[6];
 __int32 apply_skill_modify_per_arcane_score_Size() const {return 6;};
-int apply_skill_modify_per_arcane_score_tableId() const {return 396;};
+int apply_skill_modify_per_arcane_score_tableId() const {return 397;};
 signed char apply_skill_modify_per_arcane_score_total_count;
 char Pad1[3];
 __int32 per_arcane_score_section[6];
@@ -43,10 +43,10 @@ __int16 per_arcane_score_damage_rate_pvp;
 char Pad2[2];
 BnsTables::Shared::TableRef effect_tooltip_description[6];
 __int32 effect_tooltip_description_Size() const {return 6;};
-int effect_tooltip_description_tableId() const {return 466;};
+int effect_tooltip_description_tableId() const {return 467;};
 
 		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 3); }
-		static __int16 TableId() { return 378; }
+		static __int16 TableId() { return 379; }
 		static __int32 SubType() { return -1; }
 
 	};
