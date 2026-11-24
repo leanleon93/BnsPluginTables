@@ -31,7 +31,7 @@ BnsTables::Shared::TableRef contents_name;
 int contents_name_tableId() const {return 467;};
 signed char sort_number;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(11, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(12, 0); }
 		static __int16 TableId() { return 347; }
 		static __int32 SubType() { return -1; }
 		enum class contents_type {
@@ -77,6 +77,7 @@ signed char sort_number;
 			heroic_dungeon_8 = 39,
 			heroic_dungeon_9 = 40,
 			heroic_dungeon_10 = 41,
+			party_battle_all_mid_pvp = 42,
 		};
 
 		enum class player_type {

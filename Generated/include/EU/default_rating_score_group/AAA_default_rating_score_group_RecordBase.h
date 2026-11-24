@@ -73,6 +73,7 @@ bool is_placement_test;
 			heroic_dungeon_8 = 39,
 			heroic_dungeon_9 = 40,
 			heroic_dungeon_10 = 41,
+			party_battle_all_mid_pvp = 42,
 		};
 	};
 #pragma pack(pop)

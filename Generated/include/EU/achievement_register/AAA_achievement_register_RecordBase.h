@@ -116,7 +116,7 @@ int achievement_tableId() const {return 6;};
 BnsTables::Shared::TableRef register_name;
 int register_name_tableId() const {return 467;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(6, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(7, 0); }
 		static __int16 TableId() { return 7; }
 		static __int32 SubType() { return -1; }
 		enum class job {
@@ -279,6 +279,8 @@ int register_name_tableId() const {return 467;};
 			occupation_war = 1,
 			capture_the_flag = 2,
 			lead_the_ball = 3,
+			all_mid_pvp = 4,
+			all_mid_pve = 5,
 		};
 
 		enum class fish_size_grade {

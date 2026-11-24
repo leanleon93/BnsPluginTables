@@ -56,8 +56,9 @@ BnsTables::Shared::TableRef dungeon;
 int dungeon_tableId() const {return 123;};
 __int32 guide_movie_id;
 bool show_party_search_panel;
+bool dungeon_reward_event;
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(2, 1); }
 		static __int16 TableId() { return 300; }
 		static __int32 SubType() { return -1; }
 		enum class chnnelid {

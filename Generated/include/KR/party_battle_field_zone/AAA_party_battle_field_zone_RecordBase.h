@@ -11,7 +11,9 @@ namespace BnsTables::KR {
 		party_battle_field_zone_record_sub_occupation_war = 0,
 		party_battle_field_zone_record_sub_capture_the_flag = 1,
 		party_battle_field_zone_record_sub_lead_the_ball = 2,
-		party_battle_field_zone_record_sub_count = 3,
+		party_battle_field_zone_record_sub_all_mid_pvp = 3,
+		party_battle_field_zone_record_sub_all_mid_pve = 4,
+		party_battle_field_zone_record_sub_count = 5,
     };
 #pragma pack(push, 1)
 	struct party_battle_field_zone_Record : BnsTables::Shared::DrEl
@@ -109,7 +111,7 @@ wchar_t* result_kismet_sequence_name;
 __int16 notify_msg_score_value[3];
 __int32 notify_msg_score_value_Size() const {return 3;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(1, 22); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(5, 0); }
 		static __int16 TableId() { return 299; }
 		static __int32 SubType() { return -1; }
 		enum class set_env_operation {

@@ -81,6 +81,7 @@ int grade_level_down_message_tableId() const {return 167;};
 			heroic_dungeon_8 = 39,
 			heroic_dungeon_9 = 40,
 			heroic_dungeon_10 = 41,
+			party_battle_all_mid_pvp = 42,
 		};
 	};
 #pragma pack(pop)

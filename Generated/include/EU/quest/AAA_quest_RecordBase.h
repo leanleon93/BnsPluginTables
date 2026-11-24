@@ -116,7 +116,7 @@ char Pad7[3];
 BnsTables::Shared::TableRef contents_reset;
 int contents_reset_tableId() const {return 77;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(15, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(16, 0); }
 		static __int16 TableId() { return 331; }
 		static __int32 SubType() { return -1; }
 		enum class category {

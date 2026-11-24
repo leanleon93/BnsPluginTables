@@ -32,7 +32,7 @@ __int32 condition_Size() const {return 10;};
 BnsTables::Shared::TableRef highlight_id;
 int highlight_id_tableId() const {return 477;};
 
-		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(9, 0); }
+		static BnsTables::Shared::TableVersion Version() { return BnsTables::Shared::TableVersion(10, 0); }
 		static __int16 TableId() { return 432; }
 		static __int32 SubType() { return -1; }
 		enum class mission_type {
@@ -109,6 +109,7 @@ int highlight_id_tableId() const {return 477;};
 			select_skill_train = 70,
 			dungeon_clear = 71,
 			equip_pet_stone = 72,
+			equip_pet_stone_appearance = 73,
 		};
 
 		enum class entity_type {
